@@ -27,7 +27,7 @@ Los nombres de los proyectos llevan a las fuentes de sus autores. Despliega cada
 
 - [Herramientas de diseño y creación](#creative) · 13
 - [Herramientas de uso diario y recreaciones de interfaces](#everyday) · 9
-- [Motores y recreaciones de juegos](#classic_games) · 24
+- [Motores y recreaciones de juegos](#classic_games) · 25
 - [Adaptaciones y proyectos de compatibilidad](#ports) · 42
 
 <img src="assets/overview-es.svg" alt="Índice" width="920">
@@ -1147,6 +1147,30 @@ Original o referencia: **Rugrats: Search for Reptar** · Reimplementación del j
 **Licencia del código:** [MIT OR Apache-2.0 authored code; original game data excluded](https://github.com/toyz/rugrats#readme)  
 **Autor:** toyz  
 [Documentación oficial](https://github.com/toyz/rugrats#readme) · Fuentes revisadas: 2026-10-19
+
+</details>
+
+### [Rich4 Renew](https://github.com/iam567/rich4-renew-app)
+
+Una recreación no oficial de Richman 4 para ordenadores y móviles, con gráficos redibujados en alta resolución, compraventa de propiedades, bolsa, cartas y partidas de grupo en línea.
+
+Original o referencia: **Richman 4** · Reimplementación del juego  
+[Descargar](https://github.com/iam567/rich4-renew-app/releases/latest) · [Explorar RemakeList](https://remakelist.com/es/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows / macOS / Android / iOS
+
+**Estado:** Versión pública v0.6.6 · se aplican restricciones de instalación y uso de recursos
+
+**Qué necesitas:** Ejecutar el código fuente requiere rich4-assets.tar, que el autor proporciona por separado. Contiene material derivado del juego original, gráficos redibujados en alta resolución, mapas y sonidos. Estos recursos quedan excluidos de la GPL y el autor los restringe al uso privado. Los scripts de empaquetado incluyen los recursos en las aplicaciones, pero no se ha inspeccionado de forma independiente el contenido de los paquetes publicados. Una descarga gratuita no implica permiso para redistribuir las ilustraciones ni el material del juego original.
+
+**Qué está disponible:** v0.6.6 ofrece un ZIP para Windows, un DMG para macOS, un APK para Android y un IPA sin firmar para iOS. El autor declara compatibilidad con Intel y Apple Silicon en Mac. iOS requiere que firmes la aplicación por tu cuenta; la aplicación de macOS no está notarizada y el APK de Android utiliza una firma de depuración. No se ha verificado ninguna demo pública para navegador. RemakeList no ha instalado estos paquetes ni ha probado el juego.
+
+**Licencia del código:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
+**Autor:** iam567 (Liang)  
+[Documentación oficial](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · Fuentes revisadas: 2026-10-20
 
 </details>
 

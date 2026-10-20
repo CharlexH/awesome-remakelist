@@ -27,7 +27,7 @@ Project names link to their authors’ sources. Expand an entry for device, game
 
 - [Creative tools](#creative) · 13
 - [Everyday tools and interface recreations](#everyday) · 9
-- [Game engines and recreations](#classic_games) · 24
+- [Game engines and recreations](#classic_games) · 25
 - [Ports and compatibility projects](#ports) · 42
 
 <img src="assets/overview-en.svg" alt="Overview" width="920">
@@ -1147,6 +1147,30 @@ Original or reference: **Rugrats: Search for Reptar** · Game reimplementation
 **Code license:** [MIT OR Apache-2.0 authored code; original game data excluded](https://github.com/toyz/rugrats#readme)  
 **Author:** toyz  
 [Official documentation](https://github.com/toyz/rugrats#readme) · Sources reviewed: 2026-10-19
+
+</details>
+
+### [Rich4 Renew](https://github.com/iam567/rich4-renew-app)
+
+An unofficial Richman 4 recreation for computers and phones, with high-resolution redraws, property trading, stocks, cards and online party play.
+
+Original or reference: **Richman 4** · Game reimplementation  
+[Download](https://github.com/iam567/rich4-renew-app/releases/latest) · [Browse RemakeList](https://remakelist.com/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows / macOS / Android / iOS
+
+**Status:** Public release v0.6.6 · installation and asset restrictions apply
+
+**What you need:** Running from source requires the author's separately supplied rich4-assets.tar. It contains material derived from the original game, high-resolution redraws, maps and sounds. These assets are excluded from GPL and restricted by the author to private use. Packaging scripts bundle assets into the apps, but release package contents were not independently inspected. Do not treat a free download as permission to redistribute the artwork or original game material.
+
+**What is available:** v0.6.6 provides a Windows ZIP, macOS DMG, Android APK and unsigned iOS IPA. The author states Intel and Apple Silicon support on Mac. iOS requires your own signing; the macOS app is not notarized and the Android APK uses debug signing. No public browser demo was verified. RemakeList has not installed or played these packages.
+
+**Code license:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
+**Author:** iam567 (Liang)  
+[Official documentation](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · Sources reviewed: 2026-10-20
 
 </details>
 

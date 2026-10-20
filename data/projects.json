@@ -5661,7 +5661,71 @@
       "original_files": "original",
       "author": "JZen (@JZennm)",
       "author_url": "https://x.com/JZennm"
+    },
+    {
+      "id": "rich4-renew",
+      "name": "Rich4 Renew",
+      "relationship": "game-reimplementation",
+      "section": "classic_games",
+      "localized": {
+        "en": {
+          "original": "Richman 4",
+          "summary": "An unofficial Richman 4 recreation for computers and phones, with high-resolution redraws, property trading, stocks, cards and online party play.",
+          "requirements": "Running from source requires the author's separately supplied rich4-assets.tar. It contains material derived from the original game, high-resolution redraws, maps and sounds. These assets are excluded from GPL and restricted by the author to private use. Packaging scripts bundle assets into the apps, but release package contents were not independently inspected. Do not treat a free download as permission to redistribute the artwork or original game material.",
+          "availability": "v0.6.6 provides a Windows ZIP, macOS DMG, Android APK and unsigned iOS IPA. The author states Intel and Apple Silicon support on Mac. iOS requires your own signing; the macOS app is not notarized and the Android APK uses debug signing. No public browser demo was verified. RemakeList has not installed or played these packages.",
+          "platforms": "Windows / macOS / Android / iOS",
+          "stage": "Public release v0.6.6 · installation and asset restrictions apply"
+        },
+        "zh-CN": {
+          "original": "大富翁4",
+          "summary": "面向电脑与手机的非官方《大富翁4》重制，加入高清重绘，保留地产、股票、卡片玩法，并提供派对联机。",
+          "requirements": "源码运行需要作者另行提供的 rich4-assets.tar，包含原版相关素材、高清重绘、地图与音效。这些素材不适用 GPL，作者限定仅供私人使用。打包脚本会将素材装入应用，但本站未独立检查发行包内容；免费下载不代表可以自由再分发美术或原游戏素材。",
+          "availability": "v0.6.6 提供 Windows ZIP、macOS DMG、Android APK 和未签名 iOS IPA；作者说明 Mac 支持 Intel 与 Apple Silicon。iOS 需自行签名，macOS 应用未经公证，Android APK 使用 debug 签名。未核到公开浏览器试玩；本站未安装或运行这些发行包。",
+          "platforms": "Windows / macOS / Android / iOS",
+          "stage": "公开发行 v0.6.6 · 安装与素材另有限制"
+        },
+        "ja": {
+          "original": "Richman 4（大富翁4）",
+          "summary": "PCとスマートフォン向けの非公式『Richman 4（大富翁4）』リメイク。高解像度で描き直したグラフィックを採用し、不動産取引、株式、カード、オンラインパーティープレイに対応。",
+          "requirements": "ソースからの実行には、作者が別途提供する rich4-assets.tar が必要です。原作由来の素材、高解像度の描き直し、マップ、音声が含まれます。これらの素材は GPL の対象外で、作者により私的使用に限定されています。パッケージ作成スクリプトは素材をアプリに同梱しますが、配布パッケージの内容は独自に検査していません。無料でダウンロードできても、アートワークや原作素材の再配布が許可されるわけではありません。",
+          "availability": "v0.6.6 では Windows ZIP、macOS DMG、Android APK、未署名の iOS IPA を配布。作者によると Mac は Intel と Apple Silicon に対応。iOS は自分で署名する必要があり、macOS アプリは未公証、Android APK はデバッグ署名です。公開ブラウザー体験版は確認できていません。RemakeList はこれらのパッケージをインストール・プレイしていません。",
+          "platforms": "Windows / macOS / Android / iOS",
+          "stage": "公開リリース v0.6.6 · インストールと素材に個別の制限あり"
+        },
+        "ko": {
+          "original": "Richman 4（大富翁4）",
+          "summary": "PC와 스마트폰용 비공식 『Richman 4（大富翁4）』 리메이크. 고해상도로 다시 그린 그래픽과 함께 부동산 거래, 주식, 카드, 온라인 파티 플레이를 제공합니다.",
+          "requirements": "소스에서 실행하려면 개발자가 별도로 제공하는 rich4-assets.tar가 필요합니다. 원작 게임에서 파생된 자료, 고해상도로 다시 그린 그래픽, 지도, 사운드가 포함됩니다. 이 에셋은 GPL 적용 대상이 아니며 개발자가 사적 이용으로 제한합니다. 패키징 스크립트는 에셋을 앱에 포함하지만, 배포 패키지의 내용은 독립적으로 검사하지 않았습니다. 무료 다운로드가 아트워크나 원작 게임 자료의 재배포를 허용한다는 뜻은 아닙니다.",
+          "availability": "v0.6.6은 Windows ZIP, macOS DMG, Android APK, 서명되지 않은 iOS IPA를 제공합니다. 개발자는 Mac에서 Intel과 Apple Silicon을 지원한다고 설명합니다. iOS는 직접 서명해야 하며, macOS 앱은 공증되지 않았고 Android APK는 디버그 서명을 사용합니다. 공개 브라우저 체험판은 확인되지 않았습니다. RemakeList는 이 패키지들을 설치하거나 플레이하지 않았습니다.",
+          "platforms": "Windows / macOS / Android / iOS",
+          "stage": "공개 릴리스 v0.6.6 · 설치 및 에셋에 별도 제한 적용"
+        },
+        "es": {
+          "original": "Richman 4",
+          "summary": "Una recreación no oficial de Richman 4 para ordenadores y móviles, con gráficos redibujados en alta resolución, compraventa de propiedades, bolsa, cartas y partidas de grupo en línea.",
+          "requirements": "Ejecutar el código fuente requiere rich4-assets.tar, que el autor proporciona por separado. Contiene material derivado del juego original, gráficos redibujados en alta resolución, mapas y sonidos. Estos recursos quedan excluidos de la GPL y el autor los restringe al uso privado. Los scripts de empaquetado incluyen los recursos en las aplicaciones, pero no se ha inspeccionado de forma independiente el contenido de los paquetes publicados. Una descarga gratuita no implica permiso para redistribuir las ilustraciones ni el material del juego original.",
+          "availability": "v0.6.6 ofrece un ZIP para Windows, un DMG para macOS, un APK para Android y un IPA sin firmar para iOS. El autor declara compatibilidad con Intel y Apple Silicon en Mac. iOS requiere que firmes la aplicación por tu cuenta; la aplicación de macOS no está notarizada y el APK de Android utiliza una firma de depuración. No se ha verificado ninguna demo pública para navegador. RemakeList no ha instalado estos paquetes ni ha probado el juego.",
+          "platforms": "Windows / macOS / Android / iOS",
+          "stage": "Versión pública v0.6.6 · se aplican restricciones de instalación y uso de recursos"
+        }
+      },
+      "start": "download",
+      "start_url": "https://github.com/iam567/rich4-renew-app/releases/latest",
+      "code_license": "GPL-3.0-or-later · code only",
+      "code_license_url": "https://github.com/iam567/rich4-renew-app/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/iam567/rich4-renew-app/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-20",
+      "official_url": "https://github.com/iam567/rich4-renew-app",
+      "documentation_url": "https://github.com/iam567/rich4-renew-app/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/rich4-renew/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/rich4-renew/",
+      "original_files": "acquired",
+      "author": "iam567 (Liang)",
+      "author_url": "https://github.com/iam567"
     }
   ],
-  "content_sha256": "fe7d6bdb93d5eb95e36e01c22b4149cd63e8a735a1bb766ee1933ad7dd83a455"
+  "content_sha256": "7583bddabfb4fce9c8cf680727c2247254a5bcf98fb800051698ccb5618aa778"
 }

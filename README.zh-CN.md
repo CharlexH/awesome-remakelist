@@ -27,7 +27,7 @@
 
 - [设计与创作工具](#creative) · 13
 - [日常工具与界面再现](#everyday) · 9
-- [游戏引擎与重制](#classic_games) · 24
+- [游戏引擎与重制](#classic_games) · 25
 - [移植与兼容项目](#ports) · 42
 
 <img src="assets/overview-zh-CN.svg" alt="目录" width="920">
@@ -1147,6 +1147,30 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 **代码许可:** [MIT OR Apache-2.0 authored code; original game data excluded](https://github.com/toyz/rugrats#readme)  
 **作者:** toyz  
 [官方文档](https://github.com/toyz/rugrats#readme) · 资料核对日期: 2026-10-19
+
+</details>
+
+### [Rich4 Renew](https://github.com/iam567/rich4-renew-app)
+
+面向电脑与手机的非官方《大富翁4》重制，加入高清重绘，保留地产、股票、卡片玩法，并提供派对联机。
+
+原作或参考对象: **大富翁4** · 游戏重实现  
+[下载](https://github.com/iam567/rich4-renew-app/releases/latest) · [浏览 RemakeList](https://remakelist.com/zh/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows / macOS / Android / iOS
+
+**当前阶段:** 公开发行 v0.6.6 · 安装与素材另有限制
+
+**需要准备什么:** 源码运行需要作者另行提供的 rich4-assets.tar，包含原版相关素材、高清重绘、地图与音效。这些素材不适用 GPL，作者限定仅供私人使用。打包脚本会将素材装入应用，但本站未独立检查发行包内容；免费下载不代表可以自由再分发美术或原游戏素材。
+
+**现在能用什么:** v0.6.6 提供 Windows ZIP、macOS DMG、Android APK 和未签名 iOS IPA；作者说明 Mac 支持 Intel 与 Apple Silicon。iOS 需自行签名，macOS 应用未经公证，Android APK 使用 debug 签名。未核到公开浏览器试玩；本站未安装或运行这些发行包。
+
+**代码许可:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
+**作者:** iam567 (Liang)  
+[官方文档](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · 资料核对日期: 2026-10-20
 
 </details>
 

@@ -27,7 +27,7 @@
 
 - [デザイン・制作ツール](#creative) · 13
 - [日常のツールとインターフェースの再現](#everyday) · 9
-- [ゲームエンジンとゲームの再実装](#classic_games) · 24
+- [ゲームエンジンとゲームの再実装](#classic_games) · 25
 - [移植・互換性プロジェクト](#ports) · 42
 
 <img src="assets/overview-ja.svg" alt="目次" width="920">
@@ -1147,6 +1147,30 @@ PS1版Rugrats: Search for ReptarをRustで再実装するPC向けプロジェク
 **コードのライセンス:** [MIT OR Apache-2.0 authored code; original game data excluded](https://github.com/toyz/rugrats#readme)  
 **作者:** toyz  
 [公式ドキュメント](https://github.com/toyz/rugrats#readme) · 資料確認日: 2026-10-19
+
+</details>
+
+### [Rich4 Renew](https://github.com/iam567/rich4-renew-app)
+
+PCとスマートフォン向けの非公式『Richman 4（大富翁4）』リメイク。高解像度で描き直したグラフィックを採用し、不動産取引、株式、カード、オンラインパーティープレイに対応。
+
+原作・参考元: **Richman 4（大富翁4）** · ゲームの再実装  
+[ダウンロード](https://github.com/iam567/rich4-renew-app/releases/latest) · [RemakeList を見る](https://remakelist.com/ja/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-ja)
+
+<details>
+<summary>必要条件とスクリーンショット</summary>
+
+**対応環境:** Windows / macOS / Android / iOS
+
+**開発状況:** 公開リリース v0.6.6 · インストールと素材に個別の制限あり
+
+**必要なもの:** ソースからの実行には、作者が別途提供する rich4-assets.tar が必要です。原作由来の素材、高解像度の描き直し、マップ、音声が含まれます。これらの素材は GPL の対象外で、作者により私的使用に限定されています。パッケージ作成スクリプトは素材をアプリに同梱しますが、配布パッケージの内容は独自に検査していません。無料でダウンロードできても、アートワークや原作素材の再配布が許可されるわけではありません。
+
+**現在利用できるもの:** v0.6.6 では Windows ZIP、macOS DMG、Android APK、未署名の iOS IPA を配布。作者によると Mac は Intel と Apple Silicon に対応。iOS は自分で署名する必要があり、macOS アプリは未公証、Android APK はデバッグ署名です。公開ブラウザー体験版は確認できていません。RemakeList はこれらのパッケージをインストール・プレイしていません。
+
+**コードのライセンス:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
+**作者:** iam567 (Liang)  
+[公式ドキュメント](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · 資料確認日: 2026-10-20
 
 </details>
 
