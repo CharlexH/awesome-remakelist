@@ -50,7 +50,7 @@ def overview(data,locale):
 def render(data,locale='en'):
     labels=copy();u=labels[locale];prefix=u['prefix'];home='https://remakelist.com/'+(prefix+'/' if prefix else '')
     home=tracked(home,'intro-'+locale)
-    text=f'<a href="{home}"><img src="assets/banner.svg" alt="RemakeList — software recreations and classic game ports" width="920"></a>\n\n# Awesome RemakeList\n\n{u["subtitle"]}\n\n'
+    text=f'<a href="{home}"><img src="assets/brand-banner.svg" alt="RemakeList — software recreations and classic game ports" width="920"></a>\n\n# Awesome RemakeList\n\n{u["subtitle"]}\n\n'
     text+=' · '.join('**'+v['name']+'**' if key==locale else '['+v['name']+']('+v['file']+')' for key,v in labels.items())+'\n\n'
     text+=f'[{u["browse"]}]({home}) · [{u["suggest"]}](https://github.com/CharlexH/awesome-remakelist/issues/new?template=project.yml)\n\n'
     for workflow,title in [('check.yml','Catalog checks'),('sync.yml','Website sync')]:

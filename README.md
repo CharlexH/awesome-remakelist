@@ -1,4 +1,4 @@
-<a href="https://remakelist.com/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=intro-en"><img src="assets/banner.svg" alt="RemakeList — software recreations and classic game ports" width="920"></a>
+<a href="https://remakelist.com/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=intro-en"><img src="assets/brand-banner.svg" alt="RemakeList — software recreations and classic game ports" width="920"></a>
 
 # Awesome RemakeList
 
