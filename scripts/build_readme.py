@@ -39,18 +39,18 @@ def clean(text):
 
 
 def tracked(url, content):
-    return url + '?' + urlencode({'utm_source': 'github', 'utm_medium': 'repository', 'utm_campaign': 'awesome-remakes', 'utm_content': content})
+    return url + '?' + urlencode({'utm_source': 'github', 'utm_medium': 'repository', 'utm_campaign': 'awesome-remakelist', 'utm_content': content})
 
 
 def render(data, chinese=False):
     lang = 1 if chinese else 0
     suffix = 'zh' if chinese else 'en'
     if chinese:
-        head = '''# Awesome Remakes
+        head = '''# Awesome RemakeList
 
 软件重实现、经典游戏引擎、跨平台移植，以及明确标注的功能平替。由 [RemakeList](SITE) 整理。
 
-[English](README.md) · **简体中文** · [完整目录](DIRECTORY) · [推荐项目](https://github.com/CharlexH/awesome-remakes/issues/new?template=project.yml)
+[English](README.md) · **简体中文** · [完整目录](DIRECTORY) · [推荐项目](https://github.com/CharlexH/awesome-remakelist/issues/new?template=project.yml)
 
 每条都写明对应的原作、目前的阶段和开始前要准备的东西。先看清要求，再决定要不要动手。
 
@@ -62,11 +62,11 @@ def render(data, chinese=False):
 
 '''
     else:
-        head = '''# Awesome Remakes
+        head = '''# Awesome RemakeList
 
 Software recreations, classic game engines, native ports, and clearly labeled functional alternatives. Curated by [RemakeList](SITE).
 
-**English** · [简体中文](README.zh-CN.md) · [Browse the directory](DIRECTORY) · [Suggest a project](https://github.com/CharlexH/awesome-remakes/issues/new?template=project.yml)
+**English** · [简体中文](README.zh-CN.md) · [Browse the directory](DIRECTORY) · [Suggest a project](https://github.com/CharlexH/awesome-remakelist/issues/new?template=project.yml)
 
 Find what a project recreates or replaces, where it runs, and what you need before getting started.
 

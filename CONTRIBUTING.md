@@ -1,6 +1,6 @@
 # Contributing
 
-Found a project worth trying, or a requirement we got wrong? Open a [project suggestion](https://github.com/CharlexH/awesome-remakes/issues/new?template=project.yml) or a [correction](https://github.com/CharlexH/awesome-remakes/issues/new?template=correction.yml). English and Chinese are both welcome.
+Found a project worth trying, or a requirement we got wrong? Open a [project suggestion](https://github.com/CharlexH/awesome-remakelist/issues/new?template=project.yml) or a [correction](https://github.com/CharlexH/awesome-remakelist/issues/new?template=correction.yml). English and Chinese are both welcome.
 
 ## What belongs here
 

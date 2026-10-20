@@ -40,7 +40,7 @@ def check(live=False):
         for field, route in [('site_url', f'/remakes/{key}/'), ('site_url_zh', f'/zh/remakes/{key}/')]:
             u = urlparse(p[field]); assert u.netloc == 'remakelist.com' and u.path == route, (key, field)
             q = parse_qs(urlparse(tracked(p[field], key)).query)
-            assert q['utm_source'] == ['github'] and q['utm_campaign'] == ['awesome-remakes'], key
+            assert q['utm_source'] == ['github'] and q['utm_campaign'] == ['awesome-remakelist'], key
         assert p['code_license_url'] in p['code_license_sources'], key
     d2r = next((p for p in projects if p['id'] == 'd2r-mobile'), None)
     if d2r:
