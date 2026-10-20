@@ -28,7 +28,7 @@
 - [デザイン・制作ツール](#creative) · 13
 - [日常のツールとインターフェースの再現](#everyday) · 9
 - [ゲームエンジンとゲームの再実装](#classic_games) · 24
-- [移植・互換性プロジェクト](#ports) · 40
+- [移植・互換性プロジェクト](#ports) · 42
 
 <img src="assets/overview-ja.svg" alt="目次" width="920">
 
@@ -1227,6 +1227,30 @@ Xbox 360 版 Modern Warfare 2 (2009) を Windows と Linux 向けに静的再コ
 
 </details>
 
+### [MacNativeGames · Tears of the Kingdom](https://github.com/ly05010419/MacNativeGames)
+
+自分の Switch ゲームから Apple シリコン Mac または iPhone/iPad 用の Tears of the Kingdom アプリをビルド。実験段階で、ローカルビルドと端末向け署名が必要です。
+
+原作・参考元: **ゼルダの伝説 ティアーズ オブ ザ キングダム** · プラットフォーム互換レイヤー  
+[自分でビルド・ゲームデータも用意](https://github.com/ly05010419/MacNativeGames#build-the-app) · [RemakeList を見る](https://remakelist.com/ja/remakes/zelda-totk-mac-research/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=zelda-totk-mac-research-ja)
+
+<details>
+<summary>必要条件とスクリーンショット</summary>
+
+**対応環境:** Apple シリコン Mac · macOS 26+；iPhone 14+ / iPad · iOS/iPadOS 26+
+
+**開発状況:** 実験段階 · ローカルビルドと署名 · 正式版なし
+
+**必要なもの:** 自分の本体から取り出した Switch v1.0.0 本体（XCI/NSP）、鍵、システムファイルが必要。Mac は別途 v1.1.2・v1.2.1・v1.4.3 更新（NSP/NSZ）も対応し、iOS は v1.4.3 のみ試験済み。Mac は Apple シリコン、macOS 26+、Metal 4、RAM 16 GB 推奨。入力ゲーム以外に本体ビルドで約 25 GB、APFS クローン不可なら約 17 GB 追加、更新込みの新規 Mac ビルドは約 40 GB。iOS は完全な Xcode 26+、iOS/iPadOS 26+、iPhone は 14 以降が必要で、メモリ上限拡張権限を保つ署名も必要。本体の新規作成は 45 GB、更新込みは 60 GB を確保。生成アプリには原作内容が入り、自分用に限ります。当サイトはゲーム、鍵、ファームウェア、署名アプリ、派生シェーダーを配布しません。
+
+**現在利用できるもの:** ソースビルドが必要で正式 Releases はありません。作者は M4 Mac の試験と iPhone 14・A16 iPad での v1.4.3 プレイを報告しています。当サイトの実測ではありません。以前の Mac 約 90 FPS はキャッシュ準備後の観測で、全編クリアや安定速度の保証ではありません。iPhone 14 は約 4 GB を使用し、重い場面で約 8 分後に iOS に終了された例が 2 回あります。iOS で未収録のシェーダーがあると物体が欠け、Mac でも新場面で止まる場合があります。オンラインと amiibo は非対応です。
+
+**コードのライセンス:** [Project code MIT · game rights and third-party licenses separate](https://github.com/ly05010419/MacNativeGames/blob/main/LICENSE)  
+**作者:** Yong Li / liyong (@liyong2077)  
+[公式ドキュメント](https://github.com/ly05010419/MacNativeGames/blob/b75be8cfa704df3701e86130c8ced268e79d6b11/README.md) · 資料確認日: 2026-10-20
+
+</details>
+
 ### [Dusklight](https://github.com/TwilitRealm/dusklight)
 
 高解像度、フレームレート設定、内蔵MODブラウザーに対応した『トワイライトプリンセス』のネイティブ移植。
@@ -2112,6 +2136,30 @@ Wind Waker HDの非公式フォークで、任意の海上イベントや操縦�
 **コードのライセンス:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **作者:** seedds and contributors  
 [公式ドキュメント](https://github.com/seedds/nxnative/blob/main/README.md) · 資料確認日: 2026-10-20
+
+</details>
+
+### [Zelda-Mobile · Tears of the Kingdom](https://github.com/OJZen/totk-mobile)
+
+Tears of the Kingdom v1.4.3 を Apple シリコン上でネイティブ実行する実験的移植。自分のゲームとソースビルドが必要で、iPhone でのプレイは未検証です。
+
+原作・参考元: **ゼルダの伝説 ティアーズ オブ ザ キングダム** · プラットフォーム互換レイヤー  
+[自分でビルド・ゲームデータも用意](https://github.com/OJZen/totk-mobile/blob/main/docs/getting-started.md) · [RemakeList を見る](https://remakelist.com/ja/remakes/totk-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=totk-mobile-ja)
+
+<details>
+<summary>必要条件とスクリーンショット</summary>
+
+**対応環境:** Apple シリコン Mac、M1+ iPad、iPhone 15 Pro · 実験段階
+
+**開発状況:** 実験段階 · ソースビルド · 正式リリースなし
+
+**必要なもの:** 自分の本体から取り出した Switch のゲーム本体、v1.4.3 更新（.nsz）、対応する prod.keys が必要です。この版のみ対応。Apple シリコン Mac に完全な Xcode、コマンドラインツール、Homebrew、約 60 GB の空きが必要です。iPhone/iPad は iOS/iPadOS 26 以降、開発署名、デベロッパモード、USB、端末に約 25 GB の空きも必要。ゲーム、鍵、署名済みアプリ、派生シェーダーは配布しません。コードの許諾は任天堂のゲーム内容の権利を含みません。
+
+**現在利用できるもの:** 実験的なソースビルドで正式 Releases はありません。作者は Apple シリコン Mac でのセーブ読み込みと場面のプレイを報告していますが、全編クリアは未検証です。M1 以降の iPad は原作解像度で 60 FPS を大きく下回り、実物のコントローラーも検証途中。iPhone 15 Pro は開発署名インストール、データ転送、キャッシュ済み起動でタイトル画面までのみ確認。プレイ、速度、メモリ、発熱は未測定で、iPhone 13 Pro を含む他機種は未テストです。新しい場面ではシェーダー生成で一時停止する場合があります。
+
+**コードのライセンス:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
+**作者:** JZen (@JZennm)  
+[公式ドキュメント](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · 資料確認日: 2026-10-20
 
 </details>
 

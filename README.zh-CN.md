@@ -28,7 +28,7 @@
 - [设计与创作工具](#creative) · 13
 - [日常工具与界面再现](#everyday) · 9
 - [游戏引擎与重制](#classic_games) · 24
-- [移植与兼容项目](#ports) · 40
+- [移植与兼容项目](#ports) · 42
 
 <img src="assets/overview-zh-CN.svg" alt="目录" width="920">
 
@@ -1227,6 +1227,30 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 
 </details>
 
+### [MacNativeGames · Tears of the Kingdom](https://github.com/ly05010419/MacNativeGames)
+
+用自己的 Switch 游戏文件，在 Apple 芯片 Mac 上构建《王国之泪》Mac App 或 iPhone/iPad App。仍在实验阶段，需要本地构建，手机版还要签名。
+
+原作或参考对象: **塞尔达传说 王国之泪** · 平台兼容层  
+[自行构建并自备游戏文件](https://github.com/ly05010419/MacNativeGames#build-the-app) · [浏览 RemakeList](https://remakelist.com/zh/remakes/zelda-totk-mac-research/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=zelda-totk-mac-research-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Apple 芯片 Mac · macOS 26+；iPhone 14+ / iPad · iOS/iPadOS 26+
+
+**当前阶段:** 实验阶段 · 本地构建与签名 · 无正式发行
+
+**需要准备什么:** 自备自己主机导出的 Switch v1.0.0 本体（XCI/NSP）、密钥与系统文件。Mac 可另配 v1.1.2、v1.2.1 或 v1.4.3 累计更新（NSP/NSZ），iOS 只测过 v1.4.3。Mac 要 Apple 芯片、macOS 26+ 与 Metal 4，建议 16 GB 内存。本体 Mac 构建除游戏输入外约需 25 GB；无法用 APFS 克隆时还要约 17 GB，首次完整更新构建约需 40 GB。iOS 构建要完整 Xcode 26+、iOS/iPadOS 26+，手机最低为 iPhone 14；签名须保留提高内存上限的权限，全新本体构建预留 45 GB，加更新则 60 GB。生成的 App 包含原游戏内容，仅供自己使用。本站不提供游戏、密钥、固件、签名 App 或衍生着色器。
+
+**现在能用什么:** 目前需要从源码构建，没有正式 Releases。作者报告在 M4 Mac 上测试，并在 iPhone 14 和 A16 iPad 上游玩 v1.4.3；本站没有实测。较早 Mac 缓存预热后约 90 帧的观察，不代表全流程、所有场景或稳定帧率。iPhone 14 内存占用接近 4 GB，在复杂区域出现过两次约玩 8 分钟后被 iOS 关闭。iOS 缺少着色器变体时可能不显示部分物体，Mac 新场景也可能编译卡顿。不支持联网和 amiibo。
+
+**代码许可:** [Project code MIT · game rights and third-party licenses separate](https://github.com/ly05010419/MacNativeGames/blob/main/LICENSE)  
+**作者:** Yong Li / liyong (@liyong2077)  
+[官方文档](https://github.com/ly05010419/MacNativeGames/blob/b75be8cfa704df3701e86130c8ced268e79d6b11/README.md) · 资料核对日期: 2026-10-20
+
+</details>
+
 ### [Dusklight](https://github.com/TwilitRealm/dusklight)
 
 《黄昏公主》原生移植，提供更高分辨率、帧率选项和内置模组浏览器。
@@ -2112,6 +2136,30 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 **代码许可:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **作者:** seedds and contributors  
 [官方文档](https://github.com/seedds/nxnative/blob/main/README.md) · 资料核对日期: 2026-10-20
+
+</details>
+
+### [Zelda-Mobile · Tears of the Kingdom](https://github.com/OJZen/totk-mobile)
+
+《王国之泪》v1.4.3 的 Apple 芯片原生移植实验。需要自备游戏并从源码构建，iPhone 上的实际游玩尚未验证。
+
+原作或参考对象: **塞尔达传说：王国之泪** · 平台兼容层  
+[自行构建并自备游戏文件](https://github.com/OJZen/totk-mobile/blob/main/docs/getting-started.md) · [浏览 RemakeList](https://remakelist.com/zh/remakes/totk-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=totk-mobile-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Apple 芯片 Mac；M1+ iPad；iPhone 15 Pro · 实验阶段
+
+**当前阶段:** 实验阶段 · 需源码构建 · 无正式发行
+
+**需要准备什么:** 需要从自己主机导出的 Switch 游戏本体、v1.4.3 更新包（.nsz）和匹配的 prod.keys，目前只支持这一版本。在 Apple 芯片 Mac 上准备完整 Xcode、命令行工具、Homebrew 和约 60 GB 可用空间。iPhone/iPad 另需 iOS/iPadOS 26+、开发签名、开发者模式、USB 连接和设备约 25 GB 可用空间。仓库与本站均不提供游戏文件、密钥、已签名 App 或衍生着色器包。代码许可不包含任天堂游戏内容的使用权。
+
+**现在能用什么:** 目前是实验性源码构建，没有正式 Releases。作者报告 Apple 芯片 Mac 可以读档、运行场景，但尚未验证完整通关。M1 及以上 iPad 在原版分辨率下明显低于 60 帧，实体手柄也未完整验证。iPhone 15 Pro 仅验证开发签名安装、资源传输和缓存热启动进入标题画面；实际游玩、帧率、内存及发热都还没测。其他 iPhone（包括 iPhone 13 Pro）未经测试。首次进入新场景可能因着色器编译卡顿。
+
+**代码许可:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
+**作者:** JZen (@JZennm)  
+[官方文档](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · 资料核对日期: 2026-10-20
 
 </details>
 

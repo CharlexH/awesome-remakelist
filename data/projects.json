@@ -2079,6 +2079,70 @@
       "author_url": "https://github.com/Zelda64Recomp"
     },
     {
+      "id": "zelda-totk-mac-research",
+      "name": "MacNativeGames · Tears of the Kingdom",
+      "relationship": "platform-compatibility-reimplementation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "The Legend of Zelda: Tears of the Kingdom",
+          "summary": "Build a native Tears of the Kingdom app for Apple silicon Mac or iPhone/iPad from your own Switch files. Experimental; local builds and signing are required.",
+          "requirements": "Requires your own Switch base game v1.0.0 as XCI/NSP and your own keys/system files from your console. Mac can also use separate cumulative updates v1.1.2, v1.2.1 or v1.4.3 as NSP/NSZ; only v1.4.3 has been tested on iOS. Apple silicon Mac needs macOS 26+ with Metal 4; 16 GB RAM is recommended. A base Mac build needs about 25 GB beyond the input game, plus roughly 17 GB if APFS cloning cannot be used. A fresh updated Mac build needs about 40 GB. iOS builds need full Xcode 26+, iOS/iPadOS 26+, an iPhone 14 or newer for phones, and signing that retains the increased-memory entitlement; allow 45 GB for a fresh base build or 60 GB with an update. The generated app contains original game content: keep it for your own use. This listing supplies no games, keys, firmware, signed apps or derived shaders.",
+          "availability": "Experimental source build with no formal Releases. The author reports Mac tests on M4 hardware and v1.4.3 gameplay on iPhone 14 and an A16 iPad; these are not RemakeList tests. Earlier Mac observations of roughly 90 FPS after warm-up are not a stable-performance or full-playthrough guarantee. iPhone 14 uses close to 4 GB and was closed by iOS twice at about eight minutes in busy areas. Missing iOS shader variants can leave objects invisible; new Mac scenes can stutter. Online features and amiibo are unsupported.",
+          "platforms": "Apple silicon Mac · macOS 26+; iPhone 14+ / iPad · iOS/iPadOS 26+",
+          "stage": "Experimental · local build and signing · no formal release"
+        },
+        "zh-CN": {
+          "original": "塞尔达传说 王国之泪",
+          "summary": "用自己的 Switch 游戏文件，在 Apple 芯片 Mac 上构建《王国之泪》Mac App 或 iPhone/iPad App。仍在实验阶段，需要本地构建，手机版还要签名。",
+          "requirements": "自备自己主机导出的 Switch v1.0.0 本体（XCI/NSP）、密钥与系统文件。Mac 可另配 v1.1.2、v1.2.1 或 v1.4.3 累计更新（NSP/NSZ），iOS 只测过 v1.4.3。Mac 要 Apple 芯片、macOS 26+ 与 Metal 4，建议 16 GB 内存。本体 Mac 构建除游戏输入外约需 25 GB；无法用 APFS 克隆时还要约 17 GB，首次完整更新构建约需 40 GB。iOS 构建要完整 Xcode 26+、iOS/iPadOS 26+，手机最低为 iPhone 14；签名须保留提高内存上限的权限，全新本体构建预留 45 GB，加更新则 60 GB。生成的 App 包含原游戏内容，仅供自己使用。本站不提供游戏、密钥、固件、签名 App 或衍生着色器。",
+          "availability": "目前需要从源码构建，没有正式 Releases。作者报告在 M4 Mac 上测试，并在 iPhone 14 和 A16 iPad 上游玩 v1.4.3；本站没有实测。较早 Mac 缓存预热后约 90 帧的观察，不代表全流程、所有场景或稳定帧率。iPhone 14 内存占用接近 4 GB，在复杂区域出现过两次约玩 8 分钟后被 iOS 关闭。iOS 缺少着色器变体时可能不显示部分物体，Mac 新场景也可能编译卡顿。不支持联网和 amiibo。",
+          "platforms": "Apple 芯片 Mac · macOS 26+；iPhone 14+ / iPad · iOS/iPadOS 26+",
+          "stage": "实验阶段 · 本地构建与签名 · 无正式发行"
+        },
+        "ja": {
+          "original": "ゼルダの伝説 ティアーズ オブ ザ キングダム",
+          "summary": "自分の Switch ゲームから Apple シリコン Mac または iPhone/iPad 用の Tears of the Kingdom アプリをビルド。実験段階で、ローカルビルドと端末向け署名が必要です。",
+          "requirements": "自分の本体から取り出した Switch v1.0.0 本体（XCI/NSP）、鍵、システムファイルが必要。Mac は別途 v1.1.2・v1.2.1・v1.4.3 更新（NSP/NSZ）も対応し、iOS は v1.4.3 のみ試験済み。Mac は Apple シリコン、macOS 26+、Metal 4、RAM 16 GB 推奨。入力ゲーム以外に本体ビルドで約 25 GB、APFS クローン不可なら約 17 GB 追加、更新込みの新規 Mac ビルドは約 40 GB。iOS は完全な Xcode 26+、iOS/iPadOS 26+、iPhone は 14 以降が必要で、メモリ上限拡張権限を保つ署名も必要。本体の新規作成は 45 GB、更新込みは 60 GB を確保。生成アプリには原作内容が入り、自分用に限ります。当サイトはゲーム、鍵、ファームウェア、署名アプリ、派生シェーダーを配布しません。",
+          "availability": "ソースビルドが必要で正式 Releases はありません。作者は M4 Mac の試験と iPhone 14・A16 iPad での v1.4.3 プレイを報告しています。当サイトの実測ではありません。以前の Mac 約 90 FPS はキャッシュ準備後の観測で、全編クリアや安定速度の保証ではありません。iPhone 14 は約 4 GB を使用し、重い場面で約 8 分後に iOS に終了された例が 2 回あります。iOS で未収録のシェーダーがあると物体が欠け、Mac でも新場面で止まる場合があります。オンラインと amiibo は非対応です。",
+          "platforms": "Apple シリコン Mac · macOS 26+；iPhone 14+ / iPad · iOS/iPadOS 26+",
+          "stage": "実験段階 · ローカルビルドと署名 · 正式版なし"
+        },
+        "ko": {
+          "original": "젤다의 전설 티어스 오브 더 킹덤",
+          "summary": "본인의 Switch 파일로 Apple Silicon Mac 또는 iPhone/iPad용 Tears of the Kingdom 앱을 빌드합니다. 실험 단계이며 로컬 빌드와 기기 서명이 필요합니다.",
+          "requirements": "본인 콘솔에서 추출한 Switch v1.0.0 본편(XCI/NSP), 키, 시스템 파일이 필요합니다. Mac은 별도 v1.1.2·v1.2.1·v1.4.3 업데이트(NSP/NSZ)도 지원하며 iOS는 v1.4.3만 시험했습니다. Mac은 Apple Silicon, macOS 26+, Metal 4가 필요하고 RAM 16 GB를 권장합니다. 입력 게임 외에 본편 Mac 빌드 약 25 GB, APFS 복제를 못 하면 약 17 GB 추가, 새 업데이트 빌드는 약 40 GB가 필요합니다. iOS 빌드는 전체 Xcode 26+, iOS/iPadOS 26+, 휴대전화는 iPhone 14 이상과 메모리 상한 확장 권한을 유지한 서명이 필요합니다. 새 본편은 45 GB, 업데이트 포함은 60 GB를 확보하세요. 완성 앱은 게임 내용을 포함하며 개인용입니다. 본 사이트는 게임·키·펌웨어·서명 앱·파생 셰이더를 제공하지 않습니다.",
+          "availability": "소스 빌드가 필요하며 정식 Releases는 없습니다. 제작자가 M4 Mac 테스트 및 iPhone 14·A16 iPad에서 v1.4.3 플레이를 보고했으며 본 사이트 실측이 아닙니다. 이전 Mac의 캐시 준비 후 약 90 FPS는 관찰치로 전체 완료나 안정 성능을 보장하지 않습니다. iPhone 14는 약 4 GB를 사용하고 복잡한 구역에서 약 8분 후 iOS가 종료한 사례가 두 번 있습니다. iOS는 없는 셰이더로 인해 물체가 누락될 수 있고 Mac 새 장면에서도 끊길 수 있습니다. 온라인·amiibo는 미지원입니다.",
+          "platforms": "Apple Silicon Mac · macOS 26+; iPhone 14+ / iPad · iOS/iPadOS 26+",
+          "stage": "실험 단계 · 로컬 빌드 및 서명 · 정식 출시 없음"
+        },
+        "es": {
+          "original": "The Legend of Zelda: Tears of the Kingdom",
+          "summary": "Crea una app nativa de Tears of the Kingdom para Mac Apple silicon o iPhone/iPad con tus archivos de Switch. Experimental; exige compilación local y firma del dispositivo.",
+          "requirements": "Requiere tu juego Switch base v1.0.0 en XCI/NSP y claves/archivos del sistema extraídos de tu consola. Mac admite actualizaciones separadas v1.1.2/v1.2.1/v1.4.3 en NSP/NSZ; solo v1.4.3 está probada en iOS. Mac Apple silicon con macOS 26+, Metal 4 y 16 GB RAM recomendados. Además del juego: unos 25 GB para la base Mac, 17 GB extra sin clonado APFS y 40 GB para una compilación nueva actualizada. iOS necesita Xcode 26 completo, iOS/iPadOS 26+, como mínimo iPhone 14 para teléfonos, y firma con permiso de memoria ampliada; reserva 45 GB para base nueva o 60 GB con actualización. La app contiene el juego y es solo para uso propio. No ofrecemos juegos, claves, firmware, apps firmadas ni sombreadores derivados.",
+          "availability": "Compilación desde código sin Releases formales. El autor informa de pruebas en Mac M4 y de jugar v1.4.3 en iPhone 14 y un iPad A16; RemakeList no lo probó. Los antiguos 90 FPS aproximados con caché preparada en Mac no garantizan rendimiento estable ni completar el juego. iPhone 14 usa casi 4 GB y iOS lo cerró dos veces tras unos ocho minutos en zonas exigentes. En iOS pueden faltar objetos por sombreadores ausentes; nuevas escenas Mac pueden dar tirones. Sin online ni amiibo.",
+          "platforms": "Mac Apple silicon · macOS 26+; iPhone 14+ / iPad · iOS/iPadOS 26+",
+          "stage": "Experimental · compilación y firma local · sin versión formal"
+        }
+      },
+      "start": "build_with_original_assets",
+      "start_url": "https://github.com/ly05010419/MacNativeGames#build-the-app",
+      "code_license": "Project code MIT · game rights and third-party licenses separate",
+      "code_license_url": "https://github.com/ly05010419/MacNativeGames/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/ly05010419/MacNativeGames/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-20",
+      "official_url": "https://github.com/ly05010419/MacNativeGames",
+      "documentation_url": "https://github.com/ly05010419/MacNativeGames/blob/b75be8cfa704df3701e86130c8ced268e79d6b11/README.md",
+      "site_url": "https://remakelist.com/remakes/zelda-totk-mac-research/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/zelda-totk-mac-research/",
+      "original_files": "original",
+      "author": "Yong Li / liyong (@liyong2077)",
+      "author_url": "https://github.com/ly05010419"
+    },
+    {
       "id": "dusklight",
       "name": "Dusklight",
       "relationship": "decompilation",
@@ -5533,7 +5597,71 @@
       "original_files": "original",
       "author": "seedds and contributors",
       "author_url": "https://github.com/seedds"
+    },
+    {
+      "id": "totk-mobile",
+      "name": "Zelda-Mobile · Tears of the Kingdom",
+      "relationship": "platform-compatibility-reimplementation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "The Legend of Zelda: Tears of the Kingdom",
+          "summary": "An experimental native Apple silicon port of Tears of the Kingdom v1.4.3. Build from source with your own game; iPhone gameplay is not verified.",
+          "requirements": "Requires your own Switch base game, v1.4.3 update in .nsz format and matching prod.keys, dumped from your own console. Only v1.4.3 is supported. Prepare an Apple silicon Mac with full Xcode, command line tools, Homebrew and about 60 GB free. iPhone/iPad installation also needs iOS/iPadOS 26+, developer signing, Developer Mode, USB and about 25 GB free on the device. The repository and this listing provide no game files, keys, signed apps or derived shader packages. Code licensing does not grant rights to Nintendo game content.",
+          "availability": "Experimental source build; no formal Releases. The author reports loading saves and playing scenes on Apple silicon Mac, but has not validated a full playthrough. M1-or-newer iPads run well below 60 FPS at original resolution; controller support is not fully verified. iPhone 15 Pro is verified only through installation, resource transfer and a warm launch to the title screen: gameplay, frame rate, memory and thermals are unmeasured. Other iPhones, including iPhone 13 Pro, are untested. New scenes may stutter while shaders compile.",
+          "platforms": "Apple silicon Mac; M1+ iPad; iPhone 15 Pro · experimental",
+          "stage": "Experimental · source build · no formal release"
+        },
+        "zh-CN": {
+          "original": "塞尔达传说：王国之泪",
+          "summary": "《王国之泪》v1.4.3 的 Apple 芯片原生移植实验。需要自备游戏并从源码构建，iPhone 上的实际游玩尚未验证。",
+          "requirements": "需要从自己主机导出的 Switch 游戏本体、v1.4.3 更新包（.nsz）和匹配的 prod.keys，目前只支持这一版本。在 Apple 芯片 Mac 上准备完整 Xcode、命令行工具、Homebrew 和约 60 GB 可用空间。iPhone/iPad 另需 iOS/iPadOS 26+、开发签名、开发者模式、USB 连接和设备约 25 GB 可用空间。仓库与本站均不提供游戏文件、密钥、已签名 App 或衍生着色器包。代码许可不包含任天堂游戏内容的使用权。",
+          "availability": "目前是实验性源码构建，没有正式 Releases。作者报告 Apple 芯片 Mac 可以读档、运行场景，但尚未验证完整通关。M1 及以上 iPad 在原版分辨率下明显低于 60 帧，实体手柄也未完整验证。iPhone 15 Pro 仅验证开发签名安装、资源传输和缓存热启动进入标题画面；实际游玩、帧率、内存及发热都还没测。其他 iPhone（包括 iPhone 13 Pro）未经测试。首次进入新场景可能因着色器编译卡顿。",
+          "platforms": "Apple 芯片 Mac；M1+ iPad；iPhone 15 Pro · 实验阶段",
+          "stage": "实验阶段 · 需源码构建 · 无正式发行"
+        },
+        "ja": {
+          "original": "ゼルダの伝説 ティアーズ オブ ザ キングダム",
+          "summary": "Tears of the Kingdom v1.4.3 を Apple シリコン上でネイティブ実行する実験的移植。自分のゲームとソースビルドが必要で、iPhone でのプレイは未検証です。",
+          "requirements": "自分の本体から取り出した Switch のゲーム本体、v1.4.3 更新（.nsz）、対応する prod.keys が必要です。この版のみ対応。Apple シリコン Mac に完全な Xcode、コマンドラインツール、Homebrew、約 60 GB の空きが必要です。iPhone/iPad は iOS/iPadOS 26 以降、開発署名、デベロッパモード、USB、端末に約 25 GB の空きも必要。ゲーム、鍵、署名済みアプリ、派生シェーダーは配布しません。コードの許諾は任天堂のゲーム内容の権利を含みません。",
+          "availability": "実験的なソースビルドで正式 Releases はありません。作者は Apple シリコン Mac でのセーブ読み込みと場面のプレイを報告していますが、全編クリアは未検証です。M1 以降の iPad は原作解像度で 60 FPS を大きく下回り、実物のコントローラーも検証途中。iPhone 15 Pro は開発署名インストール、データ転送、キャッシュ済み起動でタイトル画面までのみ確認。プレイ、速度、メモリ、発熱は未測定で、iPhone 13 Pro を含む他機種は未テストです。新しい場面ではシェーダー生成で一時停止する場合があります。",
+          "platforms": "Apple シリコン Mac、M1+ iPad、iPhone 15 Pro · 実験段階",
+          "stage": "実験段階 · ソースビルド · 正式リリースなし"
+        },
+        "ko": {
+          "original": "젤다의 전설 티어스 오브 더 킹덤",
+          "summary": "Tears of the Kingdom v1.4.3을 Apple Silicon에서 네이티브 실행하는 실험적 이식입니다. 본인 게임과 소스 빌드가 필요하며 iPhone 실제 플레이는 검증되지 않았습니다.",
+          "requirements": "본인 콘솔에서 추출한 Switch 본편, v1.4.3 업데이트(.nsz), 해당 prod.keys가 필요합니다. 이 버전만 지원합니다. Apple Silicon Mac에 전체 Xcode, 명령줄 도구, Homebrew 및 약 60 GB 여유 공간을 준비해야 합니다. iPhone/iPad는 iOS/iPadOS 26 이상, 개발 서명, 개발자 모드, USB 및 기기 약 25 GB 여유 공간이 추가로 필요합니다. 저장소와 본 사이트는 게임 파일, 키, 서명 앱, 파생 셰이더 패키지를 제공하지 않습니다. 코드 라이선스는 Nintendo 게임 콘텐츠 권리를 포함하지 않습니다.",
+          "availability": "실험적 소스 빌드이며 정식 Releases는 없습니다. 제작자는 Apple Silicon Mac에서 저장 파일을 불러와 장면을 플레이했다고 보고했지만 전체 게임 완료는 검증하지 않았습니다. M1 이상 iPad는 원래 해상도에서 60 FPS보다 크게 낮고 외부 컨트롤러도 검증 중입니다. iPhone 15 Pro는 개발 서명 설치, 리소스 전송, 캐시가 있는 상태에서 타이틀 화면까지 실행만 확인했습니다. 플레이·프레임률·메모리·발열은 측정하지 않았으며 iPhone 13 Pro 등 다른 iPhone도 미시험입니다. 새 장면에서 셰이더 컴파일로 끊길 수 있습니다.",
+          "platforms": "Apple Silicon Mac; M1+ iPad; iPhone 15 Pro · 실험 단계",
+          "stage": "실험 단계 · 소스 빌드 · 정식 출시 없음"
+        },
+        "es": {
+          "original": "The Legend of Zelda: Tears of the Kingdom",
+          "summary": "Port nativo experimental de Tears of the Kingdom v1.4.3 para Apple silicon. Requiere tu juego y compilar el código; no se ha verificado jugar en iPhone.",
+          "requirements": "Necesitas tu juego de Switch, actualización v1.4.3 en .nsz y prod.keys correspondientes, extraídos de tu propia consola. Solo se admite esa versión. Prepara un Mac Apple silicon con Xcode completo, herramientas de línea de comandos, Homebrew y unos 60 GB libres. iPhone/iPad requiere además iOS/iPadOS 26+, firma de desarrollo, modo de desarrollador, USB y unos 25 GB libres en el dispositivo. El repositorio y esta ficha no proporcionan juegos, claves, apps firmadas ni paquetes de sombreadores derivados. La licencia del código no concede derechos sobre el contenido de Nintendo.",
+          "availability": "Compilación experimental desde código, sin Releases formales. El autor informa de cargar partidas y jugar escenas en Mac con Apple silicon; no ha validado completar el juego. Los iPad M1 o posteriores están muy por debajo de 60 FPS a resolución original; los mandos no están plenamente verificados. En iPhone 15 Pro solo se verificaron instalación con firma de desarrollo, transferencia de recursos y arranque con caché hasta la pantalla de título. No se han medido juego, FPS, memoria ni temperatura. Otros iPhone, incluido el 13 Pro, no están probados. Las escenas nuevas pueden dar tirones al compilar sombreadores.",
+          "platforms": "Mac Apple silicon; iPad M1+; iPhone 15 Pro · experimental",
+          "stage": "Experimental · compilación desde código · sin lanzamiento formal"
+        }
+      },
+      "start": "build_with_original_assets",
+      "start_url": "https://github.com/OJZen/totk-mobile/blob/main/docs/getting-started.md",
+      "code_license": "Original code: Apache-2.0 · reused components retain their own licenses",
+      "code_license_url": "https://github.com/OJZen/totk-mobile/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/OJZen/totk-mobile/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-20",
+      "official_url": "https://github.com/OJZen/totk-mobile",
+      "documentation_url": "https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md",
+      "site_url": "https://remakelist.com/remakes/totk-mobile/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/totk-mobile/",
+      "original_files": "original",
+      "author": "JZen (@JZennm)",
+      "author_url": "https://x.com/JZennm"
     }
   ],
-  "content_sha256": "d7a887f34c7ada7eb3dd801e779fbd921c8f4c5c32c84a196763984700bf2135"
+  "content_sha256": "fe7d6bdb93d5eb95e36e01c22b4149cd63e8a735a1bb766ee1933ad7dd83a455"
 }

@@ -28,7 +28,7 @@
 - [디자인·창작 도구](#creative) · 13
 - [일상 도구와 인터페이스 재현](#everyday) · 9
 - [게임 엔진과 게임 재구현](#classic_games) · 24
-- [이식·호환성 프로젝트](#ports) · 40
+- [이식·호환성 프로젝트](#ports) · 42
 
 <img src="assets/overview-ko.svg" alt="목차" width="920">
 
@@ -1227,6 +1227,30 @@ Majora’s Mask를 정적 재컴파일해 현대적 조작과 그래픽 옵션�
 
 </details>
 
+### [MacNativeGames · Tears of the Kingdom](https://github.com/ly05010419/MacNativeGames)
+
+본인의 Switch 파일로 Apple Silicon Mac 또는 iPhone/iPad용 Tears of the Kingdom 앱을 빌드합니다. 실험 단계이며 로컬 빌드와 기기 서명이 필요합니다.
+
+원작 또는 참고 대상: **젤다의 전설 티어스 오브 더 킹덤** · 플랫폼 호환 계층  
+[직접 빌드 · 게임 파일 직접 준비](https://github.com/ly05010419/MacNativeGames#build-the-app) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/zelda-totk-mac-research/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=zelda-totk-mac-research-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Apple Silicon Mac · macOS 26+; iPhone 14+ / iPad · iOS/iPadOS 26+
+
+**개발 상태:** 실험 단계 · 로컬 빌드 및 서명 · 정식 출시 없음
+
+**준비할 것:** 본인 콘솔에서 추출한 Switch v1.0.0 본편(XCI/NSP), 키, 시스템 파일이 필요합니다. Mac은 별도 v1.1.2·v1.2.1·v1.4.3 업데이트(NSP/NSZ)도 지원하며 iOS는 v1.4.3만 시험했습니다. Mac은 Apple Silicon, macOS 26+, Metal 4가 필요하고 RAM 16 GB를 권장합니다. 입력 게임 외에 본편 Mac 빌드 약 25 GB, APFS 복제를 못 하면 약 17 GB 추가, 새 업데이트 빌드는 약 40 GB가 필요합니다. iOS 빌드는 전체 Xcode 26+, iOS/iPadOS 26+, 휴대전화는 iPhone 14 이상과 메모리 상한 확장 권한을 유지한 서명이 필요합니다. 새 본편은 45 GB, 업데이트 포함은 60 GB를 확보하세요. 완성 앱은 게임 내용을 포함하며 개인용입니다. 본 사이트는 게임·키·펌웨어·서명 앱·파생 셰이더를 제공하지 않습니다.
+
+**현재 이용할 수 있는 것:** 소스 빌드가 필요하며 정식 Releases는 없습니다. 제작자가 M4 Mac 테스트 및 iPhone 14·A16 iPad에서 v1.4.3 플레이를 보고했으며 본 사이트 실측이 아닙니다. 이전 Mac의 캐시 준비 후 약 90 FPS는 관찰치로 전체 완료나 안정 성능을 보장하지 않습니다. iPhone 14는 약 4 GB를 사용하고 복잡한 구역에서 약 8분 후 iOS가 종료한 사례가 두 번 있습니다. iOS는 없는 셰이더로 인해 물체가 누락될 수 있고 Mac 새 장면에서도 끊길 수 있습니다. 온라인·amiibo는 미지원입니다.
+
+**코드 라이선스:** [Project code MIT · game rights and third-party licenses separate](https://github.com/ly05010419/MacNativeGames/blob/main/LICENSE)  
+**제작자:** Yong Li / liyong (@liyong2077)  
+[공식 문서](https://github.com/ly05010419/MacNativeGames/blob/b75be8cfa704df3701e86130c8ced268e79d6b11/README.md) · 자료 확인일: 2026-10-20
+
+</details>
+
 ### [Dusklight](https://github.com/TwilitRealm/dusklight)
 
 고해상도, 프레임 속도 설정, 내장 모드 탐색기를 지원하는 『황혼의 공주』 네이티브 이식판입니다.
@@ -2112,6 +2136,30 @@ Wind Waker HD의 Android 포크로 포르투갈어 번역과 터치 설정을 �
 **코드 라이선스:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **제작자:** seedds and contributors  
 [공식 문서](https://github.com/seedds/nxnative/blob/main/README.md) · 자료 확인일: 2026-10-20
+
+</details>
+
+### [Zelda-Mobile · Tears of the Kingdom](https://github.com/OJZen/totk-mobile)
+
+Tears of the Kingdom v1.4.3을 Apple Silicon에서 네이티브 실행하는 실험적 이식입니다. 본인 게임과 소스 빌드가 필요하며 iPhone 실제 플레이는 검증되지 않았습니다.
+
+원작 또는 참고 대상: **젤다의 전설 티어스 오브 더 킹덤** · 플랫폼 호환 계층  
+[직접 빌드 · 게임 파일 직접 준비](https://github.com/OJZen/totk-mobile/blob/main/docs/getting-started.md) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/totk-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=totk-mobile-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Apple Silicon Mac; M1+ iPad; iPhone 15 Pro · 실험 단계
+
+**개발 상태:** 실험 단계 · 소스 빌드 · 정식 출시 없음
+
+**준비할 것:** 본인 콘솔에서 추출한 Switch 본편, v1.4.3 업데이트(.nsz), 해당 prod.keys가 필요합니다. 이 버전만 지원합니다. Apple Silicon Mac에 전체 Xcode, 명령줄 도구, Homebrew 및 약 60 GB 여유 공간을 준비해야 합니다. iPhone/iPad는 iOS/iPadOS 26 이상, 개발 서명, 개발자 모드, USB 및 기기 약 25 GB 여유 공간이 추가로 필요합니다. 저장소와 본 사이트는 게임 파일, 키, 서명 앱, 파생 셰이더 패키지를 제공하지 않습니다. 코드 라이선스는 Nintendo 게임 콘텐츠 권리를 포함하지 않습니다.
+
+**현재 이용할 수 있는 것:** 실험적 소스 빌드이며 정식 Releases는 없습니다. 제작자는 Apple Silicon Mac에서 저장 파일을 불러와 장면을 플레이했다고 보고했지만 전체 게임 완료는 검증하지 않았습니다. M1 이상 iPad는 원래 해상도에서 60 FPS보다 크게 낮고 외부 컨트롤러도 검증 중입니다. iPhone 15 Pro는 개발 서명 설치, 리소스 전송, 캐시가 있는 상태에서 타이틀 화면까지 실행만 확인했습니다. 플레이·프레임률·메모리·발열은 측정하지 않았으며 iPhone 13 Pro 등 다른 iPhone도 미시험입니다. 새 장면에서 셰이더 컴파일로 끊길 수 있습니다.
+
+**코드 라이선스:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
+**제작자:** JZen (@JZennm)  
+[공식 문서](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · 자료 확인일: 2026-10-20
 
 </details>
 

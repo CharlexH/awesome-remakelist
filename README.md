@@ -28,7 +28,7 @@ Project names link to their authors’ sources. Expand an entry for device, game
 - [Creative tools](#creative) · 13
 - [Everyday tools and interface recreations](#everyday) · 9
 - [Game engines and recreations](#classic_games) · 24
-- [Ports and compatibility projects](#ports) · 40
+- [Ports and compatibility projects](#ports) · 42
 
 <img src="assets/overview-en.svg" alt="Overview" width="920">
 
@@ -1227,6 +1227,30 @@ Original or reference: **Majora’s Mask** · Static recompilation
 
 </details>
 
+### [MacNativeGames · Tears of the Kingdom](https://github.com/ly05010419/MacNativeGames)
+
+Build a native Tears of the Kingdom app for Apple silicon Mac or iPhone/iPad from your own Switch files. Experimental; local builds and signing are required.
+
+Original or reference: **The Legend of Zelda: Tears of the Kingdom** · Platform compatibility layer  
+[Build and supply your own game files](https://github.com/ly05010419/MacNativeGames#build-the-app) · [Browse RemakeList](https://remakelist.com/remakes/zelda-totk-mac-research/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=zelda-totk-mac-research-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Apple silicon Mac · macOS 26+; iPhone 14+ / iPad · iOS/iPadOS 26+
+
+**Status:** Experimental · local build and signing · no formal release
+
+**What you need:** Requires your own Switch base game v1.0.0 as XCI/NSP and your own keys/system files from your console. Mac can also use separate cumulative updates v1.1.2, v1.2.1 or v1.4.3 as NSP/NSZ; only v1.4.3 has been tested on iOS. Apple silicon Mac needs macOS 26+ with Metal 4; 16 GB RAM is recommended. A base Mac build needs about 25 GB beyond the input game, plus roughly 17 GB if APFS cloning cannot be used. A fresh updated Mac build needs about 40 GB. iOS builds need full Xcode 26+, iOS/iPadOS 26+, an iPhone 14 or newer for phones, and signing that retains the increased-memory entitlement; allow 45 GB for a fresh base build or 60 GB with an update. The generated app contains original game content: keep it for your own use. This listing supplies no games, keys, firmware, signed apps or derived shaders.
+
+**What is available:** Experimental source build with no formal Releases. The author reports Mac tests on M4 hardware and v1.4.3 gameplay on iPhone 14 and an A16 iPad; these are not RemakeList tests. Earlier Mac observations of roughly 90 FPS after warm-up are not a stable-performance or full-playthrough guarantee. iPhone 14 uses close to 4 GB and was closed by iOS twice at about eight minutes in busy areas. Missing iOS shader variants can leave objects invisible; new Mac scenes can stutter. Online features and amiibo are unsupported.
+
+**Code license:** [Project code MIT · game rights and third-party licenses separate](https://github.com/ly05010419/MacNativeGames/blob/main/LICENSE)  
+**Author:** Yong Li / liyong (@liyong2077)  
+[Official documentation](https://github.com/ly05010419/MacNativeGames/blob/b75be8cfa704df3701e86130c8ced268e79d6b11/README.md) · Sources reviewed: 2026-10-20
+
+</details>
+
 ### [Dusklight](https://github.com/TwilitRealm/dusklight)
 
 A native Twilight Princess port with higher resolutions, frame-rate options and a built-in mod browser.
@@ -2112,6 +2136,30 @@ Original or reference: **Nintendo Switch games** · Platform compatibility layer
 **Code license:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **Author:** seedds and contributors  
 [Official documentation](https://github.com/seedds/nxnative/blob/main/README.md) · Sources reviewed: 2026-10-20
+
+</details>
+
+### [Zelda-Mobile · Tears of the Kingdom](https://github.com/OJZen/totk-mobile)
+
+An experimental native Apple silicon port of Tears of the Kingdom v1.4.3. Build from source with your own game; iPhone gameplay is not verified.
+
+Original or reference: **The Legend of Zelda: Tears of the Kingdom** · Platform compatibility layer  
+[Build and supply your own game files](https://github.com/OJZen/totk-mobile/blob/main/docs/getting-started.md) · [Browse RemakeList](https://remakelist.com/remakes/totk-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=totk-mobile-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Apple silicon Mac; M1+ iPad; iPhone 15 Pro · experimental
+
+**Status:** Experimental · source build · no formal release
+
+**What you need:** Requires your own Switch base game, v1.4.3 update in .nsz format and matching prod.keys, dumped from your own console. Only v1.4.3 is supported. Prepare an Apple silicon Mac with full Xcode, command line tools, Homebrew and about 60 GB free. iPhone/iPad installation also needs iOS/iPadOS 26+, developer signing, Developer Mode, USB and about 25 GB free on the device. The repository and this listing provide no game files, keys, signed apps or derived shader packages. Code licensing does not grant rights to Nintendo game content.
+
+**What is available:** Experimental source build; no formal Releases. The author reports loading saves and playing scenes on Apple silicon Mac, but has not validated a full playthrough. M1-or-newer iPads run well below 60 FPS at original resolution; controller support is not fully verified. iPhone 15 Pro is verified only through installation, resource transfer and a warm launch to the title screen: gameplay, frame rate, memory and thermals are unmeasured. Other iPhones, including iPhone 13 Pro, are untested. New scenes may stutter while shaders compile.
+
+**Code license:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
+**Author:** JZen (@JZennm)  
+[Official documentation](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · Sources reviewed: 2026-10-20
 
 </details>
 

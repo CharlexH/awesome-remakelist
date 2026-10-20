@@ -28,7 +28,7 @@ Los nombres de los proyectos llevan a las fuentes de sus autores. Despliega cada
 - [Herramientas de diseño y creación](#creative) · 13
 - [Herramientas de uso diario y recreaciones de interfaces](#everyday) · 9
 - [Motores y recreaciones de juegos](#classic_games) · 24
-- [Adaptaciones y proyectos de compatibilidad](#ports) · 40
+- [Adaptaciones y proyectos de compatibilidad](#ports) · 42
 
 <img src="assets/overview-es.svg" alt="Índice" width="920">
 
@@ -1227,6 +1227,30 @@ Original o referencia: **Majora’s Mask** · Recompilación estática
 
 </details>
 
+### [MacNativeGames · Tears of the Kingdom](https://github.com/ly05010419/MacNativeGames)
+
+Crea una app nativa de Tears of the Kingdom para Mac Apple silicon o iPhone/iPad con tus archivos de Switch. Experimental; exige compilación local y firma del dispositivo.
+
+Original o referencia: **The Legend of Zelda: Tears of the Kingdom** · Capa de compatibilidad entre plataformas  
+[Compilar y aportar tus archivos del juego](https://github.com/ly05010419/MacNativeGames#build-the-app) · [Explorar RemakeList](https://remakelist.com/es/remakes/zelda-totk-mac-research/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=zelda-totk-mac-research-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Mac Apple silicon · macOS 26+; iPhone 14+ / iPad · iOS/iPadOS 26+
+
+**Estado:** Experimental · compilación y firma local · sin versión formal
+
+**Qué necesitas:** Requiere tu juego Switch base v1.0.0 en XCI/NSP y claves/archivos del sistema extraídos de tu consola. Mac admite actualizaciones separadas v1.1.2/v1.2.1/v1.4.3 en NSP/NSZ; solo v1.4.3 está probada en iOS. Mac Apple silicon con macOS 26+, Metal 4 y 16 GB RAM recomendados. Además del juego: unos 25 GB para la base Mac, 17 GB extra sin clonado APFS y 40 GB para una compilación nueva actualizada. iOS necesita Xcode 26 completo, iOS/iPadOS 26+, como mínimo iPhone 14 para teléfonos, y firma con permiso de memoria ampliada; reserva 45 GB para base nueva o 60 GB con actualización. La app contiene el juego y es solo para uso propio. No ofrecemos juegos, claves, firmware, apps firmadas ni sombreadores derivados.
+
+**Qué está disponible:** Compilación desde código sin Releases formales. El autor informa de pruebas en Mac M4 y de jugar v1.4.3 en iPhone 14 y un iPad A16; RemakeList no lo probó. Los antiguos 90 FPS aproximados con caché preparada en Mac no garantizan rendimiento estable ni completar el juego. iPhone 14 usa casi 4 GB y iOS lo cerró dos veces tras unos ocho minutos en zonas exigentes. En iOS pueden faltar objetos por sombreadores ausentes; nuevas escenas Mac pueden dar tirones. Sin online ni amiibo.
+
+**Licencia del código:** [Project code MIT · game rights and third-party licenses separate](https://github.com/ly05010419/MacNativeGames/blob/main/LICENSE)  
+**Autor:** Yong Li / liyong (@liyong2077)  
+[Documentación oficial](https://github.com/ly05010419/MacNativeGames/blob/b75be8cfa704df3701e86130c8ced268e79d6b11/README.md) · Fuentes revisadas: 2026-10-20
+
+</details>
+
 ### [Dusklight](https://github.com/TwilitRealm/dusklight)
 
 Una adaptación nativa de Twilight Princess con resoluciones superiores, opciones de fotogramas por segundo y un explorador de mods integrado.
@@ -2112,6 +2136,30 @@ Original o referencia: **Juegos de Nintendo Switch** · Capa de compatibilidad e
 **Licencia del código:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **Autor:** seedds and contributors  
 [Documentación oficial](https://github.com/seedds/nxnative/blob/main/README.md) · Fuentes revisadas: 2026-10-20
+
+</details>
+
+### [Zelda-Mobile · Tears of the Kingdom](https://github.com/OJZen/totk-mobile)
+
+Port nativo experimental de Tears of the Kingdom v1.4.3 para Apple silicon. Requiere tu juego y compilar el código; no se ha verificado jugar en iPhone.
+
+Original o referencia: **The Legend of Zelda: Tears of the Kingdom** · Capa de compatibilidad entre plataformas  
+[Compilar y aportar tus archivos del juego](https://github.com/OJZen/totk-mobile/blob/main/docs/getting-started.md) · [Explorar RemakeList](https://remakelist.com/es/remakes/totk-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=totk-mobile-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Mac Apple silicon; iPad M1+; iPhone 15 Pro · experimental
+
+**Estado:** Experimental · compilación desde código · sin lanzamiento formal
+
+**Qué necesitas:** Necesitas tu juego de Switch, actualización v1.4.3 en .nsz y prod.keys correspondientes, extraídos de tu propia consola. Solo se admite esa versión. Prepara un Mac Apple silicon con Xcode completo, herramientas de línea de comandos, Homebrew y unos 60 GB libres. iPhone/iPad requiere además iOS/iPadOS 26+, firma de desarrollo, modo de desarrollador, USB y unos 25 GB libres en el dispositivo. El repositorio y esta ficha no proporcionan juegos, claves, apps firmadas ni paquetes de sombreadores derivados. La licencia del código no concede derechos sobre el contenido de Nintendo.
+
+**Qué está disponible:** Compilación experimental desde código, sin Releases formales. El autor informa de cargar partidas y jugar escenas en Mac con Apple silicon; no ha validado completar el juego. Los iPad M1 o posteriores están muy por debajo de 60 FPS a resolución original; los mandos no están plenamente verificados. En iPhone 15 Pro solo se verificaron instalación con firma de desarrollo, transferencia de recursos y arranque con caché hasta la pantalla de título. No se han medido juego, FPS, memoria ni temperatura. Otros iPhone, incluido el 13 Pro, no están probados. Las escenas nuevas pueden dar tirones al compilar sombreadores.
+
+**Licencia del código:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
+**Autor:** JZen (@JZennm)  
+[Documentación oficial](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · Fuentes revisadas: 2026-10-20
 
 </details>
 
