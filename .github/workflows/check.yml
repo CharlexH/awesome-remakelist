@@ -1,0 +1,23 @@
+name: Check catalog
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: catalog-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Check schema, generated copy and links
+        run: python3 scripts/check.py
+      - name: Check source-change review guard
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'

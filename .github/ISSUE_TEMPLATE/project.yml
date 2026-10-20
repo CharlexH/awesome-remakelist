@@ -1,0 +1,45 @@
+name: Suggest a project / 推荐项目
+description: Share a public recreation, port, engine or functional alternative.
+title: '[Project] '
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project name and official URL / 项目名称与官方地址
+    validations:
+      required: true
+  - type: textarea
+    id: relationship
+    attributes:
+      label: Original product and relationship / 原作与项目关系
+      description: What is recreated, ported or replaced? A functional alternative need not be a remake.
+    validations:
+      required: true
+  - type: textarea
+    id: usability
+    attributes:
+      label: Platforms, stage and how to start / 平台、阶段与使用入口
+      description: Include an official release, browser demo or build guide. State experimental limits.
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Files, edition, account or signing requirements / 前置要求
+      description: Link to documentation. Do not attach game files, keys or packages.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: Code-license evidence / 代码许可来源
+      description: An official LICENSE or explicit statement; say unknown if not stated.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before submitting / 提交前确认
+      options:
+        - label: I checked for an existing entry and linked first-party sources without uploading third-party game materials.
+          required: true

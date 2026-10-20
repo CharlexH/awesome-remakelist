@@ -1,0 +1,23 @@
+name: Correct a listing / 内容纠错
+description: Report an outdated link, requirement, attribution, status or license.
+title: '[Correction] '
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project or listing URL / 项目或条目地址
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should change? / 哪些内容需要修正？
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Official evidence / 官方依据
+      description: Link to a release, README, license or author's announcement; distinguish reports from your own tests.
+    validations:
+      required: true
