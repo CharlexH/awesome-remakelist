@@ -27,7 +27,7 @@ Los nombres de los proyectos llevan a las fuentes de sus autores. Despliega cada
 
 - [Herramientas de diseño y creación](#creative) · 13
 - [Herramientas de uso diario y recreaciones de interfaces](#everyday) · 9
-- [Motores y recreaciones de juegos](#classic_games) · 25
+- [Motores y recreaciones de juegos](#classic_games) · 26
 - [Adaptaciones y proyectos de compatibilidad](#ports) · 42
 
 <img src="assets/overview-es.svg" alt="Índice" width="920">
@@ -1171,6 +1171,30 @@ Original o referencia: **Richman 4** · Reimplementación del juego
 **Licencia del código:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
 **Autor:** iam567 (Liang)  
 [Documentación oficial](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · Fuentes revisadas: 2026-10-20
+
+</details>
+
+### [Supermodel-VK](https://github.com/Igloo-Garage/Supermodel-VK)
+
+Bifurcación con mejoras Vulkan de Supermodel, emulador de las recreativas Sega Model 3. Gratis y de código abierto; requiere ROM de juegos obtenidas legalmente por el usuario.
+
+Original o referencia: **Arcade Sega Model 3 / Supermodel** · emulator-enhancement-fork  
+[Descargar y aportar tus archivos del juego](https://github.com/Igloo-Garage/Supermodel-VK/releases/latest) · [Explorar RemakeList](https://remakelist.com/es/remakes/supermodel-vk/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=supermodel-vk-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64, Linux x86-64 y macOS 11+ (Intel / Apple Silicon)
+
+**Estado:** Tiene una versión pública. v0.9.2 es solo un avance de la próxima versión. Linux y macOS cuentan con menos pruebas de uso real.
+
+**Qué necesitas:** No incluye ROM de juegos. El usuario debe aportar archivos ZIP de ROM Model 3 obtenidos legalmente. La licencia GPL del código no cubre los datos de los juegos, sus recursos gráficos ni las marcas comerciales.
+
+**Qué está disponible:** Hay versiones públicas para Windows, Linux y macOS: v0.9.0.3a-20261017. Según el autor, Linux y macOS están menos probados. La compilación macOS no está firmada ni notarizada, se inicia desde la terminal con ./supermodel y MoltenVK puede reducir su rendimiento. No lo hemos instalado ni ejecutado. La portada muestra la vista previa del autor de los ajustes superpuestos al juego en la futura v0.9.2, aún sin publicar; no garantiza que todas las funciones visibles estén en la versión actual.
+
+**Licencia del código:** [GPL-3.0-or-later · emulator code](https://github.com/Igloo-Garage/Supermodel-VK/blob/master/Docs/LICENSE.txt)  
+**Autor:** Igloo-Garage · upstream: The Supermodel Team  
+[Documentación oficial](https://github.com/Igloo-Garage/Supermodel-VK/blob/master/README.md) · Fuentes revisadas: 2026-10-20
 
 </details>
 

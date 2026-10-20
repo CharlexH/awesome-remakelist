@@ -27,7 +27,7 @@
 
 - [デザイン・制作ツール](#creative) · 13
 - [日常のツールとインターフェースの再現](#everyday) · 9
-- [ゲームエンジンとゲームの再実装](#classic_games) · 25
+- [ゲームエンジンとゲームの再実装](#classic_games) · 26
 - [移植・互換性プロジェクト](#ports) · 42
 
 <img src="assets/overview-ja.svg" alt="目次" width="920">
@@ -1171,6 +1171,30 @@ PCとスマートフォン向けの非公式『Richman 4（大富翁4）』リ�
 **コードのライセンス:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
 **作者:** iam567 (Liang)  
 [公式ドキュメント](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · 資料確認日: 2026-10-20
+
+</details>
+
+### [Supermodel-VK](https://github.com/Igloo-Garage/Supermodel-VK)
+
+Sega Model 3 アーケードエミュレーター Supermodel の Vulkan 強化フォーク。無料・オープンソースで、ゲーム ROM は合法的に別途用意する必要がある。
+
+原作・参考元: **Sega Model 3 アーケード／Supermodel** · emulator-enhancement-fork  
+[プログラムをダウンロード・ゲームデータは自分で用意](https://github.com/Igloo-Garage/Supermodel-VK/releases/latest) · [RemakeList を見る](https://remakelist.com/ja/remakes/supermodel-vk/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=supermodel-vk-ja)
+
+<details>
+<summary>必要条件とスクリーンショット</summary>
+
+**対応環境:** Windows 10/11 x64、Linux x86-64、macOS 11 以降（Intel／Apple Silicon）
+
+**開発状況:** 公開リリースあり。v0.9.2 は次期版のプレビューのみ。Linux と macOS は実環境での検証が比較的少ない。
+
+**必要なもの:** ゲーム ROM は含まれない。Model 3 ROM の ZIP ファイルを合法的に別途用意する必要がある。コードの GPL ライセンスはゲームデータ、アート素材、商標には適用されない。
+
+**現在利用できるもの:** Windows・Linux・macOS 向けの公開リリースは v0.9.0.3a-20261017。作者によると Linux／macOS は検証が少ない。macOS 版は未署名・未公証で、コマンドラインから ./supermodel で起動し、MoltenVK により性能が低下する場合がある。当サイトではインストール・動作確認を行っていない。カバーは作者による次期 v0.9.2 のゲーム内設定オーバーレイのプレビュー。v0.9.2 は未リリースで、画像内のすべての機能が現行版にあるとは限らない。
+
+**コードのライセンス:** [GPL-3.0-or-later · emulator code](https://github.com/Igloo-Garage/Supermodel-VK/blob/master/Docs/LICENSE.txt)  
+**作者:** Igloo-Garage · upstream: The Supermodel Team  
+[公式ドキュメント](https://github.com/Igloo-Garage/Supermodel-VK/blob/master/README.md) · 資料確認日: 2026-10-20
 
 </details>
 

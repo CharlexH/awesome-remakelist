@@ -27,7 +27,7 @@
 
 - [设计与创作工具](#creative) · 13
 - [日常工具与界面再现](#everyday) · 9
-- [游戏引擎与重制](#classic_games) · 25
+- [游戏引擎与重制](#classic_games) · 26
 - [移植与兼容项目](#ports) · 42
 
 <img src="assets/overview-zh-CN.svg" alt="目录" width="920">
@@ -1171,6 +1171,30 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 **代码许可:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
 **作者:** iam567 (Liang)  
 [官方文档](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · 资料核对日期: 2026-10-20
+
+</details>
+
+### [Supermodel-VK](https://github.com/Igloo-Garage/Supermodel-VK)
+
+面向世嘉 Model 3 街机游戏的 Supermodel 增强分支，加入 Vulkan 渲染、CRT 滤镜、宽屏和中英文设置界面。
+
+原作或参考对象: **世嘉 Model 3 街机 / Supermodel** · emulator-enhancement-fork  
+[下载程序并自备游戏文件](https://github.com/Igloo-Garage/Supermodel-VK/releases/latest) · [浏览 RemakeList](https://remakelist.com/zh/remakes/supermodel-vk/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=supermodel-vk-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10/11 x64 / Linux x86-64 / macOS 11+（Intel 与 Apple Silicon）
+
+**当前阶段:** 公开构建 v0.9.0.3a-20261017 · v0.9.2 仅预览 · 需自备 ROM
+
+**需要准备什么:** 不附游戏 ROM。需自行准备合法取得的世嘉 Model 3 ROM ZIP，并在启动器中选择所在目录。模拟器的 GPL 许可不涵盖游戏数据、美术或世嘉商标。Vulkan 需 1.3 驱动，或支持 dynamic rendering 与 synchronization2 的 1.2 驱动；另有 OpenGL 4.1 回退。
+
+**现在能用什么:** v0.9.0.3a-20261017 已提供 Windows、Linux 和 macOS 通用二进制压缩包。README 展示的 v0.9.2 尚属下一版预览；封面来自该预览，不代表当前发行版已包含图中全部功能。作者对 Linux/macOS 的测试较少。macOS 未经公证，需以 ./supermodel 启动，MoltenVK 可能影响性能。本站未安装或运行模拟器。
+
+**代码许可:** [GPL-3.0-or-later · emulator code](https://github.com/Igloo-Garage/Supermodel-VK/blob/master/Docs/LICENSE.txt)  
+**作者:** Igloo-Garage · upstream: The Supermodel Team  
+[官方文档](https://github.com/Igloo-Garage/Supermodel-VK/blob/master/README.md) · 资料核对日期: 2026-10-20
 
 </details>
 
