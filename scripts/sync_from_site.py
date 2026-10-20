@@ -1,167 +1,105 @@
 # SPDX-License-Identifier: MIT
-"""Refresh selected metadata from published RemakeList JSON and detail pages."""
-import argparse
+"""Mirror the reviewed catalog published by RemakeList; no separate editorial data."""
 import hashlib
 import json
+import os
 import re
 import sys
-from html.parser import HTMLParser
+import tempfile
 from pathlib import Path
+from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-ORIGIN = 'https://remakelist.com'
+FEED_URL = 'https://remakelist.com/catalog/github.json'
 
 
-def fetch(url):
-    request = Request(url, headers={'User-Agent': 'Mozilla/5.0 (compatible; RemakeListCatalog/1.0)'})
-    with urlopen(request, timeout=30) as response:
-        if response.status != 200:
-            raise ValueError(f'{url}: HTTP {response.status}')
-        return response.read().decode('utf-8')
+def digest(payload):
+    core = {key: value for key, value in payload.items() if key != 'content_sha256'}
+    return hashlib.sha256(json.dumps(core, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
 
 
-def read_module(text):
-    prefix = 'export const browserData='
-    if not text.startswith(prefix):
-        raise ValueError('Public catalog format changed; refusing to evaluate JavaScript')
-    value, end = json.JSONDecoder().raw_decode(text[len(prefix):])
-    if text[len(prefix) + end:].strip() != ';':
-        raise ValueError('Unexpected JavaScript after public JSON')
-    return value
+def validate_feed(data):
+    if data.get('schema_version') != 2 or data.get('publisher') != 'RemakeList' or data.get('source') != 'https://remakelist.com':
+        raise ValueError('Unexpected catalog schema or publisher')
+    if set(data) != {'schema_version', 'publisher', 'source', 'featured_ids', 'languages', 'projects', 'content_sha256'}:
+        raise ValueError('Unexpected catalog fields')
+    if data['content_sha256'] != digest(data):
+        raise ValueError('Catalog hash does not match its contents')
+    languages = ['en','zh-CN','ja','ko','es']
+    if data['languages'] != languages:
+        raise ValueError('The catalog must contain the supported five languages')
+    required = {'id','name','relationship','section','localized','start','start_url','code_license',
+                'code_license_url','code_license_sources','code_status','source_reviewed_at','official_url',
+                'documentation_url','site_url','site_url_zh','original_files','author','author_url'}
+    projects = data['projects']
+    if not isinstance(projects, list) or not 1 <= len(projects) <= 2000:
+        raise ValueError('Empty or oversized catalog')
+    seen = set()
+    for p in projects:
+        if set(p) != required:
+            raise ValueError(f'{p.get("id")}: unexpected or missing project fields')
+        key = p['id']
+        if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', key) or key in seen:
+            raise ValueError('Invalid or duplicate project ID')
+        seen.add(key)
+        for field in required - {'author_url','code_license_sources','localized'}:
+            if not isinstance(p[field], str) or not p[field].strip() or len(p[field]) > 20000:
+                raise ValueError(f'{key}: invalid {field}')
+        if set(p['localized']) != set(languages):
+            raise ValueError(f'{key}: incomplete language set')
+        for locale, copy in p['localized'].items():
+            if set(copy) != {'original','summary','requirements','availability','platforms','stage'} or not all(isinstance(v,str) and v.strip() and len(v)<20000 for v in copy.values()):
+                raise ValueError(f'{key}: incomplete {locale} copy')
+        for field in ['official_url','documentation_url','code_license_url','start_url','site_url','site_url_zh']:
+            url = urlparse(p[field])
+            if url.scheme != 'https' or not url.netloc or url.username or url.password:
+                raise ValueError(f'{key}: unsafe {field}')
+        for field, path in [('site_url',f'/remakes/{key}/'),('site_url_zh',f'/zh/remakes/{key}/')]:
+            url = urlparse(p[field])
+            if url.netloc != 'remakelist.com' or url.path != path or url.query:
+                raise ValueError(f'{key}: unexpected website destination')
+        if p['section'] not in {'creative','everyday','classic_games','ports'}:
+            raise ValueError(f'{key}: unknown section')
+        if p['code_status'] not in {'open','source_available','license_stated'}:
+            raise ValueError(f'{key}: ineligible code status')
+        if not isinstance(p['code_license_sources'], list) or p['code_license_url'] not in p['code_license_sources']:
+            raise ValueError(f'{key}: license evidence missing')
+    if not isinstance(data['featured_ids'], list) or not set(data['featured_ids']) <= seen:
+        raise ValueError('Featured projects must exist in the published catalog')
+    return data
 
 
-class Detail(HTMLParser):
-    def __init__(self):
-        super().__init__()
-        self.stack = []
-        self.text = []
-        self.links = []
-        self.date = None
-        self.dt_text = None
-        self.fact_key = None
-        self.in_dd = False
-        self.fact_links = {}
-        self.fact_text = {}
-
-    def handle_starttag(self, tag, attrs):
-        attrs = dict(attrs)
-        if tag == 'dt':
-            self.dt_text = []
-        elif tag == 'dd':
-            self.in_dd = True
-            self.fact_text[self.fact_key] = []
-        self.stack.append((tag, attrs)) if tag not in {'img', 'input', 'meta', 'link', 'br', 'hr'} else None
-        if tag == 'time' and not self.date:
-            self.date = attrs.get('datetime')
-        if tag == 'a':
-            self.links.append((attrs.get('href', ''), attrs.get('aria-label', '').removesuffix(' (opens in a new tab)')))
-            if self.in_dd:
-                self.fact_links.setdefault(self.fact_key, []).append(attrs.get('href', ''))
-
-    def handle_endtag(self, tag):
-        if tag == 'dt' and self.dt_text is not None:
-            self.fact_key = ''.join(self.dt_text).strip()
-            self.dt_text = None
-        elif tag == 'dd':
-            self.in_dd = False
-        for i in range(len(self.stack) - 1, -1, -1):
-            if self.stack[i][0] == tag:
-                del self.stack[i:]
-                break
-
-    def handle_data(self, text):
-        if self.dt_text is not None:
-            self.dt_text.append(text)
-        if self.in_dd:
-            self.fact_text[self.fact_key].append(text)
-        if self.stack and self.stack[-1][0] not in {'script', 'style'}:
-            self.text.append(text)
+def fetch_feed():
+    request = Request(FEED_URL, headers={'User-Agent':'Mozilla/5.0 (compatible; RemakeListCatalog/2.0)','Cache-Control':'no-cache'})
+    with urlopen(request, timeout=45) as response:
+        raw = response.read(8_000_001)
+        if len(raw) > 8_000_000:
+            raise ValueError('Catalog response too large')
+        return json.loads(raw)
 
 
-def code_status(license_text):
-    if re.search(r'Sustainable Use|PolyForm|non-commercial|noncommercial', license_text, re.I):
-        return 'source_available'
-    if re.search(r'MIT|Apache|GPL|MPL|BSD|ISC|CC0', license_text):
-        return 'open'
-    return 'unknown'
-
-
-def sync(accept_reviewed=False):
-    selection = json.loads((ROOT / 'data/selection.json').read_text())
-    path = ROOT / 'data/projects.json'
-    previous = {p['id']: p for p in json.loads(path.read_text())['projects']} if path.exists() else {}
-    en = read_module(fetch(ORIGIN + '/assets/data/en.mjs'))
-    zh = read_module(fetch(ORIGIN + '/assets/data/zh.mjs'))
-    items = {item['id']: item for item in en['items']}
-    projects = []
-    for chosen in selection['projects']:
-        key = chosen['id']
-        if key not in items:
-            raise ValueError(f'{key}: not in the published catalog')
-        item = items[key]
-        a, b = en['itemTranslations'][key], zh['itemTranslations'][key]
-        page = ORIGIN + '/remakes/' + item['slug'] + '/'
-        detail = Detail()
-        detail.feed(fetch(page))
-        if item['name'] not in ''.join(detail.text):
-            raise ValueError(f'{key}: page identity mismatch')
-        if not detail.date or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', detail.date):
-            raise ValueError(f'{key}: no source-review date')
-        source = next((url for url, label in detail.links if label == 'Source'), None)
-        docs = next((url for url, label in detail.links if label == 'Project documentation'), None)
-        license_urls = detail.fact_links.get('License', [])
-        license_url = license_urls[0] if license_urls else None
-        if not all((source, docs, license_url)):
-            raise ValueError(f'{key}: official source, docs or code-license link missing')
-        critical = {'public_item': item, 'en': a, 'zh': b, 'source': source, 'documentation': docs,
-                    'license_urls': license_urls, 'author': ''.join(detail.fact_text.get('Author', [])).strip()}
-        fingerprint = hashlib.sha256(json.dumps(critical, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
-        if key in previous and previous[key]['source_fingerprint'] != fingerprint and not accept_reviewed:
-            raise ValueError(f'{key}: published facts changed. Review the short copy and file requirements, '
-                             'then rerun with --accept-reviewed-source-changes. Prior data is unchanged.')
-        project = {
-            **chosen,
-            'name': item['name'],
-            'original_en': a['reference_en'],
-            'original_zh': b['reference_en'],
-            'relationship': item['relationship'],
-            'platforms_en': a['platform'],
-            'platforms_zh': b['platform'],
-            'start': item['experience_type'],
-            'start_url': item['experience_url'],
-            'stage_en': a.get('development_state_en') or chosen['stage_fallback_en'],
-            'stage_zh': b.get('development_state_en') or chosen['stage_fallback_zh'],
-            'code_license': a['license_en'],
-            'code_license_url': license_url,
-            'code_license_sources': license_urls,
-            'code_status': code_status(a['license_en']),
-            'source_requirements_en': a['assets_en'],
-            'source_requirements_zh': b['assets_en'],
-            'source_fingerprint': fingerprint,
-            'author': critical['author'],
-            'author_url': next(iter(detail.fact_links.get('Author', [])), None),
-            'official_url': source,
-            'documentation_url': docs,
-            'source_reviewed_at': detail.date,
-            'site_url': page,
-            'site_url_zh': ORIGIN + '/zh/remakes/' + item['slug'] + '/',
-        }
-        del project['stage_fallback_en'], project['stage_fallback_zh']
-        projects.append(project)
-        print('refreshed', key, flush=True)
-    payload = {'schema_version': 1, 'publisher': 'RemakeList', 'source': ORIGIN, 'projects': projects}
-    # Write only after every selected entry has passed; a failed fetch preserves the prior file.
-    (ROOT / 'data/projects.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n')
-    print(f'Refreshed {len(projects)} published entries. No software or game data downloaded.')
+def sync():
+    data = validate_feed(fetch_feed())
+    target = ROOT / 'data/projects.json'
+    content = json.dumps(data, ensure_ascii=False, indent=2) + '\n'
+    if target.exists() and target.read_text() == content:
+        print(f'Already current: {len(data["projects"])} projects · {data["content_sha256"]}')
+        return
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(mode='w',encoding='utf-8',dir=target.parent,prefix='.catalog-',suffix='.tmp',delete=False) as out:
+            temporary = out.name
+            out.write(content)
+        os.replace(temporary,target)
+    finally:
+        if temporary and os.path.exists(temporary):
+            os.unlink(temporary)
+    print(f'Synchronized {len(data["projects"])} published projects · {data["content_sha256"]}')
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--accept-reviewed-source-changes', action='store_true',
-                        help='Only after reviewing source differences and correcting selection copy')
-    args = parser.parse_args()
     try:
-        sync(args.accept_reviewed_source_changes)
+        sync()
     except Exception as error:
         sys.exit(str(error))

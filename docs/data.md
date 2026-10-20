@@ -1,36 +1,23 @@
-# Catalog data
+# One source, two presentations
 
-`data/projects.json` is the machine-readable edition of this selection. All text is UTF-8. `schema_version` changes when field meanings change.
+The website's published <https://remakelist.com/catalog/github.json> is the only editorial source for this public list. `data/projects.json` is a generated mirror, not a second editable database. The English, Simplified Chinese, Japanese, Korean and Spanish READMEs are generated from it. New eligible entries, updates and removals follow the website automatically.
 
-Each project has an ID, name, original reference, relationship, section, English/Chinese summary and requirements, platforms, starting route, development-stage text, code-license text and source URL, first-party documentation, official project URL, website paths and a source-review date.
+The website exports an explicit whitelist of public facts in the five supported languages. It never exports its source tree, internal editorial fields, credentials, original game assets or image files. The public GitHub list is narrower than the full website: it requires a public repository, stated license evidence and an actual browser, download or build route. Research reports, closed-source projects and unclear licenses remain out of this feed.
 
-`source_reviewed_at` is the date RemakeList checked the source material. It is not a runtime test, a last-commit date or a promise that a particular device works. `stage` is separate from the starting route: a downloadable project can still be an alpha. `original_files` distinguishes software that does not need an original installation, projects that need original data, and engines with a documented free/demo data route.
+## Contract
 
-The list intentionally includes functional alternatives alongside reimplementations. `independent_functional_alternative` means similar functionality, not copied code or proof of reverse engineering. `code_status` distinguishes open source from source-available code; project-specific license terms remain authoritative.
+`schema_version: 2`, `publisher`, `source`, `featured_ids`, `languages`, `projects`, `content_sha256` form the document. The hash covers the exact JSON payload excluding `content_sha256`, with compact UTF-8 serialization and preserved field order. The feed has no generated timestamp: unchanged editorial data must stay byte-stable.
 
-`data/selection.json` holds the human-reviewed selection, section and short copy. `scripts/sync_from_site.py` refreshes only those selected IDs from the publicly deployed website. A selected ID missing from production stops the sync. URLs in the READMEs add campaign parameters to RemakeList links; official project links remain direct.
+Each project includes its name, relationship, category group, code-license evidence, author, source-review date, official links and website URLs. Its `localized` block contains `original`, `summary`, `requirements`, `availability`, `platforms` and `stage` for each supported language. These strings come directly from the website translations. The status is separate from its starting route. Downloadable projects can be early or incomplete.
 
-No authentication, private repository access, API key or external Python package is needed to generate or check the list. No scheduled publishing is configured.
+`code_status` is the website's stated status; absent classification is `license_stated`, not an inferred open-source claim. `source_available` remains visibly distinct. Linked code licenses never license the commercial original's assets.
 
-## Original-file labels
+`original_files` uses the website's labels: `not_applicable` for software without an original installation requirement; `none` for a self-contained/free-data route; `original` for required original data; `optional` for an alternative free-data route; `demo` for a limited demo/shareware route; `acquired` for original assets fetched/imported through official setup. The full requirements and availability text govern specific editions and installation steps.
 
-- `not_applicable`: software tools that do not require an original application's installation files.
-- `none`: a complete game or a documented free replacement-data route needs no owned original copy.
-- `original`: the documented experience requires original commercial game files.
-- `optional`: a documented full freeware or replacement-data route also exists; read each game's terms.
-- `demo`: a legal, limited demo/shareware route exists; the full game still needs its own data.
-- `acquired`: the official setup can fetch or import required original assets; this does not relicense them.
+Source-review dates indicate a documentation check, not an installation test or a release date. Compatibility and performance claims remain attributable to their sources.
 
-The prose requirements are authoritative when a specific edition, extraction, signing or installation step matters. These categories are not legal permissions.
+## Synchronization
 
-## Reviewing upstream changes
+The `Sync published website catalog` workflow can be dispatched after a website deployment and checks the feed every six hours as a fallback. It validates the source, hash, fields and URLs; atomically replaces the snapshot; regenerates all localized lists and category charts; runs checks and tests; and commits only changed generated files. It uses a repository-scoped GitHub Actions token, not access to the private website repository. No external credentials are needed to fetch the feed.
 
-Each entry includes a fingerprint of its published source fields and first-party links. If a source changes, synchronization stops before writing the catalog. Review the differences, correct the short copy in `data/selection.json`, then explicitly run:
-
-```sh
-python3 scripts/sync_from_site.py --accept-reviewed-source-changes
-python3 scripts/build_readme.py
-python3 scripts/check.py
-```
-
-This flag records a maintainer's review; it does not perform one. Public metadata updates must not silently attach a new review date to stale requirements. Live-link validation confirms reachability and page identity, not installation or gameplay.
+A failed feed or validation preserves the previous snapshot and fails the workflow. Website publishing and GitHub sync are separate completion checks. A website release is not called synchronized until its live feed hash matches the public snapshot and the workflow succeeds.

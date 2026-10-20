@@ -1,37 +1,28 @@
 # Contributing
 
-Found a project worth trying, or a requirement we got wrong? Open a [project suggestion](https://github.com/CharlexH/awesome-remakelist/issues/new?template=project.yml) or a [correction](https://github.com/CharlexH/awesome-remakelist/issues/new?template=correction.yml). English and Chinese are both welcome.
+Found a project worth trying, or a requirement we got wrong? Open a [project suggestion](https://github.com/CharlexH/awesome-remakelist/issues/new?template=project.yml) or a [correction](https://github.com/CharlexH/awesome-remakelist/issues/new?template=correction.yml). English, Chinese, Japanese, Korean and Spanish are welcome.
 
 ## What belongs here
 
-A software or interface recreation, classic-game engine, source port, compatibility project, or clearly identified functional alternative. It must have a first-party project page and an actual public route to try, download or build it. Early projects are welcome when their limitations are clear. Wishlist ideas and private demonstrations without a public implementation are not catalog entries.
+Software and interface recreations, classic-game engines, source ports, compatibility projects and clearly labeled functional alternatives. This public list includes projects already reviewed on RemakeList, with a public repository, stated code-license evidence and a browser, download or build route. Research-only reports, closed-source entries and unclear licenses can remain on the website but are excluded from this list.
 
-Please provide:
+Please provide the official project URL, its original/reference product, what it recreates or replaces, supported platforms, current stage and a public route to start. Include official evidence for code licensing and any original-file, specific-edition, account, build or signing requirement. Do not attach commercial artwork, game files, keys or install packages. A suggestion is reviewed before inclusion.
 
-- The official project URL and the original product or game it relates to.
-- What it recreates or replaces; do not call an independent alternative a remake.
-- Supported platforms, current stage and the first step a user can actually take.
-- Code-license evidence, including source-available or unlicensed status where relevant.
-- Any original-file, edition, account, build or signing requirement, with an official source.
+## One editorial source
 
-Do not upload commercial artwork, game data, keys, install packages or other third-party materials. Link to the author's documentation instead. An issue is a suggestion, not a promise of inclusion.
+Project facts are maintained on **RemakeList only**. The website build exports its reviewed entries to <https://remakelist.com/catalog/github.json>. This repository mirrors that feed into `data/projects.json` and generates all five localized READMEs and category charts. Do not edit project facts in this repository: report corrections, and maintainers update the website before synchronizing them here. There is no separate selection or short-description file to maintain.
 
-## How updates work
+The sync workflow runs after a verified website publish when triggered by the release process, and checks the published feed every six hours as a fallback. Only a real data difference produces a commit; scheduled runs may be delayed. It can also be started from the repository's Actions page.
 
-RemakeList reviews suggestions and maintains the full directory. This repository is a curated selection of entries already published on the website. The selection and short English/Chinese summaries live in `data/selection.json`; published metadata and first-party sources are refreshed into `data/projects.json`.
-
-To correct selection copy or improve the generator, submit a PR. Maintainers review changes to factual claims against official sources; website corrections are handled before refreshing the public metadata. For a new project, start with an issue so it can be checked and added to the website first.
+PRs improving generation, validation, documentation or presentation are welcome:
 
 ```sh
 python3 scripts/sync_from_site.py
 python3 scripts/build_readme.py
 python3 scripts/check.py
+python3 -m unittest discover -s scripts -p 'test_*.py'
 ```
 
-The sync only reads public website text data. It does not download or build any listed software. It never imports the website source tree or unpublished entries. `scripts/check.py` is offline; `python3 scripts/check.py --live` additionally checks published RemakeList destinations. A blocked request must be reported as unverified, not silently counted as a working link.
+Sync reads one public JSON document and never imports a private website checkout. It validates the feed before replacing the snapshot, and fails without changing it when the feed is invalid or unavailable. Source-review dates come from the website; a link check does not change them. No listed software is downloaded, built, signed or tested by this process.
 
-The READMEs are generated from the two JSON files. Edit those files and regenerate, rather than editing generated project lists directly. Source review dates come from the website; a successful link check does not change them.
-
-## Reuse
-
-Original contributions use the licenses described in [NOTICE.md](NOTICE.md). Do not submit copied competitor descriptions or anything you cannot permit us to publish under those terms.
+Original contributions use the licenses in [NOTICE.md](NOTICE.md). Do not submit copied descriptions, competitor databases, artwork or other material you cannot permit us to publish under those terms.

@@ -1,145 +1,97 @@
 # SPDX-License-Identifier: MIT
-"""Generate the English and Chinese lists without third-party dependencies."""
+"""Generate localized READMEs and factual SVG overviews from the published feed."""
 import argparse
+import html
 import json
 from pathlib import Path
 from urllib.parse import urlencode
 
-ROOT = Path(__file__).resolve().parents[1]
-SECTIONS = {
-    'creative': ('Creative tools', '设计与创作工具'),
-    'everyday': ('Everyday tools and interface recreations', '办公工具与界面再现'),
-    'classic_games': ('Classic game engines and recreations', '经典游戏引擎与重制'),
-    'ports': ('Ports and compatibility projects', '移植与兼容项目'),
-}
-RELATIONS = {
-    'independent_functional_alternative': ('Functional alternative', '独立功能平替'),
-    'workflow-reimplementation': ('Workflow reimplementation', '工作流重实现'),
-    'web-reimplementation': ('Web reimplementation', '网页重实现'),
-    'interface-recreation': ('Interface recreation', '界面再现'),
-    'game-reimplementation': ('Game reimplementation', '游戏重实现'),
-    'engine-reimplementation': ('Engine reimplementation', '引擎重实现'),
-    'game-reimagining': ('Reimagining', '玩法再创作'),
-    'open-source-continuation': ('Open-source continuation', '开放源码续作'),
-    'static-recompilation': ('Static recompilation', '静态重编译'),
-    'platform-compatibility-reimplementation': ('Platform compatibility', '平台兼容层'),
-    'decompilation': ('Decompilation-based port', '基于反编译的移植'),
-}
-STARTS = {
-    'download': ('Download', '下载'), 'browser': ('Browser', '浏览器体验'),
-    'hosted_signup_or_self_host': ('Sign up / self-host', '注册体验／自托管'),
-    'download_with_original_assets': ('Download + own files', '下载程序＋自备文件'),
-    'build_with_original_assets': ('Build + own files', '自行构建＋自备文件'),
-    'development_build': ('Build', '自行构建'),
-}
+ROOT=Path(__file__).resolve().parents[1]
+SECTIONS=['creative','everyday','classic_games','ports']
 
 
-def clean(text):
-    return text.replace('\n', ' ').replace('[', '\\[').replace(']', '\\]').replace('<', '&lt;').replace('>', '&gt;')
+def copy():
+    return json.loads((ROOT/'scripts/readme-copy.json').read_text())
 
 
-def tracked(url, content):
-    return url + '?' + urlencode({'utm_source': 'github', 'utm_medium': 'repository', 'utm_campaign': 'awesome-remakelist', 'utm_content': content})
+def clean(value):
+    return html.escape(str(value).replace('\n',' '),quote=False).replace('[','\\[').replace(']','\\]').replace('|','\\|')
 
 
-def render(data, chinese=False):
-    lang = 1 if chinese else 0
-    suffix = 'zh' if chinese else 'en'
-    if chinese:
-        head = '''# Awesome RemakeList
+def tracked(url,content):
+    return url+'?'+urlencode({'utm_source':'github','utm_medium':'repository','utm_campaign':'awesome-remakelist','utm_content':content})
 
-软件重实现、经典游戏引擎、跨平台移植，以及明确标注的功能平替。由 [RemakeList](SITE) 整理。
 
-[English](README.md) · **简体中文** · [完整目录](DIRECTORY) · [推荐项目](https://github.com/CharlexH/awesome-remakelist/issues/new?template=project.yml)
+def site(p,locale):
+    prefix=copy()[locale]['prefix']
+    return 'https://remakelist.com/'+(prefix+'/' if prefix else '')+'remakes/'+p['id']+'/'
 
-每条都写明对应的原作、目前的阶段和开始前要准备的东西。先看清要求，再决定要不要动手。
 
-- 想直接体验：先看每条的「开始方式」。浏览器演示、下载和自行构建是不同路线。
-- 想玩老游戏：先看「需要什么」。免费引擎可能仍需自备特定版本的原版文件；演示数据通常只有部分内容。
-- 想继续了解：项目名直达官方来源，「要求与截图」进入 RemakeList。所有兼容性和功能说明均基于所引资料，不代表本站已经安装或试玩。
+def overview(data,locale):
+    u=copy()[locale];counts={key:sum(p['section']==key for p in data['projects']) for key in SECTIONS}
+    total=sum(counts.values());colors=['#24272a','#666b72','#9da3aa','#cbd0d5']
+    result=['<svg xmlns="http://www.w3.org/2000/svg" width="920" height="168" viewBox="0 0 920 168" role="img">',
+            '<title>'+html.escape(u['overview'])+'</title>',
+            '<rect x="0.5" y="0.5" width="919" height="167" rx="14" fill="#fafafa" stroke="#e1e4e8"/>',
+            f'<text x="26" y="34" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#24272a">{html.escape(u["overview"])}</text>',
+            f'<text x="894" y="34" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#666b72">{total} {html.escape(u["projects_count"])}</text>']
+    x=26
+    for i,key in enumerate(SECTIONS):
+        width=868*counts[key]/max(total,1)
+        result.append(f'<rect x="{x:.2f}" y="54" width="{width:.2f}" height="24" fill="{colors[i]}"/>');x+=width
+    for i,key in enumerate(SECTIONS):
+        x=26+(i%2)*444;y=108+(i//2)*32
+        result.extend([f'<rect x="{x}" y="{y-10}" width="10" height="10" rx="2" fill="{colors[i]}"/>',
+                       f'<text x="{x+18}" y="{y}" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#454a50">{html.escape(u["sections"][key])}</text>',
+                       f'<text x="{x+408}" y="{y}" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#24272a">{counts[key]}</text>'])
+    result.append('</svg>');return '\n'.join(result)+'\n'
 
-## 目录
 
-'''
-    else:
-        head = '''# Awesome RemakeList
-
-Software recreations, classic game engines, native ports, and clearly labeled functional alternatives. Curated by [RemakeList](SITE).
-
-**English** · [简体中文](README.zh-CN.md) · [Browse the directory](DIRECTORY) · [Suggest a project](https://github.com/CharlexH/awesome-remakelist/issues/new?template=project.yml)
-
-Find what a project recreates or replaces, where it runs, and what you need before getting started.
-
-- **Want to try something?** Check the starting route: a browser demo, a download and a personal build are different commitments.
-- **Looking for an old game?** Read the file requirement first. A free engine may need a specific original edition; demo data usually covers limited content.
-- **Need more detail?** Project names link directly to official sources. The accompanying RemakeList pages add screenshots and setup context. Compatibility and feature statements come from the cited sources, not a claim that we installed or played every project.
-
-## Contents
-
-'''
-    head = head.replace('SITE', tracked('https://remakelist.com/zh/' if chinese else 'https://remakelist.com/', 'intro-' + suffix)).replace('DIRECTORY', tracked('https://remakelist.com/zh/' if chinese else 'https://remakelist.com/', 'directory-' + suffix))
-    for _, labels in SECTIONS.items():
-        title = labels[lang]
-        # Explicit anchors keep links stable across both languages.
-        section = next(key for key, value in SECTIONS.items() if value == labels)
-        head += f'- [{title}](#{section})\n'
-    text = head
-    for section, labels in SECTIONS.items():
-        text += f'\n<a id="{section}"></a>\n\n## {labels[lang]}\n\n'
+def render(data,locale='en'):
+    labels=copy();u=labels[locale];prefix=u['prefix'];home='https://remakelist.com/'+(prefix+'/' if prefix else '')
+    home=tracked(home,'intro-'+locale)
+    text=f'<a href="{home}"><img src="assets/banner.svg" alt="RemakeList — software recreations and classic game ports" width="920"></a>\n\n# Awesome RemakeList\n\n{u["subtitle"]}\n\n'
+    text+=' · '.join('**'+v['name']+'**' if key==locale else '['+v['name']+']('+v['file']+')' for key,v in labels.items())+'\n\n'
+    text+=f'[{u["browse"]}]({home}) · [{u["suggest"]}](https://github.com/CharlexH/awesome-remakelist/issues/new?template=project.yml)\n\n'
+    for workflow,title in [('check.yml','Catalog checks'),('sync.yml','Website sync')]:
+        text+=f'[![{title}](https://github.com/CharlexH/awesome-remakelist/actions/workflows/{workflow}/badge.svg?branch=main)](https://github.com/CharlexH/awesome-remakelist/actions/workflows/{workflow}) '
+    text=text.rstrip()+'\n\n'+u['intro']+'\n\n'
+    text+=f'## {u["start_here"]}\n\n| {u["project"]} | {u["explore"]} | {u["start"]} |\n| --- | --- | --- |\n'
+    by_id={p['id']:p for p in data['projects']}
+    for key in data['featured_ids']:
+        p=by_id[key];t=p['localized'][locale]
+        text+=f'| [{clean(p["name"])}]({tracked(site(p,locale),key+"-featured-"+locale)}) | {clean(t["original"])} | [{u["starts"].get(p["start"],p["start"])}]({p["start_url"]}) |\n'
+    text+=f'\n## {u["browse_category"]}\n\n'
+    for section in SECTIONS:
+        count=sum(p['section']==section for p in data['projects']);text+=f'- [{u["sections"][section]}](#{section}) · {count}\n'
+    text+=f'\n<img src="assets/overview-{locale}.svg" alt="{html.escape(u["overview"],quote=True)}" width="920">\n'
+    for section in SECTIONS:
+        text+=f'\n<a id="{section}"></a>\n\n## {u["sections"][section]}\n\n'
         for p in data['projects']:
-            if p['section'] != section:
-                continue
-            original = clean(p['original_zh' if chinese else 'original_en'])
-            relation = RELATIONS[p['relationship']][lang]
-            start = STARTS[p['start']][lang]
-            platform = clean(p['platforms_zh' if chinese else 'platforms_en'])
-            stage = clean(p['stage_zh' if chinese else 'stage_en'])
-            summary = clean(p['summary_zh' if chinese else 'summary_en'])
-            requirements = clean(p['requirements_zh' if chinese else 'requirements_en'])
-            site = tracked(p['site_url_zh' if chinese else 'site_url'], p['id'] + '-' + suffix)
-            license_label = p['code_license'].split(';')[0].split(' · ')[0]
-            if 'Sustainable Use License 1.0' in p['code_license']:
-                license_label = 'Sustainable Use License 1.0'
-            status = ('源码可见；有限制许可' if chinese else 'source available; restricted license') if p['code_status'] == 'source_available' else ('代码许可' if chinese else 'code')
-            punctuation = '。' if chinese else '. '
-            text += f'- **[{clean(p["name"])}]({p["official_url"]})** — {original} · {relation}{punctuation}{summary}\n'
-            text += f'  <br>{"平台" if chinese else "Platforms"}: {platform} · {"开始方式" if chinese else "Start"}: [{start}]({p["start_url"]}) · {"现状" if chinese else "Status"}: {stage}\n'
-            text += f'  <br>{"需要什么" if chinese else "Needs"}: {requirements} · [{status}: {license_label}]({p["code_license_url"]}) · [{"要求与截图" if chinese else "Requirements & screenshots"}]({site})\n\n'
-    if chinese:
-        text += '''## 收录与纠错
-
-可以通过 Issue 推荐项目或修正资料，也可以提交 PR 改进清单。[贡献说明](CONTRIBUTING.md)列出了需要提供的来源。首批条目来自已发布的 RemakeList 目录；资料核对日期和官方文档保存在[结构化数据](data/projects.json)中。[数据说明](docs/data.md)
-
-这里同时收录功能平替、界面再现和游戏相关项目，不把它们都叫作「复刻」或「开源」。代码许可不等于原作素材许可；本仓库只提供清单，不提供游戏文件、密钥或安装包。
-
-原创清单文字采用 [CC BY 4.0](LICENSE)，生成脚本采用 [MIT](scripts/LICENSE)。各项目及第三方内容保留自己的许可，见[说明](NOTICE.md)。
-'''
-    else:
-        text += '''## Contribute and correct
-
-Suggest a project, report outdated information or improve the list through a PR. Read the [contribution guide](CONTRIBUTING.md) for the sources we need. This selection comes from the published RemakeList directory. Per-entry source-review dates and official documentation are available in the [structured catalog](data/projects.json). See the [data notes](docs/data.md).
-
-Functional alternatives, interface recreations and game projects are labeled separately. Not every entry is open source. A code license does not license the original game's assets; this repository supplies no game files, keys or install packages.
-
-Original list text: [CC BY 4.0](LICENSE). Generator scripts: [MIT](scripts/LICENSE). Listed projects and third-party material retain their own licenses; see [NOTICE](NOTICE.md).
-'''
+            if p['section']!=section:continue
+            t=p['localized'][locale];relation=u['relations'].get(p['relationship'],p['relationship'])
+            text+=f'### [{clean(p["name"])}]({p["official_url"]})\n\n{clean(t["summary"])}\n\n'
+            text+=f'{u["original"]}: **{clean(t["original"])}** · {clean(relation)}  \n'
+            text+=f'[{u["starts"].get(p["start"],p["start"])}]({p["start_url"]}) · [{u["browse"]}]({tracked(site(p,locale),p["id"]+"-"+locale)})\n\n'
+            text+=f'<details>\n<summary>{u["details"]}</summary>\n\n'
+            for field in ['platforms','status','needs','availability']:
+                source={'status':'stage','needs':'requirements'}.get(field,field);text+=f'**{u[field]}:** {clean(t[source])}\n\n'
+            text+=f'**{u["restricted"] if p["code_status"]=="source_available" else u["code"]}:** [{clean(p["code_license"])}]({p["code_license_url"]})  \n'
+            text+=f'**{u["author"]}:** {clean(p["author"])}  \n[{u["docs"]}]({p["documentation_url"]}) · {u["reviewed"]}: {p["source_reviewed_at"]}\n\n</details>\n\n'
+    text+=f'## {u["about"]}\n\n{u["about_text"]} [{u["data_notes"]}](docs/data.md)\n\n{u["scope_text"]}\n\n'
+    text+=u['contribute']+f' [{u["suggest"]}](CONTRIBUTING.md)\n\n'+u['rights']+'\n\n[CC BY 4.0](LICENSE) · [MIT](scripts/LICENSE) · [NOTICE](NOTICE.md)\n'
     return text
 
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--check', action='store_true')
-    args = parser.parse_args()
-    data = json.loads((ROOT / 'data/projects.json').read_text())
-    for name, chinese in [('README.md', False), ('README.zh-CN.md', True)]:
-        expected = render(data, chinese)
-        if args.check:
-            if (ROOT / name).read_text() != expected:
-                raise SystemExit(f'{name} is stale; run python3 scripts/build_readme.py')
-        else:
-            (ROOT / name).write_text(expected)
-    print('README generation check passed' if args.check else 'Generated English and Chinese READMEs')
+    parser=argparse.ArgumentParser();parser.add_argument('--check',action='store_true');args=parser.parse_args()
+    data=json.loads((ROOT/'data/projects.json').read_text())
+    for locale,u in copy().items():
+        for path,expected in [(ROOT/u['file'],render(data,locale)),(ROOT/f'assets/overview-{locale}.svg',overview(data,locale))]:
+            if args.check:
+                if path.read_text()!=expected:raise SystemExit(str(path.relative_to(ROOT))+' is stale; regenerate')
+            else:path.write_text(expected)
+    print('Generated catalog and charts for '+', '.join(copy()))
 
 
-if __name__ == '__main__':
-    main()
+if __name__=='__main__':main()

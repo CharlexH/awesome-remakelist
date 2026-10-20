@@ -1,0 +1,35 @@
+name: Sync published website catalog
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: published-catalog-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.repository == 'CharlexH/awesome-remakelist'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Fetch the reviewed production catalog
+        run: python3 scripts/sync_from_site.py
+      - name: Generate and check all language lists
+        run: |
+          python3 scripts/build_readme.py
+          python3 scripts/check.py
+          python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Commit only generated changes
+        run: |
+          git add data/projects.json README*.md assets/overview-*.svg
+          if git diff --cached --quiet; then
+            echo "Published catalog is already current."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Sync reviewed catalog from remakelist.com'
+          git push origin HEAD:main
