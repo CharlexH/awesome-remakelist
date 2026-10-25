@@ -28,7 +28,7 @@
 - [디자인·창작 도구](#creative) · 13
 - [일상 도구와 인터페이스 재현](#everyday) · 9
 - [게임 엔진과 게임 재구현](#classic_games) · 26
-- [이식·호환성 프로젝트](#ports) · 42
+- [이식·호환성 프로젝트](#ports) · 43
 
 <img src="assets/overview-ko.svg" alt="목차" width="920">
 
@@ -2208,6 +2208,30 @@ Tears of the Kingdom v1.4.3을 Apple Silicon에서 네이티브 실행하는 실
 **코드 라이선스:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
 **제작자:** JZen (@JZennm)  
 [공식 문서](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · 자료 확인일: 2026-10-20
+
+</details>
+
+### [Melee Unlocked](https://github.com/Hero88go/melee-unlocked)
+
+Slippi 온라인 대전과 고주사율 화면을 지원하는 Super Smash Bros. Melee의 네이티브 PC 포트입니다. NTSC 1.02 ISO를 직접 준비해야 합니다.
+
+원작 또는 참고 대상: **Super Smash Bros. Melee (NTSC 1.02)** · 플랫폼 호환 계층  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)
+
+**개발 상태:** 베타 v0.9.56 · Linux는 실험 단계 · ISO 별도 준비
+
+**준비할 것:** 합법적으로 취득한 원본 상태의 압축되지 않은 Super Smash Bros. Melee NTSC 1.02 ISO가 필요합니다. 원작 게임 데이터는 포함되지 않으며, 코드 라이선스는 게임 에셋에 적용되지 않습니다.
+
+**현재 이용할 수 있는 것:** v0.9.56은 Windows x64 패키지와 실험 단계의 Linux x86-64 패키지를 제공합니다. Linux에는 AVX2와 OpenGL 4.5가 필요하며, Static Recomp는 Windows 전용입니다. RemakeList는 빌드를 설치하거나 플레이하지 않았습니다.
+
+**코드 라이선스:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
+**제작자:** Hero88go / Melee Unlocked contributors  
+[공식 문서](https://github.com/Hero88go/melee-unlocked#readme) · 자료 확인일: 2026-10-25
 
 </details>
 

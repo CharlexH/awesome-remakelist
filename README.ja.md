@@ -28,7 +28,7 @@
 - [デザイン・制作ツール](#creative) · 13
 - [日常のツールとインターフェースの再現](#everyday) · 9
 - [ゲームエンジンとゲームの再実装](#classic_games) · 26
-- [移植・互換性プロジェクト](#ports) · 42
+- [移植・互換性プロジェクト](#ports) · 43
 
 <img src="assets/overview-ja.svg" alt="目次" width="920">
 
@@ -2208,6 +2208,30 @@ Tears of the Kingdom v1.4.3 を Apple シリコン上でネイティブ実行す
 **コードのライセンス:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
 **作者:** JZen (@JZennm)  
 [公式ドキュメント](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · 資料確認日: 2026-10-20
+
+</details>
+
+### [Melee Unlocked](https://github.com/Hero88go/melee-unlocked)
+
+Slippi のオンライン対戦と高リフレッシュレート表示に対応する Super Smash Bros. Melee のネイティブ PC 移植。NTSC 1.02 の ISO を自分で用意する必要があります。
+
+原作・参考元: **Super Smash Bros. Melee（NTSC 1.02）** · プラットフォーム互換レイヤー  
+[プログラムをダウンロード・ゲームデータは自分で用意](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56) · [RemakeList を見る](https://remakelist.com/ja/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-ja)
+
+<details>
+<summary>必要条件とスクリーンショット</summary>
+
+**対応環境:** Windows 10/11 x64 / Linux x86-64（AVX2、OpenGL 4.5）
+
+**開発状況:** ベータ v0.9.56 · Linux は実験段階 · ISO の用意が必要
+
+**必要なもの:** 正規に入手した、変更や圧縮のない Super Smash Bros. Melee NTSC 1.02 の ISO を用意してください。元のゲームデータは含まれず、コードのライセンスはゲーム素材には適用されません。
+
+**現在利用できるもの:** v0.9.56 は Windows x64 版と実験段階の Linux x86-64 版を提供。Linux には AVX2 と OpenGL 4.5 が必要です。Static Recomp は Windows 専用です。RemakeList はインストールやプレイによる検証を行っていません。
+
+**コードのライセンス:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
+**作者:** Hero88go / Melee Unlocked contributors  
+[公式ドキュメント](https://github.com/Hero88go/melee-unlocked#readme) · 資料確認日: 2026-10-25
 
 </details>
 

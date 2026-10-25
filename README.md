@@ -28,7 +28,7 @@ Project names link to their authors’ sources. Expand an entry for device, game
 - [Creative tools](#creative) · 13
 - [Everyday tools and interface recreations](#everyday) · 9
 - [Game engines and recreations](#classic_games) · 26
-- [Ports and compatibility projects](#ports) · 42
+- [Ports and compatibility projects](#ports) · 43
 
 <img src="assets/overview-en.svg" alt="Overview" width="920">
 
@@ -2208,6 +2208,30 @@ Original or reference: **The Legend of Zelda: Tears of the Kingdom** · Platform
 **Code license:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
 **Author:** JZen (@JZennm)  
 [Official documentation](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · Sources reviewed: 2026-10-20
+
+</details>
+
+### [Melee Unlocked](https://github.com/Hero88go/melee-unlocked)
+
+A native PC port of Super Smash Bros. Melee with Slippi online play and high-refresh presentation. Requires your own NTSC 1.02 ISO.
+
+Original or reference: **Super Smash Bros. Melee (NTSC 1.02)** · Platform compatibility layer  
+[Download and supply your own game files](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56) · [Browse RemakeList](https://remakelist.com/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)
+
+**Status:** Beta v0.9.56 · Linux experimental · own ISO required
+
+**What you need:** Supply a lawfully obtained, clean, uncompressed Super Smash Bros. Melee NTSC 1.02 ISO. No original game data is included; the code license does not cover the game's assets.
+
+**What is available:** v0.9.56 offers Windows x64 and experimental Linux x86-64 packages. Linux needs AVX2 and OpenGL 4.5; Static Recomp is Windows-only. RemakeList has not installed or played the builds.
+
+**Code license:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
+**Author:** Hero88go / Melee Unlocked contributors  
+[Official documentation](https://github.com/Hero88go/melee-unlocked#readme) · Sources reviewed: 2026-10-25
 
 </details>
 

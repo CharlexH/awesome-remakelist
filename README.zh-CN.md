@@ -28,7 +28,7 @@
 - [设计与创作工具](#creative) · 13
 - [日常工具与界面再现](#everyday) · 9
 - [游戏引擎与重制](#classic_games) · 26
-- [移植与兼容项目](#ports) · 42
+- [移植与兼容项目](#ports) · 43
 
 <img src="assets/overview-zh-CN.svg" alt="目录" width="920">
 
@@ -2208,6 +2208,30 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 **代码许可:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
 **作者:** JZen (@JZennm)  
 [官方文档](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · 资料核对日期: 2026-10-20
+
+</details>
+
+### [Melee Unlocked](https://github.com/Hero88go/melee-unlocked)
+
+Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新率画面；需自备 NTSC 1.02 ISO。
+
+原作或参考对象: **Super Smash Bros. Melee（NTSC 1.02）** · 平台兼容层  
+[下载程序并自备游戏文件](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56) · [浏览 RemakeList](https://remakelist.com/zh/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10/11 x64 / Linux x86-64（AVX2、OpenGL 4.5）
+
+**当前阶段:** Beta v0.9.56 · Linux 仍属实验阶段 · 需自备 ISO
+
+**需要准备什么:** 需自备合法取得、干净且未压缩的 Super Smash Bros. Melee NTSC 1.02 ISO。项目不附原版游戏数据；代码许可不涵盖游戏素材。
+
+**现在能用什么:** v0.9.56 提供 Windows x64 与实验性 Linux x86-64 下载包。Linux 需要 AVX2 和 OpenGL 4.5；Static Recomp 仅支持 Windows。本站未安装或试玩这些构建。
+
+**代码许可:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
+**作者:** Hero88go / Melee Unlocked contributors  
+[官方文档](https://github.com/Hero88go/melee-unlocked#readme) · 资料核对日期: 2026-10-25
 
 </details>
 

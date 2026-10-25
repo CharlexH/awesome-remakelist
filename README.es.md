@@ -28,7 +28,7 @@ Los nombres de los proyectos llevan a las fuentes de sus autores. Despliega cada
 - [Herramientas de diseño y creación](#creative) · 13
 - [Herramientas de uso diario y recreaciones de interfaces](#everyday) · 9
 - [Motores y recreaciones de juegos](#classic_games) · 26
-- [Adaptaciones y proyectos de compatibilidad](#ports) · 42
+- [Adaptaciones y proyectos de compatibilidad](#ports) · 43
 
 <img src="assets/overview-es.svg" alt="Índice" width="920">
 
@@ -2208,6 +2208,30 @@ Original o referencia: **The Legend of Zelda: Tears of the Kingdom** · Capa de 
 **Licencia del código:** [Original code: Apache-2.0 · reused components retain their own licenses](https://github.com/OJZen/totk-mobile/blob/main/LICENSE)  
 **Autor:** JZen (@JZennm)  
 [Documentación oficial](https://github.com/OJZen/totk-mobile/blob/510d95b8da159c0a7da467ad51b10a5a7c7ac133/README.md) · Fuentes revisadas: 2026-10-20
+
+</details>
+
+### [Melee Unlocked](https://github.com/Hero88go/melee-unlocked)
+
+Una adaptación nativa para PC de Super Smash Bros. Melee con juego en línea mediante Slippi y visualización a alta frecuencia de actualización. Requiere tu propia ISO NTSC 1.02.
+
+Original o referencia: **Super Smash Bros. Melee (NTSC 1.02)** · Capa de compatibilidad entre plataformas  
+[Descargar y aportar tus archivos del juego](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56) · [Explorar RemakeList](https://remakelist.com/es/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)
+
+**Estado:** Beta v0.9.56 · Linux experimental · requiere ISO propia
+
+**Qué necesitas:** Debes aportar una ISO de Super Smash Bros. Melee NTSC 1.02 obtenida legalmente, limpia y sin comprimir. No se incluyen datos del juego original; la licencia del código no cubre los recursos del juego.
+
+**Qué está disponible:** v0.9.56 ofrece paquetes para Windows x64 y paquetes experimentales para Linux x86-64. Linux requiere AVX2 y OpenGL 4.5; Static Recomp solo está disponible en Windows. RemakeList no ha instalado ni jugado estas compilaciones.
+
+**Licencia del código:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
+**Autor:** Hero88go / Melee Unlocked contributors  
+[Documentación oficial](https://github.com/Hero88go/melee-unlocked#readme) · Fuentes revisadas: 2026-10-25
 
 </details>
 

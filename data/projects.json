@@ -5789,7 +5789,71 @@
       "original_files": "original",
       "author": "Igloo-Garage · upstream: The Supermodel Team",
       "author_url": "https://github.com/Igloo-Garage"
+    },
+    {
+      "id": "melee-unlocked",
+      "name": "Melee Unlocked",
+      "relationship": "platform-compatibility-reimplementation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Super Smash Bros. Melee (NTSC 1.02)",
+          "summary": "A native PC port of Super Smash Bros. Melee with Slippi online play and high-refresh presentation. Requires your own NTSC 1.02 ISO.",
+          "requirements": "Supply a lawfully obtained, clean, uncompressed Super Smash Bros. Melee NTSC 1.02 ISO. No original game data is included; the code license does not cover the game's assets.",
+          "availability": "v0.9.56 offers Windows x64 and experimental Linux x86-64 packages. Linux needs AVX2 and OpenGL 4.5; Static Recomp is Windows-only. RemakeList has not installed or played the builds.",
+          "platforms": "Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)",
+          "stage": "Beta v0.9.56 · Linux experimental · own ISO required"
+        },
+        "zh-CN": {
+          "original": "Super Smash Bros. Melee（NTSC 1.02）",
+          "summary": "Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新率画面；需自备 NTSC 1.02 ISO。",
+          "requirements": "需自备合法取得、干净且未压缩的 Super Smash Bros. Melee NTSC 1.02 ISO。项目不附原版游戏数据；代码许可不涵盖游戏素材。",
+          "availability": "v0.9.56 提供 Windows x64 与实验性 Linux x86-64 下载包。Linux 需要 AVX2 和 OpenGL 4.5；Static Recomp 仅支持 Windows。本站未安装或试玩这些构建。",
+          "platforms": "Windows 10/11 x64 / Linux x86-64（AVX2、OpenGL 4.5）",
+          "stage": "Beta v0.9.56 · Linux 仍属实验阶段 · 需自备 ISO"
+        },
+        "ja": {
+          "original": "Super Smash Bros. Melee（NTSC 1.02）",
+          "summary": "Slippi のオンライン対戦と高リフレッシュレート表示に対応する Super Smash Bros. Melee のネイティブ PC 移植。NTSC 1.02 の ISO を自分で用意する必要があります。",
+          "requirements": "正規に入手した、変更や圧縮のない Super Smash Bros. Melee NTSC 1.02 の ISO を用意してください。元のゲームデータは含まれず、コードのライセンスはゲーム素材には適用されません。",
+          "availability": "v0.9.56 は Windows x64 版と実験段階の Linux x86-64 版を提供。Linux には AVX2 と OpenGL 4.5 が必要です。Static Recomp は Windows 専用です。RemakeList はインストールやプレイによる検証を行っていません。",
+          "platforms": "Windows 10/11 x64 / Linux x86-64（AVX2、OpenGL 4.5）",
+          "stage": "ベータ v0.9.56 · Linux は実験段階 · ISO の用意が必要"
+        },
+        "ko": {
+          "original": "Super Smash Bros. Melee (NTSC 1.02)",
+          "summary": "Slippi 온라인 대전과 고주사율 화면을 지원하는 Super Smash Bros. Melee의 네이티브 PC 포트입니다. NTSC 1.02 ISO를 직접 준비해야 합니다.",
+          "requirements": "합법적으로 취득한 원본 상태의 압축되지 않은 Super Smash Bros. Melee NTSC 1.02 ISO가 필요합니다. 원작 게임 데이터는 포함되지 않으며, 코드 라이선스는 게임 에셋에 적용되지 않습니다.",
+          "availability": "v0.9.56은 Windows x64 패키지와 실험 단계의 Linux x86-64 패키지를 제공합니다. Linux에는 AVX2와 OpenGL 4.5가 필요하며, Static Recomp는 Windows 전용입니다. RemakeList는 빌드를 설치하거나 플레이하지 않았습니다.",
+          "platforms": "Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)",
+          "stage": "베타 v0.9.56 · Linux는 실험 단계 · ISO 별도 준비"
+        },
+        "es": {
+          "original": "Super Smash Bros. Melee (NTSC 1.02)",
+          "summary": "Una adaptación nativa para PC de Super Smash Bros. Melee con juego en línea mediante Slippi y visualización a alta frecuencia de actualización. Requiere tu propia ISO NTSC 1.02.",
+          "requirements": "Debes aportar una ISO de Super Smash Bros. Melee NTSC 1.02 obtenida legalmente, limpia y sin comprimir. No se incluyen datos del juego original; la licencia del código no cubre los recursos del juego.",
+          "availability": "v0.9.56 ofrece paquetes para Windows x64 y paquetes experimentales para Linux x86-64. Linux requiere AVX2 y OpenGL 4.5; Static Recomp solo está disponible en Windows. RemakeList no ha instalado ni jugado estas compilaciones.",
+          "platforms": "Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)",
+          "stage": "Beta v0.9.56 · Linux experimental · requiere ISO propia"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56",
+      "code_license": "GPL-3.0-or-later · port code; third-party components keep their own terms.",
+      "code_license_url": "https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-25",
+      "official_url": "https://github.com/Hero88go/melee-unlocked",
+      "documentation_url": "https://github.com/Hero88go/melee-unlocked#readme",
+      "site_url": "https://remakelist.com/remakes/melee-unlocked/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/melee-unlocked/",
+      "original_files": "original",
+      "author": "Hero88go / Melee Unlocked contributors",
+      "author_url": "https://github.com/Hero88go"
     }
   ],
-  "content_sha256": "e1dec367e0113c4a3403ad53e19e1197e3840f1cf251ba19ff9de10bf2bc4ffc"
+  "content_sha256": "e6e380c38b2f0d7f4e2da3657acee9a45eef4faae76ed98280574638d557a3b1"
 }
