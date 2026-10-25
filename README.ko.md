@@ -28,7 +28,7 @@
 - [디자인·창작 도구](#creative) · 13
 - [일상 도구와 인터페이스 재현](#everyday) · 9
 - [게임 엔진과 게임 재구현](#classic_games) · 26
-- [이식·호환성 프로젝트](#ports) · 43
+- [이식·호환성 프로젝트](#ports) · 45
 
 <img src="assets/overview-ko.svg" alt="목차" width="920">
 
@@ -2232,6 +2232,54 @@ Slippi 온라인 대전과 고주사율 화면을 지원하는 Super Smash Bros.
 **코드 라이선스:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
 **제작자:** Hero88go / Melee Unlocked contributors  
 [공식 문서](https://github.com/Hero88go/melee-unlocked#readme) · 자료 확인일: 2026-10-25
+
+</details>
+
+### [Brawl Recompiled](https://github.com/josiahg2502-glitch/BrawlRecompiled)
+
+정적 재컴파일로 만든 Super Smash Bros. Brawl의 Windows 및 Linux용 네이티브 PC 포트입니다. USA RSBE01 revision 1 디스크 이미지를 직접 준비해야 합니다.
+
+원작 또는 참고 대상: **Super Smash Bros. Brawl (Wii, USA RSBE01 revision 1)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/josiahg2502-glitch/BrawlRecompiled/releases/tag/v0.4.0) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/brawl-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=brawl-recompiled-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows / Linux 64비트 (glibc 2.35+, Vulkan)
+
+**개발 상태:** 개발 중 · v0.4.0 · 원본 디스크 이미지 필요
+
+**준비할 것:** 합법적으로 취득한 Brawl 디스크 이미지를 직접 준비해야 합니다. 지원 버전은 USA, RSBE01, revision 1이며 형식은 ISO, CISO 또는 WBFS입니다. 추출에 약 7 GB가 필요합니다. RVZ, WIA, GCZ, NKit 이미지는 먼저 일반 ISO로 변환하세요. RemakeList는 디스크 이미지를 제공하지 않습니다.
+
+**현재 이용할 수 있는 것:** v0.4.0은 Windows와 Linux 패키지를 제공합니다. Linux는 64비트 시스템, glibc 2.35 이상, Vulkan 드라이버가 필요합니다. 제작자는 VS 대전이 작동한다고 보고했지만, Classic과 Subspace는 초반만 테스트했습니다. RemakeList는 이 빌드를 설치하거나 플레이하지 않았습니다.
+
+**코드 라이선스:** [GPLv3 · project code only; original game artwork and third-party components have separate rights and terms.](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/wiicompiled/LICENSE)  
+**제작자:** JosiahG  
+[공식 문서](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/README.md) · 자료 확인일: 2026-10-25
+
+</details>
+
+### [Splinter Cell: Double Agent — Xbox Recomp](https://github.com/TGP482/SCDA-XBERecomp)
+
+초대 Xbox용 Splinter Cell: Double Agent를 Windows로 옮긴 네이티브 이식판입니다. 키보드·마우스, 해상도와 프레임 조절, 협동 플레이를 지원하며 자신의 Xbox 게임 파일이 필요합니다.
+
+원작 또는 참고 대상: **Splinter Cell: Double Agent (original Xbox, 2006)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/TGP482/SCDA-XBERecomp/releases/tag/V2) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/scda-xbe-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=scda-xbe-recomp-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows 10+ x64 · Direct3D 12
+
+**개발 상태:** V2 릴리스 · 초대 Xbox 파일 필요
+
+**준비할 것:** 직접 적법하게 구한 초대 Xbox용 Double Agent가 필요합니다. 배포판은 ISO 또는 추출한 파일을 받으며 default.xbe, sc4_adv.xbe와 Default, Media, adv 폴더를 함께 두세요. 소스 빌드에는 추출한 파일이 필요합니다. PC 및 Xbox 360 파일로 대체할 수 없으며 게임 리소스는 포함되지 않습니다.
+
+**현재 이용할 수 있는 것:** V2의 SCDA-XBERecomp.zip을 풀고 자신의 ISO 또는 추출한 게임 파일을 assets에 넣은 다음 SCDA.exe를 실행하세요. 첫 실행 시 게임 코드를 로컬에서 컴파일합니다. Windows 10+ x64, Direct3D 12 GPU, SSE4.2와 POPCNT를 지원하는 2코어 CPU, 4 GB RAM 및 약 6 GB 공간이 필요합니다.
+
+**코드 라이선스:** [MIT for the project code; original game content and third-party components retain their own rights.](https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE)  
+**제작자:** TGP482  
+[공식 문서](https://github.com/TGP482/SCDA-XBERecomp#readme) · 자료 확인일: 2026-10-25
 
 </details>
 

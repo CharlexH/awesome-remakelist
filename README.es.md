@@ -28,7 +28,7 @@ Los nombres de los proyectos llevan a las fuentes de sus autores. Despliega cada
 - [Herramientas de diseño y creación](#creative) · 13
 - [Herramientas de uso diario y recreaciones de interfaces](#everyday) · 9
 - [Motores y recreaciones de juegos](#classic_games) · 26
-- [Adaptaciones y proyectos de compatibilidad](#ports) · 43
+- [Adaptaciones y proyectos de compatibilidad](#ports) · 45
 
 <img src="assets/overview-es.svg" alt="Índice" width="920">
 
@@ -2232,6 +2232,54 @@ Original o referencia: **Super Smash Bros. Melee (NTSC 1.02)** · Capa de compat
 **Licencia del código:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
 **Autor:** Hero88go / Melee Unlocked contributors  
 [Documentación oficial](https://github.com/Hero88go/melee-unlocked#readme) · Fuentes revisadas: 2026-10-25
+
+</details>
+
+### [Brawl Recompiled](https://github.com/josiahg2502-glitch/BrawlRecompiled)
+
+Una adaptación nativa para PC de Super Smash Bros. Brawl para Windows y Linux, creada mediante recompilación estática. Requiere tu propia imagen de disco USA RSBE01 revision 1.
+
+Original o referencia: **Super Smash Bros. Brawl (Wii, USA RSBE01 revision 1)** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/josiahg2502-glitch/BrawlRecompiled/releases/tag/v0.4.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/brawl-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=brawl-recompiled-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows / Linux de 64 bits (glibc 2.35+, Vulkan)
+
+**Estado:** En desarrollo · v0.4.0 · requiere imagen del disco original
+
+**Qué necesitas:** Requiere tu propia imagen de disco de Brawl obtenida legalmente: USA, RSBE01, revision 1 (ISO, CISO o WBFS). La extracción necesita unos 7 GB. Convierte primero las imágenes RVZ, WIA, GCZ o NKit a ISO estándar. RemakeList no proporciona imágenes de disco.
+
+**Qué está disponible:** v0.4.0 ofrece paquetes para Windows y Linux. Linux requiere un entorno de 64 bits con glibc 2.35 o posterior y controladores Vulkan. El autor indica que los combates VS funcionan; Classic y Subspace solo se han probado al inicio. RemakeList no ha instalado ni jugado estas compilaciones.
+
+**Licencia del código:** [GPLv3 · project code only; original game artwork and third-party components have separate rights and terms.](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/wiicompiled/LICENSE)  
+**Autor:** JosiahG  
+[Documentación oficial](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/README.md) · Fuentes revisadas: 2026-10-25
+
+</details>
+
+### [Splinter Cell: Double Agent — Xbox Recomp](https://github.com/TGP482/SCDA-XBERecomp)
+
+Port nativo para Windows de Splinter Cell: Double Agent de Xbox original. Añade teclado y ratón, resolución y FPS ajustables y juego cooperativo; requiere tus propios archivos de Xbox.
+
+Original o referencia: **Splinter Cell: Double Agent (original Xbox, 2006)** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/TGP482/SCDA-XBERecomp/releases/tag/V2) · [Explorar RemakeList](https://remakelist.com/es/remakes/scda-xbe-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=scda-xbe-recomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10+ x64 · Direct3D 12
+
+**Estado:** Versión V2 · requiere archivos de Xbox original
+
+**Qué necesitas:** Tu propia copia obtenida legalmente de Double Agent para Xbox original. La versión descargable acepta ISO o archivos extraídos: default.xbe y sc4_adv.xbe junto a las carpetas Default, Media y adv. Compilar desde el código requiere archivos extraídos. Los archivos de PC o Xbox 360 no sirven como sustitutos. No se incluyen recursos del juego.
+
+**Qué está disponible:** Descarga V2, extrae SCDA-XBERecomp.zip y coloca tu ISO o los archivos extraídos del juego en assets. Ejecuta SCDA.exe; el primer inicio compila el código localmente. Necesitas Windows 10+ x64, GPU Direct3D 12, CPU de 2 núcleos con SSE4.2 y POPCNT, 4 GB de RAM y unos 6 GB de espacio.
+
+**Licencia del código:** [MIT for the project code; original game content and third-party components retain their own rights.](https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE)  
+**Autor:** TGP482  
+[Documentación oficial](https://github.com/TGP482/SCDA-XBERecomp#readme) · Fuentes revisadas: 2026-10-25
 
 </details>
 

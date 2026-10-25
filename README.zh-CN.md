@@ -28,7 +28,7 @@
 - [设计与创作工具](#creative) · 13
 - [日常工具与界面再现](#everyday) · 9
 - [游戏引擎与重制](#classic_games) · 26
-- [移植与兼容项目](#ports) · 43
+- [移植与兼容项目](#ports) · 45
 
 <img src="assets/overview-zh-CN.svg" alt="目录" width="920">
 
@@ -2232,6 +2232,54 @@ Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新�
 **代码许可:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
 **作者:** Hero88go / Melee Unlocked contributors  
 [官方文档](https://github.com/Hero88go/melee-unlocked#readme) · 资料核对日期: 2026-10-25
+
+</details>
+
+### [Brawl Recompiled](https://github.com/josiahg2502-glitch/BrawlRecompiled)
+
+通过静态重编译实现的 Super Smash Bros. Brawl 原生 PC 移植，提供 Windows 和 Linux 版本；需自备美版 USA RSBE01 revision 1 光盘镜像。
+
+原作或参考对象: **Super Smash Bros. Brawl（Wii，美版 USA RSBE01 revision 1）** · 静态重编译  
+[下载程序并自备游戏文件](https://github.com/josiahg2502-glitch/BrawlRecompiled/releases/tag/v0.4.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/brawl-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=brawl-recompiled-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows / Linux 64 位（glibc 2.35+、Vulkan）
+
+**当前阶段:** 开发中 · v0.4.0 · 需自备原版光盘镜像
+
+**需要准备什么:** 需自备合法取得的 Brawl 光盘镜像：美版 USA、RSBE01、revision 1，格式为 ISO、CISO 或 WBFS。解包约需 7 GB 空间；RVZ、WIA、GCZ 或 NKit 镜像需先转换为普通 ISO。RemakeList 不提供光盘镜像。
+
+**现在能用什么:** v0.4.0 提供 Windows 和 Linux 下载包。Linux 要求 64 位系统、glibc 2.35 或更新版本及 Vulkan 驱动。作者报告 VS 对战可运行，Classic 与 Subspace 仅测试到开头；本站未安装或试玩这些构建。
+
+**代码许可:** [GPLv3 · project code only; original game artwork and third-party components have separate rights and terms.](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/wiicompiled/LICENSE)  
+**作者:** JosiahG  
+[官方文档](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/README.md) · 资料核对日期: 2026-10-25
+
+</details>
+
+### [Splinter Cell: Double Agent — Xbox Recomp](https://github.com/TGP482/SCDA-XBERecomp)
+
+将原版 Xbox《细胞分裂：双重间谍》带到 Windows 的原生移植，加入键鼠操作、分辨率与帧率调整及合作模式；需自备 Xbox 游戏文件。
+
+原作或参考对象: **细胞分裂：双重间谍（2006 原版 Xbox）** · 静态重编译  
+[下载程序并自备游戏文件](https://github.com/TGP482/SCDA-XBERecomp/releases/tag/V2) · [浏览 RemakeList](https://remakelist.com/zh/remakes/scda-xbe-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=scda-xbe-recomp-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10+ x64 · Direct3D 12
+
+**当前阶段:** V2 正式版 · 需原版 Xbox 文件
+
+**需要准备什么:** 需自备合法取得的原版 Xbox《双重间谍》。发行包可读取 ISO 或提取后的文件；default.xbe、sc4_adv.xbe 需与 Default、Media、adv 文件夹放在一起。源码构建仅接受提取后的文件。PC 和 Xbox 360 版文件不能替代，下载内容不含游戏素材。
+
+**现在能用什么:** 下载 V2 并解压 SCDA-XBERecomp.zip，将自备 ISO 或提取后的游戏文件放入 assets，再运行 SCDA.exe；首次启动会在本机编译游戏代码。需 Windows 10+ x64、Direct3D 12 显卡、支持 SSE4.2 与 POPCNT 的双核处理器、4 GB 内存及约 6 GB 空间。
+
+**代码许可:** [MIT for the project code; original game content and third-party components retain their own rights.](https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE)  
+**作者:** TGP482  
+[官方文档](https://github.com/TGP482/SCDA-XBERecomp#readme) · 资料核对日期: 2026-10-25
 
 </details>
 

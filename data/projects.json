@@ -5853,7 +5853,135 @@
       "original_files": "original",
       "author": "Hero88go / Melee Unlocked contributors",
       "author_url": "https://github.com/Hero88go"
+    },
+    {
+      "id": "brawl-recompiled",
+      "name": "Brawl Recompiled",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Super Smash Bros. Brawl (Wii, USA RSBE01 revision 1)",
+          "summary": "A native PC port of Super Smash Bros. Brawl for Windows and Linux, built through static recompilation. Requires your own USA RSBE01 revision 1 disc image.",
+          "requirements": "Requires your own lawfully obtained Brawl disc image: USA, RSBE01, revision 1 (ISO, CISO or WBFS). Extraction needs about 7 GB. Convert RVZ, WIA, GCZ or NKit images to plain ISO first. RemakeList does not provide disc images.",
+          "availability": "v0.4.0 offers Windows and Linux packages. Linux requires 64-bit glibc 2.35 or newer and Vulkan drivers. The author reports working VS matches; Classic and Subspace have only been tested at their start. RemakeList has not installed or played these builds.",
+          "platforms": "Windows / Linux 64-bit (glibc 2.35+, Vulkan)",
+          "stage": "Work in progress · v0.4.0 · original disc image required"
+        },
+        "zh-CN": {
+          "original": "Super Smash Bros. Brawl（Wii，美版 USA RSBE01 revision 1）",
+          "summary": "通过静态重编译实现的 Super Smash Bros. Brawl 原生 PC 移植，提供 Windows 和 Linux 版本；需自备美版 USA RSBE01 revision 1 光盘镜像。",
+          "requirements": "需自备合法取得的 Brawl 光盘镜像：美版 USA、RSBE01、revision 1，格式为 ISO、CISO 或 WBFS。解包约需 7 GB 空间；RVZ、WIA、GCZ 或 NKit 镜像需先转换为普通 ISO。RemakeList 不提供光盘镜像。",
+          "availability": "v0.4.0 提供 Windows 和 Linux 下载包。Linux 要求 64 位系统、glibc 2.35 或更新版本及 Vulkan 驱动。作者报告 VS 对战可运行，Classic 与 Subspace 仅测试到开头；本站未安装或试玩这些构建。",
+          "platforms": "Windows / Linux 64 位（glibc 2.35+、Vulkan）",
+          "stage": "开发中 · v0.4.0 · 需自备原版光盘镜像"
+        },
+        "ja": {
+          "original": "Super Smash Bros. Brawl（Wii、USA RSBE01 revision 1）",
+          "summary": "静的再コンパイルによる Super Smash Bros. Brawl のネイティブ PC 移植。Windows と Linux に対応し、USA RSBE01 revision 1 のディスクイメージを自分で用意する必要があります。",
+          "requirements": "適法に入手した Brawl のディスクイメージを自分で用意する必要があります。対象は USA、RSBE01、revision 1 で、ISO・CISO・WBFS に対応。展開に約 7 GB 使用します。RVZ・WIA・GCZ・NKit は先に通常の ISO に変換してください。RemakeList はディスクイメージを提供しません。",
+          "availability": "v0.4.0 は Windows と Linux のパッケージを提供。Linux は 64 ビット、glibc 2.35 以降、Vulkan ドライバーが必要です。作者は VS 対戦の動作を報告していますが、Classic と Subspace は冒頭のみのテストです。RemakeList はインストールやプレイによる検証を行っていません。",
+          "platforms": "Windows / Linux 64 ビット（glibc 2.35+、Vulkan）",
+          "stage": "開発中 · v0.4.0 · 元のディスクイメージが必要"
+        },
+        "ko": {
+          "original": "Super Smash Bros. Brawl (Wii, USA RSBE01 revision 1)",
+          "summary": "정적 재컴파일로 만든 Super Smash Bros. Brawl의 Windows 및 Linux용 네이티브 PC 포트입니다. USA RSBE01 revision 1 디스크 이미지를 직접 준비해야 합니다.",
+          "requirements": "합법적으로 취득한 Brawl 디스크 이미지를 직접 준비해야 합니다. 지원 버전은 USA, RSBE01, revision 1이며 형식은 ISO, CISO 또는 WBFS입니다. 추출에 약 7 GB가 필요합니다. RVZ, WIA, GCZ, NKit 이미지는 먼저 일반 ISO로 변환하세요. RemakeList는 디스크 이미지를 제공하지 않습니다.",
+          "availability": "v0.4.0은 Windows와 Linux 패키지를 제공합니다. Linux는 64비트 시스템, glibc 2.35 이상, Vulkan 드라이버가 필요합니다. 제작자는 VS 대전이 작동한다고 보고했지만, Classic과 Subspace는 초반만 테스트했습니다. RemakeList는 이 빌드를 설치하거나 플레이하지 않았습니다.",
+          "platforms": "Windows / Linux 64비트 (glibc 2.35+, Vulkan)",
+          "stage": "개발 중 · v0.4.0 · 원본 디스크 이미지 필요"
+        },
+        "es": {
+          "original": "Super Smash Bros. Brawl (Wii, USA RSBE01 revision 1)",
+          "summary": "Una adaptación nativa para PC de Super Smash Bros. Brawl para Windows y Linux, creada mediante recompilación estática. Requiere tu propia imagen de disco USA RSBE01 revision 1.",
+          "requirements": "Requiere tu propia imagen de disco de Brawl obtenida legalmente: USA, RSBE01, revision 1 (ISO, CISO o WBFS). La extracción necesita unos 7 GB. Convierte primero las imágenes RVZ, WIA, GCZ o NKit a ISO estándar. RemakeList no proporciona imágenes de disco.",
+          "availability": "v0.4.0 ofrece paquetes para Windows y Linux. Linux requiere un entorno de 64 bits con glibc 2.35 o posterior y controladores Vulkan. El autor indica que los combates VS funcionan; Classic y Subspace solo se han probado al inicio. RemakeList no ha instalado ni jugado estas compilaciones.",
+          "platforms": "Windows / Linux de 64 bits (glibc 2.35+, Vulkan)",
+          "stage": "En desarrollo · v0.4.0 · requiere imagen del disco original"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/josiahg2502-glitch/BrawlRecompiled/releases/tag/v0.4.0",
+      "code_license": "GPLv3 · project code only; original game artwork and third-party components have separate rights and terms.",
+      "code_license_url": "https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/wiicompiled/LICENSE",
+      "code_license_sources": [
+        "https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/wiicompiled/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-25",
+      "official_url": "https://github.com/josiahg2502-glitch/BrawlRecompiled",
+      "documentation_url": "https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/README.md",
+      "site_url": "https://remakelist.com/remakes/brawl-recompiled/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/brawl-recompiled/",
+      "original_files": "original",
+      "author": "JosiahG",
+      "author_url": "https://github.com/josiahg2502-glitch"
+    },
+    {
+      "id": "scda-xbe-recomp",
+      "name": "Splinter Cell: Double Agent — Xbox Recomp",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Splinter Cell: Double Agent (original Xbox, 2006)",
+          "summary": "A native Windows port of the original Xbox version of Splinter Cell: Double Agent. Adds mouse and keyboard controls, adjustable resolution and frame rate, plus co-op; requires your own Xbox game files.",
+          "requirements": "Your own lawfully obtained original Xbox copy of Double Agent. The release accepts an ISO or extracted files; keep default.xbe, sc4_adv.xbe and the Default, Media and adv folders together. Source builds require extracted files. PC and Xbox 360 game files are not substitutes. No game assets are included.",
+          "availability": "Download V2, extract SCDA-XBERecomp.zip and put your own ISO or extracted game files in assets. Run SCDA.exe; the first launch compiles the game code locally. Requires Windows 10+ x64, a Direct3D 12 GPU, a 2-core CPU with SSE4.2 and POPCNT, 4 GB RAM and about 6 GB storage.",
+          "platforms": "Windows 10+ x64 · Direct3D 12",
+          "stage": "V2 release · original Xbox files required"
+        },
+        "zh-CN": {
+          "original": "细胞分裂：双重间谍（2006 原版 Xbox）",
+          "summary": "将原版 Xbox《细胞分裂：双重间谍》带到 Windows 的原生移植，加入键鼠操作、分辨率与帧率调整及合作模式；需自备 Xbox 游戏文件。",
+          "requirements": "需自备合法取得的原版 Xbox《双重间谍》。发行包可读取 ISO 或提取后的文件；default.xbe、sc4_adv.xbe 需与 Default、Media、adv 文件夹放在一起。源码构建仅接受提取后的文件。PC 和 Xbox 360 版文件不能替代，下载内容不含游戏素材。",
+          "availability": "下载 V2 并解压 SCDA-XBERecomp.zip，将自备 ISO 或提取后的游戏文件放入 assets，再运行 SCDA.exe；首次启动会在本机编译游戏代码。需 Windows 10+ x64、Direct3D 12 显卡、支持 SSE4.2 与 POPCNT 的双核处理器、4 GB 内存及约 6 GB 空间。",
+          "platforms": "Windows 10+ x64 · Direct3D 12",
+          "stage": "V2 正式版 · 需原版 Xbox 文件"
+        },
+        "ja": {
+          "original": "Splinter Cell: Double Agent (original Xbox, 2006)",
+          "summary": "初代 Xbox 版 Splinter Cell: Double Agent の Windows ネイティブ移植。キーボード・マウス、解像度とフレームレートの調整、協力プレイに対応。自分の Xbox ゲームファイルが必要です。",
+          "requirements": "自分が適法に取得した初代 Xbox 版 Double Agent が必要です。配布版は ISO または展開済みファイルを利用でき、default.xbe、sc4_adv.xbe と Default、Media、adv フォルダーをまとめて配置します。ソースからのビルドには展開済みファイルが必要です。PC・Xbox 360 版のファイルでは代用できません。ゲーム素材は同梱されません。",
+          "availability": "V2 の SCDA-XBERecomp.zip を展開し、自分の ISO または展開済みゲームファイルを assets に入れて SCDA.exe を実行します。初回起動時にゲームコードをローカルでコンパイルします。Windows 10+ x64、Direct3D 12 GPU、SSE4.2 と POPCNT 対応の 2 コア CPU、4 GB RAM、約 6 GB の空き容量が必要です。",
+          "platforms": "Windows 10+ x64 · Direct3D 12",
+          "stage": "V2 リリース · 初代 Xbox のファイルが必要"
+        },
+        "ko": {
+          "original": "Splinter Cell: Double Agent (original Xbox, 2006)",
+          "summary": "초대 Xbox용 Splinter Cell: Double Agent를 Windows로 옮긴 네이티브 이식판입니다. 키보드·마우스, 해상도와 프레임 조절, 협동 플레이를 지원하며 자신의 Xbox 게임 파일이 필요합니다.",
+          "requirements": "직접 적법하게 구한 초대 Xbox용 Double Agent가 필요합니다. 배포판은 ISO 또는 추출한 파일을 받으며 default.xbe, sc4_adv.xbe와 Default, Media, adv 폴더를 함께 두세요. 소스 빌드에는 추출한 파일이 필요합니다. PC 및 Xbox 360 파일로 대체할 수 없으며 게임 리소스는 포함되지 않습니다.",
+          "availability": "V2의 SCDA-XBERecomp.zip을 풀고 자신의 ISO 또는 추출한 게임 파일을 assets에 넣은 다음 SCDA.exe를 실행하세요. 첫 실행 시 게임 코드를 로컬에서 컴파일합니다. Windows 10+ x64, Direct3D 12 GPU, SSE4.2와 POPCNT를 지원하는 2코어 CPU, 4 GB RAM 및 약 6 GB 공간이 필요합니다.",
+          "platforms": "Windows 10+ x64 · Direct3D 12",
+          "stage": "V2 릴리스 · 초대 Xbox 파일 필요"
+        },
+        "es": {
+          "original": "Splinter Cell: Double Agent (original Xbox, 2006)",
+          "summary": "Port nativo para Windows de Splinter Cell: Double Agent de Xbox original. Añade teclado y ratón, resolución y FPS ajustables y juego cooperativo; requiere tus propios archivos de Xbox.",
+          "requirements": "Tu propia copia obtenida legalmente de Double Agent para Xbox original. La versión descargable acepta ISO o archivos extraídos: default.xbe y sc4_adv.xbe junto a las carpetas Default, Media y adv. Compilar desde el código requiere archivos extraídos. Los archivos de PC o Xbox 360 no sirven como sustitutos. No se incluyen recursos del juego.",
+          "availability": "Descarga V2, extrae SCDA-XBERecomp.zip y coloca tu ISO o los archivos extraídos del juego en assets. Ejecuta SCDA.exe; el primer inicio compila el código localmente. Necesitas Windows 10+ x64, GPU Direct3D 12, CPU de 2 núcleos con SSE4.2 y POPCNT, 4 GB de RAM y unos 6 GB de espacio.",
+          "platforms": "Windows 10+ x64 · Direct3D 12",
+          "stage": "Versión V2 · requiere archivos de Xbox original"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/TGP482/SCDA-XBERecomp/releases/tag/V2",
+      "code_license": "MIT for the project code; original game content and third-party components retain their own rights.",
+      "code_license_url": "https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-25",
+      "official_url": "https://github.com/TGP482/SCDA-XBERecomp",
+      "documentation_url": "https://github.com/TGP482/SCDA-XBERecomp#readme",
+      "site_url": "https://remakelist.com/remakes/scda-xbe-recomp/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/scda-xbe-recomp/",
+      "original_files": "original",
+      "author": "TGP482",
+      "author_url": "https://github.com/TGP482"
     }
   ],
-  "content_sha256": "e6e380c38b2f0d7f4e2da3657acee9a45eef4faae76ed98280574638d557a3b1"
+  "content_sha256": "b4c5043a3e1751bf1048e7fe66d4d522eda0267a5bd1919a91a9ab648981cc05"
 }

@@ -2,11 +2,11 @@
 <title>目次</title>
 <rect x="0.5" y="0.5" width="919" height="167" rx="14" fill="#fafafa" stroke="#e1e4e8"/>
 <text x="26" y="34" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#24272a">目次</text>
-<text x="894" y="34" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#666b72">91 プロジェクト</text>
-<rect x="26.00" y="54" width="124.00" height="24" fill="#24272a"/>
-<rect x="150.00" y="54" width="85.85" height="24" fill="#666b72"/>
-<rect x="235.85" y="54" width="248.00" height="24" fill="#9da3aa"/>
-<rect x="483.85" y="54" width="410.15" height="24" fill="#cbd0d5"/>
+<text x="894" y="34" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#666b72">93 プロジェクト</text>
+<rect x="26.00" y="54" width="121.33" height="24" fill="#24272a"/>
+<rect x="147.33" y="54" width="84.00" height="24" fill="#666b72"/>
+<rect x="231.33" y="54" width="242.67" height="24" fill="#9da3aa"/>
+<rect x="474.00" y="54" width="420.00" height="24" fill="#cbd0d5"/>
 <rect x="26" y="98" width="10" height="10" rx="2" fill="#24272a"/>
 <text x="44" y="108" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#454a50">デザイン・制作ツール</text>
 <text x="434" y="108" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#24272a">13</text>
@@ -18,5 +18,5 @@
 <text x="434" y="140" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#24272a">26</text>
 <rect x="470" y="130" width="10" height="10" rx="2" fill="#cbd0d5"/>
 <text x="488" y="140" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#454a50">移植・互換性プロジェクト</text>
-<text x="878" y="140" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#24272a">43</text>
+<text x="878" y="140" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#24272a">45</text>
 </svg>

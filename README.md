@@ -28,7 +28,7 @@ Project names link to their authors’ sources. Expand an entry for device, game
 - [Creative tools](#creative) · 13
 - [Everyday tools and interface recreations](#everyday) · 9
 - [Game engines and recreations](#classic_games) · 26
-- [Ports and compatibility projects](#ports) · 43
+- [Ports and compatibility projects](#ports) · 45
 
 <img src="assets/overview-en.svg" alt="Overview" width="920">
 
@@ -2232,6 +2232,54 @@ Original or reference: **Super Smash Bros. Melee (NTSC 1.02)** · Platform compa
 **Code license:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
 **Author:** Hero88go / Melee Unlocked contributors  
 [Official documentation](https://github.com/Hero88go/melee-unlocked#readme) · Sources reviewed: 2026-10-25
+
+</details>
+
+### [Brawl Recompiled](https://github.com/josiahg2502-glitch/BrawlRecompiled)
+
+A native PC port of Super Smash Bros. Brawl for Windows and Linux, built through static recompilation. Requires your own USA RSBE01 revision 1 disc image.
+
+Original or reference: **Super Smash Bros. Brawl (Wii, USA RSBE01 revision 1)** · Static recompilation  
+[Download and supply your own game files](https://github.com/josiahg2502-glitch/BrawlRecompiled/releases/tag/v0.4.0) · [Browse RemakeList](https://remakelist.com/remakes/brawl-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=brawl-recompiled-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows / Linux 64-bit (glibc 2.35+, Vulkan)
+
+**Status:** Work in progress · v0.4.0 · original disc image required
+
+**What you need:** Requires your own lawfully obtained Brawl disc image: USA, RSBE01, revision 1 (ISO, CISO or WBFS). Extraction needs about 7 GB. Convert RVZ, WIA, GCZ or NKit images to plain ISO first. RemakeList does not provide disc images.
+
+**What is available:** v0.4.0 offers Windows and Linux packages. Linux requires 64-bit glibc 2.35 or newer and Vulkan drivers. The author reports working VS matches; Classic and Subspace have only been tested at their start. RemakeList has not installed or played these builds.
+
+**Code license:** [GPLv3 · project code only; original game artwork and third-party components have separate rights and terms.](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/wiicompiled/LICENSE)  
+**Author:** JosiahG  
+[Official documentation](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/README.md) · Sources reviewed: 2026-10-25
+
+</details>
+
+### [Splinter Cell: Double Agent — Xbox Recomp](https://github.com/TGP482/SCDA-XBERecomp)
+
+A native Windows port of the original Xbox version of Splinter Cell: Double Agent. Adds mouse and keyboard controls, adjustable resolution and frame rate, plus co-op; requires your own Xbox game files.
+
+Original or reference: **Splinter Cell: Double Agent (original Xbox, 2006)** · Static recompilation  
+[Download and supply your own game files](https://github.com/TGP482/SCDA-XBERecomp/releases/tag/V2) · [Browse RemakeList](https://remakelist.com/remakes/scda-xbe-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=scda-xbe-recomp-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows 10+ x64 · Direct3D 12
+
+**Status:** V2 release · original Xbox files required
+
+**What you need:** Your own lawfully obtained original Xbox copy of Double Agent. The release accepts an ISO or extracted files; keep default.xbe, sc4_adv.xbe and the Default, Media and adv folders together. Source builds require extracted files. PC and Xbox 360 game files are not substitutes. No game assets are included.
+
+**What is available:** Download V2, extract SCDA-XBERecomp.zip and put your own ISO or extracted game files in assets. Run SCDA.exe; the first launch compiles the game code locally. Requires Windows 10+ x64, a Direct3D 12 GPU, a 2-core CPU with SSE4.2 and POPCNT, 4 GB RAM and about 6 GB storage.
+
+**Code license:** [MIT for the project code; original game content and third-party components retain their own rights.](https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE)  
+**Author:** TGP482  
+[Official documentation](https://github.com/TGP482/SCDA-XBERecomp#readme) · Sources reviewed: 2026-10-25
 
 </details>
 
