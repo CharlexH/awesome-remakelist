@@ -2165,7 +2165,7 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 
 ### [nxnative](https://github.com/seedds/nxnative)
 
-在 Mac 上用自己持有、且列入支持名单的 Switch 游戏文件，制作 iPhone 或 iPad App，提供触控操作与 Metal 图形支持。
+在 Mac 上用自备、受支持的 Switch 游戏文件，构建 iPhone、iPad 或 Apple 芯片 Mac App。兼容性取决于游戏配置与构建版本。
 
 原作或参考对象: **Nintendo Switch 游戏** · 平台兼容层  
 [自行构建并自备游戏文件](https://github.com/seedds/nxnative#pack-an-ipa) · [浏览 RemakeList](https://remakelist.com/zh/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-zh-CN)
@@ -2173,17 +2173,17 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 <details>
 <summary>要求与截图</summary>
 
-**平台:** iPhone / iPad · iOS / iPadOS 26+；Mac · 开发构建
+**平台:** iPhone / iPad · iOS / iPadOS 26+；Apple 芯片 Mac · 本地构建
 
-**当前阶段:** 需自行构建 · iPhone 测试为作者报告
+**当前阶段:** 需本地构建 · 兼容性为作者报告
 
-**需要准备什么:** 自备自己持有游戏的 NSP 文件、所需更新或 DLC，以及自己的 prod.keys。在装有 Xcode 和 Homebrew 的 Mac 上运行作者脚本，本地生成未签名 IPA，再另行签名、侧载安装。本站与仓库均不提供商业游戏、密钥或可直接安装的游戏包。 生成的 IPA 包含原游戏改写后的程序和资源，仅供个人使用，不能当作空壳或免费游戏包再分发。这不是合法性保证，自备文件的使用权仍需自行核实。
+**需要准备什么:** 自备自己持有游戏的 NSP、所需更新或 DLC，以及自己的 prod.keys，在装有 Xcode 和 Homebrew 的 Mac 上本地构建。iPhone/iPad 路线生成未签名 IPA，需另行签名和侧载；Apple 芯片 Mac 使用 Mac App 路线。生成的包包含游戏衍生代码与资源，仅供个人使用，不可再分发。本站不提供商业游戏、密钥或可直接安装的游戏包；请自行核实自备文件的使用权。
 
-**现在能用什么:** 作者列出 12 款已在 iPhone 测试且可玩的游戏，包括《超级马力欧兄弟 惊奇》《密特罗德 生存恐惧》《旷野之息》和《哈迪斯》。《王国之泪》另属移植进行中：目前只报告运行到开场洞穴，帧率仍在优化。其他游戏即使打包成功，也不代表能启动。 Mac 路线是从源码构建的开发宿主，不是成品 Mac 游戏包：马力欧菜单与对白文字可能空白，上述 12 款 iPhone 报告也不代表 Mac 均已验证。
+**现在能用什么:** 构建前查看作者当前游戏状态表和各游戏配置。《王国之泪》现已报告可在 iPhone 游玩；60 fps 选项要求 1.4.3 更新，不代表所有设备都能达到该帧率。Mac App 路线使用 --platform mac-app，在 Apple 芯片 Mac 上从 Finder 打开。iPhone 的运行报告不代表 Mac 兼容性已验证。
 
 **代码许可:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **作者:** seedds and contributors  
-[官方文档](https://github.com/seedds/nxnative/blob/main/README.md) · 资料核对日期: 2026-10-20
+[官方文档](https://github.com/seedds/nxnative/blob/main/README.md) · 资料核对日期: 2026-10-25
 
 </details>
 

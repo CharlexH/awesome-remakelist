@@ -2165,7 +2165,7 @@ Wind Waker HD의 Android 포크로 포르투갈어 번역과 터치 설정을 �
 
 ### [nxnative](https://github.com/seedds/nxnative)
 
-본인이 가진 지원 Switch 게임으로 Mac에서 로컬 빌드해 iPhone·iPad 앱을 만듭니다. 터치 조작과 Metal 그래픽을 제공합니다.
+본인이 보유한 지원 Switch 게임 파일로 Mac에서 iPhone, iPad 또는 Apple Silicon Mac용 앱을 빌드합니다. 호환성은 게임 프로필과 빌드에 따라 달라집니다.
 
 원작 또는 참고 대상: **Nintendo Switch 게임** · 플랫폼 호환 계층  
 [직접 빌드 · 게임 파일 직접 준비](https://github.com/seedds/nxnative#pack-an-ipa) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-ko)
@@ -2173,17 +2173,17 @@ Wind Waker HD의 Android 포크로 포르투갈어 번역과 터치 설정을 �
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** iPhone / iPad · iOS / iPadOS 26+; Mac · 개발 빌드
+**지원 환경:** iPhone / iPad · iOS / iPadOS 26 이상; Apple Silicon Mac · 로컬 빌드
 
-**개발 상태:** 소스 빌드 필요 · iPhone 시험은 제작자 보고
+**개발 상태:** 로컬 빌드 필요 · 호환성은 제작자 보고
 
-**준비할 것:** 본인 게임의 NSP, 필요한 업데이트·DLC와 본인의 prod.keys를 준비합니다. Xcode와 Homebrew가 있는 Mac에서 제작자 스크립트가 서명되지 않은 IPA를 로컬 생성하며 서명과 사이드로딩은 별도입니다. 이 페이지와 저장소는 상용 게임, 키, 바로 설치할 게임 패키지를 제공하지 않습니다. 생성된 IPA에는 원작의 수정된 프로그램과 리소스가 포함됩니다. 개인용이며 빈 셸이나 무료 게임 패키지로 재배포할 수 없습니다. 적법성을 보장하는 설명이 아니므로 제공하는 파일의 사용 권리는 직접 확인해야 합니다.
+**준비할 것:** 본인 게임의 NSP, 필요한 업데이트/DLC와 자신의 prod.keys를 준비하세요. Xcode와 Homebrew가 설치된 Mac에서 로컬로 빌드합니다. iPhone/iPad 경로는 서명되지 않은 IPA를 생성하며, 서명과 사이드로딩은 별도로 진행합니다. Apple Silicon Mac에서는 Mac 앱 경로를 사용합니다. 생성된 패키지에는 게임에서 파생된 코드와 리소스가 포함되며, 개인용으로 사용하고 재배포하지 않아야 합니다. 이 사이트는 상용 게임, 키 또는 바로 설치할 게임 패키지를 제공하지 않습니다. 파일 사용 권한은 직접 확인하세요.
 
-**현재 이용할 수 있는 것:** 제작자는 Super Mario Bros. Wonder, Metroid Dread, Breath of the Wild, Hades 등을 포함한 12개 게임을 iPhone에서 시험했고 플레이 가능하다고 밝힙니다. Tears of the Kingdom은 별도 개발 중으로 시작 동굴까지만 보고됐고 프레임 개선이 진행 중입니다. 다른 게임의 패키지가 만들어져도 실행된다는 뜻은 아닙니다. Mac은 소스에서 빌드하는 개발용 호스트이며 완성된 Mac 게임 패키지가 아닙니다. 마리오 메뉴·대화 글자가 비어 보일 수 있고 iPhone 12개 게임 보고가 Mac 검증을 뜻하지는 않습니다.
+**현재 이용할 수 있는 것:** 빌드 전에 제작자의 최신 게임 상태표와 각 게임 프로필을 확인하세요. 현재 Tears of the Kingdom은 iPhone에서 플레이 가능하다고 보고되어 있습니다. 60 fps 옵션에는 1.4.3 업데이트가 필요하며, 모든 기기에서 해당 프레임 속도를 보장하지는 않습니다. Mac 앱 경로는 --platform mac-app을 사용하며 Apple Silicon Mac의 Finder에서 실행합니다. iPhone에서의 보고가 Mac 호환성을 입증하지는 않습니다.
 
 **코드 라이선스:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **제작자:** seedds and contributors  
-[공식 문서](https://github.com/seedds/nxnative/blob/main/README.md) · 자료 확인일: 2026-10-20
+[공식 문서](https://github.com/seedds/nxnative/blob/main/README.md) · 자료 확인일: 2026-10-25
 
 </details>
 

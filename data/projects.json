@@ -5542,43 +5542,43 @@
       "localized": {
         "en": {
           "original": "Nintendo Switch games",
-          "summary": "Turn your own supported Switch games into iPhone or iPad apps through a local Mac build, with touch controls and Metal graphics.",
-          "requirements": "Bring NSP files from your own game, with the required updates/DLC, and your own prod.keys. On a Mac with Xcode and Homebrew, the author’s script builds an unsigned IPA locally; signing and sideloading are separate steps. Neither this listing nor the repository supplies commercial games, keys or ready-to-install game packages. The generated IPA includes rewritten original game code and resources: it is for personal use, not an empty shell or free game package to redistribute. This is not a legal guarantee; you must check your rights to the files you supply.",
-          "availability": "The author lists 12 games as tested and playable on an iPhone, including Super Mario Bros. Wonder, Metroid Dread, Breath of the Wild and Hades. Tears of the Kingdom is a separate work in progress: only the opening cave is reported running, with frame rate still being improved. Packing another game does not establish that it starts. Mac use is a developer host built from source, not a finished Mac game package: Mario menu/dialogue text can be blank, and the 12-game iPhone claim does not establish Mac compatibility.",
-          "platforms": "iPhone / iPad · iOS / iPadOS 26+; Mac · development builds",
-          "stage": "Source build required · author-reported iPhone tests"
+          "summary": "Build apps from your own supported Switch game files on a Mac, for iPhone, iPad or Apple silicon Mac. Compatibility depends on the game profile and build.",
+          "requirements": "Supply NSP files from your own game, required updates/DLC and your own prod.keys. Build locally on a Mac with Xcode and Homebrew. The iPhone/iPad route produces an unsigned IPA for separate signing and sideloading; Apple silicon Mac uses the Mac app route. Generated packages contain game-derived code and resources for personal use, not redistribution. No commercial games, keys or ready-to-install game packages are supplied here; check your rights to your files.",
+          "availability": "Check the author’s current game-status table and each game profile before building. Tears of the Kingdom is now reported playable on iPhone; its 60 fps option requires update 1.4.3 and does not guarantee that rate on every device. The Mac app route uses --platform mac-app and opens from Finder on Apple silicon. An iPhone report does not establish Mac compatibility.",
+          "platforms": "iPhone / iPad · iOS / iPadOS 26+; Apple silicon Mac · local build",
+          "stage": "Local build required · author-reported compatibility"
         },
         "zh-CN": {
           "original": "Nintendo Switch 游戏",
-          "summary": "在 Mac 上用自己持有、且列入支持名单的 Switch 游戏文件，制作 iPhone 或 iPad App，提供触控操作与 Metal 图形支持。",
-          "requirements": "自备自己持有游戏的 NSP 文件、所需更新或 DLC，以及自己的 prod.keys。在装有 Xcode 和 Homebrew 的 Mac 上运行作者脚本，本地生成未签名 IPA，再另行签名、侧载安装。本站与仓库均不提供商业游戏、密钥或可直接安装的游戏包。 生成的 IPA 包含原游戏改写后的程序和资源，仅供个人使用，不能当作空壳或免费游戏包再分发。这不是合法性保证，自备文件的使用权仍需自行核实。",
-          "availability": "作者列出 12 款已在 iPhone 测试且可玩的游戏，包括《超级马力欧兄弟 惊奇》《密特罗德 生存恐惧》《旷野之息》和《哈迪斯》。《王国之泪》另属移植进行中：目前只报告运行到开场洞穴，帧率仍在优化。其他游戏即使打包成功，也不代表能启动。 Mac 路线是从源码构建的开发宿主，不是成品 Mac 游戏包：马力欧菜单与对白文字可能空白，上述 12 款 iPhone 报告也不代表 Mac 均已验证。",
-          "platforms": "iPhone / iPad · iOS / iPadOS 26+；Mac · 开发构建",
-          "stage": "需自行构建 · iPhone 测试为作者报告"
+          "summary": "在 Mac 上用自备、受支持的 Switch 游戏文件，构建 iPhone、iPad 或 Apple 芯片 Mac App。兼容性取决于游戏配置与构建版本。",
+          "requirements": "自备自己持有游戏的 NSP、所需更新或 DLC，以及自己的 prod.keys，在装有 Xcode 和 Homebrew 的 Mac 上本地构建。iPhone/iPad 路线生成未签名 IPA，需另行签名和侧载；Apple 芯片 Mac 使用 Mac App 路线。生成的包包含游戏衍生代码与资源，仅供个人使用，不可再分发。本站不提供商业游戏、密钥或可直接安装的游戏包；请自行核实自备文件的使用权。",
+          "availability": "构建前查看作者当前游戏状态表和各游戏配置。《王国之泪》现已报告可在 iPhone 游玩；60 fps 选项要求 1.4.3 更新，不代表所有设备都能达到该帧率。Mac App 路线使用 --platform mac-app，在 Apple 芯片 Mac 上从 Finder 打开。iPhone 的运行报告不代表 Mac 兼容性已验证。",
+          "platforms": "iPhone / iPad · iOS / iPadOS 26+；Apple 芯片 Mac · 本地构建",
+          "stage": "需本地构建 · 兼容性为作者报告"
         },
         "ja": {
           "original": "Nintendo Switch ゲーム",
-          "summary": "所有する対応 Switch ゲームから、Mac でのローカルビルドにより iPhone・iPad アプリを作成。タッチ操作と Metal 描画を提供します。",
-          "requirements": "自分が所有するゲームの NSP、必要な更新・DLC、自分の prod.keys を用意します。Xcode と Homebrew のある Mac で作者のスクリプトを実行すると未署名 IPA をローカル生成し、署名とサイドロードは別に行います。当ページもリポジトリも商用ゲーム、鍵、すぐ入れられるゲームパッケージを提供しません。 生成した IPA には原作の書き換え後のプログラムとリソースが含まれます。個人用であり、空のシェルや無料ゲームとして再配布するものではありません。適法性を保証する説明ではなく、持ち込むファイルの権利は自分で確認する必要があります。",
-          "availability": "作者は iPhone で試した 12 作品をプレイ可能としており、Super Mario Bros. Wonder、Metroid Dread、Breath of the Wild、Hades などを挙げています。Tears of the Kingdom は別途開発中で、冒頭の洞窟までの動作報告にとどまり、フレームレートは改善中です。他作品のパッケージを作れても起動するとは限りません。 Mac 向けはソースから作成する開発用ホストで、完成した Mac ゲームパッケージではありません。マリオのメニュー・会話の文字が空白になる不具合があり、iPhone の 12 作品報告は Mac での検証を意味しません。",
-          "platforms": "iPhone / iPad · iOS / iPadOS 26+；Mac · 開発用ビルド",
-          "stage": "ソースからのビルドが必要 · iPhone 試験は作者報告"
+          "summary": "所有する対応 Switch ゲームのファイルを使い、Mac で iPhone、iPad、Apple シリコン Mac 向けアプリをビルドします。互換性はゲームのプロファイルとビルドによって異なります。",
+          "requirements": "所有するゲームの NSP、必要な更新・DLC、自分の prod.keys を用意し、Xcode と Homebrew のある Mac でローカルビルドします。iPhone／iPad 向けは未署名の IPA を生成し、署名とサイドロードは別途行います。Apple シリコン Mac では Mac アプリの作成手順を使います。生成したパッケージにはゲーム由来のコードとリソースが含まれ、個人用であり再配布用ではありません。当サイトは商用ゲーム、鍵、すぐにインストールできるゲームパッケージを提供しません。ファイルの使用権は自分で確認してください。",
+          "availability": "ビルド前に作者の最新のゲーム動作状況表と各ゲームのプロファイルを確認してください。Tears of the Kingdom は現在 iPhone でプレイ可能と報告されています。60 fps オプションには更新 1.4.3 が必要ですが、すべての端末でそのフレームレートを保証するものではありません。Mac アプリの作成には --platform mac-app を使い、Apple シリコン Mac の Finder から起動できます。iPhone での報告は Mac の互換性を証明するものではありません。",
+          "platforms": "iPhone / iPad · iOS / iPadOS 26 以降；Apple シリコン Mac · ローカルビルド",
+          "stage": "ローカルビルドが必要 · 互換性は作者報告"
         },
         "ko": {
           "original": "Nintendo Switch 게임",
-          "summary": "본인이 가진 지원 Switch 게임으로 Mac에서 로컬 빌드해 iPhone·iPad 앱을 만듭니다. 터치 조작과 Metal 그래픽을 제공합니다.",
-          "requirements": "본인 게임의 NSP, 필요한 업데이트·DLC와 본인의 prod.keys를 준비합니다. Xcode와 Homebrew가 있는 Mac에서 제작자 스크립트가 서명되지 않은 IPA를 로컬 생성하며 서명과 사이드로딩은 별도입니다. 이 페이지와 저장소는 상용 게임, 키, 바로 설치할 게임 패키지를 제공하지 않습니다. 생성된 IPA에는 원작의 수정된 프로그램과 리소스가 포함됩니다. 개인용이며 빈 셸이나 무료 게임 패키지로 재배포할 수 없습니다. 적법성을 보장하는 설명이 아니므로 제공하는 파일의 사용 권리는 직접 확인해야 합니다.",
-          "availability": "제작자는 Super Mario Bros. Wonder, Metroid Dread, Breath of the Wild, Hades 등을 포함한 12개 게임을 iPhone에서 시험했고 플레이 가능하다고 밝힙니다. Tears of the Kingdom은 별도 개발 중으로 시작 동굴까지만 보고됐고 프레임 개선이 진행 중입니다. 다른 게임의 패키지가 만들어져도 실행된다는 뜻은 아닙니다. Mac은 소스에서 빌드하는 개발용 호스트이며 완성된 Mac 게임 패키지가 아닙니다. 마리오 메뉴·대화 글자가 비어 보일 수 있고 iPhone 12개 게임 보고가 Mac 검증을 뜻하지는 않습니다.",
-          "platforms": "iPhone / iPad · iOS / iPadOS 26+; Mac · 개발 빌드",
-          "stage": "소스 빌드 필요 · iPhone 시험은 제작자 보고"
+          "summary": "본인이 보유한 지원 Switch 게임 파일로 Mac에서 iPhone, iPad 또는 Apple Silicon Mac용 앱을 빌드합니다. 호환성은 게임 프로필과 빌드에 따라 달라집니다.",
+          "requirements": "본인 게임의 NSP, 필요한 업데이트/DLC와 자신의 prod.keys를 준비하세요. Xcode와 Homebrew가 설치된 Mac에서 로컬로 빌드합니다. iPhone/iPad 경로는 서명되지 않은 IPA를 생성하며, 서명과 사이드로딩은 별도로 진행합니다. Apple Silicon Mac에서는 Mac 앱 경로를 사용합니다. 생성된 패키지에는 게임에서 파생된 코드와 리소스가 포함되며, 개인용으로 사용하고 재배포하지 않아야 합니다. 이 사이트는 상용 게임, 키 또는 바로 설치할 게임 패키지를 제공하지 않습니다. 파일 사용 권한은 직접 확인하세요.",
+          "availability": "빌드 전에 제작자의 최신 게임 상태표와 각 게임 프로필을 확인하세요. 현재 Tears of the Kingdom은 iPhone에서 플레이 가능하다고 보고되어 있습니다. 60 fps 옵션에는 1.4.3 업데이트가 필요하며, 모든 기기에서 해당 프레임 속도를 보장하지는 않습니다. Mac 앱 경로는 --platform mac-app을 사용하며 Apple Silicon Mac의 Finder에서 실행합니다. iPhone에서의 보고가 Mac 호환성을 입증하지는 않습니다.",
+          "platforms": "iPhone / iPad · iOS / iPadOS 26 이상; Apple Silicon Mac · 로컬 빌드",
+          "stage": "로컬 빌드 필요 · 호환성은 제작자 보고"
         },
         "es": {
           "original": "Juegos de Nintendo Switch",
-          "summary": "Crea apps para iPhone o iPad con tus propios juegos Switch compatibles, mediante una compilación local en Mac, con controles táctiles y gráficos Metal.",
-          "requirements": "Aporta los NSP de tu juego, con actualizaciones o DLC necesarios, y tu propio prod.keys. El script del autor genera un IPA sin firmar en un Mac con Xcode y Homebrew; después hay que firmarlo e instalarlo por carga lateral. Ni esta ficha ni el repositorio ofrecen juegos comerciales, claves o paquetes de juego listos para instalar. El IPA generado contiene código modificado y recursos del juego original: es para uso personal, no una carcasa vacía ni un juego gratuito para redistribuir. Esto no es una garantía legal; debes comprobar tus derechos sobre los archivos que aportas.",
-          "availability": "El autor enumera 12 juegos probados y jugables en un iPhone, entre ellos Super Mario Bros. Wonder, Metroid Dread, Breath of the Wild y Hades. Tears of the Kingdom sigue en desarrollo: solo se informa de la cueva inicial, con rendimiento aún en mejora. Crear un paquete de otro juego no demuestra que arranque. En Mac es un host de desarrollo compilado desde código, no un juego Mac terminado: los textos de menús y diálogos de Mario pueden quedar en blanco, y la lista de 12 juegos iPhone no confirma compatibilidad Mac.",
-          "platforms": "iPhone / iPad · iOS / iPadOS 26+; Mac · compilaciones de desarrollo",
-          "stage": "Requiere compilar · pruebas de iPhone según el autor"
+          "summary": "Crea en un Mac apps para iPhone, iPad o Mac con Apple silicon a partir de tus propios archivos de juegos Switch compatibles. La compatibilidad depende del perfil del juego y de la compilación.",
+          "requirements": "Aporta los NSP de tu propio juego, las actualizaciones o DLC necesarios y tu propio prod.keys. Compila localmente en un Mac con Xcode y Homebrew. La vía para iPhone/iPad genera un IPA sin firmar, que debe firmarse e instalarse por carga lateral en pasos separados; los Mac con Apple silicon usan la vía de la app para Mac. Los paquetes generados contienen código y recursos derivados del juego para uso personal, no para redistribuir. Aquí no se ofrecen juegos comerciales, claves ni paquetes de juego listos para instalar; comprueba tus derechos sobre los archivos que aportas.",
+          "availability": "Consulta la tabla actual de estado de los juegos del autor y el perfil de cada juego antes de compilar. Según el autor, Tears of the Kingdom ya es jugable en iPhone; su opción de 60 fps requiere la actualización 1.4.3 y no garantiza esa tasa en todos los dispositivos. La vía para crear una app de Mac usa --platform mac-app y permite abrirla desde Finder en un Mac con Apple silicon. Un informe de iPhone no confirma la compatibilidad con Mac.",
+          "platforms": "iPhone / iPad · iOS / iPadOS 26+; Mac con Apple silicon · compilación local",
+          "stage": "Requiere compilación local · compatibilidad según el autor"
         }
       },
       "start": "build_with_original_assets",
@@ -5589,7 +5589,7 @@
         "https://github.com/seedds/nxnative/blob/main/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-20",
+      "source_reviewed_at": "2026-10-25",
       "official_url": "https://github.com/seedds/nxnative",
       "documentation_url": "https://github.com/seedds/nxnative/blob/main/README.md",
       "site_url": "https://remakelist.com/remakes/nxnative/",
@@ -5791,5 +5791,5 @@
       "author_url": "https://github.com/Igloo-Garage"
     }
   ],
-  "content_sha256": "3faa79c318cee6471f9062cb537f4471fea469500cec329218cdd7ffbe232c8a"
+  "content_sha256": "e1dec367e0113c4a3403ad53e19e1197e3840f1cf251ba19ff9de10bf2bc4ffc"
 }

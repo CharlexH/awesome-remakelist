@@ -2165,7 +2165,7 @@ Wind Waker HDの非公式フォークで、任意の海上イベントや操縦�
 
 ### [nxnative](https://github.com/seedds/nxnative)
 
-所有する対応 Switch ゲームから、Mac でのローカルビルドにより iPhone・iPad アプリを作成。タッチ操作と Metal 描画を提供します。
+所有する対応 Switch ゲームのファイルを使い、Mac で iPhone、iPad、Apple シリコン Mac 向けアプリをビルドします。互換性はゲームのプロファイルとビルドによって異なります。
 
 原作・参考元: **Nintendo Switch ゲーム** · プラットフォーム互換レイヤー  
 [自分でビルド・ゲームデータも用意](https://github.com/seedds/nxnative#pack-an-ipa) · [RemakeList を見る](https://remakelist.com/ja/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-ja)
@@ -2173,17 +2173,17 @@ Wind Waker HDの非公式フォークで、任意の海上イベントや操縦�
 <details>
 <summary>必要条件とスクリーンショット</summary>
 
-**対応環境:** iPhone / iPad · iOS / iPadOS 26+；Mac · 開発用ビルド
+**対応環境:** iPhone / iPad · iOS / iPadOS 26 以降；Apple シリコン Mac · ローカルビルド
 
-**開発状況:** ソースからのビルドが必要 · iPhone 試験は作者報告
+**開発状況:** ローカルビルドが必要 · 互換性は作者報告
 
-**必要なもの:** 自分が所有するゲームの NSP、必要な更新・DLC、自分の prod.keys を用意します。Xcode と Homebrew のある Mac で作者のスクリプトを実行すると未署名 IPA をローカル生成し、署名とサイドロードは別に行います。当ページもリポジトリも商用ゲーム、鍵、すぐ入れられるゲームパッケージを提供しません。 生成した IPA には原作の書き換え後のプログラムとリソースが含まれます。個人用であり、空のシェルや無料ゲームとして再配布するものではありません。適法性を保証する説明ではなく、持ち込むファイルの権利は自分で確認する必要があります。
+**必要なもの:** 所有するゲームの NSP、必要な更新・DLC、自分の prod.keys を用意し、Xcode と Homebrew のある Mac でローカルビルドします。iPhone／iPad 向けは未署名の IPA を生成し、署名とサイドロードは別途行います。Apple シリコン Mac では Mac アプリの作成手順を使います。生成したパッケージにはゲーム由来のコードとリソースが含まれ、個人用であり再配布用ではありません。当サイトは商用ゲーム、鍵、すぐにインストールできるゲームパッケージを提供しません。ファイルの使用権は自分で確認してください。
 
-**現在利用できるもの:** 作者は iPhone で試した 12 作品をプレイ可能としており、Super Mario Bros. Wonder、Metroid Dread、Breath of the Wild、Hades などを挙げています。Tears of the Kingdom は別途開発中で、冒頭の洞窟までの動作報告にとどまり、フレームレートは改善中です。他作品のパッケージを作れても起動するとは限りません。 Mac 向けはソースから作成する開発用ホストで、完成した Mac ゲームパッケージではありません。マリオのメニュー・会話の文字が空白になる不具合があり、iPhone の 12 作品報告は Mac での検証を意味しません。
+**現在利用できるもの:** ビルド前に作者の最新のゲーム動作状況表と各ゲームのプロファイルを確認してください。Tears of the Kingdom は現在 iPhone でプレイ可能と報告されています。60 fps オプションには更新 1.4.3 が必要ですが、すべての端末でそのフレームレートを保証するものではありません。Mac アプリの作成には --platform mac-app を使い、Apple シリコン Mac の Finder から起動できます。iPhone での報告は Mac の互換性を証明するものではありません。
 
 **コードのライセンス:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **作者:** seedds and contributors  
-[公式ドキュメント](https://github.com/seedds/nxnative/blob/main/README.md) · 資料確認日: 2026-10-20
+[公式ドキュメント](https://github.com/seedds/nxnative/blob/main/README.md) · 資料確認日: 2026-10-25
 
 </details>
 

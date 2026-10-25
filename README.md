@@ -2165,7 +2165,7 @@ Original or reference: **The Legend of Zelda: The Wind Waker HD** · Static reco
 
 ### [nxnative](https://github.com/seedds/nxnative)
 
-Turn your own supported Switch games into iPhone or iPad apps through a local Mac build, with touch controls and Metal graphics.
+Build apps from your own supported Switch game files on a Mac, for iPhone, iPad or Apple silicon Mac. Compatibility depends on the game profile and build.
 
 Original or reference: **Nintendo Switch games** · Platform compatibility layer  
 [Build and supply your own game files](https://github.com/seedds/nxnative#pack-an-ipa) · [Browse RemakeList](https://remakelist.com/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-en)
@@ -2173,17 +2173,17 @@ Original or reference: **Nintendo Switch games** · Platform compatibility layer
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** iPhone / iPad · iOS / iPadOS 26+; Mac · development builds
+**Platforms:** iPhone / iPad · iOS / iPadOS 26+; Apple silicon Mac · local build
 
-**Status:** Source build required · author-reported iPhone tests
+**Status:** Local build required · author-reported compatibility
 
-**What you need:** Bring NSP files from your own game, with the required updates/DLC, and your own prod.keys. On a Mac with Xcode and Homebrew, the author’s script builds an unsigned IPA locally; signing and sideloading are separate steps. Neither this listing nor the repository supplies commercial games, keys or ready-to-install game packages. The generated IPA includes rewritten original game code and resources: it is for personal use, not an empty shell or free game package to redistribute. This is not a legal guarantee; you must check your rights to the files you supply.
+**What you need:** Supply NSP files from your own game, required updates/DLC and your own prod.keys. Build locally on a Mac with Xcode and Homebrew. The iPhone/iPad route produces an unsigned IPA for separate signing and sideloading; Apple silicon Mac uses the Mac app route. Generated packages contain game-derived code and resources for personal use, not redistribution. No commercial games, keys or ready-to-install game packages are supplied here; check your rights to your files.
 
-**What is available:** The author lists 12 games as tested and playable on an iPhone, including Super Mario Bros. Wonder, Metroid Dread, Breath of the Wild and Hades. Tears of the Kingdom is a separate work in progress: only the opening cave is reported running, with frame rate still being improved. Packing another game does not establish that it starts. Mac use is a developer host built from source, not a finished Mac game package: Mario menu/dialogue text can be blank, and the 12-game iPhone claim does not establish Mac compatibility.
+**What is available:** Check the author’s current game-status table and each game profile before building. Tears of the Kingdom is now reported playable on iPhone; its 60 fps option requires update 1.4.3 and does not guarantee that rate on every device. The Mac app route uses --platform mac-app and opens from Finder on Apple silicon. An iPhone report does not establish Mac compatibility.
 
 **Code license:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **Author:** seedds and contributors  
-[Official documentation](https://github.com/seedds/nxnative/blob/main/README.md) · Sources reviewed: 2026-10-20
+[Official documentation](https://github.com/seedds/nxnative/blob/main/README.md) · Sources reviewed: 2026-10-25
 
 </details>
 
