@@ -28,7 +28,7 @@
 - [디자인·창작 도구](#creative) · 13
 - [일상 도구와 인터페이스 재현](#everyday) · 9
 - [게임 엔진과 게임 재구현](#classic_games) · 26
-- [이식·호환성 프로젝트](#ports) · 45
+- [이식·호환성 프로젝트](#ports) · 53
 
 <img src="assets/overview-ko.svg" alt="목차" width="920">
 
@@ -2216,22 +2216,22 @@ Tears of the Kingdom v1.4.3을 Apple Silicon에서 네이티브 실행하는 실
 Slippi 온라인 대전과 고주사율 화면을 지원하는 Super Smash Bros. Melee의 네이티브 PC 포트입니다. NTSC 1.02 ISO를 직접 준비해야 합니다.
 
 원작 또는 참고 대상: **Super Smash Bros. Melee (NTSC 1.02)** · 플랫폼 호환 계층  
-[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-ko)
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.57) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
 **지원 환경:** Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)
 
-**개발 상태:** 베타 v0.9.56 · Linux는 실험 단계 · ISO 별도 준비
+**개발 상태:** 베타 v0.9.57 · Linux는 실험 단계 · ISO 별도 준비
 
 **준비할 것:** 합법적으로 취득한 원본 상태의 압축되지 않은 Super Smash Bros. Melee NTSC 1.02 ISO가 필요합니다. 원작 게임 데이터는 포함되지 않으며, 코드 라이선스는 게임 에셋에 적용되지 않습니다.
 
-**현재 이용할 수 있는 것:** v0.9.56은 Windows x64 패키지와 실험 단계의 Linux x86-64 패키지를 제공합니다. Linux에는 AVX2와 OpenGL 4.5가 필요하며, Static Recomp는 Windows 전용입니다. RemakeList는 빌드를 설치하거나 플레이하지 않았습니다.
+**현재 이용할 수 있는 것:** v0.9.57은 Windows x64 패키지와 실험 단계의 Linux x86-64 패키지를 제공합니다. Linux에는 AVX2와 OpenGL 4.5가 필요하며, Static Recomp는 Windows 전용입니다. RemakeList는 빌드를 설치하거나 플레이하지 않았습니다.
 
 **코드 라이선스:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
 **제작자:** Hero88go / Melee Unlocked contributors  
-[공식 문서](https://github.com/Hero88go/melee-unlocked#readme) · 자료 확인일: 2026-10-25
+[공식 문서](https://github.com/Hero88go/melee-unlocked#readme) · 자료 확인일: 2026-10-26
 
 </details>
 
@@ -2280,6 +2280,198 @@ Slippi 온라인 대전과 고주사율 화면을 지원하는 Super Smash Bros.
 **코드 라이선스:** [MIT for the project code; original game content and third-party components retain their own rights.](https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE)  
 **제작자:** TGP482  
 [공식 문서](https://github.com/TGP482/SCDA-XBERecomp#readme) · 자료 확인일: 2026-10-25
+
+</details>
+
+### [P.T. for PC](https://github.com/LoreanXavier/pt-pc)
+
+PS4 P.T. 체험판을 데스크톱으로 옮기고 키보드, 컨트롤러, 사진 모드 조작을 추가한 포트입니다. 직접 준비한 PS4 게임 데이터가 필요합니다.
+
+원작 또는 참고 대상: **P.T. (PS4, 2014)** · 플랫폼 호환 계층  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/LoreanXavier/pt-pc/releases/tag/v1.0.8) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/pt-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pt-pc-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows 10/11 x64 / Linux x86-64 / macOS 14+
+
+**개발 상태:** v1.0.8 · 초기 포트 · 원작 파일 필요
+
+**준비할 것:** 합법적으로 취득한 PS4 P.T. 데이터를 준비해야 합니다. 제작자의 테스트 대상은 미국판 CUSA01127이며 암호화된 스토어 PKG는 사용할 수 없습니다. 포트와 설치 프로그램에는 원작 게임 파일이 포함되지 않습니다.
+
+**현재 이용할 수 있는 것:** v1.0.8은 Windows/Linux 설치 프로그램과 포터블 패키지, Apple silicon 및 Intel Mac 빌드를 제공합니다. Linux는 glibc 2.38+, 그래픽은 Vulkan 1.3이 필요하며 macOS는 포함된 MoltenVK를 사용합니다. RemakeList에서는 빌드를 실행하지 않았습니다. Intel Mac 빌드는 실제 Intel Mac에서 테스트되지 않았습니다. VR은 시뮬레이션 런타임에서만 확인했습니다. macOS에서는 일부 효과와 업스케일러를 사용할 수 없으며 하드웨어 지원 범위도 다릅니다.
+
+**코드 라이선스:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/LoreanXavier/pt-pc/blob/main/LICENSE)  
+**제작자:** LoreanXavier  
+[공식 문서](https://github.com/LoreanXavier/pt-pc/blob/main/README.md) · 자료 확인일: 2026-10-26
+
+</details>
+
+### [GT4Recomp](https://github.com/moesuito/gt4-staticrecomp)
+
+해상도, 컨트롤러, 텍스처 팩을 설정할 수 있는 Gran Turismo 4의 Windows 포트입니다. 지원되는 PS2 디스크 이미지를 직접 준비해야 합니다.
+
+원작 또는 참고 대상: **Gran Turismo 4 (PS2)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/moesuito/gt4-staticrecomp/releases/tag/v1.3.0-rc6) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/gt4-staticrecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gt4-staticrecomp-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows 10/11 x64 · Vulkan / Direct3D 12 / Direct3D 11
+
+**개발 상태:** v1.3.0-rc6 · 사전 출시 · 원작 파일 필요
+
+**준비할 것:** 합법적으로 취득한 Gran Turismo 4 미국판 v2.00(SCUS-97328)의 일반 ISO가 필요합니다. Spec II에는 직접 준비한 Spec II 1.10 이미지가 별도로 필요합니다. 프로젝트는 게임이나 모드 파일을 제공하지 않습니다.
+
+**현재 이용할 수 있는 것:** v1.3.0-rc6은 Windows 설치 프로그램과 포터블 ZIP을 제공하는 공개 테스트 빌드이며 정식 1.3.0이 아닙니다. Vulkan은 테스트된 기본 방식이고 Direct3D 12와 11은 새로 추가된 대안입니다. Linux와 Android는 계획 단계입니다. 릴리스 후보 버전으로 일부 라이선스 시범 영상과 메뉴 배경이 재생되지 않습니다. 레이싱 휠은 지원하지 않으며 장시간 플레이는 충분히 테스트되지 않았습니다. Performance Mode는 조명 플레어와 햇빛 눈부심 효과를 제거합니다. Spec II 울트라와이드 HUD 문제가 남아 있으며 성능은 하드웨어에 따라 다릅니다.
+
+**코드 라이선스:** [MIT for original project code; the separate PCSX2 GS process is GPL-3.0-or-later. Original game and mod content have separate rights.](https://github.com/moesuito/gt4-staticrecomp/blob/main/LICENSE)  
+**제작자:** moesuito  
+[공식 문서](https://github.com/moesuito/gt4-staticrecomp/blob/main/README.md) · 자료 확인일: 2026-10-26
+
+</details>
+
+### [God of War PSP Recomp](https://github.com/DrummingBird1/gow-psp-recomp)
+
+직접 준비한 미국판 디스크 이미지로 PSP God of War 두 작품을 로컬에서 다시 빌드하는 Windows 런처입니다. 현대적인 화면 및 입력 설정을 제공합니다.
+
+원작 또는 참고 대상: **God of War: Chains of Olympus / Ghost of Sparta (PSP)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/DrummingBird1/gow-psp-recomp/releases/tag/v1.3.1) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/gow-psp-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gow-psp-recomp-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows · Linux/Steam Deck은 계획 단계
+
+**개발 상태:** v1.3.1 · 초기 포트 · 원작 파일 필요
+
+**준비할 것:** 합법적으로 취득한 미국판 PSP CHD 또는 ISO를 준비해야 합니다. 대상은 Chains of Olympus UCUS98653 및/또는 Ghost of Sparta UCUS98737입니다. 프로젝트는 원작 게임 데이터를 제공하지 않습니다.
+
+**현재 이용할 수 있는 것:** v1.3.1은 Windows 런처 ZIP을 제공합니다. 첫 Build는 사용자에게 확인한 뒤 포터블 도구를 다운로드하고 선택한 게임을 로컬에서 컴파일합니다. 현재 출시 플랫폼은 Windows이며 두 작품 모두 전체 플레이 완료 검증은 이루어지지 않았습니다. 프리뷰 소프트웨어로 후반 스테이지, 보스, 엔딩에 문제가 있을 수 있습니다. Linux와 Steam Deck은 계획 단계입니다. 런처는 서명되지 않았고 빌드 도구는 처음에 다운로드해야 합니다. 자동 스테이지 순회는 전체 게임 완료 검증이 아닙니다.
+
+**코드 라이선스:** [GPL-3.0-or-later for project code; original game content and third-party components retain their own rights and terms.](https://github.com/DrummingBird1/gow-psp-recomp/blob/main/LICENSE)  
+**제작자:** DrummingBird1  
+[공식 문서](https://github.com/DrummingBird1/gow-psp-recomp/blob/main/README.md) · 자료 확인일: 2026-10-26
+
+</details>
+
+### [PrimeRecomp](https://github.com/gminustwo/primerecomp)
+
+마우스 조작을 지원하는 Metroid Prime Remastered의 초기 데스크톱 포트입니다. 설치에는 직접 추출한 Switch v1.0.0 파일이 필요합니다.
+
+원작 또는 참고 대상: **Metroid Prime Remastered (Switch)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/gminustwo/primerecomp/releases/tag/v0.0.2) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/primerecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=primerecomp-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows x64 / 실험적 Linux x86-64
+
+**개발 상태:** v0.0.2 · 초기 포트 · 원작 파일 필요
+
+**준비할 것:** 합법적으로 취득한 Switch Metroid Prime Remastered v1.0.0의 업데이트 없는 파일을 exefs 및 romfs 폴더로 추출해 준비하세요. 원작 게임 데이터는 포함되지 않습니다.
+
+**현재 이용할 수 있는 것:** 검증된 릴리스는 Windows ZIP과 실험적인 Linux AppImage를 제공하는 v0.0.2입니다. AVX2, Vulkan 1.3이 필요하며 Linux는 glibc 2.35+도 필요합니다. main README는 v0.0.3을 언급하지만 이번 확인 당시에는 출시되지 않았습니다. 초기 베타입니다. v0.0.2 릴리스 설명에 따르면 당시 Linux 패키지는 소프트웨어 렌더러로만 테스트했으며 실제 Linux GPU나 Steam Deck에서는 검증하지 않았습니다. 이후 README의 설명이 해당 패키지의 검증을 소급해 보장하지는 않습니다. 아직 방문하지 않은 구역에서는 충돌하거나 멈출 수 있으며 RemakeList는 플레이를 테스트하지 않았습니다.
+
+**코드 라이선스:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/gminustwo/primerecomp/blob/main/LICENSE)  
+**제작자:** gminustwo  
+[공식 문서](https://github.com/gminustwo/primerecomp/blob/main/README.md) · 자료 확인일: 2026-10-26
+
+</details>
+
+### [Wario Land: Shake It! Native PC](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC)
+
+키보드/컨트롤러 입력과 그래픽 설정을 제공하는 Wii Wario Land의 Windows 포트입니다. 지원되는 미국판 게임 이미지를 직접 준비해야 합니다.
+
+원작 또는 참고 대상: **Wario Land: Shake It! (Wii)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases/tag/v0.1.0) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/wario-land-shake-it-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=wario-land-shake-it-pc-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows 10/11 x64 · Direct3D 12 / Vulkan
+
+**개발 상태:** v0.1.0 · 사전 출시 · 원작 파일 필요
+
+**준비할 것:** 합법적으로 취득한 수정되지 않은 미국판 Wii Wario Land: Shake It!(RWLE01)를 지원되는 디스크 이미지 또는 추출한 sys/files 폴더로 준비해야 합니다. 프로젝트는 게임을 제공하지 않습니다.
+
+**현재 이용할 수 있는 것:** v0.1.0은 사전 출시 Windows ZIP입니다. Windows 10/11 x64와 Direct3D 12 또는 Vulkan을 지원하는 GPU가 필요합니다. RemakeList에서는 설치하거나 플레이하지 않았습니다. 테스트하지 않은 구역, 렌더링 문제, 충돌 가능성이 남아 있는 사전 출시 소프트웨어입니다. 높은 프레임 속도 보간은 실험적 기능이며 호환성이나 성능을 보장하지 않습니다.
+
+**코드 라이선스:** [GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/LICENSE)  
+**제작자:** santiagovalencia109  
+[공식 문서](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/README.md) · 자료 확인일: 2026-10-26
+
+</details>
+
+### [PGR4 Native](https://github.com/shaunsingh/pgr4-native)
+
+네이티브 Direct3D 12 렌더러를 갖춘 Project Gotham Racing 4 재컴파일 버전입니다. 직접 준비한 게임과 Title Update #2를 사용해 Windows 또는 Proton으로 실행합니다.
+
+원작 또는 참고 대상: **Project Gotham Racing 4 (Xbox 360)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/shaunsingh/pgr4-native/releases/tag/v0.1.2) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/pgr4-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pgr4-native-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows x64 / Linux 및 Steam Deck은 Proton 사용
+
+**개발 상태:** v0.1.2 · 초기 포트 · 원작 파일 필요
+
+**준비할 것:** 합법적으로 취득하고 추출한 PGR4 디스크와 Title Update #2 패키지 또는 파일을 준비해야 합니다. 제작자는 PAL과 NTSC 디스크 내용이 같다고 설명합니다. 원작 게임 데이터는 포함되지 않습니다.
+
+**현재 이용할 수 있는 것:** v0.1.2는 Windows x64 ZIP을 제공합니다. Linux와 Steam Deck에서는 Proton을 사용하며 이 릴리스는 네이티브 Linux 실행 파일이 아닙니다. RemakeList에서는 플레이나 성능을 테스트하지 않았습니다. 지원되는 게임/업데이트 조합과 그래픽 설정이 필요합니다. 호환성과 프레임 속도는 하드웨어 및 해당하는 경우 Proton에 따라 달라지며 Steam Deck의 보편적인 프레임 속도를 보장하지 않습니다.
+
+**코드 라이선스:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE)  
+**제작자:** shaunsingh  
+[공식 문서](https://github.com/shaunsingh/pgr4-native/blob/main/README.md) · 자료 확인일: 2026-10-26
+
+</details>
+
+### [Sky Recomp](https://github.com/Apolinario-coder/SkyRecomp)
+
+키보드/마우스 조작과 그래픽 설정을 제공하는 Skyward Sword HD의 실험적 데스크톱 포트입니다. 직접 준비한 Switch v1.0.0 게임 파일이 필요합니다.
+
+원작 또는 참고 대상: **The Legend of Zelda: Skyward Sword HD (Switch)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.0.2) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/skyrecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=skyrecomp-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows / Linux / macOS
+
+**개발 상태:** v2.0.2 · 초기 포트 · 원작 파일 필요
+
+**준비할 것:** 합법적으로 취득한 Switch Skyward Sword HD v1.0.0의 업데이트 없는 파일을 준비해야 합니다. 원작 게임 파일은 제공되지 않습니다. 선택적 비주얼 팩에는 각 제작자의 별도 조건이 적용됩니다.
+
+**현재 이용할 수 있는 것:** v2.0.2는 Windows, Linux, macOS 패키지를 제공합니다. Windows/Linux에는 호환 Vulkan 1.3 하드웨어가, x86 빌드에는 AVX2가 필요합니다. macOS는 프로젝트의 Metal 백엔드를 사용합니다. 게임 전체의 안정성은 확인되지 않았습니다. 실험 단계로 충돌, 메뉴 멈춤과 렌더링 차이를 조사 중입니다. 높은 프레임 속도 모드는 실험적이며 하드웨어에 따라 다릅니다. RemakeList에서는 이 패키지들을 설치하거나 플레이하지 않았습니다.
+
+**코드 라이선스:** [MIT for original code; LAS Recomp and third-party components retain their notices. Texture packs and presets have separate authors and terms.](https://github.com/Apolinario-coder/SkyRecomp/blob/main/LICENSE)  
+**제작자:** Apolinario-coder  
+[공식 문서](https://github.com/Apolinario-coder/SkyRecomp/blob/main/README.md) · 자료 확인일: 2026-10-26
+
+</details>
+
+### [Madden NFL 08 Recompiled](https://github.com/anishchandra24/MaddenNFL08-Recompiled)
+
+Xbox 360 Madden NFL 08의 초기 Windows 포트입니다. 설치 과정에서 도구 모음을 다운로드하고 직접 추출한 게임 파일로 로컬 빌드합니다.
+
+원작 또는 참고 대상: **Madden NFL 08 (Xbox 360)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/anishchandra24/MaddenNFL08-Recompiled/releases/tag/v0.1.0) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/madden-nfl08-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=madden-nfl08-recompiled-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows 10/11 x64 · ROV 지원 Direct3D 12
+
+**개발 상태:** v0.1.0 · 사전 출시 · 원작 파일 필요
+
+**준비할 것:** 합법적으로 취득한 Xbox 360 Madden NFL 08(Title ID 4541081D)을 추출해 default.xex와 나머지 게임 파일을 함께 두어야 합니다. README가 지정한 실행 파일 리비전만 지원합니다.
+
+**현재 이용할 수 있는 것:** v0.1.0은 바로 플레이할 수 있는 게임 바이너리가 아닌 사전 출시 설치 실행 파일입니다. 지원 게임 파일, 인터넷, Git, C++ 도구가 포함된 Visual Studio 2022 Community, 약 10 GB의 빌드 공간이 필요합니다. 빠른 CPU와 Direct3D 12의 Rasterizer Ordered Views(ROV) 지원이 필요합니다. 제작자의 저사양 PC에서는 경기를 원활하게 플레이할 수 없었고 테스트한 PC는 두 대뿐입니다. 셰이더 끊김, 일부 영상/음향 문제와 온라인 서비스 미지원이 남아 있습니다.
+
+**코드 라이선스:** [GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/LICENSE)  
+**제작자:** anishchandra24  
+[공식 문서](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/README.md) · 자료 확인일: 2026-10-26
 
 </details>
 

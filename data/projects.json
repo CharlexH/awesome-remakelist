@@ -5800,52 +5800,52 @@
           "original": "Super Smash Bros. Melee (NTSC 1.02)",
           "summary": "A native PC port of Super Smash Bros. Melee with Slippi online play and high-refresh presentation. Requires your own NTSC 1.02 ISO.",
           "requirements": "Supply a lawfully obtained, clean, uncompressed Super Smash Bros. Melee NTSC 1.02 ISO. No original game data is included; the code license does not cover the game's assets.",
-          "availability": "v0.9.56 offers Windows x64 and experimental Linux x86-64 packages. Linux needs AVX2 and OpenGL 4.5; Static Recomp is Windows-only. RemakeList has not installed or played the builds.",
+          "availability": "v0.9.57 offers Windows x64 and experimental Linux x86-64 packages. Linux needs AVX2 and OpenGL 4.5; Static Recomp is Windows-only. RemakeList has not installed or played the builds.",
           "platforms": "Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)",
-          "stage": "Beta v0.9.56 · Linux experimental · own ISO required"
+          "stage": "Beta v0.9.57 · Linux experimental · own ISO required"
         },
         "zh-CN": {
           "original": "Super Smash Bros. Melee（NTSC 1.02）",
           "summary": "Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新率画面；需自备 NTSC 1.02 ISO。",
           "requirements": "需自备合法取得、干净且未压缩的 Super Smash Bros. Melee NTSC 1.02 ISO。项目不附原版游戏数据；代码许可不涵盖游戏素材。",
-          "availability": "v0.9.56 提供 Windows x64 与实验性 Linux x86-64 下载包。Linux 需要 AVX2 和 OpenGL 4.5；Static Recomp 仅支持 Windows。本站未安装或试玩这些构建。",
+          "availability": "v0.9.57 提供 Windows x64 与实验性 Linux x86-64 下载包。Linux 需要 AVX2 和 OpenGL 4.5；Static Recomp 仅支持 Windows。本站未安装或试玩这些构建。",
           "platforms": "Windows 10/11 x64 / Linux x86-64（AVX2、OpenGL 4.5）",
-          "stage": "Beta v0.9.56 · Linux 仍属实验阶段 · 需自备 ISO"
+          "stage": "Beta v0.9.57 · Linux 仍属实验阶段 · 需自备 ISO"
         },
         "ja": {
           "original": "Super Smash Bros. Melee（NTSC 1.02）",
           "summary": "Slippi のオンライン対戦と高リフレッシュレート表示に対応する Super Smash Bros. Melee のネイティブ PC 移植。NTSC 1.02 の ISO を自分で用意する必要があります。",
           "requirements": "正規に入手した、変更や圧縮のない Super Smash Bros. Melee NTSC 1.02 の ISO を用意してください。元のゲームデータは含まれず、コードのライセンスはゲーム素材には適用されません。",
-          "availability": "v0.9.56 は Windows x64 版と実験段階の Linux x86-64 版を提供。Linux には AVX2 と OpenGL 4.5 が必要です。Static Recomp は Windows 専用です。RemakeList はインストールやプレイによる検証を行っていません。",
+          "availability": "v0.9.57 は Windows x64 版と実験段階の Linux x86-64 版を提供。Linux には AVX2 と OpenGL 4.5 が必要です。Static Recomp は Windows 専用です。RemakeList はインストールやプレイによる検証を行っていません。",
           "platforms": "Windows 10/11 x64 / Linux x86-64（AVX2、OpenGL 4.5）",
-          "stage": "ベータ v0.9.56 · Linux は実験段階 · ISO の用意が必要"
+          "stage": "ベータ v0.9.57 · Linux は実験段階 · ISO の用意が必要"
         },
         "ko": {
           "original": "Super Smash Bros. Melee (NTSC 1.02)",
           "summary": "Slippi 온라인 대전과 고주사율 화면을 지원하는 Super Smash Bros. Melee의 네이티브 PC 포트입니다. NTSC 1.02 ISO를 직접 준비해야 합니다.",
           "requirements": "합법적으로 취득한 원본 상태의 압축되지 않은 Super Smash Bros. Melee NTSC 1.02 ISO가 필요합니다. 원작 게임 데이터는 포함되지 않으며, 코드 라이선스는 게임 에셋에 적용되지 않습니다.",
-          "availability": "v0.9.56은 Windows x64 패키지와 실험 단계의 Linux x86-64 패키지를 제공합니다. Linux에는 AVX2와 OpenGL 4.5가 필요하며, Static Recomp는 Windows 전용입니다. RemakeList는 빌드를 설치하거나 플레이하지 않았습니다.",
+          "availability": "v0.9.57은 Windows x64 패키지와 실험 단계의 Linux x86-64 패키지를 제공합니다. Linux에는 AVX2와 OpenGL 4.5가 필요하며, Static Recomp는 Windows 전용입니다. RemakeList는 빌드를 설치하거나 플레이하지 않았습니다.",
           "platforms": "Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)",
-          "stage": "베타 v0.9.56 · Linux는 실험 단계 · ISO 별도 준비"
+          "stage": "베타 v0.9.57 · Linux는 실험 단계 · ISO 별도 준비"
         },
         "es": {
           "original": "Super Smash Bros. Melee (NTSC 1.02)",
           "summary": "Una adaptación nativa para PC de Super Smash Bros. Melee con juego en línea mediante Slippi y visualización a alta frecuencia de actualización. Requiere tu propia ISO NTSC 1.02.",
           "requirements": "Debes aportar una ISO de Super Smash Bros. Melee NTSC 1.02 obtenida legalmente, limpia y sin comprimir. No se incluyen datos del juego original; la licencia del código no cubre los recursos del juego.",
-          "availability": "v0.9.56 ofrece paquetes para Windows x64 y paquetes experimentales para Linux x86-64. Linux requiere AVX2 y OpenGL 4.5; Static Recomp solo está disponible en Windows. RemakeList no ha instalado ni jugado estas compilaciones.",
+          "availability": "v0.9.57 ofrece paquetes para Windows x64 y paquetes experimentales para Linux x86-64. Linux requiere AVX2 y OpenGL 4.5; Static Recomp solo está disponible en Windows. RemakeList no ha instalado ni jugado estas compilaciones.",
           "platforms": "Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)",
-          "stage": "Beta v0.9.56 · Linux experimental · requiere ISO propia"
+          "stage": "Beta v0.9.57 · Linux experimental · requiere ISO propia"
         }
       },
       "start": "download_with_original_assets",
-      "start_url": "https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56",
+      "start_url": "https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.57",
       "code_license": "GPL-3.0-or-later · port code; third-party components keep their own terms.",
       "code_license_url": "https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE",
       "code_license_sources": [
         "https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-25",
+      "source_reviewed_at": "2026-10-26",
       "official_url": "https://github.com/Hero88go/melee-unlocked",
       "documentation_url": "https://github.com/Hero88go/melee-unlocked#readme",
       "site_url": "https://remakelist.com/remakes/melee-unlocked/",
@@ -5981,7 +5981,519 @@
       "original_files": "original",
       "author": "TGP482",
       "author_url": "https://github.com/TGP482"
+    },
+    {
+      "id": "pt-pc",
+      "name": "P.T. for PC",
+      "relationship": "platform-compatibility-reimplementation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "P.T. (PS4, 2014)",
+          "summary": "A desktop port of the PS4 P.T. teaser, with keyboard, controller and photo-mode controls. Requires your own PS4 game data.",
+          "requirements": "Supply lawfully obtained PS4 P.T. data. The author tests the US CUSA01127 edition; encrypted store PKGs cannot be used. The port and installer do not include the original game files.",
+          "availability": "v1.0.8 has Windows and Linux installers and portable packages, plus Apple silicon and Intel Mac builds. Linux requires glibc 2.38+; graphics require Vulkan 1.3, with bundled MoltenVK on macOS. RemakeList has not run the builds. Intel Mac builds have not been tested on a physical Intel Mac. VR has only been checked against a simulated runtime. Some effects and upscalers are unavailable on macOS; hardware support varies.",
+          "platforms": "Windows 10/11 x64 / Linux x86-64 / macOS 14+",
+          "stage": "v1.0.8 · Early port · original files required"
+        },
+        "zh-CN": {
+          "original": "P.T.（2014 PS4 试玩版）",
+          "summary": "将 PS4《P.T.》试玩版带到桌面的移植，加入键鼠、手柄和拍照模式；需自备 PS4 游戏数据。",
+          "requirements": "需自备合法取得的 PS4 P.T. 数据，作者测试的是美版 CUSA01127。加密商店 PKG 不能使用；移植和安装器不附原版游戏文件。",
+          "availability": "v1.0.8 提供 Windows、Linux 安装器及便携包，以及 Apple silicon 和 Intel Mac 构建。Linux 需 glibc 2.38+；图形需 Vulkan 1.3，macOS 通过随附 MoltenVK 运行。本站未运行这些构建。 Intel Mac 构建尚未在 Intel Mac 真机测试；VR 仅用模拟运行时检查。macOS 不支持部分效果和超分功能，硬件支持范围不同。",
+          "platforms": "Windows 10/11 x64 / Linux x86-64 / macOS 14+",
+          "stage": "v1.0.8 · 早期移植 · 需原版文件"
+        },
+        "ja": {
+          "original": "P.T. (PS4, 2014)",
+          "summary": "PS4 の体験版 P.T. をデスクトップに移植し、キーボード、コントローラー、フォトモード操作を追加。自分で用意した PS4 ゲームデータが必要です。",
+          "requirements": "合法的に入手した PS4 P.T. のデータを用意してください。作者のテスト対象は米国版 CUSA01127 で、暗号化されたストア PKG は使用できません。移植版とインストーラーに原作のファイルは含まれません。",
+          "availability": "v1.0.8 は Windows／Linux のインストーラーとポータブル版、Apple silicon／Intel Mac 版を提供。Linux は glibc 2.38+、描画は Vulkan 1.3 が必要で、macOS は同梱の MoltenVK を使用します。RemakeList では実行していません。 Intel Mac 版は Intel Mac 実機で未テストです。VR の確認はシミュレーション環境のみです。macOS では一部のエフェクトやアップスケーラーが利用できず、対応範囲はハードウェアによって異なります。",
+          "platforms": "Windows 10/11 x64 / Linux x86-64 / macOS 14+",
+          "stage": "v1.0.8 · 初期の移植 · 原作ファイルが必要"
+        },
+        "ko": {
+          "original": "P.T. (PS4, 2014)",
+          "summary": "PS4 P.T. 체험판을 데스크톱으로 옮기고 키보드, 컨트롤러, 사진 모드 조작을 추가한 포트입니다. 직접 준비한 PS4 게임 데이터가 필요합니다.",
+          "requirements": "합법적으로 취득한 PS4 P.T. 데이터를 준비해야 합니다. 제작자의 테스트 대상은 미국판 CUSA01127이며 암호화된 스토어 PKG는 사용할 수 없습니다. 포트와 설치 프로그램에는 원작 게임 파일이 포함되지 않습니다.",
+          "availability": "v1.0.8은 Windows/Linux 설치 프로그램과 포터블 패키지, Apple silicon 및 Intel Mac 빌드를 제공합니다. Linux는 glibc 2.38+, 그래픽은 Vulkan 1.3이 필요하며 macOS는 포함된 MoltenVK를 사용합니다. RemakeList에서는 빌드를 실행하지 않았습니다. Intel Mac 빌드는 실제 Intel Mac에서 테스트되지 않았습니다. VR은 시뮬레이션 런타임에서만 확인했습니다. macOS에서는 일부 효과와 업스케일러를 사용할 수 없으며 하드웨어 지원 범위도 다릅니다.",
+          "platforms": "Windows 10/11 x64 / Linux x86-64 / macOS 14+",
+          "stage": "v1.0.8 · 초기 포트 · 원작 파일 필요"
+        },
+        "es": {
+          "original": "P.T. (PS4, 2014)",
+          "summary": "Una adaptación para ordenador del teaser P.T. de PS4, con controles de teclado, mando y modo foto. Requiere tus propios datos del juego de PS4.",
+          "requirements": "Aporta tus propios datos de P.T. para PS4, obtenidos legalmente. El autor prueba la edición estadounidense CUSA01127; los PKG cifrados de la tienda no son utilizables. La adaptación y el instalador no incluyen los archivos del juego original.",
+          "availability": "v1.0.8 ofrece instaladores y paquetes portátiles para Windows y Linux, además de versiones para Mac con Apple silicon e Intel. Linux requiere glibc 2.38+; los gráficos requieren Vulkan 1.3, con MoltenVK incluido en macOS. RemakeList no ha ejecutado estas versiones. Las versiones para Mac Intel no se han probado en un Mac Intel físico. La VR solo se ha comprobado con un entorno simulado. Algunos efectos y técnicas de reescalado no están disponibles en macOS; la compatibilidad del hardware varía.",
+          "platforms": "Windows 10/11 x64 / Linux x86-64 / macOS 14+",
+          "stage": "v1.0.8 · Adaptación temprana · Requiere archivos originales"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/LoreanXavier/pt-pc/releases/tag/v1.0.8",
+      "code_license": "MIT for project code; original game content and third-party components retain their own rights and terms.",
+      "code_license_url": "https://github.com/LoreanXavier/pt-pc/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/LoreanXavier/pt-pc/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-26",
+      "official_url": "https://github.com/LoreanXavier/pt-pc",
+      "documentation_url": "https://github.com/LoreanXavier/pt-pc/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/pt-pc/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/pt-pc/",
+      "original_files": "original",
+      "author": "LoreanXavier",
+      "author_url": "https://github.com/LoreanXavier"
+    },
+    {
+      "id": "gt4-staticrecomp",
+      "name": "GT4Recomp",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Gran Turismo 4 (PS2)",
+          "summary": "A Windows port of Gran Turismo 4 with configurable resolution, controllers and texture packs. Requires your own supported PS2 disc image.",
+          "requirements": "Requires a lawfully obtained plain ISO of Gran Turismo 4 USA v2.00 (SCUS-97328). Spec II needs your own Spec II 1.10 image separately. The project supplies no game or mod files.",
+          "availability": "v1.3.0-rc6 is a public test build with Windows installer and portable ZIP, not the final 1.3.0 release. Vulkan is the tested default; Direct3D 12 and 11 are newer alternatives. Linux and Android remain planned. Release candidate: some license demos and menu backgrounds do not play; racing wheels are unsupported and long sessions are not fully tested. Performance Mode removes light flares and sun glare. Spec II ultrawide HUD issues remain; performance is hardware-dependent.",
+          "platforms": "Windows 10/11 x64 · Vulkan / Direct3D 12 / Direct3D 11",
+          "stage": "v1.3.0-rc6 · Pre-release · original files required"
+        },
+        "zh-CN": {
+          "original": "Gran Turismo 4（PS2）",
+          "summary": "将《Gran Turismo 4》带到 Windows，提供分辨率、手柄和材质包设置；需自备受支持的 PS2 光盘镜像。",
+          "requirements": "需自备合法取得的 Gran Turismo 4 美版 v2.00（SCUS-97328）普通 ISO；Spec II 需另备 Spec II 1.10 镜像。项目不提供游戏或模组文件。",
+          "availability": "v1.3.0-rc6 是公开测试版，提供 Windows 安装器和便携 ZIP，并非正式 1.3.0。Vulkan 是已测试的默认渲染方式，Direct3D 12 与 11 是较新的备选；Linux 和 Android 仍在计划中。 候选测试版：部分驾照演示和菜单背景不播放，尚不支持赛车方向盘，长时间游玩未完成验证。性能模式会移除灯光光晕和太阳眩光；Spec II 超宽屏 HUD 仍有问题，表现取决于硬件。",
+          "platforms": "Windows 10/11 x64 · Vulkan / Direct3D 12 / Direct3D 11",
+          "stage": "v1.3.0-rc6 · 预发布 · 需原版文件"
+        },
+        "ja": {
+          "original": "Gran Turismo 4 (PS2)",
+          "summary": "解像度、コントローラー、テクスチャパックを設定できる Gran Turismo 4 の Windows 移植版。対応する PS2 ディスクイメージを自分で用意する必要があります。",
+          "requirements": "合法的に入手した Gran Turismo 4 米国版 v2.00（SCUS-97328）の通常の ISO が必要です。Spec II には、自分で用意した Spec II 1.10 イメージが別途必要です。ゲームや MOD のファイルは提供されません。",
+          "availability": "v1.3.0-rc6 は Windows インストーラーとポータブル ZIP を提供する公開テスト版で、正式な 1.3.0 ではありません。Vulkan がテスト済みの標準で、Direct3D 12／11 は新しい選択肢です。Linux／Android は計画段階です。 候補版のため、一部のライセンスデモやメニュー背景は再生されません。ステアリングホイールは非対応で、長時間のプレイは十分に検証されていません。Performance Mode は光源のフレアと太陽のまぶしさを無効にします。Spec II のウルトラワイド HUD に問題が残り、性能はハードウェアに依存します。",
+          "platforms": "Windows 10/11 x64 · Vulkan / Direct3D 12 / Direct3D 11",
+          "stage": "v1.3.0-rc6 · プレリリース · 原作ファイルが必要"
+        },
+        "ko": {
+          "original": "Gran Turismo 4 (PS2)",
+          "summary": "해상도, 컨트롤러, 텍스처 팩을 설정할 수 있는 Gran Turismo 4의 Windows 포트입니다. 지원되는 PS2 디스크 이미지를 직접 준비해야 합니다.",
+          "requirements": "합법적으로 취득한 Gran Turismo 4 미국판 v2.00(SCUS-97328)의 일반 ISO가 필요합니다. Spec II에는 직접 준비한 Spec II 1.10 이미지가 별도로 필요합니다. 프로젝트는 게임이나 모드 파일을 제공하지 않습니다.",
+          "availability": "v1.3.0-rc6은 Windows 설치 프로그램과 포터블 ZIP을 제공하는 공개 테스트 빌드이며 정식 1.3.0이 아닙니다. Vulkan은 테스트된 기본 방식이고 Direct3D 12와 11은 새로 추가된 대안입니다. Linux와 Android는 계획 단계입니다. 릴리스 후보 버전으로 일부 라이선스 시범 영상과 메뉴 배경이 재생되지 않습니다. 레이싱 휠은 지원하지 않으며 장시간 플레이는 충분히 테스트되지 않았습니다. Performance Mode는 조명 플레어와 햇빛 눈부심 효과를 제거합니다. Spec II 울트라와이드 HUD 문제가 남아 있으며 성능은 하드웨어에 따라 다릅니다.",
+          "platforms": "Windows 10/11 x64 · Vulkan / Direct3D 12 / Direct3D 11",
+          "stage": "v1.3.0-rc6 · 사전 출시 · 원작 파일 필요"
+        },
+        "es": {
+          "original": "Gran Turismo 4 (PS2)",
+          "summary": "Una adaptación de Gran Turismo 4 para Windows con ajustes de resolución, mandos y paquetes de texturas. Requiere tu propia imagen de disco de PS2 compatible.",
+          "requirements": "Requiere una ISO sin comprimir de Gran Turismo 4 USA v2.00 (SCUS-97328) obtenida legalmente. Spec II necesita además tu propia imagen Spec II 1.10. El proyecto no proporciona archivos del juego ni del mod.",
+          "availability": "v1.3.0-rc6 es una versión pública de pruebas con instalador de Windows y ZIP portátil, no la versión final 1.3.0. Vulkan es la opción predeterminada probada; Direct3D 12 y 11 son alternativas más recientes. Linux y Android siguen previstos. Versión candidata: algunas demostraciones de licencias y fondos de menús no se reproducen. Los volantes no son compatibles y las sesiones largas no se han probado por completo. El modo Rendimiento elimina los halos de luz y el resplandor solar. Persisten problemas del HUD ultrapanorámico de Spec II; el rendimiento depende del hardware.",
+          "platforms": "Windows 10/11 x64 · Vulkan / Direct3D 12 / Direct3D 11",
+          "stage": "v1.3.0-rc6 · Versión preliminar · Requiere archivos originales"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/moesuito/gt4-staticrecomp/releases/tag/v1.3.0-rc6",
+      "code_license": "MIT for original project code; the separate PCSX2 GS process is GPL-3.0-or-later. Original game and mod content have separate rights.",
+      "code_license_url": "https://github.com/moesuito/gt4-staticrecomp/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/moesuito/gt4-staticrecomp/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-26",
+      "official_url": "https://github.com/moesuito/gt4-staticrecomp",
+      "documentation_url": "https://github.com/moesuito/gt4-staticrecomp/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/gt4-staticrecomp/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/gt4-staticrecomp/",
+      "original_files": "original",
+      "author": "moesuito",
+      "author_url": "https://github.com/moesuito"
+    },
+    {
+      "id": "gow-psp-recomp",
+      "name": "God of War PSP Recomp",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "God of War: Chains of Olympus / Ghost of Sparta (PSP)",
+          "summary": "A Windows launcher that rebuilds the two PSP God of War games from your own US disc images, with modern display and input settings.",
+          "requirements": "Supply lawfully obtained US PSP disc images in CHD or ISO: Chains of Olympus UCUS98653 and/or Ghost of Sparta UCUS98737. No original game data is supplied by the project.",
+          "availability": "v1.3.1 provides a Windows launcher ZIP. First Build downloads portable tools after asking, then compiles the selected game locally. Windows is the current release platform; neither game has a verified full playthrough. Preview software; late levels, bosses and endings may have bugs. Linux and Steam Deck are planned. Unsigned launcher; build tools need an initial download. Automated level tours do not establish full-game completion.",
+          "platforms": "Windows · Linux / Steam Deck planned",
+          "stage": "v1.3.1 · Early port · original files required"
+        },
+        "zh-CN": {
+          "original": "战神：奥林匹斯之链／斯巴达之魂（PSP）",
+          "summary": "使用自备美版光盘镜像，在 Windows 本地重编译两部 PSP《战神》的启动器，提供现代显示与输入设置。",
+          "requirements": "需自备合法取得的美版 PSP CHD 或 ISO：奥林匹斯之链 UCUS98653，或斯巴达之魂 UCUS98737。项目不提供原版游戏数据。",
+          "availability": "v1.3.1 提供 Windows 启动器 ZIP。首次 Build 会先询问并下载便携构建工具，再在本机编译选中的游戏。目前发行平台为 Windows，两部游戏均未完成完整通关验证。 预览软件，后期关卡、Boss 与结局可能仍有问题。Linux 和 Steam Deck 尚在计划中；启动器未签名，构建工具需首次下载。自动关卡巡检不等于完整通关。",
+          "platforms": "Windows · Linux / Steam Deck 在计划中",
+          "stage": "v1.3.1 · 早期移植 · 需原版文件"
+        },
+        "ja": {
+          "original": "God of War: Chains of Olympus / Ghost of Sparta (PSP)",
+          "summary": "自分で用意した米国版ディスクイメージから PSP の God of War 2作品をローカルで再構築する Windows ランチャー。現代的な表示・入力設定を備えています。",
+          "requirements": "合法的に入手した米国版 PSP の CHD または ISO を用意してください。対象は Chains of Olympus（UCUS98653）と Ghost of Sparta（UCUS98737）です。原作ゲームデータは提供されません。",
+          "availability": "v1.3.1 は Windows 用ランチャー ZIP を提供します。最初の Build では確認後にポータブルツールをダウンロードし、選択したゲームをローカルでコンパイルします。現行のリリース対象は Windows で、両作品とも全編通しの動作確認は完了していません。 プレビュー版で、後半のステージ、ボス、エンディングに不具合が残る可能性があります。Linux／Steam Deck は計画段階です。ランチャーは未署名で、ビルドツールは初回にダウンロードが必要です。自動のステージ巡回は全編クリアの検証にはなりません。",
+          "platforms": "Windows · Linux／Steam Deck は計画段階",
+          "stage": "v1.3.1 · 初期の移植 · 原作ファイルが必要"
+        },
+        "ko": {
+          "original": "God of War: Chains of Olympus / Ghost of Sparta (PSP)",
+          "summary": "직접 준비한 미국판 디스크 이미지로 PSP God of War 두 작품을 로컬에서 다시 빌드하는 Windows 런처입니다. 현대적인 화면 및 입력 설정을 제공합니다.",
+          "requirements": "합법적으로 취득한 미국판 PSP CHD 또는 ISO를 준비해야 합니다. 대상은 Chains of Olympus UCUS98653 및/또는 Ghost of Sparta UCUS98737입니다. 프로젝트는 원작 게임 데이터를 제공하지 않습니다.",
+          "availability": "v1.3.1은 Windows 런처 ZIP을 제공합니다. 첫 Build는 사용자에게 확인한 뒤 포터블 도구를 다운로드하고 선택한 게임을 로컬에서 컴파일합니다. 현재 출시 플랫폼은 Windows이며 두 작품 모두 전체 플레이 완료 검증은 이루어지지 않았습니다. 프리뷰 소프트웨어로 후반 스테이지, 보스, 엔딩에 문제가 있을 수 있습니다. Linux와 Steam Deck은 계획 단계입니다. 런처는 서명되지 않았고 빌드 도구는 처음에 다운로드해야 합니다. 자동 스테이지 순회는 전체 게임 완료 검증이 아닙니다.",
+          "platforms": "Windows · Linux/Steam Deck은 계획 단계",
+          "stage": "v1.3.1 · 초기 포트 · 원작 파일 필요"
+        },
+        "es": {
+          "original": "God of War: Chains of Olympus / Ghost of Sparta (PSP)",
+          "summary": "Un lanzador para Windows que recompila localmente los dos God of War de PSP a partir de tus propias imágenes de discos estadounidenses, con ajustes modernos de pantalla y controles.",
+          "requirements": "Aporta tus propias imágenes de discos estadounidenses de PSP obtenidas legalmente, en CHD o ISO: Chains of Olympus UCUS98653 y/o Ghost of Sparta UCUS98737. El proyecto no incluye datos de los juegos originales.",
+          "availability": "v1.3.1 proporciona un ZIP del lanzador para Windows. La primera operación Build pide permiso para descargar herramientas portátiles y después compila localmente el juego seleccionado. Windows es la plataforma publicada actualmente; no se ha verificado una partida completa de ninguno de los dos juegos. Versión de prueba: puede haber fallos en niveles avanzados, jefes y finales. Linux y Steam Deck están previstos. El lanzador no está firmado y las herramientas de compilación requieren una descarga inicial. Los recorridos automáticos de niveles no demuestran que se puedan completar los juegos.",
+          "platforms": "Windows · Linux / Steam Deck previstos",
+          "stage": "v1.3.1 · Adaptación temprana · Requiere archivos originales"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/DrummingBird1/gow-psp-recomp/releases/tag/v1.3.1",
+      "code_license": "GPL-3.0-or-later for project code; original game content and third-party components retain their own rights and terms.",
+      "code_license_url": "https://github.com/DrummingBird1/gow-psp-recomp/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/DrummingBird1/gow-psp-recomp/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-26",
+      "official_url": "https://github.com/DrummingBird1/gow-psp-recomp",
+      "documentation_url": "https://github.com/DrummingBird1/gow-psp-recomp/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/gow-psp-recomp/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/gow-psp-recomp/",
+      "original_files": "original",
+      "author": "DrummingBird1",
+      "author_url": "https://github.com/DrummingBird1"
+    },
+    {
+      "id": "primerecomp",
+      "name": "PrimeRecomp",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Metroid Prime Remastered (Switch)",
+          "summary": "An early desktop port of Metroid Prime Remastered with mouse controls. Setup requires your own extracted Switch v1.0.0 files.",
+          "requirements": "Supply lawfully obtained Metroid Prime Remastered v1.0.0 Switch files without updates, extracted into exefs and romfs folders. No original game data is included.",
+          "availability": "The verified release is v0.0.2 with a Windows ZIP and experimental Linux AppImage. Requires AVX2, Vulkan 1.3 and, on Linux, glibc 2.35+. The main README mentions v0.0.3, but it was not a published release at this check. Early beta. The v0.0.2 release notes report software-renderer-only Linux testing at publication, without Linux GPU or Steam Deck validation at that time. Later README performance claims do not establish compatibility on your hardware. Unvisited areas may crash or hang; RemakeList has not played the build.",
+          "platforms": "Windows x64 / experimental Linux x86-64",
+          "stage": "v0.0.2 · Early port · original files required"
+        },
+        "zh-CN": {
+          "original": "银河战士 Prime 复刻版（Switch）",
+          "summary": "《银河战士 Prime 复刻版》的早期桌面移植，加入鼠标操作；安装需自备已提取的 Switch v1.0.0 文件。",
+          "requirements": "需自备合法取得的 Switch《银河战士 Prime 复刻版》v1.0.0 文件，不含更新，并提取为 exefs 与 romfs 文件夹。项目不含原版游戏数据。",
+          "availability": "已核实发行版为 v0.0.2，提供 Windows ZIP 和实验性 Linux AppImage。需 AVX2、Vulkan 1.3；Linux 另需 glibc 2.35+。主分支 README 提到 v0.0.3，但本次检查时尚未见正式发布记录。 早期 Beta。v0.0.2 发行说明记载，发布时 Linux 仅用软件渲染器测试，当时未做 Linux 显卡或 Steam Deck 实机验收。后续 README 的性能描述不保证你的硬件兼容；未到达区域可能崩溃或卡死，本站未试玩。",
+          "platforms": "Windows x64 / 实验性 Linux x86-64",
+          "stage": "v0.0.2 · 早期移植 · 需原版文件"
+        },
+        "ja": {
+          "original": "Metroid Prime Remastered (Switch)",
+          "summary": "マウス操作に対応する Metroid Prime Remastered の初期デスクトップ移植版。セットアップには、自分で抽出した Switch v1.0.0 のファイルが必要です。",
+          "requirements": "合法的に入手した Switch 版 Metroid Prime Remastered v1.0.0 の更新を含まないファイルを、exefs と romfs フォルダーに抽出して用意してください。原作ゲームデータは含まれません。",
+          "availability": "確認できたリリースは v0.0.2 で、Windows ZIP と実験的な Linux AppImage があります。AVX2、Vulkan 1.3、Linux では glibc 2.35+ が必要です。main の README は v0.0.3 に言及していますが、今回の確認時点では未リリースでした。 初期ベータです。v0.0.2 のリリース説明によると、当時の Linux 版はソフトウェアレンダラーでのみテストされ、Linux GPU 実機や Steam Deck では未検証でした。後日の README の記述は、このパッケージを遡って検証するものではありません。未踏のエリアではクラッシュや停止が起こる可能性があり、RemakeList ではプレイを検証していません。",
+          "platforms": "Windows x64／実験的な Linux x86-64",
+          "stage": "v0.0.2 · 初期の移植 · 原作ファイルが必要"
+        },
+        "ko": {
+          "original": "Metroid Prime Remastered (Switch)",
+          "summary": "마우스 조작을 지원하는 Metroid Prime Remastered의 초기 데스크톱 포트입니다. 설치에는 직접 추출한 Switch v1.0.0 파일이 필요합니다.",
+          "requirements": "합법적으로 취득한 Switch Metroid Prime Remastered v1.0.0의 업데이트 없는 파일을 exefs 및 romfs 폴더로 추출해 준비하세요. 원작 게임 데이터는 포함되지 않습니다.",
+          "availability": "검증된 릴리스는 Windows ZIP과 실험적인 Linux AppImage를 제공하는 v0.0.2입니다. AVX2, Vulkan 1.3이 필요하며 Linux는 glibc 2.35+도 필요합니다. main README는 v0.0.3을 언급하지만 이번 확인 당시에는 출시되지 않았습니다. 초기 베타입니다. v0.0.2 릴리스 설명에 따르면 당시 Linux 패키지는 소프트웨어 렌더러로만 테스트했으며 실제 Linux GPU나 Steam Deck에서는 검증하지 않았습니다. 이후 README의 설명이 해당 패키지의 검증을 소급해 보장하지는 않습니다. 아직 방문하지 않은 구역에서는 충돌하거나 멈출 수 있으며 RemakeList는 플레이를 테스트하지 않았습니다.",
+          "platforms": "Windows x64 / 실험적 Linux x86-64",
+          "stage": "v0.0.2 · 초기 포트 · 원작 파일 필요"
+        },
+        "es": {
+          "original": "Metroid Prime Remastered (Switch)",
+          "summary": "Una adaptación temprana para ordenador de Metroid Prime Remastered con control mediante ratón. La configuración requiere tus propios archivos extraídos de Switch v1.0.0.",
+          "requirements": "Aporta tus propios archivos de Metroid Prime Remastered v1.0.0 para Switch obtenidos legalmente, sin actualizaciones y extraídos en las carpetas exefs y romfs. No se incluyen datos del juego original.",
+          "availability": "La versión publicada verificada es v0.0.2, con ZIP de Windows y AppImage experimental para Linux. Requiere AVX2, Vulkan 1.3 y, en Linux, glibc 2.35+. La README de la rama principal menciona v0.0.3, pero no estaba publicada al realizar esta comprobación. Beta temprana: según las notas de v0.0.2, el paquete Linux solo se había probado entonces con renderizado por software, todavía no en una GPU Linux física ni en Steam Deck. Las afirmaciones posteriores de la README no validan retroactivamente ese paquete. Las zonas no visitadas pueden bloquearse o provocar cierres. RemakeList no ha probado la jugabilidad.",
+          "platforms": "Windows x64 / Linux x86-64 experimental",
+          "stage": "v0.0.2 · Adaptación temprana · Requiere archivos originales"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/gminustwo/primerecomp/releases/tag/v0.0.2",
+      "code_license": "MIT for project code; original game content and third-party components retain their own rights and terms.",
+      "code_license_url": "https://github.com/gminustwo/primerecomp/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/gminustwo/primerecomp/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-26",
+      "official_url": "https://github.com/gminustwo/primerecomp",
+      "documentation_url": "https://github.com/gminustwo/primerecomp/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/primerecomp/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/primerecomp/",
+      "original_files": "original",
+      "author": "gminustwo",
+      "author_url": "https://github.com/gminustwo"
+    },
+    {
+      "id": "wario-land-shake-it-pc",
+      "name": "Wario Land: Shake It! Native PC",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Wario Land: Shake It! (Wii)",
+          "summary": "A Windows port of the Wii Wario Land game, with keyboard/controller input and configurable graphics. Requires your own supported US game image.",
+          "requirements": "Supply a lawfully obtained, unmodified US Wii copy of Wario Land: Shake It! (RWLE01), as a supported disc image or extracted sys/files folders. The project does not supply the game.",
+          "availability": "v0.1.0 is a prerelease Windows ZIP. Requires Windows 10/11 x64 and a GPU supporting Direct3D 12 or Vulkan. RemakeList has not installed or played it. Prerelease software with untested areas, rendering problems and possible crashes. High-frame-rate interpolation is experimental and is not a compatibility or performance guarantee.",
+          "platforms": "Windows 10/11 x64 · Direct3D 12 / Vulkan",
+          "stage": "v0.1.0 · Pre-release · original files required"
+        },
+        "zh-CN": {
+          "original": "瓦力欧大陆：摇摆（Wii）",
+          "summary": "将 Wii《瓦力欧大陆：摇摆》带到 Windows，提供键盘／手柄和图形设置；需自备受支持的美版游戏镜像。",
+          "requirements": "需自备合法取得且未修改的 Wii 美版 Wario Land: Shake It!（RWLE01），使用受支持的光盘镜像，或已提取的 sys／files 文件夹。项目不提供游戏本体。",
+          "availability": "v0.1.0 为 Windows 预发布 ZIP，需 Windows 10/11 x64 及支持 Direct3D 12 或 Vulkan 的显卡。本站未安装或试玩。 预发布软件，存在未测试区域、渲染问题及可能的崩溃。高帧率插帧属于实验功能，不构成兼容性或性能保证。",
+          "platforms": "Windows 10/11 x64 · Direct3D 12 / Vulkan",
+          "stage": "v0.1.0 · 预发布 · 需原版文件"
+        },
+        "ja": {
+          "original": "Wario Land: Shake It! (Wii)",
+          "summary": "キーボード／コントローラー入力と描画設定を備えた Wii 版 Wario Land の Windows 移植版。対応する米国版ゲームイメージを自分で用意する必要があります。",
+          "requirements": "合法的に入手した未改変の米国版 Wii Wario Land: Shake It!（RWLE01）を、対応ディスクイメージまたは抽出済みの sys/files フォルダーとして用意してください。プロジェクトはゲーム本体を提供しません。",
+          "availability": "v0.1.0 はプレリリースの Windows ZIP です。Windows 10/11 x64 と Direct3D 12 または Vulkan 対応 GPU が必要です。RemakeList ではインストールやプレイを行っていません。 プレリリースで、未テストのエリア、描画の問題、クラッシュの可能性があります。高フレームレートの補間は実験的機能で、互換性や性能を保証するものではありません。",
+          "platforms": "Windows 10/11 x64 · Direct3D 12 / Vulkan",
+          "stage": "v0.1.0 · プレリリース · 原作ファイルが必要"
+        },
+        "ko": {
+          "original": "Wario Land: Shake It! (Wii)",
+          "summary": "키보드/컨트롤러 입력과 그래픽 설정을 제공하는 Wii Wario Land의 Windows 포트입니다. 지원되는 미국판 게임 이미지를 직접 준비해야 합니다.",
+          "requirements": "합법적으로 취득한 수정되지 않은 미국판 Wii Wario Land: Shake It!(RWLE01)를 지원되는 디스크 이미지 또는 추출한 sys/files 폴더로 준비해야 합니다. 프로젝트는 게임을 제공하지 않습니다.",
+          "availability": "v0.1.0은 사전 출시 Windows ZIP입니다. Windows 10/11 x64와 Direct3D 12 또는 Vulkan을 지원하는 GPU가 필요합니다. RemakeList에서는 설치하거나 플레이하지 않았습니다. 테스트하지 않은 구역, 렌더링 문제, 충돌 가능성이 남아 있는 사전 출시 소프트웨어입니다. 높은 프레임 속도 보간은 실험적 기능이며 호환성이나 성능을 보장하지 않습니다.",
+          "platforms": "Windows 10/11 x64 · Direct3D 12 / Vulkan",
+          "stage": "v0.1.0 · 사전 출시 · 원작 파일 필요"
+        },
+        "es": {
+          "original": "Wario Land: Shake It! (Wii)",
+          "summary": "Una adaptación para Windows del Wario Land de Wii, con entrada de teclado/mando y gráficos configurables. Requiere tu propia imagen estadounidense del juego compatible.",
+          "requirements": "Aporta tu propia copia estadounidense de Wario Land: Shake It! para Wii (RWLE01), obtenida legalmente y sin modificar, como imagen de disco compatible o carpetas sys/files extraídas. El proyecto no proporciona el juego.",
+          "availability": "v0.1.0 es una versión preliminar en ZIP para Windows. Requiere Windows 10/11 x64 y una GPU compatible con Direct3D 12 o Vulkan. RemakeList no la ha instalado ni jugado. Versión preliminar con zonas sin probar, problemas gráficos y posibles cierres. La interpolación para altas frecuencias de imágenes es experimental y no garantiza compatibilidad ni rendimiento.",
+          "platforms": "Windows 10/11 x64 · Direct3D 12 / Vulkan",
+          "stage": "v0.1.0 · Versión preliminar · Requiere archivos originales"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases/tag/v0.1.0",
+      "code_license": "GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.",
+      "code_license_url": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-26",
+      "official_url": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC",
+      "documentation_url": "https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/wario-land-shake-it-pc/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/wario-land-shake-it-pc/",
+      "original_files": "original",
+      "author": "santiagovalencia109",
+      "author_url": "https://github.com/santiagovalencia109"
+    },
+    {
+      "id": "pgr4-native",
+      "name": "PGR4 Native",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Project Gotham Racing 4 (Xbox 360)",
+          "summary": "A Project Gotham Racing 4 recompilation with a native Direct3D 12 renderer. Runs on Windows or through Proton with your own game and Title Update #2.",
+          "requirements": "Supply your own lawfully obtained extracted PGR4 disc and Title Update #2 package or files. The author reports PAL and NTSC disc contents match. No original game data is included.",
+          "availability": "v0.1.2 provides a Windows x64 ZIP. Linux and Steam Deck use Proton; this release is not a native Linux executable. RemakeList has not tested gameplay or performance. Requires the supported game/update combination and graphics configuration. Compatibility and frame rate depend on hardware and Proton where used; no universal Steam Deck frame-rate claim is made.",
+          "platforms": "Windows x64 / Linux and Steam Deck via Proton",
+          "stage": "v0.1.2 · Early port · original files required"
+        },
+        "zh-CN": {
+          "original": "世界街头赛车 4（Xbox 360）",
+          "summary": "为《世界街头赛车 4》重编译版本提供原生 Direct3D 12 渲染器；在 Windows 或 Proton 下运行，需自备游戏与 Title Update #2。",
+          "requirements": "需自备合法取得并提取后的 PGR4 光盘，以及 Title Update #2 包或文件。作者称 PAL 与 NTSC 光盘内容一致；项目不含原版游戏数据。",
+          "availability": "v0.1.2 提供 Windows x64 ZIP；Linux 与 Steam Deck 使用 Proton，这个发行包并非原生 Linux 程序。本站未验证游玩或性能。 需使用受支持的游戏／更新组合和图形配置；兼容性及帧率取决于硬件，并在适用时取决于 Proton，不保证 Steam Deck 的普遍帧率。",
+          "platforms": "Windows x64 / Linux、Steam Deck 通过 Proton",
+          "stage": "v0.1.2 · 早期移植 · 需原版文件"
+        },
+        "ja": {
+          "original": "Project Gotham Racing 4 (Xbox 360)",
+          "summary": "ネイティブ Direct3D 12 レンダラーを備えた Project Gotham Racing 4 の再コンパイル版。自分で用意したゲームと Title Update #2 を使い、Windows または Proton 経由で動作します。",
+          "requirements": "合法的に入手して抽出した PGR4 ディスクと Title Update #2 のパッケージまたはファイルを用意してください。作者によると PAL と NTSC のディスク内容は一致します。原作ゲームデータは含まれません。",
+          "availability": "v0.1.2 は Windows x64 ZIP を提供します。Linux と Steam Deck では Proton を使い、このリリースはネイティブ Linux 実行ファイルではありません。RemakeList ではプレイや性能を検証していません。 対応するゲーム／更新の組み合わせと描画設定が必要です。互換性とフレームレートはハードウェアおよび使用する Proton に依存し、Steam Deck での一定のフレームレートは保証されません。",
+          "platforms": "Windows x64／Linux・Steam Deck は Proton 経由",
+          "stage": "v0.1.2 · 初期の移植 · 原作ファイルが必要"
+        },
+        "ko": {
+          "original": "Project Gotham Racing 4 (Xbox 360)",
+          "summary": "네이티브 Direct3D 12 렌더러를 갖춘 Project Gotham Racing 4 재컴파일 버전입니다. 직접 준비한 게임과 Title Update #2를 사용해 Windows 또는 Proton으로 실행합니다.",
+          "requirements": "합법적으로 취득하고 추출한 PGR4 디스크와 Title Update #2 패키지 또는 파일을 준비해야 합니다. 제작자는 PAL과 NTSC 디스크 내용이 같다고 설명합니다. 원작 게임 데이터는 포함되지 않습니다.",
+          "availability": "v0.1.2는 Windows x64 ZIP을 제공합니다. Linux와 Steam Deck에서는 Proton을 사용하며 이 릴리스는 네이티브 Linux 실행 파일이 아닙니다. RemakeList에서는 플레이나 성능을 테스트하지 않았습니다. 지원되는 게임/업데이트 조합과 그래픽 설정이 필요합니다. 호환성과 프레임 속도는 하드웨어 및 해당하는 경우 Proton에 따라 달라지며 Steam Deck의 보편적인 프레임 속도를 보장하지 않습니다.",
+          "platforms": "Windows x64 / Linux 및 Steam Deck은 Proton 사용",
+          "stage": "v0.1.2 · 초기 포트 · 원작 파일 필요"
+        },
+        "es": {
+          "original": "Project Gotham Racing 4 (Xbox 360)",
+          "summary": "Una recompilación de Project Gotham Racing 4 con renderizador nativo Direct3D 12. Funciona en Windows o mediante Proton con tu propio juego y Title Update #2.",
+          "requirements": "Aporta los datos extraídos de tu propio disco de PGR4 obtenido legalmente, junto con el paquete o los archivos de Title Update #2. Según el autor, el contenido de los discos PAL y NTSC coincide. No se incluyen datos del juego original.",
+          "availability": "v0.1.2 proporciona un ZIP para Windows x64. Linux y Steam Deck utilizan Proton; esta versión no es un ejecutable nativo de Linux. RemakeList no ha probado la jugabilidad ni el rendimiento. Requiere la combinación compatible del juego y la actualización, y una configuración gráfica adecuada. La compatibilidad y los fotogramas por segundo dependen del hardware y, cuando se utiliza, de Proton; no se promete una cifra universal para Steam Deck.",
+          "platforms": "Windows x64 / Linux y Steam Deck mediante Proton",
+          "stage": "v0.1.2 · Adaptación temprana · Requiere archivos originales"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/shaunsingh/pgr4-native/releases/tag/v0.1.2",
+      "code_license": "MIT for project code; original game content and third-party components retain their own rights and terms.",
+      "code_license_url": "https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-26",
+      "official_url": "https://github.com/shaunsingh/pgr4-native",
+      "documentation_url": "https://github.com/shaunsingh/pgr4-native/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/pgr4-native/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/pgr4-native/",
+      "original_files": "original",
+      "author": "shaunsingh",
+      "author_url": "https://github.com/shaunsingh"
+    },
+    {
+      "id": "skyrecomp",
+      "name": "Sky Recomp",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "The Legend of Zelda: Skyward Sword HD (Switch)",
+          "summary": "An experimental desktop port of Skyward Sword HD, with keyboard/mouse controls and graphics settings. Requires your own Switch v1.0.0 game files.",
+          "requirements": "Supply your own lawfully obtained Skyward Sword HD Switch v1.0.0 files without updates. Original game files are not supplied. Optional visual packs retain their authors’ separate terms.",
+          "availability": "v2.0.2 provides Windows, Linux and macOS packages. Windows/Linux require supported Vulkan 1.3 hardware; x86 builds require AVX2. macOS uses the project’s Metal backend. Full-game stability is not established. Experimental: crashes, menu freezes and rendering differences remain under investigation. High-frame-rate modes are experimental and hardware-dependent. RemakeList has not installed or played these packages.",
+          "platforms": "Windows / Linux / macOS",
+          "stage": "v2.0.2 · Early port · original files required"
+        },
+        "zh-CN": {
+          "original": "塞尔达传说：御天之剑 HD（Switch）",
+          "summary": "《御天之剑 HD》的实验性桌面移植，提供键鼠操作和图形设置；需自备 Switch v1.0.0 游戏文件。",
+          "requirements": "需自备合法取得的 Switch《御天之剑 HD》v1.0.0 文件，不含更新。项目不提供原版游戏文件；可选视觉包遵循各作者独立条款。",
+          "availability": "v2.0.2 提供 Windows、Linux 与 macOS 包。Windows／Linux 需要兼容 Vulkan 1.3 的硬件，x86 构建需 AVX2；macOS 使用项目的 Metal 后端。全程稳定性尚未建立。 实验阶段：崩溃、菜单卡死与渲染差异仍在排查。高帧率模式属于实验功能，表现取决于硬件；本站未安装或试玩这些包。",
+          "platforms": "Windows / Linux / macOS",
+          "stage": "v2.0.2 · 早期移植 · 需原版文件"
+        },
+        "ja": {
+          "original": "The Legend of Zelda: Skyward Sword HD (Switch)",
+          "summary": "キーボード／マウス操作と描画設定を備えた Skyward Sword HD の実験的なデスクトップ移植版。自分で用意した Switch v1.0.0 のゲームファイルが必要です。",
+          "requirements": "合法的に入手した Switch 版 Skyward Sword HD v1.0.0 の、更新を含まないファイルを用意してください。原作ゲームファイルは提供されません。任意のビジュアルパックには各作者の個別の条件が適用されます。",
+          "availability": "v2.0.2 は Windows、Linux、macOS のパッケージを提供します。Windows／Linux は対応する Vulkan 1.3 ハードウェア、x86 ビルドは AVX2 が必要です。macOS はプロジェクトの Metal バックエンドを使用します。全編を通じた安定性は確認されていません。 実験段階で、クラッシュ、メニューの停止、描画の違いは調査中です。高フレームレートモードは実験的機能で、ハードウェアに依存します。RemakeList ではこれらのパッケージをインストールしたりプレイしたりしていません。",
+          "platforms": "Windows / Linux / macOS",
+          "stage": "v2.0.2 · 初期の移植 · 原作ファイルが必要"
+        },
+        "ko": {
+          "original": "The Legend of Zelda: Skyward Sword HD (Switch)",
+          "summary": "키보드/마우스 조작과 그래픽 설정을 제공하는 Skyward Sword HD의 실험적 데스크톱 포트입니다. 직접 준비한 Switch v1.0.0 게임 파일이 필요합니다.",
+          "requirements": "합법적으로 취득한 Switch Skyward Sword HD v1.0.0의 업데이트 없는 파일을 준비해야 합니다. 원작 게임 파일은 제공되지 않습니다. 선택적 비주얼 팩에는 각 제작자의 별도 조건이 적용됩니다.",
+          "availability": "v2.0.2는 Windows, Linux, macOS 패키지를 제공합니다. Windows/Linux에는 호환 Vulkan 1.3 하드웨어가, x86 빌드에는 AVX2가 필요합니다. macOS는 프로젝트의 Metal 백엔드를 사용합니다. 게임 전체의 안정성은 확인되지 않았습니다. 실험 단계로 충돌, 메뉴 멈춤과 렌더링 차이를 조사 중입니다. 높은 프레임 속도 모드는 실험적이며 하드웨어에 따라 다릅니다. RemakeList에서는 이 패키지들을 설치하거나 플레이하지 않았습니다.",
+          "platforms": "Windows / Linux / macOS",
+          "stage": "v2.0.2 · 초기 포트 · 원작 파일 필요"
+        },
+        "es": {
+          "original": "The Legend of Zelda: Skyward Sword HD (Switch)",
+          "summary": "Una adaptación experimental para ordenador de Skyward Sword HD, con controles de teclado/ratón y ajustes gráficos. Requiere tus propios archivos de Switch v1.0.0.",
+          "requirements": "Aporta tus propios archivos de Skyward Sword HD v1.0.0 para Switch obtenidos legalmente, sin actualizaciones. No se proporcionan los archivos del juego original. Los paquetes visuales opcionales conservan las condiciones independientes de sus autores.",
+          "availability": "v2.0.2 ofrece paquetes para Windows, Linux y macOS. Windows/Linux necesitan hardware compatible con Vulkan 1.3; las versiones x86 requieren AVX2. macOS utiliza el backend Metal del proyecto. No se ha establecido la estabilidad durante todo el juego. Experimental: siguen investigándose cierres, bloqueos en menús y diferencias de renderizado. Los modos de alta frecuencia de imágenes son experimentales y dependen del hardware. RemakeList no ha instalado ni jugado estos paquetes.",
+          "platforms": "Windows / Linux / macOS",
+          "stage": "v2.0.2 · Adaptación temprana · Requiere archivos originales"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.0.2",
+      "code_license": "MIT for original code; LAS Recomp and third-party components retain their notices. Texture packs and presets have separate authors and terms.",
+      "code_license_url": "https://github.com/Apolinario-coder/SkyRecomp/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/Apolinario-coder/SkyRecomp/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-26",
+      "official_url": "https://github.com/Apolinario-coder/SkyRecomp",
+      "documentation_url": "https://github.com/Apolinario-coder/SkyRecomp/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/skyrecomp/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/skyrecomp/",
+      "original_files": "original",
+      "author": "Apolinario-coder",
+      "author_url": "https://github.com/Apolinario-coder"
+    },
+    {
+      "id": "madden-nfl08-recompiled",
+      "name": "Madden NFL 08 Recompiled",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Madden NFL 08 (Xbox 360)",
+          "summary": "An early Windows port of the Xbox 360 Madden NFL 08. Its setup downloads the toolchain and builds locally from your own extracted game files.",
+          "requirements": "Supply your own legally obtained Xbox 360 Madden NFL 08 (Title ID 4541081D), extracted with default.xex and other game files together. Only the executable revision specified in the README is supported.",
+          "availability": "v0.1.0 is a prerelease setup executable, not a ready-to-play game binary. Setup needs the supported game files, internet access, Git and Visual Studio 2022 Community with C++ tools, and about 10 GB build space. Requires a fast CPU and Direct3D 12 rasterizer-ordered views (ROV). The author’s low-end PC could not run matches playably; only two PCs were tested. Shader stutter, some visual/audio issues and unsupported online services remain.",
+          "platforms": "Windows 10/11 x64 · Direct3D 12 with ROV",
+          "stage": "v0.1.0 · Pre-release · original files required"
+        },
+        "zh-CN": {
+          "original": "Madden NFL 08（Xbox 360）",
+          "summary": "Xbox 360《Madden NFL 08》的早期 Windows 移植；安装程序下载工具链，并从自备提取后的游戏文件在本机构建。",
+          "requirements": "需自备合法取得的 Xbox 360 Madden NFL 08（Title ID 4541081D），提取后将 default.xex 与其他游戏文件放在一起。仅支持 README 指定的主程序版本。",
+          "availability": "v0.1.0 是预发布安装程序，不是解压即玩的游戏程序。安装需受支持的游戏文件、网络、Git、带 C++ 工具的 Visual Studio 2022 Community，以及约 10 GB 构建空间。 需较快处理器及支持 Direct3D 12 光栅化顺序视图（ROV）的显卡。作者低配置电脑无法流畅比赛，测试仅覆盖两台电脑；仍有着色器卡顿、部分视听问题，在线服务不支持。",
+          "platforms": "Windows 10/11 x64 · Direct3D 12，需 ROV",
+          "stage": "v0.1.0 · 预发布 · 需原版文件"
+        },
+        "ja": {
+          "original": "Madden NFL 08 (Xbox 360)",
+          "summary": "Xbox 360 版 Madden NFL 08 の初期 Windows 移植版。セットアップがツールチェーンをダウンロードし、自分で抽出したゲームファイルからローカルでビルドします。",
+          "requirements": "合法的に入手した Xbox 360 版 Madden NFL 08（Title ID 4541081D）を抽出し、default.xex と他のゲームファイルを同じ場所に置いてください。README で指定された実行ファイルのリビジョンのみ対応します。",
+          "availability": "v0.1.0 はプレリリースのセットアップ実行ファイルで、そのまま遊べるゲームバイナリではありません。対応ゲームファイル、インターネット、Git、C++ ツールを含む Visual Studio 2022 Community、約 10 GB のビルド領域が必要です。 高速な CPU と Direct3D 12 の Rasterizer Ordered Views（ROV）が必要です。作者の低性能 PC では試合を快適にプレイできず、テスト対象は2台のみです。シェーダーの引っ掛かり、一部の映像／音声の問題、オンラインサービスの非対応が残っています。",
+          "platforms": "Windows 10/11 x64 · ROV 対応 Direct3D 12",
+          "stage": "v0.1.0 · プレリリース · 原作ファイルが必要"
+        },
+        "ko": {
+          "original": "Madden NFL 08 (Xbox 360)",
+          "summary": "Xbox 360 Madden NFL 08의 초기 Windows 포트입니다. 설치 과정에서 도구 모음을 다운로드하고 직접 추출한 게임 파일로 로컬 빌드합니다.",
+          "requirements": "합법적으로 취득한 Xbox 360 Madden NFL 08(Title ID 4541081D)을 추출해 default.xex와 나머지 게임 파일을 함께 두어야 합니다. README가 지정한 실행 파일 리비전만 지원합니다.",
+          "availability": "v0.1.0은 바로 플레이할 수 있는 게임 바이너리가 아닌 사전 출시 설치 실행 파일입니다. 지원 게임 파일, 인터넷, Git, C++ 도구가 포함된 Visual Studio 2022 Community, 약 10 GB의 빌드 공간이 필요합니다. 빠른 CPU와 Direct3D 12의 Rasterizer Ordered Views(ROV) 지원이 필요합니다. 제작자의 저사양 PC에서는 경기를 원활하게 플레이할 수 없었고 테스트한 PC는 두 대뿐입니다. 셰이더 끊김, 일부 영상/음향 문제와 온라인 서비스 미지원이 남아 있습니다.",
+          "platforms": "Windows 10/11 x64 · ROV 지원 Direct3D 12",
+          "stage": "v0.1.0 · 사전 출시 · 원작 파일 필요"
+        },
+        "es": {
+          "original": "Madden NFL 08 (Xbox 360)",
+          "summary": "Una adaptación temprana para Windows de Madden NFL 08 de Xbox 360. La instalación descarga las herramientas y compila localmente a partir de tus propios archivos extraídos del juego.",
+          "requirements": "Aporta tu propia copia de Madden NFL 08 para Xbox 360 (Title ID 4541081D) obtenida legalmente, extraída con default.xex junto a los demás archivos del juego. Solo es compatible la revisión del ejecutable indicada en la README.",
+          "availability": "v0.1.0 es un ejecutable de instalación preliminar, no un juego listo para jugar. La instalación requiere archivos compatibles del juego, acceso a Internet, Git y Visual Studio 2022 Community con las herramientas C++, y unos 10 GB para compilar. Requiere una CPU rápida y Rasterizer-Ordered Views (ROV) de Direct3D 12. En el PC de gama baja del autor los partidos no eran jugables; solo se probaron dos PC. Persisten tirones de shaders, algunos problemas visuales y de sonido y la falta de servicios en línea.",
+          "platforms": "Windows 10/11 x64 · Direct3D 12 con ROV",
+          "stage": "v0.1.0 · Versión preliminar · Requiere archivos originales"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/anishchandra24/MaddenNFL08-Recompiled/releases/tag/v0.1.0",
+      "code_license": "GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.",
+      "code_license_url": "https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-26",
+      "official_url": "https://github.com/anishchandra24/MaddenNFL08-Recompiled",
+      "documentation_url": "https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/madden-nfl08-recompiled/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/madden-nfl08-recompiled/",
+      "original_files": "original",
+      "author": "anishchandra24",
+      "author_url": "https://github.com/anishchandra24"
     }
   ],
-  "content_sha256": "b4c5043a3e1751bf1048e7fe66d4d522eda0267a5bd1919a91a9ab648981cc05"
+  "content_sha256": "c2d708179f3c58e30ad15311a0f8386579fdcf5a78ed828448f694c400a28ab0"
 }

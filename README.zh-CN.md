@@ -28,7 +28,7 @@
 - [设计与创作工具](#creative) · 13
 - [日常工具与界面再现](#everyday) · 9
 - [游戏引擎与重制](#classic_games) · 26
-- [移植与兼容项目](#ports) · 45
+- [移植与兼容项目](#ports) · 53
 
 <img src="assets/overview-zh-CN.svg" alt="目录" width="920">
 
@@ -2216,22 +2216,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新率画面；需自备 NTSC 1.02 ISO。
 
 原作或参考对象: **Super Smash Bros. Melee（NTSC 1.02）** · 平台兼容层  
-[下载程序并自备游戏文件](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56) · [浏览 RemakeList](https://remakelist.com/zh/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-zh-CN)
+[下载程序并自备游戏文件](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.57) · [浏览 RemakeList](https://remakelist.com/zh/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64 / Linux x86-64（AVX2、OpenGL 4.5）
 
-**当前阶段:** Beta v0.9.56 · Linux 仍属实验阶段 · 需自备 ISO
+**当前阶段:** Beta v0.9.57 · Linux 仍属实验阶段 · 需自备 ISO
 
 **需要准备什么:** 需自备合法取得、干净且未压缩的 Super Smash Bros. Melee NTSC 1.02 ISO。项目不附原版游戏数据；代码许可不涵盖游戏素材。
 
-**现在能用什么:** v0.9.56 提供 Windows x64 与实验性 Linux x86-64 下载包。Linux 需要 AVX2 和 OpenGL 4.5；Static Recomp 仅支持 Windows。本站未安装或试玩这些构建。
+**现在能用什么:** v0.9.57 提供 Windows x64 与实验性 Linux x86-64 下载包。Linux 需要 AVX2 和 OpenGL 4.5；Static Recomp 仅支持 Windows。本站未安装或试玩这些构建。
 
 **代码许可:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
 **作者:** Hero88go / Melee Unlocked contributors  
-[官方文档](https://github.com/Hero88go/melee-unlocked#readme) · 资料核对日期: 2026-10-25
+[官方文档](https://github.com/Hero88go/melee-unlocked#readme) · 资料核对日期: 2026-10-26
 
 </details>
 
@@ -2280,6 +2280,198 @@ Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新�
 **代码许可:** [MIT for the project code; original game content and third-party components retain their own rights.](https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE)  
 **作者:** TGP482  
 [官方文档](https://github.com/TGP482/SCDA-XBERecomp#readme) · 资料核对日期: 2026-10-25
+
+</details>
+
+### [P.T. for PC](https://github.com/LoreanXavier/pt-pc)
+
+将 PS4《P.T.》试玩版带到桌面的移植，加入键鼠、手柄和拍照模式；需自备 PS4 游戏数据。
+
+原作或参考对象: **P.T.（2014 PS4 试玩版）** · 平台兼容层  
+[下载程序并自备游戏文件](https://github.com/LoreanXavier/pt-pc/releases/tag/v1.0.8) · [浏览 RemakeList](https://remakelist.com/zh/remakes/pt-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pt-pc-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10/11 x64 / Linux x86-64 / macOS 14+
+
+**当前阶段:** v1.0.8 · 早期移植 · 需原版文件
+
+**需要准备什么:** 需自备合法取得的 PS4 P.T. 数据，作者测试的是美版 CUSA01127。加密商店 PKG 不能使用；移植和安装器不附原版游戏文件。
+
+**现在能用什么:** v1.0.8 提供 Windows、Linux 安装器及便携包，以及 Apple silicon 和 Intel Mac 构建。Linux 需 glibc 2.38+；图形需 Vulkan 1.3，macOS 通过随附 MoltenVK 运行。本站未运行这些构建。 Intel Mac 构建尚未在 Intel Mac 真机测试；VR 仅用模拟运行时检查。macOS 不支持部分效果和超分功能，硬件支持范围不同。
+
+**代码许可:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/LoreanXavier/pt-pc/blob/main/LICENSE)  
+**作者:** LoreanXavier  
+[官方文档](https://github.com/LoreanXavier/pt-pc/blob/main/README.md) · 资料核对日期: 2026-10-26
+
+</details>
+
+### [GT4Recomp](https://github.com/moesuito/gt4-staticrecomp)
+
+将《Gran Turismo 4》带到 Windows，提供分辨率、手柄和材质包设置；需自备受支持的 PS2 光盘镜像。
+
+原作或参考对象: **Gran Turismo 4（PS2）** · 静态重编译  
+[下载程序并自备游戏文件](https://github.com/moesuito/gt4-staticrecomp/releases/tag/v1.3.0-rc6) · [浏览 RemakeList](https://remakelist.com/zh/remakes/gt4-staticrecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gt4-staticrecomp-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10/11 x64 · Vulkan / Direct3D 12 / Direct3D 11
+
+**当前阶段:** v1.3.0-rc6 · 预发布 · 需原版文件
+
+**需要准备什么:** 需自备合法取得的 Gran Turismo 4 美版 v2.00（SCUS-97328）普通 ISO；Spec II 需另备 Spec II 1.10 镜像。项目不提供游戏或模组文件。
+
+**现在能用什么:** v1.3.0-rc6 是公开测试版，提供 Windows 安装器和便携 ZIP，并非正式 1.3.0。Vulkan 是已测试的默认渲染方式，Direct3D 12 与 11 是较新的备选；Linux 和 Android 仍在计划中。 候选测试版：部分驾照演示和菜单背景不播放，尚不支持赛车方向盘，长时间游玩未完成验证。性能模式会移除灯光光晕和太阳眩光；Spec II 超宽屏 HUD 仍有问题，表现取决于硬件。
+
+**代码许可:** [MIT for original project code; the separate PCSX2 GS process is GPL-3.0-or-later. Original game and mod content have separate rights.](https://github.com/moesuito/gt4-staticrecomp/blob/main/LICENSE)  
+**作者:** moesuito  
+[官方文档](https://github.com/moesuito/gt4-staticrecomp/blob/main/README.md) · 资料核对日期: 2026-10-26
+
+</details>
+
+### [God of War PSP Recomp](https://github.com/DrummingBird1/gow-psp-recomp)
+
+使用自备美版光盘镜像，在 Windows 本地重编译两部 PSP《战神》的启动器，提供现代显示与输入设置。
+
+原作或参考对象: **战神：奥林匹斯之链／斯巴达之魂（PSP）** · 静态重编译  
+[下载程序并自备游戏文件](https://github.com/DrummingBird1/gow-psp-recomp/releases/tag/v1.3.1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/gow-psp-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gow-psp-recomp-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows · Linux / Steam Deck 在计划中
+
+**当前阶段:** v1.3.1 · 早期移植 · 需原版文件
+
+**需要准备什么:** 需自备合法取得的美版 PSP CHD 或 ISO：奥林匹斯之链 UCUS98653，或斯巴达之魂 UCUS98737。项目不提供原版游戏数据。
+
+**现在能用什么:** v1.3.1 提供 Windows 启动器 ZIP。首次 Build 会先询问并下载便携构建工具，再在本机编译选中的游戏。目前发行平台为 Windows，两部游戏均未完成完整通关验证。 预览软件，后期关卡、Boss 与结局可能仍有问题。Linux 和 Steam Deck 尚在计划中；启动器未签名，构建工具需首次下载。自动关卡巡检不等于完整通关。
+
+**代码许可:** [GPL-3.0-or-later for project code; original game content and third-party components retain their own rights and terms.](https://github.com/DrummingBird1/gow-psp-recomp/blob/main/LICENSE)  
+**作者:** DrummingBird1  
+[官方文档](https://github.com/DrummingBird1/gow-psp-recomp/blob/main/README.md) · 资料核对日期: 2026-10-26
+
+</details>
+
+### [PrimeRecomp](https://github.com/gminustwo/primerecomp)
+
+《银河战士 Prime 复刻版》的早期桌面移植，加入鼠标操作；安装需自备已提取的 Switch v1.0.0 文件。
+
+原作或参考对象: **银河战士 Prime 复刻版（Switch）** · 静态重编译  
+[下载程序并自备游戏文件](https://github.com/gminustwo/primerecomp/releases/tag/v0.0.2) · [浏览 RemakeList](https://remakelist.com/zh/remakes/primerecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=primerecomp-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows x64 / 实验性 Linux x86-64
+
+**当前阶段:** v0.0.2 · 早期移植 · 需原版文件
+
+**需要准备什么:** 需自备合法取得的 Switch《银河战士 Prime 复刻版》v1.0.0 文件，不含更新，并提取为 exefs 与 romfs 文件夹。项目不含原版游戏数据。
+
+**现在能用什么:** 已核实发行版为 v0.0.2，提供 Windows ZIP 和实验性 Linux AppImage。需 AVX2、Vulkan 1.3；Linux 另需 glibc 2.35+。主分支 README 提到 v0.0.3，但本次检查时尚未见正式发布记录。 早期 Beta。v0.0.2 发行说明记载，发布时 Linux 仅用软件渲染器测试，当时未做 Linux 显卡或 Steam Deck 实机验收。后续 README 的性能描述不保证你的硬件兼容；未到达区域可能崩溃或卡死，本站未试玩。
+
+**代码许可:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/gminustwo/primerecomp/blob/main/LICENSE)  
+**作者:** gminustwo  
+[官方文档](https://github.com/gminustwo/primerecomp/blob/main/README.md) · 资料核对日期: 2026-10-26
+
+</details>
+
+### [Wario Land: Shake It! Native PC](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC)
+
+将 Wii《瓦力欧大陆：摇摆》带到 Windows，提供键盘／手柄和图形设置；需自备受支持的美版游戏镜像。
+
+原作或参考对象: **瓦力欧大陆：摇摆（Wii）** · 静态重编译  
+[下载程序并自备游戏文件](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases/tag/v0.1.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/wario-land-shake-it-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=wario-land-shake-it-pc-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10/11 x64 · Direct3D 12 / Vulkan
+
+**当前阶段:** v0.1.0 · 预发布 · 需原版文件
+
+**需要准备什么:** 需自备合法取得且未修改的 Wii 美版 Wario Land: Shake It!（RWLE01），使用受支持的光盘镜像，或已提取的 sys／files 文件夹。项目不提供游戏本体。
+
+**现在能用什么:** v0.1.0 为 Windows 预发布 ZIP，需 Windows 10/11 x64 及支持 Direct3D 12 或 Vulkan 的显卡。本站未安装或试玩。 预发布软件，存在未测试区域、渲染问题及可能的崩溃。高帧率插帧属于实验功能，不构成兼容性或性能保证。
+
+**代码许可:** [GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/LICENSE)  
+**作者:** santiagovalencia109  
+[官方文档](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/README.md) · 资料核对日期: 2026-10-26
+
+</details>
+
+### [PGR4 Native](https://github.com/shaunsingh/pgr4-native)
+
+为《世界街头赛车 4》重编译版本提供原生 Direct3D 12 渲染器；在 Windows 或 Proton 下运行，需自备游戏与 Title Update #2。
+
+原作或参考对象: **世界街头赛车 4（Xbox 360）** · 静态重编译  
+[下载程序并自备游戏文件](https://github.com/shaunsingh/pgr4-native/releases/tag/v0.1.2) · [浏览 RemakeList](https://remakelist.com/zh/remakes/pgr4-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pgr4-native-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows x64 / Linux、Steam Deck 通过 Proton
+
+**当前阶段:** v0.1.2 · 早期移植 · 需原版文件
+
+**需要准备什么:** 需自备合法取得并提取后的 PGR4 光盘，以及 Title Update #2 包或文件。作者称 PAL 与 NTSC 光盘内容一致；项目不含原版游戏数据。
+
+**现在能用什么:** v0.1.2 提供 Windows x64 ZIP；Linux 与 Steam Deck 使用 Proton，这个发行包并非原生 Linux 程序。本站未验证游玩或性能。 需使用受支持的游戏／更新组合和图形配置；兼容性及帧率取决于硬件，并在适用时取决于 Proton，不保证 Steam Deck 的普遍帧率。
+
+**代码许可:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE)  
+**作者:** shaunsingh  
+[官方文档](https://github.com/shaunsingh/pgr4-native/blob/main/README.md) · 资料核对日期: 2026-10-26
+
+</details>
+
+### [Sky Recomp](https://github.com/Apolinario-coder/SkyRecomp)
+
+《御天之剑 HD》的实验性桌面移植，提供键鼠操作和图形设置；需自备 Switch v1.0.0 游戏文件。
+
+原作或参考对象: **塞尔达传说：御天之剑 HD（Switch）** · 静态重编译  
+[下载程序并自备游戏文件](https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.0.2) · [浏览 RemakeList](https://remakelist.com/zh/remakes/skyrecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=skyrecomp-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows / Linux / macOS
+
+**当前阶段:** v2.0.2 · 早期移植 · 需原版文件
+
+**需要准备什么:** 需自备合法取得的 Switch《御天之剑 HD》v1.0.0 文件，不含更新。项目不提供原版游戏文件；可选视觉包遵循各作者独立条款。
+
+**现在能用什么:** v2.0.2 提供 Windows、Linux 与 macOS 包。Windows／Linux 需要兼容 Vulkan 1.3 的硬件，x86 构建需 AVX2；macOS 使用项目的 Metal 后端。全程稳定性尚未建立。 实验阶段：崩溃、菜单卡死与渲染差异仍在排查。高帧率模式属于实验功能，表现取决于硬件；本站未安装或试玩这些包。
+
+**代码许可:** [MIT for original code; LAS Recomp and third-party components retain their notices. Texture packs and presets have separate authors and terms.](https://github.com/Apolinario-coder/SkyRecomp/blob/main/LICENSE)  
+**作者:** Apolinario-coder  
+[官方文档](https://github.com/Apolinario-coder/SkyRecomp/blob/main/README.md) · 资料核对日期: 2026-10-26
+
+</details>
+
+### [Madden NFL 08 Recompiled](https://github.com/anishchandra24/MaddenNFL08-Recompiled)
+
+Xbox 360《Madden NFL 08》的早期 Windows 移植；安装程序下载工具链，并从自备提取后的游戏文件在本机构建。
+
+原作或参考对象: **Madden NFL 08（Xbox 360）** · 静态重编译  
+[下载程序并自备游戏文件](https://github.com/anishchandra24/MaddenNFL08-Recompiled/releases/tag/v0.1.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/madden-nfl08-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=madden-nfl08-recompiled-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10/11 x64 · Direct3D 12，需 ROV
+
+**当前阶段:** v0.1.0 · 预发布 · 需原版文件
+
+**需要准备什么:** 需自备合法取得的 Xbox 360 Madden NFL 08（Title ID 4541081D），提取后将 default.xex 与其他游戏文件放在一起。仅支持 README 指定的主程序版本。
+
+**现在能用什么:** v0.1.0 是预发布安装程序，不是解压即玩的游戏程序。安装需受支持的游戏文件、网络、Git、带 C++ 工具的 Visual Studio 2022 Community，以及约 10 GB 构建空间。 需较快处理器及支持 Direct3D 12 光栅化顺序视图（ROV）的显卡。作者低配置电脑无法流畅比赛，测试仅覆盖两台电脑；仍有着色器卡顿、部分视听问题，在线服务不支持。
+
+**代码许可:** [GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/LICENSE)  
+**作者:** anishchandra24  
+[官方文档](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/README.md) · 资料核对日期: 2026-10-26
 
 </details>
 

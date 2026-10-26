@@ -28,7 +28,7 @@ Project names link to their authors’ sources. Expand an entry for device, game
 - [Creative tools](#creative) · 13
 - [Everyday tools and interface recreations](#everyday) · 9
 - [Game engines and recreations](#classic_games) · 26
-- [Ports and compatibility projects](#ports) · 45
+- [Ports and compatibility projects](#ports) · 53
 
 <img src="assets/overview-en.svg" alt="Overview" width="920">
 
@@ -2216,22 +2216,22 @@ Original or reference: **The Legend of Zelda: Tears of the Kingdom** · Platform
 A native PC port of Super Smash Bros. Melee with Slippi online play and high-refresh presentation. Requires your own NTSC 1.02 ISO.
 
 Original or reference: **Super Smash Bros. Melee (NTSC 1.02)** · Platform compatibility layer  
-[Download and supply your own game files](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.56) · [Browse RemakeList](https://remakelist.com/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-en)
+[Download and supply your own game files](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.57) · [Browse RemakeList](https://remakelist.com/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
 **Platforms:** Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)
 
-**Status:** Beta v0.9.56 · Linux experimental · own ISO required
+**Status:** Beta v0.9.57 · Linux experimental · own ISO required
 
 **What you need:** Supply a lawfully obtained, clean, uncompressed Super Smash Bros. Melee NTSC 1.02 ISO. No original game data is included; the code license does not cover the game's assets.
 
-**What is available:** v0.9.56 offers Windows x64 and experimental Linux x86-64 packages. Linux needs AVX2 and OpenGL 4.5; Static Recomp is Windows-only. RemakeList has not installed or played the builds.
+**What is available:** v0.9.57 offers Windows x64 and experimental Linux x86-64 packages. Linux needs AVX2 and OpenGL 4.5; Static Recomp is Windows-only. RemakeList has not installed or played the builds.
 
 **Code license:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
 **Author:** Hero88go / Melee Unlocked contributors  
-[Official documentation](https://github.com/Hero88go/melee-unlocked#readme) · Sources reviewed: 2026-10-25
+[Official documentation](https://github.com/Hero88go/melee-unlocked#readme) · Sources reviewed: 2026-10-26
 
 </details>
 
@@ -2280,6 +2280,198 @@ Original or reference: **Splinter Cell: Double Agent (original Xbox, 2006)** · 
 **Code license:** [MIT for the project code; original game content and third-party components retain their own rights.](https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE)  
 **Author:** TGP482  
 [Official documentation](https://github.com/TGP482/SCDA-XBERecomp#readme) · Sources reviewed: 2026-10-25
+
+</details>
+
+### [P.T. for PC](https://github.com/LoreanXavier/pt-pc)
+
+A desktop port of the PS4 P.T. teaser, with keyboard, controller and photo-mode controls. Requires your own PS4 game data.
+
+Original or reference: **P.T. (PS4, 2014)** · Platform compatibility layer  
+[Download and supply your own game files](https://github.com/LoreanXavier/pt-pc/releases/tag/v1.0.8) · [Browse RemakeList](https://remakelist.com/remakes/pt-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pt-pc-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows 10/11 x64 / Linux x86-64 / macOS 14+
+
+**Status:** v1.0.8 · Early port · original files required
+
+**What you need:** Supply lawfully obtained PS4 P.T. data. The author tests the US CUSA01127 edition; encrypted store PKGs cannot be used. The port and installer do not include the original game files.
+
+**What is available:** v1.0.8 has Windows and Linux installers and portable packages, plus Apple silicon and Intel Mac builds. Linux requires glibc 2.38+; graphics require Vulkan 1.3, with bundled MoltenVK on macOS. RemakeList has not run the builds. Intel Mac builds have not been tested on a physical Intel Mac. VR has only been checked against a simulated runtime. Some effects and upscalers are unavailable on macOS; hardware support varies.
+
+**Code license:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/LoreanXavier/pt-pc/blob/main/LICENSE)  
+**Author:** LoreanXavier  
+[Official documentation](https://github.com/LoreanXavier/pt-pc/blob/main/README.md) · Sources reviewed: 2026-10-26
+
+</details>
+
+### [GT4Recomp](https://github.com/moesuito/gt4-staticrecomp)
+
+A Windows port of Gran Turismo 4 with configurable resolution, controllers and texture packs. Requires your own supported PS2 disc image.
+
+Original or reference: **Gran Turismo 4 (PS2)** · Static recompilation  
+[Download and supply your own game files](https://github.com/moesuito/gt4-staticrecomp/releases/tag/v1.3.0-rc6) · [Browse RemakeList](https://remakelist.com/remakes/gt4-staticrecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gt4-staticrecomp-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows 10/11 x64 · Vulkan / Direct3D 12 / Direct3D 11
+
+**Status:** v1.3.0-rc6 · Pre-release · original files required
+
+**What you need:** Requires a lawfully obtained plain ISO of Gran Turismo 4 USA v2.00 (SCUS-97328). Spec II needs your own Spec II 1.10 image separately. The project supplies no game or mod files.
+
+**What is available:** v1.3.0-rc6 is a public test build with Windows installer and portable ZIP, not the final 1.3.0 release. Vulkan is the tested default; Direct3D 12 and 11 are newer alternatives. Linux and Android remain planned. Release candidate: some license demos and menu backgrounds do not play; racing wheels are unsupported and long sessions are not fully tested. Performance Mode removes light flares and sun glare. Spec II ultrawide HUD issues remain; performance is hardware-dependent.
+
+**Code license:** [MIT for original project code; the separate PCSX2 GS process is GPL-3.0-or-later. Original game and mod content have separate rights.](https://github.com/moesuito/gt4-staticrecomp/blob/main/LICENSE)  
+**Author:** moesuito  
+[Official documentation](https://github.com/moesuito/gt4-staticrecomp/blob/main/README.md) · Sources reviewed: 2026-10-26
+
+</details>
+
+### [God of War PSP Recomp](https://github.com/DrummingBird1/gow-psp-recomp)
+
+A Windows launcher that rebuilds the two PSP God of War games from your own US disc images, with modern display and input settings.
+
+Original or reference: **God of War: Chains of Olympus / Ghost of Sparta (PSP)** · Static recompilation  
+[Download and supply your own game files](https://github.com/DrummingBird1/gow-psp-recomp/releases/tag/v1.3.1) · [Browse RemakeList](https://remakelist.com/remakes/gow-psp-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gow-psp-recomp-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows · Linux / Steam Deck planned
+
+**Status:** v1.3.1 · Early port · original files required
+
+**What you need:** Supply lawfully obtained US PSP disc images in CHD or ISO: Chains of Olympus UCUS98653 and/or Ghost of Sparta UCUS98737. No original game data is supplied by the project.
+
+**What is available:** v1.3.1 provides a Windows launcher ZIP. First Build downloads portable tools after asking, then compiles the selected game locally. Windows is the current release platform; neither game has a verified full playthrough. Preview software; late levels, bosses and endings may have bugs. Linux and Steam Deck are planned. Unsigned launcher; build tools need an initial download. Automated level tours do not establish full-game completion.
+
+**Code license:** [GPL-3.0-or-later for project code; original game content and third-party components retain their own rights and terms.](https://github.com/DrummingBird1/gow-psp-recomp/blob/main/LICENSE)  
+**Author:** DrummingBird1  
+[Official documentation](https://github.com/DrummingBird1/gow-psp-recomp/blob/main/README.md) · Sources reviewed: 2026-10-26
+
+</details>
+
+### [PrimeRecomp](https://github.com/gminustwo/primerecomp)
+
+An early desktop port of Metroid Prime Remastered with mouse controls. Setup requires your own extracted Switch v1.0.0 files.
+
+Original or reference: **Metroid Prime Remastered (Switch)** · Static recompilation  
+[Download and supply your own game files](https://github.com/gminustwo/primerecomp/releases/tag/v0.0.2) · [Browse RemakeList](https://remakelist.com/remakes/primerecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=primerecomp-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows x64 / experimental Linux x86-64
+
+**Status:** v0.0.2 · Early port · original files required
+
+**What you need:** Supply lawfully obtained Metroid Prime Remastered v1.0.0 Switch files without updates, extracted into exefs and romfs folders. No original game data is included.
+
+**What is available:** The verified release is v0.0.2 with a Windows ZIP and experimental Linux AppImage. Requires AVX2, Vulkan 1.3 and, on Linux, glibc 2.35+. The main README mentions v0.0.3, but it was not a published release at this check. Early beta. The v0.0.2 release notes report software-renderer-only Linux testing at publication, without Linux GPU or Steam Deck validation at that time. Later README performance claims do not establish compatibility on your hardware. Unvisited areas may crash or hang; RemakeList has not played the build.
+
+**Code license:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/gminustwo/primerecomp/blob/main/LICENSE)  
+**Author:** gminustwo  
+[Official documentation](https://github.com/gminustwo/primerecomp/blob/main/README.md) · Sources reviewed: 2026-10-26
+
+</details>
+
+### [Wario Land: Shake It! Native PC](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC)
+
+A Windows port of the Wii Wario Land game, with keyboard/controller input and configurable graphics. Requires your own supported US game image.
+
+Original or reference: **Wario Land: Shake It! (Wii)** · Static recompilation  
+[Download and supply your own game files](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases/tag/v0.1.0) · [Browse RemakeList](https://remakelist.com/remakes/wario-land-shake-it-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=wario-land-shake-it-pc-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows 10/11 x64 · Direct3D 12 / Vulkan
+
+**Status:** v0.1.0 · Pre-release · original files required
+
+**What you need:** Supply a lawfully obtained, unmodified US Wii copy of Wario Land: Shake It! (RWLE01), as a supported disc image or extracted sys/files folders. The project does not supply the game.
+
+**What is available:** v0.1.0 is a prerelease Windows ZIP. Requires Windows 10/11 x64 and a GPU supporting Direct3D 12 or Vulkan. RemakeList has not installed or played it. Prerelease software with untested areas, rendering problems and possible crashes. High-frame-rate interpolation is experimental and is not a compatibility or performance guarantee.
+
+**Code license:** [GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/LICENSE)  
+**Author:** santiagovalencia109  
+[Official documentation](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/README.md) · Sources reviewed: 2026-10-26
+
+</details>
+
+### [PGR4 Native](https://github.com/shaunsingh/pgr4-native)
+
+A Project Gotham Racing 4 recompilation with a native Direct3D 12 renderer. Runs on Windows or through Proton with your own game and Title Update #2.
+
+Original or reference: **Project Gotham Racing 4 (Xbox 360)** · Static recompilation  
+[Download and supply your own game files](https://github.com/shaunsingh/pgr4-native/releases/tag/v0.1.2) · [Browse RemakeList](https://remakelist.com/remakes/pgr4-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pgr4-native-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows x64 / Linux and Steam Deck via Proton
+
+**Status:** v0.1.2 · Early port · original files required
+
+**What you need:** Supply your own lawfully obtained extracted PGR4 disc and Title Update #2 package or files. The author reports PAL and NTSC disc contents match. No original game data is included.
+
+**What is available:** v0.1.2 provides a Windows x64 ZIP. Linux and Steam Deck use Proton; this release is not a native Linux executable. RemakeList has not tested gameplay or performance. Requires the supported game/update combination and graphics configuration. Compatibility and frame rate depend on hardware and Proton where used; no universal Steam Deck frame-rate claim is made.
+
+**Code license:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE)  
+**Author:** shaunsingh  
+[Official documentation](https://github.com/shaunsingh/pgr4-native/blob/main/README.md) · Sources reviewed: 2026-10-26
+
+</details>
+
+### [Sky Recomp](https://github.com/Apolinario-coder/SkyRecomp)
+
+An experimental desktop port of Skyward Sword HD, with keyboard/mouse controls and graphics settings. Requires your own Switch v1.0.0 game files.
+
+Original or reference: **The Legend of Zelda: Skyward Sword HD (Switch)** · Static recompilation  
+[Download and supply your own game files](https://github.com/Apolinario-coder/SkyRecomp/releases/tag/v2.0.2) · [Browse RemakeList](https://remakelist.com/remakes/skyrecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=skyrecomp-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows / Linux / macOS
+
+**Status:** v2.0.2 · Early port · original files required
+
+**What you need:** Supply your own lawfully obtained Skyward Sword HD Switch v1.0.0 files without updates. Original game files are not supplied. Optional visual packs retain their authors’ separate terms.
+
+**What is available:** v2.0.2 provides Windows, Linux and macOS packages. Windows/Linux require supported Vulkan 1.3 hardware; x86 builds require AVX2. macOS uses the project’s Metal backend. Full-game stability is not established. Experimental: crashes, menu freezes and rendering differences remain under investigation. High-frame-rate modes are experimental and hardware-dependent. RemakeList has not installed or played these packages.
+
+**Code license:** [MIT for original code; LAS Recomp and third-party components retain their notices. Texture packs and presets have separate authors and terms.](https://github.com/Apolinario-coder/SkyRecomp/blob/main/LICENSE)  
+**Author:** Apolinario-coder  
+[Official documentation](https://github.com/Apolinario-coder/SkyRecomp/blob/main/README.md) · Sources reviewed: 2026-10-26
+
+</details>
+
+### [Madden NFL 08 Recompiled](https://github.com/anishchandra24/MaddenNFL08-Recompiled)
+
+An early Windows port of the Xbox 360 Madden NFL 08. Its setup downloads the toolchain and builds locally from your own extracted game files.
+
+Original or reference: **Madden NFL 08 (Xbox 360)** · Static recompilation  
+[Download and supply your own game files](https://github.com/anishchandra24/MaddenNFL08-Recompiled/releases/tag/v0.1.0) · [Browse RemakeList](https://remakelist.com/remakes/madden-nfl08-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=madden-nfl08-recompiled-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows 10/11 x64 · Direct3D 12 with ROV
+
+**Status:** v0.1.0 · Pre-release · original files required
+
+**What you need:** Supply your own legally obtained Xbox 360 Madden NFL 08 (Title ID 4541081D), extracted with default.xex and other game files together. Only the executable revision specified in the README is supported.
+
+**What is available:** v0.1.0 is a prerelease setup executable, not a ready-to-play game binary. Setup needs the supported game files, internet access, Git and Visual Studio 2022 Community with C++ tools, and about 10 GB build space. Requires a fast CPU and Direct3D 12 rasterizer-ordered views (ROV). The author’s low-end PC could not run matches playably; only two PCs were tested. Shader stutter, some visual/audio issues and unsupported online services remain.
+
+**Code license:** [GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/LICENSE)  
+**Author:** anishchandra24  
+[Official documentation](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/README.md) · Sources reviewed: 2026-10-26
 
 </details>
 
