@@ -28,7 +28,7 @@
 - [デザイン・制作ツール](#creative) · 13
 - [日常のツールとインターフェースの再現](#everyday) · 9
 - [ゲームエンジンとゲームの再実装](#classic_games) · 26
-- [移植・互換性プロジェクト](#ports) · 56
+- [移植・互換性プロジェクト](#ports) · 57
 
 <img src="assets/overview-ja.svg" alt="目次" width="920">
 
@@ -1920,6 +1920,30 @@ Pinyon Shift — 設定ランチャー、描画設定、Steam Deckの導入経�
 **コードのライセンス:** [BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/arcanite24/pinyon-shift/blob/main/LICENSE)  
 **作者:** arcanite24  
 [公式ドキュメント](https://github.com/arcanite24/pinyon-shift#readme) · 資料確認日: 2026-10-19
+
+</details>
+
+### [Red Alert 2 Recomp](https://github.com/sp00nznet/redalert2-recomp)
+
+自分の Red Alert 2／Yuri’s Revenge のファイルから、インストーラーでネイティブ版をローカルにビルドします。ワイドスクリーンなど現行環境向けの表示設定を追加します。OpenRA、RA2WEB、Vanguard とは別のプロジェクトです。
+
+原作・参考元: **Red Alert 2 / Yuri’s Revenge** · 静的再コンパイル  
+[自分でビルド・ゲームデータも用意](https://github.com/sp00nznet/redalert2-recomp/releases/tag/v0.1.3) · [RemakeList を見る](https://remakelist.com/ja/remakes/redalert2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=redalert2-recomp-ja)
+
+<details>
+<summary>必要条件とスクリーンショット</summary>
+
+**対応環境:** Windows x64／Linux x64／macOS ARM64
+
+**開発状況:** インストーラー公開 · ローカルビルド · 原作ゲームが必要
+
+**必要なもの:** game.exe 1.006 と gamemd.exe 1.001 を含む、自分の Steam／EA App（Origin）版のインストールを用意してください。インストーラーがファイルを検出してローカルで生成・ビルドし、必要に応じてビルドツールをインストールします。生成された原作由来のコードとデータはローカルに残ります。
+
+**現在利用できるもの:** v0.1.3 は Windows x64、Linux x64、macOS ARM64 向けインストーラーを提供し、自分の原作ファイルからローカルで生成・ビルドします。一部の Windows 起動失敗と、Linux／macOS で終了後もプロセスが残る問題を修正します。作者の目安では初回ビルドに30〜60分と約6 GB が必要です。インストーラーは未署名のため OS にブロックされる場合があります。ローカルビルドが必要で、原作ゲームファイルは含まれません。作者のスクリプトによる確認はメニュー、スカーミッシュ、キャンペーン開始までで、RemakeList による全編プレイの検証ではありません。MIT はプロジェクト独自のコードに適用され、EA のゲームコードや素材には別の権利があります。RemakeList ではビルド、インストール、実行を行っていません。
+
+**コードのライセンス:** [MIT for project-authored tooling only; EA game code and assets retain separate rights.](https://github.com/sp00nznet/redalert2-recomp/blob/main/LICENSE)  
+**作者:** sp00nznet  
+[公式ドキュメント](https://github.com/sp00nznet/redalert2-recomp#readme) · 資料確認日: 2026-10-27
 
 </details>
 

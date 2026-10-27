@@ -28,7 +28,7 @@ Project names link to their authors’ sources. Expand an entry for device, game
 - [Creative tools](#creative) · 13
 - [Everyday tools and interface recreations](#everyday) · 9
 - [Game engines and recreations](#classic_games) · 26
-- [Ports and compatibility projects](#ports) · 56
+- [Ports and compatibility projects](#ports) · 57
 
 <img src="assets/overview-en.svg" alt="Overview" width="920">
 
@@ -1920,6 +1920,30 @@ Original or reference: **Forza Horizon** · Static recompilation
 **Code license:** [BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/arcanite24/pinyon-shift/blob/main/LICENSE)  
 **Author:** arcanite24  
 [Official documentation](https://github.com/arcanite24/pinyon-shift#readme) · Sources reviewed: 2026-10-19
+
+</details>
+
+### [Red Alert 2 Recomp](https://github.com/sp00nznet/redalert2-recomp)
+
+Uses an installer to build a native version locally from your own Red Alert 2 / Yuri’s Revenge files, adding widescreen and modern presentation options. It is separate from OpenRA, RA2WEB and Vanguard.
+
+Original or reference: **Red Alert 2 / Yuri’s Revenge** · Static recompilation  
+[Build and supply your own game files](https://github.com/sp00nznet/redalert2-recomp/releases/tag/v0.1.3) · [Browse RemakeList](https://remakelist.com/remakes/redalert2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=redalert2-recomp-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows x64 / Linux x64 / macOS ARM64
+
+**Status:** Installer available · local build · original game required
+
+**What you need:** Supply your own Steam/EA App (Origin) installation containing game.exe 1.006 and gamemd.exe 1.001. The installer detects the files and generates and builds locally, installing build tools when needed. Generated original-game code and data stay local.
+
+**What is available:** v0.1.3 offers Windows x64, Linux x64 and macOS ARM64 installers that generate and build locally from your own original files. It fixes some Windows launch failures and lingering processes after quit on Linux/macOS. The author estimates 30–60 minutes and about 6 GB for the first build. The installers are unsigned and may be blocked by the operating system. They require local building and include no original game files. Author scripted checks cover menus, skirmishes and campaign entry, not a RemakeList full-playthrough verification. MIT covers the project’s own code; EA game code and assets have separate rights. RemakeList has not built, installed or run it.
+
+**Code license:** [MIT for project-authored tooling only; EA game code and assets retain separate rights.](https://github.com/sp00nznet/redalert2-recomp/blob/main/LICENSE)  
+**Author:** sp00nznet  
+[Official documentation](https://github.com/sp00nznet/redalert2-recomp#readme) · Sources reviewed: 2026-10-27
 
 </details>
 

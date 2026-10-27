@@ -28,7 +28,7 @@
 - [디자인·창작 도구](#creative) · 13
 - [일상 도구와 인터페이스 재현](#everyday) · 9
 - [게임 엔진과 게임 재구현](#classic_games) · 26
-- [이식·호환성 프로젝트](#ports) · 56
+- [이식·호환성 프로젝트](#ports) · 57
 
 <img src="assets/overview-ko.svg" alt="목차" width="920">
 
@@ -1920,6 +1920,30 @@ Pinyon Shift — 설정 런처, 그래픽 옵션과 Steam Deck 이용 경로. �
 **코드 라이선스:** [BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/arcanite24/pinyon-shift/blob/main/LICENSE)  
 **제작자:** arcanite24  
 [공식 문서](https://github.com/arcanite24/pinyon-shift#readme) · 자료 확인일: 2026-10-19
+
+</details>
+
+### [Red Alert 2 Recomp](https://github.com/sp00nznet/redalert2-recomp)
+
+설치 프로그램으로 직접 보유한 Red Alert 2 / Yuri’s Revenge 파일에서 네이티브 버전을 로컬로 빌드하며, 와이드스크린과 최신 화면 옵션을 추가합니다. OpenRA, RA2WEB 및 Vanguard와는 별개입니다.
+
+원작 또는 참고 대상: **Red Alert 2 / Yuri’s Revenge** · 정적 재컴파일  
+[직접 빌드 · 게임 파일 직접 준비](https://github.com/sp00nznet/redalert2-recomp/releases/tag/v0.1.3) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/redalert2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=redalert2-recomp-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows x64 / Linux x64 / macOS ARM64
+
+**개발 상태:** 설치 프로그램 제공 · 로컬 빌드 · 원작 게임 필요
+
+**준비할 것:** game.exe 1.006과 gamemd.exe 1.001을 포함하는 Steam·EA App (Origin) 설치본을 직접 준비해야 합니다. 설치 프로그램이 파일을 감지하고 필요한 빌드 도구를 설치하여 로컬에서 생성·빌드합니다. 생성된 원작 게임 코드와 데이터는 로컬에 남습니다.
+
+**현재 이용할 수 있는 것:** v0.1.3은 직접 보유한 원본 파일에서 로컬로 생성·빌드하는 Windows x64, Linux x64와 macOS ARM64 설치 프로그램을 제공합니다. 일부 Windows 실행 실패와 Linux·macOS 종료 후 남는 프로세스 문제를 수정합니다. 제작자는 첫 빌드에 30–60분과 약 6 GB가 필요하다고 안내합니다. 설치 프로그램은 서명되지 않아 운영체제에 의해 차단될 수 있습니다. 로컬 빌드가 필요하며 원작 게임 파일은 포함되지 않습니다. 제작자의 스크립트 점검 범위는 메뉴, 스커미시와 캠페인 진입이며, RemakeList가 전체 게임 진행을 검증한 것은 아닙니다. MIT는 프로젝트 자체 코드에 적용되며 EA 게임 코드와 에셋의 권리는 별개입니다. RemakeList는 빌드·설치·실행하지 않았습니다.
+
+**코드 라이선스:** [MIT for project-authored tooling only; EA game code and assets retain separate rights.](https://github.com/sp00nznet/redalert2-recomp/blob/main/LICENSE)  
+**제작자:** sp00nznet  
+[공식 문서](https://github.com/sp00nznet/redalert2-recomp#readme) · 자료 확인일: 2026-10-27
 
 </details>
 

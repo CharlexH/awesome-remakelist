@@ -28,7 +28,7 @@ Los nombres de los proyectos llevan a las fuentes de sus autores. Despliega cada
 - [Herramientas de diseño y creación](#creative) · 13
 - [Herramientas de uso diario y recreaciones de interfaces](#everyday) · 9
 - [Motores y recreaciones de juegos](#classic_games) · 26
-- [Adaptaciones y proyectos de compatibilidad](#ports) · 56
+- [Adaptaciones y proyectos de compatibilidad](#ports) · 57
 
 <img src="assets/overview-es.svg" alt="Índice" width="920">
 
@@ -1920,6 +1920,30 @@ Original o referencia: **Forza Horizon** · Recompilación estática
 **Licencia del código:** [BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/arcanite24/pinyon-shift/blob/main/LICENSE)  
 **Autor:** arcanite24  
 [Documentación oficial](https://github.com/arcanite24/pinyon-shift#readme) · Fuentes revisadas: 2026-10-19
+
+</details>
+
+### [Red Alert 2 Recomp](https://github.com/sp00nznet/redalert2-recomp)
+
+Utiliza un instalador para construir localmente una versión nativa a partir de tus propios archivos de Red Alert 2 / Yuri’s Revenge, con pantalla panorámica y opciones de presentación modernas. Es distinto de OpenRA, RA2WEB y Vanguard.
+
+Original o referencia: **Red Alert 2 / Yuri’s Revenge** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/sp00nznet/redalert2-recomp/releases/tag/v0.1.3) · [Explorar RemakeList](https://remakelist.com/es/remakes/redalert2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=redalert2-recomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows x64 / Linux x64 / macOS ARM64
+
+**Estado:** Instalador disponible · Compilación local · Requiere el juego original
+
+**Qué necesitas:** Aporta tu propia instalación de Steam o EA App (Origin) con game.exe 1.006 y gamemd.exe 1.001. El instalador detecta los archivos, genera y compila localmente e instala herramientas de compilación cuando hace falta. El código generado del juego original y sus datos permanecen en tu equipo.
+
+**Qué está disponible:** v0.1.3 ofrece instaladores para Windows x64, Linux x64 y macOS ARM64 que generan y compilan localmente a partir de tus archivos originales. Corrige algunos fallos de inicio en Windows y procesos que permanecían abiertos al salir en Linux/macOS. El autor calcula entre 30 y 60 minutos y unos 6 GB para la primera compilación. Los instaladores no están firmados y el sistema operativo puede bloquearlos. Requieren compilación local y no incluyen archivos originales. Las comprobaciones programadas del autor cubren menús, escaramuzas y entrada a la campaña, no una verificación del juego completo por RemakeList. MIT cubre el código propio del proyecto; el código y los recursos de los juegos de EA tienen derechos independientes. RemakeList no lo ha compilado, instalado ni ejecutado.
+
+**Licencia del código:** [MIT for project-authored tooling only; EA game code and assets retain separate rights.](https://github.com/sp00nznet/redalert2-recomp/blob/main/LICENSE)  
+**Autor:** sp00nznet  
+[Documentación oficial](https://github.com/sp00nznet/redalert2-recomp#readme) · Fuentes revisadas: 2026-10-27
 
 </details>
 

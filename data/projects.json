@@ -4831,6 +4831,70 @@
       "author_url": "https://github.com/dk8827"
     },
     {
+      "id": "redalert2-recomp",
+      "name": "Red Alert 2 Recomp",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Red Alert 2 / Yuri’s Revenge",
+          "summary": "Uses an installer to build a native version locally from your own Red Alert 2 / Yuri’s Revenge files, adding widescreen and modern presentation options. It is separate from OpenRA, RA2WEB and Vanguard.",
+          "requirements": "Supply your own Steam/EA App (Origin) installation containing game.exe 1.006 and gamemd.exe 1.001. The installer detects the files and generates and builds locally, installing build tools when needed. Generated original-game code and data stay local.",
+          "availability": "v0.1.3 offers Windows x64, Linux x64 and macOS ARM64 installers that generate and build locally from your own original files. It fixes some Windows launch failures and lingering processes after quit on Linux/macOS. The author estimates 30–60 minutes and about 6 GB for the first build. The installers are unsigned and may be blocked by the operating system. They require local building and include no original game files. Author scripted checks cover menus, skirmishes and campaign entry, not a RemakeList full-playthrough verification. MIT covers the project’s own code; EA game code and assets have separate rights. RemakeList has not built, installed or run it.",
+          "platforms": "Windows x64 / Linux x64 / macOS ARM64",
+          "stage": "Installer available · local build · original game required"
+        },
+        "zh-CN": {
+          "original": "红色警戒 2/尤里复仇",
+          "summary": "通过安装器在本机从自备《红色警戒 2／尤里的复仇》文件生成原生版本，加入宽屏和现代显示选项。它与 OpenRA、RA2WEB、Vanguard 是不同项目。",
+          "requirements": "自备 Steam／EA App（Origin）的《红色警戒 2／尤里的复仇》安装目录，包含 game.exe 1.006 与 gamemd.exe 1.001。安装器识别文件后在本机生成与构建，可能需要安装构建工具；生成的原作代码和数据保留在本地。",
+          "availability": "v0.1.3 提供 Windows x64、Linux x64 与 macOS ARM64 安装器，使用自备原版文件在本机生成与构建。此版修复部分 Windows 启动失败，以及 Linux/macOS 退出后进程残留；作者估计首次构建需 30–60 分钟和约 6 GB 空间。 安装器尚未签名，系统可能阻止启动；它需要本机构建，不含原版游戏文件。作者脚本检查覆盖菜单、遭遇战和战役入口，不代表本站验证完整通关。MIT 仅覆盖项目自身代码，EA 原游戏代码与素材权利另计。本站未构建、安装或运行。",
+          "platforms": "Windows x64 / Linux x64 / macOS ARM64",
+          "stage": "提供安装器 · 本机构建 · 自备原游戏"
+        },
+        "ja": {
+          "original": "Red Alert 2 / Yuri’s Revenge",
+          "summary": "自分の Red Alert 2／Yuri’s Revenge のファイルから、インストーラーでネイティブ版をローカルにビルドします。ワイドスクリーンなど現行環境向けの表示設定を追加します。OpenRA、RA2WEB、Vanguard とは別のプロジェクトです。",
+          "requirements": "game.exe 1.006 と gamemd.exe 1.001 を含む、自分の Steam／EA App（Origin）版のインストールを用意してください。インストーラーがファイルを検出してローカルで生成・ビルドし、必要に応じてビルドツールをインストールします。生成された原作由来のコードとデータはローカルに残ります。",
+          "availability": "v0.1.3 は Windows x64、Linux x64、macOS ARM64 向けインストーラーを提供し、自分の原作ファイルからローカルで生成・ビルドします。一部の Windows 起動失敗と、Linux／macOS で終了後もプロセスが残る問題を修正します。作者の目安では初回ビルドに30〜60分と約6 GB が必要です。インストーラーは未署名のため OS にブロックされる場合があります。ローカルビルドが必要で、原作ゲームファイルは含まれません。作者のスクリプトによる確認はメニュー、スカーミッシュ、キャンペーン開始までで、RemakeList による全編プレイの検証ではありません。MIT はプロジェクト独自のコードに適用され、EA のゲームコードや素材には別の権利があります。RemakeList ではビルド、インストール、実行を行っていません。",
+          "platforms": "Windows x64／Linux x64／macOS ARM64",
+          "stage": "インストーラー公開 · ローカルビルド · 原作ゲームが必要"
+        },
+        "ko": {
+          "original": "Red Alert 2 / Yuri’s Revenge",
+          "summary": "설치 프로그램으로 직접 보유한 Red Alert 2 / Yuri’s Revenge 파일에서 네이티브 버전을 로컬로 빌드하며, 와이드스크린과 최신 화면 옵션을 추가합니다. OpenRA, RA2WEB 및 Vanguard와는 별개입니다.",
+          "requirements": "game.exe 1.006과 gamemd.exe 1.001을 포함하는 Steam·EA App (Origin) 설치본을 직접 준비해야 합니다. 설치 프로그램이 파일을 감지하고 필요한 빌드 도구를 설치하여 로컬에서 생성·빌드합니다. 생성된 원작 게임 코드와 데이터는 로컬에 남습니다.",
+          "availability": "v0.1.3은 직접 보유한 원본 파일에서 로컬로 생성·빌드하는 Windows x64, Linux x64와 macOS ARM64 설치 프로그램을 제공합니다. 일부 Windows 실행 실패와 Linux·macOS 종료 후 남는 프로세스 문제를 수정합니다. 제작자는 첫 빌드에 30–60분과 약 6 GB가 필요하다고 안내합니다. 설치 프로그램은 서명되지 않아 운영체제에 의해 차단될 수 있습니다. 로컬 빌드가 필요하며 원작 게임 파일은 포함되지 않습니다. 제작자의 스크립트 점검 범위는 메뉴, 스커미시와 캠페인 진입이며, RemakeList가 전체 게임 진행을 검증한 것은 아닙니다. MIT는 프로젝트 자체 코드에 적용되며 EA 게임 코드와 에셋의 권리는 별개입니다. RemakeList는 빌드·설치·실행하지 않았습니다.",
+          "platforms": "Windows x64 / Linux x64 / macOS ARM64",
+          "stage": "설치 프로그램 제공 · 로컬 빌드 · 원작 게임 필요"
+        },
+        "es": {
+          "original": "Red Alert 2 / Yuri’s Revenge",
+          "summary": "Utiliza un instalador para construir localmente una versión nativa a partir de tus propios archivos de Red Alert 2 / Yuri’s Revenge, con pantalla panorámica y opciones de presentación modernas. Es distinto de OpenRA, RA2WEB y Vanguard.",
+          "requirements": "Aporta tu propia instalación de Steam o EA App (Origin) con game.exe 1.006 y gamemd.exe 1.001. El instalador detecta los archivos, genera y compila localmente e instala herramientas de compilación cuando hace falta. El código generado del juego original y sus datos permanecen en tu equipo.",
+          "availability": "v0.1.3 ofrece instaladores para Windows x64, Linux x64 y macOS ARM64 que generan y compilan localmente a partir de tus archivos originales. Corrige algunos fallos de inicio en Windows y procesos que permanecían abiertos al salir en Linux/macOS. El autor calcula entre 30 y 60 minutos y unos 6 GB para la primera compilación. Los instaladores no están firmados y el sistema operativo puede bloquearlos. Requieren compilación local y no incluyen archivos originales. Las comprobaciones programadas del autor cubren menús, escaramuzas y entrada a la campaña, no una verificación del juego completo por RemakeList. MIT cubre el código propio del proyecto; el código y los recursos de los juegos de EA tienen derechos independientes. RemakeList no lo ha compilado, instalado ni ejecutado.",
+          "platforms": "Windows x64 / Linux x64 / macOS ARM64",
+          "stage": "Instalador disponible · Compilación local · Requiere el juego original"
+        }
+      },
+      "start": "build_with_original_assets",
+      "start_url": "https://github.com/sp00nznet/redalert2-recomp/releases/tag/v0.1.3",
+      "code_license": "MIT for project-authored tooling only; EA game code and assets retain separate rights.",
+      "code_license_url": "https://github.com/sp00nznet/redalert2-recomp/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/sp00nznet/redalert2-recomp/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-27",
+      "official_url": "https://github.com/sp00nznet/redalert2-recomp",
+      "documentation_url": "https://github.com/sp00nznet/redalert2-recomp#readme",
+      "site_url": "https://remakelist.com/remakes/redalert2-recomp/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/redalert2-recomp/",
+      "original_files": "original",
+      "author": "sp00nznet",
+      "author_url": "https://github.com/sp00nznet"
+    },
+    {
       "id": "road-trip-recomp",
       "name": "Road Trip Recomp",
       "relationship": "static-recompilation",
@@ -6687,5 +6751,5 @@
       "author_url": "https://github.com/griches"
     }
   ],
-  "content_sha256": "97761f4a50d0300fe8db394173f615ba36cfabdcc1e097b4736fc2307be30358"
+  "content_sha256": "9d87800775e208b25e343f38c017f62f251c373b50d1e3712d5752a353e4cc72"
 }

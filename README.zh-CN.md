@@ -28,7 +28,7 @@
 - [设计与创作工具](#creative) · 13
 - [日常工具与界面再现](#everyday) · 9
 - [游戏引擎与重制](#classic_games) · 26
-- [移植与兼容项目](#ports) · 56
+- [移植与兼容项目](#ports) · 57
 
 <img src="assets/overview-zh-CN.svg" alt="目录" width="920">
 
@@ -1920,6 +1920,30 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 **代码许可:** [BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/arcanite24/pinyon-shift/blob/main/LICENSE)  
 **作者:** arcanite24  
 [官方文档](https://github.com/arcanite24/pinyon-shift#readme) · 资料核对日期: 2026-10-19
+
+</details>
+
+### [Red Alert 2 Recomp](https://github.com/sp00nznet/redalert2-recomp)
+
+通过安装器在本机从自备《红色警戒 2／尤里的复仇》文件生成原生版本，加入宽屏和现代显示选项。它与 OpenRA、RA2WEB、Vanguard 是不同项目。
+
+原作或参考对象: **红色警戒 2/尤里复仇** · 静态重编译  
+[自行构建并自备游戏文件](https://github.com/sp00nznet/redalert2-recomp/releases/tag/v0.1.3) · [浏览 RemakeList](https://remakelist.com/zh/remakes/redalert2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=redalert2-recomp-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows x64 / Linux x64 / macOS ARM64
+
+**当前阶段:** 提供安装器 · 本机构建 · 自备原游戏
+
+**需要准备什么:** 自备 Steam／EA App（Origin）的《红色警戒 2／尤里的复仇》安装目录，包含 game.exe 1.006 与 gamemd.exe 1.001。安装器识别文件后在本机生成与构建，可能需要安装构建工具；生成的原作代码和数据保留在本地。
+
+**现在能用什么:** v0.1.3 提供 Windows x64、Linux x64 与 macOS ARM64 安装器，使用自备原版文件在本机生成与构建。此版修复部分 Windows 启动失败，以及 Linux/macOS 退出后进程残留；作者估计首次构建需 30–60 分钟和约 6 GB 空间。 安装器尚未签名，系统可能阻止启动；它需要本机构建，不含原版游戏文件。作者脚本检查覆盖菜单、遭遇战和战役入口，不代表本站验证完整通关。MIT 仅覆盖项目自身代码，EA 原游戏代码与素材权利另计。本站未构建、安装或运行。
+
+**代码许可:** [MIT for project-authored tooling only; EA game code and assets retain separate rights.](https://github.com/sp00nznet/redalert2-recomp/blob/main/LICENSE)  
+**作者:** sp00nznet  
+[官方文档](https://github.com/sp00nznet/redalert2-recomp#readme) · 资料核对日期: 2026-10-27
 
 </details>
 
