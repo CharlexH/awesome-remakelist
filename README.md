@@ -28,7 +28,7 @@ Project names link to their authors’ sources. Expand an entry for device, game
 - [Creative tools](#creative) · 13
 - [Everyday tools and interface recreations](#everyday) · 9
 - [Game engines and recreations](#classic_games) · 26
-- [Ports and compatibility projects](#ports) · 53
+- [Ports and compatibility projects](#ports) · 56
 
 <img src="assets/overview-en.svg" alt="Overview" width="920">
 
@@ -1155,22 +1155,22 @@ Original or reference: **Rugrats: Search for Reptar** · Game reimplementation
 An unofficial Richman 4 recreation for computers and phones, with high-resolution redraws, property trading, stocks, cards and online party play.
 
 Original or reference: **Richman 4** · Game reimplementation  
-[Download](https://github.com/iam567/rich4-renew-app/releases/latest) · [Browse RemakeList](https://remakelist.com/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-en)
+[Download](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · [Browse RemakeList](https://remakelist.com/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
 **Platforms:** Windows / macOS / Android / iOS
 
-**Status:** Public release v0.6.6 · installation and asset restrictions apply
+**Status:** v0.7.9 metadata updated · setup and asset restrictions apply
 
 **What you need:** Running from source requires the author's separately supplied rich4-assets.tar. It contains material derived from the original game, high-resolution redraws, maps and sounds. These assets are excluded from GPL and restricted by the author to private use. Packaging scripts bundle assets into the apps, but release package contents were not independently inspected. Do not treat a free download as permission to redistribute the artwork or original game material.
 
-**What is available:** v0.6.6 provides a Windows ZIP, macOS DMG, Android APK and unsigned iOS IPA. The author states Intel and Apple Silicon support on Mac. iOS requires your own signing; the macOS app is not notarized and the Android APK uses debug signing. No public browser demo was verified. RemakeList has not installed or played these packages.
+**What is available:** v0.7.9 provides a Windows ZIP, a Mac DMG supporting Intel and Apple silicon, an Android APK and an unsigned iOS IPA. It fixes missing broadcasting-station news and audio in the Jiqing Suiyue map after returning from the background. iOS requires self-signing. No public browser demo was verified; RemakeList has not installed or run it. The iOS package is unsigned and requires self-signing. Earlier packaging documentation described an unnotarized macOS app and debug-signed Android APK; this review did not recheck v0.7.9 signatures or package contents. Extracted original-game material and redraws remain outside GPL, and the author’s private-use statement does not establish permission from the original rights holder. RemakeList has not installed or run it.
 
 **Code license:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
 **Author:** iam567 (Liang)  
-[Official documentation](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · Sources reviewed: 2026-10-20
+[Official documentation](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -1205,7 +1205,7 @@ Original or reference: **Sega Model 3 arcade / Supermodel** · emulator-enhancem
 
 ### [D2R Mobile](https://github.com/jhaizhou-ops/d2r-mobile)
 
-Can D2R Mobile run on your iPhone, iPad or Mac? Check the required Switch game files, device compatibility and installation steps before you start.
+A compatibility layer for your own Switch Diablo II: Resurrected and Reign of the Warlock files on Apple devices, Android and HarmonyOS, with platform-specific preparation.
 
 Original or reference: **Diablo II: Resurrected** · Platform compatibility layer  
 [Build and supply your own game files](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) · [Browse RemakeList](https://remakelist.com/remakes/d2r-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=d2r-mobile-en)
@@ -1213,17 +1213,17 @@ Original or reference: **Diablo II: Resurrected** · Platform compatibility laye
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** iPhone / iPad / Mac · A14 / M1+
+**Platforms:** iPhone / iPad / Apple silicon Mac / Android ARM64 / HarmonyOS NEXT
 
-**Status:** Personal build and owned Switch game files required
+**Status:** v2.0.1 · owned Switch files · platform-specific import or build
 
-**What you need:** Your own Switch copy of Diablo II: Resurrected with Reign of the Warlock, updated to console version 1.0.34.0. The tools call this 3.3.94012. PC, PlayStation and Xbox files are not substitutes. Files prepared from your own game: the executable part (ExeFS) and the graphics, sound and other resources (RomFS). An account login or purchase alone does not supply these files. RemakeList provides no game files, keys or install packages. A supported device and a computer to prepare the app. Allow about 5.6 GB for phone resources, another 1 GB for older-device textures, plus app space. A free Apple ID requires re-signing every 7 days and does not enable iCloud save sync.
+**What you need:** Supply lawfully purchased Switch base-game and Reign of the Warlock ExeFS/RomFS files updated to console version 1.0.34.0, called 3.3.94012 by the tools. PC and other console files are not substitutes. Resources take about 5.6 GB; older Apple chips need an additional roughly 1 GB texture pack generated from your files. Apple requires at least A14/M1; choose standard or older-API builds for iOS 26+ versus 18–25 and macOS 26+ versus 15–25. Android needs ARM64, Android 12+ and Vulkan 1.1. HarmonyOS NEXT needs a developer account, signing tools and a self-prepared runtime pack.
 
-**What is available:** Choose a build for your system: iOS/iPadOS 26+ uses the standard build; 18–25 needs the older-interface build. Apple silicon Macs use the standard build on macOS 26+, or the older-interface build on macOS 15–25. Meeting the chip minimum (A14/M1) is not proof of tested compatibility. Follow the author’s signing instructions. Mac/Xcode is the main route. Windows packaging has been tested by the author, with its output signed on a Mac for phone play; Sideloadly/AltStore signing and Linux remain unverified. Packages containing game-derived content are for personal use, not redistribution.
+**What is available:** v2.0.1 provides an Android APK, an unsigned HarmonyOS HAP and two iOS build-input ZIPs. Android also needs an import pack prepared on a computer; this update reuses the v2.0.0 pack and saves. The HarmonyOS shell and iOS inputs are unchanged: re-sign the HAP with your developer certificate, and use the iOS ZIPs with this release’s source to package and sign an app. Mac still requires a source build; no Mac attachment is provided. Offline only, with no multiplayer. Some Android touch details remain unfinished; certain GPUs skip shaders or lose effects, and importing requires All files access. Apple devices with 4 GB RAM are memory-constrained; meeting the chip minimum does not establish tested compatibility. iOS signing with sideload tools remains unverified; a free Apple ID needs re-signing every 7 days and has no iCloud sync. Do not redistribute self-made packages containing game content. Apple TV remains a character-selection preview, not a listed playable platform. RemakeList has not built, installed or played it.
 
-**Code license:** [MIT](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE)  
+**Code license:** [MIT covers project code; original game files and third-party components retain separate rights and licenses.](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE)  
 **Author:** joe jiang (@happyjoejiang)  
-[Official documentation](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) · Sources reviewed: 2026-10-20
+[Official documentation](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -1232,22 +1232,22 @@ Original or reference: **Diablo II: Resurrected** · Platform compatibility laye
 A native Windows and Linux recompilation of the Xbox 360 version of Modern Warfare 2 (2009).
 
 Original or reference: **Modern Warfare 2 (2009)** · Static recompilation  
-[Download and supply your own game files](https://github.com/PaulCombal/mw2-recompiled/releases) · [Browse RemakeList](https://remakelist.com/remakes/mw2-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mw2-recompiled-en)
+[Download and supply your own game files](https://github.com/PaulCombal/mw2-recompiled/releases/tag/v0.8.1) · [Browse RemakeList](https://remakelist.com/remakes/mw2-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mw2-recompiled-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** Windows / Linux
+**Platforms:** Windows / Linux x64 · SSE4.2 · Vulkan 1.2
 
-**Status:** Release · original assets required
+**Status:** v0.8.1 released · original assets required
 
-**What you need:** Provide your owned Xbox 360 disc ISO, USA/Europe version 1.0.557. The launcher applies title update 6. No retail code or data is included.
+**What you need:** Supply your own lawfully obtained Xbox 360 USA/Europe version 1.0.557 disc ISO; the launcher checks it, then downloads and applies Title Update 6. Requires an x64 SSE4.2 processor, Vulkan 1.2, about 8 GB disk space and a controller; keyboard controls cover menus only. Experimental PC custom-map imports also need assets from your own PC copy.
 
-**What is available:** v0.4.1 is published. Requires 64-bit Windows/Linux, Vulkan 1.2, 8 GB space and a controller. Special Ops is untested; public matchmaking is unsupported. Not run here. Play online only with trusted friends: the unchanged 2009 network code has known security bugs.
+**What is available:** v0.8.1 provides a Windows ZIP and Linux archive. Start mw2-launcher to install from your own ISO. Choose the regular windows or linux package; the same-version -steam / -lan attachments are identical copies for older launchers to update. Public matchmaking and ranked playlists are unsupported, and custom maps remain beta. The author reports fixes for known bugs in the original network code but still recommends playing only with trusted people; RemakeList has not independently audited security. Steam SYSTEM LINK games can be discovered and joined by other Steam users; users on the same relay server or LAN can also reach the game. Players must use the same release. RemakeList has not installed or played it.
 
 **Code license:** [GPL-3.0-only](https://github.com/PaulCombal/mw2-recompiled/blob/master/LICENSE)  
 **Author:** PaulCombal  
-[Official documentation](https://github.com/PaulCombal/mw2-recompiled/blob/master/README.md) · Sources reviewed: 2026-10-14
+[Official documentation](https://github.com/PaulCombal/mw2-recompiled/blob/master/README.md) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -1325,25 +1325,25 @@ Original or reference: **The Legend of Zelda: Twilight Princess** · Decompilati
 
 ### [Mega Man X4 Recompiled](https://github.com/mstan/MegaManX4Recomp)
 
-A native Mega Man X4 recompilation with experimental two-player X and Zero co-op, locally or over netplay.
+A native Mega Man X4 recompilation with two-player X and Zero co-op, locally or over netplay. The current release is a public beta.
 
 Original or reference: **Mega Man X4** · Static recompilation  
-[Download and supply your own game files](https://github.com/mstan/MegaManX4Recomp/releases) · [Browse RemakeList](https://remakelist.com/remakes/mega-man-x4-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mega-man-x4-recompiled-en)
+[Download and supply your own game files](https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.13) · [Browse RemakeList](https://remakelist.com/remakes/mega-man-x4-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mega-man-x4-recompiled-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** Windows / Linux
+**Platforms:** Windows x64 / Linux x86-64 (glibc 2.38+)
 
-**Status:** Co-op alpha · original disc required
+**Status:** Public beta · two-player co-op · original disc required
 
-**What you need:** Supply your own Mega Man X4 USA (SLUS-00561) disc image as a .cue plus .bin set. OpenBIOS is included; a separate BIOS dump is optional. Capcom game content is not covered by the project code license.
+**What you need:** Supply your own original, unmodified Mega Man X4 USA (SLUS-00561) .cue and .bin disc image, even with all mods disabled. Patched discs, undubs and retranslated images are unsupported. OpenBIOS is included; a separate BIOS dump is optional. Original game content is outside the MIT license.
 
-**What is available:** Public Windows ZIP and Linux AppImage playtests are available. Co-op is alpha and requires OpenGL; both peers need the same release. Linux requires x86_64 and glibc 2.38+. Not run by RemakeList.
+**What is available:** v1.0.13 provides a Windows x64 ZIP and Linux x86-64 AppImage, fixing Player 2’s camera between Sigma stage 2 boss doors. Co-op requires OpenGL, and both netplay peers must use the same release. The public beta still has known issues: independent cameras may slow down, and online sign-in/startup reports remain under investigation. Linux needs glibc 2.38+. Four-player experiments are not included. RemakeList has not installed or run it.
 
 **Code license:** [MIT · original project code; dependencies retain their licenses](https://github.com/mstan/MegaManX4Recomp/blob/master/LICENSE)  
 **Author:** Matthew Stanley  
-[Official documentation](https://github.com/mstan/MegaManX4Recomp/blob/master/README.md) · Sources reviewed: 2026-10-18
+[Official documentation](https://github.com/mstan/MegaManX4Recomp/blob/master/README.md) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -1352,22 +1352,22 @@ Original or reference: **Mega Man X4** · Static recompilation
 An early native Android port of Super Mario Galaxy with touch controls, gamepad support and ultrawide display.
 
 Original or reference: **Super Mario Galaxy** · Decompilation-based project  
-[Download and supply your own game files](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/docs/INSTALLATION.md) · [Browse RemakeList](https://remakelist.com/remakes/galaxy-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=galaxy-android-en)
+[Download and supply your own game files](https://github.com/OpenPort-Labs/Galaxy-Android/releases/tag/v0.0.4) · [Browse RemakeList](https://remakelist.com/remakes/galaxy-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=galaxy-android-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** Android 11+ · ARM64
+**Platforms:** Android 11+ · ARM64 · Vulkan 1.0
 
-**Status:** Early release · original assets required
+**Status:** Public release v0.0.4 · original assets required
 
-**What you need:** Provide your own legally dumped Wii Super Mario Galaxy disc image; the importer extracts local files. Optional Shield-derived materials are separate proprietary data and are not supplied by this listing.
+**What you need:** Supply your own lawfully dumped Wii Super Mario Galaxy disc image (.rvz, .wbfs, .iso or .wia) for local extraction and conversion. Reserve about 2.5 GB without movies or 5 GB with movies. Optional Shield-derived materials are separate proprietary data and are not supplied by this listing.
 
-**What is available:** A public APK is available. Early builds have reported graphics, performance and crash issues. The cover is a contributor screenshot of v0.0.1, not a RemakeList test. Not run by RemakeList.
+**What is available:** v0.0.4 provides a public APK requiring Android 11+, ARM64, Vulkan 1.0 and at least 3 GB RAM. The author lists Vulkan rendering, physical-controller mapping and touch-layout updates. Devices without a Vulkan 1.0 driver are unsupported. The author calls this a stable release, but RemakeList has not validated device coverage, sustained performance or full gameplay, and does not guarantee 60 FPS. The cover remains pcddlXDDD’s v0.0.1 screenshot, not a test of this release. RemakeList has not installed or run it.
 
 **Code license:** [GPL-3.0 · port code; original game assets excluded](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/LICENSE)  
 **Author:** OpenPort Labs  
-[Official documentation](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/README.md) · Sources reviewed: 2026-10-18
+[Official documentation](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/README.md) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -1563,27 +1563,27 @@ Original or reference: **Crash Team Racing (1999)** · Decompilation-based proje
 
 </details>
 
-### [Def Jam: Fight for NY Recompiled](https://github.com/vyanhursky/defjamffny-recomp)
+### [Def Jam: Fight for NY Recompiled](https://github.com/vyanhursky/DefJamFFNY-recomp)
 
-Build a native Windows, Mac or Linux version of Def Jam: Fight for NY from your own supported US Xbox dump. The author shows actual fights; widescreen is beta and story verification covers tested routes.
+Build a native Windows, Mac or Linux version of Def Jam: Fight for NY from your own supported USA original-Xbox dump, with higher resolution and up to four local players. Widescreen remains beta.
 
 Original or reference: **Def Jam: Fight for NY** · Static recompilation  
-[Download and supply your own game files](https://github.com/vyanhursky/defjamffny-recomp/releases) · [Browse RemakeList](https://remakelist.com/remakes/defjam-ffny-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=defjam-ffny-recompiled-en)
+[Download and supply your own game files](https://github.com/vyanhursky/DefJamFFNY-recomp/releases/tag/v0.12.1) · [Browse RemakeList](https://remakelist.com/remakes/defjam-ffny-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=defjam-ffny-recompiled-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** Windows / Apple Silicon macOS / Linux / Steam Deck
+**Platforms:** Windows x64 (Direct3D 11) / Apple silicon macOS / Linux x86-64 / Steam Deck
 
-**Status:** Playable release · widescreen beta
+**Status:** Public release v0.12.1 · local build · widescreen beta
 
-**What you need:** Own supported USA original Xbox disc image or extracted dump is required. PS2 and GameCube versions cannot be substituted. The code license grants no rights to the original game, artwork or commercial data.
+**What you need:** Supply your own USA original-Xbox disc image or extracted dump matching the author’s supported manifest. PS2 and GameCube versions cannot substitute. Setup verifies, recompiles and builds locally; HD texture generation adds time and disk-space requirements. The code license grants no rights to the original game or artwork.
 
-**What is available:** Download the author’s setup for Windows, Apple Silicon Mac or Linux/Steam Deck and select your own supported dump. The author verifies fights and selected story routes; 16:9 is beta and ultrawide remains experimental. No network multiplayer.
+**What is available:** v0.12.1 provides setup tools for Windows x64, Apple silicon macOS and Linux x86-64/Steam Deck, fixing created-fighter portraits and widescreen HUD placement. Setup validates your dump and builds locally. Existing installations use Clean Update and rebuild; the author says saves, settings, mods and texture packs are retained. 16:9/16:10 widescreen remains beta and 21:9/32:9 experimental; multiplayer is local only. Shop loading pauses, uneven pacing in some scenes and existing widescreen issues remain; Steam Deck audio and Story tutorial performance are still under investigation. The macOS setup is unsigned. Author regression checks do not establish a RemakeList full-playthrough test; RemakeList has not installed or run it.
 
-**Code license:** [MIT project code; separate toolkit licenses. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/vyanhursky/defjamffny-recomp#credits-and-licensing)  
+**Code license:** [MIT project code; separate toolkit licenses. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/vyanhursky/DefJamFFNY-recomp#credits-and-licensing)  
 **Author:** vyanhursky  
-[Official documentation](https://github.com/vyanhursky/defjamffny-recomp#readme) · Sources reviewed: 2026-10-19
+[Official documentation](https://github.com/vyanhursky/DefJamFFNY-recomp#readme) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -1611,51 +1611,51 @@ Original or reference: **Dead or Alive Xtreme Beach Volleyball** · Static recom
 
 </details>
 
-### [Forza Horizon 1: ReImagined](https://github.com/Dyotson/ForzaHorizon1-ReImagined)
+### [Forza Horizon 1: ReImagined](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined)
 
-A native Linux port built from your own Xbox 360 Forza Horizon files, with community online services and high-frame-rate options. Windows remains experimentally supported.
+Builds a native Windows and Linux port locally from your own Xbox 360 Forza Horizon files, with community online services, car tuning and display options.
 
 Original or reference: **Forza Horizon** · Static recompilation  
-[Download and supply your own game files](https://github.com/dyotson/forzahorizon1-reimagined/releases) · [Browse RemakeList](https://remakelist.com/remakes/forza-horizon-reimagined/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=forza-horizon-reimagined-en)
+[Download and supply your own game files](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/releases/tag/v0.2.0) · [Browse RemakeList](https://remakelist.com/remakes/forza-horizon-reimagined/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=forza-horizon-reimagined-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** Linux x64 / Windows 10–11 x64
+**Platforms:** Windows 10/11 x64 / Linux x86-64; macOS source-build experiment only
 
-**Status:** Playable or experimental preview.
+**Status:** v0.2.0 released · local build · experimental VR
 
-**What you need:** Bring your own lawfully obtained Xbox 360 · 4D5309C9 · Disc 1 / Games on Demand. The project is free to access; the original game is separate. No game files, keys or ready-to-play packages are supplied here.
+**What you need:** Supply your own lawfully obtained Xbox 360 Forza Horizon disc image, Games on Demand package or extracted folder. Supply Title Update 4 and DLC separately; Horizon Rally and the 1000 Club need TU4. Allow about 4 GB free RAM and 15 GB disk space. The Vulkan path needs Vulkan 1.3; Windows also offers Direct3D 12. Initial setup needs compiler tools to be downloaded or installed.
 
-**What is available:** Official route: Linux x64 / Windows 10–11 x64. Playable or experimental preview. Linux gameplay is reported; native Windows gameplay is unverified. Choose the official package matching your system.
+**What is available:** v0.2.0 provides a Windows installer, Linux x86-64 archive and Flatpak. The launcher generates and compiles the game locally from your own files; rebuild once after updating. macOS remains a source-build experiment with no Mac download. Steam Deck and low-end performance remains limited, with graphics or crash issues on some GPUs. The author tested VR on Quest 3 with Linux WiVRn; Windows VR is untested. Full races, save reloads and physical controllers still need validation on macOS. TU4 and base-game players use separate online rooms, and TU4 saves cannot simply return to the base game. RemakeList has not built or played it.
 
-**Code license:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/Dyotson/ForzaHorizon1-ReImagined/blob/main/LICENSE)  
+**Code license:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/blob/main/LICENSE)  
 **Author:** Dyotson  
-[Official documentation](https://github.com/Dyotson/ForzaHorizon1-ReImagined#readme) · Sources reviewed: 2026-10-19
+[Official documentation](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined#readme) · Sources reviewed: 2026-10-27
 
 </details>
 
 ### [Gears of War 2 PC Port](https://github.com/santiquiroz/gears-of-war-2-pc-port)
 
-A native PC port for your own Xbox 360 Gears of War 2 files, with high-resolution rendering and experimental co-op. Campaign coverage is incomplete and Android performance drops as devices warm up.
+An unofficial native port using your own Xbox 360 Gears of War 2 files, with high-resolution rendering, split-screen and System Link co-op. Android remains experimental and full-campaign coverage is unverified.
 
 Original or reference: **Gears of War 2** · Static recompilation  
-[Download and supply your own game files](https://github.com/santiquiroz/gears-of-war-2-pc-port/releases) · [Browse RemakeList](https://remakelist.com/remakes/gears-of-war-2-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gears-of-war-2-native-en)
+[Download and supply your own game files](https://github.com/santiquiroz/gears-of-war-2-pc-port/releases/tag/v0.3.7) · [Browse RemakeList](https://remakelist.com/remakes/gears-of-war-2-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gears-of-war-2-native-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** Windows 10–11 x64 / Android 10+ ARM64
+**Platforms:** Windows 10/11 x64 (DirectX 12) / Android 10+ ARM64 (Vulkan, experimental)
 
-**Status:** Playable or experimental preview.
+**Status:** Public release · campaign coverage incomplete · experimental Android
 
-**What you need:** Bring your own lawfully obtained Xbox 360 · 4D53082D · default.xex + GearGame. The project is free to access; the original game is separate. No game files, keys or ready-to-play packages are supplied here.
+**What you need:** Supply your own lawfully obtained retail Xbox 360 Gears of War 2 (title ID 4D53082D) ISO, or a complete folder with default.xex and GearGame. Initial ISO extraction on Windows needs about 8 GB. Android import copies the data into app storage and needs room for another complete copy. RemakeList supplies no game data.
 
-**What is available:** Official route: Windows 10–11 x64 / Android 10+ ARM64. Playable or experimental preview. Full-game coverage has not been verified. Android remains experimental. Choose the official package matching your system.
+**What is available:** v0.3.7 provides a Windows 10/11 x64 ZIP and an experimental Android 10+ ARM64 APK. Windows needs a DirectX 12 GPU and Android needs Vulkan. The update adds separate voice and subtitle-language choices. The author has only played through Act 1; brief chapter sweeps do not verify Acts 2–5 end to end. Android sustained performance is affected by heat. Three/four-player co-op and internet play retain untested scenarios, and all peers need the same release. Windows files are unsigned and may be blocked; author scan claims are not a RemakeList security certification. RemakeList has not built, installed or run it.
 
 **Code license:** [BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/santiquiroz/gears-of-war-2-pc-port/blob/master/LICENSE)  
 **Author:** santiquiroz  
-[Official documentation](https://github.com/santiquiroz/gears-of-war-2-pc-port#readme) · Sources reviewed: 2026-10-19
+[Official documentation](https://github.com/santiquiroz/gears-of-war-2-pc-port#readme) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -1733,25 +1733,25 @@ Original or reference: **inFAMOUS Second Son** · Platform compatibility layer
 
 ### [LAS Recomp](https://github.com/peiikai/LASRecomp)
 
-A beta desktop native port that prepares your own Switch Link’s Awakening 1.0.0 files locally, with widescreen and randomizer options. Graphics and seed-generation limits remain.
+Builds a native desktop port locally from your own Switch Link’s Awakening 1.0.0, 1.0.1 or 1.1.0 files, with widescreen and randomizer options. It remains in beta.
 
 Original or reference: **The Legend of Zelda: Link’s Awakening** · Static recompilation  
-[Download and supply your own game files](https://github.com/peiikai/lasrecomp/releases) · [Browse RemakeList](https://remakelist.com/remakes/las-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=las-recomp-en)
+[Download and supply your own game files](https://github.com/peiikai/LASRecomp/releases/tag/beta_5.3) · [Browse RemakeList](https://remakelist.com/remakes/las-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=las-recomp-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** Windows x64 / macOS Apple silicon / Linux x64
+**Platforms:** Windows x64 / Apple silicon macOS / Linux x64; experimental Linux ARM64
 
-**Status:** Beta; bugs and incomplete testing remain.
+**Status:** beta_5.3 · bugs and incomplete validation remain
 
-**What you need:** Bring your own lawfully obtained Nintendo Switch · v1.0.0 · exefs + romfs. The project is free to access; the original game is separate. No game files, keys or ready-to-play packages are supplied here.
+**What you need:** Supply your own lawfully obtained exefs and romfs files from Switch Link’s Awakening 1.0.0, 1.0.1 or 1.1.0 and choose their folder for local compilation. Mac needs Apple silicon and macOS 15+. Windows 10/11 and Linux x64 need AVX2, FMA, Vulkan 1.3, at least 8 GB RAM and about 12 GB setup space. No game files or keys are provided.
 
-**What is available:** Official route: Windows x64 / macOS Apple silicon / Linux x64. Beta; bugs and incomplete testing remain. Linux ARM64 builds are not hardware-tested. Choose the official package matching your system.
+**What is available:** beta_5.3 provides a Windows ZIP, Mac DMG and Linux x86-64/ARM64 AppImages. It supports original game versions 1.0.0, 1.0.1 and 1.1.0, with local compilation at first launch. The author explicitly labels it beta despite GitHub’s prerelease flag being off; Linux ARM64 is untested on real hardware. Crashes, unsolvable randomizer seeds and widescreen graphics issues remain possible; dungeon-room shuffling is especially experimental. Linux ARM64 is built but not hardware-tested; Intel Macs and older Intel integrated graphics are unsupported. Seed IDs from before Beta 5 generate different results. Author frame-rate reports for Steam Deck or Mac are not guarantees for every device. RemakeList has not built or played it.
 
 **Code license:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/peiikai/LASRecomp/blob/main/LICENSE)  
 **Author:** peiikai  
-[Official documentation](https://github.com/peiikai/LASRecomp#readme) · Sources reviewed: 2026-10-19
+[Official documentation](https://github.com/peiikai/LASRecomp#readme) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -1973,7 +1973,7 @@ Original or reference: **Silent Hill** · Decompilation-based project
 
 ### [SpeedBreaker](https://github.com/speedbreakerproject/speedbreaker)
 
-Runs the Xbox 360 Need for Speed: Most Wanted on modern devices with widescreen and display options. Bring your own Xbox 360 disc image; the iPhone and iPad route is experimental.
+Runs your own Xbox 360 Need for Speed: Most Wanted on modern devices with widescreen, split screen and display options. iPhone/iPad sideloading remains experimental, and Windows is in beta.
 
 Original or reference: **Need for Speed: Most Wanted (2005)** · Static recompilation  
 [Download and supply your own game files](https://github.com/speedbreakerproject/speedbreaker/releases) · [Browse RemakeList](https://remakelist.com/remakes/speedbreaker/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=speedbreaker-en)
@@ -1981,17 +1981,17 @@ Original or reference: **Need for Speed: Most Wanted (2005)** · Static recompil
 <details>
 <summary>Requirements and screenshots</summary>
 
-**Platforms:** Linux / macOS / iOS / iPadOS
+**Platforms:** Linux / SteamOS / Apple silicon macOS / experimental iOS·iPadOS / Windows beta
 
-**Status:** Preview · original game required
+**Status:** v0.2.0 released · Windows beta · experimental iOS sideloading
 
-**What you need:** Owned Xbox 360 Need for Speed Most Wanted (2005) disc image, verified and imported locally. No PC retail edition substitution.
+**What you need:** Supply your own lawful USA NTSC-U or European PAL Spanish Xbox 360 Most Wanted ISO, XISO or extracted folder. No Title Update is used; other regions, Games on Demand and the PC edition are unsupported. Allow about 7.2 GB. Windows/Linux x64 need AVX2 and Vulkan 1.2; Mac needs Apple silicon and macOS 15+; iOS/iPadOS need 17+, an A15-class chip or newer, a controller or keyboard, and your own sideload signing.
 
-**What is available:** Official downloadable desktop apps and experimental iOS sideload route. Author reports native recompilation; check each release asset before listing platforms. Not built, installed or played by RemakeList.
+**What is available:** The main v0.2.0 release provides SteamOS/Linux x86-64, Steam Frame ARM64, Apple silicon Mac and an experimental iOS IPA. Windows uses the separate v0.2.0-windows-beta.2 prerelease; no Android build is available. The two SteamOS architectures are not interchangeable. The author tested the Windows beta on limited Intel integrated-graphics hardware. The iOS IPA attachment itself has not been installed on a device; author testing used Xcode-signed builds, and sideload entitlements or memory limits can prevent running. The Mac app is not notarized; macOS 15 was tested only in a VM. Steam Frame presents a flat screen, not VR; the ARM64 package is untested on other Linux devices. Set Steam Deck OLED to 60 Hz; the LCD model is untested. No universal frame rate is promised. RemakeList has not run it.
 
-**Code license:** [GPL-3.0-or-later authored code; original game content excluded](https://github.com/speedbreakerproject/speedbreaker#readme)  
+**Code license:** [Project-authored code is GPL-3.0-or-later; bundled libraries retain their own licenses, and original game content is excluded.](https://github.com/speedbreakerproject/speedbreaker#readme)  
 **Author:** project(u) / SpeedBreakerProject  
-[Official documentation](https://github.com/speedbreakerproject/speedbreaker#readme) · Sources reviewed: 2026-10-19
+[Official documentation](https://github.com/speedbreakerproject/speedbreaker#readme) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -2408,22 +2408,22 @@ Original or reference: **Wario Land: Shake It! (Wii)** · Static recompilation
 A Project Gotham Racing 4 recompilation with a native Direct3D 12 renderer. Runs on Windows or through Proton with your own game and Title Update #2.
 
 Original or reference: **Project Gotham Racing 4 (Xbox 360)** · Static recompilation  
-[Download and supply your own game files](https://github.com/shaunsingh/pgr4-native/releases/tag/v0.1.2) · [Browse RemakeList](https://remakelist.com/remakes/pgr4-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pgr4-native-en)
+[Download and supply your own game files](https://github.com/shaunsingh/pgr4-native/releases/tag/v0.2.1) · [Browse RemakeList](https://remakelist.com/remakes/pgr4-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pgr4-native-en)
 
 <details>
 <summary>Requirements and screenshots</summary>
 
 **Platforms:** Windows x64 / Linux and Steam Deck via Proton
 
-**Status:** v0.1.2 · Early port · original files required
+**Status:** v0.2.1 · Early port · original files required
 
 **What you need:** Supply your own lawfully obtained extracted PGR4 disc and Title Update #2 package or files. The author reports PAL and NTSC disc contents match. No original game data is included.
 
-**What is available:** v0.1.2 provides a Windows x64 ZIP. Linux and Steam Deck use Proton; this release is not a native Linux executable. RemakeList has not tested gameplay or performance. Requires the supported game/update combination and graphics configuration. Compatibility and frame rate depend on hardware and Proton where used; no universal Steam Deck frame-rate claim is made.
+**What is available:** v0.2.1 provides a Windows x64 ZIP. Linux and Steam Deck use Proton; this release is not a native Linux executable. RemakeList has not tested gameplay or performance. Requires the supported game/update combination and graphics configuration. Compatibility and frame rate depend on hardware and Proton where used; no universal Steam Deck frame-rate claim is made.
 
 **Code license:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE)  
 **Author:** shaunsingh  
-[Official documentation](https://github.com/shaunsingh/pgr4-native/blob/main/README.md) · Sources reviewed: 2026-10-26
+[Official documentation](https://github.com/shaunsingh/pgr4-native/blob/main/README.md) · Sources reviewed: 2026-10-27
 
 </details>
 
@@ -2472,6 +2472,78 @@ Original or reference: **Madden NFL 08 (Xbox 360)** · Static recompilation
 **Code license:** [GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/LICENSE)  
 **Author:** anishchandra24  
 [Official documentation](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/README.md) · Sources reviewed: 2026-10-26
+
+</details>
+
+### [CPS-2 Recomp](https://github.com/tmcleroy/cps2recomp)
+
+A collection of unofficial CPS-2 and CPS-1 arcade ports with one launcher, fighting-game training tools and three-player beat-’em-ups. Requires the exact supported ROM sets from your own arcade boards.
+
+Original or reference: **Capcom CPS-2 / CPS-1 arcade games** · Static recompilation  
+[Download and supply your own game files](https://github.com/tmcleroy/cps2recomp/releases/tag/v0.4.0-beta.6) · [Browse RemakeList](https://remakelist.com/remakes/cps2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=cps2-recomp-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / SteamOS
+
+**Status:** v0.4.0-beta.6 · Beta · exact original ROM sets required
+
+**What you need:** Supply the exact supported arcade ROM revision from a board you own, with its key file for CPS-2 games. The launcher verifies checksums and rejects other regions or revisions; some sets also need their parent set. No game files or keys are supplied.
+
+**What is available:** v0.4.0-beta.6 provides Windows x64, macOS and Linux x86_64 archives. macOS supports Apple Silicon and Intel; the Linux package is also the SteamOS/Steam Deck route. The README describes Linux ARM64 support, but this release has no ARM64 download. It remains a beta despite GitHub’s prerelease flag being off. Beta with limited machine and controller coverage. The author reports start-to-ending checks for fighting games, while the newer beat-’em-ups have only early-stage scripted-play coverage. This is not independent full-game testing.
+
+**Code license:** [Project code is GPL-3.0-only; third-party components retain their own notices. This license does not grant rights to Capcom or other rights holders’ game code, ROMs, keys, music or artwork.](https://github.com/tmcleroy/cps2recomp/blob/main/LICENSE)  
+**Author:** tmcleroy  
+[Official documentation](https://github.com/tmcleroy/cps2recomp/blob/main/README.md) · Sources reviewed: 2026-10-27
+
+</details>
+
+### [Free Riders Recompiled](https://github.com/YuutaTsubasa/Free-Riders-Recompiled)
+
+An unofficial port of the Xbox 360 Sonic Free Riders with controller and keyboard play without Kinect. It imports game data from your own USA/Europe disc image and remains a work in progress.
+
+Original or reference: **Sonic Free Riders (Xbox 360)** · Static recompilation  
+[Download and supply your own game files](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.35) · [Browse RemakeList](https://remakelist.com/remakes/free-riders-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=free-riders-recompiled-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows / Linux x64 · Android arm64 · experimental macOS Apple Silicon / iOS
+
+**Status:** v0.10.35 · Work in progress · original disc required
+
+**What you need:** Supply your own lawfully acquired USA/Europe Xbox 360 Sonic Free Riders disc image (.iso). The launcher imports the models, textures, audio and movies from it. The author says releases include the recompiled program, not the original game-data files; the project’s GPL license does not license SEGA’s content.
+
+**What is available:** v0.10.35 provides Windows x64, Linux x64, Android arm64, macOS arm64 and iOS IPA packages. Windows 10/11 and Linux need AVX; graphics require Direct3D 12 or Vulkan 1.2 on Windows, Vulkan 1.2 on Linux. Android needs Android 9+, Vulkan 1.1 and about 2 GB for the installed game; a separate Android 10+ APK is available. Apple builds require macOS 13.3+ on Apple Silicon or iOS 16.3+ with sideloading. Work in progress: many modes remain untested, and Android performance is device-dependent. Apple support remains experimental. The README’s requirements still warn of slow M1 races and no real-device iOS testing, while later release history reports Mac performance and iOS fixes; current compatibility needs independent confirmation. Kinect v2 and broader online play also have limited validation.
+
+**Code license:** [Project code is GPL-3.0-or-later. The original game’s code and data remain SEGA’s and are outside that grant; third-party components and models retain their separate licenses.](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/COPYING)  
+**Author:** YuutaTsubasa  
+[Official documentation](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/README.md) · Sources reviewed: 2026-10-27
+
+</details>
+
+### [James Pond 2 Recompiled](https://github.com/griches/JamesPond2RobocodRecomp)
+
+A community port of the Amiga James Pond 2 with widescreen, save slots and smoother display motion. Requires your own supported Kixx disk image or WHDLoad installation.
+
+Original or reference: **James Pond 2: Codename RoboCod (Amiga)** · Static recompilation  
+[Download and supply your own game files](https://github.com/griches/JamesPond2RobocodRecomp/releases/tag/v1.0.0) · [Browse RemakeList](https://remakelist.com/remakes/james-pond-2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=james-pond-2-recomp-en)
+
+<details>
+<summary>Requirements and screenshots</summary>
+
+**Platforms:** Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / Steam Deck · PS5 homebrew
+
+**Status:** Desktop v1.0.0 · PS5 v1.0.2 · original disk required
+
+**What you need:** Supply your own lawfully obtained Kixx Amiga re-release as a standard .adf disk image, optionally gzip-compressed as .adz or in a .zip, or a supported WHDLoad installation. The original Millennium copy-protected release, extended ADF, .dms and .ipf images are not supported. No original disk download is provided here.
+
+**What is available:** Desktop downloads are v1.0.0 for Windows, macOS and Linux; Steam Deck uses the Linux archive. PS5 has a separate v1.0.2 release and requires a console already able to run homebrew. The v1.0.2 release explicitly leaves other platforms on v1.0.0; it is not a desktop update. This is an early public release, and owning another edition does not make its disk format compatible. PS5 is a separate homebrew target, not a standard console-store release. RemakeList has not installed, played or independently verified full-game compatibility.
+
+**Code license:** [The project’s own code is GPL-3.0. SDL3, Musashi, fonts and other dependencies retain their separate licenses; the original game’s code, artwork and music are not granted under the project license.](https://github.com/griches/JamesPond2RobocodRecomp/blob/main/LICENSE)  
+**Author:** griches  
+[Official documentation](https://github.com/griches/JamesPond2RobocodRecomp/blob/main/README.md) · Sources reviewed: 2026-10-27
 
 </details>
 

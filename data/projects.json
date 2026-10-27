@@ -1894,54 +1894,54 @@
       "localized": {
         "en": {
           "original": "Diablo II: Resurrected",
-          "summary": "Can D2R Mobile run on your iPhone, iPad or Mac? Check the required Switch game files, device compatibility and installation steps before you start.",
-          "requirements": "Your own Switch copy of Diablo II: Resurrected with Reign of the Warlock, updated to console version 1.0.34.0. The tools call this 3.3.94012. PC, PlayStation and Xbox files are not substitutes. Files prepared from your own game: the executable part (ExeFS) and the graphics, sound and other resources (RomFS). An account login or purchase alone does not supply these files. RemakeList provides no game files, keys or install packages. A supported device and a computer to prepare the app. Allow about 5.6 GB for phone resources, another 1 GB for older-device textures, plus app space. A free Apple ID requires re-signing every 7 days and does not enable iCloud save sync.",
-          "availability": "Choose a build for your system: iOS/iPadOS 26+ uses the standard build; 18–25 needs the older-interface build. Apple silicon Macs use the standard build on macOS 26+, or the older-interface build on macOS 15–25. Meeting the chip minimum (A14/M1) is not proof of tested compatibility. Follow the author’s signing instructions. Mac/Xcode is the main route. Windows packaging has been tested by the author, with its output signed on a Mac for phone play; Sideloadly/AltStore signing and Linux remain unverified. Packages containing game-derived content are for personal use, not redistribution.",
-          "platforms": "iPhone / iPad / Mac · A14 / M1+",
-          "stage": "Personal build and owned Switch game files required"
+          "summary": "A compatibility layer for your own Switch Diablo II: Resurrected and Reign of the Warlock files on Apple devices, Android and HarmonyOS, with platform-specific preparation.",
+          "requirements": "Supply lawfully purchased Switch base-game and Reign of the Warlock ExeFS/RomFS files updated to console version 1.0.34.0, called 3.3.94012 by the tools. PC and other console files are not substitutes. Resources take about 5.6 GB; older Apple chips need an additional roughly 1 GB texture pack generated from your files. Apple requires at least A14/M1; choose standard or older-API builds for iOS 26+ versus 18–25 and macOS 26+ versus 15–25. Android needs ARM64, Android 12+ and Vulkan 1.1. HarmonyOS NEXT needs a developer account, signing tools and a self-prepared runtime pack.",
+          "availability": "v2.0.1 provides an Android APK, an unsigned HarmonyOS HAP and two iOS build-input ZIPs. Android also needs an import pack prepared on a computer; this update reuses the v2.0.0 pack and saves. The HarmonyOS shell and iOS inputs are unchanged: re-sign the HAP with your developer certificate, and use the iOS ZIPs with this release’s source to package and sign an app. Mac still requires a source build; no Mac attachment is provided. Offline only, with no multiplayer. Some Android touch details remain unfinished; certain GPUs skip shaders or lose effects, and importing requires All files access. Apple devices with 4 GB RAM are memory-constrained; meeting the chip minimum does not establish tested compatibility. iOS signing with sideload tools remains unverified; a free Apple ID needs re-signing every 7 days and has no iCloud sync. Do not redistribute self-made packages containing game content. Apple TV remains a character-selection preview, not a listed playable platform. RemakeList has not built, installed or played it.",
+          "platforms": "iPhone / iPad / Apple silicon Mac / Android ARM64 / HarmonyOS NEXT",
+          "stage": "v2.0.1 · owned Switch files · platform-specific import or build"
         },
         "zh-CN": {
           "original": "Diablo II: Resurrected",
-          "summary": "想在 iPhone、iPad 或 Mac 玩 D2R Mobile？先看自备 Switch 游戏文件的要求、设备兼容性和安装顺序，再决定是否动手。",
-          "requirements": "自己购买的 Switch 版《暗黑破坏神 II：狱火重生》本体和「术士君临」资料片，主机版本需为 1.0.34.0。工具和目录把它写作 3.3.94012。PC、PlayStation、Xbox 版文件不能替代。 从自己游戏准备出的两部分文件：程序（ExeFS）和画面、声音等资源（RomFS）。登录购买账号不等于已经有这些文件。RemakeList 不提供游戏文件、密钥或安装包。 合适的设备，以及一台处理文件的电脑。手机资源约 5.6 GB，旧设备另需约 1 GB 贴图包，还要留安装空间。免费 Apple ID 每 7 天需重新签名，不支持 iCloud 存档同步。",
-          "availability": "系统也要选对：iOS/iPadOS 26 及以上用标准版，18–25 用「老接口版」。Apple 芯片 Mac 的 macOS 26 及以上用标准版，15–25 用老接口版。达到 A14/M1 的芯片最低要求，不等于该型号已经实测通过。 按作者说明完成 Apple 签名；Mac/Xcode 是主路线。作者已验证 Windows 做包、再转到 Mac 签名后在手机游玩；Sideloadly/AltStore 自签以及 Linux 尚未验证。做出的包包含游戏衍生内容，仅供自己使用，不要分发。",
-          "platforms": "iPhone / iPad / Mac · A14 / M1+",
-          "stage": "需自行做包与自备 Switch 游戏文件"
+          "summary": "将自备 Switch 版《暗黑破坏神 II：狱火重生》与「术士君临」资料片带到 Apple 设备、Android 和 HarmonyOS 的兼容层；需按平台准备自己的游戏文件。",
+          "requirements": "需自备合法购买的 Switch 本体与「术士君临」资料片，更新至主机版本 1.0.34.0（工具标作 3.3.94012）的 ExeFS、RomFS。其他主机或 PC 文件不能替代；资源约 5.6 GB，旧 Apple 芯片另需从自己的文件生成约 1 GB 贴图包。Apple 最低 A14/M1；iOS 26+ 与 18–25、macOS 26+ 与 15–25 分别选标准／老接口路线。Android 需 ARM64、Android 12+、Vulkan 1.1；HarmonyOS NEXT 需开发者账号、签名工具与自制运行包。",
+          "availability": "v2.0.1 提供 Android APK、未签名 HarmonyOS HAP，以及两份 iOS 构建输入 ZIP。Android 需另在电脑上制作导入包；本次可沿用 v2.0.0 导入包和存档。HarmonyOS 壳与 iOS 输入未变：HAP 需个人开发证书重签，iOS ZIP 不能直接安装，须与本版源码一起做包再签名。Mac 仍需源码构建，没有 Mac 发行附件。 仅离线，无多人联机。Android 某些触控细节未完成，部分 GPU 会跳过着色器或缺少特效，安装导入需授予「所有文件访问」。4 GB Apple 设备内存紧张，最低芯片要求不代表该型号已测试。iOS 侧载工具签名路线仍未验证，免费 Apple ID 每 7 天需重签且无 iCloud 同步；自制含游戏内容的包不可分发。Apple TV 仍只到选角色预览，不列为可玩平台。本站未构建、安装或试玩。",
+          "platforms": "iPhone / iPad / Apple silicon Mac / Android ARM64 / HarmonyOS NEXT",
+          "stage": "v2.0.1 · 自备 Switch 文件 · 按平台导入或构建"
         },
         "ja": {
           "original": "Diablo II: Resurrected",
-          "summary": "iPhone・iPad・Mac で D2R Mobile は使える？必要な Switch ゲームファイル、端末の対応状況、導入の順番を先に確認できます。",
-          "requirements": "自分で購入した Switch 版 Diablo II: Resurrected と Reign of the Warlock。Switch 上のバージョンは 1.0.34.0、ツール上の表記は 3.3.94012 です。PC・PlayStation・Xbox 版のファイルでは代用できません。 自分のゲームから準備したプログラム部分（ExeFS）と、画像・音声などのリソース部分（RomFS）。購入やアカウントへのログインだけでは揃いません。RemakeList はゲームファイル、鍵、インストールパッケージを配布しません。 対応端末と準備用のパソコン。端末のリソースは約 5.6 GB、旧端末用テクスチャは追加で約 1 GB、さらにアプリ用の空き容量が必要です。無料 Apple ID は 7 日ごとの再署名が必要で、iCloud セーブ同期は使えません。",
-          "availability": "OS に合うビルドを選びます。iOS/iPadOS 26 以降は標準、18〜25 は旧 API 版です。Apple シリコン Mac は macOS 26 以降が標準、15〜25 が旧 API 版です。最低条件 A14/M1 を満たしていても、その機種での動作確認済みとは限りません。 作者の署名手順に従います。基本は Mac/Xcode です。Windows で作成したパッケージを Mac で署名し、iPhone で遊ぶ手順は作者が検証済みですが、Sideloadly/AltStore による署名と Linux は未検証です。ゲーム由来の内容を含むパッケージは個人用とし、配布しないでください。",
-          "platforms": "iPhone / iPad / Mac · A14 / M1+",
-          "stage": "自分での作成と所有する Switch ゲームファイルが必要"
+          "summary": "自分の Switch Diablo II: Resurrected と Reign of the Warlock のファイルを、Apple 機器、Android、HarmonyOS で使う互換レイヤーです。プラットフォームごとの準備が必要です。",
+          "requirements": "合法的に購入した Switch の本編と Reign of the Warlock を本体表記1.0.34.0に更新し、ExeFS／RomFS を用意してください。ツールでは3.3.94012と表記されます。PC 版や他のコンソール版では代用できません。リソースは約5.6 GB で、古い Apple チップには自分のファイルから生成する約1 GB の追加テクスチャパックが必要です。Apple は A14／M1 以降が必要で、iOS 26以降と18〜25、macOS 26以降と15〜25で標準版または旧 API 版を選びます。Android は ARM64、Android 12以降、Vulkan 1.1 が必要です。HarmonyOS NEXT は開発者アカウント、署名ツール、自分で準備した実行用パックが必要です。",
+          "availability": "v2.0.1 は Android APK、未署名の HarmonyOS HAP、2種類の iOS ビルド用 ZIP を提供します。Android はコンピューターで作成した取り込みパックも必要で、今回の修正では v2.0.0 のパックとセーブを引き継げます。HarmonyOS シェルと iOS の入力ファイルは変更されていません。HAP は自分の開発者証明書で再署名し、iOS ZIP はこのリリースのソースと組み合わせてアプリを作成・署名します。ZIP 自体は直接インストールできません。Mac は引き続きソースビルドが必要で、Mac 用添付ファイルはありません。オフライン専用でマルチプレイはありません。Android のタッチ操作には未完成の部分があり、一部 GPU ではシェーダーを省略したり効果が欠けたりします。取り込みには「すべてのファイルへのアクセス」が必要です。メモリ4 GB の Apple 端末は余裕が少なく、最低チップ要件を満たすだけでは動作確認済みとはいえません。サイドロードツールでの iOS 署名は未検証です。無料 Apple ID は7日ごとの再署名が必要で、iCloud 同期は使えません。ゲーム内容を含む自作パッケージを再配布しないでください。Apple TV はキャラクター選択までのプレビューであり、プレイ可能なプラットフォームとしては掲載していません。RemakeList ではビルド、インストール、プレイを行っていません。",
+          "platforms": "iPhone／iPad／Apple Silicon Mac／Android ARM64／HarmonyOS NEXT",
+          "stage": "v2.0.1 · 所有する Switch ファイルが必要 · 機器別の取り込み・ビルド"
         },
         "ko": {
           "original": "Diablo II: Resurrected",
-          "summary": "내 iPhone·iPad·Mac에서 D2R Mobile을 쓸 수 있을까요? 필요한 Switch 게임 파일, 기기 호환성, 설치 순서를 먼저 확인하세요.",
-          "requirements": "직접 구매한 Switch판 Diablo II: Resurrected와 Reign of the Warlock 확장팩이 필요합니다. 콘솔 버전은 1.0.34.0이며 도구에서는 3.3.94012로 표시합니다. PC·PlayStation·Xbox 파일로 대신할 수 없습니다. 본인 게임에서 준비한 실행 프로그램(ExeFS)과 그래픽·소리 등의 리소스(RomFS)가 필요합니다. 구매 또는 계정 로그인만으로 파일이 생기지는 않습니다. RemakeList는 게임 파일, 키, 설치 패키지를 제공하지 않습니다. 지원 기기와 작업용 컴퓨터가 필요합니다. 기기에 리소스 약 5.6 GB, 구형 기기 텍스처 약 1 GB와 앱 공간을 확보하세요. 무료 Apple ID는 7일마다 재서명해야 하며 iCloud 저장 동기화가 없습니다.",
-          "availability": "시스템에 맞는 빌드를 선택하세요. iOS/iPadOS 26 이상은 표준 빌드, 18–25는 구형 인터페이스 빌드입니다. Apple silicon Mac은 macOS 26 이상에서 표준, 15–25에서 구형 인터페이스 빌드를 사용합니다. 최소 칩 조건 A14/M1 충족이 해당 모델의 실기 검증을 뜻하지는 않습니다. 제작자의 서명 안내를 따르세요. 기본 경로는 Mac/Xcode입니다. 제작자는 Windows에서 패키지를 만든 뒤 Mac에서 서명해 iPhone 플레이를 검증했지만 Sideloadly/AltStore 서명과 Linux는 미검증입니다. 게임 파생 내용이 포함된 패키지는 개인용으로만 쓰고 배포하지 마세요.",
-          "platforms": "iPhone / iPad / Mac · A14 / M1+",
-          "stage": "직접 패키지 제작 및 본인 Switch 게임 파일 필요"
+          "summary": "직접 보유한 Switch Diablo II: Resurrected와 Reign of the Warlock 파일을 Apple 기기, Android 및 HarmonyOS에서 사용하기 위한 호환 계층입니다. 플랫폼별 준비가 필요합니다.",
+          "requirements": "합법적으로 구매한 Switch 기본 게임과 Reign of the Warlock을 콘솔 버전 1.0.34.0으로 업데이트한 ExeFS·RomFS 파일을 직접 준비해야 합니다. 도구에서는 이 버전을 3.3.94012로 표시합니다. PC나 다른 콘솔의 파일로 대체할 수 없습니다. 리소스는 약 5.6 GB이며 구형 Apple 칩에는 직접 보유한 파일에서 생성한 약 1 GB의 추가 텍스처 팩이 필요합니다. Apple은 최소 A14·M1이 필요합니다. iOS 26 이상과 18–25, macOS 26 이상과 15–25에 맞춰 표준 빌드 또는 구형 API 빌드를 선택하세요. Android에는 ARM64, Android 12 이상과 Vulkan 1.1이 필요합니다. HarmonyOS NEXT에는 개발자 계정, 서명 도구와 직접 준비한 런타임 팩이 필요합니다.",
+          "availability": "v2.0.1은 Android APK, 서명되지 않은 HarmonyOS HAP와 iOS 빌드 입력용 ZIP 두 개를 제공합니다. Android에는 컴퓨터에서 준비한 가져오기 팩도 필요하며, 이번 업데이트는 v2.0.0 팩과 저장 파일을 재사용합니다. HarmonyOS 셸과 iOS 입력 파일은 변경되지 않았습니다. HAP는 자신의 개발자 인증서로 다시 서명하고, iOS ZIP은 이번 릴리스의 소스와 함께 사용하여 앱을 패키징·서명해야 합니다. Mac은 여전히 소스 빌드가 필요하며 Mac용 첨부 파일은 없습니다. 오프라인 전용이며 멀티플레이는 없습니다. Android의 일부 터치 기능은 미완성이며, 특정 GPU에서는 셰이더를 건너뛰거나 효과가 표시되지 않습니다. 가져오기에는 모든 파일 접근 권한이 필요합니다. RAM 4 GB인 Apple 기기는 메모리가 부족할 수 있으며 최소 칩 요건을 충족해도 테스트된 호환성을 뜻하지는 않습니다. 사이드로딩 도구를 통한 iOS 서명은 아직 검증되지 않았습니다. 무료 Apple ID는 7일마다 다시 서명해야 하며 iCloud 동기화를 지원하지 않습니다. 게임 콘텐츠가 포함된 직접 만든 패키지를 재배포하지 마세요. Apple TV는 캐릭터 선택 화면까지의 미리보기이며 플레이 가능한 플랫폼으로 등재하지 않습니다. RemakeList는 빌드·설치·플레이하지 않았습니다.",
+          "platforms": "iPhone / iPad / Apple silicon Mac / Android ARM64 / HarmonyOS NEXT",
+          "stage": "v2.0.1 · 직접 보유한 Switch 파일 · 플랫폼별 가져오기 또는 빌드"
         },
         "es": {
           "original": "Diablo II: Resurrected",
-          "summary": "¿Funciona D2R Mobile en tu iPhone, iPad o Mac? Revisa los archivos de Switch necesarios, los dispositivos compatibles y la instalación antes de empezar.",
-          "requirements": "Tu copia de Switch de Diablo II: Resurrected con Reign of the Warlock, actualizada a 1.0.34.0 en la consola; las herramientas la llaman 3.3.94012. Los archivos de PC, PlayStation y Xbox no sirven como sustituto. Dos partes de tu propio juego: el programa (ExeFS) y los gráficos, sonidos y demás recursos (RomFS). Comprar o iniciar sesión no proporciona estos archivos. RemakeList no ofrece juegos, claves ni paquetes de instalación. Un dispositivo compatible y un ordenador. Reserva unos 5.6 GB para los recursos, 1 GB adicional para texturas de dispositivos antiguos y espacio para la app. Con Apple ID gratuito debes renovar la firma cada 7 días; no hay sincronización de partidas por iCloud.",
-          "availability": "Elige la compilación según el sistema: iOS/iPadOS 26+ usa la normal; 18–25 requiere la de interfaces antiguas. En Mac con Apple silicon: normal para macOS 26+, interfaces antiguas para 15–25. Cumplir el mínimo A14/M1 no demuestra compatibilidad probada. Sigue las instrucciones de firma del autor; Mac/Xcode es la ruta principal. El autor probó crear el paquete en Windows y firmarlo en Mac para jugar en iPhone. La firma con Sideloadly/AltStore y Linux no están verificados. El instalador con contenido derivado del juego es solo para uso personal.",
-          "platforms": "iPhone / iPad / Mac · A14 / M1+",
-          "stage": "Requiere crear el paquete y archivos propios de Switch"
+          "summary": "Una capa de compatibilidad para usar tus propios archivos de Diablo II: Resurrected y Reign of the Warlock de Switch en dispositivos Apple, Android y HarmonyOS, con preparación específica para cada plataforma.",
+          "requirements": "Aporta los archivos ExeFS y RomFS de tu compra legal del juego base de Switch y Reign of the Warlock, actualizados a la versión de consola 1.0.34.0, denominada 3.3.94012 por las herramientas. Los archivos de PC y de otras consolas no sirven como sustituto. Los recursos ocupan unos 5,6 GB; los chips Apple antiguos necesitan un paquete de texturas adicional de aproximadamente 1 GB generado a partir de tus archivos. Apple requiere como mínimo A14/M1; elige la versión normal o la de API antiguas para iOS 26+ frente a 18–25 y macOS 26+ frente a 15–25. Android necesita ARM64, Android 12+ y Vulkan 1.1. HarmonyOS NEXT requiere una cuenta de desarrollador, herramientas de firma y un paquete de ejecución preparado por ti.",
+          "availability": "v2.0.1 ofrece una APK para Android, una HAP sin firmar para HarmonyOS y dos ZIP con archivos de entrada para crear la app iOS. Android también necesita un paquete de importación preparado en un ordenador; esta actualización reutiliza el paquete y las partidas de v2.0.0. La carcasa de HarmonyOS y los archivos de entrada de iOS no cambian: vuelve a firmar la HAP con tu certificado de desarrollador y utiliza los ZIP de iOS junto con el código de esta versión para empaquetar y firmar una app. Mac sigue requiriendo compilación desde código; no hay archivo de descarga para Mac. Solo funciona sin conexión, sin multijugador. Algunos detalles de controles táctiles en Android siguen incompletos; ciertas GPU omiten sombreadores o pierden efectos, y la importación requiere el permiso de acceso a todos los archivos. Los dispositivos Apple con 4 GB de RAM tienen limitaciones de memoria; cumplir el mínimo de chip no demuestra compatibilidad probada. La firma de iOS con herramientas de instalación externa sigue sin verificar; un Apple ID gratuito requiere renovar la firma cada 7 días y no ofrece sincronización por iCloud. No redistribuyas paquetes creados por ti que contengan datos del juego. Apple TV sigue siendo una vista previa de selección de personaje, no una plataforma anunciada como jugable. RemakeList no lo ha compilado, instalado ni jugado.",
+          "platforms": "iPhone / iPad / Mac con Apple silicon / Android ARM64 / HarmonyOS NEXT",
+          "stage": "v2.0.1 · Archivos propios de Switch · Importación o compilación según la plataforma"
         }
       },
       "start": "build_with_original_assets",
       "start_url": "https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md",
-      "code_license": "MIT",
+      "code_license": "MIT covers project code; original game files and third-party components retain separate rights and licenses.",
       "code_license_url": "https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE",
       "code_license_sources": [
         "https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE"
       ],
       "code_status": "license_stated",
-      "source_reviewed_at": "2026-10-20",
+      "source_reviewed_at": "2026-10-27",
       "official_url": "https://github.com/jhaizhou-ops/d2r-mobile",
       "documentation_url": "https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md",
       "site_url": "https://remakelist.com/remakes/d2r-mobile/",
@@ -1959,53 +1959,53 @@
         "en": {
           "original": "Modern Warfare 2 (2009)",
           "summary": "A native Windows and Linux recompilation of the Xbox 360 version of Modern Warfare 2 (2009).",
-          "requirements": "Provide your owned Xbox 360 disc ISO, USA/Europe version 1.0.557. The launcher applies title update 6. No retail code or data is included.",
-          "availability": "v0.4.1 is published. Requires 64-bit Windows/Linux, Vulkan 1.2, 8 GB space and a controller. Special Ops is untested; public matchmaking is unsupported. Not run here. Play online only with trusted friends: the unchanged 2009 network code has known security bugs.",
-          "platforms": "Windows / Linux",
-          "stage": "Release · original assets required"
+          "requirements": "Supply your own lawfully obtained Xbox 360 USA/Europe version 1.0.557 disc ISO; the launcher checks it, then downloads and applies Title Update 6. Requires an x64 SSE4.2 processor, Vulkan 1.2, about 8 GB disk space and a controller; keyboard controls cover menus only. Experimental PC custom-map imports also need assets from your own PC copy.",
+          "availability": "v0.8.1 provides a Windows ZIP and Linux archive. Start mw2-launcher to install from your own ISO. Choose the regular windows or linux package; the same-version -steam / -lan attachments are identical copies for older launchers to update. Public matchmaking and ranked playlists are unsupported, and custom maps remain beta. The author reports fixes for known bugs in the original network code but still recommends playing only with trusted people; RemakeList has not independently audited security. Steam SYSTEM LINK games can be discovered and joined by other Steam users; users on the same relay server or LAN can also reach the game. Players must use the same release. RemakeList has not installed or played it.",
+          "platforms": "Windows / Linux x64 · SSE4.2 · Vulkan 1.2",
+          "stage": "v0.8.1 released · original assets required"
         },
         "zh-CN": {
           "original": "Modern Warfare 2 (2009)",
           "summary": "将 Xbox 360 版 2009 年《现代战争 2》静态重编译为 Windows 与 Linux 原生程序。",
-          "requirements": "需自备正版 Xbox 360 光盘 ISO，美/欧版 1.0.557。启动器应用第 6 次标题更新；不包含原游戏代码或数据。",
-          "availability": "已发布 v0.4.1。需 64 位 Windows/Linux、Vulkan 1.2、8 GB 空间与手柄。Special Ops 未测试，不支持公开匹配；本站未运行。 仅与可信朋友联机：未改动的 2009 年网络代码存在已知安全漏洞。",
-          "platforms": "Windows / Linux",
-          "stage": "已发行 · 需原版素材"
+          "requirements": "需自备合法取得的 Xbox 360 美／欧版 1.0.557 光盘 ISO；启动器校验并下载应用 Title Update 6。需 x64 SSE4.2 处理器、Vulkan 1.2、约 8 GB 空间和手柄，键盘仅覆盖菜单。PC 自定义地图的实验导入另需自己的 PC 游戏素材。",
+          "availability": "v0.8.1 提供 Windows ZIP 与 Linux 归档，启动 mw2-launcher 从自己的 ISO 安装。选择普通 windows 或 linux 包；带 -steam / -lan 的同版附件只是旧启动器更新用的相同文件。 不支持公开匹配或排名列表，自定义地图仍为 beta。作者称已修复原网络代码的已知漏洞，但仍建议只与可信朋友联机，本站未独立安全审计。Steam 的 SYSTEM LINK 可被其他 Steam 用户发现并加入；同一中继服务器或 LAN 的其他用户也可能接触游戏，联机双方必须使用同一版。本站未安装或试玩。",
+          "platforms": "Windows / Linux x64 · SSE4.2 · Vulkan 1.2",
+          "stage": "v0.8.1 已发行 · 需原版素材"
         },
         "ja": {
           "original": "Modern Warfare 2 (2009)",
           "summary": "Xbox 360 版 Modern Warfare 2 (2009) を Windows と Linux 向けに静的再コンパイルするプロジェクト。",
-          "requirements": "所有する Xbox 360 ディスクの米国／欧州版 1.0.557 ISO が必要。ランチャーがタイトル更新 6 を適用し、製品版のコードやデータは含みません。",
-          "availability": "v0.4.1 公開済み。64 ビット Windows/Linux、Vulkan 1.2、空き容量 8 GB、コントローラーが必要。Special Ops は未検証で公開マッチングには非対応。当サイトでは未実行です。 オンラインは信頼できる友人とのみ。2009 年のネットワークコードには既知の脆弱性があります。",
-          "platforms": "Windows / Linux",
-          "stage": "配布版あり · 原版素材が必要"
+          "requirements": "合法的に入手した北米／欧州版 Xbox 360 バージョン1.0.557のディスク ISO を用意してください。ランチャーが検証後、Title Update 6 をダウンロードして適用します。x64 SSE4.2 対応 CPU、Vulkan 1.2、約8 GB のディスク容量、コントローラーが必要です。キーボードはメニュー操作のみです。実験的な PC カスタムマップの取り込みには、自分の PC 版の素材も必要です。",
+          "availability": "v0.8.1 は Windows ZIP と Linux アーカイブを提供します。自分の ISO からインストールするには mw2-launcher を起動してください。通常の windows または linux パッケージを選びます。同じバージョンの -steam／-lan 添付ファイルは、旧ランチャーの更新用に置かれた同内容のコピーです。公開マッチメイキングやランク付きプレイリストは非対応で、カスタムマップはベータです。作者は原作ネットワークコードの既知の問題を修正したとしていますが、信頼できる相手とのプレイを引き続き推奨しています。RemakeList は独立したセキュリティ監査を行っていません。Steam SYSTEM LINK のゲームは他の Steam ユーザーに発見・参加される可能性があり、同じ中継サーバーや LAN のユーザーからも接続できます。全員が同じリリースを使用する必要があります。RemakeList ではインストールやプレイを行っていません。",
+          "platforms": "Windows／Linux x64 · SSE4.2 · Vulkan 1.2",
+          "stage": "v0.8.1 公開 · 原作データが必要"
         },
         "ko": {
           "original": "Modern Warfare 2 (2009)",
           "summary": "Xbox 360판 Modern Warfare 2 (2009)를 Windows와 Linux 네이티브 프로그램으로 정적 재컴파일합니다.",
-          "requirements": "보유한 Xbox 360 디스크의 미국/유럽판 1.0.557 ISO가 필요합니다. 실행기가 타이틀 업데이트 6을 적용하며 원본 코드나 데이터는 포함하지 않습니다.",
-          "availability": "v0.4.1이 공개되었습니다. 64비트 Windows/Linux, Vulkan 1.2, 공간 8 GB, 컨트롤러가 필요합니다. Special Ops 미검증, 공개 매치메이킹 미지원. 여기서는 실행하지 않았습니다. 신뢰하는 친구와만 온라인 플레이하세요. 변경되지 않은 2009년 네트워크 코드에는 알려진 보안 취약점이 있습니다.",
-          "platforms": "Windows / Linux",
-          "stage": "출시 · 원본 에셋 필요"
+          "requirements": "합법적으로 확보한 Xbox 360 USA/Europe 버전 1.0.557 디스크 ISO를 직접 준비해야 합니다. 런처가 이를 확인한 뒤 Title Update 6을 다운로드하여 적용합니다. x64 SSE4.2 프로세서, Vulkan 1.2, 디스크 공간 약 8 GB와 컨트롤러가 필요합니다. 키보드는 메뉴 조작만 지원합니다. 실험적인 PC 커스텀 맵 가져오기에는 직접 보유한 PC판의 에셋도 필요합니다.",
+          "availability": "v0.8.1은 Windows ZIP과 Linux 압축 파일을 제공합니다. mw2-launcher를 실행하여 직접 보유한 ISO에서 설치하세요. 일반 windows 또는 linux 패키지를 선택하면 됩니다. 같은 버전의 -steam / -lan 첨부 파일은 이전 런처의 업데이트를 위한 동일한 복사본입니다. 공개 매치메이킹과 랭크 플레이 목록은 지원하지 않으며, 커스텀 맵은 베타입니다. 제작자는 원작 네트워크 코드의 알려진 버그를 수정했다고 보고하지만, 여전히 신뢰하는 사람과만 플레이할 것을 권합니다. RemakeList는 보안을 독립적으로 감사하지 않았습니다. Steam SYSTEM LINK 게임은 다른 Steam 사용자가 검색하여 참가할 수 있으며, 같은 중계 서버나 LAN의 사용자도 게임에 접근할 수 있습니다. 모든 플레이어가 같은 릴리스를 사용해야 합니다. RemakeList는 설치하거나 플레이하지 않았습니다.",
+          "platforms": "Windows / Linux x64 · SSE4.2 · Vulkan 1.2",
+          "stage": "v0.8.1 출시 · 원본 에셋 필요"
         },
         "es": {
           "original": "Modern Warfare 2 (2009)",
           "summary": "Recompilación nativa de Modern Warfare 2 (2009) de Xbox 360 para Windows y Linux.",
-          "requirements": "Necesita tu ISO del disco Xbox 360, versión USA/Europa 1.0.557. El lanzador aplica la actualización 6. No incluye código ni datos comerciales.",
-          "availability": "v0.4.1 publicada. Requiere Windows/Linux de 64 bits, Vulkan 1.2, 8 GB y mando. Special Ops sin probar; no hay emparejamiento público. No ejecutado aquí. Juega en línea solo con amigos de confianza: el código de red de 2009 conserva vulnerabilidades conocidas.",
-          "platforms": "Windows / Linux",
-          "stage": "Publicado · recursos originales"
+          "requirements": "Aporta tu propia ISO de un disco de Xbox 360 de Estados Unidos o Europa, versión 1.0.557, obtenida legalmente; el lanzador la comprueba y descarga y aplica Title Update 6. Requiere un procesador x64 con SSE4.2, Vulkan 1.2, unos 8 GB de disco y un mando; el teclado solo controla los menús. La importación experimental de mapas personalizados de PC también necesita recursos de tu propia copia para PC.",
+          "availability": "v0.8.1 ofrece un ZIP para Windows y un archivo para Linux. Abre mw2-launcher para instalar desde tu propia ISO. Elige el paquete normal windows o linux; los archivos -steam y -lan de la misma versión son copias idénticas para que se actualicen los lanzadores antiguos. No se admiten el emparejamiento público ni las listas de juego clasificatorias, y los mapas personalizados siguen en beta. El autor afirma haber corregido errores conocidos del código de red original, pero sigue recomendando jugar solo con personas de confianza; RemakeList no ha realizado una auditoría de seguridad independiente. Otros usuarios de Steam pueden descubrir y unirse a las partidas SYSTEM LINK de Steam; los usuarios del mismo servidor de retransmisión o de la misma LAN también pueden acceder a la partida. Todos deben usar la misma versión. RemakeList no lo ha instalado ni jugado.",
+          "platforms": "Windows / Linux x64 · SSE4.2 · Vulkan 1.2",
+          "stage": "v0.8.1 publicada · Requiere recursos originales"
         }
       },
       "start": "download_with_original_assets",
-      "start_url": "https://github.com/PaulCombal/mw2-recompiled/releases",
+      "start_url": "https://github.com/PaulCombal/mw2-recompiled/releases/tag/v0.8.1",
       "code_license": "GPL-3.0-only",
       "code_license_url": "https://github.com/PaulCombal/mw2-recompiled/blob/master/LICENSE",
       "code_license_sources": [
         "https://github.com/PaulCombal/mw2-recompiled/blob/master/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-14",
+      "source_reviewed_at": "2026-10-27",
       "official_url": "https://github.com/PaulCombal/mw2-recompiled",
       "documentation_url": "https://github.com/PaulCombal/mw2-recompiled/blob/master/README.md",
       "site_url": "https://remakelist.com/remakes/mw2-recompiled/",
@@ -2214,54 +2214,54 @@
       "localized": {
         "en": {
           "original": "Mega Man X4",
-          "summary": "A native Mega Man X4 recompilation with experimental two-player X and Zero co-op, locally or over netplay.",
-          "requirements": "Supply your own Mega Man X4 USA (SLUS-00561) disc image as a .cue plus .bin set. OpenBIOS is included; a separate BIOS dump is optional. Capcom game content is not covered by the project code license.",
-          "availability": "Public Windows ZIP and Linux AppImage playtests are available. Co-op is alpha and requires OpenGL; both peers need the same release. Linux requires x86_64 and glibc 2.38+. Not run by RemakeList.",
-          "platforms": "Windows / Linux",
-          "stage": "Co-op alpha · original disc required"
+          "summary": "A native Mega Man X4 recompilation with two-player X and Zero co-op, locally or over netplay. The current release is a public beta.",
+          "requirements": "Supply your own original, unmodified Mega Man X4 USA (SLUS-00561) .cue and .bin disc image, even with all mods disabled. Patched discs, undubs and retranslated images are unsupported. OpenBIOS is included; a separate BIOS dump is optional. Original game content is outside the MIT license.",
+          "availability": "v1.0.13 provides a Windows x64 ZIP and Linux x86-64 AppImage, fixing Player 2’s camera between Sigma stage 2 boss doors. Co-op requires OpenGL, and both netplay peers must use the same release. The public beta still has known issues: independent cameras may slow down, and online sign-in/startup reports remain under investigation. Linux needs glibc 2.38+. Four-player experiments are not included. RemakeList has not installed or run it.",
+          "platforms": "Windows x64 / Linux x86-64 (glibc 2.38+)",
+          "stage": "Public beta · two-player co-op · original disc required"
         },
         "zh-CN": {
           "original": "洛克人 X4",
-          "summary": "《洛克人 X4》原生重编译，加入实验性 X 与 Zero 双人合作，支持本地及网络联机。",
-          "requirements": "需自备美版 Mega Man X4（SLUS-00561）的 .cue 与 .bin 光盘镜像。内置 OpenBIOS，另行转储 BIOS 为可选；Capcom 游戏内容不在项目代码许可范围内。",
-          "availability": "已提供 Windows ZIP 与 Linux AppImage 公开测试版。合作模式仍为 Alpha，需 OpenGL，联机双方需同一版本；Linux 需 x86_64 与 glibc 2.38+。本站未运行。",
-          "platforms": "Windows / Linux",
-          "stage": "合作模式 Alpha · 需原光盘"
+          "summary": "《洛克人 X4》原生重编译，加入 X 与 Zero 双人合作，支持本地和网络联机；当前为公开 Beta。",
+          "requirements": "需自备原始、未修改的美版 Mega Man X4（SLUS-00561）.cue 与 .bin 光盘镜像，即使关闭全部 mod 也须使用该版本。修改盘、undub 与重新翻译盘不受支持；内置 OpenBIOS，另行转储 BIOS 为可选。原作内容不在 MIT 许可范围内。",
+          "availability": "v1.0.13 提供 Windows x64 ZIP 和 Linux x86-64 AppImage，修复 Sigma 第二关 Boss 门之间的二号玩家镜头。合作模式需 OpenGL，网络联机双方须使用同一版本。 公开 Beta 仍可能有问题：独立镜头可能减速，在线登录与启动问题仍在调查。Linux 需要 glibc 2.38+；本版不包含四人合作实验。本站未安装或运行。",
+          "platforms": "Windows x64 / Linux x86-64 (glibc 2.38+)",
+          "stage": "公开 Beta · 双人合作 · 需原光盘"
         },
         "ja": {
           "original": "ロックマンX4",
-          "summary": "『ロックマンX4』のネイティブ再コンパイル。Xとゼロの実験的な2人協力プレイをローカルやネット経由で楽しめます。",
-          "requirements": "米国版Mega Man X4（SLUS-00561）の.cueと.binのディスクイメージを自分で用意します。OpenBIOSを同梱しており、別途BIOSをダンプするかは任意です。カプコンのゲーム内容はコードのライセンス対象外です。",
-          "availability": "Windows ZIPとLinux AppImageの公開テスト版があります。協力プレイはアルファ段階でOpenGLが必要。接続する双方で同じリリースを使います。Linuxはx86_64とglibc 2.38以降が必要です。RemakeListでは未実行です。",
-          "platforms": "Windows / Linux",
-          "stage": "協力プレイはアルファ段階 · 原作ディスクが必要"
+          "summary": "X と Zero の2人協力プレイをローカルまたはネットプレイで楽しめる、Mega Man X4 のネイティブ再コンパイル版です。現在のリリースは公開ベータ版です。",
+          "requirements": "変更されていない北米版 Mega Man X4（SLUS-00561）の .cue と .bin ディスクイメージを用意してください。MOD をすべて無効にしても必要です。パッチ済みディスク、音声差し替え版、再翻訳版には対応していません。OpenBIOS が含まれ、別途 BIOS を用意するかは任意です。原作コンテンツは MIT ライセンスの対象外です。",
+          "availability": "v1.0.13 は Windows x64 ZIP と Linux x86-64 AppImage を提供し、シグマステージ2のボス扉間でのプレイヤー2のカメラを修正します。協力プレイには OpenGL が必要で、ネットプレイの両者は同じリリースを使用する必要があります。公開ベータ版には既知の問題が残り、独立カメラでの速度低下やオンラインのサインイン・起動に関する報告は調査中です。Linux には glibc 2.38以降が必要です。4人プレイの実験は含まれません。RemakeList ではインストールや実行を行っていません。",
+          "platforms": "Windows x64／Linux x86-64（glibc 2.38以降）",
+          "stage": "公開ベータ · 2人協力プレイ · 原作ディスクが必要"
         },
         "ko": {
           "original": "록맨 X4",
-          "summary": "『록맨 X4』 네이티브 재컴파일 프로젝트로, X와 제로의 실험적인 2인 협동을 로컬 또는 온라인으로 지원합니다.",
-          "requirements": "미국판 Mega Man X4(SLUS-00561)의 .cue 및 .bin 디스크 이미지를 직접 준비해야 합니다. OpenBIOS가 포함되어 별도 BIOS 덤프는 선택 사항입니다. 캡콤 게임 콘텐츠는 프로젝트 코드 라이선스 적용 대상이 아닙니다.",
-          "availability": "Windows ZIP과 Linux AppImage 공개 테스트판이 있습니다. 협동은 알파 단계이며 OpenGL이 필요하고, 양쪽이 같은 릴리스를 사용해야 합니다. Linux는 x86_64와 glibc 2.38 이상이 필요합니다. RemakeList에서는 실행하지 않았습니다.",
-          "platforms": "Windows / Linux",
-          "stage": "협동 알파 · 원작 디스크 필요"
+          "summary": "X와 Zero가 로컬 또는 네트워크로 2인 협동 플레이를 할 수 있는 Mega Man X4 네이티브 재컴파일 프로젝트입니다. 현재 릴리스는 공개 베타입니다.",
+          "requirements": "모든 모드를 꺼도 직접 보유한 수정되지 않은 Mega Man X4 USA (SLUS-00561) 원본 .cue 및 .bin 디스크 이미지가 필요합니다. 패치된 디스크, 언더빙 또는 재번역 이미지는 지원하지 않습니다. OpenBIOS가 포함되어 있으며, 별도 BIOS 덤프는 선택 사항입니다. 원작 게임 콘텐츠는 MIT 라이선스에 포함되지 않습니다.",
+          "availability": "v1.0.13은 Windows x64 ZIP과 Linux x86-64 AppImage를 제공하며, Sigma 스테이지 2의 보스 문 사이에서 플레이어 2의 카메라가 잘못되는 문제를 수정합니다. 협동 플레이에는 OpenGL이 필요하며, 네트워크 플레이 양쪽이 같은 릴리스를 사용해야 합니다. 공개 베타에는 알려진 문제가 남아 있습니다. 독립 카메라에서 속도가 느려질 수 있으며 온라인 로그인·시작 문제 제보도 조사 중입니다. Linux에는 glibc 2.38 이상이 필요합니다. 4인 플레이 실험은 포함되지 않습니다. RemakeList는 설치하거나 실행하지 않았습니다.",
+          "platforms": "Windows x64 / Linux x86-64 (glibc 2.38 이상)",
+          "stage": "공개 베타 · 2인 협동 플레이 · 원본 디스크 필요"
         },
         "es": {
           "original": "Mega Man X4",
-          "summary": "Una recompilación nativa de Mega Man X4 con cooperación experimental para X y Zero, en local o por red.",
-          "requirements": "Aporta tu imagen del disco estadounidense de Mega Man X4 (SLUS-00561), con archivos .cue y .bin. Incluye OpenBIOS; una extracción separada del BIOS es opcional. El contenido de Capcom no está cubierto por la licencia del código.",
-          "availability": "Hay versiones de prueba públicas en ZIP para Windows y AppImage para Linux. La cooperación está en alfa y requiere OpenGL; ambos jugadores necesitan la misma versión. Linux exige x86_64 y glibc 2.38+. RemakeList no lo ha ejecutado.",
-          "platforms": "Windows / Linux",
-          "stage": "Cooperación en alfa · requiere disco original"
+          "summary": "Una recompilación nativa de Mega Man X4 con cooperación para dos jugadores, X y Zero, en local o por red. La versión actual es una beta pública.",
+          "requirements": "Aporta tu propia imagen de disco original y sin modificar de Mega Man X4 USA (SLUS-00561), con sus archivos .cue y .bin, incluso si desactivas todos los mods. No se admiten discos parcheados, versiones undub ni imágenes retraducidas. Se incluye OpenBIOS; aportar una copia de la BIOS es opcional. El contenido original del juego queda fuera de la licencia MIT.",
+          "availability": "v1.0.13 ofrece un ZIP para Windows x64 y una AppImage para Linux x86-64, y corrige la cámara del jugador 2 entre las puertas de jefes de la segunda fase de Sigma. El modo cooperativo requiere OpenGL y ambos jugadores en red deben usar la misma versión. La beta pública sigue teniendo problemas conocidos: las cámaras independientes pueden ralentizarse y se investigan informes sobre el inicio de sesión y el arranque del modo en línea. Linux requiere glibc 2.38+. No se incluyen los experimentos para cuatro jugadores. RemakeList no lo ha instalado ni ejecutado.",
+          "platforms": "Windows x64 / Linux x86-64 (glibc 2.38+)",
+          "stage": "Beta pública · Cooperación para dos · Requiere el disco original"
         }
       },
       "start": "download_with_original_assets",
-      "start_url": "https://github.com/mstan/MegaManX4Recomp/releases",
+      "start_url": "https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.13",
       "code_license": "MIT · original project code; dependencies retain their licenses",
       "code_license_url": "https://github.com/mstan/MegaManX4Recomp/blob/master/LICENSE",
       "code_license_sources": [
         "https://github.com/mstan/MegaManX4Recomp/blob/master/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-18",
+      "source_reviewed_at": "2026-10-27",
       "official_url": "https://github.com/mstan/MegaManX4Recomp",
       "documentation_url": "https://github.com/mstan/MegaManX4Recomp/blob/master/README.md",
       "site_url": "https://remakelist.com/remakes/mega-man-x4-recompiled/",
@@ -2279,53 +2279,53 @@
         "en": {
           "original": "Super Mario Galaxy",
           "summary": "An early native Android port of Super Mario Galaxy with touch controls, gamepad support and ultrawide display.",
-          "requirements": "Provide your own legally dumped Wii Super Mario Galaxy disc image; the importer extracts local files. Optional Shield-derived materials are separate proprietary data and are not supplied by this listing.",
-          "availability": "A public APK is available. Early builds have reported graphics, performance and crash issues. The cover is a contributor screenshot of v0.0.1, not a RemakeList test. Not run by RemakeList.",
-          "platforms": "Android 11+ · ARM64",
-          "stage": "Early release · original assets required"
+          "requirements": "Supply your own lawfully dumped Wii Super Mario Galaxy disc image (.rvz, .wbfs, .iso or .wia) for local extraction and conversion. Reserve about 2.5 GB without movies or 5 GB with movies. Optional Shield-derived materials are separate proprietary data and are not supplied by this listing.",
+          "availability": "v0.0.4 provides a public APK requiring Android 11+, ARM64, Vulkan 1.0 and at least 3 GB RAM. The author lists Vulkan rendering, physical-controller mapping and touch-layout updates. Devices without a Vulkan 1.0 driver are unsupported. The author calls this a stable release, but RemakeList has not validated device coverage, sustained performance or full gameplay, and does not guarantee 60 FPS. The cover remains pcddlXDDD’s v0.0.1 screenshot, not a test of this release. RemakeList has not installed or run it.",
+          "platforms": "Android 11+ · ARM64 · Vulkan 1.0",
+          "stage": "Public release v0.0.4 · original assets required"
         },
         "zh-CN": {
           "original": "超级马力欧银河",
           "summary": "《超级马力欧银河》的早期安卓原生移植，加入触屏控制、手柄支持和超宽屏显示。",
-          "requirements": "需自备合法转储的 Wii《超级马力欧银河》光盘镜像，由导入器提取本地文件。可选 Shield 来源素材属于另一套专有数据，本条目不提供。",
-          "availability": "已提供公开 APK；早期版本有图形、性能和崩溃反馈。封面来自贡献者的 v0.0.1 截图，并非本站测试画面。本站未运行。",
-          "platforms": "Android 11+ · ARM64",
-          "stage": "早期发行 · 需原版素材"
+          "requirements": "自备合法转储的 Wii《超级马力欧银河》光盘镜像（.rvz、.wbfs、.iso 或 .wia），由导入器在本地提取和转换；预留约 2.5 GB（不含影片）或 5 GB（含影片）存储。可选 Shield 来源素材另属专有数据，本条目不提供。",
+          "availability": "v0.0.4 提供公开 APK，要求 Android 11+、ARM64、Vulkan 1.0 与至少 3 GB 内存。作者列出的更新包括 Vulkan 渲染、实体手柄映射与触屏布局。 不支持无 Vulkan 1.0 驱动的设备。作者称本版为稳定发行，并不代表本站核验了所有设备、持续性能或完整流程，也不保证 60 帧。封面仍是 pcddlXDDD 提供的 v0.0.1 截图，不是新版实测；本站未安装或运行。",
+          "platforms": "Android 11+ · ARM64 · Vulkan 1.0",
+          "stage": "公开发行 v0.0.4 · 需原版素材"
         },
         "ja": {
           "original": "スーパーマリオギャラクシー",
           "summary": "タッチ操作、ゲームパッド、ウルトラワイド表示に対応した『スーパーマリオギャラクシー』の初期 Android ネイティブ移植。",
-          "requirements": "正当に所有する Wii 版『スーパーマリオギャラクシー』から自分で吸い出したディスクイメージが必要です。取り込みツールはローカルファイルを展開します。任意の Shield 由来素材は別の専有データであり、この掲載では提供しません。",
-          "availability": "APK が公開されています。初期ビルドでは描画、性能、クラッシュの問題が報告されています。カバーは投稿者による v0.0.1 の画像で、RemakeList の実機テストではありません。RemakeList では未実行です。",
-          "platforms": "Android 11+ · ARM64",
-          "stage": "初期リリース · 元のゲーム素材が必要"
+          "requirements": "合法的に吸い出した Wii Super Mario Galaxy のディスクイメージ（.rvz、.wbfs、.iso、.wia）を用意し、ローカルで展開・変換してください。動画なしで約2.5 GB、動画込みで約5 GB を確保してください。任意の Shield 由来素材は別の専有データであり、この掲載では提供しません。",
+          "availability": "v0.0.4 は Android 11以降、ARM64、Vulkan 1.0、3 GB 以上のメモリが必要な公開 APK を提供します。作者は Vulkan 描画、実物のコントローラーの割り当て、タッチレイアウトの更新を挙げています。Vulkan 1.0 ドライバーがない端末は非対応です。作者は安定版としていますが、RemakeList は対応端末の範囲、持続的な性能、全編のプレイを検証しておらず、60 FPS を保証しません。カバーは pcddlXDDD による v0.0.1 のスクリーンショットを継続使用しており、今回のリリースのテスト画像ではありません。RemakeList ではインストールや実行を行っていません。",
+          "platforms": "Android 11以降 · ARM64 · Vulkan 1.0",
+          "stage": "公開リリース v0.0.4 · 原作データが必要"
         },
         "ko": {
           "original": "슈퍼 마리오 갤럭시",
           "summary": "터치 조작, 게임패드, 울트라와이드 화면을 지원하는 슈퍼 마리오 갤럭시의 초기 Android 네이티브 이식판입니다.",
-          "requirements": "합법적으로 소유한 Wii 슈퍼 마리오 갤럭시 디스크를 직접 덤프한 이미지가 필요합니다. 가져오기 도구가 로컬 파일을 추출합니다. 선택 사항인 Shield 기반 자료는 별도의 독점 데이터이며 이 항목에서는 제공하지 않습니다.",
-          "availability": "APK가 공개되어 있습니다. 초기 빌드에서 그래픽, 성능, 충돌 문제가 보고되었습니다. 표지는 기여자가 올린 v0.0.1 스크린샷이며 RemakeList의 실행 테스트가 아닙니다. RemakeList에서는 실행하지 않았습니다.",
-          "platforms": "Android 11+ · ARM64",
-          "stage": "초기 출시 · 원본 에셋 필요"
+          "requirements": "합법적으로 직접 덤프한 Wii Super Mario Galaxy 디스크 이미지(.rvz, .wbfs, .iso 또는 .wia)를 준비하여 로컬로 추출·변환해야 합니다. 동영상 제외 시 약 2.5 GB, 포함 시 약 5 GB를 확보하세요. 선택 사항인 Shield 유래 자료는 별도의 독점 데이터이며 이 목록에서는 제공하지 않습니다.",
+          "availability": "v0.0.4는 Android 11 이상, ARM64, Vulkan 1.0과 최소 3 GB RAM이 필요한 공개 APK를 제공합니다. 제작자는 Vulkan 렌더링, 물리 컨트롤러 매핑과 터치 레이아웃 업데이트를 소개합니다. Vulkan 1.0 드라이버가 없는 기기는 지원하지 않습니다. 제작자는 안정 버전이라고 설명하지만, RemakeList는 지원 기기 범위, 지속 성능이나 게임 전체 진행을 검증하지 않았으며 60 FPS를 보장하지 않습니다. 표지는 pcddlXDDD의 v0.0.1 스크린샷을 유지하며 이번 릴리스의 테스트 결과가 아닙니다. RemakeList는 설치하거나 실행하지 않았습니다.",
+          "platforms": "Android 11 이상 · ARM64 · Vulkan 1.0",
+          "stage": "공개 릴리스 v0.0.4 · 원본 에셋 필요"
         },
         "es": {
           "original": "Super Mario Galaxy",
           "summary": "Un port nativo inicial de Super Mario Galaxy para Android, con controles táctiles, compatibilidad con mandos y pantalla ultrapanorámica.",
-          "requirements": "Aporta tu propia imagen del disco de Super Mario Galaxy para Wii, volcada legalmente; el importador extrae los archivos locales. Los materiales opcionales derivados de Shield son datos propietarios independientes y esta ficha no los proporciona.",
-          "availability": "Hay un APK público disponible. En las primeras versiones se han comunicado problemas gráficos, de rendimiento y cierres inesperados. La imagen es una captura de la v0.0.1 aportada por un colaborador, no una prueba de RemakeList. RemakeList no lo ha ejecutado.",
-          "platforms": "Android 11+ · ARM64",
-          "stage": "Versión inicial · recursos originales necesarios"
+          "requirements": "Aporta tu propia imagen de disco de Super Mario Galaxy para Wii, extraída legalmente (.rvz, .wbfs, .iso o .wia), para su extracción y conversión local. Reserva unos 2,5 GB sin vídeos o 5 GB con ellos. Los materiales opcionales derivados de Shield son datos propietarios independientes y no se proporcionan en esta ficha.",
+          "availability": "v0.0.4 ofrece una APK pública que requiere Android 11+, ARM64, Vulkan 1.0 y al menos 3 GB de RAM. El autor indica renderizado Vulkan, asignación de mandos físicos y cambios en los controles táctiles. Los dispositivos sin controlador Vulkan 1.0 no son compatibles. El autor la llama versión estable, pero RemakeList no ha validado la variedad de dispositivos, el rendimiento sostenido ni el juego completo, y no garantiza 60 FPS. La portada sigue siendo la captura de pcddlXDDD de v0.0.1, no una prueba de esta versión. RemakeList no la ha instalado ni ejecutado.",
+          "platforms": "Android 11+ · ARM64 · Vulkan 1.0",
+          "stage": "Versión pública v0.0.4 · Requiere recursos originales"
         }
       },
       "start": "download_with_original_assets",
-      "start_url": "https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/docs/INSTALLATION.md",
+      "start_url": "https://github.com/OpenPort-Labs/Galaxy-Android/releases/tag/v0.0.4",
       "code_license": "GPL-3.0 · port code; original game assets excluded",
       "code_license_url": "https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/LICENSE",
       "code_license_sources": [
         "https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-18",
+      "source_reviewed_at": "2026-10-27",
       "official_url": "https://github.com/OpenPort-Labs/Galaxy-Android",
       "documentation_url": "https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/README.md",
       "site_url": "https://remakelist.com/remakes/galaxy-android/",
@@ -3558,56 +3558,56 @@
       "localized": {
         "en": {
           "original": "Def Jam: Fight for NY",
-          "summary": "Build a native Windows, Mac or Linux version of Def Jam: Fight for NY from your own supported US Xbox dump. The author shows actual fights; widescreen is beta and story verification covers tested routes.",
-          "requirements": "Own supported USA original Xbox disc image or extracted dump is required. PS2 and GameCube versions cannot be substituted. The code license grants no rights to the original game, artwork or commercial data.",
-          "availability": "Download the author’s setup for Windows, Apple Silicon Mac or Linux/Steam Deck and select your own supported dump. The author verifies fights and selected story routes; 16:9 is beta and ultrawide remains experimental. No network multiplayer.",
-          "platforms": "Windows / Apple Silicon macOS / Linux / Steam Deck",
-          "stage": "Playable release · widescreen beta"
+          "summary": "Build a native Windows, Mac or Linux version of Def Jam: Fight for NY from your own supported USA original-Xbox dump, with higher resolution and up to four local players. Widescreen remains beta.",
+          "requirements": "Supply your own USA original-Xbox disc image or extracted dump matching the author’s supported manifest. PS2 and GameCube versions cannot substitute. Setup verifies, recompiles and builds locally; HD texture generation adds time and disk-space requirements. The code license grants no rights to the original game or artwork.",
+          "availability": "v0.12.1 provides setup tools for Windows x64, Apple silicon macOS and Linux x86-64/Steam Deck, fixing created-fighter portraits and widescreen HUD placement. Setup validates your dump and builds locally. Existing installations use Clean Update and rebuild; the author says saves, settings, mods and texture packs are retained. 16:9/16:10 widescreen remains beta and 21:9/32:9 experimental; multiplayer is local only. Shop loading pauses, uneven pacing in some scenes and existing widescreen issues remain; Steam Deck audio and Story tutorial performance are still under investigation. The macOS setup is unsigned. Author regression checks do not establish a RemakeList full-playthrough test; RemakeList has not installed or run it.",
+          "platforms": "Windows x64 (Direct3D 11) / Apple silicon macOS / Linux x86-64 / Steam Deck",
+          "stage": "Public release v0.12.1 · local build · widescreen beta"
         },
         "zh-CN": {
           "original": "Def Jam：纽约街头格斗",
-          "summary": "通过自备美版Xbox文件，在本机生成《Def Jam：纽约街头格斗》的Windows、Mac或Linux移植。作者提供对战实机画面，宽屏仍为测试功能，部分剧情路线已验证。",
-          "requirements": "需要自备兼容的美版初代 Xbox 光盘镜像或转储目录，PS2 与 GameCube 版本不能替代。代码许可不授予原游戏、画面或商业数据的使用权。",
-          "availability": "下载作者提供的 Windows、苹果芯片 Mac 或 Linux/Steam Deck 设置工具，选中自己的兼容转储文件。作者验证了对战与部分剧情路线；16:9 仍为测试功能，超宽屏为实验功能。不支持网络多人。",
-          "platforms": "Windows / 苹果芯片 macOS / Linux / Steam Deck",
-          "stage": "可玩发行 · 宽屏仍为测试"
+          "summary": "通过自备美版初代 Xbox 转储，在本机生成《Def Jam：纽约街头格斗》的 Windows、Mac 或 Linux 原生移植，加入高分辨率与最多四人本地对战；宽屏仍为测试功能。",
+          "requirements": "需要自备与作者清单匹配的美版初代 Xbox 光盘镜像或转储目录，PS2 与 GameCube 版本不能替代。设置工具在本机核验、重编译和构建，生成高清贴图另需时间与磁盘空间；代码许可不授予原游戏或画面的权利。",
+          "availability": "v0.12.1 提供 Windows x64、Apple 芯片 macOS 与 Linux x86-64/Steam Deck 设置工具，修复自建角色头像和宽屏 HUD。工具核验自备转储后在本机构建；旧版升级选择 Clean Update 并重建，作者说明会保留存档、设置、mod 与贴图。 16:9/16:10 宽屏仍为 Beta，21:9/32:9 为实验性；只支持本地多人。商店载入停顿、部分场景帧时间不均和既有宽屏问题仍在，Steam Deck 音频与剧情教学性能仍在调查。macOS 设置包未签名；作者回归测试不等于本站完成全流程验证，本站未安装或运行。",
+          "platforms": "Windows x64（Direct3D 11）/ Apple 芯片 macOS / Linux x86-64 / Steam Deck",
+          "stage": "公开发行 v0.12.1 · 本机构建 · 宽屏 Beta"
         },
         "ja": {
           "original": "Def Jam: Fight for NY",
-          "summary": "自分の米国Xbox版からローカルで再コンパイルするDef Jam: Fight for NYです。",
-          "requirements": "対応する初代Xbox米国版ディスクイメージまたは展開データが必要です。PS2/GameCube版は使えません。 コードのライセンスは原作ゲーム、画像、商用データの権利を許諾しません。",
-          "availability": "作者のWindows、Apple Silicon Mac、Linux/Steam Deck用セットアップを取得し、自分のデータを指定します。 対戦と一部のストーリー経路を検証済みです。16:9はベータ、超ワイドは実験機能です。ネット対戦はありません。",
-          "platforms": "Windows / macOS (Apple Silicon) / Linux / Steam Deck",
-          "stage": "プレイ可能・ワイド画面ベータ"
+          "summary": "対応する北米版初代 Xbox の自分のデータから、Windows・Mac・Linux のネイティブ版 Def Jam: Fight for NY をビルドします。高解像度と最大4人のローカルプレイに対応し、ワイドスクリーンはベータ段階です。",
+          "requirements": "作者の対応マニフェストに一致する、北米版初代 Xbox の自分のディスクイメージまたは展開済みデータを用意してください。PS2・GameCube 版では代用できません。セットアップが検証、再コンパイル、ビルドをローカルで行います。HD テクスチャの生成には追加の時間とディスク容量が必要です。コードライセンスは原作ゲームや画像の利用権を与えるものではありません。",
+          "availability": "v0.12.1 は Windows x64、Apple Silicon macOS、Linux x86-64／Steam Deck 向けのセットアップツールを提供し、作成したキャラクターの顔画像やワイドスクリーンの HUD 位置を修正します。セットアップは自分のデータを検証し、ローカルでビルドします。既存の環境では Clean Update と再ビルドが必要です。作者によれば、セーブ、設定、MOD、テクスチャパックは保持されます。16:9／16:10 のワイドスクリーンはベータ、21:9／32:9 は実験段階で、マルチプレイはローカルのみです。ショップ読み込み時の停止、一部場面の不均一なフレーム間隔、既知のワイドスクリーンの問題が残ります。Steam Deck の音声と Story チュートリアルの性能は調査中です。macOS セットアップは未署名です。作者の回帰チェックは RemakeList による全編プレイの確認ではありません。RemakeList ではインストールや実行を行っていません。",
+          "platforms": "Windows x64（Direct3D 11）／Apple Silicon macOS／Linux x86-64／Steam Deck",
+          "stage": "公開リリース v0.12.1 · ローカルビルド · ワイドスクリーンはベータ"
         },
         "ko": {
           "original": "Def Jam: Fight for NY",
-          "summary": "보유한 미국 Xbox판에서 로컬로 재컴파일하는 Def Jam: Fight for NY입니다.",
-          "requirements": "호환되는 미국판 원조 Xbox 디스크 이미지나 추출 파일이 필요합니다. PS2·GameCube판은 대체할 수 없습니다. 코드 라이선스는 원작 게임, 이미지, 상용 데이터의 권한을 부여하지 않습니다.",
-          "availability": "Windows, Apple Silicon Mac, Linux/Steam Deck용 제작자 설정 도구를 받아 본인의 덤프를 선택합니다. 대전과 일부 스토리 경로를 확인했습니다. 16:9는 베타, 울트라와이드는 실험 기능이며 네트워크 대전은 없습니다.",
-          "platforms": "Windows / macOS (Apple Silicon) / Linux / Steam Deck",
-          "stage": "플레이 가능 · 와이드 화면 베타"
+          "summary": "지원되는 USA 초대 Xbox판 덤프를 직접 준비하여 Def Jam: Fight for NY의 Windows·Mac·Linux 네이티브 버전을 빌드합니다. 더 높은 해상도와 최대 4인 로컬 플레이를 제공하며 와이드스크린은 베타입니다.",
+          "requirements": "제작자의 지원 매니페스트와 일치하는 USA 초대 Xbox 디스크 이미지 또는 추출한 덤프를 직접 준비해야 합니다. PS2·GameCube판으로 대체할 수 없습니다. 설정 도구가 로컬에서 검증·재컴파일·빌드를 수행하며, HD 텍스처 생성에는 시간과 디스크 공간이 더 필요합니다. 코드 라이선스는 원작 게임이나 아트워크에 대한 권리를 부여하지 않습니다.",
+          "availability": "v0.12.1은 Windows x64, Apple silicon macOS와 Linux x86-64·Steam Deck용 설정 도구를 제공하며, 생성한 선수의 초상화와 와이드스크린 HUD 배치를 수정합니다. 설정 과정에서 덤프를 검증하고 로컬로 빌드합니다. 기존 설치는 Clean Update 후 다시 빌드해야 하며, 제작자에 따르면 저장 파일, 설정, 모드와 텍스처 팩은 유지됩니다. 16:9·16:10 와이드스크린은 베타, 21:9·32:9는 실험 단계이며 멀티플레이는 로컬 전용입니다. 상점 로딩 중 멈춤, 일부 장면의 불규칙한 진행 속도와 기존 와이드스크린 문제가 남아 있습니다. Steam Deck의 오디오와 Story 튜토리얼 성능도 조사 중입니다. macOS 설정 도구는 서명되지 않았습니다. 제작자의 회귀 점검은 RemakeList의 전체 플레이 테스트를 뜻하지 않으며, RemakeList는 설치하거나 실행하지 않았습니다.",
+          "platforms": "Windows x64 (Direct3D 11) / Apple silicon macOS / Linux x86-64 / Steam Deck",
+          "stage": "공개 릴리스 v0.12.1 · 로컬 빌드 · 와이드스크린 베타"
         },
         "es": {
           "original": "Def Jam: Fight for NY",
-          "summary": "Def Jam: Fight for NY recompilado localmente desde tu copia Xbox USA.",
-          "requirements": "Copia USA compatible de Xbox original; PS2 y GameCube no sirven como sustituto. La licencia del código no concede derechos sobre el juego original, sus imágenes ni sus datos comerciales.",
-          "availability": "Descarga el instalador del autor para Windows, Mac Apple Silicon o Linux/Steam Deck y elige tus archivos. Combates y rutas narrativas seleccionadas comprobados; 16:9 beta, ultrapanorámico experimental. Sin multijugador de red.",
-          "platforms": "Windows / macOS (Apple Silicon) / Linux / Steam Deck",
-          "stage": "Jugable · panorámico beta"
+          "summary": "Compila una versión nativa de Def Jam: Fight for NY para Windows, Mac o Linux a partir de tu propia copia extraída compatible de la edición estadounidense para la Xbox original, con mayor resolución y hasta cuatro jugadores locales. La pantalla panorámica sigue en beta.",
+          "requirements": "Aporta tu propia imagen de disco estadounidense de la Xbox original o una copia extraída que coincida con el manifiesto admitido por el autor. Las versiones de PS2 y GameCube no sirven como sustituto. La herramienta verifica, recompila y construye localmente; generar texturas HD requiere más tiempo y espacio de disco. La licencia del código no concede derechos sobre el juego ni sus ilustraciones originales.",
+          "availability": "v0.12.1 ofrece herramientas de configuración para Windows x64, macOS con Apple silicon y Linux x86-64/Steam Deck. Corrige los retratos de luchadores creados y la colocación del HUD en pantalla panorámica. La configuración valida tu copia extraída y compila localmente. Las instalaciones existentes utilizan Clean Update y vuelven a compilar; el autor indica que se conservan partidas, ajustes, mods y paquetes de texturas. Los formatos 16:9 y 16:10 siguen en beta, y 21:9 y 32:9 son experimentales; el multijugador es solo local. Persisten pausas al cargar la tienda, ritmo irregular de fotogramas en algunas escenas y problemas conocidos de pantalla panorámica; se siguen investigando el audio y el rendimiento del tutorial de historia en Steam Deck. La herramienta de configuración de macOS no está firmada. Las comprobaciones de regresión del autor no equivalen a una prueba del juego completo por RemakeList; RemakeList no lo ha instalado ni ejecutado.",
+          "platforms": "Windows x64 (Direct3D 11) / macOS con Apple silicon / Linux x86-64 / Steam Deck",
+          "stage": "Versión pública v0.12.1 · Compilación local · Pantalla panorámica en beta"
         }
       },
       "start": "download_with_original_assets",
-      "start_url": "https://github.com/vyanhursky/defjamffny-recomp/releases",
+      "start_url": "https://github.com/vyanhursky/DefJamFFNY-recomp/releases/tag/v0.12.1",
       "code_license": "MIT project code; separate toolkit licenses. The code license grants no rights to the original game, artwork or commercial data.",
-      "code_license_url": "https://github.com/vyanhursky/defjamffny-recomp#credits-and-licensing",
+      "code_license_url": "https://github.com/vyanhursky/DefJamFFNY-recomp#credits-and-licensing",
       "code_license_sources": [
-        "https://github.com/vyanhursky/defjamffny-recomp#credits-and-licensing"
+        "https://github.com/vyanhursky/DefJamFFNY-recomp#credits-and-licensing"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-19",
-      "official_url": "https://github.com/vyanhursky/defjamffny-recomp",
-      "documentation_url": "https://github.com/vyanhursky/defjamffny-recomp#readme",
+      "source_reviewed_at": "2026-10-27",
+      "official_url": "https://github.com/vyanhursky/DefJamFFNY-recomp",
+      "documentation_url": "https://github.com/vyanhursky/DefJamFFNY-recomp#readme",
       "site_url": "https://remakelist.com/remakes/defjam-ffny-recompiled/",
       "site_url_zh": "https://remakelist.com/zh/remakes/defjam-ffny-recompiled/",
       "original_files": "original",
@@ -3686,56 +3686,56 @@
       "localized": {
         "en": {
           "original": "Forza Horizon",
-          "summary": "A native Linux port built from your own Xbox 360 Forza Horizon files, with community online services and high-frame-rate options. Windows remains experimentally supported.",
-          "requirements": "Bring your own lawfully obtained Xbox 360 · 4D5309C9 · Disc 1 / Games on Demand. The project is free to access; the original game is separate. No game files, keys or ready-to-play packages are supplied here.",
-          "availability": "Official route: Linux x64 / Windows 10–11 x64. Playable or experimental preview. Linux gameplay is reported; native Windows gameplay is unverified. Choose the official package matching your system.",
-          "platforms": "Linux x64 / Windows 10–11 x64",
-          "stage": "Playable or experimental preview."
+          "summary": "Builds a native Windows and Linux port locally from your own Xbox 360 Forza Horizon files, with community online services, car tuning and display options.",
+          "requirements": "Supply your own lawfully obtained Xbox 360 Forza Horizon disc image, Games on Demand package or extracted folder. Supply Title Update 4 and DLC separately; Horizon Rally and the 1000 Club need TU4. Allow about 4 GB free RAM and 15 GB disk space. The Vulkan path needs Vulkan 1.3; Windows also offers Direct3D 12. Initial setup needs compiler tools to be downloaded or installed.",
+          "availability": "v0.2.0 provides a Windows installer, Linux x86-64 archive and Flatpak. The launcher generates and compiles the game locally from your own files; rebuild once after updating. macOS remains a source-build experiment with no Mac download. Steam Deck and low-end performance remains limited, with graphics or crash issues on some GPUs. The author tested VR on Quest 3 with Linux WiVRn; Windows VR is untested. Full races, save reloads and physical controllers still need validation on macOS. TU4 and base-game players use separate online rooms, and TU4 saves cannot simply return to the base game. RemakeList has not built or played it.",
+          "platforms": "Windows 10/11 x64 / Linux x86-64; macOS source-build experiment only",
+          "stage": "v0.2.0 released · local build · experimental VR"
         },
         "zh-CN": {
           "original": "极限竞速：地平线",
-          "summary": "将自己的 Xbox 360《极限竞速：地平线》带到 Linux 的原生移植，附带社区在线服务与高帧率选项。Windows 路线仍待真机验证。",
-          "requirements": "自备合法取得的文件：Xbox 360 · 4D5309C9 · Disc 1 / Games on Demand。项目可免费获取，原版游戏另计；本站不提供游戏文件、密钥或可直接玩的安装包。",
-          "availability": "官方路线：Linux x64 / Windows 10–11 x64。可玩或实验性预览。 作者报告 Linux 游玩；Windows 原生游玩尚未验证。 选择与系统匹配的官方发行包。",
-          "platforms": "Linux x64 / Windows 10–11 x64",
-          "stage": "可玩或实验性预览。"
+          "summary": "将自备 Xbox 360《极限竞速：地平线》文件在本机构建为 Windows 与 Linux 原生移植，加入社区在线服务、车辆调校和显示选项。",
+          "requirements": "需自备合法取得的 Xbox 360《极限竞速：地平线》光盘映像、Games on Demand 包或已提取目录。Title Update 4 与 DLC 另行自备；Horizon Rally 和 1000 Club 需要 TU4。运行约需 4 GB 可用内存和 15 GB 磁盘，Vulkan 路线需 Vulkan 1.3；Windows 另有 Direct3D 12。首次构建需下载或安装编译工具。",
+          "availability": "v0.2.0 提供 Windows 安装器、Linux x86-64 归档和 Flatpak。启动器从自备游戏文件在本机生成、编译游戏；更新后需重新构建一次。macOS 仅有源码实验路线，没有 Mac 发行包。 Steam Deck 与低端设备仍有明显性能限制，部分 GPU 有画面或崩溃问题。VR 仅有作者的 Quest 3 + Linux WiVRn 测试，Windows VR 未测；macOS 的完整比赛、存档重载和实体手柄仍待验证。TU4 与基础版不共用联机房间，TU4 存档不能直接回退基础版。本站未构建或试玩。",
+          "platforms": "Windows 10/11 x64 / Linux x86-64；macOS 仅源码实验",
+          "stage": "v0.2.0 已发行 · 本机构建 · VR 实验性"
         },
         "ja": {
           "original": "Forza Horizon",
-          "summary": "Forza Horizon 1: ReImagined — コミュニティのオンライン機能と高フレームレート設定。 「Forza Horizon」を記載の機器向けに移植する独立プロジェクトです。",
-          "requirements": "自分が適法に取得したファイルを用意してください：Xbox 360 · 4D5309C9 · Disc 1 / Games on Demand。プロジェクトは無料ですが原作は別途必要です。当サイトはゲームファイル、鍵、すぐ遊べるパッケージを提供しません。",
-          "availability": "公式の利用経路：Linux x64 / Windows 10–11 x64。プレイ可能または実験段階のプレビューです。 Linuxのプレイ記録があります。Windowsでのネイティブ実行は未検証です。 使用するシステムに合う公式パッケージを選んでください。",
-          "platforms": "Linux x64 / Windows 10–11 x64",
-          "stage": "プレイ可能または実験段階のプレビューです。"
+          "summary": "自分で用意した Xbox 360 Forza Horizon のファイルから、Windows・Linux のネイティブ移植をローカルでビルドします。コミュニティのオンラインサービス、車両チューニング、表示設定を備えます。",
+          "requirements": "合法的に入手した Xbox 360 Forza Horizon のディスクイメージ、Games on Demand パッケージ、または展開済みフォルダーを用意してください。Title Update 4 と DLC は別途必要です。Horizon Rally と 1000 Club には TU4 が必要です。約4 GB の空きメモリと15 GB のディスク空き容量を確保してください。Vulkan を使う場合は Vulkan 1.3 が必要で、Windows では Direct3D 12 も選べます。初期設定ではコンパイラーツールのダウンロードまたはインストールが必要です。",
+          "availability": "v0.2.0 は Windows インストーラー、Linux x86-64 アーカイブ、Flatpak を提供します。ランチャーが自分のファイルからゲームをローカルで生成・コンパイルするため、更新後は一度再ビルドが必要です。macOS はソースビルドの実験段階で、Mac 用ダウンロードはありません。Steam Deck や低性能機器には性能上の制限があり、一部 GPU では描画不具合やクラッシュが発生します。作者の VR テストは Quest 3 と Linux WiVRn に限られ、Windows VR は未検証です。macOS ではレース全体、セーブの再読み込み、実物のコントローラーの検証が必要です。TU4 と基本版は別々のオンラインルームを使い、TU4 のセーブをそのまま基本版に戻すことはできません。RemakeList ではビルドやプレイを行っていません。",
+          "platforms": "Windows 10/11 x64／Linux x86-64 · macOS はソースビルドの実験のみ",
+          "stage": "v0.2.0 公開 · ローカルビルド · 実験的な VR"
         },
         "ko": {
           "original": "Forza Horizon",
-          "summary": "Forza Horizon 1: ReImagined — 커뮤니티 온라인 기능과 고프레임 설정. 표시된 기기를 위한 Forza Horizon의 독립 이식 프로젝트입니다.",
-          "requirements": "직접 적법하게 구한 파일을 준비하세요: Xbox 360 · 4D5309C9 · Disc 1 / Games on Demand. 프로젝트는 무료지만 원작 게임은 별도입니다. 이 사이트는 게임 파일, 키 또는 바로 플레이할 패키지를 제공하지 않습니다.",
-          "availability": "공식 이용 경로: Linux x64 / Windows 10–11 x64. 플레이 가능 또는 실험 단계 미리보기입니다. Linux 플레이 기록이 있으며 Windows 네이티브 플레이는 미검증입니다. 시스템에 맞는 공식 패키지를 선택하세요.",
-          "platforms": "Linux x64 / Windows 10–11 x64",
-          "stage": "플레이 가능 또는 실험 단계 미리보기입니다."
+          "summary": "직접 보유한 Xbox 360 Forza Horizon 파일로 Windows와 Linux 네이티브 포트를 로컬에서 빌드합니다. 커뮤니티 온라인 서비스, 차량 튜닝과 화면 설정을 제공합니다.",
+          "requirements": "합법적으로 확보한 Xbox 360 Forza Horizon 디스크 이미지, Games on Demand 패키지 또는 추출한 폴더를 직접 준비해야 합니다. Title Update 4와 DLC도 별도로 준비해야 하며, Horizon Rally와 1000 Club에는 TU4가 필요합니다. 여유 RAM 약 4 GB와 디스크 공간 15 GB를 확보하세요. Vulkan 방식은 Vulkan 1.3이 필요하며, Windows에서는 Direct3D 12도 사용할 수 있습니다. 최초 설정 시 컴파일러 도구를 다운로드하거나 설치해야 합니다.",
+          "availability": "v0.2.0은 Windows 설치 프로그램, Linux x86-64 압축 파일과 Flatpak을 제공합니다. 런처가 직접 보유한 파일로 게임을 로컬에서 생성·컴파일하며, 업데이트 후 한 번 다시 빌드해야 합니다. macOS는 다운로드 가능한 Mac 앱 없이 소스 빌드를 실험하는 단계입니다. Steam Deck과 저사양 기기의 성능에는 여전히 한계가 있으며 일부 GPU에서 그래픽 오류나 충돌이 발생합니다. 제작자는 Linux WiVRn과 Quest 3로 VR을 테스트했으며, Windows VR은 테스트하지 않았습니다. macOS에서는 전체 레이스, 저장 파일 다시 불러오기와 물리 컨트롤러 검증이 더 필요합니다. TU4 사용자와 기본 게임 사용자는 서로 다른 온라인 방을 사용하며, TU4 저장 파일을 기본 게임으로 바로 되돌릴 수 없습니다. RemakeList는 빌드하거나 플레이하지 않았습니다.",
+          "platforms": "Windows 10/11 x64 / Linux x86-64 · macOS는 소스 빌드 실험 단계",
+          "stage": "v0.2.0 출시 · 로컬 빌드 · 실험적인 VR"
         },
         "es": {
           "original": "Forza Horizon",
-          "summary": "Forza Horizon 1: ReImagined — Servicios en línea comunitarios y opciones de alta frecuencia. Una adaptación independiente de Forza Horizon para los dispositivos indicados.",
-          "requirements": "Aporta tus propios archivos obtenidos legalmente: Xbox 360 · 4D5309C9 · Disc 1 / Games on Demand. El proyecto es gratuito; el juego original va aparte. Aquí no se ofrecen archivos del juego, claves ni paquetes listos para jugar.",
-          "availability": "Vía oficial: Linux x64 / Windows 10–11 x64. Versión preliminar jugable o experimental. Juego documentado en Linux; ejecución nativa en Windows sin verificar. Elige el paquete oficial adecuado para tu sistema.",
-          "platforms": "Linux x64 / Windows 10–11 x64",
-          "stage": "Versión preliminar jugable o experimental."
+          "summary": "Compila localmente una adaptación nativa para Windows y Linux a partir de tus propios archivos de Forza Horizon de Xbox 360, con servicios en línea comunitarios, ajustes de coches y opciones de imagen.",
+          "requirements": "Aporta tu propia imagen de disco de Forza Horizon de Xbox 360, paquete Games on Demand o carpeta extraída, obtenidos legalmente. Debes aportar por separado Title Update 4 y los DLC; Horizon Rally y 1000 Club requieren TU4. Reserva unos 4 GB de RAM libre y 15 GB de disco. La opción Vulkan requiere Vulkan 1.3; Windows también ofrece Direct3D 12. La configuración inicial necesita descargar o instalar herramientas de compilación.",
+          "availability": "v0.2.0 ofrece un instalador para Windows, un archivo para Linux x86-64 y un Flatpak. El lanzador genera y compila el juego localmente a partir de tus archivos; después de actualizar hay que recompilarlo una vez. macOS sigue siendo una opción experimental de compilación desde código, sin descarga para Mac. El rendimiento en Steam Deck y equipos modestos continúa siendo limitado, con problemas gráficos o cierres en algunas GPU. El autor probó VR en Quest 3 con WiVRn para Linux; VR en Windows no se ha probado. En macOS siguen pendientes las carreras completas, la recarga de partidas y los mandos físicos. Quienes usan TU4 y quienes usan el juego base tienen salas en línea separadas, y las partidas de TU4 no pueden volver directamente al juego base. RemakeList no lo ha compilado ni jugado.",
+          "platforms": "Windows 10/11 x64 / Linux x86-64; macOS solo como compilación experimental desde código",
+          "stage": "v0.2.0 publicada · Compilación local · VR experimental"
         }
       },
       "start": "download_with_original_assets",
-      "start_url": "https://github.com/dyotson/forzahorizon1-reimagined/releases",
+      "start_url": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/releases/tag/v0.2.0",
       "code_license": "MIT applies to the project’s original code only; original game content and third-party components have separate rights.",
-      "code_license_url": "https://github.com/Dyotson/ForzaHorizon1-ReImagined/blob/main/LICENSE",
+      "code_license_url": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/blob/main/LICENSE",
       "code_license_sources": [
-        "https://github.com/Dyotson/ForzaHorizon1-ReImagined/blob/main/LICENSE"
+        "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/blob/main/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-19",
-      "official_url": "https://github.com/Dyotson/ForzaHorizon1-ReImagined",
-      "documentation_url": "https://github.com/Dyotson/ForzaHorizon1-ReImagined#readme",
+      "source_reviewed_at": "2026-10-27",
+      "official_url": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined",
+      "documentation_url": "https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined#readme",
       "site_url": "https://remakelist.com/remakes/forza-horizon-reimagined/",
       "site_url_zh": "https://remakelist.com/zh/remakes/forza-horizon-reimagined/",
       "original_files": "original",
@@ -3750,54 +3750,54 @@
       "localized": {
         "en": {
           "original": "Gears of War 2",
-          "summary": "A native PC port for your own Xbox 360 Gears of War 2 files, with high-resolution rendering and experimental co-op. Campaign coverage is incomplete and Android performance drops as devices warm up.",
-          "requirements": "Bring your own lawfully obtained Xbox 360 · 4D53082D · default.xex + GearGame. The project is free to access; the original game is separate. No game files, keys or ready-to-play packages are supplied here.",
-          "availability": "Official route: Windows 10–11 x64 / Android 10+ ARM64. Playable or experimental preview. Full-game coverage has not been verified. Android remains experimental. Choose the official package matching your system.",
-          "platforms": "Windows 10–11 x64 / Android 10+ ARM64",
-          "stage": "Playable or experimental preview."
+          "summary": "An unofficial native port using your own Xbox 360 Gears of War 2 files, with high-resolution rendering, split-screen and System Link co-op. Android remains experimental and full-campaign coverage is unverified.",
+          "requirements": "Supply your own lawfully obtained retail Xbox 360 Gears of War 2 (title ID 4D53082D) ISO, or a complete folder with default.xex and GearGame. Initial ISO extraction on Windows needs about 8 GB. Android import copies the data into app storage and needs room for another complete copy. RemakeList supplies no game data.",
+          "availability": "v0.3.7 provides a Windows 10/11 x64 ZIP and an experimental Android 10+ ARM64 APK. Windows needs a DirectX 12 GPU and Android needs Vulkan. The update adds separate voice and subtitle-language choices. The author has only played through Act 1; brief chapter sweeps do not verify Acts 2–5 end to end. Android sustained performance is affected by heat. Three/four-player co-op and internet play retain untested scenarios, and all peers need the same release. Windows files are unsigned and may be blocked; author scan claims are not a RemakeList security certification. RemakeList has not built, installed or run it.",
+          "platforms": "Windows 10/11 x64 (DirectX 12) / Android 10+ ARM64 (Vulkan, experimental)",
+          "stage": "Public release · campaign coverage incomplete · experimental Android"
         },
         "zh-CN": {
           "original": "战争机器 2",
-          "summary": "把自备的 Xbox 360《战争机器2》文件用于原生 PC 移植，提供高分辨率与合作模式实验。当前只验证了部分关卡，Android 仍有温升降速。",
-          "requirements": "自备合法取得的文件：Xbox 360 · 4D53082D · default.xex + GearGame。项目可免费获取，原版游戏另计；本站不提供游戏文件、密钥或可直接玩的安装包。",
-          "availability": "官方路线：Windows 10–11 x64 / Android 10+ ARM64。可玩或实验性预览。 尚未验证完整游戏流程。 Android 仍为实验性支持。 选择与系统匹配的官方发行包。",
-          "platforms": "Windows 10–11 x64 / Android 10+ ARM64",
-          "stage": "可玩或实验性预览。"
+          "summary": "使用自备 Xbox 360《战争机器 2》文件的非官方原生移植，提供高分辨率、分屏和 System Link 合作玩法；Android 仍为实验性支持，完整战役尚未验完。",
+          "requirements": "自备合法取得的零售版 Xbox 360《战争机器 2》（Title ID 4D53082D）ISO，或含 default.xex 与 GearGame 的完整目录。Windows 首次提取 ISO 约需 8 GB 空间；Android 导入会复制到应用存储，需额外容纳一份完整游戏。本站不提供原游戏数据。",
+          "availability": "v0.3.7 提供 Windows 10/11 x64 ZIP 和实验性 Android 10+ ARM64 APK。Windows 需要 DirectX 12 显卡，Android 需要 Vulkan；更新包括独立语音与字幕语言选择。 作者只完整游玩过第一幕，短时间章节扫描不等于第二至五幕通关验证。Android 持续性能受温升影响；三至四人合作和互联网联机仍有未测场景，同场玩家须用同版。Windows 文件未签名，可能被系统阻止；作者扫描声明不是本站安全认证。本站未构建、安装或运行。",
+          "platforms": "Windows 10/11 x64（DirectX 12）/ Android 10+ ARM64（Vulkan，实验性）",
+          "stage": "公开发行 · 战役验证未完 · Android 实验性"
         },
         "ja": {
           "original": "Gears of War 2",
-          "summary": "Gears of War 2 PC Port — 高解像度描画と実験的な協力プレイ。 「Gears of War 2」を記載の機器向けに移植する独立プロジェクトです。",
-          "requirements": "自分が適法に取得したファイルを用意してください：Xbox 360 · 4D53082D · default.xex + GearGame。プロジェクトは無料ですが原作は別途必要です。当サイトはゲームファイル、鍵、すぐ遊べるパッケージを提供しません。",
-          "availability": "公式の利用経路：Windows 10–11 x64 / Android 10+ ARM64。プレイ可能または実験段階のプレビューです。 ゲーム全編は検証されていません。 Androidは実験段階です。 使用するシステムに合う公式パッケージを選んでください。",
-          "platforms": "Windows 10–11 x64 / Android 10+ ARM64",
-          "stage": "プレイ可能または実験段階のプレビューです。"
+          "summary": "自分の Xbox 360 Gears of War 2 ファイルを使用する非公式ネイティブ移植です。高解像度表示、画面分割、System Link 協力プレイを備えます。Android は実験段階で、キャンペーン全編の確認は済んでいません。",
+          "requirements": "合法的に入手した製品版 Xbox 360 Gears of War 2（タイトル ID 4D53082D）の ISO、または default.xex と GearGame を含む完全なフォルダーを用意してください。Windows での初回 ISO 展開には約8 GB が必要です。Android の取り込みではデータをアプリ領域にコピーするため、完全なデータをもう一組保存できる空き容量が必要です。RemakeList はゲームデータを提供しません。",
+          "availability": "v0.3.7 は Windows 10/11 x64 ZIP と、実験的な Android 10以降 ARM64 APK を提供します。Windows には DirectX 12 対応 GPU、Android には Vulkan が必要です。更新では音声と字幕の言語を別々に選べます。作者が通してプレイしたのは Act 1 のみで、各章の短い確認は Acts 2〜5 の全編検証ではありません。Android の持続的な性能は発熱の影響を受けます。3人・4人協力プレイやインターネットプレイには未検証の場面が残り、全員が同じリリースを使用する必要があります。Windows ファイルは未署名のためブロックされる場合があります。作者によるスキャン結果は RemakeList の安全性認証ではありません。RemakeList ではビルド、インストール、実行を行っていません。",
+          "platforms": "Windows 10/11 x64（DirectX 12）／Android 10以降 ARM64（Vulkan、実験的）",
+          "stage": "公開リリース · キャンペーン確認は未完了 · Android は実験的"
         },
         "ko": {
           "original": "Gears of War 2",
-          "summary": "Gears of War 2 PC Port — 고해상도 렌더링과 실험적 협동 플레이. 표시된 기기를 위한 Gears of War 2의 독립 이식 프로젝트입니다.",
-          "requirements": "직접 적법하게 구한 파일을 준비하세요: Xbox 360 · 4D53082D · default.xex + GearGame. 프로젝트는 무료지만 원작 게임은 별도입니다. 이 사이트는 게임 파일, 키 또는 바로 플레이할 패키지를 제공하지 않습니다.",
-          "availability": "공식 이용 경로: Windows 10–11 x64 / Android 10+ ARM64. 플레이 가능 또는 실험 단계 미리보기입니다. 게임 전체 진행은 검증되지 않았습니다. Android는 실험 단계입니다. 시스템에 맞는 공식 패키지를 선택하세요.",
-          "platforms": "Windows 10–11 x64 / Android 10+ ARM64",
-          "stage": "플레이 가능 또는 실험 단계 미리보기입니다."
+          "summary": "직접 보유한 Xbox 360 Gears of War 2 파일을 사용하는 비공식 네이티브 포트로, 고해상도 렌더링, 분할 화면과 System Link 협동 플레이를 제공합니다. Android는 실험 단계이며 캠페인 전체의 동작은 검증되지 않았습니다.",
+          "requirements": "합법적으로 확보한 Xbox 360 Gears of War 2 정식 판매판(타이틀 ID 4D53082D)의 ISO 또는 default.xex와 GearGame을 포함한 전체 폴더를 직접 준비해야 합니다. Windows에서 처음 ISO를 추출할 때 약 8 GB가 필요합니다. Android는 데이터를 앱 저장소로 복사하므로 전체 데이터 한 벌을 더 저장할 공간이 필요합니다. RemakeList는 게임 데이터를 제공하지 않습니다.",
+          "availability": "v0.3.7은 Windows 10/11 x64 ZIP과 실험적인 Android 10 이상 ARM64 APK를 제공합니다. Windows에는 DirectX 12 GPU가, Android에는 Vulkan이 필요합니다. 이번 업데이트는 음성과 자막 언어를 따로 선택하는 기능을 추가합니다. 제작자가 직접 끝까지 플레이한 범위는 Act 1뿐이며, 짧은 챕터 점검만으로 Act 2–5의 전체 진행이 검증되지는 않습니다. Android의 지속 성능은 발열의 영향을 받습니다. 3·4인 협동 플레이와 인터넷 플레이에는 테스트되지 않은 상황이 남아 있으며, 모든 참여자가 같은 릴리스를 사용해야 합니다. Windows 파일은 서명되지 않아 차단될 수 있으며, 제작자의 검사 결과 설명은 RemakeList의 보안 인증이 아닙니다. RemakeList는 빌드·설치·실행하지 않았습니다.",
+          "platforms": "Windows 10/11 x64 (DirectX 12) / Android 10 이상 ARM64 (Vulkan, 실험 단계)",
+          "stage": "공개 릴리스 · 캠페인 전체 검증 미완료 · 실험적인 Android 지원"
         },
         "es": {
           "original": "Gears of War 2",
-          "summary": "Gears of War 2 PC Port — Alta resolución y cooperativo experimental. Una adaptación independiente de Gears of War 2 para los dispositivos indicados.",
-          "requirements": "Aporta tus propios archivos obtenidos legalmente: Xbox 360 · 4D53082D · default.xex + GearGame. El proyecto es gratuito; el juego original va aparte. Aquí no se ofrecen archivos del juego, claves ni paquetes listos para jugar.",
-          "availability": "Vía oficial: Windows 10–11 x64 / Android 10+ ARM64. Versión preliminar jugable o experimental. No se ha verificado el juego completo. Android sigue siendo experimental. Elige el paquete oficial adecuado para tu sistema.",
-          "platforms": "Windows 10–11 x64 / Android 10+ ARM64",
-          "stage": "Versión preliminar jugable o experimental."
+          "summary": "Una adaptación nativa no oficial que utiliza tus propios archivos de Gears of War 2 de Xbox 360, con renderizado de alta resolución, pantalla dividida y cooperación mediante System Link. Android sigue siendo experimental y no se ha verificado la campaña completa.",
+          "requirements": "Aporta tu propia ISO de la versión comercial de Gears of War 2 para Xbox 360 (ID 4D53082D), obtenida legalmente, o una carpeta completa con default.xex y GearGame. La extracción inicial de la ISO en Windows necesita unos 8 GB. La importación en Android copia los datos al almacenamiento de la app y requiere espacio para otra copia completa. RemakeList no proporciona datos del juego.",
+          "availability": "v0.3.7 ofrece un ZIP para Windows 10/11 x64 y una APK experimental para Android 10+ ARM64. Windows requiere una GPU con DirectX 12 y Android necesita Vulkan. La actualización permite elegir por separado voces y subtítulos. El autor solo ha jugado todo el acto 1; las comprobaciones breves de capítulos no verifican de principio a fin los actos 2–5. El calor afecta al rendimiento sostenido en Android. El cooperativo de tres o cuatro jugadores y el juego por internet conservan situaciones sin probar, y todos deben usar la misma versión. Los archivos de Windows no están firmados y el sistema puede bloquearlos; los resultados de análisis que declara el autor no son una certificación de seguridad de RemakeList. RemakeList no lo ha compilado, instalado ni ejecutado.",
+          "platforms": "Windows 10/11 x64 (DirectX 12) / Android 10+ ARM64 (Vulkan, experimental)",
+          "stage": "Versión pública · Campaña no verificada por completo · Android experimental"
         }
       },
       "start": "download_with_original_assets",
-      "start_url": "https://github.com/santiquiroz/gears-of-war-2-pc-port/releases",
+      "start_url": "https://github.com/santiquiroz/gears-of-war-2-pc-port/releases/tag/v0.3.7",
       "code_license": "BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.",
       "code_license_url": "https://github.com/santiquiroz/gears-of-war-2-pc-port/blob/master/LICENSE",
       "code_license_sources": [
         "https://github.com/santiquiroz/gears-of-war-2-pc-port/blob/master/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-19",
+      "source_reviewed_at": "2026-10-27",
       "official_url": "https://github.com/santiquiroz/gears-of-war-2-pc-port",
       "documentation_url": "https://github.com/santiquiroz/gears-of-war-2-pc-port#readme",
       "site_url": "https://remakelist.com/remakes/gears-of-war-2-native/",
@@ -4070,54 +4070,54 @@
       "localized": {
         "en": {
           "original": "The Legend of Zelda: Link’s Awakening",
-          "summary": "A beta desktop native port that prepares your own Switch Link’s Awakening 1.0.0 files locally, with widescreen and randomizer options. Graphics and seed-generation limits remain.",
-          "requirements": "Bring your own lawfully obtained Nintendo Switch · v1.0.0 · exefs + romfs. The project is free to access; the original game is separate. No game files, keys or ready-to-play packages are supplied here.",
-          "availability": "Official route: Windows x64 / macOS Apple silicon / Linux x64. Beta; bugs and incomplete testing remain. Linux ARM64 builds are not hardware-tested. Choose the official package matching your system.",
-          "platforms": "Windows x64 / macOS Apple silicon / Linux x64",
-          "stage": "Beta; bugs and incomplete testing remain."
+          "summary": "Builds a native desktop port locally from your own Switch Link’s Awakening 1.0.0, 1.0.1 or 1.1.0 files, with widescreen and randomizer options. It remains in beta.",
+          "requirements": "Supply your own lawfully obtained exefs and romfs files from Switch Link’s Awakening 1.0.0, 1.0.1 or 1.1.0 and choose their folder for local compilation. Mac needs Apple silicon and macOS 15+. Windows 10/11 and Linux x64 need AVX2, FMA, Vulkan 1.3, at least 8 GB RAM and about 12 GB setup space. No game files or keys are provided.",
+          "availability": "beta_5.3 provides a Windows ZIP, Mac DMG and Linux x86-64/ARM64 AppImages. It supports original game versions 1.0.0, 1.0.1 and 1.1.0, with local compilation at first launch. The author explicitly labels it beta despite GitHub’s prerelease flag being off; Linux ARM64 is untested on real hardware. Crashes, unsolvable randomizer seeds and widescreen graphics issues remain possible; dungeon-room shuffling is especially experimental. Linux ARM64 is built but not hardware-tested; Intel Macs and older Intel integrated graphics are unsupported. Seed IDs from before Beta 5 generate different results. Author frame-rate reports for Steam Deck or Mac are not guarantees for every device. RemakeList has not built or played it.",
+          "platforms": "Windows x64 / Apple silicon macOS / Linux x64; experimental Linux ARM64",
+          "stage": "beta_5.3 · bugs and incomplete validation remain"
         },
         "zh-CN": {
           "original": "塞尔达传说：织梦岛",
-          "summary": "把自备 Switch《织梦岛》1.0.0 文件在本机转换为桌面原生程序，支持宽屏和随机化选项。当前为 beta，随机化与图形仍有限制。",
-          "requirements": "自备合法取得的文件：Nintendo Switch · v1.0.0 · exefs + romfs。项目可免费获取，原版游戏另计；本站不提供游戏文件、密钥或可直接玩的安装包。",
-          "availability": "官方路线：Windows x64 / macOS Apple silicon / Linux x64。Beta；仍有错误和未完成的验证。 Linux ARM64 构建尚未在实机验证。 选择与系统匹配的官方发行包。",
-          "platforms": "Windows x64 / macOS Apple silicon / Linux x64",
-          "stage": "Beta；仍有错误和未完成的验证。"
+          "summary": "把自备 Switch《织梦岛》1.0.0、1.0.1 或 1.1.0 文件在本机转换为桌面原生程序，加入宽屏与随机化选项；仍为 beta。",
+          "requirements": "需自备合法取得的 Switch《织梦岛》1.0.0、1.0.1 或 1.1.0 的 exefs、romfs 文件，选择其所在目录进行本地构建。Mac 需 Apple silicon、macOS 15+；Windows 10/11 与 Linux x64 需 AVX2、FMA、Vulkan 1.3，至少 8 GB RAM 和约 12 GB 设置空间。项目不提供游戏文件或密钥。",
+          "availability": "beta_5.3 提供 Windows ZIP、Mac DMG 及 Linux x86-64/ARM64 AppImage。支持原作 1.0.0、1.0.1、1.1.0；首次运行本地构建。虽然 GitHub 未勾选预发布，作者明确仍为 beta；Linux ARM64 未在实机测试。 仍可能崩溃，随机化种子可能无解，房间打乱尤其属于实验功能，宽屏图形也可能出错。Linux ARM64 只有构建，未实机验证；Intel Mac 和较旧 Intel 核显不受支持。Beta 5 以前的种子 ID 会生成不同结果。作者的 Steam Deck 或 Mac 帧率报告不是所有设备的保证；本站未构建或试玩。",
+          "platforms": "Windows x64 / macOS Apple silicon / Linux x64；Linux ARM64 实验性",
+          "stage": "beta_5.3 · 仍有错误与未完成验证"
         },
         "ja": {
           "original": "The Legend of Zelda: Link’s Awakening",
-          "summary": "LAS Recomp — 超ワイド画面と任意のランダマイザー。 「The Legend of Zelda: Link’s Awakening」を記載の機器向けに移植する独立プロジェクトです。",
-          "requirements": "自分が適法に取得したファイルを用意してください：Nintendo Switch · v1.0.0 · exefs + romfs。プロジェクトは無料ですが原作は別途必要です。当サイトはゲームファイル、鍵、すぐ遊べるパッケージを提供しません。",
-          "availability": "公式の利用経路：Windows x64 / macOS Apple silicon / Linux x64。ベータ版で、不具合や未検証項目が残ります。 Linux ARM64版は実機未検証です。 使用するシステムに合う公式パッケージを選んでください。",
-          "platforms": "Windows x64 / macOS Apple silicon / Linux x64",
-          "stage": "ベータ版で、不具合や未検証項目が残ります。"
+          "summary": "自分の Switch Link’s Awakening 1.0.0、1.0.1、1.1.0 のファイルからネイティブのデスクトップ移植をローカルでビルドします。ワイドスクリーンやランダマイザーを備え、現在もベータ段階です。",
+          "requirements": "合法的に入手した Switch Link’s Awakening 1.0.0、1.0.1、1.1.0 の exefs・romfs を用意し、そのフォルダーを選んでローカルでコンパイルしてください。Mac は Apple Silicon と macOS 15以降が必要です。Windows 10/11 と Linux x64 は AVX2、FMA、Vulkan 1.3、8 GB 以上のメモリ、約12 GB のセットアップ容量が必要です。ゲームファイルや鍵は提供されません。",
+          "availability": "beta_5.3 は Windows ZIP、Mac DMG、Linux x86-64／ARM64 AppImage を提供します。原作バージョン1.0.0、1.0.1、1.1.0に対応し、初回起動時にローカルでコンパイルします。GitHub のプレリリース設定がオフでも、作者は明確にベータとしています。Linux ARM64 はビルドされていますが、実機では未検証です。クラッシュ、クリア不能なランダマイザーのシード、ワイドスクリーンの描画不具合が起こる可能性があり、ダンジョンの部屋シャッフルは特に実験的です。Intel Mac と古い Intel 内蔵 GPU は非対応です。Beta 5 より前のシード ID では生成結果が変わります。作者の Steam Deck・Mac のフレームレート報告は、すべての機器での保証ではありません。RemakeList ではビルドやプレイを行っていません。",
+          "platforms": "Windows x64／Apple Silicon macOS／Linux x64 · Linux ARM64 は実験的",
+          "stage": "beta_5.3 · 不具合と未検証部分が残る"
         },
         "ko": {
           "original": "The Legend of Zelda: Link’s Awakening",
-          "summary": "LAS Recomp — 울트라와이드 화면과 선택적 무작위화. 표시된 기기를 위한 The Legend of Zelda: Link’s Awakening의 독립 이식 프로젝트입니다.",
-          "requirements": "직접 적법하게 구한 파일을 준비하세요: Nintendo Switch · v1.0.0 · exefs + romfs. 프로젝트는 무료지만 원작 게임은 별도입니다. 이 사이트는 게임 파일, 키 또는 바로 플레이할 패키지를 제공하지 않습니다.",
-          "availability": "공식 이용 경로: Windows x64 / macOS Apple silicon / Linux x64. 베타로 오류와 미완료 검증이 남아 있습니다. Linux ARM64 빌드는 실제 기기에서 미검증입니다. 시스템에 맞는 공식 패키지를 선택하세요.",
-          "platforms": "Windows x64 / macOS Apple silicon / Linux x64",
-          "stage": "베타로 오류와 미완료 검증이 남아 있습니다."
+          "summary": "직접 보유한 Switch Link’s Awakening 1.0.0, 1.0.1 또는 1.1.0 파일로 데스크톱 네이티브 포트를 로컬에서 빌드합니다. 와이드스크린과 랜더마이저 옵션을 제공하며 아직 베타입니다.",
+          "requirements": "합법적으로 확보한 Switch Link’s Awakening 1.0.0, 1.0.1 또는 1.1.0의 exefs·romfs 파일을 직접 준비하고 해당 폴더를 선택하여 로컬 컴파일해야 합니다. Mac에는 Apple silicon과 macOS 15 이상이 필요합니다. Windows 10/11과 Linux x64에는 AVX2, FMA, Vulkan 1.3, 최소 8 GB RAM과 설정용 공간 약 12 GB가 필요합니다. 게임 파일이나 키는 제공하지 않습니다.",
+          "availability": "beta_5.3은 Windows ZIP, Mac DMG와 Linux x86-64·ARM64 AppImage를 제공합니다. 원작 버전 1.0.0, 1.0.1과 1.1.0을 지원하며 최초 실행 시 로컬 컴파일이 필요합니다. GitHub의 사전 릴리스 표시가 꺼져 있어도 제작자는 명시적으로 베타라고 설명합니다. Linux ARM64 빌드는 제공되지만 실제 하드웨어에서 테스트하지 않았습니다. 충돌, 해결 불가능한 랜더마이저 시드와 와이드스크린 그래픽 문제가 발생할 수 있으며, 던전 방 배치 섞기는 특히 실험적인 기능입니다. Intel Mac과 구형 Intel 내장 그래픽은 지원하지 않습니다. Beta 5 이전의 시드 ID는 다른 결과를 생성합니다. 제작자가 보고한 Steam Deck·Mac 프레임 속도는 모든 기기에 대한 보장이 아닙니다. RemakeList는 빌드하거나 플레이하지 않았습니다.",
+          "platforms": "Windows x64 / Apple silicon macOS / Linux x64 · Linux ARM64는 실험 단계",
+          "stage": "beta_5.3 · 버그와 검증되지 않은 부분이 남아 있음"
         },
         "es": {
           "original": "The Legend of Zelda: Link’s Awakening",
-          "summary": "LAS Recomp — Pantalla ultrapanorámica y aleatorización opcional. Una adaptación independiente de The Legend of Zelda: Link’s Awakening para los dispositivos indicados.",
-          "requirements": "Aporta tus propios archivos obtenidos legalmente: Nintendo Switch · v1.0.0 · exefs + romfs. El proyecto es gratuito; el juego original va aparte. Aquí no se ofrecen archivos del juego, claves ni paquetes listos para jugar.",
-          "availability": "Vía oficial: Windows x64 / macOS Apple silicon / Linux x64. Beta; quedan errores y pruebas incompletas. Las compilaciones Linux ARM64 no están probadas en hardware real. Elige el paquete oficial adecuado para tu sistema.",
-          "platforms": "Windows x64 / macOS Apple silicon / Linux x64",
-          "stage": "Beta; quedan errores y pruebas incompletas."
+          "summary": "Compila localmente una adaptación nativa para escritorio a partir de tus propios archivos de Link’s Awakening para Switch 1.0.0, 1.0.1 o 1.1.0, con pantalla panorámica y opciones de aleatorización. Sigue en beta.",
+          "requirements": "Aporta tus propios archivos exefs y romfs de Link’s Awakening para Switch 1.0.0, 1.0.1 o 1.1.0, obtenidos legalmente, y selecciona su carpeta para compilar localmente. Mac requiere Apple silicon y macOS 15+. Windows 10/11 y Linux x64 necesitan AVX2, FMA, Vulkan 1.3, al menos 8 GB de RAM y unos 12 GB para la configuración. No se proporcionan archivos de juego ni claves.",
+          "availability": "beta_5.3 ofrece un ZIP para Windows, un DMG para Mac y AppImages para Linux x86-64 y ARM64. Admite las versiones originales 1.0.0, 1.0.1 y 1.1.0, con compilación local en el primer inicio. El autor la identifica expresamente como beta aunque GitHub no active la marca de versión preliminar; Linux ARM64 no se ha probado en hardware real. Siguen siendo posibles los cierres, semillas imposibles de completar y errores gráficos en pantalla panorámica; mezclar habitaciones de mazmorras es especialmente experimental. Linux ARM64 está compilado, pero carece de pruebas de hardware; no se admiten Mac Intel ni gráficos integrados Intel antiguos. Los identificadores de semilla anteriores a Beta 5 generan resultados diferentes. Los datos de fotogramas del autor para Steam Deck o Mac no garantizan el mismo resultado en todos los equipos. RemakeList no lo ha compilado ni jugado.",
+          "platforms": "Windows x64 / macOS con Apple silicon / Linux x64; Linux ARM64 experimental",
+          "stage": "beta_5.3 · Persisten errores y comprobaciones pendientes"
         }
       },
       "start": "download_with_original_assets",
-      "start_url": "https://github.com/peiikai/lasrecomp/releases",
+      "start_url": "https://github.com/peiikai/LASRecomp/releases/tag/beta_5.3",
       "code_license": "MIT applies to the project’s original code only; original game content and third-party components have separate rights.",
       "code_license_url": "https://github.com/peiikai/LASRecomp/blob/main/LICENSE",
       "code_license_sources": [
         "https://github.com/peiikai/LASRecomp/blob/main/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-19",
+      "source_reviewed_at": "2026-10-27",
       "official_url": "https://github.com/peiikai/LASRecomp",
       "documentation_url": "https://github.com/peiikai/LASRecomp#readme",
       "site_url": "https://remakelist.com/remakes/las-recomp/",
@@ -5030,54 +5030,54 @@
       "localized": {
         "en": {
           "original": "Need for Speed: Most Wanted (2005)",
-          "summary": "Runs the Xbox 360 Need for Speed: Most Wanted on modern devices with widescreen and display options. Bring your own Xbox 360 disc image; the iPhone and iPad route is experimental.",
-          "requirements": "Owned Xbox 360 Need for Speed Most Wanted (2005) disc image, verified and imported locally. No PC retail edition substitution.",
-          "availability": "Official downloadable desktop apps and experimental iOS sideload route. Author reports native recompilation; check each release asset before listing platforms. Not built, installed or played by RemakeList.",
-          "platforms": "Linux / macOS / iOS / iPadOS",
-          "stage": "Preview · original game required"
+          "summary": "Runs your own Xbox 360 Need for Speed: Most Wanted on modern devices with widescreen, split screen and display options. iPhone/iPad sideloading remains experimental, and Windows is in beta.",
+          "requirements": "Supply your own lawful USA NTSC-U or European PAL Spanish Xbox 360 Most Wanted ISO, XISO or extracted folder. No Title Update is used; other regions, Games on Demand and the PC edition are unsupported. Allow about 7.2 GB. Windows/Linux x64 need AVX2 and Vulkan 1.2; Mac needs Apple silicon and macOS 15+; iOS/iPadOS need 17+, an A15-class chip or newer, a controller or keyboard, and your own sideload signing.",
+          "availability": "The main v0.2.0 release provides SteamOS/Linux x86-64, Steam Frame ARM64, Apple silicon Mac and an experimental iOS IPA. Windows uses the separate v0.2.0-windows-beta.2 prerelease; no Android build is available. The two SteamOS architectures are not interchangeable. The author tested the Windows beta on limited Intel integrated-graphics hardware. The iOS IPA attachment itself has not been installed on a device; author testing used Xcode-signed builds, and sideload entitlements or memory limits can prevent running. The Mac app is not notarized; macOS 15 was tested only in a VM. Steam Frame presents a flat screen, not VR; the ARM64 package is untested on other Linux devices. Set Steam Deck OLED to 60 Hz; the LCD model is untested. No universal frame rate is promised. RemakeList has not run it.",
+          "platforms": "Linux / SteamOS / Apple silicon macOS / experimental iOS·iPadOS / Windows beta",
+          "stage": "v0.2.0 released · Windows beta · experimental iOS sideloading"
         },
         "zh-CN": {
           "original": "极品飞车：最高通缉",
-          "summary": "让 Xbox 360 版《极品飞车：最高通缉》在现代设备上原生运行，并提供宽屏与显示设置。需要自己的 Xbox 360 光盘镜像，iPhone／iPad 路线仍属实验。",
-          "requirements": "自备 Xbox 360 版《极品飞车：最高通缉》的光盘镜像，在设备上校验导入；PC 版不能直接替代。",
-          "availability": "桌面发行与实验性 iOS 路线；需逐个核对目标设备及发行要求。 本站未构建、安装或游玩。",
-          "platforms": "Linux / macOS / iOS / iPadOS",
-          "stage": "预览版本 · 自备原游戏"
+          "summary": "让自备 Xbox 360 版《极品飞车：最高通缉》在现代设备上运行，提供宽屏、分屏和显示设置；iPhone／iPad 侧载与 Windows 分别保留实验性和 beta 标记。",
+          "requirements": "自备 Xbox 360 美版 NTSC-U 或欧洲 PAL 西语版《最高通缉》的合法 ISO、XISO 或提取目录；无需 Title Update，其他地区、Games on Demand 与 PC 版不能替代。约需 7.2 GB 空间。Windows/Linux x64 需 AVX2 与 Vulkan 1.2；Mac 需 Apple silicon、macOS 15+；iOS/iPadOS 需 17+、A15 级以上及手柄或键盘，并自行签名侧载。",
+          "availability": "正式 v0.2.0 提供 SteamOS/Linux x86-64、Steam Frame ARM64、Apple silicon Mac 与实验性 iOS IPA。Windows 使用独立预发布 v0.2.0-windows-beta.2；Android 尚无发行包。两种 SteamOS 架构不可互换。 Windows beta 只在有限 Intel 核显配置上由作者测试。iOS IPA 附件本身尚未在真机安装，作者测试的是 Xcode 签名构建；侧载权限与内存限制可能阻止运行。Mac 未公证，macOS 15 仅虚拟机测试。Steam Frame 为平面屏幕模式，非 VR；ARM64 包未验证其他 Linux 设备。Steam Deck OLED 应设为 60 Hz，LCD 型号未测；不保证普遍帧率。本站未运行。",
+          "platforms": "Linux / SteamOS / macOS Apple silicon / iOS·iPadOS 实验性 / Windows beta",
+          "stage": "v0.2.0 已发行 · Windows beta · iOS 侧载实验性"
         },
         "ja": {
           "original": "Need for Speed: Most Wanted (2005)",
-          "summary": "Xbox 360版Need for Speed: Most Wantedをワイド画面で現代の機器に移植します。所有するディスクイメージが必要で、iOSは実験段階です。",
-          "requirements": "次の条件に合う合法的に取得した自分のファイルが必要です：Xbox 360 · Need for Speed: Most Wanted 2005 · owned disc image。商用ゲームの内容は別扱いで、RemakeListは提供しません。",
-          "availability": "Linux／SteamOSとMacのデスクトップ配布を文書化しています。iPhone／iPadは実験的なサイドロード手順で、各リリースの条件を確認してください。",
-          "platforms": "Linux / macOS / iOS / iPadOS",
-          "stage": "プレビュー・原作が必要"
+          "summary": "自分の Xbox 360 Need for Speed: Most Wanted を現行機器で動かし、ワイドスクリーン、画面分割、表示設定を追加します。iPhone／iPad のサイドロードは実験段階で、Windows はベータ版です。",
+          "requirements": "合法的に入手した北米 NTSC-U または欧州 PAL スペイン語版 Xbox 360 Most Wanted の ISO、XISO、展開済みフォルダーを用意してください。Title Update は使いません。他の地域版、Games on Demand、PC 版は非対応です。約7.2 GB を確保してください。Windows／Linux x64 は AVX2 と Vulkan 1.2、Mac は Apple Silicon と macOS 15以降が必要です。iOS／iPadOS は17以降、A15 相当以降のチップ、コントローラーまたはキーボード、自分でのサイドロード署名が必要です。",
+          "availability": "本体の v0.2.0 リリースは SteamOS／Linux x86-64、Steam Frame ARM64、Apple Silicon Mac、実験的な iOS IPA を提供します。Windows は別の v0.2.0-windows-beta.2 プレリリースを使用します。Android ビルドはありません。SteamOS の2種類のアーキテクチャは互換ではありません。作者の Windows ベータのテストは限られた Intel 内蔵 GPU 機器のみです。iOS IPA 添付ファイル自体は実機にインストールされておらず、作者のテストには Xcode 署名済みビルドを使用しています。サイドロードの権限やメモリ制限で動かない場合があります。Mac アプリは公証されておらず、macOS 15 は仮想マシンでのみテストされています。Steam Frame は VR ではなく平面画面の表示です。ARM64 パッケージは他の Linux 機器で未検証です。Steam Deck OLED は60 Hz に設定してください。LCD モデルは未検証です。どの機器でも一定のフレームレートを保証するものではありません。RemakeList では実行していません。",
+          "platforms": "Linux／SteamOS／Apple Silicon macOS／実験的な iOS・iPadOS／Windows ベータ",
+          "stage": "v0.2.0 公開 · Windows ベータ · iOS サイドロードは実験的"
         },
         "ko": {
           "original": "Need for Speed: Most Wanted (2005)",
-          "summary": "Xbox 360 Need for Speed: Most Wanted를 현대 기기에 와이드 화면으로 이식합니다. 자신의 디스크 이미지가 필요하며 iOS는 실험 단계입니다.",
-          "requirements": "다음 조건에 맞는 합법적으로 확보한 자신의 파일을 준비하세요: Xbox 360 · Need for Speed: Most Wanted 2005 · owned disc image. 상용 게임 콘텐츠는 별도이며 RemakeList에서 제공하지 않습니다.",
-          "availability": "Linux/SteamOS와 Mac 배포가 문서화되어 있습니다. iPhone·iPad는 실험적 사이드로드 경로이며 릴리스별 조건을 확인해야 합니다.",
-          "platforms": "Linux / macOS / iOS / iPadOS",
-          "stage": "미리보기 · 원본 게임 필요"
+          "summary": "직접 보유한 Xbox 360 Need for Speed: Most Wanted를 최신 기기에서 실행하며, 와이드스크린, 분할 화면과 화면 설정을 제공합니다. iPhone·iPad 사이드로딩은 실험 단계이며 Windows는 베타입니다.",
+          "requirements": "합법적으로 확보한 USA NTSC-U 또는 유럽 PAL 스페인어 Xbox 360 Most Wanted의 ISO, XISO 또는 추출한 폴더를 직접 준비해야 합니다. Title Update는 사용하지 않으며 다른 지역판, Games on Demand와 PC판은 지원하지 않습니다. 약 7.2 GB를 확보하세요. Windows·Linux x64에는 AVX2와 Vulkan 1.2가, Mac에는 Apple silicon과 macOS 15 이상이 필요합니다. iOS·iPadOS에는 17 이상, A15급 이상의 칩, 컨트롤러 또는 키보드와 직접 처리하는 사이드로딩 서명이 필요합니다.",
+          "availability": "주 릴리스 v0.2.0은 SteamOS·Linux x86-64, Steam Frame ARM64, Apple silicon Mac과 실험적인 iOS IPA를 제공합니다. Windows는 별도의 v0.2.0-windows-beta.2 사전 릴리스를 사용하며 Android 빌드는 없습니다. SteamOS의 두 아키텍처 패키지는 서로 바꿔 사용할 수 없습니다. 제작자는 Windows 베타를 제한된 Intel 내장 그래픽 환경에서 테스트했습니다. 첨부된 iOS IPA 자체는 기기에 설치해 보지 않았습니다. 제작자의 테스트는 Xcode로 서명한 빌드를 사용했으며, 사이드로딩 권한이나 메모리 제한으로 실행되지 않을 수 있습니다. Mac 앱은 공증되지 않았으며 macOS 15는 가상 머신에서만 테스트했습니다. Steam Frame은 VR이 아닌 평면 화면을 표시하며, ARM64 패키지는 다른 Linux 기기에서 테스트되지 않았습니다. Steam Deck OLED는 60 Hz로 설정해야 하며 LCD 모델은 테스트되지 않았습니다. 모든 기기에서 일정한 프레임 속도를 보장하지 않습니다. RemakeList는 실행하지 않았습니다.",
+          "platforms": "Linux / SteamOS / Apple silicon macOS / 실험적인 iOS·iPadOS / Windows 베타",
+          "stage": "v0.2.0 출시 · Windows 베타 · 실험적인 iOS 사이드로딩"
         },
         "es": {
           "original": "Need for Speed: Most Wanted (2005)",
-          "summary": "Need for Speed: Most Wanted de Xbox 360 en dispositivos modernos con pantalla panorámica. Necesita tu imagen de disco; iOS sigue siendo experimental.",
-          "requirements": "Aporta tus archivos obtenidos legalmente que correspondan a: Xbox 360 · Need for Speed: Most Wanted 2005 · owned disc image. El contenido comercial es independiente y RemakeList no lo proporciona.",
-          "availability": "Se enlazan paquetes de escritorio para Linux/SteamOS y Mac. iPhone y iPad usan una instalación lateral experimental; comprueba los requisitos de cada versión.",
-          "platforms": "Linux / macOS / iOS / iPadOS",
-          "stage": "Vista previa · requiere juego original"
+          "summary": "Ejecuta tu propio Need for Speed: Most Wanted de Xbox 360 en dispositivos modernos, con pantalla panorámica, pantalla dividida y opciones de imagen. La instalación externa en iPhone y iPad sigue siendo experimental, y Windows está en beta.",
+          "requirements": "Aporta tu propia ISO, XISO o carpeta extraída de Most Wanted para Xbox 360, de Estados Unidos NTSC-U o de Europa PAL en español, obtenida legalmente. No utiliza Title Update; no admite otras regiones, Games on Demand ni la edición de PC. Reserva unos 7,2 GB. Windows y Linux x64 requieren AVX2 y Vulkan 1.2; Mac necesita Apple silicon y macOS 15+; iOS/iPadOS requieren 17+, un chip de clase A15 o posterior, mando o teclado y tu propia firma para instalación externa.",
+          "availability": "La versión principal v0.2.0 ofrece paquetes para SteamOS/Linux x86-64, Steam Frame ARM64 y Mac con Apple silicon, además de una IPA experimental para iOS. Windows utiliza la versión preliminar independiente v0.2.0-windows-beta.2; no hay versión Android. Las dos arquitecturas de SteamOS no son intercambiables. El autor probó la beta de Windows en una selección limitada de equipos con gráficos integrados Intel. La propia IPA adjunta para iOS no se ha instalado en un dispositivo; las pruebas del autor usaron compilaciones firmadas con Xcode, y los permisos de firma o los límites de memoria pueden impedir la ejecución mediante instalación externa. La app de Mac no está notarizada; macOS 15 solo se probó en una máquina virtual. Steam Frame muestra una pantalla plana, no VR; el paquete ARM64 no se ha probado en otros dispositivos Linux. Configura Steam Deck OLED a 60 Hz; el modelo LCD no se ha probado. No se promete una tasa de fotogramas universal. RemakeList no lo ha ejecutado.",
+          "platforms": "Linux / SteamOS / macOS Apple silicon / iOS·iPadOS experimentales / Windows beta",
+          "stage": "v0.2.0 publicada · Windows beta · Instalación externa experimental en iOS"
         }
       },
       "start": "download_with_original_assets",
       "start_url": "https://github.com/speedbreakerproject/speedbreaker/releases",
-      "code_license": "GPL-3.0-or-later authored code; original game content excluded",
+      "code_license": "Project-authored code is GPL-3.0-or-later; bundled libraries retain their own licenses, and original game content is excluded.",
       "code_license_url": "https://github.com/speedbreakerproject/speedbreaker#readme",
       "code_license_sources": [
         "https://github.com/speedbreakerproject/speedbreaker#readme"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-19",
+      "source_reviewed_at": "2026-10-27",
       "official_url": "https://github.com/speedbreakerproject/speedbreaker",
       "documentation_url": "https://github.com/speedbreakerproject/speedbreaker#readme",
       "site_url": "https://remakelist.com/remakes/speedbreaker/",
@@ -5672,52 +5672,52 @@
           "original": "Richman 4",
           "summary": "An unofficial Richman 4 recreation for computers and phones, with high-resolution redraws, property trading, stocks, cards and online party play.",
           "requirements": "Running from source requires the author's separately supplied rich4-assets.tar. It contains material derived from the original game, high-resolution redraws, maps and sounds. These assets are excluded from GPL and restricted by the author to private use. Packaging scripts bundle assets into the apps, but release package contents were not independently inspected. Do not treat a free download as permission to redistribute the artwork or original game material.",
-          "availability": "v0.6.6 provides a Windows ZIP, macOS DMG, Android APK and unsigned iOS IPA. The author states Intel and Apple Silicon support on Mac. iOS requires your own signing; the macOS app is not notarized and the Android APK uses debug signing. No public browser demo was verified. RemakeList has not installed or played these packages.",
+          "availability": "v0.7.9 provides a Windows ZIP, a Mac DMG supporting Intel and Apple silicon, an Android APK and an unsigned iOS IPA. It fixes missing broadcasting-station news and audio in the Jiqing Suiyue map after returning from the background. iOS requires self-signing. No public browser demo was verified; RemakeList has not installed or run it. The iOS package is unsigned and requires self-signing. Earlier packaging documentation described an unnotarized macOS app and debug-signed Android APK; this review did not recheck v0.7.9 signatures or package contents. Extracted original-game material and redraws remain outside GPL, and the author’s private-use statement does not establish permission from the original rights holder. RemakeList has not installed or run it.",
           "platforms": "Windows / macOS / Android / iOS",
-          "stage": "Public release v0.6.6 · installation and asset restrictions apply"
+          "stage": "v0.7.9 metadata updated · setup and asset restrictions apply"
         },
         "zh-CN": {
           "original": "大富翁4",
           "summary": "面向电脑与手机的非官方《大富翁4》重制，加入高清重绘，保留地产、股票、卡片玩法，并提供派对联机。",
           "requirements": "源码运行需要作者另行提供的 rich4-assets.tar，包含原版相关素材、高清重绘、地图与音效。这些素材不适用 GPL，作者限定仅供私人使用。打包脚本会将素材装入应用，但本站未独立检查发行包内容；免费下载不代表可以自由再分发美术或原游戏素材。",
-          "availability": "v0.6.6 提供 Windows ZIP、macOS DMG、Android APK 和未签名 iOS IPA；作者说明 Mac 支持 Intel 与 Apple Silicon。iOS 需自行签名，macOS 应用未经公证，Android APK 使用 debug 签名。未核到公开浏览器试玩；本站未安装或运行这些发行包。",
+          "availability": "v0.7.9 提供 Windows ZIP、支持 Intel 与 Apple 芯片的 Mac DMG、Android APK 和未签名 iOS IPA；修复手机从后台返回后“激情岁月”广播站新闻与声音异常。iOS 需自行签名；未核到公开浏览器试玩，本站未安装或运行。 iOS 发行包未签名，需自行签名。此前打包文档说明 macOS 未公证、Android 使用 debug 签名，本轮未复核 v0.7.9 的具体签名和包内内容。原作提取素材与高清重绘仍不在 GPL 内，作者的私人使用声明不等于原权利人授权。本站未安装或运行。",
           "platforms": "Windows / macOS / Android / iOS",
-          "stage": "公开发行 v0.6.6 · 安装与素材另有限制"
+          "stage": "v0.7.9 资料已更新 · 安装与素材限制待注意"
         },
         "ja": {
           "original": "Richman 4（大富翁4）",
           "summary": "PCとスマートフォン向けの非公式『Richman 4（大富翁4）』リメイク。高解像度で描き直したグラフィックを採用し、不動産取引、株式、カード、オンラインパーティープレイに対応。",
           "requirements": "ソースからの実行には、作者が別途提供する rich4-assets.tar が必要です。原作由来の素材、高解像度の描き直し、マップ、音声が含まれます。これらの素材は GPL の対象外で、作者により私的使用に限定されています。パッケージ作成スクリプトは素材をアプリに同梱しますが、配布パッケージの内容は独自に検査していません。無料でダウンロードできても、アートワークや原作素材の再配布が許可されるわけではありません。",
-          "availability": "v0.6.6 では Windows ZIP、macOS DMG、Android APK、未署名の iOS IPA を配布。作者によると Mac は Intel と Apple Silicon に対応。iOS は自分で署名する必要があり、macOS アプリは未公証、Android APK はデバッグ署名です。公開ブラウザー体験版は確認できていません。RemakeList はこれらのパッケージをインストール・プレイしていません。",
+          "availability": "v0.7.9 は Windows ZIP、Intel・Apple Silicon 対応の Mac DMG、Android APK、未署名の iOS IPA を提供します。バックグラウンドから復帰した後、Jiqing Suiyue マップの放送局ニュースと音声が欠ける問題を修正します。iOS は自分での署名が必要です。公開ブラウザーデモは確認されていません。以前のパッケージ資料では macOS アプリは未公証、Android APK はデバッグ署名とされていましたが、今回の確認では v0.7.9 の署名やパッケージ内容を再検査していません。抽出された原作素材と描き直した画像は引き続き GPL の対象外です。作者の私的利用の説明は、原作権利者の許諾が得られていることを示しません。RemakeList ではインストールや実行を行っていません。",
           "platforms": "Windows / macOS / Android / iOS",
-          "stage": "公開リリース v0.6.6 · インストールと素材に個別の制限あり"
+          "stage": "v0.7.9 の情報を更新 · セットアップと素材の制限あり"
         },
         "ko": {
           "original": "Richman 4（大富翁4）",
           "summary": "PC와 스마트폰용 비공식 『Richman 4（大富翁4）』 리메이크. 고해상도로 다시 그린 그래픽과 함께 부동산 거래, 주식, 카드, 온라인 파티 플레이를 제공합니다.",
           "requirements": "소스에서 실행하려면 개발자가 별도로 제공하는 rich4-assets.tar가 필요합니다. 원작 게임에서 파생된 자료, 고해상도로 다시 그린 그래픽, 지도, 사운드가 포함됩니다. 이 에셋은 GPL 적용 대상이 아니며 개발자가 사적 이용으로 제한합니다. 패키징 스크립트는 에셋을 앱에 포함하지만, 배포 패키지의 내용은 독립적으로 검사하지 않았습니다. 무료 다운로드가 아트워크나 원작 게임 자료의 재배포를 허용한다는 뜻은 아닙니다.",
-          "availability": "v0.6.6은 Windows ZIP, macOS DMG, Android APK, 서명되지 않은 iOS IPA를 제공합니다. 개발자는 Mac에서 Intel과 Apple Silicon을 지원한다고 설명합니다. iOS는 직접 서명해야 하며, macOS 앱은 공증되지 않았고 Android APK는 디버그 서명을 사용합니다. 공개 브라우저 체험판은 확인되지 않았습니다. RemakeList는 이 패키지들을 설치하거나 플레이하지 않았습니다.",
+          "availability": "v0.7.9는 Windows ZIP, Intel과 Apple silicon을 지원하는 Mac DMG, Android APK와 서명되지 않은 iOS IPA를 제공합니다. 백그라운드에서 복귀한 뒤 Jiqing Suiyue 맵의 방송국 뉴스와 오디오가 누락되는 문제를 수정합니다. iOS는 직접 서명해야 합니다. 공개 브라우저 데모는 확인되지 않았습니다. 이전 패키징 문서는 공증되지 않은 macOS 앱과 디버그 서명된 Android APK를 설명했으며, 이번 검토에서 v0.7.9의 서명이나 패키지 내용은 다시 확인하지 않았습니다. 추출한 원작 게임 자료와 다시 그린 이미지에는 GPL이 적용되지 않으며, 제작자의 개인 사용 설명만으로 원저작권자의 허가가 입증되지는 않습니다. RemakeList는 설치하거나 실행하지 않았습니다.",
           "platforms": "Windows / macOS / Android / iOS",
-          "stage": "공개 릴리스 v0.6.6 · 설치 및 에셋에 별도 제한 적용"
+          "stage": "v0.7.9 메타데이터 업데이트 · 설치 및 에셋 제한 적용"
         },
         "es": {
           "original": "Richman 4",
           "summary": "Una recreación no oficial de Richman 4 para ordenadores y móviles, con gráficos redibujados en alta resolución, compraventa de propiedades, bolsa, cartas y partidas de grupo en línea.",
           "requirements": "Ejecutar el código fuente requiere rich4-assets.tar, que el autor proporciona por separado. Contiene material derivado del juego original, gráficos redibujados en alta resolución, mapas y sonidos. Estos recursos quedan excluidos de la GPL y el autor los restringe al uso privado. Los scripts de empaquetado incluyen los recursos en las aplicaciones, pero no se ha inspeccionado de forma independiente el contenido de los paquetes publicados. Una descarga gratuita no implica permiso para redistribuir las ilustraciones ni el material del juego original.",
-          "availability": "v0.6.6 ofrece un ZIP para Windows, un DMG para macOS, un APK para Android y un IPA sin firmar para iOS. El autor declara compatibilidad con Intel y Apple Silicon en Mac. iOS requiere que firmes la aplicación por tu cuenta; la aplicación de macOS no está notarizada y el APK de Android utiliza una firma de depuración. No se ha verificado ninguna demo pública para navegador. RemakeList no ha instalado estos paquetes ni ha probado el juego.",
+          "availability": "v0.7.9 ofrece un ZIP para Windows, un DMG para Mac compatible con Intel y Apple silicon, una APK para Android y una IPA sin firmar para iOS. Corrige la ausencia de noticias de la emisora y de audio en el mapa Jiqing Suiyue al volver del segundo plano. iOS requiere que firmes la app. No se ha verificado una demostración pública en el navegador; RemakeList no lo ha instalado ni ejecutado. El paquete iOS no está firmado y requiere firma propia. Documentación anterior describía una app macOS sin notarizar y una APK Android con firma de depuración; esta revisión no volvió a comprobar las firmas ni el contenido de los paquetes v0.7.9. Los materiales extraídos del juego original y sus redibujados siguen fuera de GPL, y la declaración de uso privado del autor no demuestra permiso del titular original. RemakeList no lo ha instalado ni ejecutado.",
           "platforms": "Windows / macOS / Android / iOS",
-          "stage": "Versión pública v0.6.6 · se aplican restricciones de instalación y uso de recursos"
+          "stage": "Metadatos actualizados a v0.7.9 · Se aplican restricciones de instalación y recursos"
         }
       },
       "start": "download",
-      "start_url": "https://github.com/iam567/rich4-renew-app/releases/latest",
+      "start_url": "https://github.com/iam567/rich4-renew-app/blob/main/README.md",
       "code_license": "GPL-3.0-or-later · code only",
       "code_license_url": "https://github.com/iam567/rich4-renew-app/blob/main/LICENSE",
       "code_license_sources": [
         "https://github.com/iam567/rich4-renew-app/blob/main/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-20",
+      "source_reviewed_at": "2026-10-27",
       "official_url": "https://github.com/iam567/rich4-renew-app",
       "documentation_url": "https://github.com/iam567/rich4-renew-app/blob/main/README.md",
       "site_url": "https://remakelist.com/remakes/rich4-renew/",
@@ -6312,52 +6312,52 @@
           "original": "Project Gotham Racing 4 (Xbox 360)",
           "summary": "A Project Gotham Racing 4 recompilation with a native Direct3D 12 renderer. Runs on Windows or through Proton with your own game and Title Update #2.",
           "requirements": "Supply your own lawfully obtained extracted PGR4 disc and Title Update #2 package or files. The author reports PAL and NTSC disc contents match. No original game data is included.",
-          "availability": "v0.1.2 provides a Windows x64 ZIP. Linux and Steam Deck use Proton; this release is not a native Linux executable. RemakeList has not tested gameplay or performance. Requires the supported game/update combination and graphics configuration. Compatibility and frame rate depend on hardware and Proton where used; no universal Steam Deck frame-rate claim is made.",
+          "availability": "v0.2.1 provides a Windows x64 ZIP. Linux and Steam Deck use Proton; this release is not a native Linux executable. RemakeList has not tested gameplay or performance. Requires the supported game/update combination and graphics configuration. Compatibility and frame rate depend on hardware and Proton where used; no universal Steam Deck frame-rate claim is made.",
           "platforms": "Windows x64 / Linux and Steam Deck via Proton",
-          "stage": "v0.1.2 · Early port · original files required"
+          "stage": "v0.2.1 · Early port · original files required"
         },
         "zh-CN": {
           "original": "世界街头赛车 4（Xbox 360）",
           "summary": "为《世界街头赛车 4》重编译版本提供原生 Direct3D 12 渲染器；在 Windows 或 Proton 下运行，需自备游戏与 Title Update #2。",
           "requirements": "需自备合法取得并提取后的 PGR4 光盘，以及 Title Update #2 包或文件。作者称 PAL 与 NTSC 光盘内容一致；项目不含原版游戏数据。",
-          "availability": "v0.1.2 提供 Windows x64 ZIP；Linux 与 Steam Deck 使用 Proton，这个发行包并非原生 Linux 程序。本站未验证游玩或性能。 需使用受支持的游戏／更新组合和图形配置；兼容性及帧率取决于硬件，并在适用时取决于 Proton，不保证 Steam Deck 的普遍帧率。",
+          "availability": "v0.2.1 提供 Windows x64 ZIP；Linux 与 Steam Deck 使用 Proton，这个发行包并非原生 Linux 程序。本站未验证游玩或性能。 需使用受支持的游戏／更新组合和图形配置；兼容性及帧率取决于硬件，并在适用时取决于 Proton，不保证 Steam Deck 的普遍帧率。",
           "platforms": "Windows x64 / Linux、Steam Deck 通过 Proton",
-          "stage": "v0.1.2 · 早期移植 · 需原版文件"
+          "stage": "v0.2.1 · 早期移植 · 需原版文件"
         },
         "ja": {
           "original": "Project Gotham Racing 4 (Xbox 360)",
           "summary": "ネイティブ Direct3D 12 レンダラーを備えた Project Gotham Racing 4 の再コンパイル版。自分で用意したゲームと Title Update #2 を使い、Windows または Proton 経由で動作します。",
           "requirements": "合法的に入手して抽出した PGR4 ディスクと Title Update #2 のパッケージまたはファイルを用意してください。作者によると PAL と NTSC のディスク内容は一致します。原作ゲームデータは含まれません。",
-          "availability": "v0.1.2 は Windows x64 ZIP を提供します。Linux と Steam Deck では Proton を使い、このリリースはネイティブ Linux 実行ファイルではありません。RemakeList ではプレイや性能を検証していません。 対応するゲーム／更新の組み合わせと描画設定が必要です。互換性とフレームレートはハードウェアおよび使用する Proton に依存し、Steam Deck での一定のフレームレートは保証されません。",
+          "availability": "v0.2.1 は Windows x64 ZIP を提供します。Linux と Steam Deck では Proton を使うため、この配布物は Linux ネイティブ実行ファイルではありません。RemakeList ではプレイや性能を検証していません。対応するゲームと更新データの組み合わせ、および描画設定が必要です。互換性やフレームレートはハードウェアと、使用する場合は Proton に依存します。Steam Deck 全般で一定のフレームレートを保証するものではありません。",
           "platforms": "Windows x64／Linux・Steam Deck は Proton 経由",
-          "stage": "v0.1.2 · 初期の移植 · 原作ファイルが必要"
+          "stage": "v0.2.1 · 初期の移植 · 原作ファイルが必要"
         },
         "ko": {
           "original": "Project Gotham Racing 4 (Xbox 360)",
           "summary": "네이티브 Direct3D 12 렌더러를 갖춘 Project Gotham Racing 4 재컴파일 버전입니다. 직접 준비한 게임과 Title Update #2를 사용해 Windows 또는 Proton으로 실행합니다.",
           "requirements": "합법적으로 취득하고 추출한 PGR4 디스크와 Title Update #2 패키지 또는 파일을 준비해야 합니다. 제작자는 PAL과 NTSC 디스크 내용이 같다고 설명합니다. 원작 게임 데이터는 포함되지 않습니다.",
-          "availability": "v0.1.2는 Windows x64 ZIP을 제공합니다. Linux와 Steam Deck에서는 Proton을 사용하며 이 릴리스는 네이티브 Linux 실행 파일이 아닙니다. RemakeList에서는 플레이나 성능을 테스트하지 않았습니다. 지원되는 게임/업데이트 조합과 그래픽 설정이 필요합니다. 호환성과 프레임 속도는 하드웨어 및 해당하는 경우 Proton에 따라 달라지며 Steam Deck의 보편적인 프레임 속도를 보장하지 않습니다.",
+          "availability": "v0.2.1은 Windows x64 ZIP을 제공합니다. Linux와 Steam Deck에서는 Proton을 사용하며, 이 릴리스는 Linux 네이티브 실행 파일이 아닙니다. RemakeList는 게임 플레이나 성능을 테스트하지 않았습니다. 지원되는 게임·업데이트 조합과 그래픽 설정이 필요합니다. 호환성과 프레임 속도는 하드웨어 및 Proton 사용 환경에 따라 달라지며, 모든 Steam Deck에서 일정한 프레임 속도를 보장하지 않습니다.",
           "platforms": "Windows x64 / Linux 및 Steam Deck은 Proton 사용",
-          "stage": "v0.1.2 · 초기 포트 · 원작 파일 필요"
+          "stage": "v0.2.1 · 초기 포트 · 원본 파일 필요"
         },
         "es": {
           "original": "Project Gotham Racing 4 (Xbox 360)",
           "summary": "Una recompilación de Project Gotham Racing 4 con renderizador nativo Direct3D 12. Funciona en Windows o mediante Proton con tu propio juego y Title Update #2.",
           "requirements": "Aporta los datos extraídos de tu propio disco de PGR4 obtenido legalmente, junto con el paquete o los archivos de Title Update #2. Según el autor, el contenido de los discos PAL y NTSC coincide. No se incluyen datos del juego original.",
-          "availability": "v0.1.2 proporciona un ZIP para Windows x64. Linux y Steam Deck utilizan Proton; esta versión no es un ejecutable nativo de Linux. RemakeList no ha probado la jugabilidad ni el rendimiento. Requiere la combinación compatible del juego y la actualización, y una configuración gráfica adecuada. La compatibilidad y los fotogramas por segundo dependen del hardware y, cuando se utiliza, de Proton; no se promete una cifra universal para Steam Deck.",
+          "availability": "v0.2.1 proporciona un ZIP para Windows x64. Linux y Steam Deck utilizan Proton; esta versión no es un ejecutable nativo de Linux. RemakeList no ha probado la jugabilidad ni el rendimiento. Requiere la combinación compatible del juego y la actualización, y una configuración gráfica adecuada. La compatibilidad y los fotogramas por segundo dependen del hardware y, cuando se utiliza, de Proton; no se promete una cifra universal para Steam Deck.",
           "platforms": "Windows x64 / Linux y Steam Deck mediante Proton",
-          "stage": "v0.1.2 · Adaptación temprana · Requiere archivos originales"
+          "stage": "v0.2.1 · Adaptación temprana · Requiere archivos originales"
         }
       },
       "start": "download_with_original_assets",
-      "start_url": "https://github.com/shaunsingh/pgr4-native/releases/tag/v0.1.2",
+      "start_url": "https://github.com/shaunsingh/pgr4-native/releases/tag/v0.2.1",
       "code_license": "MIT for project code; original game content and third-party components retain their own rights and terms.",
       "code_license_url": "https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE",
       "code_license_sources": [
         "https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE"
       ],
       "code_status": "open",
-      "source_reviewed_at": "2026-10-26",
+      "source_reviewed_at": "2026-10-27",
       "official_url": "https://github.com/shaunsingh/pgr4-native",
       "documentation_url": "https://github.com/shaunsingh/pgr4-native/blob/main/README.md",
       "site_url": "https://remakelist.com/remakes/pgr4-native/",
@@ -6493,7 +6493,199 @@
       "original_files": "original",
       "author": "anishchandra24",
       "author_url": "https://github.com/anishchandra24"
+    },
+    {
+      "id": "cps2-recomp",
+      "name": "CPS-2 Recomp",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Capcom CPS-2 / CPS-1 arcade games",
+          "summary": "A collection of unofficial CPS-2 and CPS-1 arcade ports with one launcher, fighting-game training tools and three-player beat-’em-ups. Requires the exact supported ROM sets from your own arcade boards.",
+          "requirements": "Supply the exact supported arcade ROM revision from a board you own, with its key file for CPS-2 games. The launcher verifies checksums and rejects other regions or revisions; some sets also need their parent set. No game files or keys are supplied.",
+          "availability": "v0.4.0-beta.6 provides Windows x64, macOS and Linux x86_64 archives. macOS supports Apple Silicon and Intel; the Linux package is also the SteamOS/Steam Deck route. The README describes Linux ARM64 support, but this release has no ARM64 download. It remains a beta despite GitHub’s prerelease flag being off. Beta with limited machine and controller coverage. The author reports start-to-ending checks for fighting games, while the newer beat-’em-ups have only early-stage scripted-play coverage. This is not independent full-game testing.",
+          "platforms": "Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / SteamOS",
+          "stage": "v0.4.0-beta.6 · Beta · exact original ROM sets required"
+        },
+        "zh-CN": {
+          "original": "Capcom CPS-2／CPS-1 街机游戏",
+          "summary": "将多款 CPS-2、CPS-1 街机游戏移植到桌面，提供统一启动器、格斗训练工具和三人清版动作玩法；需自备街机基板对应的指定 ROM 版本。",
+          "requirements": "需自备所持街机基板对应的指定 ROM 版本，CPS-2 游戏还需对应密钥文件。启动器校验文件，不接受其他区域或修订版；部分集合还需父集合。项目不提供游戏文件或密钥。",
+          "availability": "v0.4.0-beta.6 提供 Windows x64、macOS 和 Linux x86_64 压缩包。macOS 支持 Apple Silicon 与 Intel，Linux 包也用于 SteamOS／Steam Deck。README 提到 Linux ARM64 支持，但本次发行没有 ARM64 下载包。虽然 GitHub 未勾选预发布，项目仍明确处于 Beta。 Beta 阶段，机器与控制器测试范围有限。作者称格斗游戏已检查至结局，新加入的清版动作游戏仅覆盖前期关卡的脚本操作；这不等于本站完成全流程实测。",
+          "platforms": "Windows 10/11 x64 · macOS 13+（Apple Silicon／Intel）· Linux x86_64／SteamOS",
+          "stage": "v0.4.0-beta.6 · Beta · 需指定原版 ROM"
+        },
+        "ja": {
+          "original": "Capcom CPS-2／CPS-1 アーケードゲーム",
+          "summary": "CPS-2 と CPS-1 の非公式アーケード移植集。共通ランチャー、格闘ゲームのトレーニング機能、3人同時プレイのベルトスクロールアクションを備えます。所有するアーケード基板から用意した、指定バージョンの ROM セットが必要です。",
+          "requirements": "所有するアーケード基板から、指定されたリビジョンの ROM セットを用意してください。CPS-2 のゲームには対応する鍵ファイルも必要です。ランチャーはチェックサムを検証し、他の地域版やリビジョンを受け付けません。一部のセットには親セットも必要です。ゲームファイルや鍵ファイルは提供されません。",
+          "availability": "v0.4.0-beta.6 は Windows x64、macOS、Linux x86_64 のアーカイブを提供します。macOS は Apple Silicon と Intel に対応し、SteamOS／Steam Deck では Linux パッケージを使用します。README には Linux ARM64 対応の記載がありますが、このリリースに ARM64 のダウンロードはありません。GitHub のプレリリース設定がオフでも、プロジェクトはベータ版です。確認済みの機種やコントローラーは限られます。作者は格闘ゲームをエンディングまで確認したとしていますが、新しく追加されたベルトスクロールアクションの確認範囲は、スクリプト操作による序盤のステージまでです。RemakeList が独自に全編をプレイして確認したものではありません。",
+          "platforms": "Windows 10/11 x64 · macOS 13以降（Apple Silicon／Intel）· Linux x86_64／SteamOS",
+          "stage": "v0.4.0-beta.6 · ベータ版 · 指定の原作 ROM セットが必要"
+        },
+        "ko": {
+          "original": "Capcom CPS-2 / CPS-1 아케이드 게임",
+          "summary": "여러 CPS-2·CPS-1 아케이드 게임을 데스크톱으로 옮긴 비공식 프로젝트입니다. 통합 런처, 격투 게임 연습 도구와 3인용 벨트스크롤 액션을 제공하며, 소유한 아케이드 기판에서 얻은 지정 버전의 ROM 세트가 필요합니다.",
+          "requirements": "소유한 아케이드 기판에서 얻은 정확한 지원 버전의 ROM 세트를 준비해야 하며, CPS-2 게임에는 해당 키 파일도 필요합니다. 런처가 체크섬을 확인하므로 다른 지역판이나 수정 버전은 사용할 수 없습니다. 일부 세트는 부모 ROM 세트도 필요합니다. 게임 파일과 키는 제공하지 않습니다.",
+          "availability": "v0.4.0-beta.6은 Windows x64, macOS, Linux x86_64 압축 파일을 제공합니다. macOS는 Apple Silicon과 Intel을 지원하며, SteamOS·Steam Deck에서도 Linux 패키지를 사용합니다. README에는 Linux ARM64 지원이 나와 있지만 이번 릴리스에는 ARM64 다운로드가 없습니다. GitHub의 사전 출시 표시가 꺼져 있어도 프로젝트는 베타 단계입니다. 기기와 컨트롤러 테스트 범위가 제한적입니다. 제작자는 격투 게임을 시작부터 엔딩까지 확인했다고 설명하지만, 새로 추가된 벨트스크롤 액션 게임은 초기 스테이지의 스크립트 플레이만 확인했습니다. RemakeList가 전체 게임을 직접 테스트한 것은 아닙니다.",
+          "platforms": "Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / SteamOS",
+          "stage": "v0.4.0-beta.6 · 베타 · 지정된 원작 ROM 세트 필요"
+        },
+        "es": {
+          "original": "Juegos arcade de Capcom CPS-2 / CPS-1",
+          "summary": "Una colección de adaptaciones no oficiales de juegos arcade CPS-2 y CPS-1, con un único lanzador, herramientas de entrenamiento para juegos de lucha y beat ’em ups para tres jugadores. Requiere los conjuntos exactos de ROM compatibles de tus propias placas arcade.",
+          "requirements": "Aporta la revisión exacta de ROM compatible de una placa arcade que poseas y, para los juegos CPS-2, su archivo de clave. El lanzador comprueba las sumas de verificación y rechaza otras regiones o revisiones; algunos conjuntos también necesitan su conjunto principal. No se proporcionan archivos de juegos ni claves.",
+          "availability": "v0.4.0-beta.6 ofrece archivos comprimidos para Windows x64, macOS y Linux x86_64. macOS admite Apple Silicon e Intel; el paquete de Linux también es la opción para SteamOS y Steam Deck. La README describe compatibilidad con Linux ARM64, pero esta versión no incluye una descarga ARM64. Sigue siendo una beta aunque GitHub no tenga activada la marca de versión preliminar. Las pruebas abarcan un número limitado de equipos y mandos. El autor declara haber comprobado los juegos de lucha desde el inicio hasta el final; los beat ’em ups más recientes solo tienen comprobaciones mediante acciones programadas en las primeras fases. Esto no equivale a pruebas independientes del juego completo.",
+          "platforms": "Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / SteamOS",
+          "stage": "v0.4.0-beta.6 · Beta · Requiere conjuntos exactos de ROM originales"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/tmcleroy/cps2recomp/releases/tag/v0.4.0-beta.6",
+      "code_license": "Project code is GPL-3.0-only; third-party components retain their own notices. This license does not grant rights to Capcom or other rights holders’ game code, ROMs, keys, music or artwork.",
+      "code_license_url": "https://github.com/tmcleroy/cps2recomp/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/tmcleroy/cps2recomp/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-27",
+      "official_url": "https://github.com/tmcleroy/cps2recomp",
+      "documentation_url": "https://github.com/tmcleroy/cps2recomp/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/cps2-recomp/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/cps2-recomp/",
+      "original_files": "original",
+      "author": "tmcleroy",
+      "author_url": "https://github.com/tmcleroy"
+    },
+    {
+      "id": "free-riders-recompiled",
+      "name": "Free Riders Recompiled",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "Sonic Free Riders (Xbox 360)",
+          "summary": "An unofficial port of the Xbox 360 Sonic Free Riders with controller and keyboard play without Kinect. It imports game data from your own USA/Europe disc image and remains a work in progress.",
+          "requirements": "Supply your own lawfully acquired USA/Europe Xbox 360 Sonic Free Riders disc image (.iso). The launcher imports the models, textures, audio and movies from it. The author says releases include the recompiled program, not the original game-data files; the project’s GPL license does not license SEGA’s content.",
+          "availability": "v0.10.35 provides Windows x64, Linux x64, Android arm64, macOS arm64 and iOS IPA packages. Windows 10/11 and Linux need AVX; graphics require Direct3D 12 or Vulkan 1.2 on Windows, Vulkan 1.2 on Linux. Android needs Android 9+, Vulkan 1.1 and about 2 GB for the installed game; a separate Android 10+ APK is available. Apple builds require macOS 13.3+ on Apple Silicon or iOS 16.3+ with sideloading. Work in progress: many modes remain untested, and Android performance is device-dependent. Apple support remains experimental. The README’s requirements still warn of slow M1 races and no real-device iOS testing, while later release history reports Mac performance and iOS fixes; current compatibility needs independent confirmation. Kinect v2 and broader online play also have limited validation.",
+          "platforms": "Windows / Linux x64 · Android arm64 · experimental macOS Apple Silicon / iOS",
+          "stage": "v0.10.35 · Work in progress · original disc required"
+        },
+        "zh-CN": {
+          "original": "Sonic Free Riders（Xbox 360）",
+          "summary": "Xbox 360《Sonic Free Riders》的非官方移植，无需 Kinect 也能使用手柄或键盘游玩；从自备美版／欧版光盘镜像导入数据，仍在开发中。",
+          "requirements": "需自备合法取得的美版／欧版 Xbox 360《Sonic Free Riders》光盘镜像（.iso），由启动器导入模型、材质、音频和影片。作者说明发行包包含重编译程序，不包含这些原版游戏数据；项目的 GPL 许可不覆盖 SEGA 内容。",
+          "availability": "v0.10.35 提供 Windows x64、Linux x64、Android arm64、macOS arm64 和 iOS IPA。Windows 10／11 与 Linux 需 AVX；Windows 需 Direct3D 12 或 Vulkan 1.2，Linux 需 Vulkan 1.2。Android 需 9+、Vulkan 1.1 及约 2 GB 游戏安装空间，并另有 Android 10+ APK。Apple 构建需 Apple Silicon 上的 macOS 13.3+，或通过侧载安装的 iOS 16.3+。 仍在开发，许多模式未经完整测试，Android 表现取决于设备。Apple 支持仍属实验阶段：README 系统要求仍提示 M1 比赛较慢、iOS 未真机测试，后续版本历史却记录了 Mac 性能与 iOS 修复；当前兼容性需独立确认。Kinect v2 与更广泛的在线联机也尚缺充分验证。",
+          "platforms": "Windows／Linux x64 · Android arm64 · 实验性 macOS Apple Silicon／iOS",
+          "stage": "v0.10.35 · 开发中 · 需原版光盘"
+        },
+        "ja": {
+          "original": "Sonic Free Riders (Xbox 360)",
+          "summary": "Kinect がなくてもコントローラーやキーボードで遊べる、Xbox 360 版 Sonic Free Riders の非公式移植です。自分で用意した北米／欧州版ディスクイメージからゲームデータを取り込みます。現在も開発中です。",
+          "requirements": "合法的に入手した北米／欧州版 Xbox 360 Sonic Free Riders のディスクイメージ（.iso）を用意してください。ランチャーがそこからモデル、テクスチャ、音声、映像を取り込みます。作者によれば、配布物には再コンパイルしたプログラムが含まれますが、これらの原作ゲームデータは含まれません。プロジェクトの GPL ライセンスは SEGA のコンテンツを許諾するものではありません。",
+          "availability": "v0.10.35 は Windows x64、Linux x64、Android arm64、macOS arm64、iOS IPA のパッケージを提供します。Windows 10/11 と Linux には AVX が必要です。描画には Windows で Direct3D 12 または Vulkan 1.2、Linux で Vulkan 1.2 が必要です。Android は Android 9以降、Vulkan 1.1、ゲームのインストール用に約2 GB の空き容量が必要で、Android 10以降専用の APK もあります。Apple 向けは Apple Silicon 搭載の macOS 13.3以降、またはサイドロード可能な iOS 16.3以降が対象です。開発中のため、多くのモードは未検証で、Android の性能は端末に依存します。Apple 対応は実験段階です。README の動作要件には M1 でのレース速度低下や iOS 実機での未検証が残る一方、その後の更新履歴には Mac の性能改善や iOS の修正が記載されています。現時点の互換性には独立した確認が必要です。Kinect v2 や幅広い環境でのオンラインプレイも検証が限られています。",
+          "platforms": "Windows／Linux x64 · Android arm64 · 実験的な macOS Apple Silicon／iOS 対応",
+          "stage": "v0.10.35 · 開発中 · 原作ディスクが必要"
+        },
+        "ko": {
+          "original": "Sonic Free Riders (Xbox 360)",
+          "summary": "Xbox 360용 Sonic Free Riders의 비공식 이식 프로젝트입니다. Kinect 없이 컨트롤러나 키보드로 플레이할 수 있으며, 직접 준비한 미국·유럽판 디스크 이미지에서 게임 데이터를 가져옵니다. 아직 개발 중입니다.",
+          "requirements": "합법적으로 취득한 미국·유럽판 Xbox 360 Sonic Free Riders 디스크 이미지(.iso)를 직접 준비해야 합니다. 런처가 모델, 텍스처, 오디오와 영상을 가져옵니다. 제작자에 따르면 릴리스에는 재컴파일한 프로그램이 포함되지만 이러한 원작 게임 데이터 파일은 포함되지 않습니다. 프로젝트의 GPL 라이선스는 SEGA 콘텐츠에 대한 권한을 부여하지 않습니다.",
+          "availability": "v0.10.35은 Windows x64, Linux x64, Android arm64, macOS arm64와 iOS IPA 패키지를 제공합니다. Windows 10/11과 Linux에는 AVX가 필요합니다. Windows 그래픽은 Direct3D 12 또는 Vulkan 1.2, Linux는 Vulkan 1.2가 필요합니다. Android는 9 이상, Vulkan 1.1과 게임 설치 공간 약 2GB가 필요하며 Android 10 이상 전용 APK도 있습니다. Apple 빌드는 Apple Silicon의 macOS 13.3 이상 또는 사이드로딩이 가능한 iOS 16.3 이상이 필요합니다. 많은 모드가 충분히 테스트되지 않았고 Android 성능은 기기에 따라 다릅니다. Apple 지원은 실험 단계입니다. README 시스템 요구 사항에는 여전히 M1에서 레이스가 느리고 iOS 실기기 테스트가 없다고 적혀 있으나, 이후 릴리스 기록에는 Mac 성능 개선과 iOS 수정 사항이 나옵니다. 현재 호환성은 별도 확인이 필요합니다. Kinect v2와 더 폭넓은 온라인 플레이도 검증이 제한적입니다.",
+          "platforms": "Windows / Linux x64 · Android arm64 · 실험적 macOS Apple Silicon / iOS",
+          "stage": "v0.10.35 · 개발 중 · 원작 디스크 필요"
+        },
+        "es": {
+          "original": "Sonic Free Riders (Xbox 360)",
+          "summary": "Una adaptación no oficial de Sonic Free Riders de Xbox 360 que permite jugar con mando o teclado sin Kinect. Importa los datos desde tu propia imagen de disco estadounidense o europea y sigue en desarrollo.",
+          "requirements": "Aporta tu propia imagen de disco (.iso) de Sonic Free Riders para Xbox 360, de Estados Unidos o Europa, obtenida legalmente. El lanzador importa de ella modelos, texturas, audio y vídeos. El autor indica que los paquetes incluyen el programa recompilado, pero no los archivos de datos originales; la licencia GPL del proyecto no concede derechos sobre el contenido de SEGA.",
+          "availability": "v0.10.35 ofrece paquetes para Windows x64, Linux x64, Android arm64 y macOS arm64, además de una IPA para iOS. Windows 10/11 y Linux requieren AVX; los gráficos necesitan Direct3D 12 o Vulkan 1.2 en Windows, y Vulkan 1.2 en Linux. Android requiere Android 9+, Vulkan 1.1 y unos 2 GB para el juego instalado; también hay una APK específica para Android 10+. Las versiones Apple requieren macOS 13.3+ con Apple Silicon o iOS 16.3+ con instalación externa. Sigue en desarrollo: muchos modos no se han probado y el rendimiento en Android depende del dispositivo. La compatibilidad con Apple es experimental. Los requisitos de la README aún advierten de carreras lentas en M1 y de la ausencia de pruebas en dispositivos iOS reales, mientras que versiones posteriores registran mejoras de rendimiento en Mac y correcciones para iOS; la compatibilidad actual necesita confirmación independiente. Kinect v2 y el juego en línea en más configuraciones también cuentan con una validación limitada.",
+          "platforms": "Windows / Linux x64 · Android arm64 · macOS Apple Silicon / iOS experimentales",
+          "stage": "v0.10.35 · En desarrollo · Requiere el disco original"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.35",
+      "code_license": "Project code is GPL-3.0-or-later. The original game’s code and data remain SEGA’s and are outside that grant; third-party components and models retain their separate licenses.",
+      "code_license_url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/COPYING",
+      "code_license_sources": [
+        "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/COPYING"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-27",
+      "official_url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled",
+      "documentation_url": "https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/free-riders-recompiled/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/free-riders-recompiled/",
+      "original_files": "original",
+      "author": "YuutaTsubasa",
+      "author_url": "https://github.com/YuutaTsubasa"
+    },
+    {
+      "id": "james-pond-2-recomp",
+      "name": "James Pond 2 Recompiled",
+      "relationship": "static-recompilation",
+      "section": "ports",
+      "localized": {
+        "en": {
+          "original": "James Pond 2: Codename RoboCod (Amiga)",
+          "summary": "A community port of the Amiga James Pond 2 with widescreen, save slots and smoother display motion. Requires your own supported Kixx disk image or WHDLoad installation.",
+          "requirements": "Supply your own lawfully obtained Kixx Amiga re-release as a standard .adf disk image, optionally gzip-compressed as .adz or in a .zip, or a supported WHDLoad installation. The original Millennium copy-protected release, extended ADF, .dms and .ipf images are not supported. No original disk download is provided here.",
+          "availability": "Desktop downloads are v1.0.0 for Windows, macOS and Linux; Steam Deck uses the Linux archive. PS5 has a separate v1.0.2 release and requires a console already able to run homebrew. The v1.0.2 release explicitly leaves other platforms on v1.0.0; it is not a desktop update. This is an early public release, and owning another edition does not make its disk format compatible. PS5 is a separate homebrew target, not a standard console-store release. RemakeList has not installed, played or independently verified full-game compatibility.",
+          "platforms": "Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / Steam Deck · PS5 homebrew",
+          "stage": "Desktop v1.0.0 · PS5 v1.0.2 · original disk required"
+        },
+        "zh-CN": {
+          "original": "James Pond 2: Codename RoboCod（Amiga）",
+          "summary": "Amiga《James Pond 2》的社区移植，加入宽屏、存档槽与更平滑的画面运动；需自备受支持的 Kixx 版磁盘镜像或 WHDLoad 安装文件。",
+          "requirements": "需自备合法取得的 Amiga Kixx 再版标准 .adf 镜像，可使用 gzip 压缩的 .adz 或 .zip 包装，或受支持的 WHDLoad 安装文件。原始 Millennium 加密发行版、扩展 ADF、.dms 与 .ipf 不受支持；本站不提供原盘下载。",
+          "availability": "桌面下载为 v1.0.0，提供 Windows、macOS 与 Linux 包，Steam Deck 使用 Linux 包。PS5 单独更新至 v1.0.2，需要已经能够运行自制软件的主机。v1.0.2 发行说明明确其他平台仍为 v1.0.0，并非桌面更新。 属于早期公开版本，持有其他发行版不代表其磁盘格式可用。PS5 是独立的自制软件目标，不是普通主机商店版本。本站未安装、试玩或独立验证全流程兼容性。",
+          "platforms": "Windows 10/11 x64 · macOS 13+（Apple Silicon／Intel）· Linux x86_64／Steam Deck · PS5 自制软件环境",
+          "stage": "桌面 v1.0.0 · PS5 v1.0.2 · 需原版磁盘"
+        },
+        "ja": {
+          "original": "James Pond 2: Codename RoboCod (Amiga)",
+          "summary": "ワイドスクリーン、セーブスロット、滑らかな画面表示を追加した Amiga 版 James Pond 2 のコミュニティ移植です。自分で用意した対応 Kixx 版ディスクイメージ、または WHDLoad インストールデータが必要です。",
+          "requirements": "合法的に入手した Amiga Kixx 再発売版の標準 .adf ディスクイメージ、または対応する WHDLoad インストールデータを用意してください。.adf は gzip 圧縮した .adz や .zip 内のファイルでも利用できます。初期 Millennium 版のコピー保護付きディスク、拡張 ADF、.dms、.ipf には対応していません。ここでは原作ディスクのダウンロードを提供していません。",
+          "availability": "Windows、macOS、Linux のデスクトップ向けダウンロードは v1.0.0 です。Steam Deck では Linux アーカイブを使用します。PS5 には別途 v1.0.2 があり、すでに自作ソフトを実行できる本体が必要です。v1.0.2 のリリースノートは、他のプラットフォームが v1.0.0 のままであることを明記しています。初期の公開版であり、別の版を所有していても、そのディスク形式が対応しているとは限りません。PS5 版は自作ソフト環境向けで、通常のコンソールストア配信ではありません。RemakeList ではインストールやプレイ、全編の互換性の独自検証を行っていません。",
+          "platforms": "Windows 10/11 x64 · macOS 13以降（Apple Silicon／Intel）· Linux x86_64／Steam Deck · PS5 自作ソフト環境",
+          "stage": "デスクトップ v1.0.0 · PS5 v1.0.2 · 原作ディスクが必要"
+        },
+        "ko": {
+          "original": "James Pond 2: Codename RoboCod (Amiga)",
+          "summary": "Amiga용 James Pond 2를 옮긴 커뮤니티 프로젝트로, 와이드스크린, 저장 슬롯과 더 부드러운 화면 움직임을 제공합니다. 지원하는 Kixx판 디스크 이미지나 WHDLoad 설치 파일을 직접 준비해야 합니다.",
+          "requirements": "합법적으로 취득한 Amiga Kixx 재발매판의 표준 .adf 디스크 이미지 또는 지원하는 WHDLoad 설치 파일을 직접 준비해야 합니다. 이미지는 gzip 압축 .adz나 .zip 형태로도 사용할 수 있습니다. 복사 방지가 적용된 원본 Millennium판, 확장 ADF, .dms와 .ipf는 지원하지 않습니다. 이 사이트는 원본 디스크 다운로드를 제공하지 않습니다.",
+          "availability": "데스크톱용 다운로드는 Windows, macOS, Linux 모두 v1.0.0이며 Steam Deck은 Linux 압축 파일을 사용합니다. PS5에는 별도의 v1.0.2 릴리스가 있으며 이미 홈브루를 실행할 수 있는 콘솔이 필요합니다. v1.0.2 릴리스 노트는 다른 플랫폼이 v1.0.0을 유지한다고 명시하므로 데스크톱 업데이트로 볼 수 없습니다. 초기 공개 버전이며 다른 판본을 소유했다고 해서 그 디스크 형식이 호환되는 것은 아닙니다. PS5는 일반 콘솔 스토어 버전이 아닌 별도의 홈브루 대상입니다. RemakeList는 설치·플레이 또는 전체 게임 호환성의 독립 검증을 수행하지 않았습니다.",
+          "platforms": "Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / Steam Deck · PS5 홈브루 환경",
+          "stage": "데스크톱 v1.0.0 · PS5 v1.0.2 · 원작 디스크 필요"
+        },
+        "es": {
+          "original": "James Pond 2: Codename RoboCod (Amiga)",
+          "summary": "Una adaptación comunitaria de James Pond 2 de Amiga con pantalla panorámica, ranuras de guardado y movimiento visual más fluido. Requiere tu propia imagen de disco Kixx compatible o una instalación WHDLoad.",
+          "requirements": "Aporta tu propia reedición Kixx de Amiga obtenida legalmente, como imagen estándar .adf, opcionalmente comprimida con gzip como .adz o dentro de un .zip, o una instalación WHDLoad compatible. No se admiten la edición original de Millennium con protección anticopia, ADF extendido ni imágenes .dms o .ipf. Aquí no se ofrece ninguna descarga del disco original.",
+          "availability": "Las descargas de escritorio son v1.0.0 para Windows, macOS y Linux; Steam Deck utiliza el archivo de Linux. PS5 tiene una versión v1.0.2 independiente y requiere una consola que ya pueda ejecutar software homebrew. La versión v1.0.2 indica expresamente que las demás plataformas siguen en v1.0.0; no es una actualización para escritorio. Es una primera versión pública y poseer otra edición no hace compatible su formato de disco. PS5 es una plataforma homebrew separada, no una versión de la tienda habitual de la consola. RemakeList no ha instalado, jugado ni verificado de forma independiente la compatibilidad del juego completo.",
+          "platforms": "Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / Steam Deck · PS5 con homebrew",
+          "stage": "Escritorio v1.0.0 · PS5 v1.0.2 · Requiere el disco original"
+        }
+      },
+      "start": "download_with_original_assets",
+      "start_url": "https://github.com/griches/JamesPond2RobocodRecomp/releases/tag/v1.0.0",
+      "code_license": "The project’s own code is GPL-3.0. SDL3, Musashi, fonts and other dependencies retain their separate licenses; the original game’s code, artwork and music are not granted under the project license.",
+      "code_license_url": "https://github.com/griches/JamesPond2RobocodRecomp/blob/main/LICENSE",
+      "code_license_sources": [
+        "https://github.com/griches/JamesPond2RobocodRecomp/blob/main/LICENSE"
+      ],
+      "code_status": "open",
+      "source_reviewed_at": "2026-10-27",
+      "official_url": "https://github.com/griches/JamesPond2RobocodRecomp",
+      "documentation_url": "https://github.com/griches/JamesPond2RobocodRecomp/blob/main/README.md",
+      "site_url": "https://remakelist.com/remakes/james-pond-2-recomp/",
+      "site_url_zh": "https://remakelist.com/zh/remakes/james-pond-2-recomp/",
+      "original_files": "original",
+      "author": "griches",
+      "author_url": "https://github.com/griches"
     }
   ],
-  "content_sha256": "c2d708179f3c58e30ad15311a0f8386579fdcf5a78ed828448f694c400a28ab0"
+  "content_sha256": "97761f4a50d0300fe8db394173f615ba36cfabdcc1e097b4736fc2307be30358"
 }

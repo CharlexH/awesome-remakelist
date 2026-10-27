@@ -28,7 +28,7 @@
 - [디자인·창작 도구](#creative) · 13
 - [일상 도구와 인터페이스 재현](#everyday) · 9
 - [게임 엔진과 게임 재구현](#classic_games) · 26
-- [이식·호환성 프로젝트](#ports) · 53
+- [이식·호환성 프로젝트](#ports) · 56
 
 <img src="assets/overview-ko.svg" alt="목차" width="920">
 
@@ -1155,22 +1155,22 @@ PS1 Rugrats: Search for Reptar를 Rust로 다시 구현한 PC 프로젝트입니
 PC와 스마트폰용 비공식 『Richman 4（大富翁4）』 리메이크. 고해상도로 다시 그린 그래픽과 함께 부동산 거래, 주식, 카드, 온라인 파티 플레이를 제공합니다.
 
 원작 또는 참고 대상: **Richman 4（大富翁4）** · 게임 재구현  
-[다운로드](https://github.com/iam567/rich4-renew-app/releases/latest) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-ko)
+[다운로드](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
 **지원 환경:** Windows / macOS / Android / iOS
 
-**개발 상태:** 공개 릴리스 v0.6.6 · 설치 및 에셋에 별도 제한 적용
+**개발 상태:** v0.7.9 메타데이터 업데이트 · 설치 및 에셋 제한 적용
 
 **준비할 것:** 소스에서 실행하려면 개발자가 별도로 제공하는 rich4-assets.tar가 필요합니다. 원작 게임에서 파생된 자료, 고해상도로 다시 그린 그래픽, 지도, 사운드가 포함됩니다. 이 에셋은 GPL 적용 대상이 아니며 개발자가 사적 이용으로 제한합니다. 패키징 스크립트는 에셋을 앱에 포함하지만, 배포 패키지의 내용은 독립적으로 검사하지 않았습니다. 무료 다운로드가 아트워크나 원작 게임 자료의 재배포를 허용한다는 뜻은 아닙니다.
 
-**현재 이용할 수 있는 것:** v0.6.6은 Windows ZIP, macOS DMG, Android APK, 서명되지 않은 iOS IPA를 제공합니다. 개발자는 Mac에서 Intel과 Apple Silicon을 지원한다고 설명합니다. iOS는 직접 서명해야 하며, macOS 앱은 공증되지 않았고 Android APK는 디버그 서명을 사용합니다. 공개 브라우저 체험판은 확인되지 않았습니다. RemakeList는 이 패키지들을 설치하거나 플레이하지 않았습니다.
+**현재 이용할 수 있는 것:** v0.7.9는 Windows ZIP, Intel과 Apple silicon을 지원하는 Mac DMG, Android APK와 서명되지 않은 iOS IPA를 제공합니다. 백그라운드에서 복귀한 뒤 Jiqing Suiyue 맵의 방송국 뉴스와 오디오가 누락되는 문제를 수정합니다. iOS는 직접 서명해야 합니다. 공개 브라우저 데모는 확인되지 않았습니다. 이전 패키징 문서는 공증되지 않은 macOS 앱과 디버그 서명된 Android APK를 설명했으며, 이번 검토에서 v0.7.9의 서명이나 패키지 내용은 다시 확인하지 않았습니다. 추출한 원작 게임 자료와 다시 그린 이미지에는 GPL이 적용되지 않으며, 제작자의 개인 사용 설명만으로 원저작권자의 허가가 입증되지는 않습니다. RemakeList는 설치하거나 실행하지 않았습니다.
 
 **코드 라이선스:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
 **제작자:** iam567 (Liang)  
-[공식 문서](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · 자료 확인일: 2026-10-20
+[공식 문서](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -1205,7 +1205,7 @@ Sega Model 3 아케이드 에뮬레이터 Supermodel의 Vulkan 강화 포크. �
 
 ### [D2R Mobile](https://github.com/jhaizhou-ops/d2r-mobile)
 
-내 iPhone·iPad·Mac에서 D2R Mobile을 쓸 수 있을까요? 필요한 Switch 게임 파일, 기기 호환성, 설치 순서를 먼저 확인하세요.
+직접 보유한 Switch Diablo II: Resurrected와 Reign of the Warlock 파일을 Apple 기기, Android 및 HarmonyOS에서 사용하기 위한 호환 계층입니다. 플랫폼별 준비가 필요합니다.
 
 원작 또는 참고 대상: **Diablo II: Resurrected** · 플랫폼 호환 계층  
 [직접 빌드 · 게임 파일 직접 준비](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/d2r-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=d2r-mobile-ko)
@@ -1213,17 +1213,17 @@ Sega Model 3 아케이드 에뮬레이터 Supermodel의 Vulkan 강화 포크. �
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** iPhone / iPad / Mac · A14 / M1+
+**지원 환경:** iPhone / iPad / Apple silicon Mac / Android ARM64 / HarmonyOS NEXT
 
-**개발 상태:** 직접 패키지 제작 및 본인 Switch 게임 파일 필요
+**개발 상태:** v2.0.1 · 직접 보유한 Switch 파일 · 플랫폼별 가져오기 또는 빌드
 
-**준비할 것:** 직접 구매한 Switch판 Diablo II: Resurrected와 Reign of the Warlock 확장팩이 필요합니다. 콘솔 버전은 1.0.34.0이며 도구에서는 3.3.94012로 표시합니다. PC·PlayStation·Xbox 파일로 대신할 수 없습니다. 본인 게임에서 준비한 실행 프로그램(ExeFS)과 그래픽·소리 등의 리소스(RomFS)가 필요합니다. 구매 또는 계정 로그인만으로 파일이 생기지는 않습니다. RemakeList는 게임 파일, 키, 설치 패키지를 제공하지 않습니다. 지원 기기와 작업용 컴퓨터가 필요합니다. 기기에 리소스 약 5.6 GB, 구형 기기 텍스처 약 1 GB와 앱 공간을 확보하세요. 무료 Apple ID는 7일마다 재서명해야 하며 iCloud 저장 동기화가 없습니다.
+**준비할 것:** 합법적으로 구매한 Switch 기본 게임과 Reign of the Warlock을 콘솔 버전 1.0.34.0으로 업데이트한 ExeFS·RomFS 파일을 직접 준비해야 합니다. 도구에서는 이 버전을 3.3.94012로 표시합니다. PC나 다른 콘솔의 파일로 대체할 수 없습니다. 리소스는 약 5.6 GB이며 구형 Apple 칩에는 직접 보유한 파일에서 생성한 약 1 GB의 추가 텍스처 팩이 필요합니다. Apple은 최소 A14·M1이 필요합니다. iOS 26 이상과 18–25, macOS 26 이상과 15–25에 맞춰 표준 빌드 또는 구형 API 빌드를 선택하세요. Android에는 ARM64, Android 12 이상과 Vulkan 1.1이 필요합니다. HarmonyOS NEXT에는 개발자 계정, 서명 도구와 직접 준비한 런타임 팩이 필요합니다.
 
-**현재 이용할 수 있는 것:** 시스템에 맞는 빌드를 선택하세요. iOS/iPadOS 26 이상은 표준 빌드, 18–25는 구형 인터페이스 빌드입니다. Apple silicon Mac은 macOS 26 이상에서 표준, 15–25에서 구형 인터페이스 빌드를 사용합니다. 최소 칩 조건 A14/M1 충족이 해당 모델의 실기 검증을 뜻하지는 않습니다. 제작자의 서명 안내를 따르세요. 기본 경로는 Mac/Xcode입니다. 제작자는 Windows에서 패키지를 만든 뒤 Mac에서 서명해 iPhone 플레이를 검증했지만 Sideloadly/AltStore 서명과 Linux는 미검증입니다. 게임 파생 내용이 포함된 패키지는 개인용으로만 쓰고 배포하지 마세요.
+**현재 이용할 수 있는 것:** v2.0.1은 Android APK, 서명되지 않은 HarmonyOS HAP와 iOS 빌드 입력용 ZIP 두 개를 제공합니다. Android에는 컴퓨터에서 준비한 가져오기 팩도 필요하며, 이번 업데이트는 v2.0.0 팩과 저장 파일을 재사용합니다. HarmonyOS 셸과 iOS 입력 파일은 변경되지 않았습니다. HAP는 자신의 개발자 인증서로 다시 서명하고, iOS ZIP은 이번 릴리스의 소스와 함께 사용하여 앱을 패키징·서명해야 합니다. Mac은 여전히 소스 빌드가 필요하며 Mac용 첨부 파일은 없습니다. 오프라인 전용이며 멀티플레이는 없습니다. Android의 일부 터치 기능은 미완성이며, 특정 GPU에서는 셰이더를 건너뛰거나 효과가 표시되지 않습니다. 가져오기에는 모든 파일 접근 권한이 필요합니다. RAM 4 GB인 Apple 기기는 메모리가 부족할 수 있으며 최소 칩 요건을 충족해도 테스트된 호환성을 뜻하지는 않습니다. 사이드로딩 도구를 통한 iOS 서명은 아직 검증되지 않았습니다. 무료 Apple ID는 7일마다 다시 서명해야 하며 iCloud 동기화를 지원하지 않습니다. 게임 콘텐츠가 포함된 직접 만든 패키지를 재배포하지 마세요. Apple TV는 캐릭터 선택 화면까지의 미리보기이며 플레이 가능한 플랫폼으로 등재하지 않습니다. RemakeList는 빌드·설치·플레이하지 않았습니다.
 
-**코드 라이선스:** [MIT](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE)  
+**코드 라이선스:** [MIT covers project code; original game files and third-party components retain separate rights and licenses.](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE)  
 **제작자:** joe jiang (@happyjoejiang)  
-[공식 문서](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) · 자료 확인일: 2026-10-20
+[공식 문서](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -1232,22 +1232,22 @@ Sega Model 3 아케이드 에뮬레이터 Supermodel의 Vulkan 강화 포크. �
 Xbox 360판 Modern Warfare 2 (2009)를 Windows와 Linux 네이티브 프로그램으로 정적 재컴파일합니다.
 
 원작 또는 참고 대상: **Modern Warfare 2 (2009)** · 정적 재컴파일  
-[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/PaulCombal/mw2-recompiled/releases) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/mw2-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mw2-recompiled-ko)
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/PaulCombal/mw2-recompiled/releases/tag/v0.8.1) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/mw2-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mw2-recompiled-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** Windows / Linux
+**지원 환경:** Windows / Linux x64 · SSE4.2 · Vulkan 1.2
 
-**개발 상태:** 출시 · 원본 에셋 필요
+**개발 상태:** v0.8.1 출시 · 원본 에셋 필요
 
-**준비할 것:** 보유한 Xbox 360 디스크의 미국/유럽판 1.0.557 ISO가 필요합니다. 실행기가 타이틀 업데이트 6을 적용하며 원본 코드나 데이터는 포함하지 않습니다.
+**준비할 것:** 합법적으로 확보한 Xbox 360 USA/Europe 버전 1.0.557 디스크 ISO를 직접 준비해야 합니다. 런처가 이를 확인한 뒤 Title Update 6을 다운로드하여 적용합니다. x64 SSE4.2 프로세서, Vulkan 1.2, 디스크 공간 약 8 GB와 컨트롤러가 필요합니다. 키보드는 메뉴 조작만 지원합니다. 실험적인 PC 커스텀 맵 가져오기에는 직접 보유한 PC판의 에셋도 필요합니다.
 
-**현재 이용할 수 있는 것:** v0.4.1이 공개되었습니다. 64비트 Windows/Linux, Vulkan 1.2, 공간 8 GB, 컨트롤러가 필요합니다. Special Ops 미검증, 공개 매치메이킹 미지원. 여기서는 실행하지 않았습니다. 신뢰하는 친구와만 온라인 플레이하세요. 변경되지 않은 2009년 네트워크 코드에는 알려진 보안 취약점이 있습니다.
+**현재 이용할 수 있는 것:** v0.8.1은 Windows ZIP과 Linux 압축 파일을 제공합니다. mw2-launcher를 실행하여 직접 보유한 ISO에서 설치하세요. 일반 windows 또는 linux 패키지를 선택하면 됩니다. 같은 버전의 -steam / -lan 첨부 파일은 이전 런처의 업데이트를 위한 동일한 복사본입니다. 공개 매치메이킹과 랭크 플레이 목록은 지원하지 않으며, 커스텀 맵은 베타입니다. 제작자는 원작 네트워크 코드의 알려진 버그를 수정했다고 보고하지만, 여전히 신뢰하는 사람과만 플레이할 것을 권합니다. RemakeList는 보안을 독립적으로 감사하지 않았습니다. Steam SYSTEM LINK 게임은 다른 Steam 사용자가 검색하여 참가할 수 있으며, 같은 중계 서버나 LAN의 사용자도 게임에 접근할 수 있습니다. 모든 플레이어가 같은 릴리스를 사용해야 합니다. RemakeList는 설치하거나 플레이하지 않았습니다.
 
 **코드 라이선스:** [GPL-3.0-only](https://github.com/PaulCombal/mw2-recompiled/blob/master/LICENSE)  
 **제작자:** PaulCombal  
-[공식 문서](https://github.com/PaulCombal/mw2-recompiled/blob/master/README.md) · 자료 확인일: 2026-10-14
+[공식 문서](https://github.com/PaulCombal/mw2-recompiled/blob/master/README.md) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -1325,25 +1325,25 @@ Majora’s Mask를 정적 재컴파일해 현대적 조작과 그래픽 옵션�
 
 ### [Mega Man X4 Recompiled](https://github.com/mstan/MegaManX4Recomp)
 
-『록맨 X4』 네이티브 재컴파일 프로젝트로, X와 제로의 실험적인 2인 협동을 로컬 또는 온라인으로 지원합니다.
+X와 Zero가 로컬 또는 네트워크로 2인 협동 플레이를 할 수 있는 Mega Man X4 네이티브 재컴파일 프로젝트입니다. 현재 릴리스는 공개 베타입니다.
 
 원작 또는 참고 대상: **록맨 X4** · 정적 재컴파일  
-[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/mstan/MegaManX4Recomp/releases) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/mega-man-x4-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mega-man-x4-recompiled-ko)
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.13) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/mega-man-x4-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mega-man-x4-recompiled-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** Windows / Linux
+**지원 환경:** Windows x64 / Linux x86-64 (glibc 2.38 이상)
 
-**개발 상태:** 협동 알파 · 원작 디스크 필요
+**개발 상태:** 공개 베타 · 2인 협동 플레이 · 원본 디스크 필요
 
-**준비할 것:** 미국판 Mega Man X4(SLUS-00561)의 .cue 및 .bin 디스크 이미지를 직접 준비해야 합니다. OpenBIOS가 포함되어 별도 BIOS 덤프는 선택 사항입니다. 캡콤 게임 콘텐츠는 프로젝트 코드 라이선스 적용 대상이 아닙니다.
+**준비할 것:** 모든 모드를 꺼도 직접 보유한 수정되지 않은 Mega Man X4 USA (SLUS-00561) 원본 .cue 및 .bin 디스크 이미지가 필요합니다. 패치된 디스크, 언더빙 또는 재번역 이미지는 지원하지 않습니다. OpenBIOS가 포함되어 있으며, 별도 BIOS 덤프는 선택 사항입니다. 원작 게임 콘텐츠는 MIT 라이선스에 포함되지 않습니다.
 
-**현재 이용할 수 있는 것:** Windows ZIP과 Linux AppImage 공개 테스트판이 있습니다. 협동은 알파 단계이며 OpenGL이 필요하고, 양쪽이 같은 릴리스를 사용해야 합니다. Linux는 x86_64와 glibc 2.38 이상이 필요합니다. RemakeList에서는 실행하지 않았습니다.
+**현재 이용할 수 있는 것:** v1.0.13은 Windows x64 ZIP과 Linux x86-64 AppImage를 제공하며, Sigma 스테이지 2의 보스 문 사이에서 플레이어 2의 카메라가 잘못되는 문제를 수정합니다. 협동 플레이에는 OpenGL이 필요하며, 네트워크 플레이 양쪽이 같은 릴리스를 사용해야 합니다. 공개 베타에는 알려진 문제가 남아 있습니다. 독립 카메라에서 속도가 느려질 수 있으며 온라인 로그인·시작 문제 제보도 조사 중입니다. Linux에는 glibc 2.38 이상이 필요합니다. 4인 플레이 실험은 포함되지 않습니다. RemakeList는 설치하거나 실행하지 않았습니다.
 
 **코드 라이선스:** [MIT · original project code; dependencies retain their licenses](https://github.com/mstan/MegaManX4Recomp/blob/master/LICENSE)  
 **제작자:** Matthew Stanley  
-[공식 문서](https://github.com/mstan/MegaManX4Recomp/blob/master/README.md) · 자료 확인일: 2026-10-18
+[공식 문서](https://github.com/mstan/MegaManX4Recomp/blob/master/README.md) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -1352,22 +1352,22 @@ Majora’s Mask를 정적 재컴파일해 현대적 조작과 그래픽 옵션�
 터치 조작, 게임패드, 울트라와이드 화면을 지원하는 슈퍼 마리오 갤럭시의 초기 Android 네이티브 이식판입니다.
 
 원작 또는 참고 대상: **슈퍼 마리오 갤럭시** · 디컴파일 기반 프로젝트  
-[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/docs/INSTALLATION.md) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/galaxy-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=galaxy-android-ko)
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/OpenPort-Labs/Galaxy-Android/releases/tag/v0.0.4) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/galaxy-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=galaxy-android-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** Android 11+ · ARM64
+**지원 환경:** Android 11 이상 · ARM64 · Vulkan 1.0
 
-**개발 상태:** 초기 출시 · 원본 에셋 필요
+**개발 상태:** 공개 릴리스 v0.0.4 · 원본 에셋 필요
 
-**준비할 것:** 합법적으로 소유한 Wii 슈퍼 마리오 갤럭시 디스크를 직접 덤프한 이미지가 필요합니다. 가져오기 도구가 로컬 파일을 추출합니다. 선택 사항인 Shield 기반 자료는 별도의 독점 데이터이며 이 항목에서는 제공하지 않습니다.
+**준비할 것:** 합법적으로 직접 덤프한 Wii Super Mario Galaxy 디스크 이미지(.rvz, .wbfs, .iso 또는 .wia)를 준비하여 로컬로 추출·변환해야 합니다. 동영상 제외 시 약 2.5 GB, 포함 시 약 5 GB를 확보하세요. 선택 사항인 Shield 유래 자료는 별도의 독점 데이터이며 이 목록에서는 제공하지 않습니다.
 
-**현재 이용할 수 있는 것:** APK가 공개되어 있습니다. 초기 빌드에서 그래픽, 성능, 충돌 문제가 보고되었습니다. 표지는 기여자가 올린 v0.0.1 스크린샷이며 RemakeList의 실행 테스트가 아닙니다. RemakeList에서는 실행하지 않았습니다.
+**현재 이용할 수 있는 것:** v0.0.4는 Android 11 이상, ARM64, Vulkan 1.0과 최소 3 GB RAM이 필요한 공개 APK를 제공합니다. 제작자는 Vulkan 렌더링, 물리 컨트롤러 매핑과 터치 레이아웃 업데이트를 소개합니다. Vulkan 1.0 드라이버가 없는 기기는 지원하지 않습니다. 제작자는 안정 버전이라고 설명하지만, RemakeList는 지원 기기 범위, 지속 성능이나 게임 전체 진행을 검증하지 않았으며 60 FPS를 보장하지 않습니다. 표지는 pcddlXDDD의 v0.0.1 스크린샷을 유지하며 이번 릴리스의 테스트 결과가 아닙니다. RemakeList는 설치하거나 실행하지 않았습니다.
 
 **코드 라이선스:** [GPL-3.0 · port code; original game assets excluded](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/LICENSE)  
 **제작자:** OpenPort Labs  
-[공식 문서](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/README.md) · 자료 확인일: 2026-10-18
+[공식 문서](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/README.md) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -1563,27 +1563,27 @@ CTR Native와 CTR-ModSDK를 통합한 원작 Crash Team Racing의 Apple 포트�
 
 </details>
 
-### [Def Jam: Fight for NY Recompiled](https://github.com/vyanhursky/defjamffny-recomp)
+### [Def Jam: Fight for NY Recompiled](https://github.com/vyanhursky/DefJamFFNY-recomp)
 
-보유한 미국 Xbox판에서 로컬로 재컴파일하는 Def Jam: Fight for NY입니다.
+지원되는 USA 초대 Xbox판 덤프를 직접 준비하여 Def Jam: Fight for NY의 Windows·Mac·Linux 네이티브 버전을 빌드합니다. 더 높은 해상도와 최대 4인 로컬 플레이를 제공하며 와이드스크린은 베타입니다.
 
 원작 또는 참고 대상: **Def Jam: Fight for NY** · 정적 재컴파일  
-[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/vyanhursky/defjamffny-recomp/releases) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/defjam-ffny-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=defjam-ffny-recompiled-ko)
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/vyanhursky/DefJamFFNY-recomp/releases/tag/v0.12.1) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/defjam-ffny-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=defjam-ffny-recompiled-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** Windows / macOS (Apple Silicon) / Linux / Steam Deck
+**지원 환경:** Windows x64 (Direct3D 11) / Apple silicon macOS / Linux x86-64 / Steam Deck
 
-**개발 상태:** 플레이 가능 · 와이드 화면 베타
+**개발 상태:** 공개 릴리스 v0.12.1 · 로컬 빌드 · 와이드스크린 베타
 
-**준비할 것:** 호환되는 미국판 원조 Xbox 디스크 이미지나 추출 파일이 필요합니다. PS2·GameCube판은 대체할 수 없습니다. 코드 라이선스는 원작 게임, 이미지, 상용 데이터의 권한을 부여하지 않습니다.
+**준비할 것:** 제작자의 지원 매니페스트와 일치하는 USA 초대 Xbox 디스크 이미지 또는 추출한 덤프를 직접 준비해야 합니다. PS2·GameCube판으로 대체할 수 없습니다. 설정 도구가 로컬에서 검증·재컴파일·빌드를 수행하며, HD 텍스처 생성에는 시간과 디스크 공간이 더 필요합니다. 코드 라이선스는 원작 게임이나 아트워크에 대한 권리를 부여하지 않습니다.
 
-**현재 이용할 수 있는 것:** Windows, Apple Silicon Mac, Linux/Steam Deck용 제작자 설정 도구를 받아 본인의 덤프를 선택합니다. 대전과 일부 스토리 경로를 확인했습니다. 16:9는 베타, 울트라와이드는 실험 기능이며 네트워크 대전은 없습니다.
+**현재 이용할 수 있는 것:** v0.12.1은 Windows x64, Apple silicon macOS와 Linux x86-64·Steam Deck용 설정 도구를 제공하며, 생성한 선수의 초상화와 와이드스크린 HUD 배치를 수정합니다. 설정 과정에서 덤프를 검증하고 로컬로 빌드합니다. 기존 설치는 Clean Update 후 다시 빌드해야 하며, 제작자에 따르면 저장 파일, 설정, 모드와 텍스처 팩은 유지됩니다. 16:9·16:10 와이드스크린은 베타, 21:9·32:9는 실험 단계이며 멀티플레이는 로컬 전용입니다. 상점 로딩 중 멈춤, 일부 장면의 불규칙한 진행 속도와 기존 와이드스크린 문제가 남아 있습니다. Steam Deck의 오디오와 Story 튜토리얼 성능도 조사 중입니다. macOS 설정 도구는 서명되지 않았습니다. 제작자의 회귀 점검은 RemakeList의 전체 플레이 테스트를 뜻하지 않으며, RemakeList는 설치하거나 실행하지 않았습니다.
 
-**코드 라이선스:** [MIT project code; separate toolkit licenses. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/vyanhursky/defjamffny-recomp#credits-and-licensing)  
+**코드 라이선스:** [MIT project code; separate toolkit licenses. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/vyanhursky/DefJamFFNY-recomp#credits-and-licensing)  
 **제작자:** vyanhursky  
-[공식 문서](https://github.com/vyanhursky/defjamffny-recomp#readme) · 자료 확인일: 2026-10-19
+[공식 문서](https://github.com/vyanhursky/DefJamFFNY-recomp#readme) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -1611,51 +1611,51 @@ CTR Native와 CTR-ModSDK를 통합한 원작 Crash Team Racing의 Apple 포트�
 
 </details>
 
-### [Forza Horizon 1: ReImagined](https://github.com/Dyotson/ForzaHorizon1-ReImagined)
+### [Forza Horizon 1: ReImagined](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined)
 
-Forza Horizon 1: ReImagined — 커뮤니티 온라인 기능과 고프레임 설정. 표시된 기기를 위한 Forza Horizon의 독립 이식 프로젝트입니다.
+직접 보유한 Xbox 360 Forza Horizon 파일로 Windows와 Linux 네이티브 포트를 로컬에서 빌드합니다. 커뮤니티 온라인 서비스, 차량 튜닝과 화면 설정을 제공합니다.
 
 원작 또는 참고 대상: **Forza Horizon** · 정적 재컴파일  
-[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/dyotson/forzahorizon1-reimagined/releases) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/forza-horizon-reimagined/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=forza-horizon-reimagined-ko)
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/releases/tag/v0.2.0) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/forza-horizon-reimagined/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=forza-horizon-reimagined-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** Linux x64 / Windows 10–11 x64
+**지원 환경:** Windows 10/11 x64 / Linux x86-64 · macOS는 소스 빌드 실험 단계
 
-**개발 상태:** 플레이 가능 또는 실험 단계 미리보기입니다.
+**개발 상태:** v0.2.0 출시 · 로컬 빌드 · 실험적인 VR
 
-**준비할 것:** 직접 적법하게 구한 파일을 준비하세요: Xbox 360 · 4D5309C9 · Disc 1 / Games on Demand. 프로젝트는 무료지만 원작 게임은 별도입니다. 이 사이트는 게임 파일, 키 또는 바로 플레이할 패키지를 제공하지 않습니다.
+**준비할 것:** 합법적으로 확보한 Xbox 360 Forza Horizon 디스크 이미지, Games on Demand 패키지 또는 추출한 폴더를 직접 준비해야 합니다. Title Update 4와 DLC도 별도로 준비해야 하며, Horizon Rally와 1000 Club에는 TU4가 필요합니다. 여유 RAM 약 4 GB와 디스크 공간 15 GB를 확보하세요. Vulkan 방식은 Vulkan 1.3이 필요하며, Windows에서는 Direct3D 12도 사용할 수 있습니다. 최초 설정 시 컴파일러 도구를 다운로드하거나 설치해야 합니다.
 
-**현재 이용할 수 있는 것:** 공식 이용 경로: Linux x64 / Windows 10–11 x64. 플레이 가능 또는 실험 단계 미리보기입니다. Linux 플레이 기록이 있으며 Windows 네이티브 플레이는 미검증입니다. 시스템에 맞는 공식 패키지를 선택하세요.
+**현재 이용할 수 있는 것:** v0.2.0은 Windows 설치 프로그램, Linux x86-64 압축 파일과 Flatpak을 제공합니다. 런처가 직접 보유한 파일로 게임을 로컬에서 생성·컴파일하며, 업데이트 후 한 번 다시 빌드해야 합니다. macOS는 다운로드 가능한 Mac 앱 없이 소스 빌드를 실험하는 단계입니다. Steam Deck과 저사양 기기의 성능에는 여전히 한계가 있으며 일부 GPU에서 그래픽 오류나 충돌이 발생합니다. 제작자는 Linux WiVRn과 Quest 3로 VR을 테스트했으며, Windows VR은 테스트하지 않았습니다. macOS에서는 전체 레이스, 저장 파일 다시 불러오기와 물리 컨트롤러 검증이 더 필요합니다. TU4 사용자와 기본 게임 사용자는 서로 다른 온라인 방을 사용하며, TU4 저장 파일을 기본 게임으로 바로 되돌릴 수 없습니다. RemakeList는 빌드하거나 플레이하지 않았습니다.
 
-**코드 라이선스:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/Dyotson/ForzaHorizon1-ReImagined/blob/main/LICENSE)  
+**코드 라이선스:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/blob/main/LICENSE)  
 **제작자:** Dyotson  
-[공식 문서](https://github.com/Dyotson/ForzaHorizon1-ReImagined#readme) · 자료 확인일: 2026-10-19
+[공식 문서](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined#readme) · 자료 확인일: 2026-10-27
 
 </details>
 
 ### [Gears of War 2 PC Port](https://github.com/santiquiroz/gears-of-war-2-pc-port)
 
-Gears of War 2 PC Port — 고해상도 렌더링과 실험적 협동 플레이. 표시된 기기를 위한 Gears of War 2의 독립 이식 프로젝트입니다.
+직접 보유한 Xbox 360 Gears of War 2 파일을 사용하는 비공식 네이티브 포트로, 고해상도 렌더링, 분할 화면과 System Link 협동 플레이를 제공합니다. Android는 실험 단계이며 캠페인 전체의 동작은 검증되지 않았습니다.
 
 원작 또는 참고 대상: **Gears of War 2** · 정적 재컴파일  
-[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/santiquiroz/gears-of-war-2-pc-port/releases) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/gears-of-war-2-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gears-of-war-2-native-ko)
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/santiquiroz/gears-of-war-2-pc-port/releases/tag/v0.3.7) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/gears-of-war-2-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gears-of-war-2-native-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** Windows 10–11 x64 / Android 10+ ARM64
+**지원 환경:** Windows 10/11 x64 (DirectX 12) / Android 10 이상 ARM64 (Vulkan, 실험 단계)
 
-**개발 상태:** 플레이 가능 또는 실험 단계 미리보기입니다.
+**개발 상태:** 공개 릴리스 · 캠페인 전체 검증 미완료 · 실험적인 Android 지원
 
-**준비할 것:** 직접 적법하게 구한 파일을 준비하세요: Xbox 360 · 4D53082D · default.xex + GearGame. 프로젝트는 무료지만 원작 게임은 별도입니다. 이 사이트는 게임 파일, 키 또는 바로 플레이할 패키지를 제공하지 않습니다.
+**준비할 것:** 합법적으로 확보한 Xbox 360 Gears of War 2 정식 판매판(타이틀 ID 4D53082D)의 ISO 또는 default.xex와 GearGame을 포함한 전체 폴더를 직접 준비해야 합니다. Windows에서 처음 ISO를 추출할 때 약 8 GB가 필요합니다. Android는 데이터를 앱 저장소로 복사하므로 전체 데이터 한 벌을 더 저장할 공간이 필요합니다. RemakeList는 게임 데이터를 제공하지 않습니다.
 
-**현재 이용할 수 있는 것:** 공식 이용 경로: Windows 10–11 x64 / Android 10+ ARM64. 플레이 가능 또는 실험 단계 미리보기입니다. 게임 전체 진행은 검증되지 않았습니다. Android는 실험 단계입니다. 시스템에 맞는 공식 패키지를 선택하세요.
+**현재 이용할 수 있는 것:** v0.3.7은 Windows 10/11 x64 ZIP과 실험적인 Android 10 이상 ARM64 APK를 제공합니다. Windows에는 DirectX 12 GPU가, Android에는 Vulkan이 필요합니다. 이번 업데이트는 음성과 자막 언어를 따로 선택하는 기능을 추가합니다. 제작자가 직접 끝까지 플레이한 범위는 Act 1뿐이며, 짧은 챕터 점검만으로 Act 2–5의 전체 진행이 검증되지는 않습니다. Android의 지속 성능은 발열의 영향을 받습니다. 3·4인 협동 플레이와 인터넷 플레이에는 테스트되지 않은 상황이 남아 있으며, 모든 참여자가 같은 릴리스를 사용해야 합니다. Windows 파일은 서명되지 않아 차단될 수 있으며, 제작자의 검사 결과 설명은 RemakeList의 보안 인증이 아닙니다. RemakeList는 빌드·설치·실행하지 않았습니다.
 
 **코드 라이선스:** [BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/santiquiroz/gears-of-war-2-pc-port/blob/master/LICENSE)  
 **제작자:** santiquiroz  
-[공식 문서](https://github.com/santiquiroz/gears-of-war-2-pc-port#readme) · 자료 확인일: 2026-10-19
+[공식 문서](https://github.com/santiquiroz/gears-of-war-2-pc-port#readme) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -1733,25 +1733,25 @@ inFAMOUS Second Son Native Port — PS4 서비스와 그래픽을 데스크톱 �
 
 ### [LAS Recomp](https://github.com/peiikai/LASRecomp)
 
-LAS Recomp — 울트라와이드 화면과 선택적 무작위화. 표시된 기기를 위한 The Legend of Zelda: Link’s Awakening의 독립 이식 프로젝트입니다.
+직접 보유한 Switch Link’s Awakening 1.0.0, 1.0.1 또는 1.1.0 파일로 데스크톱 네이티브 포트를 로컬에서 빌드합니다. 와이드스크린과 랜더마이저 옵션을 제공하며 아직 베타입니다.
 
 원작 또는 참고 대상: **The Legend of Zelda: Link’s Awakening** · 정적 재컴파일  
-[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/peiikai/lasrecomp/releases) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/las-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=las-recomp-ko)
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/peiikai/LASRecomp/releases/tag/beta_5.3) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/las-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=las-recomp-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** Windows x64 / macOS Apple silicon / Linux x64
+**지원 환경:** Windows x64 / Apple silicon macOS / Linux x64 · Linux ARM64는 실험 단계
 
-**개발 상태:** 베타로 오류와 미완료 검증이 남아 있습니다.
+**개발 상태:** beta_5.3 · 버그와 검증되지 않은 부분이 남아 있음
 
-**준비할 것:** 직접 적법하게 구한 파일을 준비하세요: Nintendo Switch · v1.0.0 · exefs + romfs. 프로젝트는 무료지만 원작 게임은 별도입니다. 이 사이트는 게임 파일, 키 또는 바로 플레이할 패키지를 제공하지 않습니다.
+**준비할 것:** 합법적으로 확보한 Switch Link’s Awakening 1.0.0, 1.0.1 또는 1.1.0의 exefs·romfs 파일을 직접 준비하고 해당 폴더를 선택하여 로컬 컴파일해야 합니다. Mac에는 Apple silicon과 macOS 15 이상이 필요합니다. Windows 10/11과 Linux x64에는 AVX2, FMA, Vulkan 1.3, 최소 8 GB RAM과 설정용 공간 약 12 GB가 필요합니다. 게임 파일이나 키는 제공하지 않습니다.
 
-**현재 이용할 수 있는 것:** 공식 이용 경로: Windows x64 / macOS Apple silicon / Linux x64. 베타로 오류와 미완료 검증이 남아 있습니다. Linux ARM64 빌드는 실제 기기에서 미검증입니다. 시스템에 맞는 공식 패키지를 선택하세요.
+**현재 이용할 수 있는 것:** beta_5.3은 Windows ZIP, Mac DMG와 Linux x86-64·ARM64 AppImage를 제공합니다. 원작 버전 1.0.0, 1.0.1과 1.1.0을 지원하며 최초 실행 시 로컬 컴파일이 필요합니다. GitHub의 사전 릴리스 표시가 꺼져 있어도 제작자는 명시적으로 베타라고 설명합니다. Linux ARM64 빌드는 제공되지만 실제 하드웨어에서 테스트하지 않았습니다. 충돌, 해결 불가능한 랜더마이저 시드와 와이드스크린 그래픽 문제가 발생할 수 있으며, 던전 방 배치 섞기는 특히 실험적인 기능입니다. Intel Mac과 구형 Intel 내장 그래픽은 지원하지 않습니다. Beta 5 이전의 시드 ID는 다른 결과를 생성합니다. 제작자가 보고한 Steam Deck·Mac 프레임 속도는 모든 기기에 대한 보장이 아닙니다. RemakeList는 빌드하거나 플레이하지 않았습니다.
 
 **코드 라이선스:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/peiikai/LASRecomp/blob/main/LICENSE)  
 **제작자:** peiikai  
-[공식 문서](https://github.com/peiikai/LASRecomp#readme) · 자료 확인일: 2026-10-19
+[공식 문서](https://github.com/peiikai/LASRecomp#readme) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -1973,7 +1973,7 @@ PS1 디컴파일 결과를 바탕으로 선택형 개선 기능을 더한 Silent
 
 ### [SpeedBreaker](https://github.com/speedbreakerproject/speedbreaker)
 
-Xbox 360 Need for Speed: Most Wanted를 현대 기기에 와이드 화면으로 이식합니다. 자신의 디스크 이미지가 필요하며 iOS는 실험 단계입니다.
+직접 보유한 Xbox 360 Need for Speed: Most Wanted를 최신 기기에서 실행하며, 와이드스크린, 분할 화면과 화면 설정을 제공합니다. iPhone·iPad 사이드로딩은 실험 단계이며 Windows는 베타입니다.
 
 원작 또는 참고 대상: **Need for Speed: Most Wanted (2005)** · 정적 재컴파일  
 [프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/speedbreakerproject/speedbreaker/releases) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/speedbreaker/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=speedbreaker-ko)
@@ -1981,17 +1981,17 @@ Xbox 360 Need for Speed: Most Wanted를 현대 기기에 와이드 화면으로 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
-**지원 환경:** Linux / macOS / iOS / iPadOS
+**지원 환경:** Linux / SteamOS / Apple silicon macOS / 실험적인 iOS·iPadOS / Windows 베타
 
-**개발 상태:** 미리보기 · 원본 게임 필요
+**개발 상태:** v0.2.0 출시 · Windows 베타 · 실험적인 iOS 사이드로딩
 
-**준비할 것:** 다음 조건에 맞는 합법적으로 확보한 자신의 파일을 준비하세요: Xbox 360 · Need for Speed: Most Wanted 2005 · owned disc image. 상용 게임 콘텐츠는 별도이며 RemakeList에서 제공하지 않습니다.
+**준비할 것:** 합법적으로 확보한 USA NTSC-U 또는 유럽 PAL 스페인어 Xbox 360 Most Wanted의 ISO, XISO 또는 추출한 폴더를 직접 준비해야 합니다. Title Update는 사용하지 않으며 다른 지역판, Games on Demand와 PC판은 지원하지 않습니다. 약 7.2 GB를 확보하세요. Windows·Linux x64에는 AVX2와 Vulkan 1.2가, Mac에는 Apple silicon과 macOS 15 이상이 필요합니다. iOS·iPadOS에는 17 이상, A15급 이상의 칩, 컨트롤러 또는 키보드와 직접 처리하는 사이드로딩 서명이 필요합니다.
 
-**현재 이용할 수 있는 것:** Linux/SteamOS와 Mac 배포가 문서화되어 있습니다. iPhone·iPad는 실험적 사이드로드 경로이며 릴리스별 조건을 확인해야 합니다.
+**현재 이용할 수 있는 것:** 주 릴리스 v0.2.0은 SteamOS·Linux x86-64, Steam Frame ARM64, Apple silicon Mac과 실험적인 iOS IPA를 제공합니다. Windows는 별도의 v0.2.0-windows-beta.2 사전 릴리스를 사용하며 Android 빌드는 없습니다. SteamOS의 두 아키텍처 패키지는 서로 바꿔 사용할 수 없습니다. 제작자는 Windows 베타를 제한된 Intel 내장 그래픽 환경에서 테스트했습니다. 첨부된 iOS IPA 자체는 기기에 설치해 보지 않았습니다. 제작자의 테스트는 Xcode로 서명한 빌드를 사용했으며, 사이드로딩 권한이나 메모리 제한으로 실행되지 않을 수 있습니다. Mac 앱은 공증되지 않았으며 macOS 15는 가상 머신에서만 테스트했습니다. Steam Frame은 VR이 아닌 평면 화면을 표시하며, ARM64 패키지는 다른 Linux 기기에서 테스트되지 않았습니다. Steam Deck OLED는 60 Hz로 설정해야 하며 LCD 모델은 테스트되지 않았습니다. 모든 기기에서 일정한 프레임 속도를 보장하지 않습니다. RemakeList는 실행하지 않았습니다.
 
-**코드 라이선스:** [GPL-3.0-or-later authored code; original game content excluded](https://github.com/speedbreakerproject/speedbreaker#readme)  
+**코드 라이선스:** [Project-authored code is GPL-3.0-or-later; bundled libraries retain their own licenses, and original game content is excluded.](https://github.com/speedbreakerproject/speedbreaker#readme)  
 **제작자:** project(u) / SpeedBreakerProject  
-[공식 문서](https://github.com/speedbreakerproject/speedbreaker#readme) · 자료 확인일: 2026-10-19
+[공식 문서](https://github.com/speedbreakerproject/speedbreaker#readme) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -2408,22 +2408,22 @@ PS4 P.T. 체험판을 데스크톱으로 옮기고 키보드, 컨트롤러, 사�
 네이티브 Direct3D 12 렌더러를 갖춘 Project Gotham Racing 4 재컴파일 버전입니다. 직접 준비한 게임과 Title Update #2를 사용해 Windows 또는 Proton으로 실행합니다.
 
 원작 또는 참고 대상: **Project Gotham Racing 4 (Xbox 360)** · 정적 재컴파일  
-[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/shaunsingh/pgr4-native/releases/tag/v0.1.2) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/pgr4-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pgr4-native-ko)
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/shaunsingh/pgr4-native/releases/tag/v0.2.1) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/pgr4-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pgr4-native-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
 
 **지원 환경:** Windows x64 / Linux 및 Steam Deck은 Proton 사용
 
-**개발 상태:** v0.1.2 · 초기 포트 · 원작 파일 필요
+**개발 상태:** v0.2.1 · 초기 포트 · 원본 파일 필요
 
 **준비할 것:** 합법적으로 취득하고 추출한 PGR4 디스크와 Title Update #2 패키지 또는 파일을 준비해야 합니다. 제작자는 PAL과 NTSC 디스크 내용이 같다고 설명합니다. 원작 게임 데이터는 포함되지 않습니다.
 
-**현재 이용할 수 있는 것:** v0.1.2는 Windows x64 ZIP을 제공합니다. Linux와 Steam Deck에서는 Proton을 사용하며 이 릴리스는 네이티브 Linux 실행 파일이 아닙니다. RemakeList에서는 플레이나 성능을 테스트하지 않았습니다. 지원되는 게임/업데이트 조합과 그래픽 설정이 필요합니다. 호환성과 프레임 속도는 하드웨어 및 해당하는 경우 Proton에 따라 달라지며 Steam Deck의 보편적인 프레임 속도를 보장하지 않습니다.
+**현재 이용할 수 있는 것:** v0.2.1은 Windows x64 ZIP을 제공합니다. Linux와 Steam Deck에서는 Proton을 사용하며, 이 릴리스는 Linux 네이티브 실행 파일이 아닙니다. RemakeList는 게임 플레이나 성능을 테스트하지 않았습니다. 지원되는 게임·업데이트 조합과 그래픽 설정이 필요합니다. 호환성과 프레임 속도는 하드웨어 및 Proton 사용 환경에 따라 달라지며, 모든 Steam Deck에서 일정한 프레임 속도를 보장하지 않습니다.
 
 **코드 라이선스:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE)  
 **제작자:** shaunsingh  
-[공식 문서](https://github.com/shaunsingh/pgr4-native/blob/main/README.md) · 자료 확인일: 2026-10-26
+[공식 문서](https://github.com/shaunsingh/pgr4-native/blob/main/README.md) · 자료 확인일: 2026-10-27
 
 </details>
 
@@ -2472,6 +2472,78 @@ Xbox 360 Madden NFL 08의 초기 Windows 포트입니다. 설치 과정에서 �
 **코드 라이선스:** [GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/LICENSE)  
 **제작자:** anishchandra24  
 [공식 문서](https://github.com/anishchandra24/MaddenNFL08-Recompiled/blob/main/README.md) · 자료 확인일: 2026-10-26
+
+</details>
+
+### [CPS-2 Recomp](https://github.com/tmcleroy/cps2recomp)
+
+여러 CPS-2·CPS-1 아케이드 게임을 데스크톱으로 옮긴 비공식 프로젝트입니다. 통합 런처, 격투 게임 연습 도구와 3인용 벨트스크롤 액션을 제공하며, 소유한 아케이드 기판에서 얻은 지정 버전의 ROM 세트가 필요합니다.
+
+원작 또는 참고 대상: **Capcom CPS-2 / CPS-1 아케이드 게임** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/tmcleroy/cps2recomp/releases/tag/v0.4.0-beta.6) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/cps2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=cps2-recomp-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / SteamOS
+
+**개발 상태:** v0.4.0-beta.6 · 베타 · 지정된 원작 ROM 세트 필요
+
+**준비할 것:** 소유한 아케이드 기판에서 얻은 정확한 지원 버전의 ROM 세트를 준비해야 하며, CPS-2 게임에는 해당 키 파일도 필요합니다. 런처가 체크섬을 확인하므로 다른 지역판이나 수정 버전은 사용할 수 없습니다. 일부 세트는 부모 ROM 세트도 필요합니다. 게임 파일과 키는 제공하지 않습니다.
+
+**현재 이용할 수 있는 것:** v0.4.0-beta.6은 Windows x64, macOS, Linux x86_64 압축 파일을 제공합니다. macOS는 Apple Silicon과 Intel을 지원하며, SteamOS·Steam Deck에서도 Linux 패키지를 사용합니다. README에는 Linux ARM64 지원이 나와 있지만 이번 릴리스에는 ARM64 다운로드가 없습니다. GitHub의 사전 출시 표시가 꺼져 있어도 프로젝트는 베타 단계입니다. 기기와 컨트롤러 테스트 범위가 제한적입니다. 제작자는 격투 게임을 시작부터 엔딩까지 확인했다고 설명하지만, 새로 추가된 벨트스크롤 액션 게임은 초기 스테이지의 스크립트 플레이만 확인했습니다. RemakeList가 전체 게임을 직접 테스트한 것은 아닙니다.
+
+**코드 라이선스:** [Project code is GPL-3.0-only; third-party components retain their own notices. This license does not grant rights to Capcom or other rights holders’ game code, ROMs, keys, music or artwork.](https://github.com/tmcleroy/cps2recomp/blob/main/LICENSE)  
+**제작자:** tmcleroy  
+[공식 문서](https://github.com/tmcleroy/cps2recomp/blob/main/README.md) · 자료 확인일: 2026-10-27
+
+</details>
+
+### [Free Riders Recompiled](https://github.com/YuutaTsubasa/Free-Riders-Recompiled)
+
+Xbox 360용 Sonic Free Riders의 비공식 이식 프로젝트입니다. Kinect 없이 컨트롤러나 키보드로 플레이할 수 있으며, 직접 준비한 미국·유럽판 디스크 이미지에서 게임 데이터를 가져옵니다. 아직 개발 중입니다.
+
+원작 또는 참고 대상: **Sonic Free Riders (Xbox 360)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.35) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/free-riders-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=free-riders-recompiled-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows / Linux x64 · Android arm64 · 실험적 macOS Apple Silicon / iOS
+
+**개발 상태:** v0.10.35 · 개발 중 · 원작 디스크 필요
+
+**준비할 것:** 합법적으로 취득한 미국·유럽판 Xbox 360 Sonic Free Riders 디스크 이미지(.iso)를 직접 준비해야 합니다. 런처가 모델, 텍스처, 오디오와 영상을 가져옵니다. 제작자에 따르면 릴리스에는 재컴파일한 프로그램이 포함되지만 이러한 원작 게임 데이터 파일은 포함되지 않습니다. 프로젝트의 GPL 라이선스는 SEGA 콘텐츠에 대한 권한을 부여하지 않습니다.
+
+**현재 이용할 수 있는 것:** v0.10.35은 Windows x64, Linux x64, Android arm64, macOS arm64와 iOS IPA 패키지를 제공합니다. Windows 10/11과 Linux에는 AVX가 필요합니다. Windows 그래픽은 Direct3D 12 또는 Vulkan 1.2, Linux는 Vulkan 1.2가 필요합니다. Android는 9 이상, Vulkan 1.1과 게임 설치 공간 약 2GB가 필요하며 Android 10 이상 전용 APK도 있습니다. Apple 빌드는 Apple Silicon의 macOS 13.3 이상 또는 사이드로딩이 가능한 iOS 16.3 이상이 필요합니다. 많은 모드가 충분히 테스트되지 않았고 Android 성능은 기기에 따라 다릅니다. Apple 지원은 실험 단계입니다. README 시스템 요구 사항에는 여전히 M1에서 레이스가 느리고 iOS 실기기 테스트가 없다고 적혀 있으나, 이후 릴리스 기록에는 Mac 성능 개선과 iOS 수정 사항이 나옵니다. 현재 호환성은 별도 확인이 필요합니다. Kinect v2와 더 폭넓은 온라인 플레이도 검증이 제한적입니다.
+
+**코드 라이선스:** [Project code is GPL-3.0-or-later. The original game’s code and data remain SEGA’s and are outside that grant; third-party components and models retain their separate licenses.](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/COPYING)  
+**제작자:** YuutaTsubasa  
+[공식 문서](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/README.md) · 자료 확인일: 2026-10-27
+
+</details>
+
+### [James Pond 2 Recompiled](https://github.com/griches/JamesPond2RobocodRecomp)
+
+Amiga용 James Pond 2를 옮긴 커뮤니티 프로젝트로, 와이드스크린, 저장 슬롯과 더 부드러운 화면 움직임을 제공합니다. 지원하는 Kixx판 디스크 이미지나 WHDLoad 설치 파일을 직접 준비해야 합니다.
+
+원작 또는 참고 대상: **James Pond 2: Codename RoboCod (Amiga)** · 정적 재컴파일  
+[프로그램 다운로드 · 게임 파일 직접 준비](https://github.com/griches/JamesPond2RobocodRecomp/releases/tag/v1.0.0) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/james-pond-2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=james-pond-2-recomp-ko)
+
+<details>
+<summary>요구 사항과 스크린샷</summary>
+
+**지원 환경:** Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / Steam Deck · PS5 홈브루 환경
+
+**개발 상태:** 데스크톱 v1.0.0 · PS5 v1.0.2 · 원작 디스크 필요
+
+**준비할 것:** 합법적으로 취득한 Amiga Kixx 재발매판의 표준 .adf 디스크 이미지 또는 지원하는 WHDLoad 설치 파일을 직접 준비해야 합니다. 이미지는 gzip 압축 .adz나 .zip 형태로도 사용할 수 있습니다. 복사 방지가 적용된 원본 Millennium판, 확장 ADF, .dms와 .ipf는 지원하지 않습니다. 이 사이트는 원본 디스크 다운로드를 제공하지 않습니다.
+
+**현재 이용할 수 있는 것:** 데스크톱용 다운로드는 Windows, macOS, Linux 모두 v1.0.0이며 Steam Deck은 Linux 압축 파일을 사용합니다. PS5에는 별도의 v1.0.2 릴리스가 있으며 이미 홈브루를 실행할 수 있는 콘솔이 필요합니다. v1.0.2 릴리스 노트는 다른 플랫폼이 v1.0.0을 유지한다고 명시하므로 데스크톱 업데이트로 볼 수 없습니다. 초기 공개 버전이며 다른 판본을 소유했다고 해서 그 디스크 형식이 호환되는 것은 아닙니다. PS5는 일반 콘솔 스토어 버전이 아닌 별도의 홈브루 대상입니다. RemakeList는 설치·플레이 또는 전체 게임 호환성의 독립 검증을 수행하지 않았습니다.
+
+**코드 라이선스:** [The project’s own code is GPL-3.0. SDL3, Musashi, fonts and other dependencies retain their separate licenses; the original game’s code, artwork and music are not granted under the project license.](https://github.com/griches/JamesPond2RobocodRecomp/blob/main/LICENSE)  
+**제작자:** griches  
+[공식 문서](https://github.com/griches/JamesPond2RobocodRecomp/blob/main/README.md) · 자료 확인일: 2026-10-27
 
 </details>
 
