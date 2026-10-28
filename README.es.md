@@ -27,8 +27,8 @@ Los nombres de los proyectos llevan a las fuentes de sus autores. Despliega cada
 
 - [Herramientas de diseño y creación](#creative) · 13
 - [Herramientas de uso diario y recreaciones de interfaces](#everyday) · 9
-- [Motores y recreaciones de juegos](#classic_games) · 26
-- [Adaptaciones y proyectos de compatibilidad](#ports) · 57
+- [Motores y recreaciones de juegos](#classic_games) · 30
+- [Adaptaciones y proyectos de compatibilidad](#ports) · 90
 
 <img src="assets/overview-es.svg" alt="Índice" width="920">
 
@@ -41,22 +41,22 @@ Los nombres de los proyectos llevan a las fuentes de sus autores. Despliega cada
 Un editor de composición por capas y posprocesamiento para Mac con Apple silicon, diseñado en torno a flujos de trabajo similares a Photoshop.
 
 Original o referencia: **Adobe Photoshop** · Alternativa funcional independiente  
-[Descargar](https://github.com/robbietilton/Compositor/releases) · [Explorar RemakeList](https://remakelist.com/es/remakes/compositor/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=compositor-es)
+[Descargar](https://github.com/robbietilton/Compositor/releases/tag/v1.5.12) · [Explorar RemakeList](https://remakelist.com/es/remakes/compositor/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=compositor-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
 **Plataformas:** Mac con Apple silicon · macOS 26+
 
-**Estado:** En desarrollo · versiones disponibles
+**Estado:** v1.5.12 · Apple silicon · macOS 26+
 
 **Qué necesitas:** No hace falta instalar Photoshop. Requiere un Mac con Apple silicon y macOS 26+; compilar desde el código fuente requiere Xcode 26+. Eres responsable de los derechos sobre los medios que editas.
 
-**Qué está disponible:** Las versiones descargables requieren un Mac con Apple silicon y macOS 26+; la interfaz actualmente solo está en inglés. La importación de PSD/PSB admite RGB de 8 bits, no CMYK, y rasteriza algunos vectores y textos verticales. Compilar desde el código fuente requiere Xcode 26+.
+**Qué está disponible:** v1.5.12 ofrece un DMG para Mac con Apple silicon y macOS 26+. Compilar desde el código requiere Xcode 26+. La interfaz solo está en inglés. La importación PSD/PSB admite RGB de 8 bits, no CMYK; algunos vectores y textos verticales se rasterizan. RemakeList no lo ha instalado ni probado.
 
 **Licencia del código:** [MIT](https://github.com/robbietilton/Compositor/blob/main/LICENSE)  
 **Autor:** robbietilton  
-[Documentación oficial](https://github.com/robbietilton/Compositor/blob/main/README.md) · Fuentes revisadas: 2026-10-12
+[Documentación oficial](https://github.com/robbietilton/Compositor/blob/main/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1162,15 +1162,15 @@ Original o referencia: **Richman 4** · Reimplementación del juego
 
 **Plataformas:** Windows / macOS / Android / iOS
 
-**Estado:** Metadatos actualizados a v0.7.9 · Se aplican restricciones de instalación y recursos
+**Estado:** v0.8.0 · diseños para plegables · restricciones de recursos
 
 **Qué necesitas:** Ejecutar el código fuente requiere rich4-assets.tar, que el autor proporciona por separado. Contiene material derivado del juego original, gráficos redibujados en alta resolución, mapas y sonidos. Estos recursos quedan excluidos de la GPL y el autor los restringe al uso privado. Los scripts de empaquetado incluyen los recursos en las aplicaciones, pero no se ha inspeccionado de forma independiente el contenido de los paquetes publicados. Una descarga gratuita no implica permiso para redistribuir las ilustraciones ni el material del juego original.
 
-**Qué está disponible:** v0.7.9 ofrece un ZIP para Windows, un DMG para Mac compatible con Intel y Apple silicon, una APK para Android y una IPA sin firmar para iOS. Corrige la ausencia de noticias de la emisora y de audio en el mapa Jiqing Suiyue al volver del segundo plano. iOS requiere que firmes la app. No se ha verificado una demostración pública en el navegador; RemakeList no lo ha instalado ni ejecutado. El paquete iOS no está firmado y requiere firma propia. Documentación anterior describía una app macOS sin notarizar y una APK Android con firma de depuración; esta revisión no volvió a comprobar las firmas ni el contenido de los paquetes v0.7.9. Los materiales extraídos del juego original y sus redibujados siguen fuera de GPL, y la declaración de uso privado del autor no demuestra permiso del titular original. RemakeList no lo ha instalado ni ejecutado.
+**Qué está disponible:** v0.8.0 ofrece ZIP para Windows, DMG para Mac Intel/Apple silicon, APK para Android e IPA sin firmar para iOS. Adapta el tablero y la barra lateral a pantallas desplegadas casi cuadradas, reorganiza la interfaz al plegar y corrige una barra lateral recortada en algunas pantallas anchas. Estas comprobaciones de diseño proceden del autor. iOS requiere tu propia firma; la documentación describe apps Windows sin firmar y Mac sin notarizar. No se inspeccionaron de forma independiente los contenidos ni las firmas de los paquetes. El material original y los redibujados quedan fuera de GPL; la declaración de uso privado del autor no demuestra autorización del titular original. RemakeList no lo ha instalado ni jugado.
 
 **Licencia del código:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
 **Autor:** iam567 (Liang)  
-[Documentación oficial](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · Fuentes revisadas: 2026-10-27
+[Documentación oficial](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1198,6 +1198,102 @@ Original o referencia: **Arcade Sega Model 3 / Supermodel** · emulator-enhancem
 
 </details>
 
+### [pokerecomp](https://github.com/Decryptu/pokerecomp)
+
+Reimplementación Godot de las dos primeras generaciones Pokémon con gráficos y controles modernos. Lee contenido de tus ROM GB/GBC compatibles.
+
+Original o referencia: **Pokémon Red/Blue/Yellow and Gold/Silver/Crystal** · Reimplementación del juego  
+[Descargar y aportar tus archivos del juego](https://github.com/Decryptu/pokerecomp/releases/tag/v0.1.86) · [Explorar RemakeList](https://remakelist.com/es/remakes/pokerecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pokerecomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows x64/ARM64; Linux x64/ARM64; macOS; Android; iOS; Switch homebrew
+
+**Estado:** v0.1.86 · generaciones 1–2 · requiere ROM propia
+
+**Qué necesitas:** Tu revisión compatible de Red, Blue, Yellow, Gold, Silver o Crystal con hash coincidente. El motor no incluye los juegos originales.
+
+**Qué está disponible:** v0.1.86 ofrece versiones de escritorio, APK Android, IPA iOS sin firma y paquete Switch homebrew. iOS requiere firma personal/instalación externa; Switch, un entorno homebrew existente. La generación 3 es experimental y no jugable. Rechaza revisiones ROM no admitidas. Apple no es una publicación normal de App Store: macOS tiene firma ad hoc y la firma iOS con cuenta gratuita suele renovarse periódicamente.
+
+**Licencia del código:** [The rewritten engine code is MIT. Original Pokémon code, ROM content, artwork and music remain outside that license.](https://github.com/Decryptu/pokerecomp/blob/main/LICENSE)  
+**Autor:** Decryptu  
+[Documentación oficial](https://github.com/Decryptu/pokerecomp/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Streetball Revival](https://github.com/luckvj/streetball-revival)
+
+Recreación Rust de NBA Street Vol. 2 con controles de escritorio y juego en línea experimental. Carga tu disco PS2 USA compatible.
+
+Original o referencia: **NBA Street Vol. 2 (PS2)** · Reimplementación del juego  
+[Descargar y aportar tus archivos del juego](https://github.com/luckvj/streetball-revival/releases/tag/v0.1.4-beta) · [Explorar RemakeList](https://remakelist.com/es/remakes/streetball-revival/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=streetball-revival-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows; Linux
+
+**Estado:** v0.1.4-beta · Windows/Linux · juego en línea experimental
+
+**Qué necesitas:** Tu ISO PS2 USA NBA Street Vol. 2, SLUS-20651, con el hash requerido. El motor no incluye datos originales.
+
+**Qué está disponible:** v0.1.4-beta ofrece instalador/archivo Windows y archivo Linux. El juego en línea sigue en desarrollo y necesita más pruebas de jugadores. La equivalencia es incompleta: equipos controlados por ordenador, gráficos y cámara Gamebreaker pueden diferir. La tabla del autor mide conductas seleccionadas, no un porcentaje de fidelidad de todo el juego.
+
+**Licencia del código:** [The rewritten engine is MIT. The license does not include EA’s original game data, artwork or music.](https://github.com/luckvj/streetball-revival/blob/main/LICENSE)  
+**Autor:** luckvj  
+[Documentación oficial](https://github.com/luckvj/streetball-revival/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Torchlight Rekindled](https://github.com/GreenSwampDweller/torchlight-rekindled)
+
+Motor Torchlight para portátiles y escritorio que sigue la lógica orientada a mando de Xbox 360. Usa datos de tu copia PC o Xbox 360.
+
+Original o referencia: **Torchlight** · Reimplementación del motor  
+[Descargar y aportar tus archivos del juego](https://github.com/GreenSwampDweller/torchlight-rekindled/releases/tag/1.0.2) · [Explorar RemakeList](https://remakelist.com/es/remakes/torchlight-rekindled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=torchlight-rekindled-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Switch homebrew / Android 12+ arm64 / iOS / Windows / Linux
+
+**Estado:** Descargas disponibles · requiere juego original
+
+**Qué necesitas:** pak.zip/Pak.zip y carpeta de música de tu edición completa comprada PC o Xbox 360. Los datos PC usan la interfaz alternativa de consola del proyecto. No distribuye datos del juego.
+
+**Qué está disponible:** 1.0.2 incluye NRO Switch, APK Android, archivos Windows/Linux x64 e IPA iOS sin firma. Switch requiere homebrew. Android necesita arm64, Android 12+ y acceso a todos los archivos del directorio elegido. iOS requiere firma personal. Las pruebas de escritorio se limitan al portátil del autor con mando; Steam Deck no está verificado. La publicación también enumera una IPA 1.0.1 antigua: elige la llamada explícitamente 1.0.2. RemakeList no lo ha instalado ni jugado.
+
+**Licencia del código:** [GPL-3.0 for the engine; game data and third-party components retain separate rights](https://github.com/GreenSwampDweller/torchlight-rekindled/blob/main/LICENSE)  
+**Autor:** GreenSwampDweller  
+[Documentación oficial](https://github.com/GreenSwampDweller/torchlight-rekindled/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [ZQuest Classic](https://github.com/ZQuestClassic/ZQuestClassic)
+
+Motor, reproductor de aventuras y editor gratuitos al estilo del Zelda original de NES. Juega creaciones comunitarias o crea las tuyas.
+
+Original o referencia: **The Legend of Zelda / Zelda-style adventures** · Reimplementación del motor  
+[Descargar](https://zquestclassic.com/releases/) · [Explorar RemakeList](https://remakelist.com/es/remakes/zquest-classic/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=zquest-classic-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows / macOS / Linux / Web (experimental)
+
+**Estado:** Versión de escritorio estable · reproductor web experimental
+
+**Qué necesitas:** El motor usa archivos de aventuras: obténlos de sus autores o crea los tuyos. GPL no concede derechos sobre nombres/arte Nintendo ni recursos de terceros; comprueba las condiciones de cada aventura.
+
+**Qué está disponible:** La estable 2.55.17 ofrece Windows x64/x86, macOS y Linux; la web oficial tiene reproductor experimental. Se elige 2.55.17 estable; las versiones preliminares 3.0 son una línea separada. La web es experimental, también en móvil. Compatibilidad y condiciones de recursos varían por autor y versión del motor. RemakeList solo verificó documentación y metadatos, sin instalar ni jugar aventuras.
+
+**Licencia del código:** [GPL-3.0 for the engine; individual quests and their media have separate rights](https://github.com/ZQuestClassic/ZQuestClassic/blob/main/LICENSE)  
+**Autor:** ZQuestClassic  
+[Documentación oficial](https://github.com/ZQuestClassic/ZQuestClassic/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
 
 <a id="ports"></a>
 
@@ -1215,15 +1311,15 @@ Original o referencia: **Diablo II: Resurrected** · Capa de compatibilidad entr
 
 **Plataformas:** iPhone / iPad / Mac con Apple silicon / Android ARM64 / HarmonyOS NEXT
 
-**Estado:** v2.0.1 · Archivos propios de Switch · Importación o compilación según la plataforma
+**Estado:** v2.1.0 · archivos propios de Switch · cámara experimental opcional
 
 **Qué necesitas:** Aporta los archivos ExeFS y RomFS de tu compra legal del juego base de Switch y Reign of the Warlock, actualizados a la versión de consola 1.0.34.0, denominada 3.3.94012 por las herramientas. Los archivos de PC y de otras consolas no sirven como sustituto. Los recursos ocupan unos 5,6 GB; los chips Apple antiguos necesitan un paquete de texturas adicional de aproximadamente 1 GB generado a partir de tus archivos. Apple requiere como mínimo A14/M1; elige la versión normal o la de API antiguas para iOS 26+ frente a 18–25 y macOS 26+ frente a 15–25. Android necesita ARM64, Android 12+ y Vulkan 1.1. HarmonyOS NEXT requiere una cuenta de desarrollador, herramientas de firma y un paquete de ejecución preparado por ti.
 
-**Qué está disponible:** v2.0.1 ofrece una APK para Android, una HAP sin firmar para HarmonyOS y dos ZIP con archivos de entrada para crear la app iOS. Android también necesita un paquete de importación preparado en un ordenador; esta actualización reutiliza el paquete y las partidas de v2.0.0. La carcasa de HarmonyOS y los archivos de entrada de iOS no cambian: vuelve a firmar la HAP con tu certificado de desarrollador y utiliza los ZIP de iOS junto con el código de esta versión para empaquetar y firmar una app. Mac sigue requiriendo compilación desde código; no hay archivo de descarga para Mac. Solo funciona sin conexión, sin multijugador. Algunos detalles de controles táctiles en Android siguen incompletos; ciertas GPU omiten sombreadores o pierden efectos, y la importación requiere el permiso de acceso a todos los archivos. Los dispositivos Apple con 4 GB de RAM tienen limitaciones de memoria; cumplir el mínimo de chip no demuestra compatibilidad probada. La firma de iOS con herramientas de instalación externa sigue sin verificar; un Apple ID gratuito requiere renovar la firma cada 7 días y no ofrece sincronización por iCloud. No redistribuyas paquetes creados por ti que contengan datos del juego. Apple TV sigue siendo una vista previa de selección de personaje, no una plataforma anunciada como jugable. RemakeList no lo ha compilado, instalado ni jugado.
+**Qué está disponible:** v2.1.0 actualiza la APK de Android y los dos ZIP de entrada para compilar iOS. Android conserva el paquete de importación y las partidas existentes; iOS requiere crear y firmar una nueva app con los nuevos archivos y el código v2.1.0. La HAP de HarmonyOS sin firmar sigue siendo la de v2.0.0 y necesita tu firma de desarrollador y un paquete de ejecución. Mac solo permite compilar desde el código. Solo funciona sin conexión. En Android quedan detalles táctiles incompletos y fallos gráficos en ciertos dispositivos. Los dispositivos Apple con 4 GB de RAM tienen poca memoria disponible; la firma mediante herramientas de instalación externa y el empaquetado en Linux siguen sin verificar. Un Apple ID gratuito requiere renovar la firma cada 7 días y no permite sincronizar por iCloud. Apple TV solo llega a una vista previa de selección de personaje. No redistribuyas paquetes que incluyan contenido del juego. RemakeList no lo ha compilado, instalado ni jugado.
 
 **Licencia del código:** [MIT covers project code; original game files and third-party components retain separate rights and licenses.](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE)  
 **Autor:** joe jiang (@happyjoejiang)  
-[Documentación oficial](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) · Fuentes revisadas: 2026-10-27
+[Documentación oficial](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1239,15 +1335,15 @@ Original o referencia: **Modern Warfare 2 (2009)** · Recompilación estática
 
 **Plataformas:** Windows / Linux x64 · SSE4.2 · Vulkan 1.2
 
-**Estado:** v0.8.1 publicada · Requiere recursos originales
+**Estado:** Estable v0.8.1 · versión preliminar v0.8.2 disponible
 
 **Qué necesitas:** Aporta tu propia ISO de un disco de Xbox 360 de Estados Unidos o Europa, versión 1.0.557, obtenida legalmente; el lanzador la comprueba y descarga y aplica Title Update 6. Requiere un procesador x64 con SSE4.2, Vulkan 1.2, unos 8 GB de disco y un mando; el teclado solo controla los menús. La importación experimental de mapas personalizados de PC también necesita recursos de tu propia copia para PC.
 
-**Qué está disponible:** v0.8.1 ofrece un ZIP para Windows y un archivo para Linux. Abre mw2-launcher para instalar desde tu propia ISO. Elige el paquete normal windows o linux; los archivos -steam y -lan de la misma versión son copias idénticas para que se actualicen los lanzadores antiguos. No se admiten el emparejamiento público ni las listas de juego clasificatorias, y los mapas personalizados siguen en beta. El autor afirma haber corregido errores conocidos del código de red original, pero sigue recomendando jugar solo con personas de confianza; RemakeList no ha realizado una auditoría de seguridad independiente. Otros usuarios de Steam pueden descubrir y unirse a las partidas SYSTEM LINK de Steam; los usuarios del mismo servidor de retransmisión o de la misma LAN también pueden acceder a la partida. Todos deben usar la misma versión. RemakeList no lo ha instalado ni jugado.
+**Qué está disponible:** La descarga principal sigue siendo la versión estable v0.8.1 para Windows y Linux. v0.8.2 es una versión preliminar independiente. Ejecuta mw2-launcher con tu ISO compatible y usa el paquete normal de tu plataforma; los archivos -steam/-lan de la misma versión son descargas de compatibilidad duplicadas. No admite emparejamiento público ni partidas clasificatorias; los mapas personalizados siguen en beta. Otros usuarios de Steam pueden encontrar las partidas SYSTEM LINK, y los usuarios de un relay o LAN compartidos también pueden acceder. Usa la misma versión y juega con personas de confianza. El autor informa de correcciones de red; RemakeList no ha auditado su seguridad ni lo ha instalado o jugado.
 
 **Licencia del código:** [GPL-3.0-only](https://github.com/PaulCombal/mw2-recompiled/blob/master/LICENSE)  
 **Autor:** PaulCombal  
-[Documentación oficial](https://github.com/PaulCombal/mw2-recompiled/blob/master/README.md) · Fuentes revisadas: 2026-10-27
+[Documentación oficial](https://github.com/PaulCombal/mw2-recompiled/blob/master/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1328,7 +1424,7 @@ Original o referencia: **The Legend of Zelda: Twilight Princess** · Proyecto ba
 Una recompilación nativa de Mega Man X4 con cooperación para dos jugadores, X y Zero, en local o por red. La versión actual es una beta pública.
 
 Original o referencia: **Mega Man X4** · Recompilación estática  
-[Descargar y aportar tus archivos del juego](https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.13) · [Explorar RemakeList](https://remakelist.com/es/remakes/mega-man-x4-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mega-man-x4-recompiled-es)
+[Descargar y aportar tus archivos del juego](https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.14) · [Explorar RemakeList](https://remakelist.com/es/remakes/mega-man-x4-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mega-man-x4-recompiled-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
@@ -1339,11 +1435,11 @@ Original o referencia: **Mega Man X4** · Recompilación estática
 
 **Qué necesitas:** Aporta tu propia imagen de disco original y sin modificar de Mega Man X4 USA (SLUS-00561), con sus archivos .cue y .bin, incluso si desactivas todos los mods. No se admiten discos parcheados, versiones undub ni imágenes retraducidas. Se incluye OpenBIOS; aportar una copia de la BIOS es opcional. El contenido original del juego queda fuera de la licencia MIT.
 
-**Qué está disponible:** v1.0.13 ofrece un ZIP para Windows x64 y una AppImage para Linux x86-64, y corrige la cámara del jugador 2 entre las puertas de jefes de la segunda fase de Sigma. El modo cooperativo requiere OpenGL y ambos jugadores en red deben usar la misma versión. La beta pública sigue teniendo problemas conocidos: las cámaras independientes pueden ralentizarse y se investigan informes sobre el inicio de sesión y el arranque del modo en línea. Linux requiere glibc 2.38+. No se incluyen los experimentos para cuatro jugadores. RemakeList no lo ha instalado ni ejecutado.
+**Qué está disponible:** v1.0.14 ofrece ZIP para Windows x64 y AppImage para Linux x86-64. Mejora el renderizado cooperativo; la mejora medida corresponde a una escena concreta de jefe, no garantiza el rendimiento de todo el juego. El cooperativo requiere OpenGL y todos los participantes en red deben actualizar a la misma versión. Se conservan las partidas existentes de tarjetas de memoria nativas. Beta pública: las cámaras independientes aún pueden ralentizarlo y se investigan informes de fallos al iniciar sesión o arrancar en línea. Linux requiere glibc 2.38+. Los experimentos para cuatro jugadores son independientes. RemakeList no lo ha instalado ni jugado.
 
 **Licencia del código:** [MIT · original project code; dependencies retain their licenses](https://github.com/mstan/MegaManX4Recomp/blob/master/LICENSE)  
 **Autor:** Matthew Stanley  
-[Documentación oficial](https://github.com/mstan/MegaManX4Recomp/blob/master/README.md) · Fuentes revisadas: 2026-10-27
+[Documentación oficial](https://github.com/mstan/MegaManX4Recomp/blob/master/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1352,22 +1448,22 @@ Original o referencia: **Mega Man X4** · Recompilación estática
 Un port nativo inicial de Super Mario Galaxy para Android, con controles táctiles, compatibilidad con mandos y pantalla ultrapanorámica.
 
 Original o referencia: **Super Mario Galaxy** · Proyecto basado en descompilación  
-[Descargar y aportar tus archivos del juego](https://github.com/OpenPort-Labs/Galaxy-Android/releases/tag/v0.0.4) · [Explorar RemakeList](https://remakelist.com/es/remakes/galaxy-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=galaxy-android-es)
+[Descargar y aportar tus archivos del juego](https://github.com/OpenPort-Labs/Galaxy-Android/releases/tag/v0.0.4b) · [Explorar RemakeList](https://remakelist.com/es/remakes/galaxy-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=galaxy-android-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
 **Plataformas:** Android 11+ · ARM64 · Vulkan 1.0
 
-**Estado:** Versión pública v0.0.4 · Requiere recursos originales
+**Estado:** v0.0.4b · prueba por instalación externa · copia de partidas necesaria
 
 **Qué necesitas:** Aporta tu propia imagen de disco de Super Mario Galaxy para Wii, extraída legalmente (.rvz, .wbfs, .iso o .wia), para su extracción y conversión local. Reserva unos 2,5 GB sin vídeos o 5 GB con ellos. Los materiales opcionales derivados de Shield son datos propietarios independientes y no se proporcionan en esta ficha.
 
-**Qué está disponible:** v0.0.4 ofrece una APK pública que requiere Android 11+, ARM64, Vulkan 1.0 y al menos 3 GB de RAM. El autor indica renderizado Vulkan, asignación de mandos físicos y cambios en los controles táctiles. Los dispositivos sin controlador Vulkan 1.0 no son compatibles. El autor la llama versión estable, pero RemakeList no ha validado la variedad de dispositivos, el rendimiento sostenido ni el juego completo, y no garantiza 60 FPS. La portada sigue siendo la captura de pcddlXDDD de v0.0.1, no una prueba de esta versión. RemakeList no la ha instalado ni ejecutado.
+**Qué está disponible:** v0.0.4b ofrece GalaxyAndroid.apk para Android 11+ ARM64, con Vulkan 1.0 y al menos 3 GB de RAM. No hay alternativa OpenGL. Es una compilación depurable para pruebas e instalación externa, no un paquete de tienda. Cambió el certificado de firma: las instalaciones GitHub v0.0.4/4a no se pueden actualizar directamente. Haz una copia de las partidas antes de desinstalar, porque se borran los datos privados de la app; el almacenamiento compartido GalaxyData es independiente. El autor no tenía un teléfono ni auriculares conectados para verificar esta versión. La autenticación de juego en red y la rotación de claves de producción siguen pendientes. RemakeList no lo ha instalado ni probado.
 
 **Licencia del código:** [GPL-3.0 · port code; original game assets excluded](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/LICENSE)  
 **Autor:** OpenPort Labs  
-[Documentación oficial](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/README.md) · Fuentes revisadas: 2026-10-27
+[Documentación oficial](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1541,7 +1637,7 @@ Original o referencia: **Halo: Combat Evolved** · Proyecto basado en descompila
 
 ### [CTRPad](https://github.com/chrissotraidis/ctrpad)
 
-Integración Apple de CTR Native y CTR-ModSDK para el Crash Team Racing original.
+Integración de CTR Native y CTR-ModSDK para plataformas Apple y el Crash Team Racing original, con controles táctiles e importación local de disco. Crea una app personal con PadMint en Mac o su GitHub Cloud Build para iPhone/iPad.
 
 Original o referencia: **Crash Team Racing (1999)** · Proyecto basado en descompilación  
 [Compilar y aportar tus archivos del juego](https://github.com/chrissotraidis/ctrpad#readme) · [Explorar RemakeList](https://remakelist.com/es/remakes/ctrpad/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=ctrpad-es)
@@ -1549,17 +1645,17 @@ Original o referencia: **Crash Team Racing (1999)** · Proyecto basado en descom
 <details>
 <summary>Requisitos y capturas</summary>
 
-**Plataformas:** Mac Apple Silicon / iPhone / iPad
+**Plataformas:** Mac Apple Silicon (macOS 11+) / iPhone / iPad (iOS/iPadOS 15+)
 
-**Estado:** Compilación propia · juego Apple documentado
+**Estado:** v0.2.4 · compilación personal · publicación solo de receta
 
-**Qué necesitas:** BIN norteamericano NTSC-U compatible de una pista MODE2/2352, Mac Apple Silicon y herramientas Apple de compilación y firma. La licencia del código no concede derechos sobre el juego original, sus imágenes ni sus datos comerciales.
+**Qué necesitas:** Importa tu propio BIN compatible NTSC-U SCUS944.26, de una sola pista, raw MODE2/2352 y desde el byte cero. Selecciona el BIN, no el CUE; no admite ISO convertidas, CHD ni archivos comprimidos. La compilación Apple local requiere las herramientas documentadas de compilación y firma; iPhone/iPad en la nube usa su ruta de firma documentada. La licencia del código no cubre datos ni arte del juego original.
 
-**Qué está disponible:** PadMint compila tu aplicación en Mac Apple Silicon; las publicaciones son recetas, no aplicaciones instalables. Probado por el autor en Mac, iPhone 14 y iPad Pro; matriz de mandos incompleta. Sin App Store/TestFlight.
+**Qué está disponible:** v0.2.4 corrige el arranque horizontal y la disposición táctil del iPad. La publicación solo incluye una receta PadMint y su suma de verificación, no una app. Compila en un Mac Apple Silicon o usa GitHub Cloud Build de PadMint para iPhone/iPad sin Mac; importa tu BIN compatible después de instalar. Mantén privadas las compilaciones personales; no hay versión App Store/TestFlight. El autor informa de partidas en Mac/iPhone/iPad y una comprobación de la corrección en un iPad físico; las pruebas generales, de mandos y de multijugador local siguen incompletas. RemakeList no lo ha instalado ni jugado.
 
-**Licencia del código:** [GPL-3.0. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/chrissotraidis/ctrpad#legal-and-acknowledgements)  
+**Licencia del código:** [GPL-3.0. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/chrissotraidis/ctrpad/blob/main/LICENSE)  
 **Autor:** chrissotraidis  
-[Documentación oficial](https://github.com/chrissotraidis/ctrpad#readme) · Fuentes revisadas: 2026-10-19
+[Documentación oficial](https://github.com/chrissotraidis/ctrpad#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1568,46 +1664,46 @@ Original o referencia: **Crash Team Racing (1999)** · Proyecto basado en descom
 Compila una versión nativa de Def Jam: Fight for NY para Windows, Mac o Linux a partir de tu propia copia extraída compatible de la edición estadounidense para la Xbox original, con mayor resolución y hasta cuatro jugadores locales. La pantalla panorámica sigue en beta.
 
 Original o referencia: **Def Jam: Fight for NY** · Recompilación estática  
-[Descargar y aportar tus archivos del juego](https://github.com/vyanhursky/DefJamFFNY-recomp/releases/tag/v0.12.1) · [Explorar RemakeList](https://remakelist.com/es/remakes/defjam-ffny-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=defjam-ffny-recompiled-es)
+[Compilar y aportar tus archivos del juego](https://github.com/vyanhursky/DefJamFFNY-recomp/releases/tag/v0.12.2) · [Explorar RemakeList](https://remakelist.com/es/remakes/defjam-ffny-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=defjam-ffny-recompiled-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
 **Plataformas:** Windows x64 (Direct3D 11) / macOS con Apple silicon / Linux x86-64 / Steam Deck
 
-**Estado:** Versión pública v0.12.1 · Compilación local · Pantalla panorámica en beta
+**Estado:** Versión pública v0.12.2 · compilación local · pantalla ancha beta
 
 **Qué necesitas:** Aporta tu propia imagen de disco estadounidense de la Xbox original o una copia extraída que coincida con el manifiesto admitido por el autor. Las versiones de PS2 y GameCube no sirven como sustituto. La herramienta verifica, recompila y construye localmente; generar texturas HD requiere más tiempo y espacio de disco. La licencia del código no concede derechos sobre el juego ni sus ilustraciones originales.
 
-**Qué está disponible:** v0.12.1 ofrece herramientas de configuración para Windows x64, macOS con Apple silicon y Linux x86-64/Steam Deck. Corrige los retratos de luchadores creados y la colocación del HUD en pantalla panorámica. La configuración valida tu copia extraída y compila localmente. Las instalaciones existentes utilizan Clean Update y vuelven a compilar; el autor indica que se conservan partidas, ajustes, mods y paquetes de texturas. Los formatos 16:9 y 16:10 siguen en beta, y 21:9 y 32:9 son experimentales; el multijugador es solo local. Persisten pausas al cargar la tienda, ritmo irregular de fotogramas en algunas escenas y problemas conocidos de pantalla panorámica; se siguen investigando el audio y el rendimiento del tutorial de historia en Steam Deck. La herramienta de configuración de macOS no está firmada. Las comprobaciones de regresión del autor no equivalen a una prueba del juego completo por RemakeList; RemakeList no lo ha instalado ni ejecutado.
+**Qué está disponible:** v0.12.2 ofrece herramientas de instalación para Windows x64, macOS Apple silicon y Linux x86-64. Mejora la regularidad de fotogramas de Story Power Plant y corrige un defecto visual del menú inicial. Valida tu volcado y compila localmente; las instalaciones existentes necesitan Clean Update y recompilación, conservando partidas, ajustes, mods y texturas. Las proporciones 16:9/16:10 siguen en beta; las más anchas son experimentales y el multijugador es solo local. Quedan pausas en la tienda, problemas de fluidez y pantalla ancha, y fallos de audio y rendimiento del tutorial en Steam Deck. macOS no está firmado; Proton no se ha probado. RemakeList no lo ha instalado ni jugado.
 
 **Licencia del código:** [MIT project code; separate toolkit licenses. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/vyanhursky/DefJamFFNY-recomp#credits-and-licensing)  
 **Autor:** vyanhursky  
-[Documentación oficial](https://github.com/vyanhursky/DefJamFFNY-recomp#readme) · Fuentes revisadas: 2026-10-27
+[Documentación oficial](https://github.com/vyanhursky/DefJamFFNY-recomp#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
 ### [DOAXVB Native PC Port](https://github.com/norain211/doaxvb-re)
 
-Adaptación nativa de Dead or Alive Xtreme Beach Volleyball para ordenador desde tu copia Xbox.
+Adaptación nativa no oficial de Dead or Alive Xtreme Beach Volleyball, compilada localmente desde tu disco Xbox estadounidense. La beta recomendada v0.6.0 tiene nuevo lanzador y paquetes de escritorio, pero conserva fallos gráficos.
 
 Original o referencia: **Dead or Alive Xtreme Beach Volleyball** · Recompilación estática  
-[Descargar y aportar tus archivos del juego](https://github.com/norain211/doaxvb-re/releases) · [Explorar RemakeList](https://remakelist.com/es/remakes/doaxvb-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=doaxvb-native-es)
+[Compilar y aportar tus archivos del juego](https://github.com/NoRain211/doaxvb-re/releases/tag/v0.6.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/doaxvb-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=doaxvb-native-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
-**Plataformas:** Windows / macOS / Linux
+**Plataformas:** Windows 10/11 x64 / macOS Apple silicon·Intel / Linux x86-64·Steam Deck
 
-**Estado:** Beta jugable · problemas visuales conocidos
+**Estado:** Beta recomendada v0.6.0 · compilación local · pruebas incompletas
 
-**Qué necesitas:** Tu imagen de disco o archivos extraídos de Xbox USA; el contenido generado permanece en tu ordenador. La licencia del código no concede derechos sobre el juego original, sus imágenes ni sus datos comerciales.
+**Qué necesitas:** Aporta tu propia imagen compatible de disco Xbox estadounidense; la instalación valida y genera el código del juego localmente. Mac/Linux también requieren las herramientas de compilación documentadas; Steam Deck usa un contenedor con compilador. El contenido generado del juego y el arte original quedan fuera de la licencia GPL-3.0-or-later del proyecto.
 
-**Qué está disponible:** Sigue la preparación de escritorio del autor con tus archivos USA compatibles. Sesiones largas documentadas, con fallos de piscina y gráficos pendientes. Final de vacaciones probado desde una partida modificada del día 14.
+**Qué está disponible:** v0.6.0 sustituye a v0.5.3 como beta recomendada por el autor y ofrece ZIP para Windows, Mac y Linux. Cada uno compila desde tu disco: extrae en una carpeta nueva y vuelve a compilar porque cambió la receta, y después copia tus partidas privadas anteriores. Windows ahora descarga llvm-mingw y no requiere Visual Studio. El autor no ha realizado una sesión completa de juego con v0.6.0. Se documentan comprobaciones de compilación de los ZIP Windows/Linux, pero el ZIP Mac no se compiló en un Mac; los controles del lanzador se comprobaron con un mando virtual. Persisten parpadeos en la orilla y fallos de transición en la piscina. En Mac/Linux faltan algunas nieblas, luces y sombras; la opción GI con trazado de rayos no tiene efecto en las versiones publicadas. RemakeList no lo ha compilado ni jugado.
 
 **Licencia del código:** [GPL-3.0-or-later. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/norain211/doaxvb-re#license)  
 **Autor:** NoRain211  
-[Documentación oficial](https://github.com/norain211/doaxvb-re#readme) · Fuentes revisadas: 2026-10-19
+[Documentación oficial](https://github.com/norain211/doaxvb-re#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1709,25 +1805,25 @@ Original o referencia: **Gravity Rush 2** · Capa de compatibilidad entre plataf
 
 ### [inFAMOUS Second Son Native Port](https://github.com/HayatoG/iss_pc)
 
-inFAMOUS Second Son Native Port — Servicios y gráficos de PS4 adaptados al escritorio. Una adaptación independiente de inFAMOUS Second Son para los dispositivos indicados.
+Adaptación no oficial de compatibilidad para PC de inFAMOUS Second Son, con tus propios archivos de PS4 y paquetes para Linux y Windows. Hay documentación de los primeros capítulos; persisten problemas gráficos y de rendimiento.
 
 Original o referencia: **inFAMOUS Second Son** · Capa de compatibilidad entre plataformas  
-[Descargar y aportar tus archivos del juego](https://github.com/hayatog/iss_pc/releases) · [Explorar RemakeList](https://remakelist.com/es/remakes/infamous-second-son-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=infamous-second-son-native-es)
+[Descargar y aportar tus archivos del juego](https://github.com/HayatoG/iss_pc/releases/tag/v1.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/infamous-second-son-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=infamous-second-son-native-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
-**Plataformas:** Linux · Vulkan
+**Plataformas:** Linux x86-64 / Windows 10 (1903+)–11 x64 · Vulkan 1.3
 
-**Estado:** Versión preliminar jugable o experimental.
+**Estado:** Estable v1.0 · beta-rc1 opcional · archivos originales de PS4
 
-**Qué necesitas:** Aporta tus propios archivos obtenidos legalmente: PS4 · CUSA00223 · 1.00 + 1.07. El proyecto es gratuito; el juego original va aparte. Aquí no se ofrecen archivos del juego, claves ni paquetes listos para jugar.
+**Qué necesitas:** Aporta tus propios archivos descifrados del juego base PS4 CUSA00223 de EE. UU., versión 1.00, combinados con la actualización 1.07: unos 33 GB. Requiere AVX, Vulkan 1.3 y, preferiblemente, 6 GB de VRAM. El audio no necesita un archivo de firmware de la consola; no se incluyen archivos del juego.
 
-**Qué está disponible:** Vía oficial: Linux · Vulkan. Versión preliminar jugable o experimental. Persisten problemas de imagen y rendimiento. Elige el paquete oficial adecuado para tu sistema.
+**Qué está disponible:** v1.0 sigue siendo la descarga estable recomendada para Linux x86-64 (glibc 2.39+) y Windows 10/11 x64. beta-rc1 es una versión preliminar descargable por separado para las mismas plataformas, no su sustituta estable. La tasa de fotogramas y los gráficos siguen siendo irregulares. La compatibilidad con RX 580/Polaris en Windows es experimental. beta-rc1 enumera texturas negras del suelo al reescalar, FSR poco nítido a 3x y reescalado en Linux sin probar; el lanzador no ofrece las betas como actualizaciones normales. RemakeList no ha instalado ni jugado ninguna de las dos versiones.
 
 **Licencia del código:** [GPL-2.0 applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/HayatoG/iss_pc/blob/main/port/LICENSE)  
 **Autor:** HayatoG  
-[Documentación oficial](https://github.com/HayatoG/iss_pc#readme) · Fuentes revisadas: 2026-10-19
+[Documentación oficial](https://github.com/HayatoG/iss_pc#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1736,7 +1832,7 @@ Original o referencia: **inFAMOUS Second Son** · Capa de compatibilidad entre p
 Compila localmente una adaptación nativa para escritorio a partir de tus propios archivos de Link’s Awakening para Switch 1.0.0, 1.0.1 o 1.1.0, con pantalla panorámica y opciones de aleatorización. Sigue en beta.
 
 Original o referencia: **The Legend of Zelda: Link’s Awakening** · Recompilación estática  
-[Descargar y aportar tus archivos del juego](https://github.com/peiikai/LASRecomp/releases/tag/beta_5.3) · [Explorar RemakeList](https://remakelist.com/es/remakes/las-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=las-recomp-es)
+[Compilar y aportar tus archivos del juego](https://github.com/peiikai/LASRecomp/releases/tag/beta_5.3) · [Explorar RemakeList](https://remakelist.com/es/remakes/las-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=las-recomp-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
@@ -1747,11 +1843,11 @@ Original o referencia: **The Legend of Zelda: Link’s Awakening** · Recompilac
 
 **Qué necesitas:** Aporta tus propios archivos exefs y romfs de Link’s Awakening para Switch 1.0.0, 1.0.1 o 1.1.0, obtenidos legalmente, y selecciona su carpeta para compilar localmente. Mac requiere Apple silicon y macOS 15+. Windows 10/11 y Linux x64 necesitan AVX2, FMA, Vulkan 1.3, al menos 8 GB de RAM y unos 12 GB para la configuración. No se proporcionan archivos de juego ni claves.
 
-**Qué está disponible:** beta_5.3 ofrece un ZIP para Windows, un DMG para Mac y AppImages para Linux x86-64 y ARM64. Admite las versiones originales 1.0.0, 1.0.1 y 1.1.0, con compilación local en el primer inicio. El autor la identifica expresamente como beta aunque GitHub no active la marca de versión preliminar; Linux ARM64 no se ha probado en hardware real. Siguen siendo posibles los cierres, semillas imposibles de completar y errores gráficos en pantalla panorámica; mezclar habitaciones de mazmorras es especialmente experimental. Linux ARM64 está compilado, pero carece de pruebas de hardware; no se admiten Mac Intel ni gráficos integrados Intel antiguos. Los identificadores de semilla anteriores a Beta 5 generan resultados diferentes. Los datos de fotogramas del autor para Steam Deck o Mac no garantizan el mismo resultado en todos los equipos. RemakeList no lo ha compilado ni jugado.
+**Qué está disponible:** beta_5.3 sigue siendo la descarga general para Windows, Mac con Apple silicon y Linux. Las versiones preliminares posteriores test-413-deck, test-452-owl y test-356-haze-2 atienden incidencias concretas; no son una nueva versión general. test-413-deck aborda líneas y parpadeos de sombras en Steam Deck y comparte la carpeta de datos normal: úsala solo si participas en esa prueba. Puede haber cierres, semillas imposibles de resolver y fallos de pantalla ancha; mezclar salas de mazmorras es especialmente experimental. Linux ARM64 carece de pruebas en hardware real; los Mac Intel y las GPU integradas Intel antiguas no son compatibles. Los identificadores de semillas anteriores a Beta 5 producen resultados distintos. RemakeList no lo ha compilado ni jugado.
 
 **Licencia del código:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/peiikai/LASRecomp/blob/main/LICENSE)  
 **Autor:** peiikai  
-[Documentación oficial](https://github.com/peiikai/LASRecomp#readme) · Fuentes revisadas: 2026-10-27
+[Documentación oficial](https://github.com/peiikai/LASRecomp#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1904,22 +2000,22 @@ Original o referencia: **The Legend of Zelda: Phantom Hourglass** · Recompilaci
 Pinyon Shift — Lanzador, opciones gráficas y vía para Steam Deck. Una adaptación independiente de Forza Horizon para los dispositivos indicados.
 
 Original o referencia: **Forza Horizon** · Recompilación estática  
-[Compilar y aportar tus archivos del juego](https://github.com/arcanite24/pinyon-shift#readme) · [Explorar RemakeList](https://remakelist.com/es/remakes/pinyon-shift/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pinyon-shift-es)
+[Compilar y aportar tus archivos del juego](https://github.com/arcanite24/pinyon-shift/releases/tag/v0.7.1) · [Explorar RemakeList](https://remakelist.com/es/remakes/pinyon-shift/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pinyon-shift-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
-**Plataformas:** Windows / Linux / macOS Apple silicon / Android
+**Plataformas:** Windows x64 / Linux x86-64·SteamOS / macOS 13+ Apple silicon / Android 13+ alfa
 
-**Estado:** Versión preliminar jugable o experimental.
+**Estado:** v0.7.1 · compilación local · Android alfa
 
-**Qué necesitas:** Aporta tus propios archivos obtenidos legalmente: Xbox 360 · Forza Horizon disco · TU4/DLC propios opcionales. El proyecto es gratuito; el juego original va aparte. Aquí no se ofrecen archivos del juego, claves ni paquetes listos para jugar.
+**Qué necesitas:** Aporta tu propio disco comercial estadounidense de Forza Horizon para Xbox 360 (MS-2505, ID 4D5309C9) o una carpeta extraída compatible sin modificar; TU4 y los DLC propios van por separado. El autor estima entre 20 y 60 minutos para la primera compilación y unos 30 GB libres. En escritorio se requiere Vulkan 1.3. La alfa de Android necesita Android 13+ y Vulkan 1.3, y está ajustada para Snapdragon 8 Gen 2+ con 8 GB de RAM.
 
-**Qué está disponible:** Vía oficial: Windows / Linux / macOS Apple silicon / Android. Versión preliminar jugable o experimental. Android sigue siendo experimental. Compila localmente según las instrucciones oficiales.
+**Qué está disponible:** v0.7.1 ofrece lanzadores para Windows, Linux x86-64 y Mac con Apple silicon. Cada uno compila el juego a partir de tus archivos; actualizar vuelve a compilar conservando partidas, ajustes y DLC. Android no tiene una APK de lanzamiento lista: créala en el PC mediante el lanzador y transfiérela al dispositivo. Persisten fallos gráficos y ralentizaciones. Las GPU AMD/Intel de PC aún no están validadas; v4 en Linux/Mac solo tiene pruebas de recorridos automatizados. Android es alfa y las GPU ajenas a Qualcomm requieren activación expresa. DLSS solo está en Windows; DualSense por Bluetooth o fuera de Windows no se ha probado. El UDLC comunitario cubre pocos coches y tiene derechos de contenido independientes. RemakeList no lo ha compilado ni jugado.
 
 **Licencia del código:** [BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/arcanite24/pinyon-shift/blob/main/LICENSE)  
 **Autor:** arcanite24  
-[Documentación oficial](https://github.com/arcanite24/pinyon-shift#readme) · Fuentes revisadas: 2026-10-19
+[Documentación oficial](https://github.com/arcanite24/pinyon-shift#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -1968,6 +2064,30 @@ Original o referencia: **Road Trip / Choro Q HG2** · Recompilación estática
 **Licencia del código:** [GPL-3.0; third-party notices separate](https://github.com/silentsudin/RoadTripAdventure-recomp#readme)  
 **Autor:** silentsudin  
 [Documentación oficial](https://github.com/silentsudin/RoadTripAdventure-recomp#readme) · Fuentes revisadas: 2026-10-19
+
+</details>
+
+### [Rogue Squadron 64 Recomp](https://github.com/MikeSemicolonD/RogueSquadron64Recomp)
+
+Recompilación estática de Star Wars: Rogue Squadron N64 con pantalla ancha y ratón, mando y joystick de vuelo modernos. Aporta la ROM USA indicada; Mac solo tiene compilación verificada.
+
+Original o referencia: **Star Wars: Rogue Squadron** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/MikeSemicolonD/RogueSquadron64Recomp#readme) · [Explorar RemakeList](https://remakelist.com/es/remakes/rogue-squadron64-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rogue-squadron64-recomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows / Linux / Android
+
+**Estado:** Compilación desde código · requiere juego original
+
+**Qué necesitas:** Tu ROM Star Wars Rogue Squadron N64 USA v1.0 de 16 MB. No distribuye datos ROM.
+
+**Qué está disponible:** Documenta compilación Windows, Linux y Android; el autor afirma que puede completarse. No enumera archivos publicados: compila desde código con tu ROM USA v1.0. Trazado de rayos, interpolación y multijugador experimentales siguen limitados. macOS solo se ha compilado, sin ejecutarse en Mac; Linux x86 solo se probó en PC de 64 bits con Vulkan por software. GPL-3.0 cubre código propio de entorno/mods/herramientas, no derechos del juego. RemakeList no lo ha compilado ni jugado.
+
+**Licencia del código:** [GPL-3.0 for host runtime, patches, hooks, mods, tools and docs; ROM-derived code and game assets are separate](https://github.com/MikeSemicolonD/RogueSquadron64Recomp/blob/main/LICENSE)  
+**Autor:** MikeSemicolonD  
+[Documentación oficial](https://github.com/MikeSemicolonD/RogueSquadron64Recomp#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -2021,25 +2141,25 @@ Original o referencia: **Need for Speed: Most Wanted (2005)** · Recompilación 
 
 ### [Renegade Squadron — PC](https://github.com/gtteancum/starwars-renegadesquadron-pc)
 
-Port de Renegade Squadron de PSP para Windows con controles modernos. Requiere tus archivos estadounidenses; persisten irregularidades entre fotogramas.
+Port Windows de Star Wars Battlefront: Renegade Squadron de PSP, con dos sticks modernos y alta resolución. Requiere tus archivos USA; persiste irregularidad de fotogramas.
 
 Original o referencia: **Star Wars Battlefront: Renegade Squadron** · Recompilación estática  
-[Descargar y aportar tus archivos del juego](https://github.com/gtteancum/starwars-renegadesquadron-pc/releases) · [Explorar RemakeList](https://remakelist.com/es/remakes/renegade-squadron-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=renegade-squadron-pc-es)
+[Descargar y aportar tus archivos del juego](https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC/releases/tag/v0.9b) · [Explorar RemakeList](https://remakelist.com/es/remakes/renegade-squadron-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=renegade-squadron-pc-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
-**Plataformas:** Windows
+**Plataformas:** Windows 10/11 x64 · DirectX 12
 
-**Estado:** Vista previa · requiere juego original
+**Estado:** Vista previa v0.9b · descarga Windows
 
-**Qué necesitas:** Aporta tus archivos obtenidos legalmente que correspondan a: PSP USA · ULUS10292 · PSP_GAME folder. El contenido comercial es independiente y RemakeList no lo proporciona.
+**Qué necesitas:** Tu Star Wars Battlefront Renegade Squadron PSP USA ULUS10292, con PSP_GAME extraído en data/.
 
-**Qué está disponible:** Se enlazan paquetes Windows. El autor documenta batallas en once mapas; los intervalos irregulares entre fotogramas siguen siendo un problema conocido.
+**Qué está disponible:** v0.9b ofrece RenegadeSquadronPC-0.9b.zip Windows x64 con DirectX 12, teclado/ratón y mando Xbox. Aporta tu carpeta PSP_GAME USA ULUS10292. Persisten irregularidad de fotogramas y menús PC aproximados. Las texturas HD son separadas; los modelos de reescalado tienen avisos CC BY y CC BY-NC-SA no comerciales, sin conceder derechos sobre arte original. El port base no necesita ese paquete. RemakeList no lo ha instalado ni jugado.
 
-**Licencia del código:** [MIT for framework/port, third-party notices separate](https://github.com/gtteancum/starwars-renegadesquadron-pc#readme)  
+**Licencia del código:** [MIT for framework/port, third-party notices separate](https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC/blob/main/work/project/source/LICENSE)  
 **Autor:** gtteancum  
-[Documentación oficial](https://github.com/gtteancum/starwars-renegadesquadron-pc#readme) · Fuentes revisadas: 2026-10-19
+[Documentación oficial](https://github.com/gtteancum/starwars-renegadesquadron-pc#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -2096,46 +2216,46 @@ Original o referencia: **Super Street Fighter II Turbo HD Remix** · Recompilaci
 Port de compatibilidad para PC de The Last Guardian. El autor probó Linux; Windows aún no tiene pruebas dentro del juego. Requiere tus archivos de PS4.
 
 Original o referencia: **The Last Guardian** · Capa de compatibilidad entre plataformas  
-[Descargar y aportar tus archivos del juego](https://github.com/hayatog/tlg_pc/releases) · [Explorar RemakeList](https://remakelist.com/es/remakes/last-guardian-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=last-guardian-pc-es)
+[Descargar y aportar tus archivos del juego](https://github.com/HayatoG/tlg_pc/releases/tag/v2026.10.27-4825a99) · [Explorar RemakeList](https://remakelist.com/es/remakes/last-guardian-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=last-guardian-pc-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
-**Plataformas:** Linux / Windows
+**Plataformas:** Linux x86-64 (glibc 2.39+) / Windows 10–11 x64 (juego sin verificar)
 
-**Estado:** Vista previa · requiere juego original
+**Estado:** v2026.10.27-4825a99 · vista previa · archivos originales de PS4
 
 **Qué necesitas:** Aporta tus archivos obtenidos legalmente que correspondan a: PS4 · CUSA03627 / CUSA03745 · update 01.03 · own libSceNgs2.sprx. El contenido comercial es independiente y RemakeList no lo proporciona.
 
-**Qué está disponible:** El autor probó Linux en sesiones de más de diez minutos. Windows tiene paquetes automáticos sin pruebas de juego confirmadas; Mac está previsto. Debes aportar el juego y los archivos de sistema PS4 necesarios.
+**Qué está disponible:** v2026.10.27-4825a99 ofrece archivos para Linux y Windows sin datos del juego. El autor informa de juego en Linux, con 30 FPS por defecto y opciones experimentales de 60 FPS o sin límite. Windows tiene una compilación automática, pero el autor no ha verificado el juego. Las tasas superiores siguen siendo experimentales y no se ha establecido la cobertura del juego completo. macOS está previsto, sin descarga. RemakeList no lo ha compilado, instalado ni jugado.
 
-**Licencia del código:** [GPL-2.0 per port/LICENSE and README; game/firmware excluded](https://github.com/hayatog/tlg_pc#readme)  
+**Licencia del código:** [GPL-2.0 per port/LICENSE and README; game/firmware excluded](https://github.com/HayatoG/tlg_pc/blob/main/port/LICENSE)  
 **Autor:** HayatoG  
-[Documentación oficial](https://github.com/hayatog/tlg_pc#readme) · Fuentes revisadas: 2026-10-19
+[Documentación oficial](https://github.com/hayatog/tlg_pc#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
 ### [Tiberian Sun Recomp](https://github.com/sp00nznet/tiberiansun-recomp)
 
-Genera una versión nativa de tu instalación de Tiberian Sun y Firestorm. Estado inicial con escaramuzas y primeras misiones comprobadas, sin partida completa confirmada.
+Genera una versión nativa de tu instalación Tiberian Sun/Firestorm con pantalla ancha y ajustes gráficos. Versión temprana con pruebas de escaramuza e inicio de campaña; completar el juego sigue sin verificar.
 
 Original o referencia: **Tiberian Sun / Firestorm** · Recompilación estática  
-[Compilar y aportar tus archivos del juego](https://github.com/sp00nznet/tiberiansun-recomp#readme) · [Explorar RemakeList](https://remakelist.com/es/remakes/tiberian-sun-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=tiberian-sun-recomp-es)
+[Compilar y aportar tus archivos del juego](https://github.com/sp00nznet/tiberiansun-recomp/releases/tag/v0.1.0-alpha.2) · [Explorar RemakeList](https://remakelist.com/es/remakes/tiberian-sun-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=tiberian-sun-recomp-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
-**Plataformas:** Windows / Linux
+**Plataformas:** Windows / Linux; macOS mediante CrossOver (sin probar)
 
-**Estado:** Compilación propia · requiere juego original
+**Estado:** Instalador alfa · compila desde tu juego
 
-**Qué necesitas:** Aporta tus archivos obtenidos legalmente que correspondan a: Steam · Tiberian Sun + Firestorm · Game.exe / Language.dll / MIX. El contenido comercial es independiente y RemakeList no lo proporciona.
+**Qué necesitas:** Tu instalación Steam de Tiberian Sun + Firestorm con Game.exe, Language.dll y archivos MIX.
 
-**Qué está disponible:** Compilación inicial jugable. El autor comprobó escaramuzas y primeras misiones de cuatro campañas; una partida completa sigue sin confirmar. Mac necesita Wine.
+**Qué está disponible:** v0.1.0-alpha.2 ofrece instaladores que descargan herramientas y compilan localmente; Linux añade menú F10 y resoluciones. Usan tus archivos Steam de Tiberian Sun + Firestorm, sin incluir el juego. La primera preparación requiere unos 30–60 minutos y 6 GB y puede instalar herramientas con permiso. Los instaladores no están firmados. Hay pruebas documentadas Windows/Linux; macOS usa CrossOver y el autor no lo probó. La campaña completa sigue sin verificar. RemakeList no lo ha compilado, instalado ni jugado.
 
-**Licencia del código:** [MIT authored tooling; EA game and generated C excluded](https://github.com/sp00nznet/tiberiansun-recomp#readme)  
+**Licencia del código:** [MIT authored tooling; EA game and generated C excluded](https://github.com/sp00nznet/tiberiansun-recomp/blob/main/LICENSE)  
 **Autor:** sp00nznet  
-[Documentación oficial](https://github.com/sp00nznet/tiberiansun-recomp#readme) · Fuentes revisadas: 2026-10-19
+[Documentación oficial](https://github.com/sp00nznet/tiberiansun-recomp#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -2240,22 +2360,22 @@ Original o referencia: **The Legend of Zelda: Tears of the Kingdom** · Capa de 
 Una adaptación nativa para PC de Super Smash Bros. Melee con juego en línea mediante Slippi y visualización a alta frecuencia de actualización. Requiere tu propia ISO NTSC 1.02.
 
 Original o referencia: **Super Smash Bros. Melee (NTSC 1.02)** · Capa de compatibilidad entre plataformas  
-[Descargar y aportar tus archivos del juego](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.57) · [Explorar RemakeList](https://remakelist.com/es/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-es)
+[Descargar y aportar tus archivos del juego](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.63) · [Explorar RemakeList](https://remakelist.com/es/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
 **Plataformas:** Windows 10/11 x64 / Linux x86-64 (AVX2, OpenGL 4.5)
 
-**Estado:** Beta v0.9.57 · Linux experimental · requiere ISO propia
+**Estado:** Beta v0.9.63 · Linux experimental · requiere ISO propia
 
 **Qué necesitas:** Debes aportar una ISO de Super Smash Bros. Melee NTSC 1.02 obtenida legalmente, limpia y sin comprimir. No se incluyen datos del juego original; la licencia del código no cubre los recursos del juego.
 
-**Qué está disponible:** v0.9.57 ofrece paquetes para Windows x64 y paquetes experimentales para Linux x86-64. Linux requiere AVX2 y OpenGL 4.5; Static Recomp solo está disponible en Windows. RemakeList no ha instalado ni jugado estas compilaciones.
+**Qué está disponible:** v0.9.63 ofrece paquetes Windows x64 y Linux x86-64, con correcciones de caídas de fotogramas en línea, apariencias de escenarios, música retrasada y cierres por falta de memoria. Es software beta. Linux sigue siendo experimental y requiere AVX2 y OpenGL 4.5; Static Recomp solo funciona en Windows y la compatibilidad con mods depende del motor. Necesitas tu propia ISO NTSC 1.02. RemakeList no lo ha instalado ni jugado.
 
 **Licencia del código:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
 **Autor:** Hero88go / Melee Unlocked contributors  
-[Documentación oficial](https://github.com/Hero88go/melee-unlocked#readme) · Fuentes revisadas: 2026-10-26
+[Documentación oficial](https://github.com/Hero88go/melee-unlocked#readme) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -2384,22 +2504,22 @@ Original o referencia: **God of War: Chains of Olympus / Ghost of Sparta (PSP)**
 Una adaptación temprana para ordenador de Metroid Prime Remastered con control mediante ratón. La configuración requiere tus propios archivos extraídos de Switch v1.0.0.
 
 Original o referencia: **Metroid Prime Remastered (Switch)** · Recompilación estática  
-[Descargar y aportar tus archivos del juego](https://github.com/gminustwo/primerecomp/releases/tag/v0.0.2) · [Explorar RemakeList](https://remakelist.com/es/remakes/primerecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=primerecomp-es)
+[Compilar y aportar tus archivos del juego](https://github.com/gminustwo/primerecomp/releases/tag/v0.0.3) · [Explorar RemakeList](https://remakelist.com/es/remakes/primerecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=primerecomp-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
-**Plataformas:** Windows x64 / Linux x86-64 experimental
+**Plataformas:** Windows x64 / Linux x86-64 / macOS 15+ Apple Silicon
 
-**Estado:** v0.0.2 · Adaptación temprana · Requiere archivos originales
+**Estado:** v0.0.3 · beta temprana · requiere archivos originales
 
 **Qué necesitas:** Aporta tus propios archivos de Metroid Prime Remastered v1.0.0 para Switch obtenidos legalmente, sin actualizaciones y extraídos en las carpetas exefs y romfs. No se incluyen datos del juego original.
 
-**Qué está disponible:** La versión publicada verificada es v0.0.2, con ZIP de Windows y AppImage experimental para Linux. Requiere AVX2, Vulkan 1.3 y, en Linux, glibc 2.35+. La README de la rama principal menciona v0.0.3, pero no estaba publicada al realizar esta comprobación. Beta temprana: según las notas de v0.0.2, el paquete Linux solo se había probado entonces con renderizado por software, todavía no en una GPU Linux física ni en Steam Deck. Las afirmaciones posteriores de la README no validan retroactivamente ese paquete. Las zonas no visitadas pueden bloquearse o provocar cierres. RemakeList no ha probado la jugabilidad.
+**Qué está disponible:** v0.0.3 ofrece ZIP para Windows, AppImage para Linux y un nuevo DMG para macOS Apple Silicon. Windows/Linux requieren AVX2 y Vulkan 1.3; Linux necesita glibc 2.35+. Mac requiere M1+ y macOS 15+. La preparación recompila localmente tus archivos extraídos de Switch v1.0.0. Añade mejoras de rendimiento en Steam Deck y ajustes de 30/60 FPS. Beta temprana: las puertas pueden causar grandes ralentizaciones, persisten fallos visuales y las zonas posteriores a Magmoor Caverns no están probadas y pueden bloquearse o cerrarse. Los informes de Deck cubren una zona, no todo el juego. macOS no está notarizado; se esperan tirones al preparar sombreadores por primera vez. RemakeList no lo ha jugado.
 
 **Licencia del código:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/gminustwo/primerecomp/blob/main/LICENSE)  
 **Autor:** gminustwo  
-[Documentación oficial](https://github.com/gminustwo/primerecomp/blob/main/README.md) · Fuentes revisadas: 2026-10-26
+[Documentación oficial](https://github.com/gminustwo/primerecomp/blob/main/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -2408,22 +2528,22 @@ Original o referencia: **Metroid Prime Remastered (Switch)** · Recompilación e
 Una adaptación para Windows del Wario Land de Wii, con entrada de teclado/mando y gráficos configurables. Requiere tu propia imagen estadounidense del juego compatible.
 
 Original o referencia: **Wario Land: Shake It! (Wii)** · Recompilación estática  
-[Descargar y aportar tus archivos del juego](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases/tag/v0.1.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/wario-land-shake-it-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=wario-land-shake-it-pc-es)
+[Compilar y aportar tus archivos del juego](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/releases/tag/v0.2.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/wario-land-shake-it-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=wario-land-shake-it-pc-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
 **Plataformas:** Windows 10/11 x64 · Direct3D 12 / Vulkan
 
-**Estado:** v0.1.0 · Versión preliminar · Requiere archivos originales
+**Estado:** v0.2.0 · versión de pruebas · requiere compilación local
 
-**Qué necesitas:** Aporta tu propia copia estadounidense de Wario Land: Shake It! para Wii (RWLE01), obtenida legalmente y sin modificar, como imagen de disco compatible o carpetas sys/files extraídas. El proyecto no proporciona el juego.
+**Qué necesitas:** Aporta una imagen estadounidense sin modificar de Wario Land: Shake It! para Wii (RWLE01), obtenida legítimamente, o sus carpetas sys/files extraídas. El lanzador valida el main.dol original. Reserva unos 3 GB para compilar y 4,4 GB adicionales para extraer la imagen. No se proporcionan datos, ejecutable ni código traducido del juego original.
 
-**Qué está disponible:** v0.1.0 es una versión preliminar en ZIP para Windows. Requiere Windows 10/11 x64 y una GPU compatible con Direct3D 12 o Vulkan. RemakeList no la ha instalado ni jugado. Versión preliminar con zonas sin probar, problemas gráficos y posibles cierres. La interpolación para altas frecuencias de imágenes es experimental y no garantiza compatibilidad ni rendimiento.
+**Qué está disponible:** v0.2.0 ofrece un lanzador Windows y un ZIP con herramientas de compilación, no un juego ya compilado. Tras importar tu imagen Wii estadounidense compatible, compila localmente en unos 15–45 minutos; se recomiendan 16 GB de RAM. Requiere Windows 10/11 x64 y D3D12 o Vulkan. Sigue siendo una versión de pruebas aunque GitHub no active la marca de preliminar. Las pruebas del juego completo, jefes, vídeos y movimiento DualSense son incompletas; puede haber fallos gráficos y cierres. La pantalla ancha y la interpolación son experimentales. RemakeList no lo ha instalado ni jugado.
 
 **Licencia del código:** [GPL-3.0 for project code; original game content and third-party components retain their own rights and terms.](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/LICENSE)  
 **Autor:** santiagovalencia109  
-[Documentación oficial](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/README.md) · Fuentes revisadas: 2026-10-26
+[Documentación oficial](https://github.com/santiagovalencia109/Wario-Land-Shake-It-Native-PC/blob/main/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -2504,22 +2624,22 @@ Original o referencia: **Madden NFL 08 (Xbox 360)** · Recompilación estática
 Una colección de adaptaciones no oficiales de juegos arcade CPS-2 y CPS-1, con un único lanzador, herramientas de entrenamiento para juegos de lucha y beat ’em ups para tres jugadores. Requiere los conjuntos exactos de ROM compatibles de tus propias placas arcade.
 
 Original o referencia: **Juegos arcade de Capcom CPS-2 / CPS-1** · Recompilación estática  
-[Descargar y aportar tus archivos del juego](https://github.com/tmcleroy/cps2recomp/releases/tag/v0.4.0-beta.6) · [Explorar RemakeList](https://remakelist.com/es/remakes/cps2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=cps2-recomp-es)
+[Descargar y aportar tus archivos del juego](https://github.com/tmcleroy/cps2recomp/releases/tag/v0.4.0-beta.7) · [Explorar RemakeList](https://remakelist.com/es/remakes/cps2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=cps2-recomp-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
-**Plataformas:** Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / SteamOS
+**Plataformas:** Windows 10/11 x64 · macOS 13+ (Apple Silicon / Intel) · Linux x86_64 / ARM64 / SteamOS
 
-**Estado:** v0.4.0-beta.6 · Beta · Requiere conjuntos exactos de ROM originales
+**Estado:** v0.4.0-beta.7 · beta · requiere conjuntos exactos de ROM originales
 
 **Qué necesitas:** Aporta la revisión exacta de ROM compatible de una placa arcade que poseas y, para los juegos CPS-2, su archivo de clave. El lanzador comprueba las sumas de verificación y rechaza otras regiones o revisiones; algunos conjuntos también necesitan su conjunto principal. No se proporcionan archivos de juegos ni claves.
 
-**Qué está disponible:** v0.4.0-beta.6 ofrece archivos comprimidos para Windows x64, macOS y Linux x86_64. macOS admite Apple Silicon e Intel; el paquete de Linux también es la opción para SteamOS y Steam Deck. La README describe compatibilidad con Linux ARM64, pero esta versión no incluye una descarga ARM64. Sigue siendo una beta aunque GitHub no tenga activada la marca de versión preliminar. Las pruebas abarcan un número limitado de equipos y mandos. El autor declara haber comprobado los juegos de lucha desde el inicio hasta el final; los beat ’em ups más recientes solo tienen comprobaciones mediante acciones programadas en las primeras fases. Esto no equivale a pruebas independientes del juego completo.
+**Qué está disponible:** v0.4.0-beta.7 tiene archivos Windows x64, macOS, Linux x86_64 y, por primera vez, Linux ARM64. macOS admite Apple Silicon e Intel; el paquete Linux x86_64 sirve también para SteamOS/Steam Deck. Sigue siendo beta aunque GitHub no active la marca de preliminar. La cobertura de equipos y mandos es limitada. El autor informa de comprobaciones de principio a final en juegos de lucha; los nuevos beat ’em ups solo tienen recorridos automatizados de las primeras fases. macOS no está notarizado y Windows no está firmado. Se necesitan los conjuntos exactos de ROM originales; RemakeList no lo ha instalado ni jugado.
 
 **Licencia del código:** [Project code is GPL-3.0-only; third-party components retain their own notices. This license does not grant rights to Capcom or other rights holders’ game code, ROMs, keys, music or artwork.](https://github.com/tmcleroy/cps2recomp/blob/main/LICENSE)  
 **Autor:** tmcleroy  
-[Documentación oficial](https://github.com/tmcleroy/cps2recomp/blob/main/README.md) · Fuentes revisadas: 2026-10-27
+[Documentación oficial](https://github.com/tmcleroy/cps2recomp/blob/main/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -2528,22 +2648,22 @@ Original o referencia: **Juegos arcade de Capcom CPS-2 / CPS-1** · Recompilaci�
 Una adaptación no oficial de Sonic Free Riders de Xbox 360 que permite jugar con mando o teclado sin Kinect. Importa los datos desde tu propia imagen de disco estadounidense o europea y sigue en desarrollo.
 
 Original o referencia: **Sonic Free Riders (Xbox 360)** · Recompilación estática  
-[Descargar y aportar tus archivos del juego](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.35) · [Explorar RemakeList](https://remakelist.com/es/remakes/free-riders-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=free-riders-recompiled-es)
+[Descargar y aportar tus archivos del juego](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.36) · [Explorar RemakeList](https://remakelist.com/es/remakes/free-riders-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=free-riders-recompiled-es)
 
 <details>
 <summary>Requisitos y capturas</summary>
 
 **Plataformas:** Windows / Linux x64 · Android arm64 · macOS Apple Silicon / iOS experimentales
 
-**Estado:** v0.10.35 · En desarrollo · Requiere el disco original
+**Estado:** v0.10.36 · en desarrollo · requiere disco original
 
 **Qué necesitas:** Aporta tu propia imagen de disco (.iso) de Sonic Free Riders para Xbox 360, de Estados Unidos o Europa, obtenida legalmente. El lanzador importa de ella modelos, texturas, audio y vídeos. El autor indica que los paquetes incluyen el programa recompilado, pero no los archivos de datos originales; la licencia GPL del proyecto no concede derechos sobre el contenido de SEGA.
 
-**Qué está disponible:** v0.10.35 ofrece paquetes para Windows x64, Linux x64, Android arm64 y macOS arm64, además de una IPA para iOS. Windows 10/11 y Linux requieren AVX; los gráficos necesitan Direct3D 12 o Vulkan 1.2 en Windows, y Vulkan 1.2 en Linux. Android requiere Android 9+, Vulkan 1.1 y unos 2 GB para el juego instalado; también hay una APK específica para Android 10+. Las versiones Apple requieren macOS 13.3+ con Apple Silicon o iOS 16.3+ con instalación externa. Sigue en desarrollo: muchos modos no se han probado y el rendimiento en Android depende del dispositivo. La compatibilidad con Apple es experimental. Los requisitos de la README aún advierten de carreras lentas en M1 y de la ausencia de pruebas en dispositivos iOS reales, mientras que versiones posteriores registran mejoras de rendimiento en Mac y correcciones para iOS; la compatibilidad actual necesita confirmación independiente. Kinect v2 y el juego en línea en más configuraciones también cuentan con una validación limitada.
+**Qué está disponible:** v0.10.36 ofrece paquetes Windows/Linux x64, Android arm64, macOS arm64 e iOS. Mejora el rendimiento de las carreras en Android; el código de las demás plataformas no cambia. Windows/Linux requieren AVX; Windows necesita D3D12 o Vulkan 1.2, y Linux Vulkan 1.2. Android requiere 9+ y Vulkan 1.1, con APK independiente para 10+. Apple necesita macOS 13.3+ o iOS 16.3+ mediante instalación externa. Muchos modos siguen sin probar. El autor completó una carrera Dolphin Resort en Windows y Mac M1 y probó un AYN Thor; no cubre otros teléfonos ni iOS. Apple sigue siendo experimental, macOS no está notarizado y Kinect v2 y el juego en línea necesitan más validación. RemakeList no lo ha instalado ni jugado.
 
 **Licencia del código:** [Project code is GPL-3.0-or-later. The original game’s code and data remain SEGA’s and are outside that grant; third-party components and models retain their separate licenses.](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/COPYING)  
 **Autor:** YuutaTsubasa  
-[Documentación oficial](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/README.md) · Fuentes revisadas: 2026-10-27
+[Documentación oficial](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
@@ -2568,6 +2688,774 @@ Original o referencia: **James Pond 2: Codename RoboCod (Amiga)** · Recompilaci
 **Licencia del código:** [The project’s own code is GPL-3.0. SDL3, Musashi, fonts and other dependencies retain their separate licenses; the original game’s code, artwork and music are not granted under the project license.](https://github.com/griches/JamesPond2RobocodRecomp/blob/main/LICENSE)  
 **Autor:** griches  
 [Documentación oficial](https://github.com/griches/JamesPond2RobocodRecomp/blob/main/README.md) · Fuentes revisadas: 2026-10-27
+
+</details>
+
+### [recvx-enhanced-port](https://github.com/aikatore/recvx-enhanced-port)
+
+Adaptación mejorada de Code: Veronica X con cooperativo para dos, apuntado opcional en tercera persona y pantalla ancha. Lee tu propia imagen de disco PS2.
+
+Original o referencia: **Resident Evil Code: Veronica X (PS2)** · Adaptación de la comunidad  
+[Descargar y aportar tus archivos del juego](https://github.com/aikatore/recvx-enhanced-port/releases/tag/v0.6.10) · [Explorar RemakeList](https://remakelist.com/es/remakes/recvx-enhanced-port/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=recvx-enhanced-port-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10+ x86 · Linux i686 · OpenGL 3.3
+
+**Estado:** v0.6.10 · preliminar · cooperativo para dos
+
+**Qué necesitas:** Tu propia ISO legítima de Code: Veronica X para PS2 NTSC-U, SLUS-20184. No incluye datos del juego ni las texturas HD opcionales.
+
+**Qué está disponible:** v0.6.10 es preliminar: ofrece clientes Windows x86 y Linux i686 y un servidor cooperativo Linux x86_64 separado. Linux requiere glibc 2.34+ y bibliotecas gráficas y de audio de 32 bits; ambos clientes necesitan OpenGL 3.3. El intercambio de modelos en escenas sigue en fase inicial; combinar cooperativo y mods puede causar fallos.
+
+**Licencia del código:** [MIT for the port and credited decompilation code; third-party components and Capcom game content have separate terms.](https://github.com/aikatore/recvx-enhanced-port/blob/main/LICENSE)  
+**Autor:** aikatore  
+[Documentación oficial](https://github.com/aikatore/recvx-enhanced-port/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Code Veronica PS3 HD Recomp](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC)
+
+Adaptación de Code: Veronica X HD de PS3 con interpolación, herramientas de speedrun y HUD de combate moderno. Requiere tu edición PSN compatible.
+
+Original o referencia: **Resident Evil Code: Veronica X HD (PS3)** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/releases/tag/v1.1.9) · [Explorar RemakeList](https://remakelist.com/es/remakes/code-veronica-ps3-hd-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=code-veronica-ps3-hd-recomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · Direct3D 12
+
+**Estado:** v1.1.9 · port Windows · requiere archivos PSN compatibles
+
+**Qué necesitas:** Tu edición base PS3 PSN 01.00: NPEB00553 (Europa), NPUB30467 (EE. UU.) o NPJB00135 (Japón), con PARAM.SFO y USRDIR/EBOOT.BIN. Europa/EE. UU. requieren además la licencia .rap de la cuenta compradora. No admite actualizaciones ni ediciones en disco; el lanzador no abre PKG directamente.
+
+**Qué está disponible:** v1.1.9 incluye el port Windows y un extractor PKG opcional separado. Requiere Windows 10/11, Direct3D 12 y Visual C++ x64. En el modo interpolado de 60 FPS, la lógica sigue a 30 Hz; no mantener 60 FPS puede ralentizar el juego. La interpolación GPU y los mods de texturas son experimentales, y compilar sombreadores puede causar tirones.
+
+**Licencia del código:** [MIT for port/ps3recomp code; third-party terms and Capcom’s original game rights are separate.](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/blob/code-veronica/LICENSE)  
+**Autor:** kastieloficial  
+[Documentación oficial](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/blob/code-veronica/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [OpenRAC](https://github.com/OpenRAC/OpenRAC)
+
+Adaptación nativa de Ratchet &amp; Clank con lanzador común, mejoras gráficas y herramientas de mods. El primer juego es jugable; las secuelas siguen en desarrollo.
+
+Original o referencia: **Ratchet &amp; Clank (PS2)** · Adaptación de la comunidad  
+[Descargar y aportar tus archivos del juego](https://github.com/OpenRAC/OpenRAC/releases/tag/launcher-v0.9.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/openrac/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=openrac-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows x64 · Linux x64 / ARM64 · macOS universal · Android ARM64
+
+**Estado:** launcher-v0.9.0 · primer juego jugable · secuelas en desarrollo
+
+**Qué necesitas:** Tu disco PS2 del primer juego en ISO o CHD: PAL SCES_509.16 v2.00 o NTSC-U SCUS_971.99 v1.00. El lanzador lo verifica; otras regiones o ediciones pueden no coincidir. No descarga datos del juego.
+
+**Qué está disponible:** launcher-v0.9.0 ofrece instaladores Windows, paquetes Linux, DMG Mac universal y APK Android ARM64 de depuración. Solo Ratchet &amp; Clank PAL/NTSC figura como jugable; Going Commando llega al menú principal y las demás secuelas siguen en desarrollo. Los gráficos mejorados son experimentales y pueden requerir precalcular la iluminación de cada nivel.
+
+**Licencia del código:** [Top-level launcher/tools use GPL-3.0-or-later; game modules and the MIT SDK/editor retain their own notices. None of these licenses grant original game-content rights.](https://github.com/OpenRAC/OpenRAC/blob/master/LICENSE.md)  
+**Autor:** OpenRAC  
+[Documentación oficial](https://github.com/OpenRAC/OpenRAC/blob/master/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [The Umbrella Chronicles Recompiled](https://github.com/solleo95/reuc-recomp)
+
+Adaptación Windows de The Umbrella Chronicles con apuntado por ratón, opciones gráficas modernas y cooperativo en línea inicial para dos.
+
+Original o referencia: **Resident Evil: The Umbrella Chronicles (Wii)** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/solleo95/reuc-recomp/releases/tag/0.0.6) · [Explorar RemakeList](https://remakelist.com/es/remakes/reuc-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=reuc-recomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · AVX2 · Vulkan 1.3
+
+**Estado:** 0.0.6 · versión inicial · cooperativo experimental
+
+**Qué necesitas:** Tu imagen Wii NTSC-U, ID RBUE08. Extráela con Wit incluido en el lanzador o aporta la carpeta DATA extraída. No admite PAL RBUP08 ni Japón RBUJ08. Los componentes propietarios y paquetes de texturas opcionales tienen condiciones propias.
+
+**Qué está disponible:** 0.0.6 ofrece un ZIP Windows que requiere AVX2 y Vulkan 1.3. Es una versión inicial, probada principalmente en el PC Windows 11/RTX 4080 del autor; no se han establecido mínimos de rendimiento. El cooperativo puede fallar al conectar, desincronizarse o bloquearse, y el trazado de rayos solo cubre sombras. Esta versión puede usar hasta 1 GiB adicional de RAM en escenas exigentes.
+
+**Licencia del código:** [GPL-3.0 for project code; vendor DLSS/FidelityFX runtimes and other dependencies keep their own licenses. Capcom game code and assets are excluded.](https://github.com/solleo95/reuc-recomp/blob/main/LICENSE)  
+**Autor:** solleo95  
+[Documentación oficial](https://github.com/solleo95/reuc-recomp/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [G-Diffuser 3DS](https://github.com/cruxxxxxx/gdx-3ds)
+
+Adaptación nativa de F-Zero X para la familia 3DS, con 3D estereoscópico, panel inferior y carreras para dos a cuatro jugadores. Requiere tu volcado compatible y una consola preparada para homebrew.
+
+Original o referencia: **F-Zero X (Nintendo 64)** · Proyecto basado en descompilación  
+[Descargar y aportar tus archivos del juego](https://github.com/cruxxxxxx/gdx-3ds/releases/tag/v1.1.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/g-diffuser-3ds/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=g-diffuser-3ds-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** familia Old/New Nintendo 3DS y 2DS · homebrew
+
+**Estado:** v1.1.0 · consola homebrew · requiere cartucho original
+
+**Qué necesitas:** Aporta tu volcado F-Zero X USA revisión 0, conviértelo en el ordenador a dos archivos .o2r y usa tu volcado del firmware DSP de la consola para el audio. EK necesita el disco comercial japonés 64DD compatible; no admite traducciones de aficionados. No se incluyen ROM, discos ni recursos convertidos.
+
+**Qué está disponible:** v1.1.0 ofrece ZIP, .3dsx y .cia separados para Old/New 3DS, versiones EK opcionales y extractores para ordenador. Prepara los recursos en el ordenador; el script extractor requiere una copia git con el submódulo de descompilación. Se retiraron las descargas v1.0.0. Elige la versión de tu consola. La pantalla ancha y el nuevo búfer de pistas solo se probaron en emulador; no se probaron todas las parejas de consolas en multijugador. Old 3DS limita el multijugador 3D a 30 FPS y su EK tiene tirones, música entrecortada y editores lentos. Persisten problemas de memoria y audio; no se garantizan 60 FPS. El servidor en línea es temporal.
+
+**Licencia del código:** [MIT covers original G-Diffuser and 3DS-port additions, unless a file says otherwise. Dependencies, decompiled Nintendo/N64 SDK code and game content have separate rights; the MIT license does not grant rights to those materials.](https://github.com/cruxxxxxx/gdx-3ds/blob/main/LICENSE)  
+**Autor:** cruxxxxxx  
+[Documentación oficial](https://github.com/cruxxxxxx/gdx-3ds/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Metroid Dread Recomp — Linux fork](https://github.com/DaniSald/Metroid-Dread-Recomp)
+
+Bifurcación de Metroid Dread Recomp centrada en Linux que compila una versión nativa de PC desde tus archivos Switch 2.1.0. Ofrece AppImage Linux y paquete Windows.
+
+Original o referencia: **Metroid Dread (Nintendo Switch)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/DaniSald/Metroid-Dread-Recomp/releases/tag/v0.4.0-linux.2) · [Explorar RemakeList](https://remakelist.com/es/remakes/metroid-dread-recomp-linux/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=metroid-dread-recomp-linux-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows x64 / Linux x86-64 (glibc 2.38+, OpenGL 4.3) / Steam Deck
+
+**Estado:** v0.4.0-linux.2 · vista previa temprana · compilación local
+
+**Qué necesitas:** Aporta ExeFS y RomFS de tu copia legítima de Metroid Dread 2.1.0, con la actualización combinada o separada. RomFS solo no basta. No distribuye código, datos ni claves del juego.
+
+**Qué está disponible:** v0.4.0-linux.2 ofrece AppImage Linux x86-64 y ZIP Windows. Al iniciar verifica tus archivos y compila localmente; Linux necesita unos 7 GB libres, glibc 2.38+, OpenGL 4.3, SDL2 y selector de carpetas. Conserva el EXE Windows junto a su carpeta de recompilación. Aunque GitHub no la marca como preliminar, el autor llama a todas las 0.x vistas previas tempranas y advierte de cierres y problemas de instalación. Linux carece de Vulkan nativo, actualizador integrado, apuntado libre por ratón y grabación F7. La prueba Steam Deck OLED duró nueve minutos: no demuestra juego completo ni 60 FPS universales.
+
+**Licencia del código:** [SwitchRecomp code is Apache-2.0; the README identifies the combined Windows executable with the ScarletNX renderer as GPL-3.0. Linux and bundled toolchain/libraries have their own notices. Nintendo game files and keys are excluded.](https://github.com/DaniSald/Metroid-Dread-Recomp/blob/main/README.md#licences)  
+**Autor:** DaniSald  
+[Documentación oficial](https://github.com/DaniSald/Metroid-Dread-Recomp/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Odin Sphere Leifthrasir PC](https://github.com/saulob/odin-sphere-leifthrasir-pc)
+
+Ejecuta tu paquete compatible de Odin Sphere Leifthrasir de PS4 en Windows, con lanzador, ajustes gráficos y trofeos locales. Linux y Steam Deck son experimentales.
+
+Original o referencia: **Odin Sphere Leifthrasir (PlayStation 4)** · Capa de compatibilidad entre plataformas  
+[Descargar y aportar tus archivos del juego](https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.1.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/odin-sphere-leifthrasir-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=odin-sphere-leifthrasir-pc-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10 1903+/11 x64 / Linux x86-64 y Steam Deck (experimentales)
+
+**Estado:** v0.1.0 · versión Windows · Linux experimental
+
+**Qué necesitas:** Aporta tu .pkg PS4 legítimo descifrado: USA CUSA05083 base 1.00, Japón CUSA01290 base 1.00 o actualización 1.02, o Europa CUSA05262 base 1.00 o actualización 1.01. Cada actualización requiere su base regional. Rechaza paquetes cifrados por consola u otras versiones; no proporciona juego ni claves.
+
+**Qué está disponible:** v0.1.0 es la primera versión pública: ZIP Windows x64 y AppImage Linux x86-64 experimental. Importa tu .pkg PS4 descifrado compatible en Play. Requiere Vulkan 1.3 y sus extensiones indicadas y unos 4 GB; Linux necesita glibc 2.31+ y X11/Wayland. Solo 16:9 Original conserva las proporciones: ultrapanorámica estira el juego sin mostrar más mundo, y otras relaciones lo comprimen; HUD, menús y vídeos no se adaptan. Linux/Steam Deck pasaron comprobaciones automatizadas, sin pruebas en hardware real. Descargas sin firma, trofeos locales y sin PSN ni juego en línea.
+
+**Licencia del código:** [GPL-2.0-or-later covers original project code. The shadPS4-derived renderer and other third-party components retain their notices; the original game and its assets are excluded.](https://github.com/saulob/odin-sphere-leifthrasir-pc/blob/main/LICENSE)  
+**Autor:** saulob  
+[Documentación oficial](https://github.com/saulob/odin-sphere-leifthrasir-pc/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Rogue Galaxy Recompiled](https://github.com/victor-takai/rogue-galaxy-recomp)
+
+Compila Rogue Galaxy USA de PS2 de forma nativa en Windows desde tu disco, con pantalla ancha, escalado de resolución y ajustes de juego.
+
+Original o referencia: **Rogue Galaxy (PlayStation 2)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/victor-takai/rogue-galaxy-recomp/releases/tag/v0.1.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/rogue-galaxy-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rogue-galaxy-recompiled-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64
+
+**Estado:** v0.1.0 preliminar · compilación local Windows · solo disco USA
+
+**Qué necesitas:** Tu imagen legítima de Rogue Galaxy USA PS2, SCUS-97490. No admite otras regiones. No distribuye datos, BIOS ni archivos derivados del disco; conserva localmente el juego generado.
+
+**Qué está disponible:** v0.1.0 es un ZIP instalador preliminar para Windows. Ejecuta Install.bat con tu disco USA: descarga unos 300 MB de herramientas y compila localmente. Reserva unos 16 GB y 20–60 minutos según el PC. La descarga no es el juego completo compilado. El autor informa de título, introducción, Salgin y combates, no de una partida completa. Persiste un bloqueo raro tras cargar Story; escenas pesadas pueden bajar a unos 50 FPS y la pantalla ancha estira menús y texto. El antivirus puede bloquear el compilador local; no implica garantía de seguridad.
+
+**Licencia del código:** [GPL-3.0 covers the project, matching the linked PS2Recomp framework. Dependencies retain their own notices; original game data, BIOS and disc-derived files are not included or relicensed.](https://github.com/victor-takai/rogue-galaxy-recomp/blob/main/LICENSE)  
+**Autor:** victor-takai  
+[Documentación oficial](https://github.com/victor-takai/rogue-galaxy-recomp/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [PaxDino](https://github.com/wootbeer/PaxDino)
+
+Adaptación PC de Turok: Rage Wars con apuntado por ratón, pantalla ancha y hasta cuatro jugadores locales.
+
+Original o referencia: **Turok: Rage Wars (Nintendo 64)** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/wootbeer/PaxDino/releases/tag/v0.1.6) · [Explorar RemakeList](https://remakelist.com/es/remakes/paxdino/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=paxdino-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows x64 / Linux x86_64 y Steam Deck (experimentales)
+
+**Estado:** v0.1.6 · beta · requiere ROM original
+
+**Qué necesitas:** Aporta tu ROM compatible USA de Turok: Rage Wars; el README enumera hashes .n64/.z64 y acepta .v64. La corrección de la prueba cooperativa usa USA 1.0. No incluye datos del juego.
+
+**Qué está disponible:** v0.1.6 ofrece archivos Windows y Linux. Sigue en beta; Linux y Steam Deck son experimentales. El lanzador importa tu ROM. RemakeList no lo ha instalado ni jugado.
+
+**Licencia del código:** [GPL-3.0 applies to project code; original game content and third-party components retain separate rights and terms.](https://github.com/wootbeer/PaxDino/blob/main/COPYING)  
+**Autor:** wootbeer  
+[Documentación oficial](https://github.com/wootbeer/PaxDino/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [KirbyRecomp](https://github.com/xtamqispeak/KirbyRecomp)
+
+Adaptación experimental de Super Kirby Clash que se compila localmente desde tus archivos Switch.
+
+Original o referencia: **Super Kirby Clash (Switch)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/xtamqispeak/KirbyRecomp/releases/tag/v0.2.0-alpha) · [Explorar RemakeList](https://remakelist.com/es/remakes/kirby-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=kirby-recomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · AVX2/FMA · Vulkan 1.3
+
+**Estado:** v0.2.0-alpha · compilación local · batallas sin validar
+
+**Qué necesitas:** Aporta ExeFS/RomFS coincidentes de Super Kirby Clash, título 01003FB00C5A8000. El ID main probado empieza por c9649e053bd7be2751ef0b00e7c03f5d59695b94; otras revisiones no están verificadas. No ofrece importación ni descifrado NSP/XCI.
+
+**Qué está disponible:** v0.2.0-alpha incluye instalador EXE sin firma y kit de código, no un juego compilado. La preparación descarga herramientas y necesita varios GB. El autor solo probó RTX 4070 SUPER: documenta título, pueblo, menús y partidas guardadas, no batallas completas ni fases posteriores. No hay servicios en línea, compras, multijugador ni contenido descargado. RemakeList no lo ha compilado ni jugado.
+
+**Licencia del código:** [MIT applies to project code; original game content and third-party components retain separate rights and terms.](https://github.com/xtamqispeak/KirbyRecomp/blob/main/LICENSE)  
+**Autor:** xtamqispeak  
+[Documentación oficial](https://github.com/xtamqispeak/KirbyRecomp/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [1080° Snowboarding: Recompiled](https://github.com/thebradshaw/1080-Snowboarding-decomp)
+
+Adaptación PC de 1080° Snowboarding con pantalla ancha, mayor tasa de fotogramas opcional y distancia de dibujado.
+
+Original o referencia: **1080° Snowboarding (Nintendo 64)** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/thebradshaw/1080-Snowboarding-decomp/releases/tag/1.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/1080-snowboarding-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=1080-snowboarding-recompiled-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 / Linux x64 experimental
+
+**Estado:** 1.0 · versión Windows · Linux experimental
+
+**Qué necesitas:** Aporta una ROM USA .z64 sin modificar, MD5 fa27089c425dbab99f19245c5c997613. No incluye ROM. Los redibujados opcionales de tablas y el arte del lanzador derivan del juego y quedan fuera de la licencia del código.
+
+**Qué está disponible:** La versión 1.0 ofrece Windows x64 y Linux x64 experimental. Windows requiere Vulkan o Direct3D 12. Linux no se ha probado en equipos reales y necesita un sistema similar a Ubuntu 24.04, Vulkan, SDL2 y GTK 3. Las opciones de FPS no garantizan rendimiento. RemakeList no lo ha instalado ni jugado. RetroAchievements permanece local hasta recibir aprobación.
+
+**Licencia del código:** [GPL-3.0 applies to project code; original game content and third-party components retain separate rights and terms.](https://github.com/thebradshaw/1080-Snowboarding-decomp/blob/main/LICENSE)  
+**Autor:** thebradshaw  
+[Documentación oficial](https://github.com/thebradshaw/1080-Snowboarding-decomp/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Mission: Impossible — PC Recomp](https://github.com/nickallevato/mi_n64_exe)
+
+Adaptación Linux de Mission: Impossible de N64 con apuntado por ratón, pantalla ancha y cámara analógica moderna.
+
+Original o referencia: **Mission: Impossible (Nintendo 64)** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/nickallevato/mi_n64_exe/releases/tag/v0.1.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/mi-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mi-recompiled-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Linux x86_64 · glibc 2.35+ · Vulkan
+
+**Estado:** v0.1.0 · versión Linux · partida completa sin verificar
+
+**Qué necesitas:** Aporta tu ROM USA .z64 con SHA-1 7546d5df1fc93fed8205a066f1333fd7dd50c1e1. No incluye ROM ni recursos originales.
+
+**Qué está disponible:** v0.1.0 ofrece AppImage y tar.gz Linux x64 basados en Ubuntu 22.04; requiere Vulkan y glibc 2.35+. El autor informa de que los 20 niveles cargan y se pueden jugar, sin verificar partidas completas. No hay paquete Windows ni macOS. RemakeList no lo ha instalado ni jugado. Elegir 60 FPS no garantiza ese rendimiento en todos los dispositivos.
+
+**Licencia del código:** [GPL-3.0 applies to project code; original game content and third-party components retain separate rights and terms.](https://github.com/nickallevato/mi_n64_exe/blob/main/COPYING)  
+**Autor:** nickallevato  
+[Documentación oficial](https://github.com/nickallevato/mi_n64_exe/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Ascension](https://github.com/arnaldolima1/gow-ascension-pc)
+
+Port Windows experimental de God of War: Ascension desde tu disco PS3 europeo. El autor informa del primer nivel y jefe, no de una partida completa.
+
+Original o referencia: **God of War: Ascension (PS3)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/arnaldolima1/gow-ascension-pc/blob/main/docs/README.en.md#building) · [Explorar RemakeList](https://remakelist.com/es/remakes/god-of-war-ascension-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=god-of-war-ascension-recomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · compilación manual desde código
+
+**Estado:** Compilación desde código · experimento de juego inicial
+
+**Qué necesitas:** Tu disco legítimo europeo BCES-01741 v1.00, incluido EBOOT.ELF preparado localmente y las claves personales necesarias. El contenido opcional en portugués brasileño se genera desde tu disco estadounidense. No incluye juego ni claves.
+
+**Qué está disponible:** No hay paquete publicado. Requiere compilación manual con Visual Studio 2022, CMake, Ninja, Vulkan SDK, ps3recomp modificado y .env local; el autor estima 20–40 minutos y 16 GB de RAM. Windows es la ruta documentada y probada; macOS está pausado. Persisten bajo rendimiento, gráficos duplicados y bloqueos de tareas SPU; no se ha establecido que los niveles posteriores sean jugables. RemakeList no lo ha compilado ni jugado.
+
+**Licencia del código:** [MIT covers this repository’s code. The author states that builds using RPCS3’s RSX renderer are GPL-2.0; original game code and assets retain their owners’ rights.](https://github.com/arnaldolima1/gow-ascension-pc/blob/main/LICENSE)  
+**Autor:** arnaldolima1  
+[Documentación oficial](https://github.com/arnaldolima1/gow-ascension-pc/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [LostWorldNative](https://github.com/snicolast/LostWorldNative)
+
+Port Windows compilado desde código del arcade de pistolas de 1997, con pantalla ancha, gráficos modernos y apuntado por ratón o mando. Requiere el conjunto japonés exacto de ROM.
+
+Original o referencia: **The Lost World: Jurassic Park (arcade)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/snicolast/LostWorldNative/blob/master/README.md#install) · [Explorar RemakeList](https://remakelist.com/es/remakes/lost-world-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=lost-world-native-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · Vulkan 1.3 · compilación local
+
+**Estado:** Compilación desde código · requiere ROM arcade original
+
+**Qué necesitas:** Tu lostwsga.zip legítimo, conjunto Japón Rev. A de Sega Model 3 Step 1.5, con las ROM indicadas. No admite otras revisiones ni incluye datos originales.
+
+**Qué está disponible:** No hay binario publicado. En Windows se ejecuta build.bat con tu ROM, Python 3 y herramientas C++ Visual Studio 2022; la primera compilación descarga dependencias. Las capturas del autor muestran el port, sin verificar independientemente el juego completo, todos los dispositivos ni el rendimiento a alta frecuencia. Las funciones gráficas opcionales dependen de la GPU. RemakeList no lo ha compilado ni jugado.
+
+**Licencia del código:** [MIT covers the repository’s authored code. Third-party libraries and fonts retain their own licenses; the original arcade game’s ROM, code and data retain their owners’ rights.](https://github.com/snicolast/LostWorldNative/blob/master/LICENSE)  
+**Autor:** snicolast  
+[Documentación oficial](https://github.com/snicolast/LostWorldNative/blob/master/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [HarmonyRecomp](https://github.com/Wrexxial/HarmonyRecomp)
+
+Port Windows de Harmony of Despair desde tu paquete XBLA, con ajustes gráficos y cooperativo de hasta seis jugadores por LAN o LAN virtual.
+
+Original o referencia: **Castlevania: Harmony of Despair (Xbox 360)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/Wrexxial/HarmonyRecomp/blob/main/README.md#building) · [Explorar RemakeList](https://remakelist.com/es/remakes/harmony-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=harmony-recomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · compilación local
+
+**Estado:** Compilación desde código · cooperativo LAN · requiere paquete XBLA propio
+
+**Qué necesitas:** Tu paquete XBLA Xbox 360 legítimo, ID 58410A7A, extraído de tu consola o compra. Los DLC opcionales también deben ser tuyos. No redistribuyas recursos extraídos ni código original generado.
+
+**Qué está disponible:** No hay binario publicado. Python build.py extrae tu paquete, obtiene el SDK fijado y compila con Clang 20+, CMake y Ninja. El autor informa de todos los niveles y seis personajes base. No probó instalar paquetes DLC reales y cerrar puede generar un error de corrupción de memoria. El cooperativo requiere versiones de código coincidentes y LAN o LAN virtual; no es Xbox Live. RemakeList no lo ha compilado ni jugado.
+
+**Licencia del código:** [The project code is BSD-3-Clause; the extractor includes MIT-licensed NocturneRecomp code. Runtime dependencies retain their terms, and original game code/data are outside these grants.](https://github.com/Wrexxial/HarmonyRecomp/blob/main/LICENSE)  
+**Autor:** Wrexxial  
+[Documentación oficial](https://github.com/Wrexxial/HarmonyRecomp/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Underground 2 Android Evolved](https://github.com/codepdbh/nfsu2-recompiled)
+
+Adaptación Android nativa de Underground 2 para PC, con controles táctiles y gráficos configurables. Requiere tus archivos PC compatibles.
+
+Original o referencia: **Need for Speed: Underground 2 (PC)** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/codepdbh/nfsu2-recompiled/releases/tag/v0.14.11) · [Explorar RemakeList](https://remakelist.com/es/remakes/nfsu2-android-evolved/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nfsu2-android-evolved-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Android 10+ (ARM64 / ARMv7), Vulkan 1.1+; Windows x86 compilación desde código
+
+**Estado:** v0.14.11 APK Android · Windows desde código
+
+**Qué necesitas:** Tu instalación PC compatible y el SPEED2.EXE exacto admitido (4.800.512 bytes), con sus datos. Otros ejecutables o ediciones pueden no coincidir con el recompilador.
+
+**Qué está disponible:** v0.14.11 ofrece APK ARM64/ARMv7 con hashes publicados. Sus notas describen correcciones menores, expresamente sin cambios de rendimiento o juego. Windows tiene compilación documentada desde código, no binario en esta publicación. La compatibilidad varía según dispositivo y controlador. Windows requiere compilación local con sus herramientas. El README aún menciona v0.14.9; se comprobó v0.14.11.
+
+**Código visible; sujeto a restricciones de licencia:** [The README declares MIT for the author’s original tooling. No standalone project license was verified. This statement does not license the original executable, game code or assets.](https://github.com/codepdbh/nfsu2-recompiled/blob/main/README.md)  
+**Autor:** codepdbh  
+[Documentación oficial](https://github.com/codepdbh/nfsu2-recompiled/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [LASRecomp Android](https://github.com/mamcjr/LASRecompAndroid)
+
+Bifurcación Android de LASRecomp con controles móviles y compilación en el dispositivo. Requiere tus archivos compatibles de Link’s Awakening para Switch.
+
+Original o referencia: **The Legend of Zelda: Link’s Awakening (Switch)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/mamcjr/LASRecompAndroid/releases/tag/v0.5.7) · [Explorar RemakeList](https://remakelist.com/es/remakes/las-recomp-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=las-recomp-android-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Android 11+ ARM64; GPU/controlador Vulkan compatible
+
+**Estado:** v0.5.7 preliminar · Android · compilación en el dispositivo
+
+**Qué necesitas:** Tus ExeFS/RomFS de Link’s Awakening Switch 1.0.0, 1.0.1 o 1.1.0. Mantén compatibles las versiones del ejecutable y los datos.
+
+**Qué está disponible:** v0.5.7 es una APK preliminar para Android 11+ ARM64. Necesita unos 12 GB libres y compila en el teléfono. Hay rutas alternativas Vulkan 1.1/1.2, con resultados variables. Se valida principalmente en POCO F7 Ultra, Snapdragon 8 Elite/Adreno 830. Buenos resultados Adreno pueden requerir Turnip; forzar rutas alternativas no demuestra soporte Mali real. v0.5.7 no se probó en un Mali físico.
+
+**Licencia del código:** [The Android port and upstream project code have scoped MIT notices. Third-party components retain their licenses; original Nintendo data and generated game code are outside that grant.](https://github.com/mamcjr/LASRecompAndroid/blob/main/LICENSE)  
+**Autor:** mamcjr  
+[Documentación oficial](https://github.com/mamcjr/LASRecompAndroid/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Project Stonehenge](https://github.com/Onaga00/ProjectStonehenge)
+
+Reconstrucción nativa Windows de Ace Combat 04 con ajustes gráficos modernos. Requiere tu imagen PS2 USA.
+
+Original o referencia: **Ace Combat 04: Shattered Skies (PS2)** · Proyecto basado en descompilación  
+[Descargar y aportar tus archivos del juego](https://github.com/Onaga00/ProjectStonehenge/releases/tag/Beta) · [Explorar RemakeList](https://remakelist.com/es/remakes/project-stonehenge/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=project-stonehenge-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64; Vulkan 1.2
+
+**Estado:** Paquete 0.9.6 · etiqueta Beta · Windows
+
+**Qué necesitas:** Tu disco PS2 USA SLUS-20152 en imagen ISO9660 estándar de sectores de 2048 bytes. No admite BIN/CUE raw.
+
+**Qué está disponible:** La etiqueta de publicación es Beta y el paquete Windows adjunto es 0.9.6. El autor informa de campaña completa jugable; sigue siendo beta. Compatibilidad y alta frecuencia son afirmaciones del autor, no garantías para cada sistema. La ausencia de marca preliminar en GitHub no la convierte en versión final.
+
+**Licencia del código:** [Project code is GPL-3.0. The license does not cover original game assets, trademarks or disc data; dependencies retain their own terms.](https://github.com/Onaga00/ProjectStonehenge/blob/main/LICENSE)  
+**Autor:** Onaga00  
+[Documentación oficial](https://github.com/Onaga00/ProjectStonehenge/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Project 8 Plus](https://github.com/MaxLeiter/project-8-plus)
+
+Adaptación nativa de escritorio de Tony Hawk’s Project 8 con gráficos modernos y herramientas de mods. Requiere tu juego PS3 compatible y actualización.
+
+Original o referencia: **Tony Hawk’s Project 8 (PS3)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/MaxLeiter/project-8-plus/releases/tag/v0.9.2) · [Explorar RemakeList](https://remakelist.com/es/remakes/project-8-plus/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=project-8-plus-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64, Direct3D 12; Linux x86_64 experimental
+
+**Estado:** v0.9.2 · Windows · Linux experimental
+
+**Qué necesitas:** Tu carpeta PS3 USA BLUS30011 con actualización 01.02 y la preparación RPCS3 documentada. El paquete HD opcional no aporta las texturas originales.
+
+**Qué está disponible:** v0.9.2 ofrece preparación Windows, archivo Linux experimental y paquete opcional de modelos HD/herramientas. Windows necesita internet y unos 4 GB; el autor estima 20–25 minutos. Linux sigue experimental. Las instalaciones existentes deben recompilar para adoptar las partidas compartidas de v0.9.2. El reescalado opcional requiere procesamiento local y no garantiza una mejora visual o de rendimiento universal verificada.
+
+**Licencia del código:** [Project code is MIT; the optional upscaling model is CC-BY-4.0 and dependencies have their own notices. Original game content is excluded.](https://github.com/MaxLeiter/project-8-plus/blob/master/LICENSE)  
+**Autor:** MaxLeiter  
+[Documentación oficial](https://github.com/MaxLeiter/project-8-plus/blob/master/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [2014 FIFA World Cup Brazil: Recompiled](https://github.com/HossEz/fifa-world-cup-2014-recompiled)
+
+Port Windows no oficial del juego de fútbol Xbox 360, con lanzador para importar tu disco o carpeta extraída.
+
+Original o referencia: **2014 FIFA World Cup Brazil** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/HossEz/fifa-world-cup-2014-recompiled/releases/tag/v0.1.10) · [Explorar RemakeList](https://remakelist.com/es/remakes/fifa-world-cup-2014-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=fifa-world-cup-2014-recompiled-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · Direct3D 12 · SSE4.2
+
+**Estado:** v0.1.10 · vista previa · requiere recursos originales
+
+**Qué necesitas:** Tu copia Xbox 360 como ISO o carpeta con default.xex. El proyecto no proporciona datos del juego.
+
+**Qué está disponible:** v0.1.10 ofrece instalador Windows y ZIP portátil; el lanzador verifica tu juego. Se mantienen los requisitos CPU/GPU. Intel UHD e Iris Xe usan un renderizador más lento; vídeos, repeticiones y celebraciones a alta resolución pueden bajar de 60 FPS. Son informes del autor, no pruebas independientes del juego completo.
+
+**Licencia del código:** [BSD-3-Clause covers the author's launcher, fixes, SDK patches and tools. It excludes the original game and recompiled game code; dependencies retain their own licenses.](https://github.com/HossEz/fifa-world-cup-2014-recompiled/blob/main/LICENSE)  
+**Autor:** HossEz  
+[Documentación oficial](https://github.com/HossEz/fifa-world-cup-2014-recompiled/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Smash 4 PC](https://github.com/josiahg2502-glitch/Smash4PC)
+
+Port Windows nativo de Super Smash Bros. for Wii U con lanzador para tus archivos de juego, actualización y DLC opcionales.
+
+Original o referencia: **Super Smash Bros. for Wii U** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/josiahg2502-glitch/Smash4PC/releases/tag/v0.1.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/smash4pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=smash4pc-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · Vulkan 1.3
+
+**Estado:** v0.1.0 · vista previa · requiere recursos originales
+
+**Qué necesitas:** Tu volcado Wii U USA; se recomienda v304 y el DLC debe proceder de tu volcado. Pretendo necesita además tus archivos de consola Wii U y cuenta.
+
+**Qué está disponible:** v0.1.0 ofrece ZIP Windows. Admite base v1.0 o actualización v304; compila sombreadores al usarlos por primera vez. Más de 60 FPS usa interpolación, con simulación a 60. El README advierte que los programas generados contienen código del juego y no deben subirse; no se ha auditado independientemente cómo la publicación trata ese código. RemakeList no probó modos ni funciones en línea.
+
+**Licencia del código:** [Project-authored code is MIT; Cemu-derived network code is MPL-2.0 and other components retain their notices. None of these licenses grants rights to Nintendo game code or assets.](https://github.com/josiahg2502-glitch/Smash4PC/blob/main/LICENSE)  
+**Autor:** josiahg2502-glitch  
+[Documentación oficial](https://github.com/josiahg2502-glitch/Smash4PC/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Glassline](https://github.com/MoonCellar-Team/Glassline)
+
+Lleva Mirror’s Edge para iPad a escritorio, Android y navegador, con controles modernos y partidas opcionales uno contra uno en red.
+
+Original o referencia: **Mirror's Edge for iPad** · Proyecto basado en descompilación  
+[Descargar y aportar tus archivos del juego](https://github.com/MoonCellar-Team/Glassline/releases/tag/v1.3.1) · [Explorar RemakeList](https://remakelist.com/es/remakes/glassline/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=glassline-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows x64 · Linux x64 / Steam Deck · Android 9+ · Web
+
+**Estado:** v1.3.1 · requiere preparación y recursos originales
+
+**Qué necesitas:** Tu IPA de Mirror’s Edge para iPad v1.1.48 o posterior; no admite la edición iPhone. No proporciona datos originales.
+
+**Qué está disponible:** v1.3.1 ofrece paquetes Windows, Linux, Android y web, además de una versión web alojada por el autor. macOS usa el navegador, sin versión nativa. Código accesible, no abierto. Las partidas en red son uno contra uno mediante MoonCellar; las cuentas se rigen por sus condiciones. El navegador necesita las funciones WebAssembly, almacenamiento y gráficos indicadas; borrar datos del sitio elimina archivos locales del juego y partidas. Los efectos mejorados requieren OpenGL ES 3.0.
+
+**Código visible; sujeto a restricciones de licencia:** [The custom license permits specified personal noncommercial use of the author's work. Redistribution, modified builds and commercial use need separate permission. EA's original code and assets are excluded; dependencies retain their licenses.](https://github.com/MoonCellar-Team/Glassline/blob/main/LICENSE)  
+**Autor:** MoonCellar-Team  
+[Documentación oficial](https://github.com/MoonCellar-Team/Glassline/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [RE: Outbreak](https://github.com/Ninjacornix/reo)
+
+Port Windows de Resident Evil Outbreak File #1 con compilación local guiada, controles configurables y cooperativo openSNAP opcional.
+
+Original o referencia: **Resident Evil Outbreak File #1** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/Ninjacornix/reo/releases/tag/v1.0.19) · [Explorar RemakeList](https://remakelist.com/es/remakes/reo-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=reo-native-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows x64 · .NET 8 Desktop Runtime · Vulkan
+
+**Estado:** v1.0.19 · preparación y compilación local · requiere recursos originales
+
+**Qué necesitas:** Solo admite ISO original NTSC-U v2.00 File #1, SLUS-20765. Conserva la ISO tras compilar; rechaza PAL, Japón, modificaciones y File #2.
+
+**Qué está disponible:** v1.0.19 ofrece lanzador Windows y archivo de código de dependencias. La preparación descarga herramientas y compila localmente; requiere unos 10 GB y puede superar una hora. No hay File #2 ni paquete Linux jugable. La posibilidad de completar el juego es afirmación del autor. Alojar por internet necesita acceso de red o VPN y expone la IP del anfitrión a los participantes; salas exigentes para CPU pueden ralentizarse.
+
+**Licencia del código:** [This fork's original contributions use GPL-3.0-only. Upstream and third-party code retains its own notices. Original game content and generated game code are not licensed by this grant.](https://github.com/Ninjacornix/reo/blob/main/LICENSE)  
+**Autor:** Ninjacornix  
+[Documentación oficial](https://github.com/Ninjacornix/reo/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [SegaSonic Native Port](https://github.com/cheviman/segasonic-port)
+
+Port nativo del arcade Sega para tres jugadores, con opciones de escritorio y portátiles, desde tu conjunto exacto de ROM.
+
+Original o referencia: **SegaSonic The Hedgehog (arcade)** · Proyecto basado en descompilación  
+[Descargar y aportar tus archivos del juego](https://github.com/cheviman/segasonic-port/releases/tag/v1.2.2) · [Explorar RemakeList](https://remakelist.com/es/remakes/segasonic-port/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=segasonic-port-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows x64 · Linux x64 · macOS 11+ · Anbernic H700 · Android/Switch generados localmente
+
+**Estado:** v1.2.2 · requiere preparación y recursos originales
+
+**Qué necesitas:** Tu sonic.zip SegaSonic The Hedgehog Japón revisión C, con los 18 archivos esperados. Importar crea segasonic.assets; los paquetes móviles/consola generados contienen tus recursos extraídos y no deben compartirse.
+
+**Qué está disponible:** v1.2.2 ofrece Windows, Linux, macOS universal y Anbernic H700. Los APK Android 7+ y paquetes Switch se generan en tu ordenador con las herramientas incluidas; no son descargas listas separadas. El autor informa de comparaciones con MAME y pruebas en sistemas concretos; RemakeList no las repitió. Los tres jugadores son locales, sin afirmar multijugador por internet. macOS no está firmado.
+
+**Licencia del código:** [Project code uses BSD-3-Clause; MAME/ymfm-derived components, SDL and Kenney assets have their own BSD, zlib or CC0 terms. Original Sega ROMs and assets are not licensed by the project.](https://github.com/cheviman/segasonic-port/blob/main/LICENSE)  
+**Autor:** cheviman  
+[Documentación oficial](https://github.com/cheviman/segasonic-port/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [Stunt Race FX DECOMP](https://github.com/Mabec-games/Stunt-Race-FX-DECOMP)
+
+Port Linux experimental del juego de carreras SNES Super FX, con lógica original y gráficos más fluidos y de mayor resolución.
+
+Original o referencia: **Stunt Race FX** · Proyecto basado en descompilación  
+[Descargar y aportar tus archivos del juego](https://github.com/Mabec-games/Stunt-Race-FX-DECOMP/releases/tag/beta-0.1) · [Explorar RemakeList](https://remakelist.com/es/remakes/stunt-race-fx-decomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=stunt-race-fx-decomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Linux x86-64
+
+**Estado:** beta-0.1 · vista previa · requiere recursos originales
+
+**Qué necesitas:** Tu ROM Stunt Race FX USA revisión 1, SHA-1 781e376ff453a83c7bcf72339abe6b842efd9c86. No incluye datos del juego.
+
+**Qué está disponible:** beta-0.1 ofrece AppImage Linux x86-64. La promesa del README de publicarlo más adelante está desactualizada: el archivo ya existe. También documenta compilación desde código. Beta temprana: Speed Trax, especialmente pistas principiantes, tiene mayor cobertura. Otros circuitos y modos siguen incompletos; menús, selección de coche y batalla para dos conservan resolución original sin interpolación. Ver 60 FPS fluidos no cambia la simulación original.
+
+**Licencia del código:** [The upstream decompilation and this fork are offered under CC0-1.0. Nintendo/Argonaut's original game and ROM contents remain separately protected and are not supplied.](https://github.com/Mabec-games/Stunt-Race-FX-DECOMP/blob/main/LICENSE)  
+**Autor:** Mabec-games  
+[Documentación oficial](https://github.com/Mabec-games/Stunt-Race-FX-DECOMP/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [God of War: Ascension PC](https://github.com/otavix010/gow-ascension-pc)
+
+Port Windows experimental del juego PS3, generado localmente desde tu disco compatible mediante Otavix Launcher del autor o scripts.
+
+Original o referencia: **God of War: Ascension** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/otavix010/otavix-launcher/releases/tag/v1.0.50) · [Explorar RemakeList](https://remakelist.com/es/remakes/gow-ascension-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gow-ascension-pc-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows x64 · Direct3D 12 · compilación local
+
+**Estado:** Temprano · compilación local y recursos originales
+
+**Qué necesitas:** Tu disco PS3 USA BCUS98232, actualización exacta 1.04 y firmware PS3. El autor documenta fuentes oficiales Sony para dependencias; no admite 1.05 o posteriores.
+
+**Qué está disponible:** El autor enlaza Otavix Launcher v1.0.50, que descarga soporte y compila localmente. La etiqueta más reciente shaders del repositorio es un paquete de sombreadores, no una versión del juego. Solo se informa de pruebas del inicio y capítulo 16, no del juego completo. La CPU afecta mucho al rendimiento y superar 60 FPS puede acelerar la lógica. La compartición comunitaria opcional del lanzador sube sombreadores tras aceptar; revisa ese ajuste por separado.
+
+**Licencia del código:** [MIT covers the author's code and tools; scripts/gpl contains GPL-2.0 helpers and dependencies retain their terms. The license excludes the original game, firmware and generated game output.](https://github.com/otavix010/gow-ascension-pc/blob/main/LICENSE)  
+**Autor:** otavix010  
+[Documentación oficial](https://github.com/otavix010/gow-ascension-pc/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [2010 FIFA World Cup South Africa: Recompiled](https://github.com/CalinGraphics/fifa-world-cup-2010-recompiled)
+
+Port Windows del juego del Mundial de Xbox 360, disponible mediante compilación local documentada desde tu disco compatible.
+
+Original o referencia: **2010 FIFA World Cup South Africa** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/CalinGraphics/fifa-world-cup-2010-recompiled/blob/main/README.md) · [Explorar RemakeList](https://remakelist.com/es/remakes/fifa-world-cup-2010-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=fifa-world-cup-2010-recompiled-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · Direct3D 12 · SSE4.2
+
+**Estado:** Temprano · compilación local y recursos originales
+
+**Qué necesitas:** Tu edición exacta Xbox 360 europea con inglés, español y neerlandés, con hashes coincidentes de default.xex y fifadllzf.xex. No admite PS3 ni otras regiones.
+
+**Qué está disponible:** El 28 de octubre de 2026 no había versiones GitHub publicadas pese al botón del README. Usa BUILDING.md y build.ps1; el autor estima una hora para SDK y primera compilación. No funciona el modo en línea/Xbox Live. Menús y vídeos siguen a 30 FPS; el autor no probó todos los modos de principio a fin. La imagen localizada muestra el lanzador del autor, no demuestra juego.
+
+**Licencia del código:** [BSD-3-Clause covers the author's launcher, app, hooks, SDK patches and tools. Original and recompiled game code are excluded, and third-party components keep their licenses.](https://github.com/CalinGraphics/fifa-world-cup-2010-recompiled/blob/main/LICENSE)  
+**Autor:** CalinGraphics  
+[Documentación oficial](https://github.com/CalinGraphics/fifa-world-cup-2010-recompiled/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [BotW Recompiled for Windows](https://github.com/ryderclanky/BotW-Native)
+
+Port Windows temprano de Breath of the Wild de Wii U, con traducción local del juego y gráficos Vulkan.
+
+Original o referencia: **The Legend of Zelda: Breath of the Wild (Wii U)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/ryderclanky/BotW-Native/releases/tag/v0.1.1) · [Explorar RemakeList](https://remakelist.com/es/remakes/botw-native-windows/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=botw-native-windows-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · Vulkan 1.1 · compilación local
+
+**Estado:** v0.1.1 · temprano · compilación local y recursos originales
+
+**Qué necesitas:** Tu juego Wii U USA ya extraído con actualización v208 (1.5.0), carpetas code/content/meta y hash U-King.rpx compatible. No incluye claves ni juego.
+
+**Qué está disponible:** v0.1.1 ofrece ZIP Windows con lanzador y código. Compila localmente tu juego; la ruta desde código usa MSYS2 UCRT64. No es una versión del juego completo. El autor comprobó escenas concretas de inicio, combate, mapa, viaje y Hateno en un portátil NVIDIA reciente. Mandos, efectos, texto de vídeos, DLC y sesiones largas siguen incompletos o sin verificar. El README se contradice sobre audio, por lo que no se confirma sonido funcional. No se ha establecido jugabilidad Linux/Apple en este fork.
+
+**Licencia del código:** [Project-authored code is MIT; Cemu-derived components stay MPL-2.0, with other dependencies under their own licenses. Nintendo's original game, assets and extracted files are excluded.](https://github.com/ryderclanky/BotW-Native/blob/main/LICENSE)  
+**Autor:** ryderclanky  
+[Documentación oficial](https://github.com/ryderclanky/BotW-Native/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [358/2 Days for Android](https://github.com/sonofskywalker3/khdays-358-android)
+
+Fork Android del port nativo Kingdom Hearts 358/2 Days de Yokimitsuro, con dos pantallas en AYN Thor y pantalla compartida en teléfonos.
+
+Original o referencia: **Kingdom Hearts 358/2 Days** · Proyecto basado en descompilación  
+[Descargar y aportar tus archivos del juego](https://github.com/sonofskywalker3/khdays-358-android/releases/tag/android-0.1.4-beta6) · [Explorar RemakeList](https://remakelist.com/es/remakes/khdays-358-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=khdays-358-android-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Android 10+ · ARM64 · Vulkan · dos pantallas AYN Thor
+
+**Estado:** android-0.1.4-beta6 · vista previa · requiere recursos originales
+
+**Qué necesitas:** Tu ROM de cartucho DS europeo o norteamericano. Vídeos/menús HD opcionales requieren tus copias HD 1.5+2.5 ReMIX y, para menús, HD 2.8; no se incluyen.
+
+**Qué está disponible:** android-0.1.4-beta6 ofrece APK ARM64 y herramienta Windows separada para recursos HD opcionales. El autor prueba AYN Thor; los teléfonos muestran ambas pantallas DS en una. Es beta con cobertura centrada en AYN Thor. Una carpeta externa de mods/HD solicita acceso Android a todos los archivos. Desinstalar borra datos y partidas locales: expórtalas antes. El soporte del juego completo es afirmación del autor, no prueba de RemakeList.
+
+**Licencia del código:** [Project code uses MIT with upstream and third-party notices retained. This does not grant rights to Square Enix/Disney game files or optional HD collection assets.](https://github.com/sonofskywalker3/khdays-358-android/blob/master/LICENSE)  
+**Autor:** sonofskywalker3  
+[Documentación oficial](https://github.com/sonofskywalker3/khdays-358-android/blob/master/.github/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [F.E.A.R. 360 Recompiled](https://github.com/Juansolo457/fear360-recomp)
+
+Port Windows compilado desde código de F.E.A.R. y F.E.A.R. Files de Xbox 360, reunidos en una colección para mando.
+
+Original o referencia: **F.E.A.R. / F.E.A.R. Files (Xbox 360)** · Recompilación estática  
+[Compilar y aportar tus archivos del juego](https://github.com/Juansolo457/fear360-recomp/releases/tag/v0.1.5) · [Explorar RemakeList](https://remakelist.com/es/remakes/fear360-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=fear360-recomp-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · AVX2/FMA · Direct3D 12 · Proton/Steam Deck experimental
+
+**Estado:** v0.1.5 · temprano · compilación local y recursos originales
+
+**Qué necesitas:** Tus discos Xbox 360 compatibles: F.E.A.R. ID 565507D9 y F.E.A.R. Files 565507E8, con hashes de ejecutables de la guía.
+
+**Qué está disponible:** v0.1.5 solo ofrece código, sin ejecutable adjunto. Compila en Windows con las herramientas indicadas; Steam Deck/Linux usan Proton experimental, no versión Linux nativa. Ninguna campaña está verificada independientemente de principio a fin. Renderiza a 1280×720 sin texturas PC; persisten problemas en escenas con muchos efectos, física a alta frecuencia y gráficos. En Steam Deck el mando puede desconectarse brevemente al autoguardar. Android y Windows ARM64 están previstos.
+
+**Licencia del código:** [Own tools and glue are MIT, fear-nx-derived runtime parts are GPL-3.0-or-later, and renderer/SDK components have MIT/BSD terms. Linked builds include GPL obligations. Original game code, assets and generated private builds must not be redistributed as project downloads.](https://github.com/Juansolo457/fear360-recomp/blob/master/LICENSE)  
+**Autor:** Juansolo457  
+[Documentación oficial](https://github.com/Juansolo457/fear360-recomp/blob/master/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [ReStreet](https://github.com/samuelit0davila/fifa-street-pc-port)
+
+Recompilación Windows de FIFA Street (2012), con lanzador, carrera local y servidores comunitarios opcionales, desde tu juego Xbox 360.
+
+Original o referencia: **FIFA Street (2012)** · Recompilación estática  
+[Descargar y aportar tus archivos del juego](https://github.com/samuelit0davila/fifa-street-pc-port/releases/tag/v2.1.3-online-beta) · [Explorar RemakeList](https://remakelist.com/es/remakes/restreet-fifa-street/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=restreet-fifa-street-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Windows 10/11 x64 · lanzador Linux con Proton (beta)
+
+**Estado:** v2.1.3-online-beta · vista previa · requiere recursos originales
+
+**Qué necesitas:** Tu ISO Xbox 360 de FIFA Street (2012). No hay descarga separada de datos originales; el autor declara incluir binarios del juego generados en el instalador.
+
+**Qué está disponible:** v2.1.3-online-beta ofrece instalador Windows y lanzador Linux nativo; Linux ejecuta el juego con Proton. El 2.0.8 del README está desactualizado. Windows añade restauración de World Tour, aún ausente en el lanzador Linux. Salas e invitaciones Linux siguen en pruebas y el autor no probó Steam Deck. Vulkan puede dar tirones o cerrarse en AMD; resolución interna actual 1280×720. Los servidores comunitarios tienen condiciones propias. Si desaparece una carrera World Tour, deja de jugar antes de restaurar: solo conserva las diez últimas partidas. No se afirman derechos de distribución de los binarios generados.
+
+**Licencia del código:** [MIT covers the author's installer, launcher and scripts only; dependencies keep their licenses. The installer contains generated game binaries, and the author explicitly says MIT does not establish redistribution rights or legal clearance for them.](https://github.com/samuelit0davila/fifa-street-pc-port/blob/main/LICENSE)  
+**Autor:** samuelit0davila  
+[Documentación oficial](https://github.com/samuelit0davila/fifa-street-pc-port/blob/main/README.md) · Fuentes revisadas: 2026-10-28
+
+</details>
+
+### [NX2Apple](https://github.com/LNPANDY/NX2Apple)
+
+Biblioteca y lanzador de juegos para Mac y herramienta gráfica de compilación para nxnative. Crea apps personales para Mac o iPhone/iPad desde tus archivos Switch compatibles; es una bifurcación comunitaria independiente, no una colección de juegos incluidos.
+
+Original o referencia: **Compilación y gestión de bibliotecas de juegos Nintendo Switch en dispositivos Apple** · Capa de compatibilidad entre plataformas  
+[Compilar y aportar tus archivos del juego](https://github.com/LNPANDY/NX2Apple/releases/tag/v0.5.0) · [Explorar RemakeList](https://remakelist.com/es/remakes/nx2apple/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nx2apple-es)
+
+<details>
+<summary>Requisitos y capturas</summary>
+
+**Plataformas:** Herramienta de compilación: Mac Apple silicon, macOS 13+ · destinos: Mac / iPhone / iPad
+
+**Estado:** v0.5.0 · compilación gráfica · compatibilidad por juego
+
+**Qué necesitas:** Aporta volcados de tus cartuchos o compras Switch, las actualizaciones/DLC exactos de cada perfil y tus prod.keys. El compilador documentado requiere Mac Apple silicon con macOS 13+, Xcode/iOS SDK, Python 3.9+ y .NET SDK 10. El README apunta a iOS/iPadOS 26+; los requisitos de ejecución varían según juego y dispositivo. No incluye archivos ni claves del juego. El código y los paquetes de recursos generados son para tu dispositivo y no deben redistribuirse.
+
+**Qué está disponible:** v0.5.0 ofrece el lanzador Mac ARM64: elige NX2Apple-macOS-arm64.zip. Obtiene las herramientas y genera los juegos localmente; no entrega apps de juegos listas para jugar. El fork informa de comprobaciones de compilación, instalación y juego en iPhone para tres títulos: Tears of the Kingdom, Hades II y Animal Crossing: New Horizons. Los perfiles y los informes del proyecto original no demuestran compatibilidad de todos los juegos ni partidas completas. Windows tiene una interfaz para Actions, pero no una descarga publicada ni un proceso completo de compilación verificado. No se han probado mods reales. Los juegos grandes dependen de la memoria y de permisos de memoria correctamente firmados; la provisión con Apple ID gratuito caduca a los siete días. RemakeList no lo ha compilado, instalado ni jugado.
+
+**Licencia del código:** [MIT covers project code, with upstream attribution and separate third-party notices. It grants no rights to Nintendo game code, assets, keys or the game-derived packages you build.](https://github.com/LNPANDY/NX2Apple/blob/main/LICENSE)  
+**Autor:** LNPANDY and contributors  
+[Documentación oficial](https://github.com/LNPANDY/NX2Apple/blob/main/README.md) · Fuentes revisadas: 2026-10-28
 
 </details>
 
