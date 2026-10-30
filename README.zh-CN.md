@@ -28,7 +28,7 @@
 - [设计与创作工具](#creative) · 13
 - [日常工具与界面再现](#everyday) · 9
 - [游戏引擎与重制](#classic_games) · 30
-- [移植与兼容项目](#ports) · 90
+- [移植与兼容项目](#ports) · 91
 
 <img src="assets/overview-zh-CN.svg" alt="目录" width="920">
 
@@ -65,22 +65,22 @@
 ArtCraft 团队用 Rust 再实现 Photoshop 式图像编辑工作流，当前处于 alpha。
 
 原作或参考对象: **Adobe Photoshop** · 工作流重实现  
-[下载](https://github.com/storytold/photocraft/releases) · [浏览 RemakeList](https://remakelist.com/zh/remakes/photocraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=photocraft-zh-CN)
+[下载](https://github.com/storytold/photocraft/releases/tag/v0.17.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/photocraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=photocraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows / macOS / Linux / FreeBSD / Web
 
-**当前阶段:** Alpha · 工作流仍在完善
+**当前阶段:** v0.17.0 · 早期 Alpha
 
 **需要准备什么:** 无需 Photoshop 安装文件；处理的图片和其他素材需有使用权。字体、图标等另有许可，ArtCraft 品牌标识不在代码许可中。
 
-**现在能用什么:** 已有可下载的 alpha 发行版，无需安装 Photoshop。项目列出 Windows、macOS、Linux、FreeBSD 与 Web 支持；PSD 互操作、工具深度与插件兼容仍有缺口，暂不宜视为专业工作流的完整替代。
+**现在能用什么:** v0.17.0 提供 Windows、macOS、Linux、FreeBSD 与 Web 包。项目仍是早期 Alpha；本次更新文档／画板处理和渲染，Photoshop 兼容性与专业工作流仍未完善。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/photocraft/blob/main/LICENSE-MIT)  
 **作者:** storytold  
-[官方文档](https://github.com/storytold/photocraft/blob/main/README.md) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/storytold/photocraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -185,22 +185,22 @@ ArtCraft 团队用 Rust 再实现 Photoshop 式图像编辑工作流，当前处
 ArtCraft 团队以 Rust 重建Adobe Illustrator式工作流：钢笔、路径布尔运算、外观效果与矢量插画。
 
 原作或参考对象: **Adobe Illustrator** · 工作流重实现  
-[下载](https://getartcraft.com/apps/vectorcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/vectorcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=vectorcraft-zh-CN)
+[下载](https://github.com/storytold/vectorcraft/releases/tag/v0.18.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/vectorcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=vectorcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** Alpha
+**当前阶段:** v0.18.0 · Alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** Alpha：可尝试日常矢量绘图，但复杂文件互操作和效果深度仍需验证。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.18.0 提供桌面安装器／压缩包与 Web 构建。修复串接文本重复、恢复文档后的文本续排、复合路径变换和 RGB 工作配置切换。 Alpha：可尝试日常矢量绘图，但复杂文件互操作和效果深度仍需验证。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/vectorcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/vectorcraft/blob/main/README.md) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/storytold/vectorcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -209,22 +209,22 @@ ArtCraft 团队以 Rust 重建Adobe Illustrator式工作流：钢笔、路径布
 ArtCraft 团队以 Rust 重建Adobe Premiere Pro式工作流：源监视器、节目监视器、多轨时间线与剪辑修整。
 
 原作或参考对象: **Adobe Premiere Pro** · 工作流重实现  
-[下载](https://getartcraft.com/apps/filmcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/filmcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=filmcraft-zh-CN)
+[下载](https://github.com/storytold/filmcraft/releases/tag/v0.14.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/filmcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=filmcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** Alpha
+**当前阶段:** v0.14.0 · Alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** Alpha：已有剪辑和导出流程；大素材性能、效果渲染与专业项目兼容仍有缺口。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.14.0 提供桌面安装器／压缩包与 Web 构建。改善关联音画修剪、遮罩顶点选择，以及提升／提取编辑的剪贴板行为。 Alpha：已有剪辑和导出流程；大素材性能、效果渲染与专业项目兼容仍有缺口。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/filmcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/filmcraft/blob/main/README.md) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/storytold/filmcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -233,22 +233,22 @@ ArtCraft 团队以 Rust 重建Adobe Premiere Pro式工作流：源监视器、�
 ArtCraft 团队以 Rust 重建Adobe Lightroom式工作流：照片图库管理、RAW 显影与非破坏性调色。
 
 原作或参考对象: **Adobe Lightroom** · 工作流重实现  
-[下载](https://getartcraft.com/apps/lightcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/lightcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=lightcraft-zh-CN)
+[下载](https://github.com/storytold/lightcraft/releases/tag/v0.15.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/lightcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=lightcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** Alpha
+**当前阶段:** v0.15.0 · Alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** Alpha：可试 JPEG、DNG 及多种相机 RAW；相机色彩校准和部分压缩 RAW 支持不完整。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.15.0 提供桌面安装器／压缩包与 Web 构建。新增 Sony α7R V 相机配置，改善全尺寸导出及 RAW／HEIF 解码器资源处理。 Alpha：可试 JPEG、DNG 及多种相机 RAW；相机色彩校准和部分压缩 RAW 支持不完整。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/lightcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/lightcraft/blob/main/README.md) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/storytold/lightcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -257,22 +257,22 @@ ArtCraft 团队以 Rust 重建Adobe Lightroom式工作流：照片图库管理�
 ArtCraft 团队以 Rust 重建Adobe After Effects式工作流：图层合成、关键帧动画、动态图形与特效。
 
 原作或参考对象: **Adobe After Effects** · 工作流重实现  
-[下载](https://getartcraft.com/apps/effectcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/effectcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=effectcraft-zh-CN)
+[下载](https://github.com/storytold/effectcraft/releases/tag/v0.18.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/effectcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=effectcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** 早期开发
+**当前阶段:** v0.18.0 · Alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** 早期开发：适合尝试动画与合成，尚不适合客户交付；不能打开 AEP/AEPX，也不能运行 After Effects 插件。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.18.0 提供桌面安装器／压缩包与 Web 构建。更新停靠面板与合成标签页，修复聚焦文本编辑和菜单行为。 Alpha：可用于尝试动画与合成，不宜用于客户交付。不支持专有项目格式或 After Effects SDK 插件。渲染检查主要覆盖小型合成，macOS 是作者测试最多的平台。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/effectcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/effectcraft/blob/main/README.md) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/storytold/effectcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -281,22 +281,22 @@ ArtCraft 团队以 Rust 重建Adobe After Effects式工作流：图层合成、�
 ArtCraft 团队以 Rust 重建Adobe InDesign式工作流：跨页排版、文本框串联、母版与出版文档。
 
 原作或参考对象: **Adobe InDesign** · 工作流重实现  
-[下载](https://getartcraft.com/apps/designcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/designcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=designcraft-zh-CN)
+[下载](https://github.com/storytold/designcraft/releases/tag/v0.14.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/designcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=designcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** 开发中
+**当前阶段:** v0.14.0 · Pre-alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** 开发中：已有排版与导出版本；复杂出版文件、字体排版和印前工作流需逐项检查。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.14.0 提供桌面安装器／压缩包与 Web 构建。改善 DOCX 表格导入、脚注编辑、PDF 文档元数据和表格单元格渐变输出。 Pre-alpha：已有排版与导出构建；复杂出版文件、字体排版和印前工作流仍需逐项检查。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/designcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/designcraft/blob/main/README.md) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/storytold/designcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -305,22 +305,22 @@ ArtCraft 团队以 Rust 重建Adobe InDesign式工作流：跨页排版、文本
 ArtCraft 团队以 Rust 重建Avid Pro Tools式工作流：音轨录制、编辑窗口、混音台与 MIDI 编排。
 
 原作或参考对象: **Avid Pro Tools** · 工作流重实现  
-[下载](https://getartcraft.com/apps/soundcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/soundcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=soundcraft-zh-CN)
+[下载](https://github.com/storytold/soundcraft/releases/tag/v0.14.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/soundcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=soundcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** Pre-alpha
+**当前阶段:** v0.14.0 · Pre-alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** Pre-alpha：已有录制、编辑、混音和导出流程；音频设备与缓冲设置、MIDI 控制器录制和 AAF/OMF 交换尚缺。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.14.0 提供桌面安装器／压缩包与 Web 构建。修复 Auto Pan 立体声处理、粘贴和 Strip Silence 行为，并改善混音导出处理。 Pre-alpha：已有录制、编辑、混音和导出流程；音频设备与缓冲设置、MIDI 控制器录制和 AAF/OMF 交换尚缺。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/soundcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/soundcraft/blob/main/README.md) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/storytold/soundcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -329,22 +329,22 @@ ArtCraft 团队以 Rust 重建Avid Pro Tools式工作流：音轨录制、编辑
 ArtCraft 团队以 Rust 重建Autodesk AutoCAD式工作流：命令行绘图、对象捕捉、图层、尺寸标注与图纸布局。
 
 原作或参考对象: **Autodesk AutoCAD** · 工作流重实现  
-[下载](https://getartcraft.com/apps/cadcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/cadcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=cadcraft-zh-CN)
+[下载](https://github.com/storytold/cadcraft/releases/tag/v0.14.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/cadcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=cadcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** 早期开发
+**当前阶段:** v0.14.0 · 早期开发
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** 早期开发：可尝试二维图纸与 PDF 出图；不能视为 AutoCAD 全套三维、DWG 和行业插件工作流的替代。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.14.0 提供桌面安装器／压缩包与 Web 构建。改善图纸恢复与保存提示、DXF 文本转义，以及几何与约束处理。 早期开发：可尝试二维图纸与 PDF 出图；不能视为 AutoCAD 全套三维、DWG 和行业插件工作流的替代。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/cadcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/cadcraft/blob/main/README.md) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/storytold/cadcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -389,15 +389,15 @@ ArtCraft 团队以 Rust 重建Autodesk AutoCAD式工作流：命令行绘图、�
 
 **平台:** Windows / macOS / Linux
 
-**当前阶段:** 提供正式发行版
+**当前阶段:** Community 核心 v1.7.22 · 桌面版独立发布
 
 **需要准备什么:** 桌面版可处理本地文件；自行托管需要服务器环境。官网云端方案需要账号，并有用量与功能边界。
 
-**现在能用什么:** 可下载 Windows、macOS、Linux 桌面版编辑本地文件，也可以自行托管 Community 版。官网另有免费和付费云端方案，企业功能并不全部包含在开源核心里。
+**现在能用什么:** Community 核心 v1.7.22 新增文档内 Widget Creator、更多排序控制及更清楚的导入／访问规则提示。本标签没有 GitHub 附件，README 提供 Docker 和源码运行步骤。桌面包另行发布，云端免费／付费方案和企业功能仍需区分。 自托管需要服务器；托管方案需账号并有用量限制，其数据模型与 Excel 不同。
 
 **代码许可:** [Apache-2.0](https://github.com/gristlabs/grist-core/blob/main/LICENSE.txt)  
 **作者:** Grist Labs  
-[官方文档](https://github.com/gristlabs/grist-core) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/gristlabs/grist-core) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -478,22 +478,22 @@ ArtCraft 团队以 Rust 重建Autodesk AutoCAD式工作流：命令行绘图、�
 ArtCraft 团队以 Rust 重建Adobe Acrobat式工作流：PDF 阅读、批注、页面整理、合并与拆分。
 
 原作或参考对象: **Adobe Acrobat** · 工作流重实现  
-[下载](https://getartcraft.com/apps/pdfcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/pdfcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pdfcraft-zh-CN)
+[下载](https://github.com/storytold/pdfcraft/releases/tag/v0.15.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/pdfcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pdfcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** 早期 Alpha
+**当前阶段:** v0.15.0 · 早期 Alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** 早期 Alpha：已有阅读和页面管理流程；不要把它当作 Acrobat 全套编辑、签名和印前功能的完整替代。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.15.0 提供桌面安装器／压缩包与 Web 构建。改善 XFA 表单、导入批注、图像裁切及文档打开位置。 早期 Alpha：已有阅读和页面管理流程；不要把它当作 Acrobat 全套编辑、签名和印前功能的完整替代。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/pdfcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/pdfcraft/blob/main/README.md) · 资料核对日期: 2026-10-12
+[官方文档](https://github.com/storytold/pdfcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -502,22 +502,22 @@ ArtCraft 团队以 Rust 重建Adobe Acrobat式工作流：PDF 阅读、批注、
 ArtCraft 团队以 Rust 重建Microsoft Word式工作流：文字处理、样式、表格、修订与文档布局。
 
 原作或参考对象: **Microsoft Word** · 工作流重实现  
-[下载](https://getartcraft.com/apps/wordcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/wordcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=wordcraft-zh-CN)
+[下载](https://github.com/storytold/wordcraft/releases/tag/v0.12.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/wordcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=wordcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** Alpha
+**当前阶段:** v0.12.0 · Alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** Alpha：可尝试写作与 DOCX 文档；分页、图表与 SmartArt 往返保真、原生打印仍是完善重点。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.12.0 提供桌面安装器／压缩包与 Web 构建。改善 DOCX／RTF 导入细节、阿拉伯文列表编号、段落排版及 LaTeX 二项式导入。 Alpha：可尝试写作与 DOCX 文档；分页、图表与 SmartArt 往返保真、原生打印仍是完善重点。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/wordcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/wordcraft/blob/main/README.md) · 资料核对日期: 2026-10-13
+[官方文档](https://github.com/storytold/wordcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -526,22 +526,22 @@ ArtCraft 团队以 Rust 重建Microsoft Word式工作流：文字处理、样式
 ArtCraft 团队以 Rust 重建Microsoft PowerPoint式工作流：幻灯片母版、主题、图形、动画与演示播放。
 
 原作或参考对象: **Microsoft PowerPoint** · 工作流重实现  
-[下载](https://getartcraft.com/apps/deckcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/deckcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=deckcraft-zh-CN)
+[下载](https://github.com/storytold/deckcraft/releases/tag/v0.12.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/deckcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=deckcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** Alpha
+**当前阶段:** v0.12.0 · Alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** Alpha：可尝试制作和播放演示文稿；复杂 PPTX 文件和动画效果不应假定与 PowerPoint 完全一致。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.12.0 提供桌面安装器／压缩包与 Web 构建。新增幻灯片范围选择及选择性复用，改善大纲导入和演示控制。 Alpha：可尝试制作和播放演示文稿；复杂 PPTX 文件和动画效果不应假定与 PowerPoint 完全一致。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/deckcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/deckcraft/blob/main/README.md) · 资料核对日期: 2026-10-13
+[官方文档](https://github.com/storytold/deckcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -550,22 +550,22 @@ ArtCraft 团队以 Rust 重建Microsoft PowerPoint式工作流：幻灯片母版
 ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式、表格、图表与数据透视工作流。
 
 原作或参考对象: **Microsoft Excel** · 工作流重实现  
-[下载](https://getartcraft.com/apps/gridcraft) · [浏览 RemakeList](https://remakelist.com/zh/remakes/gridcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gridcraft-zh-CN)
+[下载](https://github.com/storytold/gridcraft/releases/tag/v0.13.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/gridcraft/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gridcraft-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows / macOS / Linux / Web
+**平台:** Windows x64／ARM64／x86 · macOS 通用版 · Linux x86_64／ARM64／RISC-V64 · FreeBSD x86_64 · Web
 
-**当前阶段:** Alpha
+**当前阶段:** v0.13.0 · Alpha
 
 **需要准备什么:** 无需原版商业软件。自备有使用权的文档和素材；附带字体、图片与品牌标识各有许可。
 
-**现在能用什么:** Alpha：核心表格流程已可尝试；真实 XLSX 保真、大工作簿性能、图表深度与旧格式导入仍需改进。提供桌面安装包，具体平台和文件兼容性以项目说明为准。
+**现在能用什么:** v0.13.0 提供桌面安装器／压缩包与 Web 构建。改善公式边界情况，在重写 XLSX 时保留工作表标识，并可打开已保存工作簿而不重新计算。 Alpha：核心表格流程已可尝试；真实 XLSX 保真、大工作簿性能、图表深度与旧格式导入仍需改进。本站未安装或完整测试。
 
 **代码许可:** [MIT OR Apache-2.0](https://github.com/storytold/gridcraft/blob/main/LICENSE-MIT)  
 **作者:** ArtCraft  
-[官方文档](https://github.com/storytold/gridcraft/blob/main/README.md) · 资料核对日期: 2026-10-13
+[官方文档](https://github.com/storytold/gridcraft/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -1011,22 +1011,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 使用自备 XBLA 游戏文件运行《几何战争：复古进化2》的桌面原生移植，作者记录了六种模式和本地多人支持。
 
 原作或参考对象: **几何战争：复古进化 2** · 游戏重实现  
-[下载程序并自备游戏文件](https://github.com/techknight/geow2/releases) · [浏览 RemakeList](https://remakelist.com/zh/remakes/geow2/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=geow2-zh-CN)
+[下载程序并自备游戏文件](https://github.com/techknight/geow2/releases/tag/v1.2.6) · [浏览 RemakeList](https://remakelist.com/zh/remakes/geow2/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=geow2-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows / macOS 11+ / Linux x64
 
-**当前阶段:** 已有发行包。
+**当前阶段:** v1.2.6 · 桌面与 Flatpak
 
 **需要准备什么:** 自备合法取得的文件：Xbox Live Arcade · 584108FF · v0x102 · FFmpeg。项目可免费获取，原版游戏另计；本站不提供游戏文件、密钥或可直接玩的安装包。
 
-**现在能用什么:** 官方路线：Windows / macOS 11+ / Linux x64。已有发行包。 选择与系统匹配的官方发行包。
+**现在能用什么:** v1.2.6 提供 Windows、macOS、Linux 压缩包及 Linux／Steam Deck Flatpak，修复长按 Escape／Enter 的重复触发。需自备 XBLA 584108FF、版本 0x102。首次音频提取需 FFmpeg，Flatpak 已包含，导入准备好的数据目录则无需它。Windows／Linux 要求 Vulkan；macOS 11+ 支持 Apple Silicon 和 Intel。最多四人本地同玩，可选在线成绩同步使用独立好友服务器；本站未安装或试玩。
 
 **代码许可:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/techknight/geow2/blob/main/LICENSE)  
 **作者:** techknight  
-[官方文档](https://github.com/techknight/geow2#readme) · 资料核对日期: 2026-10-19
+[官方文档](https://github.com/techknight/geow2#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -1155,46 +1155,46 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 面向电脑与手机的非官方《大富翁4》重制，加入高清重绘，保留地产、股票、卡片玩法，并提供派对联机。
 
 原作或参考对象: **大富翁4** · 游戏重实现  
-[下载](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · [浏览 RemakeList](https://remakelist.com/zh/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-zh-CN)
+[下载](https://github.com/iam567/rich4-renew-app/releases/tag/v0.8.1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/rich4-renew/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=rich4-renew-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows / macOS / Android / iOS
 
-**当前阶段:** v0.8.0 · 折叠屏适配 · 素材限制仍适用
+**当前阶段:** v0.8.1 · 派对规则设置 · 素材限制仍适用
 
 **需要准备什么:** 源码运行需要作者另行提供的 rich4-assets.tar，包含原版相关素材、高清重绘、地图与音效。这些素材不适用 GPL，作者限定仅供私人使用。打包脚本会将素材装入应用，但本站未独立检查发行包内容；免费下载不代表可以自由再分发美术或原游戏素材。
 
-**现在能用什么:** v0.8.0 提供 Windows ZIP、Intel／Apple silicon Mac DMG、Android APK 和未签名 iOS IPA。更新适配展开后近方形的屏幕布局，折叠时重排，并修复部分宽屏资料栏被挤出；适配检查来自作者报告。 iOS 需个人签名；桌面文档说明 Windows 未签名、Mac 未公证。本站未独立检查包内容与签名。原游戏素材及重绘不在 GPL 范围内，作者的私人使用声明不等于原权利人授权；本站未安装或试玩。
+**现在能用什么:** v0.8.1 提供 Windows ZIP、Mac 通用 DMG、Android APK 和未签名 iOS IPA。派对房主可设置共同使用的初始资金、行进方式、土地权限、时间及胜利规则；手机横屏房间支持滚动，避免遮挡开始按钮。 iOS 需个人签名，Windows 未签名、Mac 未公证。原版衍生素材及重绘不适用 GPL，作者的私人使用声明不等于原权利人授权；本站未独立检查发行包内容与签名。 本站未构建、安装或试玩本版。
 
 **代码许可:** [GPL-3.0-or-later · code only](https://github.com/iam567/rich4-renew-app/blob/main/LICENSE)  
 **作者:** iam567 (Liang)  
-[官方文档](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/iam567/rich4-renew-app/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
-### [Supermodel-VK](https://github.com/Igloo-Garage/Supermodel-VK)
+### [Model 3-Vulkan](https://github.com/Igloo-Garage/Model-3-Vulkan)
 
 面向世嘉 Model 3 街机游戏的 Supermodel 增强分支，加入 Vulkan 渲染、CRT 滤镜、宽屏和中英文设置界面。
 
 原作或参考对象: **世嘉 Model 3 街机 / Supermodel** · emulator-enhancement-fork  
-[下载程序并自备游戏文件](https://github.com/Igloo-Garage/Supermodel-VK/releases/latest) · [浏览 RemakeList](https://remakelist.com/zh/remakes/supermodel-vk/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=supermodel-vk-zh-CN)
+[下载程序并自备游戏文件](https://github.com/Igloo-Garage/Model-3-Vulkan/releases/tag/v0.9.8.3b) · [浏览 RemakeList](https://remakelist.com/zh/remakes/supermodel-vk/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=supermodel-vk-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64 / Linux x86-64 / macOS 11+（Intel 与 Apple Silicon）
 
-**当前阶段:** 公开构建 v0.9.0.3a-20261017 · v0.9.2 仅预览 · 需自备 ROM
+**当前阶段:** v0.9.8.3b · Model 3-Vulkan · 自备 ROM
 
 **需要准备什么:** 不附游戏 ROM。需自行准备合法取得的世嘉 Model 3 ROM ZIP，并在启动器中选择所在目录。模拟器的 GPL 许可不涵盖游戏数据、美术或世嘉商标。Vulkan 需 1.3 驱动，或支持 dynamic rendering 与 synchronization2 的 1.2 驱动；另有 OpenGL 4.1 回退。
 
-**现在能用什么:** v0.9.0.3a-20261017 已提供 Windows、Linux 和 macOS 通用二进制压缩包。README 展示的 v0.9.2 尚属下一版预览；封面来自该预览，不代表当前发行版已包含图中全部功能。作者对 Linux/macOS 的测试较少。macOS 未经公证，需以 ./supermodel 启动，MoltenVK 可能影响性能。本站未安装或运行模拟器。
+**现在能用什么:** Model 3-Vulkan 是 Supermodel-VK 更名后的项目。v0.9.8.3b 提供 Windows、Linux、macOS 包，恢复 v0.9.8.3a 丢失的音效并增加原生 DDS 纹理包支持。它仍是模拟器，需要自备 ROM 集合。 游戏兼容性与性能因环境而异。现有封面是历史预览画面，并非新核验的 v0.9.8.3b 截图；本站未安装或运行本版。 macOS 包未经 Apple 公证，可能被 Gatekeeper 拦截，需按作者安装说明处理。
 
-**代码许可:** [GPL-3.0-or-later · emulator code](https://github.com/Igloo-Garage/Supermodel-VK/blob/master/Docs/LICENSE.txt)  
+**代码许可:** [GPL-3.0-or-later · emulator code](https://github.com/Igloo-Garage/Model-3-Vulkan/blob/master/Docs/LICENSE.txt)  
 **作者:** Igloo-Garage · upstream: The Supermodel Team  
-[官方文档](https://github.com/Igloo-Garage/Supermodel-VK/blob/master/README.md) · 资料核对日期: 2026-10-20
+[官方文档](https://github.com/Igloo-Garage/Model-3-Vulkan/blob/master/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -1251,22 +1251,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 面向掌机和电脑的《火炬之光》引擎，沿用 Xbox 360 版偏重手柄的游戏逻辑，读取自有 PC 或 Xbox 360 游戏数据。
 
 原作或参考对象: **火炬之光** · 引擎重实现  
-[下载程序并自备游戏文件](https://github.com/GreenSwampDweller/torchlight-rekindled/releases/tag/1.0.2) · [浏览 RemakeList](https://remakelist.com/zh/remakes/torchlight-rekindled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=torchlight-rekindled-zh-CN)
+[下载程序并自备游戏文件](https://github.com/GreenSwampDweller/torchlight-rekindled/releases/tag/1.1.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/torchlight-rekindled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=torchlight-rekindled-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Switch homebrew / Android 12+ arm64 / iOS / Windows / Linux
 
-**当前阶段:** 已有下载 · 自备原游戏
+**当前阶段:** 1.1.0 · 模组支持；本次无 IPA 附件
 
 **需要准备什么:** 自备购买的完整 PC 或 Xbox 360 游戏中的 pak.zip／Pak.zip 和 music 目录；PC 数据使用项目提供的备用主机式界面。项目声明不分发游戏数据。
 
-**现在能用什么:** 1.0.2 提供 Switch NRO、Android APK、Windows／Linux x64 压缩包和未签名 iOS IPA。Switch 需要 homebrew；Android 要求 arm64、Android 12+，并申请所选游戏目录的文件访问权限。iOS 包未签名，需要自行签名。桌面测试限作者连接手柄的笔记本，未核实 Steam Deck。1.0.2 发行页同时列有旧 1.0.1 IPA，应选择明确标注 1.0.2 的文件。本站未安装或试玩。
+**现在能用什么:** 1.1.0 提供 Switch NRO、Android APK 与 Windows／Linux 压缩包，新增 PC 模组文件夹支持和游戏修复。本次没有 IPA 附件，iOS 构建仍需自行签名。需自备完整版 PC／Xbox 360 pak.zip 与音乐，PC 数据使用备用主机界面。Android 要求 12+、ARM64，并需“所有文件访问”权限读取所选游戏目录。桌面版仅由作者在笔记本加手柄上测试，Steam Deck 未验证。
 
 **代码许可:** [GPL-3.0 for the engine; game data and third-party components retain separate rights](https://github.com/GreenSwampDweller/torchlight-rekindled/blob/main/LICENSE)  
 **作者:** GreenSwampDweller  
-[官方文档](https://github.com/GreenSwampDweller/torchlight-rekindled/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/GreenSwampDweller/torchlight-rekindled/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -1424,46 +1424,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 《洛克人 X4》原生重编译，加入 X 与 Zero 双人合作，支持本地和网络联机；当前为公开 Beta。
 
 原作或参考对象: **洛克人 X4** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.14) · [浏览 RemakeList](https://remakelist.com/zh/remakes/mega-man-x4-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mega-man-x4-recompiled-zh-CN)
+[下载程序并自备游戏文件](https://github.com/mstan/MegaManX4Recomp/releases/tag/v1.0.17) · [浏览 RemakeList](https://remakelist.com/zh/remakes/mega-man-x4-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=mega-man-x4-recompiled-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows x64 / Linux x86-64 (glibc 2.38+)
 
-**当前阶段:** 公开 Beta · 双人合作 · 需原光盘
+**当前阶段:** v1.0.17 · 公开 Beta
 
 **需要准备什么:** 需自备原始、未修改的美版 Mega Man X4（SLUS-00561）.cue 与 .bin 光盘镜像，即使关闭全部 mod 也须使用该版本。修改盘、undub 与重新翻译盘不受支持；内置 OpenBIOS，另行转储 BIOS 为可选。原作内容不在 MIT 许可范围内。
 
-**现在能用什么:** v1.0.14 提供 Windows x64 ZIP 与 Linux x86-64 AppImage，优化合作模式渲染；作者公布的提速来自特定 Boss 场景，不代表全游戏表现。合作模式需 OpenGL，联机各方须更新至同版；原有原生记忆卡存档可沿用。 仍为公开 Beta：独立镜头可能减速，在线登录与启动问题仍在调查。Linux 需 glibc 2.38+；四人合作实验为独立版本。本站未安装或试玩。
+**现在能用什么:** v1.0.17 为公开 beta，提供 Windows x64 与 Linux x64 包，修复双人暂停菜单及多项镜头／场景问题。可沿用原生记忆卡存档，联机双方都需更新；诊断录制仍默认关闭、可选开启。独立镜头仍可能变慢，在线登录／启动问题仍在调查。Linux 需 glibc 2.38+；四人实验另行进行，尚未确立完整战役、通关字幕或局域网全流程验证。需自备未修改的受支持美版光盘，本站未构建、安装或试玩。
 
 **代码许可:** [MIT · original project code; dependencies retain their licenses](https://github.com/mstan/MegaManX4Recomp/blob/master/LICENSE)  
 **作者:** Matthew Stanley  
-[官方文档](https://github.com/mstan/MegaManX4Recomp/blob/master/README.md) · 资料核对日期: 2026-10-28
-
-</details>
-
-### [Galaxy Android](https://github.com/OpenPort-Labs/Galaxy-Android)
-
-《超级马力欧银河》的早期安卓原生移植，加入触屏控制、手柄支持和超宽屏显示。
-
-原作或参考对象: **超级马力欧银河** · 基于反编译的项目  
-[下载程序并自备游戏文件](https://github.com/OpenPort-Labs/Galaxy-Android/releases/tag/v0.0.4b) · [浏览 RemakeList](https://remakelist.com/zh/remakes/galaxy-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=galaxy-android-zh-CN)
-
-<details>
-<summary>要求与截图</summary>
-
-**平台:** Android 11+ · ARM64 · Vulkan 1.0
-
-**当前阶段:** v0.0.4b · 测试侧载包 · 升级前备份存档
-
-**需要准备什么:** 自备合法转储的 Wii《超级马力欧银河》光盘镜像（.rvz、.wbfs、.iso 或 .wia），由导入器在本地提取和转换；预留约 2.5 GB（不含影片）或 5 GB（含影片）存储。可选 Shield 来源素材另属专有数据，本条目不提供。
-
-**现在能用什么:** v0.0.4b 提供 GalaxyAndroid.apk，要求 Android 11+ ARM64、Vulkan 1.0 和至少 3 GB 内存，无 OpenGL 回退。 这是可调试的测试侧载包，不是商店包。签名证书已更换，GitHub v0.0.4／4a 不能覆盖升级；卸载会删除应用私有数据，需先备份存档，共享 GalaxyData 目录另计。作者此次没有连接手机／头显验证，联机认证及正式签名密钥轮换仍待处理。本站未安装或实测。
-
-**代码许可:** [GPL-3.0 · port code; original game assets excluded](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/LICENSE)  
-**作者:** OpenPort Labs  
-[官方文档](https://github.com/OpenPort-Labs/Galaxy-Android/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/mstan/MegaManX4Recomp/blob/master/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -1520,22 +1496,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 把自备的美版PS3《装甲核心：答案》文件在本机编译成Windows程序，加入鼠标、键位和显示设置。需要对应游戏文件与首次设置，不能直接下载游戏开玩。
 
 原作或参考对象: **装甲核心：答案** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/sulphurs16/acfa-port/releases) · [浏览 RemakeList](https://remakelist.com/zh/remakes/acfa-port/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=acfa-port-zh-CN)
+[自行构建并自备游戏文件](https://github.com/SulphurS16/ACFA-Port/releases/tag/v0.7.4) · [浏览 RemakeList](https://remakelist.com/zh/remakes/acfa-port/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=acfa-port-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows x64
 
-**当前阶段:** 提供启动器 · 本机生成游戏程序
+**当前阶段:** v0.7.4 · Windows 本机构建
 
 **需要准备什么:** 需要自备美版 PS3 BLUS30187 游戏文件、RPCS3 与索尼 PS3 4.93 系统软件；01.35 游戏更新为可选项。代码许可不授予原游戏、画面或商业数据的使用权。
 
-**现在能用什么:** 下载作者启动器，选中自己的游戏文件，再由工具在本机生成游戏程序。启动器本身不是游戏，需要对应版本文件与首次设置。
+**现在能用什么:** v0.7.4 提供在本机编译游戏的 Windows 启动器 ZIP，修复 VOB 鼠标操作与菜单输入。需自备美版 PS3 BLUS30187 光盘文件、RPCS3 和索尼 4.93 固件，可选安装 01.35 更新。要求 Windows 10 1903+／11 x64、AVX2 与 Direct3D 11；项目不提供原作或固件，本站未构建或试玩。
 
 **代码许可:** [MIT. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/SulphurS16/ACFA-Port/blob/main/LICENSE)  
 **作者:** SulphurS16  
-[官方文档](https://github.com/sulphurs16/acfa-port#readme) · 资料核对日期: 2026-10-19
+[官方文档](https://github.com/sulphurs16/acfa-port#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -1616,22 +1592,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 基于《光环》反编译成果的跨平台原生移植，整理联机大厅、服务器和控制体验。需要自己的Xbox版游戏地图，不能用PC地图代替核心资源。
 
 原作或参考对象: **光环：战斗进化** · 基于反编译的项目  
-[下载程序并自备游戏文件](https://github.com/ChupathingyCE/chupathingyce/releases) · [浏览 RemakeList](https://remakelist.com/zh/remakes/chupathingy/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=chupathingy-zh-CN)
+[下载程序并自备游戏文件](https://github.com/ChupathingyCE/chupathingyce/releases/tag/v0.8.1d) · [浏览 RemakeList](https://remakelist.com/zh/remakes/chupathingy/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=chupathingy-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows / macOS / Linux / Android
 
-**当前阶段:** 已有发行 · 需原 Xbox 数据
+**当前阶段:** v0.8.1d · 已有发行 · 需原 Xbox 数据
 
 **需要准备什么:** 需要自备 Halo Combat Evolved Xbox 光盘镜像或地图；可选 PC 与 Custom Edition 地图使用独立目录。代码许可不授予原游戏、画面或商业数据的使用权。
 
-**现在能用什么:** 作者提供 Windows、Mac、Linux 与 Android 发行版；首次设置需导入 Xbox 游戏地图。PC 地图不能代替核心 Xbox 地图。联机兼容取决于对方版本；Android 还受地图内存限制。
+**现在能用什么:** v0.8.1d 提供 Windows、macOS、Linux 与 Android 包，可加入 OpenCE 最新网络版本 41。Linux x64 AppImage 现为真实发行附件；32 位和 Android ARM64 包需分别选择。核心游戏仍需自备原版 Xbox 地图。 Android ARM64 另属实验选项；地图内存及联机兼容限制仍适用。 本站未构建、安装或试玩本版。
 
 **代码许可:** [GPL-3.0-or-later from 0.8.0; earlier releases through 0.7.5d CC0. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/ChupathingyCE/chupathingyce#license)  
 **作者:** Milenko (MrMilenko) and ChupathingyCE contributors; credits retain OpenCE and Halo decomp authors  
-[官方文档](https://github.com/ChupathingyCE/chupathingyce#readme) · 资料核对日期: 2026-10-19
+[官方文档](https://github.com/ChupathingyCE/chupathingyce#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -1664,22 +1640,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 通过自备美版初代 Xbox 转储，在本机生成《Def Jam：纽约街头格斗》的 Windows、Mac 或 Linux 原生移植，加入高分辨率与最多四人本地对战；宽屏仍为测试功能。
 
 原作或参考对象: **Def Jam：纽约街头格斗** · 静态重编译  
-[自行构建并自备游戏文件](https://github.com/vyanhursky/DefJamFFNY-recomp/releases/tag/v0.12.2) · [浏览 RemakeList](https://remakelist.com/zh/remakes/defjam-ffny-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=defjam-ffny-recompiled-zh-CN)
+[自行构建并自备游戏文件](https://github.com/vyanhursky/DefJamFFNY-recomp/releases/tag/v0.12.3) · [浏览 RemakeList](https://remakelist.com/zh/remakes/defjam-ffny-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=defjam-ffny-recompiled-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows x64（Direct3D 11）/ Apple 芯片 macOS / Linux x86-64 / Steam Deck
 
-**当前阶段:** 公开发行 v0.12.2 · 本机构建 · 宽屏 Beta
+**当前阶段:** v0.12.3 · 本地编译
 
 **需要准备什么:** 需要自备与作者清单匹配的美版初代 Xbox 光盘镜像或转储目录，PS2 与 GameCube 版本不能替代。设置工具在本机核验、重编译和构建，生成高清贴图另需时间与磁盘空间；代码许可不授予原游戏或画面的权利。
 
-**现在能用什么:** v0.12.2 提供 Windows x64、Apple silicon macOS 与 Linux x86-64 设置工具，改善故事模式 Power Plant 场景的帧节奏，并修复标题菜单画面问题。设置程序校验自备转储并在本机构建；已有安装需 Clean Update 后重新构建，保留存档、设置、mod 与材质。 16:9／16:10 宽屏仍为 Beta，更宽比例属实验功能，多人仅限本地。商店停顿、部分帧节奏和宽屏问题，以及 Steam Deck 音频与教学关性能仍待解决。macOS 未签名，Proton 未测试；本站未安装或试玩。
+**现在能用什么:** v0.12.3 提供 Windows 安装器、Apple 芯片 Mac DMG 与 Linux x64 包，改善模拟帧节奏并修复较新 GCC／CachyOS 的构建。安装器在本地分析、编译自备光盘；更新流程保留存档和模组。 宽屏和模组兼容性仍有限；本版修复帧节奏不等于所有场景和配置均已验证。多人仅本地，macOS 未签名；本站未安装或试玩。
 
 **代码许可:** [MIT project code; separate toolkit licenses. The code license grants no rights to the original game, artwork or commercial data.](https://github.com/vyanhursky/DefJamFFNY-recomp#credits-and-licensing)  
 **作者:** vyanhursky  
-[官方文档](https://github.com/vyanhursky/DefJamFFNY-recomp#readme) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/vyanhursky/DefJamFFNY-recomp#readme) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -1725,9 +1701,9 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 
 **现在能用什么:** v0.2.0 提供 Windows 安装器、Linux x86-64 归档和 Flatpak。启动器从自备游戏文件在本机生成、编译游戏；更新后需重新构建一次。macOS 仅有源码实验路线，没有 Mac 发行包。 Steam Deck 与低端设备仍有明显性能限制，部分 GPU 有画面或崩溃问题。VR 仅有作者的 Quest 3 + Linux WiVRn 测试，Windows VR 未测；macOS 的完整比赛、存档重载和实体手柄仍待验证。TU4 与基础版不共用联机房间，TU4 存档不能直接回退基础版。本站未构建或试玩。
 
-**代码许可:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/blob/main/LICENSE)  
+**代码许可:** [The current project code uses GPL-3.0-or-later, with an additional permission described in NOTICE.md for graphics, VR and platform components. Earlier releases and commits published under MIT remain available under MIT. Original game content and third-party components retain separate rights; the linked Forza Live server and website have their own AGPL-3.0-or-later terms.](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined/blob/main/LICENSE)  
 **作者:** Dyotson  
-[官方文档](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined#readme) · 资料核对日期: 2026-10-27
+[官方文档](https://github.com/FH1-ReImagined/ForzaHorizon1-ReImagined#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -1736,22 +1712,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 使用自备 Xbox 360《战争机器 2》文件的非官方原生移植，提供高分辨率、分屏和 System Link 合作玩法；Android 仍为实验性支持，完整战役尚未验完。
 
 原作或参考对象: **战争机器 2** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/santiquiroz/gears-of-war-2-pc-port/releases/tag/v0.3.7) · [浏览 RemakeList](https://remakelist.com/zh/remakes/gears-of-war-2-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gears-of-war-2-native-zh-CN)
+[下载程序并自备游戏文件](https://github.com/santiquiroz/gears-of-war-2-pc-port/releases/tag/v0.3.11) · [浏览 RemakeList](https://remakelist.com/zh/remakes/gears-of-war-2-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gears-of-war-2-native-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64（DirectX 12）/ Android 10+ ARM64（Vulkan，实验性）
 
-**当前阶段:** 公开发行 · 战役验证未完 · Android 实验性
+**当前阶段:** v0.3.11 · 公开发行 · 战役验证未完 · Android 实验性
 
 **需要准备什么:** 自备合法取得的零售版 Xbox 360《战争机器 2》（Title ID 4D53082D）ISO，或含 default.xex 与 GearGame 的完整目录。Windows 首次提取 ISO 约需 8 GB 空间；Android 导入会复制到应用存储，需额外容纳一份完整游戏。本站不提供原游戏数据。
 
-**现在能用什么:** v0.3.7 提供 Windows 10/11 x64 ZIP 和实验性 Android 10+ ARM64 APK。Windows 需要 DirectX 12 显卡，Android 需要 Vulkan；更新包括独立语音与字幕语言选择。 作者只完整游玩过第一幕，短时间章节扫描不等于第二至五幕通关验证。Android 持续性能受温升影响；三至四人合作和互联网联机仍有未测场景，同场玩家须用同版。Windows 文件未签名，可能被系统阻止；作者扫描声明不是本站安全认证。本站未构建、安装或运行。
+**现在能用什么:** v0.3.11 提供 Windows x64 和实验性 Android ARM64 包。PC 更新检查器会保留状态与跳过版本选择；Android 只变更包版本。此前 0.3.10 的 Android 改动与帧率计数器仍未在手机验证。作者只完整游玩过第一幕，章节快检不等于第二至五幕全流程验证；Android 持续性能受发热影响。三／四人合作和互联网联机仍有未测场景，所有人需同版本。AMD 拖影可按文档使用 Emulated EDRAM，Vega 菜单文字及 Proton D3D12 问题仍在。Windows 文件未签名，作者扫描声明不是安全认证；本站未构建、安装或试玩。
 
 **代码许可:** [BSD-3-Clause applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/santiquiroz/gears-of-war-2-pc-port/blob/master/LICENSE)  
 **作者:** santiquiroz  
-[官方文档](https://github.com/santiquiroz/gears-of-war-2-pc-port#readme) · 资料核对日期: 2026-10-27
+[官方文档](https://github.com/santiquiroz/gears-of-war-2-pc-port#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -1784,22 +1760,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 面向自备 PS4 游戏文件的《重力异想世界2》PC 移植，作者在 Linux 上展示了原生运行画面。存档、开放世界和其他平台仍在验证。
 
 原作或参考对象: **重力异想世界 2** · 平台兼容层  
-[下载程序并自备游戏文件](https://github.com/hayatog/gr2_pc/releases) · [浏览 RemakeList](https://remakelist.com/zh/remakes/gravity-rush-2-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gravity-rush-2-native-zh-CN)
+[下载程序并自备游戏文件](https://github.com/HayatoG/gr2_pc/releases/tag/v2026.10.24-a2e69a1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/gravity-rush-2-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gravity-rush-2-native-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Linux · Vulkan
+**平台:** Linux x86-64（glibc 2.39+）· Windows 10／11 x64（游玩未验证）· Vulkan
 
-**当前阶段:** 可玩或实验性预览。
+**当前阶段:** v2026.10.24-a2e69a1 · 实验性；Windows 未验证
 
-**需要准备什么:** 自备合法取得的文件：PS4 · CUSA03694 · 01.11 · libSceNgs2.sprx。项目可免费获取，原版游戏另计；本站不提供游戏文件、密钥或可直接玩的安装包。
+**需要准备什么:** 自备 PS4《Gravity Rush 2》美版 CUSA03694 基础文件并合并精确 01.11 更新，使用该更新的 eboot.bin，总计约 28 GB。声音还需从自有 PS4 固件取得 libSceNgs2.sprx 放入 system_lib/；不附游戏或固件文件。
 
-**现在能用什么:** 官方路线：Linux · Vulkan。可玩或实验性预览。 作者报告 Linux 游玩；Windows 原生游玩尚未验证。 存档与开放世界覆盖仍在测试。 选择与系统匹配的官方发行包。
+**现在能用什么:** v2026.10.24-a2e69a1 提供 Linux x86-64（glibc 2.39+）与 Windows 10／11 x64 包，处理过场着色器／GPU 死锁和 DLC 加载器导入。作者报告 Linux 游玩；Windows 包明确尚未游戏内验证。 Windows 游戏内表现、存档与开放世界覆盖仍在验证。作者报告的 Linux 性能不保证所有机器均能达到；本站未构建、安装或试玩本版。 原版文件／设置：自备 PS4《Gravity Rush 2》美版 CUSA03694 基础文件并合并精确 01.11 更新，使用该更新的 eboot.bin，总计约 28 GB。声音还需从自有 PS4 固件取得 libSceNgs2.sprx 放入 system_lib/；不附游戏或固件文件。
 
 **代码许可:** [GPL-2.0 applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/HayatoG/gr2_pc/blob/main/port/LICENSE)  
 **作者:** HayatoG  
-[官方文档](https://github.com/HayatoG/gr2_pc#readme) · 资料核对日期: 2026-10-19
+[官方文档](https://github.com/HayatoG/gr2_pc#readme) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -1832,22 +1808,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 把自备 Switch《织梦岛》1.0.0、1.0.1 或 1.1.0 文件在本机转换为桌面原生程序，加入宽屏与随机化选项；仍为 beta。
 
 原作或参考对象: **塞尔达传说：织梦岛** · 静态重编译  
-[自行构建并自备游戏文件](https://github.com/peiikai/LASRecomp/releases/tag/beta_5.3) · [浏览 RemakeList](https://remakelist.com/zh/remakes/las-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=las-recomp-zh-CN)
+[自行构建并自备游戏文件](https://github.com/peiikai/LASRecomp/releases/tag/beta_5.4) · [浏览 RemakeList](https://remakelist.com/zh/remakes/las-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=las-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows x64 / macOS Apple silicon / Linux x64；Linux ARM64 实验性
 
-**当前阶段:** beta_5.3 · 仍有错误与未完成验证
+**当前阶段:** beta_5.4 · Beta · 需原版文件
 
 **需要准备什么:** 需自备合法取得的 Switch《织梦岛》1.0.0、1.0.1 或 1.1.0 的 exefs、romfs 文件，选择其所在目录进行本地构建。Mac 需 Apple silicon、macOS 15+；Windows 10/11 与 Linux x64 需 AVX2、FMA、Vulkan 1.3，至少 8 GB RAM 和约 12 GB 设置空间。项目不提供游戏文件或密钥。
 
-**现在能用什么:** 常规下载仍是 beta_5.3，提供 Windows、Apple silicon Mac 和 Linux 包。较新的 test-413-deck、test-452-owl、test-356-haze-2 预发布用于特定问题反馈，并非新的通用版本。test-413-deck 针对 Steam Deck 阴影条纹／闪烁，沿用常规数据目录；参与该测试时再选。 仍可能崩溃、生成无法通关的种子或出现宽屏画面问题，地牢房间打乱尤属实验功能。Linux ARM64 未在真机测试，不支持 Intel Mac 和较旧 Intel 核显；Beta 5 之前的种子编号会生成不同结果。本站未构建或试玩。
+**现在能用什么:** beta_5.4 是通用 Windows、Apple 芯片 Mac 和 Linux 下载，修复 BowWow 渲染、草地线条、手柄选择及多项随机模式问题。较晚的 test-462-arc-2 仅用于 Intel Arc 问题测试，其修复不包含在 beta_5.4 中。 仍可能崩溃、生成不可通关种子或出现宽屏问题，尤其是房间打乱功能。Linux ARM64 缺真机验证，不支持 Intel Mac 及较旧 Intel 核显；Beta 5 前种子编号会生成不同结果。 本站未构建、安装或试玩本版。
 
 **代码许可:** [MIT applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/peiikai/LASRecomp/blob/main/LICENSE)  
 **作者:** peiikai  
-[官方文档](https://github.com/peiikai/LASRecomp#readme) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/peiikai/LASRecomp#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -1904,22 +1880,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 使用自备美版 Wii 游戏文件的《新超级马力欧兄弟 Wii》原生移植，提供 Android 触控与跨手机、电脑的局域网联机。
 
 原作或参考对象: **新超级马力欧兄弟 Wii** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases) · [浏览 RemakeList](https://remakelist.com/zh/remakes/nsmb-wii-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nsmb-wii-recomp-zh-CN)
+[下载程序并自备游戏文件](https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/releases/tag/v0.3.1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/nsmb-wii-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nsmb-wii-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Android 11+ ARM64 / Windows 10–11 x64
+**平台:** Android 9+ ARM64 · Windows 10／11 x64 · Linux x86-64（硬件验证有限）
 
-**当前阶段:** 可玩或实验性预览。
+**当前阶段:** v0.3.1 · 可玩或实验性预览。
 
 **需要准备什么:** 自备合法取得的文件：Wii · USA SMNE01 · 修订版 1。项目可免费获取，原版游戏另计；本站不提供游戏文件、密钥或可直接玩的安装包。
 
-**现在能用什么:** 官方路线：Android 11+ ARM64 / Windows 10–11 x64。可玩或实验性预览。 作者说明发行包含转换后的游戏代码，虽不含游戏数据文件，也不是纯空壳。 选择与系统匹配的官方发行包。
+**现在能用什么:** v0.3.1 提供 Windows x64、Linux x64 与 Android ARM64 包，修复 0.3.0 引入的关卡图块错误。此前更新在符合条件的设备上把图形工作移到第二个 CPU 核心，收益因设备而异；可沿用存档、设置和已导入游戏数据。项目仍为预览版，Linux 只有 WSL 软件渲染测试，实体 Linux／Steam Deck GPU 和 Mali 手机尚未验证。发行包虽不含游戏数据文件，但包含翻译后的游戏代码。本站未构建、安装或试玩。
 
 **代码许可:** [GPL-3.0 applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation/blob/main/LICENSE)  
 **作者:** WitherBlitz  
-[官方文档](https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation#readme) · 资料核对日期: 2026-10-19
+[官方文档](https://github.com/WitherBlitz/NSMB-Wii-Multiplayer-Recompilation#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -2107,11 +2083,11 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 
 **需要准备什么:** 自备 PS1《寂静岭》光盘镜像；GPL 只覆盖移植层，不授予 Konami 游戏和反编译代码权利。
 
-**现在能用什么:** Windows 为主线；Linux／Mac 尚不稳定，移动端早期，本站未验证。 本站未构建、安装或游玩。
+**现在能用什么:** PC 路线与新 xbox360-alpha-1 分开：后者是 Xbox 360 自制程序测试包，并附原版 Xbox 构建。该 Alpha 仅报告开场场景、基础交互及部分读档，不代表 Xbox 全流程已验证；Realtime PC／移动端构建另属未经测试的更新渠道。 Windows 仍为 PC 主线，Linux／Mac 尚不稳定，移动端早期。需自备原版 PS1《寂静岭》光盘镜像；移植层 GPL 不覆盖 Konami 数据及反编译游戏代码。 本站未构建、安装或试玩本版。
 
 **代码许可:** [GPL-3.0 for port layer only; decompilation and Konami material not relicensed](https://github.com/SlickAmogus/silent-hill-decomp#readme)  
 **作者:** Chris Hardin / KushAstronaut / SlickAmogus  
-[官方文档](https://github.com/SlickAmogus/silent-hill-decomp#readme) · 资料核对日期: 2026-10-19
+[官方文档](https://github.com/SlickAmogus/silent-hill-decomp#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -2141,25 +2117,25 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 
 ### [Renegade Squadron — PC](https://github.com/gtteancum/starwars-renegadesquadron-pc)
 
-把 PSP《星球大战：前线之精英部队》移植到 Windows，支持双摇杆与更高显示分辨率。需要自己的美版游戏文件，当前仍有帧时间不均等已知问题。
+将 PSP《星球大战前线：叛变中队》移植为原生程序，加入现代双摇杆与更高分辨率。Windows 提供 Vulkan 路线；Linux 包有严格库版本要求，硬件验证仍有限。
 
 原作或参考对象: **星球大战：前线之精英部队** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC/releases/tag/v0.9b) · [浏览 RemakeList](https://remakelist.com/zh/remakes/renegade-squadron-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=renegade-squadron-pc-zh-CN)
+[下载程序并自备游戏文件](https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC/releases/tag/v0.9.1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/renegade-squadron-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=renegade-squadron-pc-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows 10/11 x64 · DirectX 12
+**平台:** Windows 10／11 x64 · Vulkan 1.1／DirectX 12；Linux x64（Ubuntu 26.04 同期，glibc 2.43+）
 
-**当前阶段:** 预览版 v0.9b · Windows 下载
+**当前阶段:** v0.9.1 · Windows／限定环境 Linux 构建
 
 **需要准备什么:** 自备 PSP 美版 ULUS10292 游戏，将提取的 PSP_GAME 放入 data；程序不含游戏数据。
 
-**现在能用什么:** v0.9b 提供 Windows x64 的 RenegadeSquadronPC-0.9b.zip，使用 DirectX 12，支持键鼠和 Xbox 手柄。自备美版 ULUS10292 的 PSP_GAME 目录。仍有帧时间不均和近似实现的 PC 菜单叠层。可选高清纹理包单独提供，放大模型声明含 CC BY 与非商业 CC BY-NC-SA 条款，不授予原游戏图像权利；基础移植无需该包。本站未安装或试玩。
+**现在能用什么:** v0.9.1 将 Windows 默认渲染改为原生 Vulkan，保留 DirectX 12 选项，修复模型纹理并自动提取自备美版 ULUS10292 ISO。新增 Linux x64 包仅面向 Ubuntu 26.04 同期环境，要求 glibc 2.43+、FFmpeg 8 和 Vulkan 1.1。 作者报告 Windows Hoth 烟测与 Linux WSL2 软件 Vulkan 烟测；Linux 硬件 GPU 性能、实体控制和全流程仍未验证。增强光照、阴影与泛光仍仅适用于 DirectX 12；旧可选 HD 包未经 Vulkan 复验。更新需备份自定义设置并保留存档。
 
 **代码许可:** [MIT for framework/port, third-party notices separate](https://github.com/GTTeancum/StarWars-RenegadeSquadron-PC/blob/main/work/project/source/LICENSE)  
 **作者:** gtteancum  
-[官方文档](https://github.com/gtteancum/starwars-renegadesquadron-pc#readme) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/gtteancum/starwars-renegadesquadron-pc#readme) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -2192,22 +2168,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 让 Xbox Live Arcade 版《超级街霸 II Turbo HD Remix》在 Windows 原生运行，带有启动器和本地存档。需要指定版本的自有游戏包；不支持在线对战，Linux 路线尚未实机验证。
 
 原作或参考对象: **超级街霸 II Turbo HD Remix** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/saulob/ssf2t-hd-remix-recompiled/releases) · [浏览 RemakeList](https://remakelist.com/zh/remakes/ssf2t-hd-remix-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=ssf2t-hd-remix-recomp-zh-CN)
+[下载程序并自备游戏文件](https://github.com/saulob/ssf2t-hd-remix-recompiled/releases/tag/v0.2.2) · [浏览 RemakeList](https://remakelist.com/zh/remakes/ssf2t-hd-remix-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=ssf2t-hd-remix-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows
 
-**当前阶段:** 预览版本 · 自备原游戏
+**当前阶段:** v0.2.2 · Windows／实验性 Linux
 
-**需要准备什么:** 自备指定 Xbox Live Arcade 版本 0.0.1.3 的 STFS LIVE 包；其他版本会被拒绝。
+**需要准备什么:** 自备 Title ID 584108A4、Media ID 37B7D7D3 的 XBLA 游戏包及 Title Update #1。启动器需 default.xex 0.0.1.3 加 default.xexp 得到游戏 0.0.2.3；两个包都不附带，移除更新后本版无法游玩。
 
-**现在能用什么:** Windows 主线；不支持在线对战；Linux／Steam Deck 尚未实机验证。启动器许可存在未明边界。 本站未构建、安装或游玩。
+**现在能用什么:** v0.2.2 提供 Windows x64 和实验性 Linux AppImage。现需原版 XBLA 游戏及 Title Update #1，启动器分别安装并校验版本；所需执行程序由 0.0.1.3 更新为 0.0.2.3。 仅离线；Linux／Steam Deck 包经过脚本检查但未经真机验证。游戏仍每秒更新 60 次，只支持 0.0.1.3 基础游戏加 Title Update #1（得到 0.0.2.3）。Windows 程序未签名。 原版文件／设置：自备 Title ID 584108A4、Media ID 37B7D7D3 的 XBLA 游戏包及 Title Update #1。启动器需 default.xex 0.0.1.3 加 default.xexp 得到游戏 0.0.2.3；两个包都不附带，移除更新后本版无法游玩。
 
-**代码许可:** [GPL-2.0-only authored code; TRG launcher explicit license absent at pinned revision](https://github.com/saulob/ssf2t-hd-remix-recompiled#readme)  
+**代码许可:** [Project code is GPL-2.0-only; v0.2.2 now includes the TRG Launcher MIT notice in THIRD-PARTY-LICENSES.txt. Dependencies keep their own terms. None of these grants cover the original game or title-update content.](https://github.com/saulob/ssf2t-hd-remix-recompiled#readme)  
 **作者:** saulob  
-[官方文档](https://github.com/saulob/ssf2t-hd-remix-recompiled#readme) · 资料核对日期: 2026-10-19
+[官方文档](https://github.com/saulob/ssf2t-hd-remix-recompiled#readme) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -2360,22 +2336,22 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新率画面；需自备 NTSC 1.02 ISO。
 
 原作或参考对象: **Super Smash Bros. Melee（NTSC 1.02）** · 平台兼容层  
-[下载程序并自备游戏文件](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.63) · [浏览 RemakeList](https://remakelist.com/zh/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-zh-CN)
+[下载程序并自备游戏文件](https://github.com/Hero88go/melee-unlocked/releases/tag/v0.9.72) · [浏览 RemakeList](https://remakelist.com/zh/remakes/melee-unlocked/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=melee-unlocked-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64 / Linux x86-64（AVX2、OpenGL 4.5）
 
-**当前阶段:** Beta v0.9.63 · Linux 实验支持 · 需自备 ISO
+**当前阶段:** Beta v0.9.72 · Linux 实验支持 · 需自备 ISO
 
 **需要准备什么:** 需自备合法取得、干净且未压缩的 Super Smash Bros. Melee NTSC 1.02 ISO。项目不附原版游戏数据；代码许可不涵盖游戏素材。
 
-**现在能用什么:** v0.9.63 提供 Windows x64 与 Linux x86-64 包，修复联机帧率下降、舞台皮肤、音乐延迟及低内存崩溃。 仍为 Beta。Linux 属实验支持，需 AVX2 与 OpenGL 4.5；Static Recomp 仅限 Windows，mod 兼容性因引擎而异。需自备 NTSC 1.02 ISO；本站未安装或试玩。
+**现在能用什么:** v0.9.72 提供 Windows x64 与 Linux x64 包，修复真宽屏下 Fountain of Dreams 的反射，并避免模组光盘中未知镜头投影导致游戏退出。需自备 NTSC 1.02 ISO，更新前关闭游戏和启动器。 仍为 Beta；Linux 属实验支持，需 AVX2／OpenGL 4.5。Static Recomp 仅限 Windows，模组兼容性因引擎而异。 本站未构建、安装或试玩本版。
 
 **代码许可:** [GPL-3.0-or-later · port code; third-party components keep their own terms.](https://github.com/Hero88go/melee-unlocked/blob/main/LICENSE)  
 **作者:** Hero88go / Melee Unlocked contributors  
-[官方文档](https://github.com/Hero88go/melee-unlocked#readme) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/Hero88go/melee-unlocked#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -2384,22 +2360,22 @@ Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新�
 通过静态重编译实现的 Super Smash Bros. Brawl 原生 PC 移植，提供 Windows 和 Linux 版本；需自备美版 USA RSBE01 revision 1 光盘镜像。
 
 原作或参考对象: **Super Smash Bros. Brawl（Wii，美版 USA RSBE01 revision 1）** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/josiahg2502-glitch/BrawlRecompiled/releases/tag/v0.4.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/brawl-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=brawl-recompiled-zh-CN)
+[下载程序并自备游戏文件](https://github.com/josiahg2502-glitch/BrawlRecompiled/releases/tag/v0.5.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/brawl-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=brawl-recompiled-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows / Linux 64 位（glibc 2.35+、Vulkan）
 
-**当前阶段:** 开发中 · v0.4.0 · 需自备原版光盘镜像
+**当前阶段:** v0.5.0 · 早期构建
 
 **需要准备什么:** 需自备合法取得的 Brawl 光盘镜像：美版 USA、RSBE01、revision 1，格式为 ISO、CISO 或 WBFS。解包约需 7 GB 空间；RVZ、WIA、GCZ 或 NKit 镜像需先转换为普通 ISO。RemakeList 不提供光盘镜像。
 
-**现在能用什么:** v0.4.0 提供 Windows 和 Linux 下载包。Linux 要求 64 位系统、glibc 2.35 或更新版本及 Vulkan 驱动。作者报告 VS 对战可运行，Classic 与 Subspace 仅测试到开头；本站未安装或试玩这些构建。
+**现在能用什么:** v0.5.0 提供 Windows 与 Linux 包，新增可选 240 帧画面插值及较低自适应档位，并通过传输完整存档修复联机可能覆盖主机存档的错误。较高显示帧率来自插值，不代表游戏逻辑每秒更新 240 次。 仍在开发：Classic 与 Subspace 据报仅测试开头，120／180／240 帧插值仍属实验性。部分网络阻止直连；已测试的是原版联机，使用模组的参与者需匹配 SD 内容。解释执行的菜单模组可能低于 60 帧。
 
 **代码许可:** [GPLv3 · project code only; original game artwork and third-party components have separate rights and terms.](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/wiicompiled/LICENSE)  
 **作者:** JosiahG  
-[官方文档](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/v0.4.0/README.md) · 资料核对日期: 2026-10-25
+[官方文档](https://github.com/josiahg2502-glitch/BrawlRecompiled/blob/master/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -2408,22 +2384,22 @@ Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新�
 将原版 Xbox《细胞分裂：双重间谍》带到 Windows 的原生移植，加入键鼠操作、分辨率与帧率调整及合作模式；需自备 Xbox 游戏文件。
 
 原作或参考对象: **细胞分裂：双重间谍（2006 原版 Xbox）** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/TGP482/SCDA-XBERecomp/releases/tag/V2) · [浏览 RemakeList](https://remakelist.com/zh/remakes/scda-xbe-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=scda-xbe-recomp-zh-CN)
+[下载程序并自备游戏文件](https://github.com/TGP482/SCDA-XBERecomp/releases/tag/V3) · [浏览 RemakeList](https://remakelist.com/zh/remakes/scda-xbe-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=scda-xbe-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10+ x64 · Direct3D 12
 
-**当前阶段:** V2 正式版 · 需原版 Xbox 文件
+**当前阶段:** V3 正式版 · 需原版 Xbox 文件
 
 **需要准备什么:** 需自备合法取得的原版 Xbox《双重间谍》。发行包可读取 ISO 或提取后的文件；default.xbe、sc4_adv.xbe 需与 Default、Media、adv 文件夹放在一起。源码构建仅接受提取后的文件。PC 和 Xbox 360 版文件不能替代，下载内容不含游戏素材。
 
-**现在能用什么:** 下载 V2 并解压 SCDA-XBERecomp.zip，将自备 ISO 或提取后的游戏文件放入 assets，再运行 SCDA.exe；首次启动会在本机编译游戏代码。需 Windows 10+ x64、Direct3D 12 显卡、支持 SSE4.2 与 POPCNT 的双核处理器、4 GB 内存及约 6 GB 空间。
+**现在能用什么:** V3 提供 Windows 包，首次启动从自备原版 Xbox《双重间谍》文件编译。新增纹理导出／替换、独立瞄准灵敏度、体感瞄准和色觉辅助模式，并修复高帧率水体与布娃娃行为。 本站未构建、安装或试玩本版。
 
 **代码许可:** [MIT for the project code; original game content and third-party components retain their own rights.](https://github.com/TGP482/SCDA-XBERecomp/blob/main/LICENSE)  
 **作者:** TGP482  
-[官方文档](https://github.com/TGP482/SCDA-XBERecomp#readme) · 资料核对日期: 2026-10-25
+[官方文档](https://github.com/TGP482/SCDA-XBERecomp#readme) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -2504,22 +2480,22 @@ Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新�
 《银河战士 Prime 复刻版》的早期桌面移植，加入鼠标操作；安装需自备已提取的 Switch v1.0.0 文件。
 
 原作或参考对象: **银河战士 Prime 复刻版（Switch）** · 静态重编译  
-[自行构建并自备游戏文件](https://github.com/gminustwo/primerecomp/releases/tag/v0.0.3) · [浏览 RemakeList](https://remakelist.com/zh/remakes/primerecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=primerecomp-zh-CN)
+[自行构建并自备游戏文件](https://github.com/gminustwo/primerecomp/releases/tag/v0.0.4) · [浏览 RemakeList](https://remakelist.com/zh/remakes/primerecomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=primerecomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows x64／Linux x86-64／macOS 15+ Apple Silicon
 
-**当前阶段:** v0.0.3 · 早期 Beta · 需原版文件
+**当前阶段:** v0.0.4 · 早期 Beta · 需原版文件
 
 **需要准备什么:** 需自备合法取得的 Switch《银河战士 Prime 复刻版》v1.0.0 文件，不含更新，并提取为 exefs 与 romfs 文件夹。项目不含原版游戏数据。
 
-**现在能用什么:** v0.0.3 已发布 Windows ZIP、Linux AppImage，并新增 Apple Silicon macOS DMG。Windows／Linux 需 AVX2 与 Vulkan 1.3，Linux 另需 glibc 2.35+；Mac 需 M1+ 和 macOS 15+。设置时从自备的 Switch v1.0.0 提取文件在本机重编译。本次改善 Steam Deck 性能并提供 30／60 fps 预设。 早期 Beta：过门可能明显减速，仍有画面问题，Magmoor Caverns 之后尚未测试，可能崩溃或卡住。Deck 性能记录只覆盖特定区域；macOS 未公证，首次编译着色器可能短暂卡顿。本站未试玩。
+**现在能用什么:** v0.0.4 提供 Windows ZIP、Linux AppImage 和 Apple silicon Mac DMG。GPU ASTC 解码与减少光照上传降低了作者测量场景中的过门卡顿；设置仍需从自备《银河战士 Prime 复刻版》1.0.0 提取文件本地编译。Windows／Linux 需 AVX2、Vulkan 1.3，Linux 另需 glibc 2.35+。画面问题仍在，Magmoor Caverns 之后区域未测，可能崩溃或卡死。Steam Deck 测量只覆盖特定场景；Mac 未公证，首次着色器编译仍会卡顿。本站未构建、安装或试玩。
 
 **代码许可:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/gminustwo/primerecomp/blob/main/LICENSE)  
 **作者:** gminustwo  
-[官方文档](https://github.com/gminustwo/primerecomp/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/gminustwo/primerecomp/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -2552,22 +2528,22 @@ Super Smash Bros. Melee 的原生 PC 移植，支持 Slippi 联机和高刷新�
 为《世界街头赛车 4》重编译版本提供原生 Direct3D 12 渲染器；在 Windows 或 Proton 下运行，需自备游戏与 Title Update #2。
 
 原作或参考对象: **世界街头赛车 4（Xbox 360）** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/shaunsingh/pgr4-native/releases/tag/v0.2.1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/pgr4-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pgr4-native-zh-CN)
+[下载程序并自备游戏文件](https://github.com/shaunsingh/pgr4-native/releases/tag/v0.3.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/pgr4-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=pgr4-native-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows x64 / Linux、Steam Deck 通过 Proton
 
-**当前阶段:** v0.2.1 · 早期移植 · 需原版文件
+**当前阶段:** v0.3.0 · Windows；Linux 经 Proton
 
 **需要准备什么:** 需自备合法取得并提取后的 PGR4 光盘，以及 Title Update #2 包或文件。作者称 PAL 与 NTSC 光盘内容一致；项目不含原版游戏数据。
 
-**现在能用什么:** v0.2.1 提供 Windows x64 ZIP；Linux 与 Steam Deck 使用 Proton，这个发行包并非原生 Linux 程序。本站未验证游玩或性能。 需使用受支持的游戏／更新组合和图形配置；兼容性及帧率取决于硬件，并在适用时取决于 Proton，不保证 Steam Deck 的普遍帧率。
+**现在能用什么:** v0.3.0 提供 Windows x64 ZIP，新增 16:10 渲染、游戏内设置、动态分辨率与可选 FidelityFX 插帧；Linux／SteamOS 通过 Proton 运行。需自备 PGR4 光盘提取文件、Title Update 2 及可选 DLC。插帧可将 45 帧渲染输出为 90 帧显示，作者数据不代表所有 Steam Deck 或显卡都能达到；本站未试玩。
 
 **代码许可:** [MIT for project code; original game content and third-party components retain their own rights and terms.](https://github.com/shaunsingh/pgr4-native/blob/main/LICENSE)  
 **作者:** shaunsingh  
-[官方文档](https://github.com/shaunsingh/pgr4-native/blob/main/README.md) · 资料核对日期: 2026-10-27
+[官方文档](https://github.com/shaunsingh/pgr4-native/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -2624,22 +2600,22 @@ Xbox 360《Madden NFL 08》的早期 Windows 移植；安装程序下载工具�
 将多款 CPS-2、CPS-1 街机游戏移植到桌面，提供统一启动器、格斗训练工具和三人清版动作玩法；需自备街机基板对应的指定 ROM 版本。
 
 原作或参考对象: **Capcom CPS-2／CPS-1 街机游戏** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/tmcleroy/cps2recomp/releases/tag/v0.4.0-beta.7) · [浏览 RemakeList](https://remakelist.com/zh/remakes/cps2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=cps2-recomp-zh-CN)
+[下载程序并自备游戏文件](https://github.com/tmcleroy/cps2recomp/releases/tag/v1.0.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/cps2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=cps2-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10／11 x64 · macOS 13+（Apple Silicon／Intel）· Linux x86_64／ARM64／SteamOS
 
-**当前阶段:** v0.4.0-beta.7 · Beta · 需指定原版 ROM
+**当前阶段:** v1.0.0 · 正式发行 · 17 款游戏
 
 **需要准备什么:** 需自备所持街机基板对应的指定 ROM 版本，CPS-2 游戏还需对应密钥文件。启动器校验文件，不接受其他区域或修订版；部分集合还需父集合。项目不提供游戏文件或密钥。
 
-**现在能用什么:** v0.4.0-beta.7 提供 Windows x64、macOS、Linux x86_64 压缩包，并新增 Linux ARM64 包。macOS 支持 Apple Silicon 与 Intel；Linux x86_64 包也用于 SteamOS／Steam Deck。GitHub 虽未标记预发布，项目仍为 Beta。 机器及手柄覆盖有限。作者称格斗游戏已检查至结局，新清版动作游戏仅覆盖前期脚本操作。macOS 未公证，Windows 未签名；需指定原版 ROM，本站未安装或试玩。
+**现在能用什么:** v1.0.0 是作者首个非 Beta 完整发行版，提供 Windows x64、macOS 通用版及 Linux x64／ARM64 包。新增回滚联机和三款游戏，支持范围增至 17 款。玩家仍须自备指定 ROM 集合及密钥，不附游戏。 作者的正式发行状态不等于所有机器和游戏均已完整验证。Windows 未签名、macOS 未公证；需精确 ROM 修订版，本站未安装或试玩。
 
 **代码许可:** [Project code is GPL-3.0-only; third-party components retain their own notices. This license does not grant rights to Capcom or other rights holders’ game code, ROMs, keys, music or artwork.](https://github.com/tmcleroy/cps2recomp/blob/main/LICENSE)  
 **作者:** tmcleroy  
-[官方文档](https://github.com/tmcleroy/cps2recomp/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/tmcleroy/cps2recomp/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -2648,22 +2624,22 @@ Xbox 360《Madden NFL 08》的早期 Windows 移植；安装程序下载工具�
 Xbox 360《Sonic Free Riders》的非官方移植，无需 Kinect 也能使用手柄或键盘游玩；从自备美版／欧版光盘镜像导入数据，仍在开发中。
 
 原作或参考对象: **Sonic Free Riders（Xbox 360）** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.36) · [浏览 RemakeList](https://remakelist.com/zh/remakes/free-riders-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=free-riders-recompiled-zh-CN)
+[下载程序并自备游戏文件](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/releases/tag/v0.10.38) · [浏览 RemakeList](https://remakelist.com/zh/remakes/free-riders-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=free-riders-recompiled-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows／Linux x64 · Android arm64 · 实验性 macOS Apple Silicon／iOS
 
-**当前阶段:** v0.10.36 · 开发中 · 需原版光盘
+**当前阶段:** v0.10.38 · 开发中 · 需原版光盘
 
 **需要准备什么:** 需自备合法取得的美版／欧版 Xbox 360《Sonic Free Riders》光盘镜像（.iso），由启动器导入模型、材质、音频和影片。作者说明发行包包含重编译程序，不包含这些原版游戏数据；项目的 GPL 许可不覆盖 SEGA 内容。
 
-**现在能用什么:** v0.10.36 提供 Windows／Linux x64、Android arm64、macOS arm64 与 iOS 包；此次优化 Android 比赛性能，其他平台代码未变。Windows／Linux 需 AVX 及对应的 D3D12 或 Vulkan 1.2；Android 需 9+／Vulkan 1.1，另有 10+ APK。Apple 构建需 macOS 13.3+ 或侧载的 iOS 16.3+。 许多模式仍未测试。作者记录了 Windows、M1 Mac 的一场 Dolphin Resort 完整比赛及 AYN Thor 测试，不覆盖其他手机或 iOS。Apple 支持仍为实验，macOS 未公证，Kinect v2 和在线联机仍待更广泛验证；本站未安装或试玩。
+**现在能用什么:** v0.10.38 为 Android 和 Linux 新增可选摄像头肢体追踪；Android 仅在该功能打开摄像头时申请权限。提供 Windows、Linux、Apple 芯片 Mac、Android 与 iOS 包。Android／Linux 实时摄像头游玩尚未验证，测试使用已有图片，受测 Thor 本身没有摄像头。 许多模式及在线／Kinect v2 支持仍待验证。Apple 支持属实验性，Mac 未公证，iOS 需侧载。 本站未构建、安装或试玩本版。
 
 **代码许可:** [Project code is GPL-3.0-or-later. The original game’s code and data remain SEGA’s and are outside that grant; third-party components and models retain their separate licenses.](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/COPYING)  
 **作者:** YuutaTsubasa  
-[官方文档](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/YuutaTsubasa/Free-Riders-Recompiled/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -2672,22 +2648,22 @@ Xbox 360《Sonic Free Riders》的非官方移植，无需 Kinect 也能使用�
 Amiga《James Pond 2》的社区移植，加入宽屏、存档槽与更平滑的画面运动；需自备受支持的 Kixx 版磁盘镜像或 WHDLoad 安装文件。
 
 原作或参考对象: **James Pond 2: Codename RoboCod（Amiga）** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/griches/JamesPond2RobocodRecomp/releases/tag/v1.0.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/james-pond-2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=james-pond-2-recomp-zh-CN)
+[下载程序并自备游戏文件](https://github.com/griches/JamesPond2RobocodRecomp/releases/tag/v1.0.4) · [浏览 RemakeList](https://remakelist.com/zh/remakes/james-pond-2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=james-pond-2-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows 10/11 x64 · macOS 13+（Apple Silicon／Intel）· Linux x86_64／Steam Deck · PS5 自制软件环境
+**平台:** Windows 10／11 x64 · macOS 13+（Apple Silicon／Intel）· Linux x86_64／Steam Deck · Android 7+ ARM64（未验证）· PS5 自制软件环境
 
-**当前阶段:** 桌面 v1.0.0 · PS5 v1.0.2 · 需原版磁盘
+**当前阶段:** Windows v1.0.4 · 其他平台版本独立
 
 **需要准备什么:** 需自备合法取得的 Amiga Kixx 再版标准 .adf 镜像，可使用 gzip 压缩的 .adz 或 .zip 包装，或受支持的 WHDLoad 安装文件。原始 Millennium 加密发行版、扩展 ADF、.dms 与 .ipf 不受支持；本站不提供原盘下载。
 
-**现在能用什么:** 桌面下载为 v1.0.0，提供 Windows、macOS 与 Linux 包，Steam Deck 使用 Linux 包。PS5 单独更新至 v1.0.2，需要已经能够运行自制软件的主机。v1.0.2 发行说明明确其他平台仍为 v1.0.0，并非桌面更新。 属于早期公开版本，持有其他发行版不代表其磁盘格式可用。PS5 是独立的自制软件目标，不是普通主机商店版本。本站未安装、试玩或独立验证全流程兼容性。
+**现在能用什么:** v1.0.4 仅为 Windows 修复，解决首次保存后后续存档及设置写入失败，并支持非英文用户目录路径。其他平台仍各用原版：macOS／Linux 1.0.0、PS5 1.0.2、Android 1.0.3。需自备受支持、合法取得的 Amiga 游戏副本，不附游戏数据。 Android 1.0.3 是首个测试版本，作者尚未在 Android 设备游玩；要求 Android 7+ ARM64 与设备内置或外接实体控制器。PS5 需已有可运行自制软件的环境；本站未安装、试玩或独立验证全流程兼容性。
 
 **代码许可:** [The project’s own code is GPL-3.0. SDL3, Musashi, fonts and other dependencies retain their separate licenses; the original game’s code, artwork and music are not granted under the project license.](https://github.com/griches/JamesPond2RobocodRecomp/blob/main/LICENSE)  
 **作者:** griches  
-[官方文档](https://github.com/griches/JamesPond2RobocodRecomp/blob/main/README.md) · 资料核对日期: 2026-10-27
+[官方文档](https://github.com/griches/JamesPond2RobocodRecomp/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -2720,22 +2696,22 @@ Amiga《James Pond 2》的社区移植，加入宽屏、存档槽与更平滑的
 PS3《维罗妮卡 X HD》移植，加入补帧、速通练习工具与现代战斗 HUD；需自备受支持的 PSN 版本。
 
 原作或参考对象: **生化危机：维罗妮卡 X HD（PS3）** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/releases/tag/v1.1.9) · [浏览 RemakeList](https://remakelist.com/zh/remakes/code-veronica-ps3-hd-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=code-veronica-ps3-hd-recomp-zh-CN)
+[下载程序并自备游戏文件](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/releases/tag/v1.1.11) · [浏览 RemakeList](https://remakelist.com/zh/remakes/code-veronica-ps3-hd-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=code-veronica-ps3-hd-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64 · Direct3D 12
 
-**当前阶段:** v1.1.9 · Windows 移植 · 需指定 PSN 文件
+**当前阶段:** v1.1.11 · Windows · 需自备 PS3 文件
 
 **需要准备什么:** 需自备 PS3 PSN 本体 01.00：欧版 NPEB00553、美版 NPUB30467 或日版 NPJB00135，目录包含 PARAM.SFO 与 USRDIR／EBOOT.BIN。欧美版还需购买账号自己的 .rap 授权文件；更新版和光盘版不支持，启动器不能直接打开 PKG。
 
-**现在能用什么:** v1.1.9 包含 Windows 移植与独立可选 PKG 提取工具，需 Windows 10／11、Direct3D 12 和 x64 Visual C++ 运行库。60 fps 插值模式下逻辑仍为 30 Hz，电脑无法维持 60 fps 时可能拖慢游戏；GPU 插值和材质模组仍属实验性，着色器编译可能卡顿。
+**现在能用什么:** v1.1.11 提供 Windows PC 包和 PKG 提取工具，改善启动器启动和纹理切换，可选纹理下载仍单独提供。构建采用美版；欧版／日版仅核对文件名身份，未试玩验证。 需自备 PS3 PSN 游戏文件及所需许可文件。可选第三方／AI 放大纹理包权利独立，不自动适用移植代码的 MIT 许可。本站未构建或试玩。
 
 **代码许可:** [MIT for port/ps3recomp code; third-party terms and Capcom’s original game rights are separate.](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/blob/code-veronica/LICENSE)  
 **作者:** kastieloficial  
-[官方文档](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/blob/code-veronica/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/kastieloficial/RE-Code-Veronica-PS3-HD-Recomp-PC/blob/code-veronica/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -2755,11 +2731,11 @@ PS3《维罗妮卡 X HD》移植，加入补帧、速通练习工具与现代战
 
 **需要准备什么:** 需自备初代 PS2 光盘 ISO 或 CHD：PAL SCES_509.16 光盘 v2.00，或 NTSC-U SCUS_971.99 光盘 v1.00。启动器核验光盘，其他地区／发行版可能不匹配；不下载游戏数据。
 
-**现在能用什么:** launcher-v0.9.0 提供 Windows 安装器、Linux 包、通用 Mac DMG 和 Android ARM64 debug APK。当前仅初代 PAL／NTSC 列为可玩，《Going Commando》可进入主菜单，其他续作仍在进行中。增强图形属于实验功能，可能需要逐关烘焙光照。
+**现在能用什么:** 通用启动器仍为 launcher-v0.9.0。sdk-v1.10.0 更新的是模组开发 SDK，不是可玩游戏版本。launcher-dev-master 是独立的 0.9.1 开发构建，不应写成稳定启动器。当前仅初代《Ratchet &amp; Clank》列为可玩。 续作尚未完成，Android 为 debug APK，增强图形仍属实验性。
 
 **代码许可:** [Top-level launcher/tools use GPL-3.0-or-later; game modules and the MIT SDK/editor retain their own notices. None of these licenses grant original game-content rights.](https://github.com/OpenRAC/OpenRAC/blob/master/LICENSE.md)  
 **作者:** OpenRAC  
-[官方文档](https://github.com/OpenRAC/OpenRAC/blob/master/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/OpenRAC/OpenRAC/blob/master/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -2768,22 +2744,22 @@ PS3《维罗妮卡 X HD》移植，加入补帧、速通练习工具与现代战
 《保护伞编年史》Windows 移植，提供鼠标瞄准、现代渲染选项及早期双人在线合作。
 
 原作或参考对象: **生化危机：保护伞编年史（Wii）** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/solleo95/reuc-recomp/releases/tag/0.0.6) · [浏览 RemakeList](https://remakelist.com/zh/remakes/reuc-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=reuc-recomp-zh-CN)
+[下载程序并自备游戏文件](https://github.com/solleo95/reuc-recomp/releases/tag/0.0.12) · [浏览 RemakeList](https://remakelist.com/zh/remakes/reuc-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=reuc-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64 · AVX2 · Vulkan 1.3
 
-**当前阶段:** 0.0.6 · 早期版本 · 合作模式实验性
+**当前阶段:** 0.0.12 · 早期版本 · 合作模式实验性
 
 **需要准备什么:** 需自备 Wii 美版 NTSC-U 光盘镜像，游戏 ID RBUE08；可用启动器内置 Wit 提取，或提供已提取的 DATA 目录。PAL RBUP08 与日版 RBUJ08 不支持；可选专有运行库及材质包另有条款。
 
-**现在能用什么:** 0.0.6 提供 Windows ZIP，需要 AVX2 与 Vulkan 1.3。属于早期版本，主要在作者的 RTX 4080／Windows 11 电脑上测试，最低性能配置尚未确定。在线合作可能连接失败、不同步或短暂卡住，光追目前只覆盖阴影；本版复杂场景最多可能增加约 1 GiB 内存占用。
+**现在能用什么:** 0.0.12 提供 Windows 包，改善瞄准边界和换弹区，增加可配置加速键并减少合作模式误报不同步而停止。光枪／Wii Remote 瞄准仅经模拟输入测试；短暂联机分歧的根因尚未解决，本版只是容忍单次发生。 仍为早期版本，主要在一台 RTX 4080／Windows 11 电脑测试，最低性能配置未确定。在线合作可能连接失败、不同步或卡住；光追仅覆盖阴影。 本站未构建、安装或试玩本版。
 
 **代码许可:** [GPL-3.0 for project code; vendor DLSS/FidelityFX runtimes and other dependencies keep their own licenses. Capcom game code and assets are excluded.](https://github.com/solleo95/reuc-recomp/blob/main/LICENSE)  
 **作者:** solleo95  
-[官方文档](https://github.com/solleo95/reuc-recomp/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/solleo95/reuc-recomp/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -2912,22 +2888,22 @@ Metroid Dread Recomp 的 Linux 增强分支，从自备 Switch 2.1.0 文件构�
 从自备 Switch 文件在本机构建的《超级卡比猎人队》实验性移植。
 
 原作或参考对象: **超级卡比猎人队（Switch）** · 静态重编译  
-[自行构建并自备游戏文件](https://github.com/xtamqispeak/KirbyRecomp/releases/tag/v0.2.0-alpha) · [浏览 RemakeList](https://remakelist.com/zh/remakes/kirby-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=kirby-recomp-zh-CN)
+[自行构建并自备游戏文件](https://github.com/xtamqispeak/KirbyRecomp/releases/tag/v0.3.0-alpha) · [浏览 RemakeList](https://remakelist.com/zh/remakes/kirby-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=kirby-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64 · AVX2/FMA · Vulkan 1.3
 
-**当前阶段:** v0.2.0-alpha · 本机构建 · 战斗未验证
+**当前阶段:** v0.3.0-alpha · 本地构建
 
 **需要准备什么:** 需自备标题 ID 01003FB00C5A8000 对应且匹配的 ExeFS／RomFS。已测试 main 构建 ID 以 c9649e053bd7be2751ef0b00e7c03f5d59695b94 开头，其他版本未验证；不提供 NSP／XCI 导入或解密。
 
-**现在能用什么:** v0.2.0-alpha 提供未签名安装 EXE 与源码包，并非现成游戏程序。首次安装需下载构建工具并留出数 GB 空间。作者仅测试 RTX 4070 SUPER，报告标题、村庄、菜单与存档可用，完整战斗和后期关卡未验证。在线服务、购买、多人及下载内容不可用；本站未构建或试玩。
+**现在能用什么:** v0.3.0-alpha 提供 Windows 安装 EXE 和源码包，修复商店／档案渲染，增加自定义分辨率和 120 帧选项。安装程序在本地翻译、编译自备且匹配的 ExeFS／RomFS，不附预编译游戏。 完整战斗及后续关卡仍未验证；缺失服务或未支持指令可能终止运行，未确立完整游戏或在线购买可用性。需 Windows x64、AVX2／FMA 及文档要求的 Vulkan 硬件。
 
 **代码许可:** [MIT applies to project code; original game content and third-party components retain separate rights and terms.](https://github.com/xtamqispeak/KirbyRecomp/blob/main/LICENSE)  
 **作者:** xtamqispeak  
-[官方文档](https://github.com/xtamqispeak/KirbyRecomp/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/xtamqispeak/KirbyRecomp/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -2936,22 +2912,22 @@ Metroid Dread Recomp 的 Linux 增强分支，从自备 Switch 2.1.0 文件构�
 《1080° 雪上飞》的 PC 移植，增加宽屏、可选高帧率与更远视距。
 
 原作或参考对象: **1080° 雪上飞（Nintendo 64）** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/thebradshaw/1080-Snowboarding-decomp/releases/tag/1.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/1080-snowboarding-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=1080-snowboarding-recompiled-zh-CN)
+[下载程序并自备游戏文件](https://github.com/thebradshaw/1080-Snowboarding-decomp/releases/tag/1.01) · [浏览 RemakeList](https://remakelist.com/zh/remakes/1080-snowboarding-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=1080-snowboarding-recompiled-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64／实验性 Linux x64
 
-**当前阶段:** 1.0 · Windows 发行 · Linux 实验性
+**当前阶段:** 1.01 · Windows／实验性 Linux
 
 **需要准备什么:** 需自备未修改的美版 .z64 ROM，MD5 为 fa27089c425dbab99f19245c5c997613；项目不提供 ROM。滑雪板高清材质和启动器美术源自原作，不在代码许可授权范围内。
 
-**现在能用什么:** 1.0 提供 Windows x64 与实验性 Linux x64 包。Windows 需 Vulkan 或 Direct3D 12；Linux 未经真机测试，需要接近 Ubuntu 24.04 的系统、Vulkan、SDL2 和 GTK 3。帧率选项不代表性能保证；本站未安装或试玩。 RetroAchievements 批准前，成就解锁仅保存本地。
+**现在能用什么:** 1.01 提供 Windows x64 与实验性 Linux x64 包，修复 Mountain Village 洞穴闪烁黑条并新增垂直同步设置。沿用 1.0 存档及设置，仍需自备受支持的美版 .z64 ROM。 Linux 属实验支持且未经硬件测试；RetroAchievements 尚待批准，解锁仅存本地。
 
 **代码许可:** [GPL-3.0 applies to project code; original game content and third-party components retain separate rights and terms.](https://github.com/thebradshaw/1080-Snowboarding-decomp/blob/main/LICENSE)  
 **作者:** thebradshaw  
-[官方文档](https://github.com/thebradshaw/1080-Snowboarding-decomp/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/thebradshaw/1080-Snowboarding-decomp/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -3032,22 +3008,22 @@ N64《碟中谍》的 Linux 移植，增加鼠标瞄准、宽屏与现代摇杆�
 从自备 XBLA《绝望和声》包构建的 Windows 移植，提供画面设置与最多六人的局域网／虚拟局域网合作。
 
 原作或参考对象: **恶魔城：绝望和声（Xbox 360）** · 静态重编译  
-[自行构建并自备游戏文件](https://github.com/Wrexxial/HarmonyRecomp/blob/main/README.md#building) · [浏览 RemakeList](https://remakelist.com/zh/remakes/harmony-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=harmony-recomp-zh-CN)
+[自行构建并自备游戏文件](https://github.com/Wrexxial/HarmonyRecomp/releases/tag/v0.3.5) · [浏览 RemakeList](https://remakelist.com/zh/remakes/harmony-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=harmony-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64 · 本机构建
 
-**当前阶段:** 源码构建 · 局域网合作 · 需原版 XBLA 包
+**当前阶段:** v0.3.5 · Windows 本机构建
 
-**需要准备什么:** 需自备合法取得的 Xbox 360 XBLA 58410A7A 游戏包，来自自有主机或购买内容；可选 DLC 包也须自备。不要再分发提取素材或生成的原作代码。
+**需要准备什么:** 自备 Xbox 360 XBLA 58410A7A 游戏包。可选 DLC 需自备内容包和 Title Update 2（游戏 2.04）；当前设置流程缺少该更新时会跳过 DLC。生成的游戏代码与提取素材不得再分发。
 
-**现在能用什么:** 尚无发行二进制。Python build.py 会提取自备包、取得固定版本 SDK，并使用 Clang 20+、CMake、Ninja 在本地构建。作者报告支持全部关卡与六名基础角色；DLC 安装未用真实 DLC 包测试，关闭时可能出现堆损坏崩溃报告。合作需相同源码版本及局域网／虚拟局域网，并非 Xbox Live。本站未构建或试玩。
+**现在能用什么:** v0.3.5 提供 Windows 设置 EXE 与工具链归档，从自备 XBLA 包在本机编译，约需 10–30 分钟和 10 GB 临时空间。它修复联机结算崩溃；由于没有排行榜服务器，排行榜仍为空。退出崩溃已在 v0.3.3 修复。可选 DLC 需自备内容包与 Title Update 2，当前设置流程缺少该更新时会跳过 DLC；并非每个 DLC 关卡都已游玩验证。合作需相同发行版／游戏版本及局域网或虚拟局域网，不是 Xbox Live。本站未构建或试玩。
 
 **代码许可:** [The project code is BSD-3-Clause; the extractor includes MIT-licensed NocturneRecomp code. Runtime dependencies retain their terms, and original game code/data are outside these grants.](https://github.com/Wrexxial/HarmonyRecomp/blob/main/LICENSE)  
 **作者:** Wrexxial  
-[官方文档](https://github.com/Wrexxial/HarmonyRecomp/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/Wrexxial/HarmonyRecomp/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -3176,22 +3152,22 @@ LASRecomp 的 Android 分支，提供移动操作与设备端编译；需自备�
 将 Wii U 版《任天堂明星大乱斗》移植到 Windows，通过启动器选择自备游戏、更新和可选 DLC 文件。
 
 原作或参考对象: **任天堂明星大乱斗 Wii U** · 静态重编译  
-[下载程序并自备游戏文件](https://github.com/josiahg2502-glitch/Smash4PC/releases/tag/v0.1.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/smash4pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=smash4pc-zh-CN)
+[下载程序并自备游戏文件](https://github.com/josiahg2502-glitch/Smash4PC/releases/tag/v0.1.1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/smash4pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=smash4pc-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows 10/11 x64 · Vulkan 1.3
 
-**当前阶段:** v0.1.0 - 预览版 - 需原版素材
+**当前阶段:** v0.1.1 · 早期移植 · 串流联机 Beta
 
 **需要准备什么:** 自备美版 Wii U 游戏导出数据，建议使用 v304；DLC 另需自备。Pretendo 还需要本人 Wii U 主机文件及账号。
 
-**现在能用什么:** v0.1.0 提供 Windows ZIP。README 说明支持原始 v1.0 或 v304 更新；着色器在首次使用时编译。高于 60 帧的画面采用插帧，游戏模拟仍为 60 帧。README 提醒生成程序含游戏代码，不应上传；发行包如何处理该代码尚未经本站审计。联网与各模式功能未由本站实测。
+**现在能用什么:** v0.1.1 提供 Windows ZIP，新增较旧处理器支持并修复输入和卡顿。新 Beta 联机房间将一台主机的游戏以 1080p／60 帧串流给最多七位访客，并回传访客输入；这是远程游玩串流，不是八个原生游戏实例同步。 新串流路径仅在一台 PC 测试，尚未跨家庭网络验证；受限网络可能阻止直连。主机需自备美版 Wii U 游戏文件。高显示帧率来自插值，生成游戏代码的权利另计；本站未测试。
 
 **代码许可:** [Project-authored code is MIT; Cemu-derived network code is MPL-2.0 and other components retain their notices. None of these licenses grants rights to Nintendo game code or assets.](https://github.com/josiahg2502-glitch/Smash4PC/blob/main/LICENSE)  
 **作者:** josiahg2502-glitch  
-[官方文档](https://github.com/josiahg2502-glitch/Smash4PC/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/josiahg2502-glitch/Smash4PC/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -3200,46 +3176,46 @@ LASRecomp 的 Android 分支，提供移动操作与设备端编译；需自备�
 将 iPad 版《镜之边缘》带到桌面、Android 与浏览器，加入现代操作方式及可选的一对一联网玩法。
 
 原作或参考对象: **镜之边缘 iPad 版** · 基于反编译的项目  
-[下载程序并自备游戏文件](https://github.com/MoonCellar-Team/Glassline/releases/tag/v1.3.1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/glassline/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=glassline-zh-CN)
+[下载程序并自备游戏文件](https://github.com/MoonCellar-Team/Glassline/releases/tag/v1.4.1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/glassline/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=glassline-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows x64 · Linux x64／Steam Deck · Android 9+ · 浏览器
 
-**当前阶段:** v1.3.1 - 需设置 - 需原版素材
+**当前阶段:** v1.4.1 · 桌面、Android 与浏览器
 
 **需要准备什么:** 自备 iPad 版《镜之边缘》1.1.48 或更新版本 IPA；不支持 iPhone 版，项目不提供原作数据。
 
-**现在能用什么:** v1.3.1 提供 Windows、Linux、Android 与 Web 包，作者也托管浏览器版本。没有原生 macOS 发行包，macOS 使用浏览器路线。源码可见，但不是开源。联网仅限一对一，并依赖 MoonCellar 服务；账号功能遵循该服务条款。浏览器须具备指定 WebAssembly、存储与图形能力，清理站点数据会删除本地游戏文件和存档；增强特效需 OpenGL ES 3.0。
+**现在能用什么:** v1.4.1 提供 Windows、Linux、Android 与 Web 包，修复触摸／平衡操作及浏览器启动崩溃。需自备 Mirror’s Edge iPad 版 1.1.48+ IPA，不支持 iPhone 版游戏。双人联机和账户依赖 MoonCellar 服务，不是 EA 服务；好友榜仍为空。没有原生 macOS 包。清除浏览器站点数据会删除本地游戏文件与存档，增强特效要求 OpenGL ES 3.0。源码可见许可限制再分发与商业使用。
 
 **源码可见；使用受许可限制:** [The custom license permits specified personal noncommercial use of the author's work. Redistribution, modified builds and commercial use need separate permission. EA's original code and assets are excluded; dependencies retain their licenses.](https://github.com/MoonCellar-Team/Glassline/blob/main/LICENSE)  
 **作者:** MoonCellar-Team  
-[官方文档](https://github.com/MoonCellar-Team/Glassline/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/MoonCellar-Team/Glassline/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
 ### [RE: Outbreak](https://github.com/Ninjacornix/reo)
 
-为《生化危机：爆发》File #1 提供 Windows 移植，通过引导在本机编译游戏，支持操作设置与可选 openSNAP 合作模式。
+为《生化危机：爆发》提供 Windows 本地编译引导、可配置控制与可选 openSNAP 合作。File #1 有稳定版，File #2 属于候选发行版的实验路线。
 
 原作或参考对象: **生化危机：爆发 File #1** · 静态重编译  
-[自行构建并自备游戏文件](https://github.com/Ninjacornix/reo/releases/tag/v1.0.19) · [浏览 RemakeList](https://remakelist.com/zh/remakes/reo-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=reo-native-zh-CN)
+[自行构建并自备游戏文件](https://github.com/Ninjacornix/reo/releases/tag/v1.0.20-rc0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/reo-native/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=reo-native-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows x64 · .NET 8 Desktop Runtime · Vulkan
 
-**当前阶段:** v1.0.19 - 需设置 - 需本机构建与原版素材
+**当前阶段:** v1.0.20-rc0 · 候选发行版 · File #2 实验性
 
-**需要准备什么:** 仅支持原版 NTSC-U v2.00 File #1 ISO，编号 SLUS-20765。本机编译后仍须保留 ISO；不支持 PAL、日版、修改版本和 File #2。
+**需要准备什么:** v1.0.20-rc0 接受自备 File #1 美版 v2.00 ISO（SLUS-20765），或实验性 File #2 美版 v1.05（SLUS-20984）；稳定版 v1.0.19 仅支持 File #1。保留 ISO 和发行包的 build-inputs ZIP 供本地编译。欧版、日版、修改版及其他修订不支持，不提供游戏数据或 PS2 BIOS。
 
-**现在能用什么:** v1.0.19 提供 Windows 启动器和依赖源码归档。首次设置需下载工具并在本机编译，约需 10 GB 可用空间，可能超过一小时。File #2 与可玩 Linux 包尚未提供。全流程可玩是作者声明；互联网主机需可达网络或 VPN，参与者可见主机 IP，CPU 负载较高的房间可能变慢。
+**现在能用什么:** v1.0.20-rc0 是候选发行版，提供便携 Windows 启动器、内置 .NET 运行时和自动编译器设置；从自备 File #1 美版 v2.00 或实验性 File #2 美版 v1.05 光盘在本地构建。v1.0.19 仍是 File #1 稳定版。 RC0 在使用新数据目录时会自动复制旧启动器数据、缓存、设置及存档。打开新解压包前应备份存档并遵循发行页的全新安装说明。File #2 仍属实验性，RC 支持不等于稳定版保证。
 
 **代码许可:** [This fork's original contributions use GPL-3.0-only. Upstream and third-party code retains its own notices. Original game content and generated game code are not licensed by this grant.](https://github.com/Ninjacornix/reo/blob/main/LICENSE)  
 **作者:** Ninjacornix  
-[官方文档](https://github.com/Ninjacornix/reo/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/Ninjacornix/reo/blob/main/README.md) · 资料核对日期: 2026-10-29
 
 </details>
 
@@ -3248,22 +3224,22 @@ LASRecomp 的 Android 分支，提供移动操作与设备端编译；需自备�
 世嘉三人街机游戏的原生移植，提供桌面与掌机路线，需自备精确匹配的街机 ROM 集合。
 
 原作或参考对象: **SegaSonic 刺猬索尼克（街机）** · 基于反编译的项目  
-[下载程序并自备游戏文件](https://github.com/cheviman/segasonic-port/releases/tag/v1.2.2) · [浏览 RemakeList](https://remakelist.com/zh/remakes/segasonic-port/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=segasonic-port-zh-CN)
+[下载程序并自备游戏文件](https://github.com/cheviman/segasonic-port/releases/tag/v1.3.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/segasonic-port/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=segasonic-port-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Windows x64 · Linux x64 · macOS 11+ · Anbernic H700 · Android／Switch 包本机生成
 
-**当前阶段:** v1.2.2 - 需设置 - 需原版素材
+**当前阶段:** v1.3.0 · 本地导入原作素材
 
 **需要准备什么:** 自备 SegaSonic The Hedgehog 日版 rev. C 的 sonic.zip，包含要求的 18 个文件。导入生成 segasonic.assets；生成的移动或主机包含自备素材，不应分享。
 
-**现在能用什么:** v1.2.2 提供 Windows、Linux、通用 macOS 和 Anbernic H700 包。Android 7+ APK 与 Switch 包需用附带工具在自己的电脑生成，并非独立现成下载。作者报告与 MAME 对照并在部分系统游玩，本站未复测。三人支持指本地游玩，不代表互联网联机；macOS 应用未签名。
+**现在能用什么:** v1.3.0 提供 Windows、Linux、macOS 与 Anbernic 包，新增轨迹球设置和手柄映射。需自备 sonic.zip（日版 rev. C，18 个文件）或导入自己提取的 segasonic.assets。Android 7+ APK 与 Switch NSP 在本地生成，Switch 生成还需自备密钥；生成包包含原作素材，不应分享。最多三人本地同玩；macOS 构建未签名，作者与 MAME 的比对不等于本站试玩。
 
 **代码许可:** [Project code uses BSD-3-Clause; MAME/ymfm-derived components, SDL and Kenney assets have their own BSD, zlib or CC0 terms. Original Sega ROMs and assets are not licensed by the project.](https://github.com/cheviman/segasonic-port/blob/main/LICENSE)  
 **作者:** cheviman  
-[官方文档](https://github.com/cheviman/segasonic-port/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/cheviman/segasonic-port/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -3288,30 +3264,6 @@ SNES Super FX 赛车游戏的实验性 Linux 移植，保留原版游戏逻辑�
 **代码许可:** [The upstream decompilation and this fork are offered under CC0-1.0. Nintendo/Argonaut's original game and ROM contents remain separately protected and are not supplied.](https://github.com/Mabec-games/Stunt-Race-FX-DECOMP/blob/main/LICENSE)  
 **作者:** Mabec-games  
 [官方文档](https://github.com/Mabec-games/Stunt-Race-FX-DECOMP/blob/main/README.md) · 资料核对日期: 2026-10-28
-
-</details>
-
-### [God of War: Ascension PC](https://github.com/otavix010/gow-ascension-pc)
-
-PS3《战神：升天》的实验性 Windows 移植，通过作者的 Otavix 启动器或构建脚本，从自备受支持光盘在本机生成。
-
-原作或参考对象: **战神：升天** · 静态重编译  
-[自行构建并自备游戏文件](https://github.com/otavix010/otavix-launcher/releases/tag/v1.0.50) · [浏览 RemakeList](https://remakelist.com/zh/remakes/gow-ascension-pc/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=gow-ascension-pc-zh-CN)
-
-<details>
-<summary>要求与截图</summary>
-
-**平台:** Windows x64 · Direct3D 12 · 本机编译
-
-**当前阶段:** 早期 - 需本机构建与原版素材
-
-**需要准备什么:** 自备美版 PS3 光盘 BCUS98232、精确 1.04 更新和 PS3 固件。作者列出索尼官方依赖来源；不支持 1.05 及之后更新。
-
-**现在能用什么:** 作者入口指向 Otavix Launcher v1.0.50，用于下载移植支持文件并在本机构建游戏。移植仓库最新 shaders 标签是着色器包，不是游戏发行版本。作者仅报告检查了开场关卡和第 16 章，未验证全流程。CPU 能力明显影响性能，高于 60 帧可能加速游戏逻辑。启动器的可选社区着色器共享在接受后才上传着色器，需单独查看该设置。
-
-**代码许可:** [MIT covers the author's code and tools; scripts/gpl contains GPL-2.0 helpers and dependencies retain their terms. The license excludes the original game, firmware and generated game output.](https://github.com/otavix010/gow-ascension-pc/blob/main/LICENSE)  
-**作者:** otavix010  
-[官方文档](https://github.com/otavix010/gow-ascension-pc/blob/main/README.md) · 资料核对日期: 2026-10-28
 
 </details>
 
@@ -3368,46 +3320,46 @@ Wii U《旷野之息》的早期 Windows 移植，在本机转换游戏代码并
 Yokimitsuro 原生《王国之心 358/2 天》移植的 Android 分支，在 AYN Thor 上提供双屏布局，手机上则共享单屏。
 
 原作或参考对象: **王国之心 358/2 天** · 基于反编译的项目  
-[下载程序并自备游戏文件](https://github.com/sonofskywalker3/khdays-358-android/releases/tag/android-0.1.4-beta6) · [浏览 RemakeList](https://remakelist.com/zh/remakes/khdays-358-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=khdays-358-android-zh-CN)
+[下载程序并自备游戏文件](https://github.com/sonofskywalker3/khdays-358-android/releases/tag/android-0.1.4-beta8) · [浏览 RemakeList](https://remakelist.com/zh/remakes/khdays-358-android/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=khdays-358-android-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** Android 10+ · ARM64 · Vulkan · AYN Thor 双屏支持
 
-**当前阶段:** android-0.1.4-beta6 - 预览版 - 需原版素材
+**当前阶段:** android-0.1.4-beta8 · Mali 实验支持
 
 **需要准备什么:** 自备欧版或北美版 DS 卡带 ROM。可选 HD 视频与菜单需自有 HD 1.5+2.5 ReMIX，菜单另需 HD 2.8；项目不提供这些素材。
 
-**现在能用什么:** android-0.1.4-beta6 提供 ARM64 APK，以及用于可选 HD 素材的独立 Windows 辅助程序。作者在 AYN Thor 上测试；手机在同一显示屏呈现两块 DS 画面。Beta 阶段，设备验证以 AYN Thor 为主。自定义外部模组／HD 文件夹会申请 Android 所有文件访问权限。卸载会删除应用本地游戏数据和存档，需先备份；全游戏支持来自作者声明，并非本站试玩。
+**现在能用什么:** android-0.1.4-beta8 提供 Android APK，修复任务模式面板崩溃与下屏布局。Mali 支持仍属实验且未经 Mali 真机验证，旧 AYN Odin 的复杂 3D 场景仍较慢。要求 Android 10+、ARM64／Vulkan 和自有欧／美版 DS ROM。附带 Windows EXE 用自有 HD 合集准备可选高清内容，不是 Android 构建。自选 HD／模组目录需“所有文件访问”权限；卸载会删除本地应用数据，应先导出存档。全流程可玩来自作者声明，非本站测试。
 
 **代码许可:** [Project code uses MIT with upstream and third-party notices retained. This does not grant rights to Square Enix/Disney game files or optional HD collection assets.](https://github.com/sonofskywalker3/khdays-358-android/blob/master/LICENSE)  
 **作者:** sonofskywalker3  
-[官方文档](https://github.com/sonofskywalker3/khdays-358-android/blob/master/.github/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/sonofskywalker3/khdays-358-android/blob/master/.github/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
 ### [F.E.A.R. 360 Recompiled](https://github.com/Juansolo457/fear360-recomp)
 
-需从源码构建的 Windows 移植，将 Xbox 360 版 F.E.A.R. 与 F.E.A.R. Files 整合为便于手柄操作的合集。
+需从源码构建的 Xbox 360 版 F.E.A.R. 与 F.E.A.R. Files 原生移植，支持 Linux 与 Steam Deck，提供合集菜单及与显示器同步的帧率控制。
 
 原作或参考对象: **F.E.A.R.／F.E.A.R. Files（Xbox 360）** · 静态重编译  
-[自行构建并自备游戏文件](https://github.com/Juansolo457/fear360-recomp/releases/tag/v0.1.5) · [浏览 RemakeList](https://remakelist.com/zh/remakes/fear360-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=fear360-recomp-zh-CN)
+[自行构建并自备游戏文件](https://github.com/Juansolo457/fear360-recomp/blob/master/docs/SETUP.md) · [浏览 RemakeList](https://remakelist.com/zh/remakes/fear360-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=fear360-recomp-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
-**平台:** Windows 10/11 x64 · AVX2／FMA · Direct3D 12 · 实验性 Proton／Steam Deck
+**平台:** 当前源码：原生 Linux x86-64／Steam Deck · AVX2／FMA · Vulkan 1.3；稳定 v0.1.5：Windows Direct3D 12／Proton
 
-**当前阶段:** v0.1.5 - 早期 - 需本机构建与原版素材
+**当前阶段:** 源码构建 · 稳定 v0.1.5／原生 Linux 开发线 0.9
 
-**需要准备什么:** 自备受支持 Xbox 360 光盘：F.E.A.R. Title ID 565507D9，F.E.A.R. Files 为 565507E8，并匹配设置指南中的程序哈希。
+**需要准备什么:** 自备受支持 Xbox 360 光盘：F.E.A.R. Title ID 565507D9 与 F.E.A.R. Files 565507E8，并匹配 SETUP.md 所列程序 SHA-256。本地生成程序及 Steam Deck 包包含光盘衍生代码／数据，仅供私人使用；项目不提供原作素材或现成游戏包。
 
-**现在能用什么:** v0.1.5 仅提供源码，没有可执行发行附件。需在 Windows 使用文档指定工具链构建；Steam Deck／Linux 走实验性 Proton 路线，并非原生 Linux 发行。两部战役均未获本站全流程验证。当前绘制为 1280×720，不支持 PC 纹理包；复杂特效、高帧率物理和部分渲染仍有问题，Steam Deck 手柄可能在剧情自动保存时短暂断连。Android 与 Windows ARM64 属于未来工作。
+**现在能用什么:** GitHub 最新稳定版接口仍返回 v0.1.5：仅源码的 Windows 发行，Steam Deck 使用 Proton，没有可执行附件。另一路当前默认分支文档将开发线称为 0.9，提供无需 Proton 的 Vulkan 原生 Linux／Steam Deck 构建及作者游戏运行、性能测试记录。本轮核实了构建说明，未核实 v0.9.0 发行标签。当前源码的 Windows 构建未经测试。完整战役通关仍是 v1.0 的测试目标；本站未构建或试玩任一路线。 当前渲染为 1280×720，不支持 PC 纹理包。慢动作枪战可能达不到 120 fps；Steam Deck 尚缺血迹，剧情自动保存可能短暂断开手柄。底座模式 120 Hz、Holiday 附加关卡及完整战役仍待验证。文档所称 0.9 开发线的 Windows 构建未经测试；Android 与 Windows ARM64 仍属未来工作。 原版文件／设置：自备受支持 Xbox 360 光盘：F.E.A.R. Title ID 565507D9 与 F.E.A.R. Files 565507E8，并匹配 SETUP.md 所列程序 SHA-256。本地生成程序及 Steam Deck 包包含光盘衍生代码／数据，仅供私人使用；项目不提供原作素材或现成游戏包。
 
 **代码许可:** [Own tools and glue are MIT, fear-nx-derived runtime parts are GPL-3.0-or-later, and renderer/SDK components have MIT/BSD terms. Linked builds include GPL obligations. Original game code, assets and generated private builds must not be redistributed as project downloads.](https://github.com/Juansolo457/fear360-recomp/blob/master/LICENSE)  
 **作者:** Juansolo457  
-[官方文档](https://github.com/Juansolo457/fear360-recomp/blob/master/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/Juansolo457/fear360-recomp/blob/master/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
@@ -3440,22 +3392,94 @@ Yokimitsuro 原生《王国之心 358/2 天》移植的 Android 分支，在 AYN
 为 nxnative 增加 Mac 游戏库与图形化构建流程，用自备、受支持的 Switch 文件生成个人 Mac 或 iPhone／iPad App。它是独立的社区分支，不是捆绑游戏合集。
 
 原作或参考对象: **Nintendo Switch 游戏的 Apple 平台构建与管理** · 平台兼容层  
-[自行构建并自备游戏文件](https://github.com/LNPANDY/NX2Apple/releases/tag/v0.5.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/nx2apple/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nx2apple-zh-CN)
+[自行构建并自备游戏文件](https://github.com/LNPANDY/NX2Apple/releases/tag/v0.7.1) · [浏览 RemakeList](https://remakelist.com/zh/remakes/nx2apple/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nx2apple-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
 
 **平台:** 构建工具：Apple 芯片 Mac、macOS 13+ · 输出目标：Mac／iPhone／iPad
 
-**当前阶段:** v0.5.0 · 图形化构建工具 · 兼容性按游戏区分
+**当前阶段:** v0.7.1 · 引导式本地构建工具
 
-**需要准备什么:** 需自备自己持有的 Switch 卡带或购买内容转储、各游戏配置指定的更新／DLC 和自己的 prod.keys。构建器文档要求 Apple 芯片 Mac、macOS 13+、Xcode／iOS SDK、Python 3.9+ 与 .NET SDK 10；README 的移动端目标为 iOS／iPadOS 26+，实际运行要求因游戏与设备而异。项目不提供游戏文件或密钥；生成的游戏代码和资源包仅供个人设备使用，不可再分发。
+**需要准备什么:** 自备 Switch 游戏转储、所需更新／DLC 和 prod.keys。启动器可在 Apple 芯片 macOS 13+ 打开；NVN 游戏构建要求 macOS 26.6+ 上的 Xcode 27.1，除非采用文档列出的替代 Metal 覆盖选项。应用内置 Python／构建工具，并安装 .NET SDK 10。iPhone 目标为 iOS 26+，较旧设备未验证；不可再分发衍生游戏代码或素材。
 
-**现在能用什么:** v0.5.0 提供 Mac ARM64 启动器，选择 NX2Apple-macOS-arm64.zip；它获取构建工具并在本地生成游戏，不提供即装即玩的游戏 App。该分支报告了《王国之泪》《Hades II》《集合啦！动物森友会》的 iPhone 构建、安装与游玩检查。游戏配置及上游运行报告不等于所有游戏兼容或完整通关。Windows 仅有 Actions 前端，没有本次发行包或完整构建流水线验证。Mods 尚未用真实模组测试；大型游戏受设备内存及签名所保留的内存权限影响，免费 Apple ID 的开发签名七天到期。本站未构建、安装或试玩。
+**现在能用什么:** v0.7.1 提供 Apple 芯片 Mac 构建器。主机模式现于启动器所在屏幕全屏打开游戏，构建失败提供恢复操作，精简 iOS 构建会带入所选 DLC。v0.7.0 还加入通过 iCloud Drive 文件夹同步 Mac／iPhone 存档；游戏侧变更需从自备转储重新构建。 提供的是构建工具，不是即装即玩的游戏 App。配置列表不代表完整兼容，真实模组仍未测，Windows 无已验证发行流程；大型游戏受内存和签名权限限制，免费 Apple ID 签名七天到期。 本站未构建、安装或试玩本版。
 
 **代码许可:** [MIT covers project code, with upstream attribution and separate third-party notices. It grants no rights to Nintendo game code, assets, keys or the game-derived packages you build.](https://github.com/LNPANDY/NX2Apple/blob/main/LICENSE)  
 **作者:** LNPANDY and contributors  
-[官方文档](https://github.com/LNPANDY/NX2Apple/blob/main/README.md) · 资料核对日期: 2026-10-28
+[官方文档](https://github.com/LNPANDY/NX2Apple/blob/main/README.md) · 资料核对日期: 2026-10-30
+
+</details>
+
+### [NHL 2K8 Recompiled](https://github.com/anishchandra24/NHL2K8-Recompiled)
+
+从自备 NHL 2K8 文件在本机构建的非官方 Xbox 360 冰球游戏 Windows 移植，支持本地多人和自选音乐。
+
+原作或参考对象: **NHL 2K8** · 静态重编译  
+[自行构建并自备游戏文件](https://github.com/anishchandra24/NHL2K8-Recompiled/releases/tag/v1.1.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/nhl2k8-recompiled/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nhl2k8-recompiled-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10/11 x64 · Direct3D 12 · 本机构建；Windows 11 未测
+
+**当前阶段:** v1.1.0 · 本机构建 · 本地多人 · 不支持在线功能
+
+**需要准备什么:** 自备合法取得的 Xbox 360 NHL 2K8，Title ID 54540809、版本 0.0.0.3；提取后的 default.xex 与其余文件需放在同一目录。README 指定支持的程序哈希，其他版本不受支持，并需额外预留游戏文件空间。本站不提供原游戏数据。
+
+**现在能用什么:** v1.1.0 提供下载工具并在本机构建的安装程序，也可手动从源码构建。需 Windows 10/11 x64、Direct3D 12、带 Clang／CMake 的 Visual Studio 2022 C++、Git、首次联网，以及约 10 GB 构建空间和自备受支持游戏文件。作者仅测试过 Windows 10。在线功能不可用，拥挤观众场景和首次准备着色器时可能卡顿；F4 设置页的“Save to config”会写出游戏无法读取的配置。本站未安装或试玩，作者的杀毒误报说明不等于独立安全验证。
+
+**代码许可:** [GPL-3.0 covers the project-owned files only. ReXGlue/Xenia patches retain their BSD licenses. Original game files, generated game code, artwork and screenshots are excluded.](https://github.com/anishchandra24/NHL2K8-Recompiled/blob/main/LICENSE)  
+**作者:** anishchandra24  
+[官方文档](https://github.com/anishchandra24/NHL2K8-Recompiled/blob/main/README.md) · 资料核对日期: 2026-10-30
+
+</details>
+
+### [Virtua Fighter 2 Recomp](https://github.com/mr-finster/vf2-recomp)
+
+使用自备街机 ROM 的《VR 战士 2》非官方桌面适配，提供高分辨率、宽屏显示和实验性回滚联机。
+
+原作或参考对象: **VR 战士 2** · 社区移植  
+[下载程序并自备游戏文件](https://github.com/mr-finster/vf2-recomp/releases/tag/v0.1.16) · [浏览 RemakeList](https://remakelist.com/zh/remakes/virtua-fighter-2-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=virtua-fighter-2-recomp-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10/11 x64／macOS 11+ Intel 与 Apple silicon／Linux x64 与 ARM64／Steam Deck
+
+**当前阶段:** v0.1.16 · 桌面下载 · 回滚联机实验性
+
+**需要准备什么:** 需自备合法取得的 MAME vf2 Version 2.1 ROM 集合 vf2.zip；项目不附 ROM 或其生成内容。联机双方须使用相同 ROM。Linux ARM64 文档面向 Raspberry Pi 5 及 Ubuntu 22.04、Debian 12、Raspberry Pi OS Bookworm 或更新系统。
+
+**现在能用什么:** v0.1.16 提供 Windows 10/11 x64、macOS 11+ 通用版、Linux x64／Steam Deck 和 Linux ARM64 包，需自备 MAME vf2 Version 2.1 的 vf2.zip ROM 集合。Mac 与 Windows 构建未签名。联机仍为实验性，双方需匹配 ROM 与兼容版本；直连时对手可见 IP，“Hide my IP address”通过中继隐藏该地址。Steam Deck 原生运行需按 Linux 指南配置。本站未安装或试玩。
+
+**代码许可:** [MIT for the project’s own code; MAME components retain BSD-3-Clause and other dependencies retain their terms. The author’s app icon and painted selection-screen sides use CC BY 4.0. SEGA game code and assets are not granted by these licenses.](https://github.com/mr-finster/vf2-recomp/blob/main/LICENSE)  
+**作者:** mr-finster  
+[官方文档](https://github.com/mr-finster/vf2-recomp/blob/main/README.md) · 资料核对日期: 2026-10-30
+
+</details>
+
+### [FM4 Static Recomp](https://github.com/i2kiselev/fm4-static-recomp)
+
+从自备 Xbox 360 光盘在本机构建的《极限竞速 4》非官方 Windows 移植，提供 Vulkan 渲染、现代画质设置和 DLSS／FSR 升频。
+
+原作或参考对象: **极限竞速 4** · 静态重编译  
+[自行构建并自备游戏文件](https://github.com/i2kiselev/fm4-static-recomp/releases/tag/v0.3.0) · [浏览 RemakeList](https://remakelist.com/zh/remakes/fm4-static-recomp/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=fm4-static-recomp-zh-CN)
+
+<details>
+<summary>要求与截图</summary>
+
+**平台:** Windows 10 2004+ x64 · Vulkan · 本机构建
+
+**当前阶段:** v0.3.0 · 实验性 Windows 本机构建 · 需自备 Disc 1
+
+**需要准备什么:** 自备合法取得的 Xbox 360《极限竞速 4》Disc 1 1.0：欧版 Media ID 61D62D9F 或美版 26FF1101，Title ID 4D530910。Disc 1 Rev 1／1.1 不受支持；可选自备 Disc 2 与 DLC，另需约 5 GB。启动器在本机构建游戏，本站不提供原游戏数据。
+
+**现在能用什么:** 实验性 v0.3.0 免费提供 Windows 启动器，从自备受支持的 Disc 1 ISO 或 GOD 数据在本机构建游戏。需 Windows 10 2004+ x64、当前 Vulkan 驱动、首次联网及约 10 GB 空间；接受微软组件许可后下载构建所需文件，不附预编译游戏。仅支持欧／美零售 Disc 1 1.0，不支持 Rev 1／1.1。Linux 与方向盘支持仍在计划中，Xbox LIVE 和 Kinect 不受支持。升频闪烁仍是已知问题。本站未安装或试玩。
+
+**代码许可:** [BSD-3-Clause for this project’s source. Pinyon Shift-derived code retains its notices and dependencies keep their terms. The original game, assets, generated translation and resulting game executable are excluded and must not be redistributed.](https://github.com/i2kiselev/fm4-static-recomp/blob/main/LICENSE)  
+**作者:** i2kiselev  
+[官方文档](https://github.com/i2kiselev/fm4-static-recomp/blob/main/README.md) · 资料核对日期: 2026-10-30
 
 </details>
 
