@@ -21,7 +21,7 @@ Los nombres de los proyectos llevan a las fuentes de sus autores. Despliega cada
 | [OpenTTD](https://remakelist.com/es/remakes/openttd/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=openttd-featured-es) | Transport Tycoon Deluxe | [Descargar](https://www.openttd.org/) |
 | [OpenRCT2](https://remakelist.com/es/remakes/openrct2/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=openrct2-featured-es) | RollerCoaster Tycoon 2 | [Descargar y aportar tus archivos del juego](https://openrct2.io/download) |
 | [D2R Mobile](https://remakelist.com/es/remakes/d2r-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=d2r-mobile-featured-es) | Diablo II: Resurrected | [Compilar y aportar tus archivos del juego](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) |
-| [nxnative](https://remakelist.com/es/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-featured-es) | Juegos de Nintendo Switch | [Compilar y aportar tus archivos del juego](https://github.com/seedds/nxnative#pack-an-ipa) |
+| [nxnative](https://remakelist.com/es/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-featured-es) | Juegos de Nintendo Switch | [Compilar y aportar tus archivos del juego](https://github.com/seedds/nxnative#how-to-play) |
 
 ## Explorar categoría
 
@@ -1311,11 +1311,11 @@ Original o referencia: **Diablo II: Resurrected** · Capa de compatibilidad entr
 
 **Plataformas:** iPhone / iPad / Mac con Apple silicon / Android ARM64 / HarmonyOS NEXT
 
-**Estado:** v2.1.0 · archivos propios de Switch · cámara experimental opcional
+**Estado:** v2.2.4 · archivos propios de Switch · cámara experimental opcional
 
 **Qué necesitas:** Aporta los archivos ExeFS y RomFS de tu compra legal del juego base de Switch y Reign of the Warlock, actualizados a la versión de consola 1.0.34.0, denominada 3.3.94012 por las herramientas. Los archivos de PC y de otras consolas no sirven como sustituto. Los recursos ocupan unos 5,6 GB; los chips Apple antiguos necesitan un paquete de texturas adicional de aproximadamente 1 GB generado a partir de tus archivos. Apple requiere como mínimo A14/M1; elige la versión normal o la de API antiguas para iOS 26+ frente a 18–25 y macOS 26+ frente a 15–25. Android necesita ARM64, Android 12+ y Vulkan 1.1. HarmonyOS NEXT requiere una cuenta de desarrollador, herramientas de firma y un paquete de ejecución preparado por ti.
 
-**Qué está disponible:** v2.1.0 actualiza la APK de Android y los dos ZIP de entrada para compilar iOS. Android conserva el paquete de importación y las partidas existentes; iOS requiere crear y firmar una nueva app con los nuevos archivos y el código v2.1.0. La HAP de HarmonyOS sin firmar sigue siendo la de v2.0.0 y necesita tu firma de desarrollador y un paquete de ejecución. Mac solo permite compilar desde el código. Solo funciona sin conexión. En Android quedan detalles táctiles incompletos y fallos gráficos en ciertos dispositivos. Los dispositivos Apple con 4 GB de RAM tienen poca memoria disponible; la firma mediante herramientas de instalación externa y el empaquetado en Linux siguen sin verificar. Un Apple ID gratuito requiere renovar la firma cada 7 días y no permite sincronizar por iCloud. Apple TV solo llega a una vista previa de selección de personaje. No redistribuyas paquetes que incluyan contenido del juego. RemakeList no lo ha compilado, instalado ni jugado.
+**Qué está disponible:** Android v2.2.4 admite el paquete de importación de v2.2.3; regenera los anteriores con las herramientas actuales. iOS requiere los archivos de compilación actuales, volver a empaquetar y firmar: el ZIP no se instala directamente. HarmonyOS conserva la base v2.0.0; Mac se compila desde el código fuente. Solo funciona sin conexión. En Android quedan detalles táctiles incompletos y fallos gráficos en ciertos dispositivos. Los dispositivos Apple con 4 GB de RAM tienen poca memoria disponible; la firma mediante herramientas de instalación externa y el empaquetado en Linux siguen sin verificar. Un Apple ID gratuito requiere renovar la firma cada 7 días y no permite sincronizar por iCloud. Apple TV solo llega a una vista previa de selección de personaje. No redistribuyas paquetes que incluyan contenido del juego. RemakeList no lo ha compilado, instalado ni jugado.
 
 **Licencia del código:** [MIT covers project code; original game files and third-party components retain separate rights and licenses.](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE)  
 **Autor:** joe jiang (@happyjoejiang)  
@@ -1915,7 +1915,7 @@ Original o referencia: **Sonic Adventure 2** · Recompilación estática
 
 **Qué necesitas:** Aporta tus propios archivos obtenidos legalmente: PC · Sonic Adventure 2 (2012) · ejecutable y recursos. El proyecto es gratuito; el juego original va aparte. Aquí no se ofrecen archivos del juego, claves ni paquetes listos para jugar.
 
-**Qué está disponible:** Vía oficial: Windows / Linux / Android. Versión preliminar jugable o experimental. No se ha verificado el juego completo. Elige el paquete oficial adecuado para tu sistema. Los paquetes oficiales incluyen lógica del juego recompilada y el entorno del port. Debes aportar mediante el instalador el ejecutable y los recursos de tu edición PC 2012 compatible; no son simples paquetes vacíos.
+**Qué está disponible:** Los paquetes oficiales incluyen la lógica recompilada y el entorno de ejecución del port. Aun así, debes aportar tus propios archivos compatibles del juego; no son paquetes vacíos. RemakeList no ha verificado una partida completa.
 
 **Licencia del código:** [GPL-3.0-only applies to the project’s original code only; original game content and third-party components have separate rights.](https://github.com/kittycache9/OpenSA2/blob/main/LICENSE)  
 **Autor:** kittycache9  
@@ -2288,7 +2288,7 @@ Original o referencia: **The Legend of Zelda: The Wind Waker HD** · Recompilaci
 Crea en un Mac apps para iPhone, iPad o Mac con Apple silicon a partir de tus propios archivos de juegos Switch compatibles. La compatibilidad depende del perfil del juego y de la compilación.
 
 Original o referencia: **Juegos de Nintendo Switch** · Capa de compatibilidad entre plataformas  
-[Compilar y aportar tus archivos del juego](https://github.com/seedds/nxnative#pack-an-ipa) · [Explorar RemakeList](https://remakelist.com/es/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-es)
+[Compilar y aportar tus archivos del juego](https://github.com/seedds/nxnative#how-to-play) · [Explorar RemakeList](https://remakelist.com/es/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-es)
 
 <details>
 <summary>Requisitos y capturas</summary>

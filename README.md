@@ -21,7 +21,7 @@ Project names link to their authors’ sources. Expand an entry for device, game
 | [OpenTTD](https://remakelist.com/remakes/openttd/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=openttd-featured-en) | Transport Tycoon Deluxe | [Download](https://www.openttd.org/) |
 | [OpenRCT2](https://remakelist.com/remakes/openrct2/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=openrct2-featured-en) | RollerCoaster Tycoon 2 | [Download and supply your own game files](https://openrct2.io/download) |
 | [D2R Mobile](https://remakelist.com/remakes/d2r-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=d2r-mobile-featured-en) | Diablo II: Resurrected | [Build and supply your own game files](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) |
-| [nxnative](https://remakelist.com/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-featured-en) | Nintendo Switch games | [Build and supply your own game files](https://github.com/seedds/nxnative#pack-an-ipa) |
+| [nxnative](https://remakelist.com/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-featured-en) | Nintendo Switch games | [Build and supply your own game files](https://github.com/seedds/nxnative#how-to-play) |
 
 ## Browse category
 
@@ -1311,11 +1311,11 @@ Original or reference: **Diablo II: Resurrected** · Platform compatibility laye
 
 **Platforms:** iPhone / iPad / Apple silicon Mac / Android ARM64 / HarmonyOS NEXT
 
-**Status:** v2.1.0 · owned Switch files · experimental camera option
+**Status:** v2.2.4 · owned Switch files · platform-specific setup
 
 **What you need:** Supply lawfully purchased Switch base-game and Reign of the Warlock ExeFS/RomFS files updated to console version 1.0.34.0, called 3.3.94012 by the tools. PC and other console files are not substitutes. Resources take about 5.6 GB; older Apple chips need an additional roughly 1 GB texture pack generated from your files. Apple requires at least A14/M1; choose standard or older-API builds for iOS 26+ versus 18–25 and macOS 26+ versus 15–25. Android needs ARM64, Android 12+ and Vulkan 1.1. HarmonyOS NEXT needs a developer account, signing tools and a self-prepared runtime pack.
 
-**What is available:** v2.1.0 updates the Android APK and both iOS build-input ZIPs. Android keeps the existing import pack and saves; iOS needs a new app built with the new inputs and v2.1.0 source, then signed. The unsigned HarmonyOS HAP remains the v2.0.0 file and needs your developer signature and runtime pack. Mac is source-build only. Offline only. Android retains unfinished touch details and device-specific graphics faults. Apple devices with 4 GB RAM are memory-constrained; sideload-tool signing and Linux packaging remain unverified. A free Apple ID needs re-signing every 7 days and has no iCloud sync. Apple TV is only a character-selection preview. Do not redistribute packages containing game content. RemakeList has not built, installed or played it.
+**What is available:** Android v2.2.4 supports the v2.2.3 import pack; rebuild older packs with the current tools. iOS needs current build inputs, repackaging and signing: the ZIP is not installable. HarmonyOS keeps the v2.0.0 shell; Mac uses the source-build route. Offline only. Android retains unfinished touch details and device-specific graphics faults. Apple devices with 4 GB RAM are memory-constrained; sideload-tool signing and Linux packaging remain unverified. A free Apple ID needs re-signing every 7 days and has no iCloud sync. Apple TV is only a character-selection preview. Do not redistribute packages containing game content. RemakeList has not built, installed or played it.
 
 **Code license:** [MIT covers project code; original game files and third-party components retain separate rights and licenses.](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE)  
 **Author:** joe jiang (@happyjoejiang)  
@@ -2288,7 +2288,7 @@ Original or reference: **The Legend of Zelda: The Wind Waker HD** · Static reco
 Build apps from your own supported Switch game files on a Mac, for iPhone, iPad or Apple silicon Mac. Compatibility depends on the game profile and build.
 
 Original or reference: **Nintendo Switch games** · Platform compatibility layer  
-[Build and supply your own game files](https://github.com/seedds/nxnative#pack-an-ipa) · [Browse RemakeList](https://remakelist.com/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-en)
+[Build and supply your own game files](https://github.com/seedds/nxnative#how-to-play) · [Browse RemakeList](https://remakelist.com/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-en)
 
 <details>
 <summary>Requirements and screenshots</summary>

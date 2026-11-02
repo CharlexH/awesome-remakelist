@@ -21,7 +21,7 @@
 | [OpenTTD](https://remakelist.com/zh/remakes/openttd/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=openttd-featured-zh-CN) | Transport Tycoon Deluxe | [下载](https://www.openttd.org/) |
 | [OpenRCT2](https://remakelist.com/zh/remakes/openrct2/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=openrct2-featured-zh-CN) | RollerCoaster Tycoon 2 | [下载程序并自备游戏文件](https://openrct2.io/download) |
 | [D2R Mobile](https://remakelist.com/zh/remakes/d2r-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=d2r-mobile-featured-zh-CN) | Diablo II: Resurrected | [自行构建并自备游戏文件](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) |
-| [nxnative](https://remakelist.com/zh/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-featured-zh-CN) | Nintendo Switch 游戏 | [自行构建并自备游戏文件](https://github.com/seedds/nxnative#pack-an-ipa) |
+| [nxnative](https://remakelist.com/zh/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-featured-zh-CN) | Nintendo Switch 游戏 | [自行构建并自备游戏文件](https://github.com/seedds/nxnative#how-to-play) |
 
 ## 浏览分类
 
@@ -1311,11 +1311,11 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 
 **平台:** iPhone / iPad / Apple silicon Mac / Android ARM64 / HarmonyOS NEXT
 
-**当前阶段:** v2.1.0 · 自备 Switch 文件 · 可选实验镜头
+**当前阶段:** v2.2.4 · 自备 Switch 文件 · 按平台配置
 
 **需要准备什么:** 需自备合法购买的 Switch 本体与「术士君临」资料片，更新至主机版本 1.0.34.0（工具标作 3.3.94012）的 ExeFS、RomFS。其他主机或 PC 文件不能替代；资源约 5.6 GB，旧 Apple 芯片另需从自己的文件生成约 1 GB 贴图包。Apple 最低 A14/M1；iOS 26+ 与 18–25、macOS 26+ 与 15–25 分别选标准／老接口路线。Android 需 ARM64、Android 12+、Vulkan 1.1；HarmonyOS NEXT 需开发者账号、签名工具与自制运行包。
 
-**现在能用什么:** v2.1.0 更新 Android APK 与两份 iOS 构建输入 ZIP。Android 沿用既有导入包和存档；iOS 需用新输入与 v2.1.0 源码重新做包、签名。未签名 HarmonyOS HAP 仍是 v2.0.0 文件，需个人开发者签名和运行包；Mac 仍需源码构建。 仅离线。Android 仍有未完成的触控细节和特定设备图形问题。4 GB Apple 设备内存紧张；侧载工具签名与 Linux 做包仍未验证。免费 Apple ID 每 7 天需重签且无 iCloud 同步。Apple TV 仅到选角色预览；含游戏内容的自制包不可分发。本站未构建、安装或试玩。
+**现在能用什么:** Android v2.2.4 支持 v2.2.3 导入包；更旧的包请用当前工具重新生成。iOS 需使用当前构建输入重新打包并签名，ZIP 不能直接安装。HarmonyOS 仍使用 v2.0.0 外壳；Mac 走源码构建路线。 仅离线。Android 仍有未完成的触控细节和特定设备图形问题。4 GB Apple 设备内存紧张；侧载工具签名与 Linux 做包仍未验证。免费 Apple ID 每 7 天需重签且无 iCloud 同步。Apple TV 仅到选角色预览；含游戏内容的自制包不可分发。本站未构建、安装或试玩。
 
 **代码许可:** [MIT covers project code; original game files and third-party components retain separate rights and licenses.](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE)  
 **作者:** joe jiang (@happyjoejiang)  
@@ -2288,7 +2288,7 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 在 Mac 上用自备、受支持的 Switch 游戏文件，构建 iPhone、iPad 或 Apple 芯片 Mac App。兼容性取决于游戏配置与构建版本。
 
 原作或参考对象: **Nintendo Switch 游戏** · 平台兼容层  
-[自行构建并自备游戏文件](https://github.com/seedds/nxnative#pack-an-ipa) · [浏览 RemakeList](https://remakelist.com/zh/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-zh-CN)
+[自行构建并自备游戏文件](https://github.com/seedds/nxnative#how-to-play) · [浏览 RemakeList](https://remakelist.com/zh/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-zh-CN)
 
 <details>
 <summary>要求与截图</summary>
@@ -2297,9 +2297,9 @@ ArtCraft 团队以 Rust 重建Microsoft Excel式工作流：工作表、公式�
 
 **当前阶段:** 需本地构建 · 兼容性为作者报告
 
-**需要准备什么:** 自备自己持有游戏的 NSP、所需更新或 DLC，以及自己的 prod.keys，在装有 Xcode 和 Homebrew 的 Mac 上本地构建。iPhone/iPad 路线生成未签名 IPA，需另行签名和侧载；Apple 芯片 Mac 使用 Mac App 路线。生成的包包含游戏衍生代码与资源，仅供个人使用，不可再分发。本站不提供商业游戏、密钥或可直接安装的游戏包；请自行核实自备文件的使用权。
+**需要准备什么:** 自备自己持有的游戏文件（NSP、XCI、NSZ 或 XCZ）、所需更新或 DLC，以及自己的 prod.keys，在装有 Xcode 和 Homebrew 的 Mac 上本地构建。iPhone/iPad 路线生成未签名 IPA，需另行签名和侧载；Apple 芯片 Mac 使用 Mac App 路线。生成的包包含游戏衍生代码与资源，仅供个人使用，不可再分发。本站不提供商业游戏、密钥或可直接安装的游戏包；请自行核实自备文件的使用权。
 
-**现在能用什么:** 构建前查看作者当前游戏状态表和各游戏配置。《王国之泪》现已报告可在 iPhone 游玩；60 fps 选项要求 1.4.3 更新，不代表所有设备都能达到该帧率。Mac App 路线使用 --platform mac-app，在 Apple 芯片 Mac 上从 Finder 打开。iPhone 的运行报告不代表 Mac 兼容性已验证。
+**现在能用什么:** 《王国之泪》现已由作者报告可在 iPhone 游玩；60 fps 选项要求 1.4.3 更新，不代表所有设备都能达到该帧率。iPhone 的运行报告不代表 Mac 兼容性已验证。
 
 **代码许可:** [MIT project code · game rights and third-party licenses separate](https://github.com/seedds/nxnative/blob/main/LICENSE)  
 **作者:** seedds and contributors  

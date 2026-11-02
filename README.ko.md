@@ -21,7 +21,7 @@
 | [OpenTTD](https://remakelist.com/ko/remakes/openttd/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=openttd-featured-ko) | Transport Tycoon Deluxe | [다운로드](https://www.openttd.org/) |
 | [OpenRCT2](https://remakelist.com/ko/remakes/openrct2/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=openrct2-featured-ko) | RollerCoaster Tycoon 2 | [프로그램 다운로드 · 게임 파일 직접 준비](https://openrct2.io/download) |
 | [D2R Mobile](https://remakelist.com/ko/remakes/d2r-mobile/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=d2r-mobile-featured-ko) | Diablo II: Resurrected | [직접 빌드 · 게임 파일 직접 준비](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/README.md) |
-| [nxnative](https://remakelist.com/ko/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-featured-ko) | Nintendo Switch 게임 | [직접 빌드 · 게임 파일 직접 준비](https://github.com/seedds/nxnative#pack-an-ipa) |
+| [nxnative](https://remakelist.com/ko/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-featured-ko) | Nintendo Switch 게임 | [직접 빌드 · 게임 파일 직접 준비](https://github.com/seedds/nxnative#how-to-play) |
 
 ## 분류 둘러보기
 
@@ -1311,11 +1311,11 @@ NES 원작 Zelda 스타일의 모험을 위한 무료 엔진·퀘스트 플레�
 
 **지원 환경:** iPhone / iPad / Apple silicon Mac / Android ARM64 / HarmonyOS NEXT
 
-**개발 상태:** v2.1.0 · 직접 보유한 Switch 파일 필요 · 실험적 카메라 선택 가능
+**개발 상태:** v2.2.4 · 직접 보유한 Switch 파일 필요 · 실험적 카메라 선택 가능
 
 **준비할 것:** 합법적으로 구매한 Switch 기본 게임과 Reign of the Warlock을 콘솔 버전 1.0.34.0으로 업데이트한 ExeFS·RomFS 파일을 직접 준비해야 합니다. 도구에서는 이 버전을 3.3.94012로 표시합니다. PC나 다른 콘솔의 파일로 대체할 수 없습니다. 리소스는 약 5.6 GB이며 구형 Apple 칩에는 직접 보유한 파일에서 생성한 약 1 GB의 추가 텍스처 팩이 필요합니다. Apple은 최소 A14·M1이 필요합니다. iOS 26 이상과 18–25, macOS 26 이상과 15–25에 맞춰 표준 빌드 또는 구형 API 빌드를 선택하세요. Android에는 ARM64, Android 12 이상과 Vulkan 1.1이 필요합니다. HarmonyOS NEXT에는 개발자 계정, 서명 도구와 직접 준비한 런타임 팩이 필요합니다.
 
-**현재 이용할 수 있는 것:** v2.1.0은 Android APK와 두 iOS 빌드 입력용 ZIP을 업데이트합니다. Android는 기존 가져오기 팩과 저장을 유지할 수 있으며, iOS는 새 입력 파일과 v2.1.0 소스로 앱을 다시 만들어 서명해야 합니다. 미서명 HarmonyOS HAP는 v2.0.0 파일 그대로이며 개발자 인증서 재서명과 런타임 팩이 필요합니다. Mac은 소스 빌드만 가능합니다. 오프라인 전용입니다. Android에는 미완성 터치 기능과 기기별 그래픽 문제가 남아 있습니다. RAM 4 GB Apple 기기는 메모리가 부족할 수 있으며, 사이드로딩 도구 서명과 Linux 패키징은 미검증입니다. 무료 Apple ID는 7일마다 다시 서명해야 하고 iCloud 동기화가 없습니다. Apple TV는 캐릭터 선택 미리보기뿐입니다. 게임 내용이 들어간 패키지는 재배포하지 마세요. RemakeList는 빌드·설치·플레이하지 않았습니다.
+**현재 이용할 수 있는 것:** Android v2.2.4는 v2.2.3 가져오기 팩을 지원합니다. 더 오래된 팩은 현재 도구로 다시 생성하세요. iOS는 현재 빌드 입력으로 다시 패키징하고 서명해야 하며 ZIP을 직접 설치할 수 없습니다. HarmonyOS는 v2.0.0 셸을 유지하고, Mac은 소스 빌드 방식을 사용합니다. 오프라인 전용입니다. Android에는 미완성 터치 기능과 기기별 그래픽 문제가 남아 있습니다. RAM 4 GB Apple 기기는 메모리가 부족할 수 있으며, 사이드로딩 도구 서명과 Linux 패키징은 미검증입니다. 무료 Apple ID는 7일마다 다시 서명해야 하고 iCloud 동기화가 없습니다. Apple TV는 캐릭터 선택 미리보기뿐입니다. 게임 내용이 들어간 패키지는 재배포하지 마세요. RemakeList는 빌드·설치·플레이하지 않았습니다.
 
 **코드 라이선스:** [MIT covers project code; original game files and third-party components retain separate rights and licenses.](https://github.com/jhaizhou-ops/d2r-mobile/blob/main/LICENSE)  
 **제작자:** joe jiang (@happyjoejiang)  
@@ -2288,7 +2288,7 @@ Wind Waker HD의 Android 포크로 포르투갈어 번역과 터치 설정을 �
 본인이 보유한 지원 Switch 게임 파일로 Mac에서 iPhone, iPad 또는 Apple Silicon Mac용 앱을 빌드합니다. 호환성은 게임 프로필과 빌드에 따라 달라집니다.
 
 원작 또는 참고 대상: **Nintendo Switch 게임** · 플랫폼 호환 계층  
-[직접 빌드 · 게임 파일 직접 준비](https://github.com/seedds/nxnative#pack-an-ipa) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-ko)
+[직접 빌드 · 게임 파일 직접 준비](https://github.com/seedds/nxnative#how-to-play) · [RemakeList 둘러보기](https://remakelist.com/ko/remakes/nxnative/?utm_source=github&utm_medium=repository&utm_campaign=awesome-remakelist&utm_content=nxnative-ko)
 
 <details>
 <summary>요구 사항과 스크린샷</summary>
